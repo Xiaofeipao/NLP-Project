@@ -1,0 +1,4 @@
+# torch is intentionally separate: install the CUDA build appropriate to the future GPU host.
+transformers==4.57.6
+sentencepiece>=0.2.0,<0.3
+protobuf>=4.25,<7

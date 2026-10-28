@@ -1,0 +1,16 @@
+{
+  "backend": "policy",
+  "model_config": "config.policy.best.json",
+  "checkpoint": "outputs/planning_v3/multi/flan_t5_small/train/best",
+  "grid": "examples/grid.json",
+  "legal_mask": true,
+  "avoid_revisits": true,
+  "budgets": {
+    "model_calls": 16,
+    "tool_calls": 16,
+    "action_attempts": 2048,
+    "active_seconds": 300,
+    "context_events": 8,
+    "plan_tokens": 128
+  }
+}

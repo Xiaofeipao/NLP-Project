@@ -1,0 +1,14 @@
+{
+  "backend": "repair",
+  "model_config": "config.json",
+  "checkpoint": "outputs/flan_t5_small/train/best",
+  "grid": "examples/grid.json",
+  "budgets": {
+    "model_calls": 4,
+    "tool_calls": 4,
+    "action_attempts": 512,
+    "active_seconds": 300,
+    "context_events": 4,
+    "plan_tokens": 128
+  }
+}

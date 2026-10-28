@@ -1,0 +1,18 @@
+{
+  "backend": "repair_policy",
+  "model_config": "config.json",
+  "checkpoint": "outputs/flan_t5_small/train/best",
+  "recovery_config": "config.policy.best.json",
+  "recovery_checkpoint": "outputs/planning_v3/multi/flan_t5_small/train/best",
+  "repair_calls": 2,
+  "avoid_revisits": false,
+  "grid": "examples/grid.json",
+  "budgets": {
+    "model_calls": 16,
+    "tool_calls": 16,
+    "action_attempts": 2048,
+    "active_seconds": 300,
+    "context_events": 8,
+    "plan_tokens": 128
+  }
+}

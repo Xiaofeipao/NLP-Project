@@ -1,0 +1,48 @@
+{
+  "seed": 42,
+  "dataset_root": "data/policy_v2",
+  "output_root": "outputs\\planning_v3\\v2_reference",
+  "gpu_ledger": "outputs/gpu_ledger.json",
+  "gpu_hours_cap": 20,
+  "model_cache": ".cache/huggingface",
+  "repair_rounds": 3,
+  "models": {
+    "flan_t5_small": {
+      "checkpoint": "google/flan-t5-small",
+      "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "manager_confirmed": false,
+      "confirmation_note": "User explicitly authorized full formal fine-tuning of Flan-T5-small and BART-base in this chat on 2026-10-18; no separate project-manager confirmation is asserted. User authorized improving planning and code; retrain primary model using state-action representation of the same source examples.",
+      "user_confirmed": true
+    }
+  },
+  "data": {
+    "train": {
+      "generation": 2000,
+      "verification": 2000,
+      "repair": 0
+    },
+    "dev": {
+      "generation": 100,
+      "verification": 100,
+      "repair": 0
+    },
+    "test_per_set": 200
+  },
+  "training": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 8,
+    "eval_batch_size": 8,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "local_files_only": true,
+  "policy_source_dataset": "data/derived",
+  "baseline_root": "outputs/flan_t5_small",
+  "policy_optimal_search": true,
+  "policy_checkpoint": "outputs/planning_v2/flan_t5_small/train/best"
+}
