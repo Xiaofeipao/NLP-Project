@@ -38,6 +38,7 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
         state.setdefault("feedback_source", None)
         state.setdefault("stop_reason", None)
         state.setdefault("executor_calls", 0)
+        state.setdefault("executor_seconds", 0.0)
         state.setdefault("raw_feedback", "")
         state.setdefault("input_tokens", 0)
         state.setdefault("output_tokens", 0)
@@ -49,15 +50,19 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
             previous, count = _commit(directory, state, kind, previous, count)
 
         while True:
-            if state["model_calls"] >= spec["model_calls"] or state["active_seconds"] >= spec["active_seconds"]:
-                state.update(status="budget_exhausted", stop_reason="budget_exhausted")
-                commit("stop")
-                return state
             phase = state["phase"]
             if phase == "feedback" and mode.startswith("executor"):
+                if state["active_seconds"] >= spec["active_seconds"]:
+                    state.update(status="budget_exhausted", stop_reason="budget_exhausted")
+                    commit("stop")
+                    return state
                 # True diagnostics are available only in this explicit branch.
+                started = time.monotonic()
                 feedback = execute(grid, state["candidate"]).label()
+                elapsed = time.monotonic() - started
                 state["executor_calls"] += 1
+                state["executor_seconds"] += elapsed
+                state["active_seconds"] += elapsed
                 state["raw_feedback"] = feedback
                 state["feedback_source"] = "executor"
                 state["phase"] = "decide"
@@ -67,8 +72,6 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
                 parsed = parse_verdict(state["raw_feedback"])
                 if parsed == (True, None, None):
                     state.update(status="stopped", stop_reason="feedback_valid")
-                elif state["candidate"] in state["candidate_history"][:-1]:
-                    state.update(status="stopped", stop_reason="repeated_candidate")
                 elif state["repairs"] >= spec["max_repairs"]:
                     state.update(status="stopped", stop_reason="repair_limit")
                 else:
@@ -79,6 +82,10 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
                 continue
             if phase == "done":
                 state.update(status="stopped", stop_reason="direct_complete")
+                commit("stop")
+                return state
+            if state["model_calls"] >= spec["model_calls"] or state["active_seconds"] >= spec["active_seconds"]:
+                state.update(status="budget_exhausted", stop_reason="budget_exhausted")
                 commit("stop")
                 return state
             task = {"generate": "generation", "feedback": "verification", "repair": "repair"}[phase]
@@ -107,12 +114,19 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
                 state["history"].append({"task": task, "raw_feedback": state["raw_feedback"]})
             else:
                 state["candidate"] = output[:2048]
+                repeated = task == "repair" and any(
+                    " ".join(state["candidate"].split()) == " ".join(prior.split())
+                    for prior in state["candidate_history"])
                 state["candidate_history"].append(state["candidate"])
                 if task == "repair":
                     state["repairs"] += 1
                 state["phase"] = "done" if mode == "direct" else "feedback"
                 state["history"].append({"task": task, "candidate": state["candidate"]})
+                if repeated:
+                    state.update(status="stopped", stop_reason="repeated_candidate")
             commit("model_response")
+            if state["status"] == "stopped":
+                return state
 
 
 def score_gvr_session(directory, oracle=None):
@@ -126,6 +140,10 @@ def score_gvr_session(directory, oracle=None):
             "optimal": verdict.valid and len(state["candidate"].split()) == len(best),
             "truth": verdict.label(), "model_calls": state["model_calls"],
             "executor_calls": state["executor_calls"], "repairs": state["repairs"],
+            "executor_seconds": state.get("executor_seconds", 0.0),
             "input_tokens": state["input_tokens"], "output_tokens": state["output_tokens"],
             "active_seconds": state["active_seconds"],
-            "stop_reason": state["stop_reason"], "feedback_source": state["feedback_source"]}
+            "stop_reason": state["stop_reason"], "feedback_source": state["feedback_source"],
+            "false_valid_accept": (state["feedback_source"] == "model" and
+                                   parse_verdict(state["raw_feedback"]) == (True, None, None) and
+                                   not verdict.valid)}

@@ -14,6 +14,8 @@ def mean(values):
 
 
 def plan_metrics(grids, plans):
+    if len(grids) != len(plans):
+        raise ValueError("Grid and plan counts differ")
     successes, feasible, optimal, efficiency = [], [], [], []
     for grid, plan in zip(grids, plans):
         verdict = execute(grid, plan)
@@ -28,6 +30,8 @@ def plan_metrics(grids, plans):
 
 
 def verification_metrics(rows, predictions):
+    if len(rows) != len(predictions):
+        raise ValueError("Candidate and verification counts differ")
     parsed = [parse_verdict(p) for p in predictions]
     truth = [r["valid"] for r in rows]
     f1 = []

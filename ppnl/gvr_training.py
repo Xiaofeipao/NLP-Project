@@ -2,12 +2,69 @@
 from __future__ import annotations
 
 import json
+from collections import Counter
 from pathlib import Path
 import time
 
 from .data import task_index, task_index_manifest, write_json
+from .core import Grid, execute, parse_verdict
+from .evaluation import plan_metrics, verification_metrics
 from .modeling import Seq2Seq, confirmation, gpu_budget, require_cuda
+from .prompts import prompt
 from .task_adapters import attach_adapter, checkpoint_hash
+
+
+def validate_stage_rows(stage, train_rows, dev_rows):
+    expected = {"generation": (800, 40), "verification": (2000, 100), "repair": (1200, 60)}
+    if (len(train_rows), len(dev_rows)) != expected[stage]:
+        raise ValueError(f"Unexpected {stage} train/dev quota")
+    for rows in (train_rows, dev_rows):
+        for row in rows:
+            grid = Grid.from_dict(row["grid"])
+            if row["task"] != stage or row["input"] != prompt(stage, grid, row.get("candidate", ""), row.get("label", "")):
+                raise ValueError(f"Task/input mismatch: {row['id']}")
+            if stage == "generation":
+                if not execute(grid, row["target"]).valid:
+                    raise ValueError(f"Invalid generation target: {row['id']}")
+            elif stage == "verification":
+                verdict = execute(grid, row["candidate"])
+                if (row["target"] != row["label"] or verdict.label() != row["label"] or
+                        row["valid"] != verdict.valid or row["step"] != verdict.step or
+                        row["reason"] != verdict.reason):
+                    raise ValueError(f"Incorrect verification supervision: {row['id']}")
+            else:
+                verdict = execute(grid, row["candidate"])
+                if (row["valid"] or len(row["edits"]) != 1 or
+                        verdict.label() != row["label"] or row["step"] != verdict.step or
+                        row["reason"] != verdict.reason or
+                        row["target"] != row["target_plan"] or not execute(grid, row["target"]).valid):
+                    raise ValueError(f"Incorrect single-error repair supervision: {row['id']}")
+    if stage == "verification":
+        for rows in (train_rows, dev_rows):
+            counts = Counter(row["valid"] for row in rows)
+            if counts[True] != counts[False]:
+                raise ValueError("Verification labels must be balanced")
+
+
+def dev_diagnostics(stage, runner, rows, check):
+    predictions = runner.predict([row["input"] for row in rows], check)
+    if stage == "verification":
+        report = verification_metrics(rows, predictions)
+        counts = Counter("malformed" if parsed is None else "valid" if parsed[0] else "invalid"
+                         for parsed in map(parse_verdict, predictions))
+        report["predicted_label_counts"] = dict(counts)
+        report["all_valid_warning"] = counts["valid"] == len(rows)
+        return report
+    grids = [Grid.from_dict(row["grid"]) for row in rows]
+    report = plan_metrics(grids, predictions)
+    report["longest_repeated_action_run_ge_3"] = sum(
+        max((len(group) for group in _action_runs(plan)), default=0) >= 3 for plan in predictions)
+    return report
+
+
+def _action_runs(plan):
+    from itertools import groupby
+    return [list(group) for _, group in groupby(plan.split())]
 
 
 def train_stage(config, protocol, stage, output, pilot=False):
@@ -19,7 +76,6 @@ def train_stage(config, protocol, stage, output, pilot=False):
     item = confirmation(config, "flan_t5_small")
     if not item.get("manager_confirmed"):
         raise ValueError("Project manager checkpoint confirmation is required for GVR training")
-    torch = require_cuda()
     root = Path(protocol["dataset_root"])
     index = task_index_manifest(root)
     expected = json.loads(Path(protocol["task_index"]).read_text(encoding="utf-8"))
@@ -47,6 +103,8 @@ def train_stage(config, protocol, stage, output, pilot=False):
     if out.exists() and any(out.iterdir()):
         raise FileExistsError("Use a fresh training output directory")
     rows, dev = task_index(root, "train", stage), task_index(root, "dev", stage)
+    validate_stage_rows(stage, rows, dev)
+    torch = require_cuda()
     settings = config["training"]
     epochs = 1 if pilot else settings["epochs"]
     if not 1 <= epochs <= 2:
@@ -100,7 +158,8 @@ def train_stage(config, protocol, stage, output, pilot=False):
                         weighted_loss += runner.loss(batch).item() * n
                     tokens += n
             dev_loss = weighted_loss / tokens
-            history.append({"epoch": epoch + 1, "dev_loss": dev_loss})
+            diagnostics = None if pilot else dev_diagnostics(stage, runner, dev, check)
+            history.append({"epoch": epoch + 1, "dev_loss": dev_loss, "dev_diagnostics": diagnostics})
             if dev_loss < best:
                 best = dev_loss
                 if not pilot:

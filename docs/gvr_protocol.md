@@ -2,9 +2,15 @@
 
 ## 当前状态（2026-10-29）
 
-已实现固定数据索引、独立训练入口、LoRA 路由、持久化整路径循环和 B1–B4／候选评测入口。CPU 边界测试已运行。**新方案未训练、未评测出模型成绩**；仓库 README 中的百分比是历史实验记录，不能当作新方案结果。
+已实现固定数据索引、独立训练入口、LoRA 路由、持久化整路径循环和 B1–B4／候选评测入口。用户报告已在另一 GPU 环境完成 G／V／R 正式训练、58 项测试通过、GPU 正常；ID／OOD 候选修复成功率为 12%／6%，四种端到端流程均为 0%，验证器全部预测 `valid`，生成和修复输出存在重复动作。这些是**用户提供的实验摘要**，不是本仓库可独立重算的结果：本地没有权重、GPU 账本和逐条轨迹。不得把它们与此前基线结果混称。
 
-P0 核查：仓库 `main@b433523` 含 `data/derived` 原始任务数据及 manifest，训练 800／2,000／1,200、开发 40／100／60，ID 与 OOD 各 200 条。本机已按固定上游 revision 下载官方执行器，SHA256 `375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4` 与数据 manifest 一致；`vendor/` 按仓库规则不提交。仓库未包含 `outputs/`、模型 checkpoint、`outputs/gpu_ledger.json` 或负责人确认记录。因此剩余 GPU 预算、历史权重哈希和已报告指标尚不能独立核实；默认配置拒绝开始新训练。下载执行器不能补齐历史账本或权重。
+P0 核查：仓库 `main@b433523` 含 `data/derived` 原始任务数据及 manifest，训练 800／2,000／1,200、开发 40／100／60，ID 与 OOD 各 200 条。本机已按固定上游 revision 下载官方执行器，SHA256 `375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4` 与数据 manifest 一致；`vendor/` 按仓库规则不提交。仓库未包含本轮 `outputs/`、模型 checkpoint、`outputs/gpu_ledger.json` 或负责人确认记录。因此剩余 GPU 预算、权重哈希和用户报告的指标尚不能独立核实；默认配置仍拒绝在此环境启动新训练。
+
+### 本轮逻辑审计
+
+原评测入口错误地把开发集 100 条 Verify 与 60 条 Repair 一起算验证、把两类非法候选一起算修复，还用全部任务的网格算 Generate。已改为开发集分别使用固定 100／60／40 条；ID／OOD 测试仍使用 200 个候选、其中 100 个非法候选用于修复。控制器现在先处理刚返回的反馈再判断是否需要下一次模型调用，重复候选立即停止。新增训练前监督标签与单错误约束核对、每轮开发集预测分布、`all_valid_warning`、端到端 `false_valid_accepts`、停止原因与重复动作诊断。重复动作计数仅是诊断，不将合法连续动作错误判为无效。
+
+这些修复能纠正指标口径和停止行为，**不能凭代码保证模型不再全判 `valid` 或端到端成功率提高**。自验证分支继续严格使用模型反馈；若验证器误判 `valid`，控制器按原研究协议停止，并在独立评分中记为失败。
 
 ## 文件与边界
 
@@ -35,6 +41,16 @@ python -m unittest discover -s tests -q
 
 `index` 在已有索引匹配时只核查，不重写；不匹配时拒绝覆盖。`preflight` 返回 `checks`、已记录 GPU 秒数、`ready_for_training`、`ready_for_evaluation`。刚克隆的仓库预期两项 `ready` 都是 `false`，因为 `outputs/` 与确认记录不在 Git 中。运行测试无需 GPU；首次运行前需按 `environment.yml` 建立 Python 3.11 环境，或安装 CUDA 版 PyTorch 后执行 `pip install -r requirements.txt`。
 
+若原 GPU 环境仍有 `candidate_traces.jsonl`、`pipeline_traces.jsonl`，可在仓库根目录**不加载模型、不消耗 GPU**地重算修正后的指标，输出到新文件，不覆盖原 `metrics.json`：
+
+```powershell
+python scripts/run_gvr.py recompute --split dev
+python scripts/run_gvr.py recompute --split test_id
+python scripts/run_gvr.py recompute --split test_ood
+```
+
+默认读取 `outputs/gvr/evaluation/<split>/`，也可用 `--evaluation-dir` 指向已保存的评测目录。输出 `metrics_recomputed.json` 记录数据和轨迹哈希；没有原始轨迹时不能重算，也不应据摘要倒推逐条结论。
+
 ### 2. 补齐训练前证据
 
 从原实验机器取得**完整** `outputs/`，至少包括历史训练产物、模型 checkpoint、`outputs/gpu_ledger.json` 与对应配置快照。逐项核对数据／权重哈希、各训练阶段曝光次数及历史总 GPU 占用；确认共用账本仍低于 20 小时。取得负责人对 `google/flan-t5-small` 固定 revision 的确认记录后，在 `config.json` 中据实填写 `manager_confirmed` 和 `confirmation_note`，并在 `config.gvr.json` 中据实设置三个 P0 证据位。不要创建空账本或复制账本来重置预算。再次运行 `preflight`，要求 `ready_for_training: true`。若课程按累计不同样本计，当前索引复用原 4,000 条，不引入新样本。
@@ -56,7 +72,7 @@ python scripts/run_gvr.py evaluate --split test_id
 python scripts/run_gvr.py evaluate --split test_ood
 ```
 
-预期产物：`outputs/gvr/{generation,verification,repair}/{pilot,train}/training.json`；G 权重在 `outputs/gvr/generation/train/best/`，V／R 权重分别在 `outputs/gvr/{verification,repair}/train/best/{verification,repair}/`。`verify` 检查保存重载及关闭适配器时 G 输出一致。评测指标在 `outputs/gvr/evaluation/<split>/metrics.json`，逐条轨迹在同目录 `candidate_traces.jsonl`、`pipeline_traces.jsonl`，案例在 `case_studies.json`。`preflight` 的 `ready_for_evaluation` 只有这些权重和配置齐备后才会为 `true`。
+预期产物：`outputs/gvr/{generation,verification,repair}/{pilot,train}/training.json`；G 权重在 `outputs/gvr/generation/train/best/`，V／R 权重分别在 `outputs/gvr/{verification,repair}/train/best/{verification,repair}/`。`verify` 检查保存重载、关闭适配器时 G 输出一致，并对固定开发集 40／100／60 条逐任务输出预测分布与成功率，保存至 `outputs/gvr/verify_dev.json`；它需要 GPU，也计入共用账本。评测指标在 `outputs/gvr/evaluation/<split>/metrics.json`，逐条轨迹在同目录 `candidate_traces.jsonl`、`pipeline_traces.jsonl`，案例在 `case_studies.json`。`preflight` 的 `ready_for_evaluation` 只有这些权重和配置齐备后才会为 `true`。
 
 输出目录拒绝覆盖；中断后不要原路径重复启动训练。先保存失败日志并核算 ledger，再决定使用新输出目录和相应配置路径。新 G、V、R 各最多两轮；pilot 单独记账。
 
