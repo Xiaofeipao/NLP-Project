@@ -11,7 +11,7 @@ from ppnl.data import read_jsonl, task_index_manifest, write_json
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=("index", "pilot", "train", "verify", "evaluate"))
+    parser.add_argument("command", choices=("preflight", "index", "pilot", "train", "verify", "evaluate"))
     parser.add_argument("--protocol", default="config.gvr.json")
     parser.add_argument("--config", default="config.json")
     parser.add_argument("--stage", choices=("generation", "verification", "repair"))
@@ -20,9 +20,22 @@ def main():
     args = parser.parse_args()
     protocol = json.loads(Path(args.protocol).read_text(encoding="utf-8"))
     if args.command == "index":
-        write_json(protocol["task_index"], task_index_manifest(protocol["dataset_root"]))
+        expected = task_index_manifest(protocol["dataset_root"])
+        index_path = Path(protocol["task_index"])
+        if index_path.exists():
+            if json.loads(index_path.read_text(encoding="utf-8")) != expected:
+                raise ValueError("Tracked task index differs from source data; refusing overwrite")
+            print("Frozen task index matches source data")
+        else:
+            index_path.parent.mkdir(parents=True, exist_ok=True)
+            index_path.write_bytes(json.dumps(expected, ensure_ascii=False, indent=2).encode("utf-8"))
+            print(f"Created {index_path}")
         return
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
+    if args.command == "preflight":
+        from ppnl.gvr_preflight import preflight
+        print(json.dumps(preflight(config, protocol), ensure_ascii=False, indent=2))
+        return
     if args.command in ("pilot", "train"):
         if not args.stage:
             parser.error("--stage is required")

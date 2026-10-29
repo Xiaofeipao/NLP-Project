@@ -20,12 +20,30 @@ P0 核查：仓库 `main@b433523` 含 `data/derived` 原始任务数据及 manif
 
 ## 启动条件与命令
 
-1. 从原实验机器取得完整 `outputs/`、权重、共用 GPU ledger，并核对源数据与 checkpoint 哈希、各阶段曝光次数及历史总耗时。把负责人对 `google/flan-t5-small` 固定 revision 的确认记录归档；在 `config.json` 中据实填写 `manager_confirmed`。
-2. 核对后据实更新 `config.gvr.json` 的三个 P0 证据位，设置统一 ledger 路径。不要复制一份新 ledger 来“重置”20 GPU 小时。新 G、V、R 各最多两轮；任何 pilot 单独记账。若课程按累计不同样本计，当前索引复用原 4,000 条，不引入新样本。
-3. 在目标 Python 3.11／CUDA 环境安装依赖，然后按顺序运行：
+下一位运行者应从 GitHub 分支 `codex/project6-gvr-lora-harness` 克隆，在**仓库根目录**执行所有命令。`scripts/run_gvr.py` 按当前工作目录解析 `config.json`、`config.gvr.json` 及数据路径。默认 `--out` 路径与 `config.gvr.json` 的 checkpoint 路径配套；若改用 `--out`，须同步修改配置中的对应路径。
+
+### 1. 无 GPU 的交接检查
 
 ```powershell
+git clone --branch codex/project6-gvr-lora-harness https://github.com/Xiaofeipao/NLP-Project.git
+cd NLP-Project
+python scripts/fetch_official.py
 python scripts/run_gvr.py index
+python scripts/run_gvr.py preflight
+python -m unittest discover -s tests -q
+```
+
+`index` 在已有索引匹配时只核查，不重写；不匹配时拒绝覆盖。`preflight` 返回 `checks`、已记录 GPU 秒数、`ready_for_training`、`ready_for_evaluation`。刚克隆的仓库预期两项 `ready` 都是 `false`，因为 `outputs/` 与确认记录不在 Git 中。运行测试无需 GPU；首次运行前需按 `environment.yml` 建立 Python 3.11 环境，或安装 CUDA 版 PyTorch 后执行 `pip install -r requirements.txt`。
+
+### 2. 补齐训练前证据
+
+从原实验机器取得**完整** `outputs/`，至少包括历史训练产物、模型 checkpoint、`outputs/gpu_ledger.json` 与对应配置快照。逐项核对数据／权重哈希、各训练阶段曝光次数及历史总 GPU 占用；确认共用账本仍低于 20 小时。取得负责人对 `google/flan-t5-small` 固定 revision 的确认记录后，在 `config.json` 中据实填写 `manager_confirmed` 和 `confirmation_note`，并在 `config.gvr.json` 中据实设置三个 P0 证据位。不要创建空账本或复制账本来重置预算。再次运行 `preflight`，要求 `ready_for_training: true`。若课程按累计不同样本计，当前索引复用原 4,000 条，不引入新样本。
+
+### 3. 目标 GPU 环境训练与评测
+
+目标环境需 Python 3.11、CUDA 版 PyTorch、`transformers==4.57.6`、`peft==0.18.1`。先完成每阶段 pilot 并查看其 `training.json`，再运行对应正式训练；G 冻结后才运行 V／R。命令：
+
+```powershell
 python scripts/run_gvr.py pilot --stage generation
 python scripts/run_gvr.py train --stage generation
 python scripts/run_gvr.py pilot --stage verification
@@ -33,11 +51,14 @@ python scripts/run_gvr.py train --stage verification
 python scripts/run_gvr.py pilot --stage repair
 python scripts/run_gvr.py train --stage repair
 python scripts/run_gvr.py verify
-python scripts/fetch_official.py
 python scripts/run_gvr.py evaluate --split dev
 python scripts/run_gvr.py evaluate --split test_id
 python scripts/run_gvr.py evaluate --split test_ood
 ```
+
+预期产物：`outputs/gvr/{generation,verification,repair}/{pilot,train}/training.json`；G 权重在 `outputs/gvr/generation/train/best/`，V／R 权重分别在 `outputs/gvr/{verification,repair}/train/best/{verification,repair}/`。`verify` 检查保存重载及关闭适配器时 G 输出一致。评测指标在 `outputs/gvr/evaluation/<split>/metrics.json`，逐条轨迹在同目录 `candidate_traces.jsonl`、`pipeline_traces.jsonl`，案例在 `case_studies.json`。`preflight` 的 `ready_for_evaluation` 只有这些权重和配置齐备后才会为 `true`。
+
+输出目录拒绝覆盖；中断后不要原路径重复启动训练。先保存失败日志并核算 ledger，再决定使用新输出目录和相应配置路径。新 G、V、R 各最多两轮；pilot 单独记账。
 
 开发集用于模型选择；测试集是复用测试集。评测前核对 V／R 的 `base_identity.json` 与 G 权重哈希一致。评测保留模型原始反馈，格式错误计入失败；自验证分支不调用执行器做决策。所有模式从同一网格生成，评测器检查首个候选逐字一致。B4 相比 B3 使用更多调用，须连同模型调用、执行器调用和耗时一起呈报。
 
