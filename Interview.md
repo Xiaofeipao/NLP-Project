@@ -20,7 +20,7 @@
 - `scripts/`：命令行入口和实验调度脚本。
 - `configs/harness/`：不同 Harness 运行模式的配置。
 - `tests/`：自动化测试。
-- `data/`：下载和加工的数据，不纳入 Git。
+- `data/`：官方原始数据与项目加工数据，已纳入 Git；来源和结构见 `data/README.md`。
 - `vendor/`：下载的官方执行器，不纳入 Git，可通过脚本获取。
 - `outputs/`：训练权重、指标、日志、逐条轨迹，不纳入 Git。
 - `docs/`：实验设计、环境和改进说明。

@@ -1,0 +1,2 @@
+# Preserve dataset bytes and provenance hashes across platforms.
+data/** -text
