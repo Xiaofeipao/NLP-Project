@@ -235,3 +235,34 @@ def audit_dataset(directory):
             if Grid.from_dict(row["grid"]).layout_id != row["layout_id"]:
                 raise ValueError("Mismatched layout ID")
     return {s: len(rows) for s, rows in splits.items()}
+
+
+def task_index(directory, split, task):
+    """Select the frozen task subset without generating or replacing examples."""
+    if split not in ("train", "dev") or task not in ("generation", "verification", "repair"):
+        raise ValueError("Expected a train/dev split and a known task")
+    root = Path(directory)
+    manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+    rows = read_jsonl(root / f"{split}.jsonl")
+    selected = [row for row in rows if row["task"] == task]
+    if len(selected) != manifest["counts"][split][task]:
+        raise ValueError("Task count disagrees with frozen manifest")
+    if len({row["id"] for row in selected}) != len(selected):
+        raise ValueError("Duplicate task example IDs")
+    if any(row["layout_id"] not in manifest["layout_splits"][split] for row in selected):
+        raise ValueError("Task subset crosses layout split")
+    return selected
+
+
+def task_index_manifest(directory):
+    """Record source bytes and exact IDs for the first fixed 4000/200 protocol."""
+    root = Path(directory)
+    result = {"source_manifest_sha256": hashlib.sha256((root / "manifest.json").read_bytes()).hexdigest(),
+              "splits": {}}
+    for split in ("train", "dev"):
+        result["splits"][split] = {"source_sha256": hashlib.sha256((root / f"{split}.jsonl").read_bytes()).hexdigest(),
+                                   "tasks": {}}
+        for task in ("generation", "verification", "repair"):
+            rows = task_index(root, split, task)
+            result["splits"][split]["tasks"][task] = {"count": len(rows), "ids": [r["id"] for r in rows]}
+    return result

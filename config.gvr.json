@@ -1,0 +1,14 @@
+{
+  "dataset_root": "data/derived",
+  "task_index": "data/derived/gvr_task_index.json",
+  "generation_base": "outputs/gvr/generation/train/best",
+  "verification_adapter": "outputs/gvr/verification/train/best/verification",
+  "repair_adapter": "outputs/gvr/repair/train/best/repair",
+  "output_root": "outputs/gvr",
+  "evidence": {
+    "gpu_ledger_reconciled": false,
+    "checkpoint_manager_confirmed": false,
+    "baseline_outputs_verified": false
+  },
+  "lora": {"r": 8, "alpha": 16, "dropout": 0.05}
+}
