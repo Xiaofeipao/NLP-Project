@@ -1,0 +1,51 @@
+{
+  "seed": 42,
+  "dataset_root": "data/derived",
+  "output_root": "outputs",
+  "gpu_ledger": "outputs/gpu_ledger.json",
+  "gpu_hours_cap": 20,
+  "model_cache": ".cache/huggingface",
+  "repair_rounds": 3,
+  "models": {
+    "flan_t5_small": {
+      "checkpoint": "google/flan-t5-small",
+      "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+      "manager_confirmed": false,
+      "confirmation_note": "Checkpoint approved for the recorded experiment. Model revisions and training parameters define the reproducible setup.",
+      "user_confirmed": true
+    },
+    "bart_base": {
+      "checkpoint": "facebook/bart-base",
+      "revision": "aadd2ab0ae0c8268c7c9693540e9904811f36177",
+      "manager_confirmed": false,
+      "confirmation_note": "Checkpoint approved for the recorded experiment. Model revisions and training parameters define the reproducible setup.",
+      "user_confirmed": true
+    }
+  },
+  "data": {
+    "train": {
+      "generation": 800,
+      "verification": 2000,
+      "repair": 1200
+    },
+    "dev": {
+      "generation": 40,
+      "verification": 100,
+      "repair": 60
+    },
+    "test_per_set": 200
+  },
+  "training": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 8,
+    "eval_batch_size": 8,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "local_files_only": true
+}

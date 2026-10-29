@@ -2,9 +2,9 @@
 
 ## 当前状态（2026-10-29）
 
-已实现固定数据索引、独立训练入口、LoRA 路由、持久化整路径循环和 B1–B4／候选评测入口。用户报告已在另一 GPU 环境完成 G／V／R 正式训练、58 项测试通过、GPU 正常；ID／OOD 候选修复成功率为 12%／6%，四种端到端流程均为 0%，验证器全部预测 `valid`，生成和修复输出存在重复动作。这些是**用户提供的实验摘要**，不是本仓库可独立重算的结果：本地没有权重、GPU 账本和逐条轨迹。不得把它们与此前基线结果混称。
+G／V／R 正式训练和历史完整评测已完成，原运行的 58 项测试通过。现已收录实际生成底座、两套 LoRA、训练记录、完整预算账本快照、逐条预测及日志压缩包，见 [产物目录](../artifacts/gvr/README.md)。合并逻辑审计更新后，当前 63 项测试通过，并使用实际轨迹完成 CPU 重算：开发集按 Verify 100／Repair 60／Generate 40 的配额，验证 Macro-F1 为 0.3333、修复 7/60（11.7%）、端到端均为 0%；ID／OOD 候选修复保持 12%／6%，端到端均为 0%。验证器全部预测 `valid`。原运行早于当前控制器修复，重算不会重演新控制器或产生新模型输出。
 
-P0 核查：仓库 `main@b433523` 含 `data/derived` 原始任务数据及 manifest，训练 800／2,000／1,200、开发 40／100／60，ID 与 OOD 各 200 条。本机已按固定上游 revision 下载官方执行器，SHA256 `375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4` 与数据 manifest 一致；`vendor/` 按仓库规则不提交。仓库未包含本轮 `outputs/`、模型 checkpoint、`outputs/gpu_ledger.json` 或负责人确认记录。因此剩余 GPU 预算、权重哈希和用户报告的指标尚不能独立核实；默认配置仍拒绝在此环境启动新训练。
+P0 核查：数据索引和官方执行器哈希已核对，实际权重 SHA256、训练记录与历史账本均已归档。默认 `config.gvr.json` 仍不替新克隆声明训练证据齐备；本轮可复用的模型与评测配置位于 `artifacts/gvr/`。账本是历史快照，后续操作必须续记，不得清零。官方执行器 SHA256 为 `375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4`，`vendor/` 仍由下载脚本准备。
 
 ### 本轮逻辑审计
 
@@ -22,7 +22,7 @@ P0 核查：仓库 `main@b433523` 含 `data/derived` 原始任务数据及 manif
 | 评分 | `ppnl/gvr_evaluation.py` | 独立检查最终候选；固定候选 Verify／Repair 与端到端分开汇报 |
 | 入口 | `scripts/run_gvr.py`、`config.gvr.json` | 新输出目录，不覆盖历史结果 |
 
-训练依赖固定 `transformers==4.57.6` 与 `peft==0.18.1`。PEFT 的版本选择依据其 [发布说明](https://github.com/huggingface/peft/releases/tag/v0.18.1) 和 [多适配器 API](https://huggingface.co/docs/peft/v0.18.0.rc0/en/package_reference/peft_model)。在实际 Python 3.11／CUDA 环境中仍需做载入和保存重载验证。当前本机仅有 Python 3.14 和 Transformers 5.12.1，不能据此宣称目标环境的模型测试通过。
+训练依赖固定 `transformers==4.57.6` 与 `peft==0.18.1`。PEFT 的版本选择依据其 [发布说明](https://github.com/huggingface/peft/releases/tag/v0.18.1) 和 [多适配器 API](https://huggingface.co/docs/peft/v0.18.0.rc0/en/package_reference/peft_model)。历史 GPU 运行已完成载入与训练，并在一个固定开发样本上比较了关闭适配器和独立 G 的输出。旧 `verification.json` 不包含新入口才增加的完整开发集诊断，不能混称为 `verify_dev.json`。
 
 ## 启动条件与命令
 
@@ -53,9 +53,11 @@ python scripts/run_gvr.py recompute --split test_ood
 
 ### 2. 补齐训练前证据
 
-从原实验机器取得**完整** `outputs/`，至少包括历史训练产物、模型 checkpoint、`outputs/gpu_ledger.json` 与对应配置快照。逐项核对数据／权重哈希、各训练阶段曝光次数及历史总 GPU 占用；确认共用账本仍低于 20 小时。取得负责人对 `google/flan-t5-small` 固定 revision 的确认记录后，在 `config.json` 中据实填写 `manager_confirmed` 和 `confirmation_note`，并在 `config.gvr.json` 中据实设置三个 P0 证据位。不要创建空账本或复制账本来重置预算。再次运行 `preflight`，要求 `ready_for_training: true`。若课程按累计不同样本计，当前索引复用原 4,000 条，不引入新样本。
+取得完整历史产物后，逐项核对数据／权重哈希、各阶段曝光次数及账本累计占用，确认仍低于 20 小时。项目接受有效用户或负责人对固定 checkpoint 的确认：运行配置保留 `user_confirmed` 或 `manager_confirmed` 与 `confirmation_note`；协议证据使用 `checkpoint_confirmed`，兼容旧 `checkpoint_manager_confirmed`。默认配置不自动声明证据齐备。新克隆首次使用可复制归档账本继续计费；已有账本不得覆盖或清零。再次运行 `preflight`，要求 `ready_for_training: true`。当前索引复用原 4,000 条，不引入新样本。
 
 ### 3. 目标 GPU 环境训练与评测
+
+使用已发布模型直接评测见 [产物说明](../artifacts/gvr/README.md)，无需重新训练。新训练需要预训练缓存：`python scripts/fetch_models.py --config config.json`。确认缓存完整后可启用 `HF_HUB_OFFLINE=1`；逐条推理可设置 `OMP_NUM_THREADS=1`、`MKL_NUM_THREADS=1`，记录线程设置且不跨设置作严格耗时比较。
 
 目标环境需 Python 3.11、CUDA 版 PyTorch、`transformers==4.57.6`、`peft==0.18.1`。先完成每阶段 pilot 并查看其 `training.json`，再运行对应正式训练；G 冻结后才运行 V／R。命令：
 

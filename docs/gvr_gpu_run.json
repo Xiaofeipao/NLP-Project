@@ -1,0 +1,1334 @@
+{
+  "source_commit": "96b9320",
+  "local_source_changes_sha256": "efdab371f88df7a0291030bdf4dd97bd69d64b6cea7181fe7858db86c9d7b107",
+  "training": {
+    "generation": {
+      "train_rows": 800,
+      "dev_rows": 40,
+      "examples_processed": 1600,
+      "optimizer_updates": 100,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_loss": 1.308090948843741
+        },
+        {
+          "epoch": 2,
+          "dev_loss": 1.2219942249693312
+        }
+      ],
+      "adapter": null
+    },
+    "verification": {
+      "train_rows": 2000,
+      "dev_rows": 100,
+      "examples_processed": 4000,
+      "optimizer_updates": 250,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_loss": 0.6088102230556326
+        },
+        {
+          "epoch": 2,
+          "dev_loss": 0.33418458113467664
+        }
+      ],
+      "adapter": {
+        "matched_modules": 48,
+        "trainable_parameters": 344064,
+        "total_parameters": 77305216
+      }
+    },
+    "repair": {
+      "train_rows": 1200,
+      "dev_rows": 60,
+      "examples_processed": 2400,
+      "optimizer_updates": 150,
+      "history": [
+        {
+          "epoch": 1,
+          "dev_loss": 0.8347360838705035
+        },
+        {
+          "epoch": 2,
+          "dev_loss": 0.7006588510612943
+        }
+      ],
+      "adapter": {
+        "matched_modules": 48,
+        "trainable_parameters": 344064,
+        "total_parameters": 77305216
+      }
+    }
+  },
+  "identity": {
+    "identity": {
+      "base_sha256": "84d27c5539fb46d1878b4283a8a48857232eb3347090654d5598797d3b7628e1",
+      "adapters_sha256": {
+        "verification": "6a8fd8021d0714c9bf25b4b0df78e36e1ae3b16bd644b3eebb9d1b3cd30cfc8d",
+        "repair": "c8a9409952ae344f3bf56ad9c1f9bfff19997871139cb445bb1d825e49adeb08"
+      }
+    },
+    "disabled_adapter_matches_base": true,
+    "verification_output": "valid",
+    "repair_output": "down down down down down down down down down down down down down down down down down down down down down down down down down down"
+  },
+  "metrics": {
+    "dev": {
+      "verification": {
+        "n": 160,
+        "macro_f1": 0.23809523809523808,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 110,
+        "success_rate": 0.14545454545454545,
+        "feasibility": 0.5545454545454546,
+        "optimality": 0.14545454545454545,
+        "path_efficiency_on_success": 1.0,
+        "repair_success_rate": 0.14545454545454545
+      },
+      "by_error_type": {
+        "goal_not_reached": {
+          "verification": {
+            "n": 67,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 67,
+            "success_rate": 0.14925373134328357,
+            "feasibility": 0.6567164179104478,
+            "optimality": 0.14925373134328357,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "invalid_action_token": {
+          "verification": {
+            "n": 22,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 22,
+            "success_rate": 0.22727272727272727,
+            "feasibility": 0.6363636363636364,
+            "optimality": 0.22727272727272727,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "obstacle_collision": {
+          "verification": {
+            "n": 12,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 12,
+            "success_rate": 0.0,
+            "feasibility": 0.16666666666666666,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null
+          }
+        },
+        "out_of_bounds": {
+          "verification": {
+            "n": 9,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 9,
+            "success_rate": 0.1111111111111111,
+            "feasibility": 0.1111111111111111,
+            "optimality": 0.1111111111111111,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "valid": {
+          "verification": {
+            "n": 50,
+            "macro_f1": 0.5,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": null,
+            "failure_type_accuracy": null,
+            "joint_error_accuracy": null
+          },
+          "repair": {
+            "n": 0,
+            "success_rate": null,
+            "feasibility": null,
+            "optimality": null,
+            "path_efficiency_on_success": null
+          }
+        }
+      },
+      "direct": {
+        "n": 191,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 1.0,
+        "mean_executor_calls": 0.0,
+        "mean_input_tokens": 83.80104712041884,
+        "mean_output_tokens": 11.010471204188482,
+        "mean_active_seconds": 0.3081308900523492
+      },
+      "self": {
+        "n": 191,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 2.0,
+        "mean_executor_calls": 0.0,
+        "mean_input_tokens": 232.61256544502618,
+        "mean_output_tokens": 13.010471204188482,
+        "mean_active_seconds": 0.42076963350787105
+      },
+      "executor_one": {
+        "n": 191,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 2.0,
+        "mean_executor_calls": 2.0,
+        "mean_input_tokens": 199.7958115183246,
+        "mean_output_tokens": 38.61256544502618,
+        "mean_active_seconds": 1.1590209424083724
+      },
+      "executor_three": {
+        "n": 191,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 4.0,
+        "mean_executor_calls": 4.0,
+        "mean_input_tokens": 566.3664921465969,
+        "mean_output_tokens": 296.6125654450262,
+        "mean_active_seconds": 8.455130890052342
+      },
+      "definitions": {
+        "self_feedback": "model output only; truth used after stop for scoring",
+        "paired_id_ood": "generation grids are paired; candidate corruption differs",
+        "failure_denominator": "all final candidates including malformed output"
+      },
+      "official_executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4"
+    },
+    "test_id": {
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.3333333333333333,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 100,
+        "success_rate": 0.12,
+        "feasibility": 0.49,
+        "optimality": 0.12,
+        "path_efficiency_on_success": 1.0,
+        "repair_success_rate": 0.12
+      },
+      "by_error_type": {
+        "goal_not_reached": {
+          "verification": {
+            "n": 58,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 58,
+            "success_rate": 0.10344827586206896,
+            "feasibility": 0.5689655172413793,
+            "optimality": 0.10344827586206896,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "invalid_action_token": {
+          "verification": {
+            "n": 20,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 20,
+            "success_rate": 0.25,
+            "feasibility": 0.55,
+            "optimality": 0.25,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "obstacle_collision": {
+          "verification": {
+            "n": 14,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 14,
+            "success_rate": 0.07142857142857142,
+            "feasibility": 0.21428571428571427,
+            "optimality": 0.07142857142857142,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "out_of_bounds": {
+          "verification": {
+            "n": 8,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 8,
+            "success_rate": 0.0,
+            "feasibility": 0.25,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null
+          }
+        },
+        "valid": {
+          "verification": {
+            "n": 100,
+            "macro_f1": 0.5,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": null,
+            "failure_type_accuracy": null,
+            "joint_error_accuracy": null
+          },
+          "repair": {
+            "n": 0,
+            "success_rate": null,
+            "feasibility": null,
+            "optimality": null,
+            "path_efficiency_on_success": null
+          }
+        }
+      },
+      "direct": {
+        "n": 200,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 1.0,
+        "mean_executor_calls": 0.0,
+        "mean_input_tokens": 83.15,
+        "mean_output_tokens": 11.01,
+        "mean_active_seconds": 0.17478000000001429
+      },
+      "self": {
+        "n": 200,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 2.0,
+        "mean_executor_calls": 0.0,
+        "mean_input_tokens": 231.31,
+        "mean_output_tokens": 13.01,
+        "mean_active_seconds": 0.23619500000000698
+      },
+      "executor_one": {
+        "n": 200,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 2.0,
+        "mean_executor_calls": 2.0,
+        "mean_input_tokens": 198.515,
+        "mean_output_tokens": 38.605,
+        "mean_active_seconds": 0.6290499999999792
+      },
+      "executor_three": {
+        "n": 200,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 4.0,
+        "mean_executor_calls": 4.0,
+        "mean_input_tokens": 563.82,
+        "mean_output_tokens": 296.605,
+        "mean_active_seconds": 4.578534999999975
+      },
+      "definitions": {
+        "self_feedback": "model output only; truth used after stop for scoring",
+        "paired_id_ood": "generation grids are paired; candidate corruption differs",
+        "failure_denominator": "all final candidates including malformed output"
+      },
+      "official_executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4"
+    },
+    "test_ood": {
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.3333333333333333,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 100,
+        "success_rate": 0.06,
+        "feasibility": 0.41,
+        "optimality": 0.06,
+        "path_efficiency_on_success": 1.0,
+        "repair_success_rate": 0.06
+      },
+      "by_error_type": {
+        "goal_not_reached": {
+          "verification": {
+            "n": 30,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 30,
+            "success_rate": 0.1,
+            "feasibility": 0.6,
+            "optimality": 0.1,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "invalid_action_token": {
+          "verification": {
+            "n": 45,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 45,
+            "success_rate": 0.06666666666666667,
+            "feasibility": 0.4888888888888889,
+            "optimality": 0.06666666666666667,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "obstacle_collision": {
+          "verification": {
+            "n": 14,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 14,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null
+          }
+        },
+        "out_of_bounds": {
+          "verification": {
+            "n": 11,
+            "macro_f1": 0.0,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "repair": {
+            "n": 11,
+            "success_rate": 0.0,
+            "feasibility": 0.09090909090909091,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null
+          }
+        },
+        "valid": {
+          "verification": {
+            "n": 100,
+            "macro_f1": 0.5,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": null,
+            "failure_type_accuracy": null,
+            "joint_error_accuracy": null
+          },
+          "repair": {
+            "n": 0,
+            "success_rate": null,
+            "feasibility": null,
+            "optimality": null,
+            "path_efficiency_on_success": null
+          }
+        }
+      },
+      "direct": {
+        "n": 200,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 1.0,
+        "mean_executor_calls": 0.0,
+        "mean_input_tokens": 83.15,
+        "mean_output_tokens": 11.01,
+        "mean_active_seconds": 0.17579499999998915
+      },
+      "self": {
+        "n": 200,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 2.0,
+        "mean_executor_calls": 0.0,
+        "mean_input_tokens": 231.31,
+        "mean_output_tokens": 13.01,
+        "mean_active_seconds": 0.24634499999995113
+      },
+      "executor_one": {
+        "n": 200,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 2.0,
+        "mean_executor_calls": 2.0,
+        "mean_input_tokens": 198.515,
+        "mean_output_tokens": 38.605,
+        "mean_active_seconds": 0.6754300000000012
+      },
+      "executor_three": {
+        "n": 200,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null,
+        "mean_model_calls": 4.0,
+        "mean_executor_calls": 4.0,
+        "mean_input_tokens": 563.82,
+        "mean_output_tokens": 296.605,
+        "mean_active_seconds": 4.743899999999963
+      },
+      "definitions": {
+        "self_feedback": "model output only; truth used after stop for scoring",
+        "paired_id_ood": "generation grids are paired; candidate corruption differs",
+        "failure_denominator": "all final candidates including malformed output"
+      },
+      "official_executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4"
+    }
+  },
+  "evidence": {
+    "baseline": {
+      "flan_t5_small": {
+        "training_report_sha256": "577ca0306a7be8fa16a902ac431305c22cbad888d07d1ac74dee628df696ad5d",
+        "weights_sha256": "0e042eaeb593ea36e63508fbdb6d2e1af6595be2813caf72ae8e5e9884f377b8",
+        "examples_processed": 8000,
+        "optimizer_updates": 500
+      },
+      "bart_base": {
+        "training_report_sha256": "48d3a47dd4f53bed1f6a2f1b28f3f6de1a29425e97a1f31d2513d02f2745c348",
+        "weights_sha256": "cff601231d3dcfe084d6d8967fd52b9fc1c2b223010b42b74ec787c5a35d9243",
+        "examples_processed": 8000,
+        "optimizer_updates": 500
+      }
+    },
+    "ledger_sha256_before_run": "36df59f6a1360c6988565ebbc267ef583c093ff36593358814d50855accc707f",
+    "gpu_seconds_before_run": 1944.2149999999995,
+    "historical_ledger_runs": 39,
+    "authorization": "Checkpoint approval is recorded in the run configuration.",
+    "data_note": "Published manifest paths were normalized; historical fingerprints are retained, not rewritten."
+  },
+  "gpu_ledger": {
+    "cap_hours": 20,
+    "before_seconds": 1944.2149999999995,
+    "after_seconds": 6691.105999999998,
+    "added_seconds": 4746.890999999999
+  },
+  "protocol": {
+    "dataset_root": "data/derived",
+    "task_index": "data/derived/gvr_task_index.json",
+    "generation_base": "outputs/gvr/generation/train/best",
+    "verification_adapter": "outputs/gvr/verification/train/best/verification",
+    "repair_adapter": "outputs/gvr/repair/train/best/repair",
+    "output_root": "outputs/gvr",
+    "evidence": {
+      "gpu_ledger_reconciled": true,
+      "checkpoint_confirmed": true,
+      "baseline_outputs_verified": true
+    },
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05
+    }
+  },
+  "successful_candidate_repair_examples": [
+    {
+      "split": "test_id",
+      "grid": {
+        "rows": 6,
+        "cols": 6,
+        "obstacles": [
+          [
+            2,
+            1
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "start": [
+          3,
+          4
+        ],
+        "goal": [
+          3,
+          1
+        ]
+      },
+      "id": "test_id-19",
+      "reason": "invalid_action_token",
+      "candidate": "left left jump",
+      "gold_feedback": "invalid | step=3 | reason=invalid_action_token",
+      "model_feedback": "valid",
+      "repair": "left left left"
+    },
+    {
+      "split": "test_id",
+      "grid": {
+        "rows": 6,
+        "cols": 6,
+        "obstacles": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "start": [
+          0,
+          5
+        ],
+        "goal": [
+          0,
+          0
+        ]
+      },
+      "id": "test_id-29",
+      "reason": "invalid_action_token",
+      "candidate": "left left jump left left",
+      "gold_feedback": "invalid | step=3 | reason=invalid_action_token",
+      "model_feedback": "valid",
+      "repair": "left left left left left"
+    }
+  ],
+  "diagnostics": {
+    "dev": {
+      "verification_raw_feedback_counts": {
+        "valid": 160
+      },
+      "direct_failure_reason_counts": {
+        "out_of_bounds": 156,
+        "obstacle_collision": 35
+      }
+    },
+    "test_id": {
+      "verification_raw_feedback_counts": {
+        "valid": 200
+      },
+      "direct_failure_reason_counts": {
+        "out_of_bounds": 159,
+        "obstacle_collision": 41
+      }
+    },
+    "test_ood": {
+      "verification_raw_feedback_counts": {
+        "valid": 200
+      },
+      "direct_failure_reason_counts": {
+        "out_of_bounds": 159,
+        "obstacle_collision": 41
+      }
+    }
+  },
+  "historical_multitask_baseline": {
+    "test_id": {
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.7141352591589558,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.08,
+        "failure_type_accuracy": 0.53,
+        "joint_error_accuracy": 0.07
+      },
+      "repair": {
+        "n": 100,
+        "success_rate": 0.19,
+        "feasibility": 0.46,
+        "optimality": 0.19,
+        "path_efficiency_on_success": 1.0,
+        "repair_success_rate": 0.19
+      },
+      "source_sha256": "8eccb017c5820dc160658cb68799308a1b08930affff241b480715cdd499edef"
+    },
+    "test_ood": {
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.77,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.2,
+        "failure_type_accuracy": 0.54,
+        "joint_error_accuracy": 0.11
+      },
+      "repair": {
+        "n": 100,
+        "success_rate": 0.07,
+        "feasibility": 0.45,
+        "optimality": 0.07,
+        "path_efficiency_on_success": 1.0,
+        "repair_success_rate": 0.07
+      },
+      "source_sha256": "a4f8fcb48dc508473eb7e69812928f6113a22ceb2c4a182fc873aa01521245cb"
+    }
+  },
+  "id_ood_paired_pipeline_outputs_match": true,
+  "runtime": {
+    "dev_cpu_threads": "default",
+    "test_omp_num_threads": 1,
+    "test_mkl_num_threads": 1,
+    "offline_model_loading": true
+  },
+  "limitations": [
+    "Two epochs per stage; no test-driven hyperparameter changes.",
+    "Historical base used all three tasks; new generation base uses only generation rows.",
+    "Development candidate metrics pool verification and repair rows.",
+    "Test splits are reused; no claim of fresh held-out evaluation.",
+    "Wall times describe this run, not a controlled latency benchmark."
+  ],
+  "publication_audit": {
+    "audit_commit": "ffaaf46",
+    "merged_unit_tests_passed": 63,
+    "historical_run_unchanged": true,
+    "recomputed_metrics": {
+      "dev": {
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "predicted_label_counts": {
+            "valid": 100
+          },
+          "all_valid_warning": true
+        },
+        "repair": {
+          "n": 60,
+          "success_rate": 0.11666666666666667,
+          "feasibility": 0.5833333333333334,
+          "optimality": 0.11666666666666667,
+          "path_efficiency_on_success": 1.0,
+          "repair_success_rate": 0.11666666666666667
+        },
+        "by_error_type": {
+          "goal_not_reached": {
+            "verification": {
+              "n": 30,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 37,
+              "success_rate": 0.10810810810810811,
+              "feasibility": 0.6756756756756757,
+              "optimality": 0.10810810810810811,
+              "path_efficiency_on_success": 1.0
+            }
+          },
+          "invalid_action_token": {
+            "verification": {
+              "n": 10,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 12,
+              "success_rate": 0.25,
+              "feasibility": 0.75,
+              "optimality": 0.25,
+              "path_efficiency_on_success": 1.0
+            }
+          },
+          "obstacle_collision": {
+            "verification": {
+              "n": 4,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 8,
+              "success_rate": 0.0,
+              "feasibility": 0.125,
+              "optimality": 0.0,
+              "path_efficiency_on_success": null
+            }
+          },
+          "out_of_bounds": {
+            "verification": {
+              "n": 6,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 3,
+              "success_rate": 0.0,
+              "feasibility": 0.0,
+              "optimality": 0.0,
+              "path_efficiency_on_success": null
+            }
+          },
+          "valid": {
+            "verification": {
+              "n": 50,
+              "macro_f1": 0.5,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": null,
+              "failure_type_accuracy": null,
+              "joint_error_accuracy": null
+            },
+            "repair": {
+              "n": 0,
+              "success_rate": null,
+              "feasibility": null,
+              "optimality": null,
+              "path_efficiency_on_success": null
+            }
+          }
+        },
+        "subset_counts": {
+          "verification": 100,
+          "repair": 60,
+          "generation": 40
+        },
+        "direct": {
+          "n": 40,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "direct_complete": 40
+          },
+          "repeated_action_run_ge_3": 40,
+          "false_valid_accepts": 0,
+          "mean_model_calls": 1.0,
+          "mean_executor_calls": 0.0,
+          "mean_input_tokens": 83.825,
+          "mean_output_tokens": 11.0,
+          "mean_active_seconds": 0.3264749999999822
+        },
+        "self": {
+          "n": 40,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "feedback_valid": 40
+          },
+          "repeated_action_run_ge_3": 40,
+          "false_valid_accepts": 40,
+          "mean_model_calls": 2.0,
+          "mean_executor_calls": 0.0,
+          "mean_input_tokens": 232.65,
+          "mean_output_tokens": 13.0,
+          "mean_active_seconds": 0.47310000000002217
+        },
+        "executor_one": {
+          "n": 40,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "repair_limit": 40
+          },
+          "repeated_action_run_ge_3": 40,
+          "false_valid_accepts": 0,
+          "mean_model_calls": 2.0,
+          "mean_executor_calls": 2.0,
+          "mean_input_tokens": 199.875,
+          "mean_output_tokens": 38.625,
+          "mean_active_seconds": 1.271524999999997
+        },
+        "executor_three": {
+          "n": 40,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "repeated_candidate": 40
+          },
+          "repeated_action_run_ge_3": 40,
+          "false_valid_accepts": 0,
+          "mean_model_calls": 4.0,
+          "mean_executor_calls": 4.0,
+          "mean_input_tokens": 566.6,
+          "mean_output_tokens": 296.625,
+          "mean_active_seconds": 9.33194999999995
+        },
+        "official_executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+        "source": {
+          "dataset_sha256": "6b60713aa88053bacbe2a009c68baf69d51a1f3121390d0aea1c7f256a92bb3a",
+          "candidate_traces_sha256": "1207cf3fca3a8ad46e80612e5292f65f75d82f583e9f88616943c8cdb2455980",
+          "pipeline_traces_sha256": "521ec81f04e7f0efeaad3555687a0d256f134a8d0fbb28738ed652fe668bd833",
+          "method": "CPU recomputation from saved predictions; no model calls"
+        }
+      },
+      "test_id": {
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "predicted_label_counts": {
+            "valid": 200
+          },
+          "all_valid_warning": true
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.12,
+          "feasibility": 0.49,
+          "optimality": 0.12,
+          "path_efficiency_on_success": 1.0,
+          "repair_success_rate": 0.12
+        },
+        "by_error_type": {
+          "goal_not_reached": {
+            "verification": {
+              "n": 58,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 58,
+              "success_rate": 0.10344827586206896,
+              "feasibility": 0.5689655172413793,
+              "optimality": 0.10344827586206896,
+              "path_efficiency_on_success": 1.0
+            }
+          },
+          "invalid_action_token": {
+            "verification": {
+              "n": 20,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 20,
+              "success_rate": 0.25,
+              "feasibility": 0.55,
+              "optimality": 0.25,
+              "path_efficiency_on_success": 1.0
+            }
+          },
+          "obstacle_collision": {
+            "verification": {
+              "n": 14,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 14,
+              "success_rate": 0.07142857142857142,
+              "feasibility": 0.21428571428571427,
+              "optimality": 0.07142857142857142,
+              "path_efficiency_on_success": 1.0
+            }
+          },
+          "out_of_bounds": {
+            "verification": {
+              "n": 8,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 8,
+              "success_rate": 0.0,
+              "feasibility": 0.25,
+              "optimality": 0.0,
+              "path_efficiency_on_success": null
+            }
+          },
+          "valid": {
+            "verification": {
+              "n": 100,
+              "macro_f1": 0.5,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": null,
+              "failure_type_accuracy": null,
+              "joint_error_accuracy": null
+            },
+            "repair": {
+              "n": 0,
+              "success_rate": null,
+              "feasibility": null,
+              "optimality": null,
+              "path_efficiency_on_success": null
+            }
+          }
+        },
+        "subset_counts": {
+          "verification": 200,
+          "repair": 100,
+          "generation": 200
+        },
+        "direct": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "direct_complete": 200
+          },
+          "repeated_action_run_ge_3": 200,
+          "false_valid_accepts": 0,
+          "mean_model_calls": 1.0,
+          "mean_executor_calls": 0.0,
+          "mean_input_tokens": 83.15,
+          "mean_output_tokens": 11.01,
+          "mean_active_seconds": 0.17478000000001429
+        },
+        "self": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "feedback_valid": 200
+          },
+          "repeated_action_run_ge_3": 200,
+          "false_valid_accepts": 200,
+          "mean_model_calls": 2.0,
+          "mean_executor_calls": 0.0,
+          "mean_input_tokens": 231.31,
+          "mean_output_tokens": 13.01,
+          "mean_active_seconds": 0.23619500000000698
+        },
+        "executor_one": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "repair_limit": 200
+          },
+          "repeated_action_run_ge_3": 200,
+          "false_valid_accepts": 0,
+          "mean_model_calls": 2.0,
+          "mean_executor_calls": 2.0,
+          "mean_input_tokens": 198.515,
+          "mean_output_tokens": 38.605,
+          "mean_active_seconds": 0.6290499999999792
+        },
+        "executor_three": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "repeated_candidate": 200
+          },
+          "repeated_action_run_ge_3": 200,
+          "false_valid_accepts": 0,
+          "mean_model_calls": 4.0,
+          "mean_executor_calls": 4.0,
+          "mean_input_tokens": 563.82,
+          "mean_output_tokens": 296.605,
+          "mean_active_seconds": 4.578534999999975
+        },
+        "official_executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+        "source": {
+          "dataset_sha256": "26b5f561b9fd7b3bd5e963b0186abdf0b42cb7da726f20833b229969900220c1",
+          "candidate_traces_sha256": "4d7e88e327f463ebfa5391b9e4e371faefb099d23313a411c58df9946c787438",
+          "pipeline_traces_sha256": "70cdb04e81730b88115ee7e906b51a8a06aeb6bb7f733d0ab0d4c9b767b0a4eb",
+          "method": "CPU recomputation from saved predictions; no model calls"
+        }
+      },
+      "test_ood": {
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "predicted_label_counts": {
+            "valid": 200
+          },
+          "all_valid_warning": true
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.06,
+          "feasibility": 0.41,
+          "optimality": 0.06,
+          "path_efficiency_on_success": 1.0,
+          "repair_success_rate": 0.06
+        },
+        "by_error_type": {
+          "goal_not_reached": {
+            "verification": {
+              "n": 30,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 30,
+              "success_rate": 0.1,
+              "feasibility": 0.6,
+              "optimality": 0.1,
+              "path_efficiency_on_success": 1.0
+            }
+          },
+          "invalid_action_token": {
+            "verification": {
+              "n": 45,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 45,
+              "success_rate": 0.06666666666666667,
+              "feasibility": 0.4888888888888889,
+              "optimality": 0.06666666666666667,
+              "path_efficiency_on_success": 1.0
+            }
+          },
+          "obstacle_collision": {
+            "verification": {
+              "n": 14,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 14,
+              "success_rate": 0.0,
+              "feasibility": 0.0,
+              "optimality": 0.0,
+              "path_efficiency_on_success": null
+            }
+          },
+          "out_of_bounds": {
+            "verification": {
+              "n": 11,
+              "macro_f1": 0.0,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0
+            },
+            "repair": {
+              "n": 11,
+              "success_rate": 0.0,
+              "feasibility": 0.09090909090909091,
+              "optimality": 0.0,
+              "path_efficiency_on_success": null
+            }
+          },
+          "valid": {
+            "verification": {
+              "n": 100,
+              "macro_f1": 0.5,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": null,
+              "failure_type_accuracy": null,
+              "joint_error_accuracy": null
+            },
+            "repair": {
+              "n": 0,
+              "success_rate": null,
+              "feasibility": null,
+              "optimality": null,
+              "path_efficiency_on_success": null
+            }
+          }
+        },
+        "subset_counts": {
+          "verification": 200,
+          "repair": 100,
+          "generation": 200
+        },
+        "direct": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "direct_complete": 200
+          },
+          "repeated_action_run_ge_3": 200,
+          "false_valid_accepts": 0,
+          "mean_model_calls": 1.0,
+          "mean_executor_calls": 0.0,
+          "mean_input_tokens": 83.15,
+          "mean_output_tokens": 11.01,
+          "mean_active_seconds": 0.17579499999998915
+        },
+        "self": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "feedback_valid": 200
+          },
+          "repeated_action_run_ge_3": 200,
+          "false_valid_accepts": 200,
+          "mean_model_calls": 2.0,
+          "mean_executor_calls": 0.0,
+          "mean_input_tokens": 231.31,
+          "mean_output_tokens": 13.01,
+          "mean_active_seconds": 0.24634499999995113
+        },
+        "executor_one": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "repair_limit": 200
+          },
+          "repeated_action_run_ge_3": 200,
+          "false_valid_accepts": 0,
+          "mean_model_calls": 2.0,
+          "mean_executor_calls": 2.0,
+          "mean_input_tokens": 198.515,
+          "mean_output_tokens": 38.605,
+          "mean_active_seconds": 0.6754300000000012
+        },
+        "executor_three": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null,
+          "stop_reason_counts": {
+            "repeated_candidate": 200
+          },
+          "repeated_action_run_ge_3": 200,
+          "false_valid_accepts": 0,
+          "mean_model_calls": 4.0,
+          "mean_executor_calls": 4.0,
+          "mean_input_tokens": 563.82,
+          "mean_output_tokens": 296.605,
+          "mean_active_seconds": 4.743899999999963
+        },
+        "official_executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+        "source": {
+          "dataset_sha256": "c3e5b77f488931c15708ffdd32e88f725cda710f6eb3df517767fe1e390ba80c",
+          "candidate_traces_sha256": "769ec8d4d57bad09c5a9ddc61a17dd21a00586eebb04f80efe47d7d5292dc841",
+          "pipeline_traces_sha256": "7924234e19b418e2ef7d4f8a500dd93e81114e3989c68102f95b747e5e11325f",
+          "method": "CPU recomputation from saved predictions; no model calls"
+        }
+      }
+    }
+  }
+}

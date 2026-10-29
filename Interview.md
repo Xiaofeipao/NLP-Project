@@ -473,7 +473,7 @@ python scripts/run_harness.py resume --run outputs/agent_harness/my_trial
 
 ### 22.3 环境与文档
 
-`requirements.txt` 管理主要 Python 依赖，CUDA Torch 需按运行平台单独安装。`environment.yml` 提供环境模板，使用时应核对 PyTorch 与目标 GPU 的兼容性。`ppnl/__init__.py` 仅包说明。`.gitignore` 排除数据、输出、缓存、虚拟环境与本地记录等。
+`requirements.txt` 管理主要 Python 依赖，CUDA Torch 需按运行平台单独安装。`environment.yml` 提供环境模板，使用时应核对 PyTorch 与目标 GPU 的兼容性。`ppnl/__init__.py` 仅包说明。数据已纳入版本管理；`.gitignore` 排除输出、缓存、虚拟环境与本地记录等。
 
 `README.md` 是项目入口；`docs/environment.md` 说明环境；`docs/experiment_protocol.md` 说明评测与实验安排；`docs/planning_improvement.md`、`docs/planning_v3.md` 和 `docs/harness.md` 分别记录各轮改进。
 
@@ -494,3 +494,25 @@ python scripts/run_harness.py resume --run outputs/agent_harness/my_trial
 - 需要显式搜索和最短路性质：`plan_grid.py` 的 `neural_optimal_astar`，同时保留纯 A* 对照。
 
 历史结果位置为 `outputs/agent_harness/20261023_recovery_id200/results.json` 和 `outputs/agent_harness/20261023_policy_no_revisit_id200/results.json`。这些属于本地实验产物，按 `.gitignore` 不上传；本文件与 `docs/harness.md` 保留结果口径和说明。
+
+## 24. 新增 G／V／R 独立 LoRA 流程
+
+这一版研究整条路径的“生成、验证、修复”，与第 23 节逐步动作策略是独立方案。它不通过逐步合法动作过滤提升成功率，也没有搜索或最短路兜底。
+
+`ppnl/data.py` 新增 `task_index` 与 `task_index_manifest`：从原有 train／dev 数据按任务筛选，检查数量、ID 唯一性和布局归属；`data/derived/gvr_task_index.json` 保存源文件哈希及确切 ID，防止运行时悄悄更换样本。它不生成额外训练数据。
+
+`ppnl/gvr_preflight.py` 检查固定索引、官方执行器哈希、共用 GPU 账本、checkpoint 确认、证据声明及权重文件是否齐备。训练条件和评测条件分别汇报。沿用原项目的有效用户或负责人确认；默认配置不会替运行者声明历史证据已经核实。
+
+`ppnl/gvr_training.py` 的 `train_stage` 是三个任务共用的训练函数。G 从固定版本的预训练 Flan-T5-small 开始，只使用 800 条 generation 数据全参数训练；V 和 R 分别重新加载冻结后的 G，只使用各自的 2,000／1,200 条记录训练独立 LoRA。每个阶段先做小规模 pilot，再正式训练最多两轮，以本任务开发集 loss 选权重。pilot 不给正式训练提供更新后的参数。三阶段正式训练共处理 8,000 次样本、完成 500 次更新；这不是额外 8,000 个不同训练样本。
+
+`ppnl/task_adapters.py` 负责 PEFT 配置、权重哈希和适配器切换。LoRA 注入 T5 注意力的 q／v 投影，检查所有可训练参数都属于当前适配器；V、R 的 `base_identity.json` 必须指向同一 G 权重。生成时关闭全部适配器；验证或修复时只启用对应适配器。载入后由 `verify` 在一个固定开发样本上检查关闭适配器与单独加载 G 的输出是否一致，并保存验证记录。
+
+`ppnl/gvr_harness.py` 复用已有日志、文件锁与状态恢复能力，运行四种整路径流程：`direct` 只生成；`self` 使用模型自己的验证反馈再决定是否修复；`executor_one` 使用真实执行反馈最多修复一次；`executor_three` 最多修复三次。模型请求先持久化计数，再调用模型；达到预算、反馈有效、重复候选或修复次数上限时停止。`self` 的停止决策不读取执行器真值，错误地相信模型“valid”时也会停止；最终独立评分仍判失败。
+
+`ppnl/gvr_evaluation.py` 分开评测固定候选验证／修复与从零生成的端到端流程。它按网格去重，并检查四种流程的首个生成候选逐字一致；最终路径由独立执行器评分。结果包括成功率、可行率、最优率、首错定位、按错误类型指标以及调用和 token 数。当前开发集分别使用 Verify 100、Repair 60、Generate 40 条。历史运行曾错误合并为 160 个验证候选和 191 个生成网格；新增 `ppnl/gvr_audit.py` 从实际保存的预测重算正确子集，同时保留原始口径作为证据。它不会产生新预测或重演更新后的控制器。
+
+`scripts/run_gvr.py` 提供 `index`、`preflight`、`pilot`、`train`、`verify`、`evaluate`、`recompute` 七类命令；`config.gvr.json` 指定权重位置、证据位和 LoRA 参数。训练／评测拒绝覆盖非空结果目录。当前 `verify` 增加完整开发集诊断；旧运行的一条样本检查保存在 `verification.json`，两者需要区别。`tests/test_gvr.py` 还覆盖任务分流、监督标签、停止预算和 CPU 重算。
+
+`scripts/export_gvr_artifacts.py` 将权重和实验记录导出到 `artifacts/gvr/`，移除训练记录中的设备型号，规范相对路径，逐字节验证权重和归档日志。`manifest.json` 记录文件与来源 SHA256；日志无损压缩且省略运行期锁文件。大权重由 Git LFS 管理，完整使用方法见 [产物说明](artifacts/gvr/README.md)。
+
+运行条件和命令见 [GVR 协议](docs/gvr_protocol.md)，实际 GPU 结果见 [本轮实验记录](docs/gvr_gpu_run.md)。旧逐步 Harness 的 99.5% 不能作为这个新流程的成绩；两种方法的训练、控制器与模型调用方式不同。

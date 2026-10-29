@@ -1,0 +1,12 @@
+{
+  "identity": {
+    "base_sha256": "84d27c5539fb46d1878b4283a8a48857232eb3347090654d5598797d3b7628e1",
+    "adapters_sha256": {
+      "verification": "6a8fd8021d0714c9bf25b4b0df78e36e1ae3b16bd644b3eebb9d1b3cd30cfc8d",
+      "repair": "c8a9409952ae344f3bf56ad9c1f9bfff19997871139cb445bb1d825e49adeb08"
+    }
+  },
+  "disabled_adapter_matches_base": true,
+  "verification_output": "valid",
+  "repair_output": "down down down down down down down down down down down down down down down down down down down down down down down down down down"
+}

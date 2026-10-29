@@ -24,6 +24,26 @@ class ScriptedModel:
 
 
 class GVRTests(unittest.TestCase):
+    def test_existing_user_confirmation_is_accepted(self):
+        import json
+        from ppnl.gvr_preflight import preflight
+        root = Path(__file__).resolve().parents[1]
+        config = json.loads((root / "config.json").read_text())
+        protocol = json.loads((root / "config.gvr.json").read_text())
+        config["models"]["flan_t5_small"].update(manager_confirmed=False, user_confirmed=True,
+                                                confirmation_note="User approved this checkpoint")
+        protocol["evidence"] = {"checkpoint_confirmed": True, "baseline_outputs_verified": True,
+                                "gpu_ledger_reconciled": True}
+        result = preflight(config, protocol)
+        self.assertTrue(result["checks"]["checkpoint_confirmation"])
+        self.assertTrue(result["checks"]["evidence_declared"])
+        for note in (None, "", "   "):
+            config["models"]["flan_t5_small"]["confirmation_note"] = note
+            self.assertFalse(preflight(config, protocol)["checks"]["checkpoint_confirmation"])
+        config["models"]["flan_t5_small"]["confirmation_note"] = "Confirmed checkpoint"
+        config["models"]["flan_t5_small"]["user_confirmed"] = False
+        self.assertFalse(preflight(config, protocol)["checks"]["checkpoint_confirmation"])
+
     def setUp(self):
         self.grid = Grid(2, 3, (), (0, 0), (0, 2))
         self.identity = {"base": "test", "verification": "v", "repair": "r"}

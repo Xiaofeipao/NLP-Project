@@ -1,0 +1,189 @@
+{
+  "verification": {
+    "n": 100,
+    "macro_f1": 0.3333333333333333,
+    "format_accuracy": 1.0,
+    "first_error_localization_accuracy": 0.0,
+    "failure_type_accuracy": 0.0,
+    "joint_error_accuracy": 0.0,
+    "predicted_label_counts": {
+      "valid": 100
+    },
+    "all_valid_warning": true
+  },
+  "repair": {
+    "n": 60,
+    "success_rate": 0.11666666666666667,
+    "feasibility": 0.5833333333333334,
+    "optimality": 0.11666666666666667,
+    "path_efficiency_on_success": 1.0,
+    "repair_success_rate": 0.11666666666666667
+  },
+  "by_error_type": {
+    "goal_not_reached": {
+      "verification": {
+        "n": 30,
+        "macro_f1": 0.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 37,
+        "success_rate": 0.10810810810810811,
+        "feasibility": 0.6756756756756757,
+        "optimality": 0.10810810810810811,
+        "path_efficiency_on_success": 1.0
+      }
+    },
+    "invalid_action_token": {
+      "verification": {
+        "n": 10,
+        "macro_f1": 0.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 12,
+        "success_rate": 0.25,
+        "feasibility": 0.75,
+        "optimality": 0.25,
+        "path_efficiency_on_success": 1.0
+      }
+    },
+    "obstacle_collision": {
+      "verification": {
+        "n": 4,
+        "macro_f1": 0.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 8,
+        "success_rate": 0.0,
+        "feasibility": 0.125,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null
+      }
+    },
+    "out_of_bounds": {
+      "verification": {
+        "n": 6,
+        "macro_f1": 0.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 3,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null
+      }
+    },
+    "valid": {
+      "verification": {
+        "n": 50,
+        "macro_f1": 0.5,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": null,
+        "failure_type_accuracy": null,
+        "joint_error_accuracy": null
+      },
+      "repair": {
+        "n": 0,
+        "success_rate": null,
+        "feasibility": null,
+        "optimality": null,
+        "path_efficiency_on_success": null
+      }
+    }
+  },
+  "subset_counts": {
+    "verification": 100,
+    "repair": 60,
+    "generation": 40
+  },
+  "direct": {
+    "n": 40,
+    "success_rate": 0.0,
+    "feasibility": 0.0,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null,
+    "stop_reason_counts": {
+      "direct_complete": 40
+    },
+    "repeated_action_run_ge_3": 40,
+    "false_valid_accepts": 0,
+    "mean_model_calls": 1.0,
+    "mean_executor_calls": 0.0,
+    "mean_input_tokens": 83.825,
+    "mean_output_tokens": 11.0,
+    "mean_active_seconds": 0.3264749999999822
+  },
+  "self": {
+    "n": 40,
+    "success_rate": 0.0,
+    "feasibility": 0.0,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null,
+    "stop_reason_counts": {
+      "feedback_valid": 40
+    },
+    "repeated_action_run_ge_3": 40,
+    "false_valid_accepts": 40,
+    "mean_model_calls": 2.0,
+    "mean_executor_calls": 0.0,
+    "mean_input_tokens": 232.65,
+    "mean_output_tokens": 13.0,
+    "mean_active_seconds": 0.47310000000002217
+  },
+  "executor_one": {
+    "n": 40,
+    "success_rate": 0.0,
+    "feasibility": 0.0,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null,
+    "stop_reason_counts": {
+      "repair_limit": 40
+    },
+    "repeated_action_run_ge_3": 40,
+    "false_valid_accepts": 0,
+    "mean_model_calls": 2.0,
+    "mean_executor_calls": 2.0,
+    "mean_input_tokens": 199.875,
+    "mean_output_tokens": 38.625,
+    "mean_active_seconds": 1.271524999999997
+  },
+  "executor_three": {
+    "n": 40,
+    "success_rate": 0.0,
+    "feasibility": 0.0,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null,
+    "stop_reason_counts": {
+      "repeated_candidate": 40
+    },
+    "repeated_action_run_ge_3": 40,
+    "false_valid_accepts": 0,
+    "mean_model_calls": 4.0,
+    "mean_executor_calls": 4.0,
+    "mean_input_tokens": 566.6,
+    "mean_output_tokens": 296.625,
+    "mean_active_seconds": 9.33194999999995
+  },
+  "official_executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+  "source": {
+    "dataset_sha256": "6b60713aa88053bacbe2a009c68baf69d51a1f3121390d0aea1c7f256a92bb3a",
+    "candidate_traces_sha256": "1207cf3fca3a8ad46e80612e5292f65f75d82f583e9f88616943c8cdb2455980",
+    "pipeline_traces_sha256": "521ec81f04e7f0efeaad3555687a0d256f134a8d0fbb28738ed652fe668bd833",
+    "method": "CPU recomputation from saved predictions; no model calls"
+  }
+}

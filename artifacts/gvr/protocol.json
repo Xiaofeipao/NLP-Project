@@ -1,0 +1,18 @@
+{
+  "dataset_root": "data/derived",
+  "task_index": "data/derived/gvr_task_index.json",
+  "generation_base": "artifacts/gvr/models/generation",
+  "verification_adapter": "artifacts/gvr/models/verification",
+  "repair_adapter": "artifacts/gvr/models/repair",
+  "output_root": "outputs/gvr_replay",
+  "evidence": {
+    "gpu_ledger_reconciled": false,
+    "checkpoint_confirmed": false,
+    "baseline_outputs_verified": false
+  },
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "runs": [
+    {
+      "operation": "smoke:flan_t5_small",
+      "seconds": 11.0,
+      "status": "completed",
+      "started_unix": 1792334989.2799451
+    },
+    {
+      "operation": "smoke:bart_base",
+      "seconds": 8.6099999999999,
+      "status": "completed",
+      "started_unix": 1792335024.0905206
+    },
+    {
+      "operation": "pilot:flan_t5_small",
+      "seconds": 17.8900000000001,
+      "status": "completed",
+      "started_unix": 1792335327.3203185
+    },
+    {
+      "operation": "train:flan_t5_small",
+      "seconds": 115.75,
+      "status": "completed",
+      "started_unix": 1792335348.974753
+    },
+    {
+      "operation": "evaluate:flan_t5_small:dev",
+      "seconds": 13.093000000000075,
+      "status": "completed",
+      "started_unix": 1792335468.657281
+    },
+    {
+      "operation": "pilot:bart_base",
+      "seconds": 12.311999999999898,
+      "status": "completed",
+      "started_unix": 1792335485.8154204
+    },
+    {
+      "operation": "train:bart_base",
+      "seconds": 93.8900000000001,
+      "status": "completed",
+      "started_unix": 1792335501.8940902
+    },
+    {
+      "operation": "evaluate:bart_base:dev",
+      "seconds": 13.702999999999975,
+      "status": "completed",
+      "started_unix": 1792335599.9172122
+    },
+    {
+      "operation": "evaluate:flan_t5_small:test_id",
+      "seconds": 23.062000000000126,
+      "status": "completed",
+      "started_unix": 1792335617.5629954
+    },
+    {
+      "operation": "evaluate:bart_base:test_id",
+      "seconds": 14.983999999999924,
+      "status": "completed",
+      "started_unix": 1792335644.4541924
+    },
+    {
+      "operation": "evaluate:flan_t5_small:test_id",
+      "seconds": 38.687999999999874,
+      "status": "completed",
+      "started_unix": 1792335662.5842793
+    },
+    {
+      "operation": "evaluate:flan_t5_small:test_ood",
+      "seconds": 38.6099999999999,
+      "status": "completed",
+      "started_unix": 1792335704.417126
+    },
+    {
+      "operation": "pilot:flan_t5_small",
+      "seconds": 16.188000000000102,
+      "status": "completed",
+      "started_unix": 1792336582.1706722
+    },
+    {
+      "operation": "train:flan_t5_small",
+      "seconds": 146.75,
+      "status": "completed",
+      "started_unix": 1792336602.028938
+    },
+    {
+      "operation": "policy_evaluation:dev",
+      "seconds": 13.936999999999898,
+      "status": "completed",
+      "started_unix": 1792336752.5500317
+    },
+    {
+      "operation": "policy_evaluation:test_id",
+      "seconds": 16.625,
+      "status": "completed",
+      "started_unix": 1792336770.6786275
+    },
+    {
+      "operation": "policy_evaluation:test_ood",
+      "seconds": 17.452999999999975,
+      "status": "completed",
+      "started_unix": 1792336791.6735132
+    },
+    {
+      "operation": "plan_grid:neural_best_first",
+      "seconds": 10.733999999999924,
+      "status": "completed",
+      "started_unix": 1792336849.8904026
+    },
+    {
+      "operation": "pilot:flan_t5_small",
+      "seconds": 11.858999999999924,
+      "status": "completed",
+      "started_unix": 1792337505.4828753
+    },
+    {
+      "operation": "train:flan_t5_small",
+      "seconds": 122.5630000000001,
+      "status": "completed",
+      "started_unix": 1792337521.016019
+    },
+    {
+      "operation": "policy_evaluation:dev",
+      "seconds": 11.547000000000025,
+      "status": "completed",
+      "started_unix": 1792337647.0853522
+    },
+    {
+      "operation": "pilot:flan_t5_small",
+      "seconds": 12.047000000000025,
+      "status": "completed",
+      "started_unix": 1792337662.1377351
+    },
+    {
+      "operation": "train:flan_t5_small",
+      "seconds": 112.57800000000043,
+      "status": "completed",
+      "started_unix": 1792337678.0040216
+    },
+    {
+      "operation": "policy_evaluation:dev",
+      "seconds": 11.063000000000102,
+      "status": "completed",
+      "started_unix": 1792337794.0036979
+    },
+    {
+      "operation": "policy_evaluation:dev",
+      "seconds": 12.344000000000051,
+      "status": "completed",
+      "started_unix": 1792337808.7516
+    },
+    {
+      "operation": "policy_evaluation:test_id",
+      "seconds": 15.733999999999469,
+      "status": "completed",
+      "started_unix": 1792337824.6453233
+    },
+    {
+      "operation": "policy_evaluation:test_ood",
+      "seconds": 17.092999999999847,
+      "status": "completed",
+      "started_unix": 1792337844.3164523
+    },
+    {
+      "operation": "plan_grid:neural_optimal_astar",
+      "seconds": 8.70299999999952,
+      "status": "completed",
+      "started_unix": 1792337889.2690146
+    },
+    {
+      "operation": "harness:dev+test_id+test_ood",
+      "seconds": 43.9369999999999,
+      "status": "completed",
+      "started_unix": 1792660072.4050167
+    },
+    {
+      "operation": "agent_harness",
+      "seconds": 51.21899999999994,
+      "status": "completed",
+      "started_unix": 1792769132.9266727
+    },
+    {
+      "operation": "agent_harness",
+      "seconds": 19.343000000000075,
+      "status": "completed",
+      "started_unix": 1792769195.7753668
+    },
+    {
+      "operation": "harness:dev+test_id+test_ood",
+      "seconds": 37.90600000000006,
+      "status": "completed",
+      "started_unix": 1792769223.2154891
+    },
+    {
+      "operation": "agent_harness",
+      "seconds": 40.0150000000001,
+      "status": "completed",
+      "started_unix": 1792769674.3888927
+    },
+    {
+      "operation": "compare_harness:repair:dev",
+      "seconds": 493.047,
+      "status": "completed",
+      "started_unix": 1792769728.7523558
+    },
+    {
+      "operation": "compare_harness:repair_policy:dev",
+      "seconds": 12.734000000000151,
+      "status": "completed",
+      "started_unix": 1792770222.2941134
+    },
+    {
+      "operation": "compare_harness:policy:dev",
+      "seconds": 4.765999999999849,
+      "status": "completed",
+      "started_unix": 1792770235.324735
+    },
+    {
+      "operation": "compare_harness:repair_policy:test_id",
+      "seconds": 198.79700000000003,
+      "status": "completed",
+      "started_unix": 1792770604.7681143
+    },
+    {
+      "operation": "compare_harness:policy:test_id",
+      "seconds": 38.172000000000025,
+      "status": "completed",
+      "started_unix": 1792770803.7939026
+    },
+    {
+      "operation": "compare_harness:policy:test_id",
+      "seconds": 45.46900000000005,
+      "status": "completed",
+      "started_unix": 1792770939.919392
+    },
+    {
+      "operation": "gvr:generation:pilot",
+      "seconds": 36.483999999999924,
+      "status": "completed",
+      "started_unix": 1793263723.6300378
+    },
+    {
+      "operation": "gvr:generation:train",
+      "seconds": 29.843000000000075,
+      "status": "completed",
+      "started_unix": 1793263783.2994392
+    },
+    {
+      "operation": "gvr:verification:pilot",
+      "seconds": 8.297000000000025,
+      "status": "completed",
+      "started_unix": 1793263849.7430024
+    },
+    {
+      "operation": "gvr:verification:train",
+      "seconds": 81.71899999999982,
+      "status": "completed",
+      "started_unix": 1793263893.4016244
+    },
+    {
+      "operation": "gvr:repair:pilot",
+      "seconds": 12.765999999999849,
+      "status": "completed",
+      "started_unix": 1793263994.2640665
+    },
+    {
+      "operation": "gvr:repair:train",
+      "seconds": 55.51599999999985,
+      "status": "completed",
+      "started_unix": 1793264023.0685112
+    },
+    {
+      "operation": "gvr:verify",
+      "seconds": 14.063000000000102,
+      "status": "completed",
+      "started_unix": 1793264105.896205
+    },
+    {
+      "operation": "gvr:evaluate:dev",
+      "seconds": 2076.281,
+      "status": "completed",
+      "started_unix": 1793264124.051345
+    },
+    {
+      "operation": "gvr:evaluate:test_id",
+      "seconds": 1193.25,
+      "status": "completed",
+      "started_unix": 1793266273.9449673
+    },
+    {
+      "operation": "gvr:evaluate:test_ood",
+      "seconds": 1238.6719999999996,
+      "status": "completed",
+      "started_unix": 1793267470.1594923
+    }
+  ]
+}

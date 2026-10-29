@@ -1,0 +1,41 @@
+{
+  "stage": "generation",
+  "pilot": false,
+  "train_rows": 800,
+  "dev_rows": 40,
+  "examples_processed": 1600,
+  "optimizer_updates": 100,
+  "history": [
+    {
+      "epoch": 1,
+      "dev_loss": 1.308090948843741
+    },
+    {
+      "epoch": 2,
+      "dev_loss": 1.2219942249693312
+    }
+  ],
+  "source_checkpoint": "google/flan-t5-small",
+  "source_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+  "generation_base_sha256": null,
+  "task_index_source_sha256": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+  "lengths": {
+    "max_input_tokens": 94,
+    "max_target_tokens": 12
+  },
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 8,
+    "eval_batch_size": 8,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "adapter": null,
+  "peak_allocated_bytes": 1840989184,
+  "elapsed_seconds": 20.587942700000212
+}

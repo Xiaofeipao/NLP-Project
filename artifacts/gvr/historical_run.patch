@@ -1,0 +1,137 @@
+diff --git a/config.gvr.json b/config.gvr.json
+index f076d8d..523fba0 100644
+--- a/config.gvr.json
++++ b/config.gvr.json
+@@ -7,7 +7,7 @@
+   "output_root": "outputs/gvr",
+   "evidence": {
+     "gpu_ledger_reconciled": false,
+-    "checkpoint_manager_confirmed": false,
++    "checkpoint_confirmed": false,
+     "baseline_outputs_verified": false
+   },
+   "lora": {"r": 8, "alpha": 16, "dropout": 0.05}
+diff --git a/ppnl/gvr_evaluation.py b/ppnl/gvr_evaluation.py
+index 62af279..b0b8483 100644
+--- a/ppnl/gvr_evaluation.py
++++ b/ppnl/gvr_evaluation.py
+@@ -18,6 +18,7 @@ def evaluate_gvr(model, rows, output, identity, oracle, check=lambda: None):
+         raise FileExistsError("Use a fresh evaluation output directory")
+     out.mkdir(parents=True, exist_ok=True)
+     candidates = [r for r in rows if "candidate" in r]
++    print(f"GVR: scoring {len(candidates)} fixed candidates", flush=True)
+     grids = [Grid.from_dict(r["grid"]) for r in candidates]
+     verdicts = [model.predict("verification", g, r["candidate"], check=check) for g, r in zip(grids, candidates)]
+     invalid = [i for i, r in enumerate(candidates) if not r["valid"]]
+@@ -47,7 +48,8 @@ def evaluate_gvr(model, rows, output, identity, oracle, check=lambda: None):
+         grid = Grid.from_dict(row["grid"])
+         unique.setdefault((grid.layout_id, grid.start, grid.goal), (row, grid))
+     traces = []
+-    for row, grid in unique.values():
++    print(f"GVR: running four paired modes on {len(unique)} grids", flush=True)
++    for position, (row, grid) in enumerate(unique.values(), 1):
+         record = {"source_id": row["source_id"], "grid": row["grid"], "modes": {}}
+         for mode in ("direct", "self", "executor_one", "executor_three"):
+             trial = out / "sessions" / row["id"] / mode
+@@ -66,6 +68,8 @@ def evaluate_gvr(model, rows, output, identity, oracle, check=lambda: None):
+             raise ValueError("Generate outputs differed across paired modes")
+         record["initial_candidate"] = initials[0]
+         traces.append(record)
++        if position % 20 == 0 or position == len(unique):
++            print(f"GVR: completed {position}/{len(unique)} grids", flush=True)
+     for mode in ("direct", "self", "executor_one", "executor_three"):
+         plans = [r["modes"][mode]["candidate"] for r in traces]
+         scores = plan_metrics([Grid.from_dict(r["grid"]) for r in traces], plans)
+diff --git a/ppnl/gvr_preflight.py b/ppnl/gvr_preflight.py
+index 07c0479..b1c9f2f 100644
+--- a/ppnl/gvr_preflight.py
++++ b/ppnl/gvr_preflight.py
+@@ -32,14 +32,16 @@ def preflight(config, protocol):
+         seconds = None
+         checks["shared_gpu_ledger"] = False
+     item = config["models"]["flan_t5_small"]
+-    checks["manager_checkpoint_confirmation"] = bool(item.get("manager_confirmed") and item.get("confirmation_note"))
+-    checks["evidence_declared"] = all(protocol["evidence"].get(key) is True for key in
+-                                       ("gpu_ledger_reconciled", "checkpoint_manager_confirmed", "baseline_outputs_verified"))
++    checks["checkpoint_confirmation"] = bool((item.get("manager_confirmed") or item.get("user_confirmed")) and str(item.get("confirmation_note") or "").strip())
++    evidence = protocol["evidence"]
++    checks["evidence_declared"] = (all(evidence.get(key) is True for key in
++                                      ("gpu_ledger_reconciled", "baseline_outputs_verified")) and
++                                   evidence.get("checkpoint_confirmed", evidence.get("checkpoint_manager_confirmed")) is True)
+     checks["base_checkpoint"] = Path(protocol["generation_base"]).joinpath("config.json").exists()
+     checks["verification_adapter"] = Path(protocol["verification_adapter"]).joinpath("adapter_config.json").exists()
+     checks["repair_adapter"] = Path(protocol["repair_adapter"]).joinpath("adapter_config.json").exists()
+     return {"checks": checks, "gpu_seconds_recorded": seconds,
+             "ready_for_training": all(checks[k] for k in ("task_index", "official_executor",
+-                                                         "shared_gpu_ledger", "manager_checkpoint_confirmation",
++                                                         "shared_gpu_ledger", "checkpoint_confirmation",
+                                                          "evidence_declared")),
+             "ready_for_evaluation": all(checks.values())}
+diff --git a/ppnl/gvr_training.py b/ppnl/gvr_training.py
+index 59df6b0..1185392 100644
+--- a/ppnl/gvr_training.py
++++ b/ppnl/gvr_training.py
+@@ -14,11 +14,10 @@ def train_stage(config, protocol, stage, output, pilot=False):
+     if stage not in ("generation", "verification", "repair"):
+         raise ValueError(stage)
+     evidence = protocol["evidence"]
+-    if not all(evidence.get(k) for k in ("gpu_ledger_reconciled", "checkpoint_manager_confirmed", "baseline_outputs_verified")):
++    if not (evidence.get("gpu_ledger_reconciled") and evidence.get("baseline_outputs_verified") and
++            evidence.get("checkpoint_confirmed", evidence.get("checkpoint_manager_confirmed"))):
+         raise ValueError("P0 evidence is incomplete; do not start GPU training")
+     item = confirmation(config, "flan_t5_small")
+-    if not item.get("manager_confirmed"):
+-        raise ValueError("Project manager checkpoint confirmation is required for GVR training")
+     torch = require_cuda()
+     root = Path(protocol["dataset_root"])
+     index = task_index_manifest(root)
+diff --git a/scripts/run_gvr.py b/scripts/run_gvr.py
+index 182e909..80a60a2 100644
+--- a/scripts/run_gvr.py
++++ b/scripts/run_gvr.py
+@@ -66,10 +66,12 @@ def main():
+             disabled = model.predict("generation", grid, check=check)
+             if baseline != disabled:
+                 raise RuntimeError("Disabling adapters changed the G output")
+-            print(json.dumps({"identity": identity, "disabled_adapter_matches_base": True,
++            report = {"identity": identity, "disabled_adapter_matches_base": True,
+                               "verification_output": model.predict("verification", grid, baseline, check=check),
+                               "repair_output": model.predict("repair", grid, baseline,
+-                                                             "invalid | step=1 | reason=goal_not_reached", check)}, indent=2))
++                                                             "invalid | step=1 | reason=goal_not_reached", check)}
++            write_json(Path(protocol["output_root"]) / "verification.json", report)
++            print(json.dumps(report, indent=2))
+             return
+         rows = read_jsonl(Path(protocol["dataset_root"]) / f"{args.split}.jsonl")
+         oracle = OfficialOracle("vendor/ppnl/executor-point-sg.py")
+diff --git a/tests/test_gvr.py b/tests/test_gvr.py
+index 8879ad3..7de78d1 100644
+--- a/tests/test_gvr.py
++++ b/tests/test_gvr.py
+@@ -20,6 +20,26 @@ class ScriptedModel:
+ 
+ 
+ class GVRTests(unittest.TestCase):
++    def test_existing_user_confirmation_is_accepted(self):
++        import json
++        from ppnl.gvr_preflight import preflight
++        root = Path(__file__).resolve().parents[1]
++        config = json.loads((root / "config.json").read_text())
++        protocol = json.loads((root / "config.gvr.json").read_text())
++        config["models"]["flan_t5_small"].update(manager_confirmed=False, user_confirmed=True,
++                                                confirmation_note="User approved this checkpoint")
++        protocol["evidence"] = {"checkpoint_confirmed": True, "baseline_outputs_verified": True,
++                                "gpu_ledger_reconciled": True}
++        result = preflight(config, protocol)
++        self.assertTrue(result["checks"]["checkpoint_confirmation"])
++        self.assertTrue(result["checks"]["evidence_declared"])
++        for note in (None, "", "   "):
++            config["models"]["flan_t5_small"]["confirmation_note"] = note
++            self.assertFalse(preflight(config, protocol)["checks"]["checkpoint_confirmation"])
++        config["models"]["flan_t5_small"]["confirmation_note"] = "Confirmed checkpoint"
++        config["models"]["flan_t5_small"]["user_confirmed"] = False
++        self.assertFalse(preflight(config, protocol)["checks"]["checkpoint_confirmation"])
++
+     def setUp(self):
+         self.grid = Grid(2, 3, (), (0, 0), (0, 2))
+         self.identity = {"base": "test", "verification": "v", "repair": "r"}

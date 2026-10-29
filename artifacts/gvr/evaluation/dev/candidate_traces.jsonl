@@ -1,0 +1,160 @@
+{"id": "dev-verification-16", "reason": null, "candidate": "up down left left down left left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-37", "reason": "goal_not_reached", "candidate": "up up up left", "gold_feedback": "invalid | step=5 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up up left"}
+{"id": "dev-repair-48", "reason": "invalid_action_token", "candidate": "jump left left", "gold_feedback": "invalid | step=1 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up left left left"}
+{"id": "dev-verification-66", "reason": null, "candidate": "down left left left up left up", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-75", "reason": "out_of_bounds", "candidate": "up left left left left left up left", "gold_feedback": "invalid | step=8 | reason=out_of_bounds", "model_feedback": "valid", "repair": "up left left left left left left left left left left left left left left left left"}
+{"id": "dev-verification-25", "reason": "out_of_bounds", "candidate": "down down down down down left left left", "gold_feedback": "invalid | step=8 | reason=out_of_bounds", "model_feedback": "valid", "repair": "down down down down down left left left left"}
+{"id": "dev-verification-83", "reason": "goal_not_reached", "candidate": "left left", "gold_feedback": "invalid | step=3 | reason=goal_not_reached", "model_feedback": "valid", "repair": "left left left"}
+{"id": "dev-repair-47", "reason": "goal_not_reached", "candidate": "", "gold_feedback": "invalid | step=1 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-86", "reason": null, "candidate": "left left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-41", "reason": "obstacle_collision", "candidate": "up up up right up up left", "gold_feedback": "invalid | step=6 | reason=obstacle_collision", "model_feedback": "valid", "repair": "up up up up up right up up left"}
+{"id": "dev-verification-68", "reason": null, "candidate": "up down down left left up left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-37", "reason": "goal_not_reached", "candidate": "left", "gold_feedback": "invalid | step=2 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-46", "reason": null, "candidate": "down right right right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-29", "reason": "invalid_action_token", "candidate": "down jump left left", "gold_feedback": "invalid | step=2 | reason=invalid_action_token", "model_feedback": "valid", "repair": "down down left left"}
+{"id": "dev-verification-97", "reason": "goal_not_reached", "candidate": "down right right right right", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down right right right right right"}
+{"id": "dev-verification-91", "reason": "goal_not_reached", "candidate": "up up up", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up up"}
+{"id": "dev-verification-70", "reason": null, "candidate": "up up up left up up", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-7", "reason": "goal_not_reached", "candidate": "", "gold_feedback": "invalid | step=1 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-22", "reason": null, "candidate": "left left left down down left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-56", "reason": "goal_not_reached", "candidate": "up up up", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up up"}
+{"id": "dev-verification-55", "reason": "goal_not_reached", "candidate": "down down down left", "gold_feedback": "invalid | step=5 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down left left"}
+{"id": "dev-repair-59", "reason": "invalid_action_token", "candidate": "up jump up up right right right", "gold_feedback": "invalid | step=2 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up up up right right right right"}
+{"id": "dev-repair-57", "reason": "goal_not_reached", "candidate": "left left left", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "left left left left"}
+{"id": "dev-repair-20", "reason": "goal_not_reached", "candidate": "up up left up up left up down", "gold_feedback": "invalid | step=9 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left up up up left up up up up"}
+{"id": "dev-verification-18", "reason": null, "candidate": "down left down down", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-16", "reason": "goal_not_reached", "candidate": "", "gold_feedback": "invalid | step=1 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-96", "reason": null, "candidate": "down up down down right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-15", "reason": "goal_not_reached", "candidate": "down left down right", "gold_feedback": "invalid | step=5 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down left left down left"}
+{"id": "dev-repair-43", "reason": "goal_not_reached", "candidate": "right up up", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up up"}
+{"id": "dev-repair-44", "reason": "out_of_bounds", "candidate": "up right right right", "gold_feedback": "invalid | step=1 | reason=out_of_bounds", "model_feedback": "valid", "repair": "up right right right right"}
+{"id": "dev-repair-25", "reason": "goal_not_reached", "candidate": "left up up left left", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left left"}
+{"id": "dev-repair-52", "reason": "obstacle_collision", "candidate": "up right right down right down", "gold_feedback": "invalid | step=4 | reason=obstacle_collision", "model_feedback": "valid", "repair": "up right right right right right"}
+{"id": "dev-verification-29", "reason": "invalid_action_token", "candidate": "up left up up jump", "gold_feedback": "invalid | step=5 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up up up up"}
+{"id": "dev-verification-6", "reason": null, "candidate": "up left left left left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-45", "reason": "obstacle_collision", "candidate": "left left down left down", "gold_feedback": "invalid | step=3 | reason=obstacle_collision", "model_feedback": "valid", "repair": "left left left left down left"}
+{"id": "dev-verification-10", "reason": null, "candidate": "up up right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-10", "reason": "goal_not_reached", "candidate": "right right up right up", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "right right up right up"}
+{"id": "dev-verification-5", "reason": "out_of_bounds", "candidate": "up right right right right right", "gold_feedback": "invalid | step=6 | reason=out_of_bounds", "model_feedback": "valid", "repair": "up right right right right right right"}
+{"id": "dev-repair-0", "reason": "out_of_bounds", "candidate": "up down down", "gold_feedback": "invalid | step=1 | reason=out_of_bounds", "model_feedback": "valid", "repair": "up up up"}
+{"id": "dev-verification-48", "reason": null, "candidate": "left right left left left up up", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-74", "reason": null, "candidate": "down right down right right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-26", "reason": null, "candidate": "right down right down right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-38", "reason": "invalid_action_token", "candidate": "left down down down jump down right", "gold_feedback": "invalid | step=5 | reason=invalid_action_token", "model_feedback": "valid", "repair": "down down down down down right right"}
+{"id": "dev-verification-90", "reason": null, "candidate": "down down right right right up up up right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-35", "reason": "out_of_bounds", "candidate": "up up up left left left left", "gold_feedback": "invalid | step=7 | reason=out_of_bounds", "model_feedback": "valid", "repair": "up up up left left left left left"}
+{"id": "dev-repair-53", "reason": "goal_not_reached", "candidate": "left", "gold_feedback": "invalid | step=2 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-repair-4", "reason": "obstacle_collision", "candidate": "right down down down right right right right right", "gold_feedback": "invalid | step=1 | reason=obstacle_collision", "model_feedback": "valid", "repair": "down down down right right right right right right"}
+{"id": "dev-verification-20", "reason": null, "candidate": "up down down left left up left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-42", "reason": null, "candidate": "down down down right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-35", "reason": "goal_not_reached", "candidate": "up down up left", "gold_feedback": "invalid | step=5 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up up left"}
+{"id": "dev-repair-46", "reason": "goal_not_reached", "candidate": "down left down down down left", "gold_feedback": "invalid | step=7 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down down down left"}
+{"id": "dev-repair-23", "reason": "goal_not_reached", "candidate": "left left left", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "left left left left"}
+{"id": "dev-verification-14", "reason": null, "candidate": "up right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-40", "reason": null, "candidate": "up down up up left up up left left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-60", "reason": null, "candidate": "up down down down", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-31", "reason": "out_of_bounds", "candidate": "up left left", "gold_feedback": "invalid | step=3 | reason=out_of_bounds", "model_feedback": "valid", "repair": "up left left left"}
+{"id": "dev-repair-54", "reason": "goal_not_reached", "candidate": "down up down right", "gold_feedback": "invalid | step=5 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down up up right"}
+{"id": "dev-repair-51", "reason": "obstacle_collision", "candidate": "up up", "gold_feedback": "invalid | step=1 | reason=obstacle_collision", "model_feedback": "valid", "repair": "up up"}
+{"id": "dev-verification-94", "reason": null, "candidate": "down right right right right up", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-54", "reason": null, "candidate": "down left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-32", "reason": "goal_not_reached", "candidate": "left", "gold_feedback": "invalid | step=2 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-28", "reason": null, "candidate": "up down left down down down left left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-93", "reason": "goal_not_reached", "candidate": "up right right up right", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up right right up right"}
+{"id": "dev-verification-85", "reason": "goal_not_reached", "candidate": "down down up down down down right right", "gold_feedback": "invalid | step=9 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down down down down right right"}
+{"id": "dev-verification-67", "reason": "goal_not_reached", "candidate": "up up up", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up up"}
+{"id": "dev-repair-27", "reason": "goal_not_reached", "candidate": "down", "gold_feedback": "invalid | step=2 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down"}
+{"id": "dev-verification-15", "reason": "out_of_bounds", "candidate": "up up up right right", "gold_feedback": "invalid | step=5 | reason=out_of_bounds", "model_feedback": "valid", "repair": "up up up right right right"}
+{"id": "dev-repair-1", "reason": "obstacle_collision", "candidate": "right right right right", "gold_feedback": "invalid | step=2 | reason=obstacle_collision", "model_feedback": "valid", "repair": "right right right right right"}
+{"id": "dev-verification-89", "reason": "invalid_action_token", "candidate": "up up left left jump", "gold_feedback": "invalid | step=5 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-repair-2", "reason": "goal_not_reached", "candidate": "up up up", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up up"}
+{"id": "dev-verification-65", "reason": "obstacle_collision", "candidate": "right right left up", "gold_feedback": "invalid | step=4 | reason=obstacle_collision", "model_feedback": "valid", "repair": "right right right"}
+{"id": "dev-verification-58", "reason": null, "candidate": "up up up up right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-8", "reason": "invalid_action_token", "candidate": "up up up right jump right", "gold_feedback": "invalid | step=5 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up up up right right right"}
+{"id": "dev-repair-17", "reason": "goal_not_reached", "candidate": "down left", "gold_feedback": "invalid | step=3 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down left left"}
+{"id": "dev-repair-36", "reason": "goal_not_reached", "candidate": "", "gold_feedback": "invalid | step=1 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-78", "reason": null, "candidate": "up up up up up", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-61", "reason": "goal_not_reached", "candidate": "down left left up left", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down left left left left"}
+{"id": "dev-repair-13", "reason": "obstacle_collision", "candidate": "left down down left", "gold_feedback": "invalid | step=4 | reason=obstacle_collision", "model_feedback": "valid", "repair": "down down left left"}
+{"id": "dev-verification-82", "reason": null, "candidate": "up right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-50", "reason": "goal_not_reached", "candidate": "right down right right right", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "right right right right right"}
+{"id": "dev-verification-4", "reason": null, "candidate": "up down down right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-84", "reason": null, "candidate": "up down right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-77", "reason": "goal_not_reached", "candidate": "", "gold_feedback": "invalid | step=1 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-49", "reason": "invalid_action_token", "candidate": "up right jump down right right", "gold_feedback": "invalid | step=3 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up right right right right"}
+{"id": "dev-verification-38", "reason": null, "candidate": "up up left left left left left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-32", "reason": null, "candidate": "up down up up right right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-63", "reason": "goal_not_reached", "candidate": "down down down right", "gold_feedback": "invalid | step=5 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down right"}
+{"id": "dev-verification-23", "reason": "goal_not_reached", "candidate": "right down down", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down down down"}
+{"id": "dev-repair-11", "reason": "obstacle_collision", "candidate": "right right right", "gold_feedback": "invalid | step=1 | reason=obstacle_collision", "model_feedback": "valid", "repair": "right right right right"}
+{"id": "dev-verification-76", "reason": null, "candidate": "right left right up up up up up left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-30", "reason": "goal_not_reached", "candidate": "up left right", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up left left left"}
+{"id": "dev-repair-19", "reason": "invalid_action_token", "candidate": "down down down left left jump left", "gold_feedback": "invalid | step=6 | reason=invalid_action_token", "model_feedback": "valid", "repair": "down down down left left left"}
+{"id": "dev-verification-79", "reason": "invalid_action_token", "candidate": "down down down jump left left down", "gold_feedback": "invalid | step=4 | reason=invalid_action_token", "model_feedback": "valid", "repair": "down down down down left left left"}
+{"id": "dev-verification-53", "reason": "goal_not_reached", "candidate": "down left left", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down left left left"}
+{"id": "dev-repair-42", "reason": "goal_not_reached", "candidate": "left left", "gold_feedback": "invalid | step=3 | reason=goal_not_reached", "model_feedback": "valid", "repair": "left left left"}
+{"id": "dev-verification-30", "reason": null, "candidate": "up left left left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-40", "reason": "goal_not_reached", "candidate": "up left right down", "gold_feedback": "invalid | step=5 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up left left left"}
+{"id": "dev-verification-57", "reason": "goal_not_reached", "candidate": "", "gold_feedback": "invalid | step=1 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-73", "reason": "goal_not_reached", "candidate": "down right right", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down right right right"}
+{"id": "dev-verification-2", "reason": null, "candidate": "up left left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-12", "reason": "goal_not_reached", "candidate": "down left left", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down left left left"}
+{"id": "dev-repair-58", "reason": "invalid_action_token", "candidate": "up right jump", "gold_feedback": "invalid | step=3 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up right right"}
+{"id": "dev-verification-3", "reason": "goal_not_reached", "candidate": "up right right right right", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up right right right right right"}
+{"id": "dev-verification-43", "reason": "goal_not_reached", "candidate": "right", "gold_feedback": "invalid | step=2 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-27", "reason": "goal_not_reached", "candidate": "", "gold_feedback": "invalid | step=1 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-80", "reason": null, "candidate": "down up down down right right right down right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-62", "reason": null, "candidate": "left down down", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-39", "reason": "invalid_action_token", "candidate": "right right jump right right", "gold_feedback": "invalid | step=3 | reason=invalid_action_token", "model_feedback": "valid", "repair": "right right right right"}
+{"id": "dev-repair-28", "reason": "invalid_action_token", "candidate": "up up jump up left up left left", "gold_feedback": "invalid | step=3 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up up up up left left left"}
+{"id": "dev-repair-14", "reason": "goal_not_reached", "candidate": "up up right right down right", "gold_feedback": "invalid | step=7 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up right right right right right right"}
+{"id": "dev-verification-21", "reason": "goal_not_reached", "candidate": "up left", "gold_feedback": "invalid | step=3 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up left left"}
+{"id": "dev-verification-33", "reason": "goal_not_reached", "candidate": "down down left left left", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down left left left left"}
+{"id": "dev-verification-0", "reason": null, "candidate": "up down up up right right right right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-22", "reason": "goal_not_reached", "candidate": "up up up left", "gold_feedback": "invalid | step=5 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up up left"}
+{"id": "dev-repair-26", "reason": "goal_not_reached", "candidate": "down left left", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down left left left"}
+{"id": "dev-verification-59", "reason": "invalid_action_token", "candidate": "up up jump", "gold_feedback": "invalid | step=3 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up up up"}
+{"id": "dev-verification-24", "reason": null, "candidate": "down up down down down down right right down right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-34", "reason": null, "candidate": "right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-17", "reason": "goal_not_reached", "candidate": "", "gold_feedback": "invalid | step=1 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-44", "reason": null, "candidate": "up down up up left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-98", "reason": null, "candidate": "up up up up left left up left left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-19", "reason": "invalid_action_token", "candidate": "down jump down left left", "gold_feedback": "invalid | step=2 | reason=invalid_action_token", "model_feedback": "valid", "repair": "down down left left left"}
+{"id": "dev-repair-33", "reason": "goal_not_reached", "candidate": "down down down right right", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down right right right"}
+{"id": "dev-verification-36", "reason": null, "candidate": "up down down left down", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-92", "reason": null, "candidate": "up down up up", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-41", "reason": "goal_not_reached", "candidate": "left up up up right up right", "gold_feedback": "invalid | step=8 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up up up right up right"}
+{"id": "dev-repair-39", "reason": "invalid_action_token", "candidate": "left jump", "gold_feedback": "invalid | step=2 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up up left left"}
+{"id": "dev-verification-56", "reason": null, "candidate": "up down down left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-69", "reason": "invalid_action_token", "candidate": "down jump down", "gold_feedback": "invalid | step=2 | reason=invalid_action_token", "model_feedback": "valid", "repair": "down down down down"}
+{"id": "dev-verification-72", "reason": null, "candidate": "up down down left left left left up up", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-45", "reason": "goal_not_reached", "candidate": "down down down right right", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down right right right"}
+{"id": "dev-repair-3", "reason": "goal_not_reached", "candidate": "down right", "gold_feedback": "invalid | step=3 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down right right"}
+{"id": "dev-repair-18", "reason": "invalid_action_token", "candidate": "up left left jump up right", "gold_feedback": "invalid | step=4 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up left left left"}
+{"id": "dev-verification-51", "reason": "out_of_bounds", "candidate": "down down down right down right", "gold_feedback": "invalid | step=5 | reason=out_of_bounds", "model_feedback": "valid", "repair": "down down down right right right"}
+{"id": "dev-verification-50", "reason": null, "candidate": "up right right right down right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-88", "reason": null, "candidate": "up down up left left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-81", "reason": "goal_not_reached", "candidate": "up up up right down", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up up right right"}
+{"id": "dev-repair-6", "reason": "goal_not_reached", "candidate": "up right up", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up right up"}
+{"id": "dev-verification-13", "reason": "goal_not_reached", "candidate": "up up up up left left", "gold_feedback": "invalid | step=7 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up up up up left left"}
+{"id": "dev-verification-8", "reason": null, "candidate": "up down up left left", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-87", "reason": "goal_not_reached", "candidate": "down", "gold_feedback": "invalid | step=2 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down"}
+{"id": "dev-repair-55", "reason": "goal_not_reached", "candidate": "down down down down left", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down down left left"}
+{"id": "dev-repair-24", "reason": "obstacle_collision", "candidate": "right up right", "gold_feedback": "invalid | step=2 | reason=obstacle_collision", "model_feedback": "valid", "repair": "right up right right"}
+{"id": "dev-repair-34", "reason": "obstacle_collision", "candidate": "up up up up left left left down left left", "gold_feedback": "invalid | step=9 | reason=obstacle_collision", "model_feedback": "valid", "repair": "up up up up left left left left left left left"}
+{"id": "dev-verification-7", "reason": "goal_not_reached", "candidate": "down down down right", "gold_feedback": "invalid | step=5 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down right"}
+{"id": "dev-verification-47", "reason": "goal_not_reached", "candidate": "up left left", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up left left left"}
+{"id": "dev-verification-99", "reason": "invalid_action_token", "candidate": "down jump down right", "gold_feedback": "invalid | step=2 | reason=invalid_action_token", "model_feedback": "valid", "repair": "down down right right"}
+{"id": "dev-repair-5", "reason": "goal_not_reached", "candidate": "up right right", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up right right right"}
+{"id": "dev-verification-64", "reason": null, "candidate": "up down up right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-52", "reason": null, "candidate": "up down up up up up right right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-verification-12", "reason": null, "candidate": "up down up up right right right", "gold_feedback": "valid", "model_feedback": "valid", "repair": null}
+{"id": "dev-repair-31", "reason": "goal_not_reached", "candidate": "down left left left up", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down left left left left left"}
+{"id": "dev-repair-21", "reason": "goal_not_reached", "candidate": "down up up", "gold_feedback": "invalid | step=4 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down up up"}
+{"id": "dev-repair-9", "reason": "invalid_action_token", "candidate": "right up up up jump up", "gold_feedback": "invalid | step=5 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up up up up up up up"}
+{"id": "dev-verification-9", "reason": "invalid_action_token", "candidate": "up right right jump", "gold_feedback": "invalid | step=4 | reason=invalid_action_token", "model_feedback": "valid", "repair": "up right right right"}
+{"id": "dev-verification-95", "reason": "obstacle_collision", "candidate": "down left down left", "gold_feedback": "invalid | step=1 | reason=obstacle_collision", "model_feedback": "valid", "repair": "down left left left"}
+{"id": "dev-verification-71", "reason": "goal_not_reached", "candidate": "down down down down up", "gold_feedback": "invalid | step=6 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down down down down down"}
+{"id": "dev-verification-1", "reason": "goal_not_reached", "candidate": "up right up left left left", "gold_feedback": "invalid | step=7 | reason=goal_not_reached", "model_feedback": "valid", "repair": "up right up left left left"}
+{"id": "dev-repair-49", "reason": "invalid_action_token", "candidate": "down down down jump right right", "gold_feedback": "invalid | step=4 | reason=invalid_action_token", "model_feedback": "valid", "repair": "down down down right right right"}
+{"id": "dev-verification-11", "reason": "goal_not_reached", "candidate": "down up", "gold_feedback": "invalid | step=3 | reason=goal_not_reached", "model_feedback": "valid", "repair": "down down down"}

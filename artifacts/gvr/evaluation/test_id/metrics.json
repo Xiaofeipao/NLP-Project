@@ -1,0 +1,159 @@
+{
+  "verification": {
+    "n": 200,
+    "macro_f1": 0.3333333333333333,
+    "format_accuracy": 1.0,
+    "first_error_localization_accuracy": 0.0,
+    "failure_type_accuracy": 0.0,
+    "joint_error_accuracy": 0.0
+  },
+  "repair": {
+    "n": 100,
+    "success_rate": 0.12,
+    "feasibility": 0.49,
+    "optimality": 0.12,
+    "path_efficiency_on_success": 1.0,
+    "repair_success_rate": 0.12
+  },
+  "by_error_type": {
+    "goal_not_reached": {
+      "verification": {
+        "n": 58,
+        "macro_f1": 0.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 58,
+        "success_rate": 0.10344827586206896,
+        "feasibility": 0.5689655172413793,
+        "optimality": 0.10344827586206896,
+        "path_efficiency_on_success": 1.0
+      }
+    },
+    "invalid_action_token": {
+      "verification": {
+        "n": 20,
+        "macro_f1": 0.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 20,
+        "success_rate": 0.25,
+        "feasibility": 0.55,
+        "optimality": 0.25,
+        "path_efficiency_on_success": 1.0
+      }
+    },
+    "obstacle_collision": {
+      "verification": {
+        "n": 14,
+        "macro_f1": 0.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 14,
+        "success_rate": 0.07142857142857142,
+        "feasibility": 0.21428571428571427,
+        "optimality": 0.07142857142857142,
+        "path_efficiency_on_success": 1.0
+      }
+    },
+    "out_of_bounds": {
+      "verification": {
+        "n": 8,
+        "macro_f1": 0.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 8,
+        "success_rate": 0.0,
+        "feasibility": 0.25,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null
+      }
+    },
+    "valid": {
+      "verification": {
+        "n": 100,
+        "macro_f1": 0.5,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": null,
+        "failure_type_accuracy": null,
+        "joint_error_accuracy": null
+      },
+      "repair": {
+        "n": 0,
+        "success_rate": null,
+        "feasibility": null,
+        "optimality": null,
+        "path_efficiency_on_success": null
+      }
+    }
+  },
+  "direct": {
+    "n": 200,
+    "success_rate": 0.0,
+    "feasibility": 0.0,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null,
+    "mean_model_calls": 1.0,
+    "mean_executor_calls": 0.0,
+    "mean_input_tokens": 83.15,
+    "mean_output_tokens": 11.01,
+    "mean_active_seconds": 0.17478000000001429
+  },
+  "self": {
+    "n": 200,
+    "success_rate": 0.0,
+    "feasibility": 0.0,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null,
+    "mean_model_calls": 2.0,
+    "mean_executor_calls": 0.0,
+    "mean_input_tokens": 231.31,
+    "mean_output_tokens": 13.01,
+    "mean_active_seconds": 0.23619500000000698
+  },
+  "executor_one": {
+    "n": 200,
+    "success_rate": 0.0,
+    "feasibility": 0.0,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null,
+    "mean_model_calls": 2.0,
+    "mean_executor_calls": 2.0,
+    "mean_input_tokens": 198.515,
+    "mean_output_tokens": 38.605,
+    "mean_active_seconds": 0.6290499999999792
+  },
+  "executor_three": {
+    "n": 200,
+    "success_rate": 0.0,
+    "feasibility": 0.0,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null,
+    "mean_model_calls": 4.0,
+    "mean_executor_calls": 4.0,
+    "mean_input_tokens": 563.82,
+    "mean_output_tokens": 296.605,
+    "mean_active_seconds": 4.578534999999975
+  },
+  "definitions": {
+    "self_feedback": "model output only; truth used after stop for scoring",
+    "paired_id_ood": "generation grids are paired; candidate corruption differs",
+    "failure_denominator": "all final candidates including malformed output"
+  },
+  "official_executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4"
+}

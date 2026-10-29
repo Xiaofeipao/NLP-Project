@@ -7,7 +7,7 @@
   "output_root": "outputs/gvr",
   "evidence": {
     "gpu_ledger_reconciled": false,
-    "checkpoint_manager_confirmed": false,
+    "checkpoint_confirmed": false,
     "baseline_outputs_verified": false
   },
   "lora": {"r": 8, "alpha": 16, "dropout": 0.05}

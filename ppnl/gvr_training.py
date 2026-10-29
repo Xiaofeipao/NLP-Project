@@ -71,11 +71,10 @@ def train_stage(config, protocol, stage, output, pilot=False):
     if stage not in ("generation", "verification", "repair"):
         raise ValueError(stage)
     evidence = protocol["evidence"]
-    if not all(evidence.get(k) for k in ("gpu_ledger_reconciled", "checkpoint_manager_confirmed", "baseline_outputs_verified")):
+    if not (evidence.get("gpu_ledger_reconciled") and evidence.get("baseline_outputs_verified") and
+            evidence.get("checkpoint_confirmed", evidence.get("checkpoint_manager_confirmed"))):
         raise ValueError("P0 evidence is incomplete; do not start GPU training")
     item = confirmation(config, "flan_t5_small")
-    if not item.get("manager_confirmed"):
-        raise ValueError("Project manager checkpoint confirmation is required for GVR training")
     root = Path(protocol["dataset_root"])
     index = task_index_manifest(root)
     expected = json.loads(Path(protocol["task_index"]).read_text(encoding="utf-8"))

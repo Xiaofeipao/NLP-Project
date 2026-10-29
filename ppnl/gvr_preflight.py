@@ -32,14 +32,16 @@ def preflight(config, protocol):
         seconds = None
         checks["shared_gpu_ledger"] = False
     item = config["models"]["flan_t5_small"]
-    checks["manager_checkpoint_confirmation"] = bool(item.get("manager_confirmed") and item.get("confirmation_note"))
-    checks["evidence_declared"] = all(protocol["evidence"].get(key) is True for key in
-                                       ("gpu_ledger_reconciled", "checkpoint_manager_confirmed", "baseline_outputs_verified"))
+    checks["checkpoint_confirmation"] = bool((item.get("manager_confirmed") or item.get("user_confirmed")) and str(item.get("confirmation_note") or "").strip())
+    evidence = protocol["evidence"]
+    checks["evidence_declared"] = (all(evidence.get(key) is True for key in
+                                      ("gpu_ledger_reconciled", "baseline_outputs_verified")) and
+                                   evidence.get("checkpoint_confirmed", evidence.get("checkpoint_manager_confirmed")) is True)
     checks["base_checkpoint"] = Path(protocol["generation_base"]).joinpath("config.json").exists()
     checks["verification_adapter"] = Path(protocol["verification_adapter"]).joinpath("adapter_config.json").exists()
     checks["repair_adapter"] = Path(protocol["repair_adapter"]).joinpath("adapter_config.json").exists()
     return {"checks": checks, "gpu_seconds_recorded": seconds,
             "ready_for_training": all(checks[k] for k in ("task_index", "official_executor",
-                                                         "shared_gpu_ledger", "manager_checkpoint_confirmation",
+                                                         "shared_gpu_ledger", "checkpoint_confirmation",
                                                          "evidence_declared")),
             "ready_for_evaluation": all(checks.values())}

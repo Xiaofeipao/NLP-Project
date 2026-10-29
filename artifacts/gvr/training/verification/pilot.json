@@ -1,0 +1,41 @@
+{
+  "stage": "verification",
+  "pilot": true,
+  "train_rows": 32,
+  "dev_rows": 100,
+  "examples_processed": 32,
+  "optimizer_updates": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "dev_loss": 3.486102614360101
+    }
+  ],
+  "source_checkpoint": "outputs/gvr/generation/train/best",
+  "source_revision": null,
+  "generation_base_sha256": "84d27c5539fb46d1878b4283a8a48857232eb3347090654d5598797d3b7628e1",
+  "task_index_source_sha256": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+  "lengths": {
+    "max_input_tokens": 158,
+    "max_target_tokens": 16
+  },
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 8,
+    "eval_batch_size": 8,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "adapter": {
+    "matched_modules": 48,
+    "trainable_parameters": 344064,
+    "total_parameters": 77305216
+  },
+  "peak_allocated_bytes": 1059694080,
+  "elapsed_seconds": 2.0776084999999966
+}
