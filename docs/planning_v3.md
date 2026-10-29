@@ -41,7 +41,7 @@
 默认规划入口现在优先读取 `config.policy.best.json`，指向开发集选中的 multi 模型和最优性保持搜索：
 
 ```powershell
-conda activate torch_py311
+conda activate ppnl
 python scripts/plan_grid.py --grid examples/grid.json
 python scripts/plan_grid.py --grid examples/grid.json --method state_policy
 python scripts/plan_grid.py --grid examples/grid.json --method legal_mask_no_search

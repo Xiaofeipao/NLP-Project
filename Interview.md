@@ -407,7 +407,7 @@ backend 异常会记为可恢复错误。模型调用前计数，即使中断也
 运行例子，均在项目根目录执行：
 
 ```powershell
-conda activate torch_py311
+conda activate ppnl
 python scripts/run_harness.py run --spec configs/harness/policy_revisit.json --out outputs/agent_harness/my_trial
 python scripts/run_harness.py inspect --run outputs/agent_harness/my_trial
 python scripts/run_harness.py resume --run outputs/agent_harness/my_trial
@@ -473,7 +473,7 @@ python scripts/run_harness.py resume --run outputs/agent_harness/my_trial
 
 ### 22.3 环境与文档
 
-`requirements.txt` 管理主要 Python 依赖，CUDA Torch 单独安装。`environment.yml` 是早期模板，Torch 版本与后来实际 `torch_py311` 不同；最近实验使用已有 `torch_py311`。`ppnl/__init__.py` 仅包说明。`.gitignore` 排除数据、输出、缓存、虚拟环境与本地记录等。
+`requirements.txt` 管理主要 Python 依赖，CUDA Torch 需按运行平台单独安装。`environment.yml` 提供环境模板，使用时应核对 PyTorch 与目标 GPU 的兼容性。`ppnl/__init__.py` 仅包说明。`.gitignore` 排除数据、输出、缓存、虚拟环境与本地记录等。
 
 `README.md` 是项目入口；`docs/environment.md` 说明环境；`docs/experiment_protocol.md` 说明评测与实验安排；`docs/planning_improvement.md`、`docs/planning_v3.md` 和 `docs/harness.md` 分别记录各轮改进。
 

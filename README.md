@@ -4,7 +4,7 @@
 
 逐步代码讲解与面试说明见 [Interview.md](Interview.md)，涵盖数据构建、训练、策略、搜索、Harness、评测、测试和结果口径。Git 仓库不包含本地数据、模型权重、运行输出与缓存；这些文件通过下载脚本和实验流程生成。
 
-**2026-10-18 已在 `torch_py311` 和 RTX 5060 Ti 16GB 上完成两个模型的正式微调、开发集选择、相同 ID 测试，以及主模型的 ID/OOD 完整管线与消融；14 项回归测试通过。**
+**2026-10-18 已在 CUDA GPU 环境中完成两个模型的正式微调、开发集选择、相同 ID 测试，以及主模型的 ID/OOD 完整管线与消融；14 项回归测试通过。**
 
 **后续规划改进也已完成：原相同 200 个测试环境上，逐步神经策略成功率 76%，加合法动作约束为 95%，神经引导搜索为 100%；纯 A* 对照也为 100%。当前共有 22 项回归测试通过。** 新模型不覆盖原基线，详见 [规划改进](docs/planning_improvement.md)，结果在 `outputs/planning_v2/results.json`。
 
@@ -13,7 +13,7 @@
 使用改进后的规划器：
 
 ```powershell
-conda activate torch_py311
+conda activate ppnl
 python scripts/plan_grid.py --grid examples/grid.json
 ```
 
@@ -34,7 +34,7 @@ python scripts/run_harness.py run --spec configs/harness/policy_revisit.json --o
 ```
 
 ```powershell
-conda activate torch_py311
+conda activate ppnl
 python scripts/run_eval_harness.py --config config.policy.best.json
 python scripts/run_eval_harness.py --symbolic-only --methods symbolic_astar_goal_tiebreak
 ```
@@ -62,26 +62,28 @@ python scripts/run_eval_harness.py --symbolic-only --methods symbolic_astar_goal
 - `ppnl/cli.py`：命令行入口。
 - `scripts/fetch_official.py`：按固定版本下载官方单目标数据和执行器。
 - `tests/`：执行器、指标和完整修复管线回归测试。
-- `docs/environment.md`：本机 Anaconda 环境检查结论。
+- `docs/environment.md`：通用环境配置与运行验证说明。
 - `docs/experiment_protocol.md`：指标定义、实验安排和报告材料说明。
 
 命令均在本目录 PowerShell 中执行。模型命令要求 CUDA；数据处理和测试无需 GPU。
 
 ## 环境
 
-现在直接使用用户指定的 `D:\Anaconda\envs\torch_py311`。实测 Python 3.11.15、PyTorch 2.12.1+cu132、Transformers 4.57.6、sentencepiece 0.2.2；驱动 610.88，CUDA 运算和 BF16 均可用。依赖已安装，不需要新建或克隆环境：
+建议使用独立的 Python 3.11 环境，并根据目标 GPU 安装兼容的 CUDA 版 PyTorch。其余 NLP 依赖由 `requirements.txt` 管理，环境名 `ppnl` 仅为示例：
 
 ```powershell
-conda activate torch_py311
+conda create -n ppnl python=3.11
+conda activate ppnl
+# 先按目标平台安装兼容的 CUDA 版 PyTorch，再安装项目依赖
 python -m pip install -r requirements.txt
 python -m ppnl.cli environment
 ```
 
-不激活环境时，可使用 `& 'D:\Anaconda\envs\torch_py311\python.exe'` 替代命令中的 `python`。训练代码使用原生 PyTorch，不需要 datasets、accelerate 或 Gurobi。`environment.yml` 仍提供另外创建环境的选项，本次没有用它。
+也可使用 `environment.yml` 作为环境模板，并根据目标硬件调整 PyTorch 构建。训练代码使用原生 PyTorch，不需要 datasets、accelerate 或 Gurobi。CPU 可用于数据处理与逻辑测试，模型训练和推理要求 CUDA。环境配置和验证步骤见 [环境说明](docs/environment.md)。
 
 ## 已完成的小规模 GPU 验证
 
-经用户选择，Flan-T5-small 和 BART-base 仅做技术试跑，没有伪造负责人确认，也没有保存正式训练 checkpoint 或选择主模型。每个模型对三种任务各 8 条训练样本更新 3 步，再用 4 个开发集候选检验完整评估流程；没有使用测试集调参。
+初期 Flan-T5-small 和 BART-base 仅用于技术试跑，该阶段没有保存正式训练 checkpoint 或选择主模型。每个模型对三种任务各 8 条训练样本更新 3 步，再用 4 个开发集候选检验完整评估流程；没有使用测试集调参。
 
 原始结果在 `outputs/smoke_20261018/<模型>/smoke/smoke.json`，逐步执行记录在同级 `dev_pipeline/`。Flan-T5-small 的固定样本平均 loss 从 3.6186 到 2.1980，BART 从 6.4922 到 2.2328。训练/推理/微基准中的峰值 allocated 显存分别约 1.64 GiB、2.68 GiB。这些数值仅用于确认训练链路正常，不能作为正式效果结论；仅 3 次更新后模型仍存在输出格式错误和路径失败。
 
@@ -99,7 +101,7 @@ python -m ppnl.cli --config config.smoke.json smoke --model bart_base
 
 ## 正式实验已完成
 
-用户明确授权按当前两个 checkpoint 进行正式基线训练后，执行了 `scripts/run_study.py`。两个模型均从原始预训练权重开始，以相同的 4,000 条多任务样本训练 2 轮；每个模型处理 8,000 次样本、完成 500 次 AdamW 更新。FP32、batch 8、梯度累积 2、学习率 1e-4、seed 42 保持一致。正式训练前的 pilot 和更早的技术 smoke 单独记入预算，没有复用其权重。
+正式基线训练采用当前两个 checkpoint，并通过以下脚本执行： `scripts/run_study.py`。两个模型均从原始预训练权重开始，以相同的 4,000 条多任务样本训练 2 轮；每个模型处理 8,000 次样本、完成 500 次 AdamW 更新。FP32、batch 8、梯度累积 2、学习率 1e-4、seed 42 保持一致。正式训练前的 pilot 和更早的技术 smoke 单独记入预算，没有复用其权重。
 
 - Flan-T5-small：两轮开发集 loss 为 0.4927、0.4655；ID 验证 Macro-F1 0.7141，首错定位准确率 8%，候选修复成功率 19%，修复可行性 46%，修复最优率 19%。最佳权重在 `outputs/flan_t5_small/train/best/`。
 - BART-base：两轮开发集 loss 为 0.5033、0.4332；ID 验证 Macro-F1 0.7246，首错定位准确率 45%，候选修复成功率 10%，修复可行性 34%，修复最优率 10%。最佳权重在 `outputs/bart_base/train/best/`。
@@ -126,7 +128,7 @@ python scripts/summarize_study.py
 
 文档的基线名称含 Flan-T5，但所给 T5 链接是 `google-t5/t5-small` / `google-t5/t5-base`。二者不能混用。
 
-正式 checkpoint 为 `google/flan-t5-small` 和 `facebook/bart-base`，均固定到本机下载时的 commit。用户已在本聊天明确指示全量正式微调，因此配置中设置 `user_confirmed: true` 并保留授权说明；没有声称获得额外的负责人确认，`manager_confirmed` 仍为 false。对于另选 checkpoint，可通过 `manager_confirmed` 或明确的 `user_confirmed` 与 confirmation_note 记录授权；二者皆无时 pilot 和训练会报错。
+正式 checkpoint 为 `google/flan-t5-small` 和 `facebook/bart-base`，均固定到指定 commit。配置中通过 `user_confirmed: true` 与 `confirmation_note` 记录实验 checkpoint 的确认状态；`manager_confirmed` 保留独立含义。对于另选 checkpoint，可通过 `manager_confirmed` 或明确的 `user_confirmed` 与 confirmation_note 记录授权；二者皆无时 pilot 和训练会报错。
 
 pilot 会记录远端解析得到的 commit，正式训练沿用该 commit。未来如更换配置、数据或 checkpoint，应使用新的输出目录重做 pilot。不要重复训练同一输出目录或覆盖已经冻结的模型选择。
 
@@ -138,7 +140,7 @@ pilot 会记录远端解析得到的 commit，正式训练沿用该 commit。未
 python scripts/fetch_official.py
 ```
 
-只下载官方单目标 6×6 文件与执行器，不下载多目标工具。上游固定版本为 `5fd0376fc50ae9860bc986085165ebac5675fd44`。下载清单和 SHA256 保存到 `vendor/ppnl/download_manifest.json`。本机已下载；重复运行会校验并复用现有文件。
+只下载官方单目标 6×6 文件与执行器，不下载多目标工具。上游固定版本为 `5fd0376fc50ae9860bc986085165ebac5675fd44`。下载清单和 SHA256 保存到 `vendor/ppnl/download_manifest.json`。重复运行会校验并复用已有文件。
 
 ### 2 CPU 构造与核查
 
@@ -148,7 +150,7 @@ python -m ppnl.cli prepare --official-data data/official --executor vendor/ppnl/
 python -m ppnl.cli audit
 ```
 
-本机已经构造 `data/derived/`，因此可直接 audit；prepare 拒绝覆盖已有数据。要重新构造，请在配置中使用新的 dataset_root。
+构造 `data/derived/` 后可执行 audit；prepare 拒绝覆盖已有数据。要重新构造，请在配置中使用新的 dataset_root。
 
 训练共 4,000 条任务样本：生成 800、验证 2,000、修复 1,200。开发集共 200 条：40、100、60。ID 和 OOD 测试集各 200 条。上限按三种任务样本总数计，没有给每种任务各分配 4,000 条。
 

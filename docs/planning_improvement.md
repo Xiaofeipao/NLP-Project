@@ -1,6 +1,6 @@
 # 逐步策略规划改进
 
-本次改进已完成训练和评估。原始两个基线及其测试结果保持不变；新模型、数据表示和结果放在独立目录。代码运行于 torch_py311 和 RTX 5060 Ti 16GB。
+本次改进已完成训练和评估。原始两个基线及其测试结果保持不变；新模型、数据表示和结果放在独立目录。代码运行于支持 CUDA 的 GPU 环境。
 
 ## 问题证据
 
@@ -50,7 +50,7 @@ ID/OOD 原本就是同一组网格、不同错误候选，所以从零规划的�
 ## 使用
 
 ```powershell
-conda activate torch_py311
+conda activate ppnl
 python scripts/plan_grid.py --grid examples/grid.json
 python scripts/plan_grid.py --grid examples/grid.json --method state_policy
 python scripts/plan_grid.py --grid examples/grid.json --method legal_mask_no_search
