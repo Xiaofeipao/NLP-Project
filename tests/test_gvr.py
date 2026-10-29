@@ -205,11 +205,27 @@ class GVRTests(unittest.TestCase):
             self.assertEqual(recomputed["subset_counts"], metrics["subset_counts"])
             self.assertEqual(recomputed["verification"]["macro_f1"], metrics["verification"]["macro_f1"])
             self.assertEqual(recomputed["repair"]["repair_success_rate"], metrics["repair"]["repair_success_rate"])
+            original_candidate = old_traces[0]["candidate"]
             old_traces[0]["candidate"] = "tampered"
             write_jsonl(evaluation_dir / "candidate_traces.jsonl", old_traces)
             with self.assertRaisesRegex(ValueError, "Candidate or gold feedback changed"):
                 recompute_metrics(Path(temp) / "data", "dev", evaluation_dir,
                                   Path(temp) / "invalid_recompute.json", Oracle())
+            old_traces[0]["candidate"] = original_candidate
+            write_jsonl(evaluation_dir / "candidate_traces.jsonl", old_traces)
+            pipeline = read_jsonl(evaluation_dir / "pipeline_traces.jsonl")
+            original_truth = pipeline[0]["modes"]["direct"]["truth"]
+            pipeline[0]["modes"]["direct"]["truth"] = "valid"
+            write_jsonl(evaluation_dir / "pipeline_traces.jsonl", pipeline)
+            with self.assertRaisesRegex(ValueError, "Saved direct score disagrees"):
+                recompute_metrics(Path(temp) / "data", "dev", evaluation_dir,
+                                  Path(temp) / "invalid_pipeline.json", Oracle())
+            pipeline[0]["modes"]["direct"]["truth"] = original_truth
+            pipeline[0]["initial_candidate"] = "tampered"
+            write_jsonl(evaluation_dir / "pipeline_traces.jsonl", pipeline)
+            with self.assertRaisesRegex(ValueError, "paired initial candidate"):
+                recompute_metrics(Path(temp) / "data", "dev", evaluation_dir,
+                                  Path(temp) / "invalid_pairing.json", Oracle())
 
     def test_generation_disables_lora_and_task_routes_are_exclusive(self):
         class Adapter:

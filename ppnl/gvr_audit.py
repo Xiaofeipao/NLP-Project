@@ -5,7 +5,7 @@ from collections import Counter, defaultdict
 import hashlib
 from pathlib import Path
 
-from .core import Grid, parse_verdict
+from .core import Grid, execute, parse_verdict, shortest_path
 from .data import read_jsonl, write_json
 from .evaluation import plan_metrics, verification_metrics
 from .gvr_evaluation import evaluation_subsets, repeated_action_runs
@@ -82,14 +82,24 @@ def recompute_metrics(dataset_root, split, evaluation_dir, output, oracle=None):
     # The original evaluator deduplicated environments before generation.
     selected = [pipelines[key] for key in dict.fromkeys(_grid_key(row) for row in generation_rows)]
     grids = [Grid.from_dict(row["grid"]) for row in selected]
+    for row, grid in zip(selected, grids):
+        if row["initial_candidate"] != row["modes"]["direct"]["candidate"]:
+            raise ValueError("Saved direct candidate differs from paired initial candidate")
+        best = shortest_path(grid)
+        for mode in ("direct", "self", "executor_one", "executor_three"):
+            record = row["modes"][mode]
+            plan = record["candidate"]
+            verdict = oracle.check(grid, plan) if oracle else execute(grid, plan)
+            expected = {"truth": verdict.label(), "success": verdict.valid,
+                        "feasible": verdict.feasible,
+                        "optimal": verdict.valid and len(plan.split()) == len(best)}
+            if any(record.get(field) != value for field, value in expected.items()):
+                raise ValueError(f"Saved {mode} score disagrees with executor")
     metrics = {"verification": verification, "repair": repair, "by_error_type": by_error_type,
                "subset_counts": {"verification": len(verify_rows), "repair": len(repair_rows),
                                  "generation": len(selected)}}
     for mode in ("direct", "self", "executor_one", "executor_three"):
         plans = [row["modes"][mode]["candidate"] for row in selected]
-        if oracle:
-            for grid, plan in zip(grids, plans):
-                oracle.check(grid, plan)
         scores = plan_metrics(grids, plans)
         scores["stop_reason_counts"] = dict(Counter(row["modes"][mode]["stop_reason"] for row in selected))
         scores["repeated_action_run_ge_3"] = sum(repeated_action_runs(plan) >= 3 for plan in plans)
