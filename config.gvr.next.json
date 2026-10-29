@@ -1,0 +1,24 @@
+{
+  "dataset_root": "data/derived",
+  "task_index": "data/derived/gvr_task_index.json",
+  "generation_base": "outputs/gvr_next/generation/train/best",
+  "verification_adapter": "outputs/gvr_next/verification/train/best/verification",
+  "repair_adapter": "outputs/gvr_next/repair/train/best/repair",
+  "output_root": "outputs/gvr_next",
+  "evidence": {
+    "gpu_ledger_reconciled": false,
+    "checkpoint_confirmed": false,
+    "baseline_outputs_verified": false
+  },
+  "lora": {"r": 8, "alpha": 16, "dropout": 0.05},
+  "stages": {
+    "generation": {"selection": "task_metrics"},
+    "verification": {
+      "loss": "sequence_and_status",
+      "status_weight": 1.0,
+      "learning_rate": 0.001,
+      "selection": "task_metrics"
+    },
+    "repair": {"learning_rate": 0.001, "selection": "task_metrics"}
+  }
+}

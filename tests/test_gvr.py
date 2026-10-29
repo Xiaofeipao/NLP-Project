@@ -221,6 +221,13 @@ class GVRTests(unittest.TestCase):
                 recompute_metrics(Path(temp) / "data", "dev", evaluation_dir,
                                   Path(temp) / "invalid_pipeline.json", Oracle())
             pipeline[0]["modes"]["direct"]["truth"] = original_truth
+            import copy
+            foreign = copy.deepcopy(pipeline[0])
+            foreign["grid"] = asdict(Grid(2, 3, (), (1, 0), (1, 2)))
+            write_jsonl(evaluation_dir / "pipeline_traces.jsonl", pipeline + [foreign])
+            with self.assertRaisesRegex(ValueError, "outside the frozen split"):
+                recompute_metrics(Path(temp) / "data", "dev", evaluation_dir,
+                                  Path(temp) / "foreign_grid.json", Oracle())
             pipeline[0]["initial_candidate"] = "tampered"
             write_jsonl(evaluation_dir / "pipeline_traces.jsonl", pipeline)
             with self.assertRaisesRegex(ValueError, "paired initial candidate"):

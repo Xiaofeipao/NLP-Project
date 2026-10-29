@@ -12,6 +12,7 @@ from .evaluation import plan_metrics, verification_metrics
 from .modeling import Seq2Seq, confirmation, gpu_budget, require_cuda
 from .prompts import prompt
 from .task_adapters import attach_adapter, checkpoint_hash
+from .gvr_objectives import checkpoint_rank, stage_options, training_loss
 
 
 def validate_stage_rows(stage, train_rows, dev_rows):
@@ -70,6 +71,7 @@ def _action_runs(plan):
 def train_stage(config, protocol, stage, output, pilot=False):
     if stage not in ("generation", "verification", "repair"):
         raise ValueError(stage)
+    options = stage_options(protocol, stage)
     evidence = protocol["evidence"]
     if not (evidence.get("gpu_ledger_reconciled") and evidence.get("baseline_outputs_verified") and
             evidence.get("checkpoint_confirmed", evidence.get("checkpoint_manager_confirmed"))):
@@ -98,6 +100,10 @@ def train_stage(config, protocol, stage, output, pilot=False):
     base_hash = checkpoint_hash(base) if stage != "generation" else None
     if not pilot and prior["generation_base_sha256"] != base_hash:
         raise ValueError("Generation base changed since pilot")
+    signature = {"training": config["training"], "stage_options": options,
+                 "lora": protocol["lora"] if stage != "generation" else None}
+    if not pilot and prior.get("training_signature") != signature:
+        raise ValueError("Pilot objective, selection or LoRA settings differ; run a fresh pilot")
     out = Path(output)
     if out.exists() and any(out.iterdir()):
         raise FileExistsError("Use a fresh training output directory")
@@ -118,6 +124,14 @@ def train_stage(config, protocol, stage, output, pilot=False):
             adapter_info = attach_adapter(runner, stage, protocol["lora"])
         else:
             adapter_info = None
+        if options["loss"] == "sequence_and_status":
+            first_tokens = {runner.tokenizer.encode(row["target"], add_special_tokens=False)[0]
+                            for row in rows + dev}
+            # validate_stage_rows already checked the exact valid/invalid label grammar.
+            valid_first = runner.tokenizer.encode("valid", add_special_tokens=False)[0]
+            invalid_first = runner.tokenizer.encode("invalid", add_special_tokens=False)[0]
+            if valid_first == invalid_first or first_tokens != {valid_first, invalid_first}:
+                raise ValueError("Status objective needs distinct valid/invalid first tokens")
         lengths = runner.check_lengths(rows + dev)
         generator = torch.Generator().manual_seed(config["seed"])
         loader = torch.utils.data.DataLoader(runner.encode_rows(rows), batch_size=settings["batch_size"], shuffle=True,
@@ -125,8 +139,9 @@ def train_stage(config, protocol, stage, output, pilot=False):
         dev_loader = torch.utils.data.DataLoader(runner.encode_rows(dev), batch_size=settings["eval_batch_size"],
                                                  collate_fn=runner.collate, pin_memory=True)
         optimizer = torch.optim.AdamW((p for p in runner.model.parameters() if p.requires_grad),
-                                      lr=settings["learning_rate"], weight_decay=settings["weight_decay"])
-        best, history, processed, updates = float("inf"), [], 0, 0
+                                      lr=options.get("learning_rate", settings["learning_rate"]),
+                                      weight_decay=settings["weight_decay"])
+        best, best_epoch, history, processed, updates = None, None, [], 0, 0
         torch.cuda.reset_peak_memory_stats()
         started = time.perf_counter()
         for epoch in range(epochs):
@@ -138,7 +153,7 @@ def train_stage(config, protocol, stage, output, pilot=False):
                 accumulation = settings["gradient_accumulation_steps"]
                 window = min(accumulation, len(loader) - step // accumulation * accumulation)
                 with runner.autocast():
-                    loss = runner.loss(batch)
+                    loss = training_loss(runner, batch, options)
                 (loss / window).backward()
                 processed += len(batch["input_ids"])
                 if (step + 1) % accumulation == 0 or step + 1 == len(loader):
@@ -154,13 +169,18 @@ def train_stage(config, protocol, stage, output, pilot=False):
                     batch = batch.to(runner.device, non_blocking=True)
                     n = (batch["labels"] != -100).sum().item()
                     with runner.autocast():
-                        weighted_loss += runner.loss(batch).item() * n
-                    tokens += n
+                        weight = len(batch["labels"]) if options["loss"] == "sequence_and_status" else n
+                        weighted_loss += training_loss(runner, batch, options).item() * weight
+                    tokens += weight
             dev_loss = weighted_loss / tokens
             diagnostics = None if pilot else dev_diagnostics(stage, runner, dev, check)
-            history.append({"epoch": epoch + 1, "dev_loss": dev_loss, "dev_diagnostics": diagnostics})
-            if dev_loss < best:
-                best = dev_loss
+            rank = checkpoint_rank(stage, dev_loss, diagnostics,
+                                   {**options, "selection": "dev_loss"} if pilot else options)
+            history.append({"epoch": epoch + 1, "dev_loss": dev_loss, "dev_diagnostics": diagnostics,
+                            "selection_rank": rank})
+            if best is None or rank > best:
+                best = rank
+                best_epoch = epoch + 1
                 if not pilot:
                     runner.model.save_pretrained(out / "best")
                     if stage == "generation":
@@ -174,6 +194,9 @@ def train_stage(config, protocol, stage, output, pilot=False):
                   "source_revision": runner.source_revision, "generation_base_sha256": base_hash,
                   "task_index_source_sha256": index["source_manifest_sha256"], "lengths": lengths,
                   "training_config": settings,
+                  "training_signature": signature, "stage_options": options,
+                  "best_epoch": best_epoch, "best_selection_rank": best,
+                  "effective_learning_rate": options.get("learning_rate", settings["learning_rate"]),
                   "adapter": adapter_info, "gpu": torch.cuda.get_device_name(),
                   "peak_allocated_bytes": torch.cuda.max_memory_allocated(),
                   "elapsed_seconds": time.perf_counter() - started}

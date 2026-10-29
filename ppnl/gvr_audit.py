@@ -76,6 +76,8 @@ def recompute_metrics(dataset_root, split, evaluation_dir, output, oracle=None):
     pipelines = {_grid_key(row): row for row in pipeline_rows}
     if len(pipelines) != len(pipeline_rows):
         raise ValueError("Duplicate environment in saved pipeline traces")
+    if not set(pipelines) <= {_grid_key(row) for row in rows}:
+        raise ValueError("Saved pipeline contains an environment outside the frozen split")
     selected_keys = {_grid_key(row) for row in generation_rows}
     if not selected_keys <= set(pipelines):
         raise ValueError("Saved pipeline traces omit generation environments")

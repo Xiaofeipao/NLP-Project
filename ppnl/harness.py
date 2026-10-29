@@ -74,7 +74,17 @@ def _atomic_json(path, value):
         json.dump(value, handle, ensure_ascii=False, indent=2, allow_nan=False)
         handle.flush()
         os.fsync(handle.fileno())
-    os.replace(temporary, path)
+    # Windows readers and scanners can briefly deny replacement of a snapshot.
+    # Retry only sharing/permission failures; keep the durable journal and temp
+    # file intact if access remains denied.
+    for attempt in range(6):
+        try:
+            os.replace(temporary, path)
+            break
+        except PermissionError:
+            if attempt == 5:
+                raise
+            time.sleep(0.01 * 2 ** attempt)
 
 
 def create_session(directory, grid, budgets, backend_identity, oracle_identity):

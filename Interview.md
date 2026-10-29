@@ -516,3 +516,11 @@ python scripts/run_harness.py resume --run outputs/agent_harness/my_trial
 `scripts/export_gvr_artifacts.py` 将权重和实验记录导出到 `artifacts/gvr/`，移除训练记录中的设备型号，规范相对路径，逐字节验证权重和归档日志。`manifest.json` 记录文件与来源 SHA256；日志无损压缩且省略运行期锁文件。大权重由 Git LFS 管理，完整使用方法见 [产物说明](artifacts/gvr/README.md)。
 
 运行条件和命令见 [GVR 协议](docs/gvr_protocol.md)，实际 GPU 结果见 [本轮实验记录](docs/gvr_gpu_run.md)。旧逐步 Harness 的 99.5% 不能作为这个新流程的成绩；两种方法的训练、控制器与模型调用方式不同。
+
+## 25. GVR 训练候选与实际结果
+
+`ppnl/gvr_objectives.py` 新增可选的逐样本归一化与首个判别 token 损失，并提供只使用开发集指标的 checkpoint 排序。`ppnl/gvr_training.py` 读取阶段设置，将实际学习率、最佳 epoch 和训练签名保存到报告；签名检查防止 LoRA 或目标变化后沿用旧 pilot。原配置的默认目标与选模方式保持不变。
+
+`config.gvr.next.json` 将候选设置放在独立输出目录，证据位默认关闭。`scripts/run_gvr.py` 提前拒绝已有输出，`ppnl/gvr_audit.py` 拒绝冻结 split 外的网格。候选已实际训练和评测：ID／OOD 验证 Macro-F1 为 0.6499／0.7326，固定候选修复为 12%／4%，端到端仍为 0%。修复模型第 2 轮 loss 更低但成功率下降，实际选中第 1 轮，说明选模按任务指标工作。设计与完整结果见 [候选设计](docs/gvr_next.md) 和 [实跑报告](docs/gvr_next_run.md)。
+
+运行中 Windows 状态快照替换被短暂占用，`ppnl/harness.py` 的 `_atomic_json` 现对 `PermissionError` 做有限重试；永久错误仍抛出并保留日志与临时文件。进度监控改读权威日志。原失败目录保留，完成会话校验后复用，一个中断会话继续执行。训练前 69 项测试通过，新增恢复检查后共 72 项测试通过；这些运行问题的修复没有改变模型权重或评分规则。

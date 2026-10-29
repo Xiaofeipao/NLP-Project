@@ -9,6 +9,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from ppnl.data import read_jsonl, task_index_manifest, write_json
 
 
+def evaluation_output(protocol, command, split=None, output=None):
+    """Reject existing results before CUDA import or model construction."""
+    if command not in ("verify", "evaluate") or (command == "evaluate" and not split):
+        raise ValueError("Evaluation output requires verify or evaluate with a split")
+    default = (Path(protocol["output_root"]) / "verify_dev.json" if command == "verify" else
+               Path(protocol["output_root"]) / "evaluation" / split)
+    target = Path(output) if output is not None else default
+    if target.exists() and (command == "verify" or not target.is_dir() or any(target.iterdir())):
+        raise FileExistsError(f"Refusing to overwrite {target}")
+    return target
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("command", choices=("preflight", "index", "pilot", "train", "verify", "evaluate", "recompute"))
@@ -66,6 +78,10 @@ def main():
         return
     if args.command == "evaluate" and not args.split:
         parser.error("--split is required")
+    output = evaluation_output(protocol, args.command, args.split, args.out)
+    if args.command == "evaluate":
+        rows = read_jsonl(Path(protocol["dataset_root"]) / f"{args.split}.jsonl")
+        oracle = checked_oracle()
     from ppnl.gvr_evaluation import evaluate_gvr
     from ppnl.modeling import gpu_budget, require_cuda
     from ppnl.task_adapters import GVRModel
@@ -94,16 +110,12 @@ def main():
                       "verification_output": model.predict("verification", grid, baseline, check=check),
                       "repair_output": model.predict("repair", grid, baseline,
                                                      "invalid | step=1 | reason=goal_not_reached", check)}
-            output = Path(args.out or Path(protocol["output_root"]) / "verify_dev.json")
             if output.exists():
                 raise FileExistsError(f"Refusing to overwrite {output}")
             write_json(output, report)
             print(json.dumps(report, indent=2))
             return
-        rows = read_jsonl(Path(protocol["dataset_root"]) / f"{args.split}.jsonl")
-        oracle = checked_oracle()
-        out = args.out or str(Path(protocol["output_root"]) / "evaluation" / args.split)
-        print(json.dumps(evaluate_gvr(model, rows, out, identity, oracle, check), indent=2))
+        print(json.dumps(evaluate_gvr(model, rows, output, identity, oracle, check), indent=2))
 
 
 if __name__ == "__main__":
