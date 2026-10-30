@@ -4,11 +4,12 @@ import tempfile
 import unittest
 
 from ppnl.gvr_objectives import checkpoint_rank, stage_options
+from ppnl.optimization import ACCUMULATION_NORMALIZATION
 from scripts.run_gvr import evaluation_output
 
 
 class GVRCandidateTests(unittest.TestCase):
-    def test_changed_lora_rejects_old_pilot_before_cuda(self):
+    def test_changed_lora_or_accumulation_rejects_old_pilot_before_cuda(self):
         import json
         from unittest.mock import patch
         from ppnl.gvr_training import train_stage
@@ -30,14 +31,20 @@ class GVRCandidateTests(unittest.TestCase):
                      "training_config": settings, "generation_base_sha256": "base-hash",
                      "training_signature": {"training": settings,
                                             "stage_options": stage_options({}, "verification"),
-                                            "lora": {"r": 8}}}
+                                            "lora": {"r": 8},
+                                            "accumulation_normalization": ACCUMULATION_NORMALIZATION}}
             pilot = root / "verification/pilot/training.json"
             pilot.parent.mkdir(parents=True)
             pilot.write_text(json.dumps(prior))
             with patch("ppnl.gvr_training.task_index_manifest", return_value=index), \
                     patch("ppnl.gvr_training.checkpoint_hash", return_value="base-hash"), \
                     patch("ppnl.gvr_training.require_cuda") as cuda:
-                with self.assertRaisesRegex(ValueError, "Pilot objective, selection or LoRA"):
+                with self.assertRaisesRegex(ValueError, "Pilot .*settings differ"):
+                    train_stage(config, protocol, "verification", root / "train")
+                prior["training_signature"]["lora"] = protocol["lora"]
+                prior["training_signature"].pop("accumulation_normalization")
+                pilot.write_text(json.dumps(prior))
+                with self.assertRaisesRegex(ValueError, "Pilot .*settings differ"):
                     train_stage(config, protocol, "verification", root / "train")
                 cuda.assert_not_called()
 

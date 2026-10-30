@@ -8,6 +8,7 @@ from pathlib import Path
 import time
 
 from .data import read_jsonl, write_json
+from .optimization import ACCUMULATION_NORMALIZATION, accumulated_batches
 
 
 @contextmanager
@@ -208,6 +209,8 @@ def train(config, key, dataset, output, pilot=False):
             raise ValueError("Pilot checkpoint/data mismatch")
         if previous["training_config"] != settings:
             raise ValueError("Pilot training configuration changed; review before proceeding")
+        if previous.get("accumulation_normalization") != ACCUMULATION_NORMALIZATION:
+            raise ValueError("Pilot accumulation normalization changed; run a fresh pilot")
         revision = previous["resolved_revision"] or revision
     out.mkdir(parents=True, exist_ok=True)
     with gpu_budget(config["gpu_ledger"], config["gpu_hours_cap"], f"{'pilot' if pilot else 'train'}:{key}") as check:
@@ -234,18 +237,17 @@ def train(config, key, dataset, output, pilot=False):
             runner.model.train()
             optimizer.zero_grad(set_to_none=True)
             epoch_loss = 0.0
-            for step, batch in enumerate(loader):
+            reduction = "examples" if runner.policy_loss else "tokens"
+            for step, batch, loss_scale, update in accumulated_batches(
+                    loader, settings["gradient_accumulation_steps"], reduction):
                 check()
                 batch = batch.to(runner.device, non_blocking=True)
-                # Correctly normalize the final short accumulation window.
-                accumulation = settings["gradient_accumulation_steps"]
-                window = min(accumulation, len(loader) - (step // accumulation) * accumulation)
                 with runner.autocast():
                     loss = runner.loss(batch)
-                (loss / window).backward()
+                (loss * loss_scale).backward()
                 epoch_loss += loss.detach().item()
                 processed += batch["input_ids"].shape[0]
-                if (step + 1) % accumulation == 0 or step + 1 == len(loader):
+                if update:
                     torch.nn.utils.clip_grad_norm_(runner.model.parameters(), 1.0, error_if_nonfinite=True)
                     optimizer.step()
                     optimizer.zero_grad(set_to_none=True)
@@ -310,6 +312,7 @@ def train(config, key, dataset, output, pilot=False):
         report = {"checkpoint": item["checkpoint"], "requested_revision": item.get("revision"),
                   "resolved_revision": runner.source_revision,
                   "data_fingerprint": fingerprint, "training_config": settings,
+                  "accumulation_normalization": ACCUMULATION_NORMALIZATION,
                   "confirmation_note": item["confirmation_note"],
                   "gpu": torch.cuda.get_device_name(), "peak_allocated_bytes": torch.cuda.max_memory_allocated(),
                   "peak_reserved_bytes": torch.cuda.max_memory_reserved(), "lengths": lengths,

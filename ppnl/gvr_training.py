@@ -13,6 +13,7 @@ from .modeling import Seq2Seq, confirmation, gpu_budget, require_cuda
 from .prompts import prompt
 from .task_adapters import attach_adapter, checkpoint_hash
 from .gvr_objectives import checkpoint_rank, stage_options, training_loss
+from .optimization import ACCUMULATION_NORMALIZATION, accumulated_batches
 
 
 def validate_stage_rows(stage, train_rows, dev_rows):
@@ -101,9 +102,10 @@ def train_stage(config, protocol, stage, output, pilot=False):
     if not pilot and prior["generation_base_sha256"] != base_hash:
         raise ValueError("Generation base changed since pilot")
     signature = {"training": config["training"], "stage_options": options,
-                 "lora": protocol["lora"] if stage != "generation" else None}
+                 "lora": protocol["lora"] if stage != "generation" else None,
+                 "accumulation_normalization": ACCUMULATION_NORMALIZATION}
     if not pilot and prior.get("training_signature") != signature:
-        raise ValueError("Pilot objective, selection or LoRA settings differ; run a fresh pilot")
+        raise ValueError("Pilot objective, selection, LoRA or accumulation settings differ; run a fresh pilot")
     out = Path(output)
     if out.exists() and any(out.iterdir()):
         raise FileExistsError("Use a fresh training output directory")
@@ -147,16 +149,16 @@ def train_stage(config, protocol, stage, output, pilot=False):
         for epoch in range(epochs):
             runner.model.train()
             optimizer.zero_grad(set_to_none=True)
-            for step, batch in enumerate(loader):
+            reduction = "examples" if options["loss"] == "sequence_and_status" or runner.policy_loss else "tokens"
+            for step, batch, loss_scale, update in accumulated_batches(
+                    loader, settings["gradient_accumulation_steps"], reduction):
                 check()
                 batch = batch.to(runner.device, non_blocking=True)
-                accumulation = settings["gradient_accumulation_steps"]
-                window = min(accumulation, len(loader) - step // accumulation * accumulation)
                 with runner.autocast():
                     loss = training_loss(runner, batch, options)
-                (loss / window).backward()
+                (loss * loss_scale).backward()
                 processed += len(batch["input_ids"])
-                if (step + 1) % accumulation == 0 or step + 1 == len(loader):
+                if update:
                     torch.nn.utils.clip_grad_norm_(runner.model.parameters(), 1.0, error_if_nonfinite=True)
                     optimizer.step()
                     optimizer.zero_grad(set_to_none=True)
