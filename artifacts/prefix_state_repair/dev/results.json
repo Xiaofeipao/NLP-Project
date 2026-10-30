@@ -1,0 +1,54 @@
+{
+  "split": "dev",
+  "n": 40,
+  "max_total_actions": 36,
+  "policy_weights_sha256": null,
+  "policy_config_sha256": "c69ce582eb2f09f57f33905ec6f4d14fbf310877d49b279a7b01f63738386479",
+  "executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+  "source_trace_sha256": "521ec81f04e7f0efeaad3555687a0d256f134a8d0fbb28738ed652fe668bd833",
+  "dataset_sha256": "6b60713aa88053bacbe2a009c68baf69d51a1f3121390d0aea1c7f256a92bb3a",
+  "implementation_sha256": "b679eb4cd43ad50c89c1c9f834e69ed589e1b6e212faead4c32fbb6138fa151a",
+  "definitions": {
+    "prefix": "keep actions before the first failure; discard failing action and suffix",
+    "restart_visit": "same policy and total-action limit, starting at original start",
+    "policy": "one learned action per step; no BFS labels or graph search at inference",
+    "prefix_visit_heuristic": "goal-distance one-step control; no learned scores or search"
+  },
+  "metrics": {
+    "direct": {
+      "n": 40,
+      "success_rate": 0.0,
+      "feasibility": 0.0,
+      "optimality": 0.0,
+      "path_efficiency_on_success": null,
+      "mean_model_calls": 1.0
+    },
+    "executor_one": {
+      "n": 40,
+      "success_rate": 0.0,
+      "feasibility": 0.0,
+      "optimality": 0.0,
+      "path_efficiency_on_success": null,
+      "mean_model_calls": 2.0
+    },
+    "executor_three": {
+      "n": 40,
+      "success_rate": 0.0,
+      "feasibility": 0.0,
+      "optimality": 0.0,
+      "path_efficiency_on_success": null,
+      "mean_model_calls": 4.0
+    },
+    "prefix_visit_heuristic": {
+      "n": 40,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.425,
+      "path_efficiency_on_success": 0.7401083312112724,
+      "mean_policy_decisions": 0.0,
+      "mean_step_decisions": 5.475
+    }
+  },
+  "policy_code_sha256": "b60b7ad630e44febbdce7e5e9637e04ad34b43ca4fa90814278815dbe2a800d8",
+  "modeling_code_sha256": "e2eeabaf61191de353d9f4d8f8236337c42d60d63f4ec212c08fc74e95ef911a"
+}

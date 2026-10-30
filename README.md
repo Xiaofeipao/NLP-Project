@@ -1,5 +1,7 @@
 # PPNL 单目标路径规划 验证与修复
 
+新增“执行器保留合法前缀＋逐步模型续写”评测入口：python scripts/run_prefix_state_repair.py --split test_id --check-only。它读取已归档的真实生成路径，在同一批环境上比较整路径修复、逐步续写、动作约束、从头规划和纯启发式对照；方法、运行前提及结果口径见 [前缀逐步修复方案](docs/prefix_state_repair.md)。本机已完成纯符号对照，ID/OOD 各 200/200 成功、38.5% 最优；本仓库尚未发布该逐步模型权重，因此尚无新方法的真实模型成绩。
+
 新增 Project 6 G／V／R 的生成底座、两套 LoRA、训练记录和逐条实验结果已收录至 [产物目录](artifacts/gvr/README.md)，权重需执行 `git lfs pull` 获取。ID／OOD 候选修复为 12%／6%，四种端到端流程均为 0%；开发集按修正配额重算后修复为 7/60（11.7%）。入口与审计说明见 [GVR 协议](docs/gvr_protocol.md)，完整结果见 [实验记录](docs/gvr_gpu_run.md)。下文原有数值为此前项目的历史实验记录。
 
 后续候选也已完成实跑：固定候选验证 ID／OOD Macro-F1 提高到 0.6499／0.7326，修复为 12%／4%，四种端到端流程仍为 0%。72 项测试通过，模型与日志保存在本地 `outputs/gvr_next/`；这轮未替换原产物目录。设计、失败恢复过程和同口径对比见 [候选实跑报告](docs/gvr_next_run.md)。
