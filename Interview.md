@@ -524,3 +524,25 @@ python scripts/run_harness.py resume --run outputs/agent_harness/my_trial
 `config.gvr.next.json` 将候选设置放在独立输出目录，证据位默认关闭。`scripts/run_gvr.py` 提前拒绝已有输出，`ppnl/gvr_audit.py` 拒绝冻结 split 外的网格。候选已实际训练和评测：ID／OOD 验证 Macro-F1 为 0.6499／0.7326，固定候选修复为 12%／4%，端到端仍为 0%。修复模型第 2 轮 loss 更低但成功率下降，实际选中第 1 轮，说明选模按任务指标工作。设计与完整结果见 [候选设计](docs/gvr_next.md) 和 [实跑报告](docs/gvr_next_run.md)。
 
 运行中 Windows 状态快照替换被短暂占用，`ppnl/harness.py` 的 `_atomic_json` 现对 `PermissionError` 做有限重试；永久错误仍抛出并保留日志与临时文件。进度监控改读权威日志。原失败目录保留，完成会话校验后复用，一个中断会话继续执行。训练前 69 项测试通过，新增恢复检查后共 72 项测试通过；这些运行问题的修复没有改变模型权重或评分规则。
+
+## 26. 数据隔离和测试前冻结
+
+`ppnl/experiment_freeze.py` 在 CPU 上重算布局并检查样本 ID、来源 ID、manifest 配额和任务索引，导出完整划分清单。训练/开发/测试按布局隔离；ID/OOD 有意共用环境，因此只要求这两组环境同序配对，不把它们说成独立测试。
+
+`scripts/freeze_experiment.py` 提供 audit、freeze、check。冻结将所选 G/V/R 的权重、tokenizer、配置、源码、执行器、数据及开发集验证报告绑定为哈希记录。`scripts/run_gvr.py` 在测试推理前验证 `--freeze`，缺失或漂移时在 CUDA 初始化前停止。成功结果保存锁哈希，方便追溯所用设置。
+
+冻结解决输入漂移，不能证明过去没有看过测试集。现有测试继续标为探索性结果，当前本地冻结只是事后保存。技能图作为下一步独立消融计划，HotpotQA 不加入主实验。完整规范及未来留出集要求见 [实验冻结说明](docs/evaluation_freeze.md)。
+
+## 27. 强化学习尝试：RLVR，而非人工反馈RLHF
+
+目前没有人工偏好数据，所以本轮用执行器提供可验证奖励。`ppnl/rlvr.py` 对到达目标给主要奖励，对非法动作与冗长路径惩罚，对失败路径提供小幅距离进展塑形。它不读取参考答案；曼哈顿进展只是辅助训练信号，不是成功证明。
+
+`scripts/run_rlvr.py` 复用生成底座，新增独立q/v LoRA。每个训练网格采样四条路径，以其余样本的平均奖励作baseline，通过REINFORCE增加高于baseline的输出概率，并用冻结底座的采样KL约束漂移。只做一次on-policy更新，没有critic、PPO裁剪或完整GRPO流程。`configs/rlvr.json` 固定64步、学习率0.00005、r=8、KL权重0.02及48-token解码上限。
+
+实际完成256条采样、64次更新。训练采样有2条成功，但开发集始终0/40；奖励从−1.1691升至−1.1488，不能称为规划成功率提高。开发集选中的step64 LoRA经 `scripts/verify_rlvr.py` 重载后，40条预测完全一致。3项新增CPU测试验证奖励和梯度。没有跑测试集，没有替换原基线。详细设置、局限和本地产物说明见 [RLVR实跑报告](docs/rlvr_run.md)。
+
+## 28. 实验记录如何发布和复核
+
+`scripts/export_rlvr_evidence.py` 将本地RLVR运行中的五次开发集预测、64组训练采样、选模报告、重载身份和来源记录整理到 `artifacts/rlvr/`，保留数据字节并提供SHA256清单；来源中的机器绝对路径转换为仓库相对路径。它不导出新权重、缓存或整个outputs目录，重复导出会拒绝覆盖已有证据。公开的 [非权重证据](artifacts/rlvr/README.md) 支持逐条核查，加载新模型仍需要本地生成底座和adapter。
+
+RLVR运行使用当时的 `8e05270` 代码及归档的RL新增源码；随后同步的梯度累积修复属于后续代码版本，不能写成此前试验已使用该修复。同步同伴更新后，整合了冻结规范、RLVR和真实T5/LoRA边界检查，完整90项回归测试通过。这些测试验证实现与保存重载，不代表规划成功率提高。

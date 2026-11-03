@@ -29,6 +29,7 @@ def main():
     parser.add_argument("--stage", choices=("generation", "verification", "repair"))
     parser.add_argument("--split", choices=("dev", "test_id", "test_ood"))
     parser.add_argument("--out")
+    parser.add_argument("--freeze", help="Required experiment lock for test inference")
     parser.add_argument("--evaluation-dir", help="Existing GVR evaluation directory for CPU recomputation")
     args = parser.parse_args()
     protocol = json.loads(Path(args.protocol).read_text(encoding="utf-8"))
@@ -72,6 +73,8 @@ def main():
     if args.command in ("pilot", "train"):
         if not args.stage:
             parser.error("--stage is required")
+        from ppnl.experiment_freeze import audit_splits
+        audit_splits(protocol["dataset_root"])
         from ppnl.gvr_training import train_stage
         out = args.out or str(Path(protocol["output_root"]) / args.stage / args.command)
         print(json.dumps(train_stage(config, protocol, args.stage, out, args.command == "pilot"), indent=2))
@@ -79,6 +82,13 @@ def main():
     if args.command == "evaluate" and not args.split:
         parser.error("--split is required")
     output = evaluation_output(protocol, args.command, args.split, args.out)
+    from ppnl.experiment_freeze import audit_splits, validate_freeze
+    audit_splits(protocol["dataset_root"])
+    freeze_receipt = None
+    if args.command == "evaluate" and args.split.startswith("test_"):
+        if not args.freeze:
+            parser.error("test inference requires --freeze; select on dev and freeze first")
+        freeze_receipt = validate_freeze(args.freeze, config, protocol)
     if args.command == "evaluate":
         rows = read_jsonl(Path(protocol["dataset_root"]) / f"{args.split}.jsonl")
         oracle = checked_oracle()
@@ -115,7 +125,10 @@ def main():
             write_json(output, report)
             print(json.dumps(report, indent=2))
             return
-        print(json.dumps(evaluate_gvr(model, rows, output, identity, oracle, check), indent=2))
+        metrics = evaluate_gvr(model, rows, output, identity, oracle, check)
+        if freeze_receipt is not None:
+            write_json(output / "experiment_freeze.json", freeze_receipt)
+        print(json.dumps(metrics, indent=2))
 
 
 if __name__ == "__main__":

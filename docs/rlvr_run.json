@@ -1,0 +1,53 @@
+{
+  "method": "RLVR: on-policy REINFORCE with leave-one-out baseline and sampled KL",
+  "human_preferences": false,
+  "test_evaluated": false,
+  "history": [
+    {
+      "step": 0,
+      "success_rate": 0.0,
+      "mean_reward": -1.1690545634920642
+    },
+    {
+      "step": 16,
+      "success_rate": 0.0,
+      "mean_reward": -1.167554563492064
+    },
+    {
+      "step": 32,
+      "success_rate": 0.0,
+      "mean_reward": -1.159554563492064
+    },
+    {
+      "step": 48,
+      "success_rate": 0.0,
+      "mean_reward": -1.158804563492064
+    },
+    {
+      "step": 64,
+      "success_rate": 0.0,
+      "mean_reward": -1.1488045634920634
+    }
+  ],
+  "selected": {
+    "step": 64,
+    "success_rate": 0.0,
+    "mean_reward": -1.1488045634920634
+  },
+  "limitation": "Reward shaping improvement alone is not planning success; dev-only exploratory pilot.",
+  "sample_stats": {
+    "updates": 64,
+    "plans": 256,
+    "successes": 2,
+    "feasible": 67,
+    "unique_train_ids": 60
+  },
+  "reload_check": {
+    "matches": true,
+    "n": 40,
+    "adapter_sha256": "18c0c16721406d2ba457c6138aece38d3d95d507ba30da70ec5e5f6a4d8f401a",
+    "base_sha256": "d0f497f2dfc455b343fb3045628353fa851876cb4adc56ba40fafa9acc8a1494"
+  },
+  "cpu_reward_recheck": true,
+  "gpu_ledger_seconds": 35.01599999999996
+}

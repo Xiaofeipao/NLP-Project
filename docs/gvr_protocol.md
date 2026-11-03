@@ -72,13 +72,16 @@ python scripts/run_gvr.py pilot --stage repair
 python scripts/run_gvr.py train --stage repair
 python scripts/run_gvr.py verify
 python scripts/run_gvr.py evaluate --split dev
-python scripts/run_gvr.py evaluate --split test_id
-python scripts/run_gvr.py evaluate --split test_ood
+python scripts/freeze_experiment.py freeze --protocol config.gvr.json --selection-report outputs/gvr/verify_dev.json --note "Describe development-only selection" --out outputs/gvr/freeze.json
+python scripts/run_gvr.py evaluate --split test_id --freeze outputs/gvr/freeze.json
+python scripts/run_gvr.py evaluate --split test_ood --freeze outputs/gvr/freeze.json
 ```
 
 预期产物：`outputs/gvr/{generation,verification,repair}/{pilot,train}/training.json`；G 权重在 `outputs/gvr/generation/train/best/`，V／R 权重分别在 `outputs/gvr/{verification,repair}/train/best/{verification,repair}/`。`verify` 检查保存重载、关闭适配器时 G 输出一致，并对固定开发集 40／100／60 条逐任务输出预测分布与成功率，保存至 `outputs/gvr/verify_dev.json`；它需要 GPU，也计入共用账本。评测指标在 `outputs/gvr/evaluation/<split>/metrics.json`，逐条轨迹在同目录 `candidate_traces.jsonl`、`pipeline_traces.jsonl`，案例在 `case_studies.json`。`preflight` 的 `ready_for_evaluation` 只有这些权重和配置齐备后才会为 `true`。
 
 输出目录拒绝覆盖；中断后不要原路径重复启动训练。先保存失败日志并核算 ledger，再决定使用新输出目录和相应配置路径。新 G、V、R 各最多两轮；pilot 单独记账。
+
+以上为新实验流程，已有目录不能直接复跑。测试前冻结规范见 [数据隔离与冻结](evaluation_freeze.md)；旧产物中的命令属于历史记录，新 CLI 的测试推理须增加 `--freeze`。冻结不能把复用测试重新变成盲测，历史结果 CPU 重算不受该门禁影响。
 
 开发集用于模型选择；测试集是复用测试集。评测前核对 V／R 的 `base_identity.json` 与 G 权重哈希一致。评测保留模型原始反馈，格式错误计入失败；自验证分支不调用执行器做决策。所有模式从同一网格生成，评测器检查首个候选逐字一致。B4 相比 B3 使用更多调用，须连同模型调用、执行器调用和耗时一起呈报。
 

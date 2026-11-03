@@ -3,3 +3,4 @@ data/** -text
 # Frozen evidence preserves original bytes, including original line endings.
 artifacts/gvr/** -text -whitespace
 artifacts/gvr/models/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
+artifacts/rlvr/** -text -whitespace

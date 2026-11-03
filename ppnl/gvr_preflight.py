@@ -9,6 +9,12 @@ from .data import task_index_manifest
 
 def preflight(config, protocol):
     checks = {}
+    try:
+        from .experiment_freeze import audit_splits
+        audit_splits(protocol["dataset_root"])
+        checks["split_isolation"] = True
+    except (OSError, ValueError, KeyError, TypeError):
+        checks["split_isolation"] = False
     index_path = Path(protocol["task_index"])
     try:
         checks["task_index"] = (index_path.exists() and
@@ -41,7 +47,7 @@ def preflight(config, protocol):
     checks["verification_adapter"] = Path(protocol["verification_adapter"]).joinpath("adapter_config.json").exists()
     checks["repair_adapter"] = Path(protocol["repair_adapter"]).joinpath("adapter_config.json").exists()
     return {"checks": checks, "gpu_seconds_recorded": seconds,
-            "ready_for_training": all(checks[k] for k in ("task_index", "official_executor",
+            "ready_for_training": all(checks[k] for k in ("split_isolation", "task_index", "official_executor",
                                                          "shared_gpu_ledger", "checkpoint_confirmation",
                                                          "evidence_declared")),
             "ready_for_evaluation": all(checks.values())}

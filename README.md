@@ -223,3 +223,8 @@ python -m ppnl.cli evaluate --model $primary --split test_ood --full
 项目最优性采用 BFS 的动作数量，而不是上游脚本中去空格后的字符数。可行性只要求执行期间无语法、越界、碰撞错误；未到目标可以可行但不成功。详细定义见实验协议。
 
 官方资料：[PPNL 仓库](https://github.com/MohamedAghzal/llms-as-path-planners/tree/5fd0376fc50ae9860bc986085165ebac5675fd44/ppnl-spatial-temporal-reasoning)、[Transformers 4.57 文档](https://huggingface.co/docs/transformers/v4.57.0/en/main_classes/trainer)。
+## 实验规范更新
+
+已完成一轮独立 [RLVR强化学习试验](docs/rlvr_run.md)：64次LoRA更新后，开发集仍为0/40成功，塑形奖励略升；新模型已通过保存重载检查，未跑测试集。该试验使用执行器奖励，没有人工偏好标注，因此不称为严格RLHF。
+
+现有网格实验增加了 [划分审计和测试前冻结](docs/evaluation_freeze.md)。新 GVR 测试入口要求 `--freeze`，绑定所选模型、配置、代码、数据与开发集检查证据；历史测试继续标为探索性结果。技能图作为后续独立消融方向，HotpotQA 暂不接入。
