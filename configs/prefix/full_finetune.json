@@ -1,0 +1,12 @@
+{
+  "family": "full_finetune",
+  "config": "config.policy.best.json",
+  "dataset_root": "data/derived",
+  "max_actions": 36,
+  "symbolic_only": false,
+  "traces": {
+    "dev": "outputs/flan_t5_small/eval_dev/pipeline_traces.jsonl",
+    "test_id": "outputs/flan_t5_small/eval_test_id_full/pipeline_traces.jsonl",
+    "test_ood": "outputs/flan_t5_small/eval_test_ood_full/pipeline_traces.jsonl"
+  }
+}

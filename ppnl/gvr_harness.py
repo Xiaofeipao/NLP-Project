@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import math
 import time
 
 from .core import Grid, execute, parse_verdict
@@ -10,9 +11,16 @@ from .harness import _commit, _lock, create_session, read_session
 MODES = {"direct": 0, "self": 1, "executor_one": 1, "executor_three": 3}
 
 
-def create_gvr_session(directory, grid, mode, identity, model_calls=8, active_seconds=300.0):
-    if mode not in MODES or model_calls < 1 or active_seconds <= 0:
+def validate_gvr_protocol(mode, model_calls, active_seconds):
+    if (mode not in MODES or isinstance(model_calls, bool) or not isinstance(model_calls, int)
+            or model_calls < 1 or isinstance(active_seconds, bool)
+            or not isinstance(active_seconds, (int, float)) or not math.isfinite(active_seconds)
+            or active_seconds <= 0):
         raise ValueError("Invalid GVR protocol")
+
+
+def create_gvr_session(directory, grid, mode, identity, model_calls=8, active_seconds=300.0):
+    validate_gvr_protocol(mode, model_calls, active_seconds)
     # Reuse the existing integrity checked manifest and journal without the
     # move/submit tool, whose truth-dependent stop is unsuitable here.
     from .harness import Budgets

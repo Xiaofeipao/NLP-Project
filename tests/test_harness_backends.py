@@ -4,7 +4,7 @@ import unittest
 from unittest.mock import Mock
 
 from ppnl.core import Grid
-from ppnl.harness_backends import PolicyBackend, RepairPolicyBackend
+from ppnl.harness_backends import PolicyBackend, RepairBackend, RepairPolicyBackend
 
 
 class BackendTests(unittest.TestCase):
@@ -47,3 +47,16 @@ class BackendTests(unittest.TestCase):
                 RepairPolicyBackend(Mock(), Mock(), value)
         with self.assertRaises(ValueError):
             PolicyBackend(Mock(), False, True)
+
+    def test_prefix_repair_submits_once_then_uses_policy_even_with_empty_prefix(self):
+        runner = SimpleNamespace(predict=lambda prompts, check: ["up right"])
+        repair = RepairBackend(runner, lambda: None, commit_prefix=True)
+        policy = Mock()
+        backend = RepairPolicyBackend(repair, policy, 1)
+        grid = Grid(2, 3, (), (0, 0), (0, 2))
+        context = {"grid": asdict(grid), "state": {"tool_calls": 0, "plan": "",
+                                                "candidate": "", "feedback": ""}}
+        self.assertEqual(backend.next_call(context),
+                         {"name": "submit_prefix_plan", "arguments": {"plan": "up right"}})
+        context["state"]["tool_calls"] = 1
+        self.assertIs(backend.next_call(context), policy.next_call.return_value)

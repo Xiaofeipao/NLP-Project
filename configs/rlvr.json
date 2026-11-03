@@ -6,7 +6,12 @@
   "group_size": 4,
   "max_new_tokens": 48,
   "eval_every": 16,
-  "learning_rate": 0.00005,
+  "learning_rate": 5e-05,
   "kl_beta": 0.02,
-  "lora": {"r": 8, "alpha": 16, "dropout": 0.0}
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.0
+  },
+  "prompt_format": "vanilla"
 }

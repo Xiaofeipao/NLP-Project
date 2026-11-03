@@ -52,10 +52,13 @@ class NeuralPolicy:
             raise ValueError("This policy head requires one-token action words; validated for Flan-T5")
         self.ids = [x[0] for x in ids]
         self.cache = {}
+        self.usage = {"requested_states": 0, "cache_hits": 0, "forward_batches": 0, "scored_states": 0}
 
     def scores(self, observations):
         import torch
         keys = [(g.layout_id, g.goal, tuple(p)) for g, p in observations]
+        self.usage["requested_states"] += len(keys)
+        self.usage["cache_hits"] += sum(key in self.cache for key in keys)
         unseen = {}
         for key, observation in zip(keys, observations):
             if key not in self.cache:
@@ -77,6 +80,8 @@ class NeuralPolicy:
             with torch.inference_mode(), runner.autocast():
                 logits = runner.model(**inputs.to(runner.device), decoder_input_ids=decoder,
                                       use_cache=False).logits[:, 0, self.ids]
+            self.usage["forward_batches"] += 1
+            self.usage["scored_states"] += len(batch)
             for (key, _), values in zip(batch, logits.float().cpu().tolist()):
                 self.cache[key] = values
         return [self.cache[k] for k in keys]

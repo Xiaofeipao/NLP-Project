@@ -1,0 +1,12 @@
+{
+  "family": "lora_gvr",
+  "config": "config.policy.best.json",
+  "dataset_root": "data/derived",
+  "max_actions": 36,
+  "symbolic_only": false,
+  "traces": {
+    "dev": "artifacts/gvr/evaluation/dev/pipeline_traces.jsonl",
+    "test_id": "artifacts/gvr/evaluation/test_id/pipeline_traces.jsonl",
+    "test_ood": "artifacts/gvr/evaluation/test_ood/pipeline_traces.jsonl"
+  }
+}

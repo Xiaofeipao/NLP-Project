@@ -54,3 +54,10 @@ def check_checkpoint_prompt_format(directory, expected):
     actual = json.loads(path.read_text(encoding="utf-8"))["prompt_format"] if path.exists() else "vanilla"
     if checked_prompt_format(actual) != expected:
         raise ValueError("Checkpoint prompt format differs; train a matching base first")
+
+
+def rlvr_prompt_config(config, spec):
+    """Validate the RL input contract before allocating GPU resources."""
+    runtime = protocol_model_config(config, spec)
+    check_checkpoint_prompt_format(spec["base"], runtime["prompt_format"])
+    return runtime

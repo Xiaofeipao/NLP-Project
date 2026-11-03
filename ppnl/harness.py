@@ -18,7 +18,7 @@ import time
 from .core import ACTIONS, Grid, execute
 
 VERSION = 1
-TOOLS = ("move", "verify_plan", "submit_plan", "finish")
+TOOLS = ("move", "verify_plan", "submit_plan", "submit_prefix_plan", "finish")
 
 
 def fingerprint(value):
@@ -111,7 +111,9 @@ def read_session(directory):
         raise ValueError("Unsupported or modified session manifest")
     state = {"status": "ready", "plan": "", "model_calls": 0, "tool_calls": 0,
              "action_attempts": 0, "active_seconds": 0.0, "invalid_calls": 0,
-             "feedback": "", "candidate": "", "history": []}
+             "feedback": "", "candidate": "", "prefix_candidate": "",
+             "prefix_feedback": "", "kept_prefix": "", "failure_position": None,
+             "history": []}
     previous = manifest["fingerprint"]
     count = 0
     journal = directory / "events.jsonl"
@@ -153,9 +155,12 @@ def _tool(grid, state, call, budget, oracle):
     name, args = call["name"], call["arguments"]
     if name not in TOOLS or not isinstance(args, dict):
         return "unknown_tool_or_arguments"
-    expected = {"move": {"action"}, "verify_plan": {"plan"}, "submit_plan": {"plan"}, "finish": set()}
+    expected = {"move": {"action"}, "verify_plan": {"plan"},
+                "submit_plan": {"plan"}, "submit_prefix_plan": {"plan"}, "finish": set()}
     if set(args) != expected[name]:
         return "invalid_tool_arguments"
+    if name == "submit_prefix_plan" and state["plan"]:
+        return "prefix_requires_empty_committed_path"
     if name == "finish":
         state["status"] = "stopped"
         return "agent_finished_without_verified_goal"
@@ -182,6 +187,26 @@ def _tool(grid, state, call, budget, oracle):
     if name == "move" and verdict.feasible or name == "submit_plan" and verdict.valid:
         state["plan"] = plan
         if verdict.valid:
+            state["status"] = "success"
+    elif name == "submit_prefix_plan":
+        state["prefix_candidate"] = plan
+        state["prefix_feedback"] = verdict.label()
+        prefix = []
+        position = grid.start
+        for event in verdict.trace:
+            if event["reason"]:
+                break
+            prefix.append(event["action"])
+            position = tuple(event["to"])
+            if position == grid.goal:
+                break
+        kept = " ".join(prefix)
+        if oracle:
+            oracle.check(grid, kept)
+        state["plan"] = kept
+        state["kept_prefix"] = kept
+        state["failure_position"] = list(position) if not verdict.valid else None
+        if position == grid.goal:
             state["status"] = "success"
     return verdict.label()
 
@@ -236,7 +261,8 @@ def run_session(directory, backend, backend_identity, oracle=None, check=lambda:
             feedback = _tool(grid, state, call, budget, oracle)
             state["active_seconds"] += time.monotonic() - started
             state["feedback"] = feedback
-            if feedback != "valid" and state["plan"] == before:
+            if feedback != "valid" and (state["plan"] == before or
+                                        isinstance(call, dict) and call.get("name") == "submit_prefix_plan"):
                 state["invalid_calls"] += 1
             # Bound untrusted outputs before persisting or returning them to a model.
             state["history"].append({"call": repr(call)[:2048], "feedback": feedback})
