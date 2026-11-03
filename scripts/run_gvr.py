@@ -95,11 +95,13 @@ def main():
     from ppnl.gvr_evaluation import evaluate_gvr
     from ppnl.modeling import gpu_budget, require_cuda
     from ppnl.task_adapters import GVRModel
+    from ppnl.prompts import protocol_model_config
+    runtime_config = protocol_model_config(config, protocol)
     require_cuda()
     operation = "gvr:verify" if args.command == "verify" else f"gvr:evaluate:{args.split}"
     with gpu_budget(config["gpu_ledger"], config["gpu_hours_cap"], operation) as check:
         paths = {"verification": protocol["verification_adapter"], "repair": protocol["repair_adapter"]}
-        model = GVRModel(protocol["generation_base"], paths, config)
+        model = GVRModel(protocol["generation_base"], paths, runtime_config)
         identity = {"base_sha256": model.base_hash, "adapters_sha256": model.adapter_hashes}
         if args.command == "verify":
             from ppnl.core import Grid
@@ -107,8 +109,8 @@ def main():
             from ppnl.prompts import prompt
             sample = next(r for r in read_jsonl(Path(protocol["dataset_root"]) / "dev.jsonl") if r["task"] == "generation")
             grid = Grid.from_dict(sample["grid"])
-            bare = Seq2Seq(protocol["generation_base"], config)
-            baseline = bare.predict([prompt("generation", grid)], check)[0]
+            bare = Seq2Seq(protocol["generation_base"], runtime_config)
+            baseline = bare.predict([prompt("generation", grid, input_format=runtime_config["prompt_format"])], check)[0]
             disabled = model.predict("generation", grid, check=check)
             if baseline != disabled:
                 raise RuntimeError("Disabling adapters changed the G output")
@@ -116,6 +118,7 @@ def main():
             from ppnl.gvr_evaluation import dev_model_diagnostics
             diagnostics = dev_model_diagnostics(model, protocol["dataset_root"], check)
             report = {"identity": identity, "disabled_adapter_matches_base": True,
+                      "prompt_format": runtime_config["prompt_format"],
                       "dev_diagnostics": diagnostics,
                       "verification_output": model.predict("verification", grid, baseline, check=check),
                       "repair_output": model.predict("repair", grid, baseline,

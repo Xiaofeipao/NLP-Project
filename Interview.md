@@ -546,3 +546,11 @@ python scripts/run_harness.py resume --run outputs/agent_harness/my_trial
 `scripts/export_rlvr_evidence.py` 将本地RLVR运行中的五次开发集预测、64组训练采样、选模报告、重载身份和来源记录整理到 `artifacts/rlvr/`，保留数据字节并提供SHA256清单；来源中的机器绝对路径转换为仓库相对路径。它不导出新权重、缓存或整个outputs目录，重复导出会拒绝覆盖已有证据。公开的 [非权重证据](artifacts/rlvr/README.md) 支持逐条核查，加载新模型仍需要本地生成底座和adapter。
 
 RLVR运行使用当时的 `8e05270` 代码及归档的RL新增源码；随后同步的梯度累积修复属于后续代码版本，不能写成此前试验已使用该修复。同步同伴更新后，整合了冻结规范、RLVR和真实T5/LoRA边界检查，完整90项回归测试通过。这些测试验证实现与保存重载，不代表规划成功率提高。
+
+## 29. 参考项目借鉴：结构化输入候选
+
+`ppnl/prompts.py` 新增可选结构化环境描述，将网格、坐标规则、起点、终点和障碍物列为字段。生成、验证和修复仍使用原有任务说明和输出格式，默认自然语言模板保持原样。`format_training_rows` 只转换输入，不改变ID、标签、参考路径或样例数；验证输入明确忽略金标反馈，修复输入使用调用者传入的反馈。
+
+`ppnl/gvr_training.py` 先检查固定原始数据，再转换输入，训练签名记录结构化设置。新底座和LoRA保存格式身份；`ppnl/task_adapters.py` 检查匹配关系并在推理时复用同一模板。`scripts/run_gvr.py` 的裸底座／关闭adapter检查也使用相同输入格式。冻结机制要求开发集检查证据的输入格式与当前协议一致，防止拿旧模板证据替新实验背书。
+
+两份配对配置为 `configs/gvr_format_vanilla.json` 和 `configs/gvr_format_structured.json`，分别写入新目录，其他实验参数一致。`scripts/preview_prompt_formats.py` 只用CPU和本地tokenizer检查train/dev；实际最长训练输入从159降到147token，完整95项CPU测试通过。尚未训练或评测结构化模型，不能声称规划成功率提高。坐标跟踪CoT尚未启用，参考项目的长训练预算和RL实现未移植。完整流程见 [结构化输入说明](docs/structured_inputs.md)。

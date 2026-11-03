@@ -88,6 +88,11 @@ def freeze_payload(config, protocol, selection_report, root=ROOT):
     report_path = Path(selection_report).resolve()
     report_name = report_path.relative_to(root).as_posix()
     report = json.loads(report_path.read_text(encoding="utf-8"))
+    from .prompts import protocol_model_config, check_checkpoint_prompt_format
+    style = protocol_model_config(config, protocol)["prompt_format"]
+    check_checkpoint_prompt_format(protocol["generation_base"], style)
+    if report.get("prompt_format", "vanilla") != style:
+        raise ValueError("Development evidence uses a different prompt format")
     if report.get("disabled_adapter_matches_base") is not True or not report.get("dev_diagnostics"):
         raise ValueError("Selection evidence must be a successful verify_dev report")
     from .task_adapters import checkpoint_hash

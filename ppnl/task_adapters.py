@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 from .modeling import Seq2Seq
-from .prompts import prompt
+from .prompts import prompt, checked_prompt_format, check_checkpoint_prompt_format
 
 
 def checkpoint_hash(path):
@@ -50,6 +50,8 @@ def attach_adapter(runner, name, settings):
 class GVRModel:
     """Named adapter switching. The generator always runs with adapters disabled."""
     def __init__(self, base, adapters, config):
+        self.prompt_format = checked_prompt_format(config.get("prompt_format", "vanilla"))
+        check_checkpoint_prompt_format(base, self.prompt_format)
         from peft import PeftModel
         self.base_hash = checkpoint_hash(base)
         self.runner = Seq2Seq(str(base), config)
@@ -59,6 +61,8 @@ class GVRModel:
                 if task not in ("verification", "repair"):
                     raise ValueError(task)
                 meta = json.loads((Path(directory) / "base_identity.json").read_text(encoding="utf-8"))
+                if meta.get("prompt_format", "vanilla") != self.prompt_format:
+                    raise ValueError("Adapter prompt format differs from generation base")
                 if meta["stage"] != task or meta["generation_base_sha256"] != self.base_hash:
                     raise ValueError("Adapter was trained on a different generation base")
                 self.adapter_hashes[task] = checkpoint_hash(directory)
@@ -82,7 +86,8 @@ class GVRModel:
                 model.set_adapter(task)
             context = nullcontext()
         with context:
-            source = prompt(task, grid, candidate, feedback)
+            source = prompt(task, grid, candidate, feedback,
+                            input_format=getattr(self, "prompt_format", "vanilla"))
             result = self.runner.predict([source], check)[0]
         self.last_usage = {"input_tokens": len(self.runner.tokenizer(source)["input_ids"]),
                            "output_tokens": len(self.runner.tokenizer(result)["input_ids"])}

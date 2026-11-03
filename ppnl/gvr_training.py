@@ -10,7 +10,8 @@ from .data import task_index, task_index_manifest, write_json
 from .core import Grid, execute, parse_verdict
 from .evaluation import plan_metrics, verification_metrics
 from .modeling import Seq2Seq, confirmation, gpu_budget, require_cuda
-from .prompts import prompt
+from .prompts import (prompt, protocol_model_config, format_training_rows,
+                      check_checkpoint_prompt_format)
 from .task_adapters import attach_adapter, checkpoint_hash
 from .gvr_objectives import checkpoint_rank, stage_options, training_loss
 from .optimization import ACCUMULATION_NORMALIZATION, accumulated_batches
@@ -73,6 +74,8 @@ def train_stage(config, protocol, stage, output, pilot=False):
     if stage not in ("generation", "verification", "repair"):
         raise ValueError(stage)
     options = stage_options(protocol, stage)
+    config = protocol_model_config(config, protocol)
+    style = config["prompt_format"]
     evidence = protocol["evidence"]
     if not (evidence.get("gpu_ledger_reconciled") and evidence.get("baseline_outputs_verified") and
             evidence.get("checkpoint_confirmed", evidence.get("checkpoint_manager_confirmed"))):
@@ -98,12 +101,16 @@ def train_stage(config, protocol, stage, output, pilot=False):
     base = Path(protocol["generation_base"])
     if stage != "generation" and not (base / "config.json").exists():
         raise ValueError("Train and freeze G first")
+    if stage != "generation":
+        check_checkpoint_prompt_format(base, style)
     base_hash = checkpoint_hash(base) if stage != "generation" else None
     if not pilot and prior["generation_base_sha256"] != base_hash:
         raise ValueError("Generation base changed since pilot")
     signature = {"training": config["training"], "stage_options": options,
                  "lora": protocol["lora"] if stage != "generation" else None,
                  "accumulation_normalization": ACCUMULATION_NORMALIZATION}
+    if style != "vanilla":
+        signature["prompt_format"] = style
     if not pilot and prior.get("training_signature") != signature:
         raise ValueError("Pilot objective, selection, LoRA or accumulation settings differ; run a fresh pilot")
     out = Path(output)
@@ -111,6 +118,7 @@ def train_stage(config, protocol, stage, output, pilot=False):
         raise FileExistsError("Use a fresh training output directory")
     rows, dev = task_index(root, "train", stage), task_index(root, "dev", stage)
     validate_stage_rows(stage, rows, dev)
+    rows, dev = format_training_rows(rows, style), format_training_rows(dev, style)
     torch = require_cuda()
     settings = config["training"]
     epochs = 1 if pilot else settings["epochs"]
@@ -187,6 +195,7 @@ def train_stage(config, protocol, stage, output, pilot=False):
                     runner.model.save_pretrained(out / "best")
                     if stage == "generation":
                         runner.tokenizer.save_pretrained(out / "best")
+                        write_json(out / "best" / "prompt_format.json", {"prompt_format": style})
         torch.cuda.synchronize()
         if base_hash and checkpoint_hash(base) != base_hash:
             raise RuntimeError("Frozen G changed during adapter training")
@@ -196,6 +205,7 @@ def train_stage(config, protocol, stage, output, pilot=False):
                   "source_revision": runner.source_revision, "generation_base_sha256": base_hash,
                   "task_index_source_sha256": index["source_manifest_sha256"], "lengths": lengths,
                   "training_config": settings,
+                  "prompt_format": style,
                   "training_signature": signature, "stage_options": options,
                   "best_epoch": best_epoch, "best_selection_rank": best,
                   "effective_learning_rate": options.get("learning_rate", settings["learning_rate"]),
@@ -205,5 +215,6 @@ def train_stage(config, protocol, stage, output, pilot=False):
         write_json(out / "training.json", report)
         if not pilot and stage != "generation":
             write_json(out / "best" / stage / "base_identity.json", {"generation_base_sha256": base_hash,
-                       "stage": stage, "task_index_source_sha256": index["source_manifest_sha256"]})
+                       "stage": stage, "task_index_source_sha256": index["source_manifest_sha256"],
+                       "prompt_format": style})
         return report
