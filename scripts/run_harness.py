@@ -14,8 +14,8 @@ from ppnl.harness_backends import backend_identity, load_backend
 
 
 def prepare(spec):
-    if spec["backend"] not in ("policy", "repair", "repair_policy"):
-        raise ValueError("backend must be policy, repair or repair_policy")
+    if spec["backend"] not in ("policy", "repair", "repair_policy", "prefix_state_repair"):
+        raise ValueError("backend must be policy, repair, repair_policy or prefix_state_repair")
     if not isinstance(spec.get("legal_mask", False), bool):
         raise ValueError("legal_mask must be boolean")
     if not isinstance(spec.get("avoid_revisits", False), bool):

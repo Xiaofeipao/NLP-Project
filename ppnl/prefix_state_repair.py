@@ -59,27 +59,43 @@ def load_generated_candidates(dataset_root, split, trace_path, oracle):
 
 
 def repair_generated(grid, candidate, scorer, oracle, max_actions=36, check=lambda: None):
-    """Keep every physically valid action; choose one legal action per repair step."""
+    """Keep a physically valid prefix within budget, then repair one step at a time."""
     if not isinstance(candidate, str):
         raise TypeError("Generated candidate must be text")
     if isinstance(max_actions, bool) or not isinstance(max_actions, int) or max_actions < 1:
         raise ValueError("max_actions must be a positive integer")
     original = oracle.check(grid, candidate)
-    if original.valid:
+    if original.valid and len(candidate.split()) <= max_actions:
         return {"plan": candidate, "kept_prefix": candidate, "failure_position": None,
                 "initial_feedback": original.label(), "final_feedback": original.label(),
                 "policy_calls": 0, "steps": [], "stop_reason": "already_valid"}
     prefix, remaining = repair_prefix(grid, candidate)
-    if len(prefix) > max_actions:
-        raise ValueError("Executor-valid prefix exceeds total action budget")
-    position = remaining.start if remaining is not None else grid.goal
-    plan = list(prefix)
-    steps = []
+    failure_position = (None if original.valid else
+                        list(remaining.start if remaining is not None else grid.goal))
+    plan = list(prefix[:max_actions])
     visits = Counter({grid.start: 1})
     cursor = grid.start
-    for action in prefix:
+    for action in plan:
         cursor = neighbors(grid, cursor)[action]
         visits[cursor] += 1
+    if len(prefix) > max_actions:
+        final_plan = " ".join(plan)
+        final = oracle.check(grid, final_plan)
+        return {"plan": final_plan, "kept_prefix": final_plan,
+                "failure_position": failure_position,
+                "budget_position": list(cursor), "initial_feedback": original.label(),
+                "final_feedback": final.label(), "policy_calls": 0, "steps": [],
+                "stop_reason": "prefix_exceeds_budget"}
+    if original.valid:
+        final_plan = " ".join(plan)
+        final = oracle.check(grid, final_plan)
+        if not final.valid:
+            raise AssertionError("First goal prefix of a valid candidate must remain valid")
+        return {"plan": final_plan, "kept_prefix": final_plan, "failure_position": None,
+                "initial_feedback": original.label(), "final_feedback": final.label(),
+                "policy_calls": 0, "steps": [], "stop_reason": "already_valid_trimmed_to_goal"}
+    position = remaining.start if remaining is not None else grid.goal
+    steps = []
     if cursor != position:
         raise AssertionError("Executor prefix and failure position disagree")
     stop_reason = "goal_reached_in_prefix" if position == grid.goal else "action_budget"
@@ -109,7 +125,7 @@ def repair_generated(grid, candidate, scorer, oracle, max_actions=36, check=lamb
     final_plan = " ".join(plan)
     final = oracle.check(grid, final_plan)
     return {"plan": final_plan, "kept_prefix": " ".join(prefix),
-            "failure_position": list(remaining.start) if remaining is not None else list(grid.goal),
+            "failure_position": failure_position,
             "initial_feedback": original.label(), "final_feedback": final.label(),
             "policy_calls": len(steps), "steps": steps, "stop_reason": stop_reason}
 
@@ -128,6 +144,10 @@ def evaluate_generated(paired, scorer, oracle, max_actions=36, check=lambda: Non
                         "candidate": candidate, **result})
     metrics = {"direct": plan_metrics(grids, baseline),
                "prefix_state_repair": plan_metrics(grids, repaired)}
+    metrics["direct"]["over_repair_budget_count"] = sum(
+        len(candidate.split()) > max_actions for candidate in baseline)
+    metrics["prefix_state_repair"]["prefix_over_budget_count"] = sum(
+        row["stop_reason"] == "prefix_exceeds_budget" for row in records)
     metrics["prefix_state_repair"]["mean_policy_calls"] = sum(
         row["policy_calls"] for row in records) / len(records)
     metrics["prefix_state_repair"]["mean_kept_actions"] = sum(
@@ -142,6 +162,7 @@ def save_result(directory, dataset_root, split, trace_path, policy_sha256,
     source = Path(trace_path)
     dataset = Path(dataset_root) / f"{split}.jsonl"
     report = {"split": split, "n": len(records), "max_total_actions": max_actions,
+              "budget_applies_to": "prefix_state_repair",
               "source_trace_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
               "dataset_sha256": hashlib.sha256(dataset.read_bytes()).hexdigest(),
               "policy_weights_sha256": policy_sha256, "official_executor_sha256": oracle_sha256,

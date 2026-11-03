@@ -20,7 +20,9 @@ executor. It then:
    the fewest prior visits, breaking ties with the policy scores. There is no
    BFS or shortest-path fallback at inference.
 4. Stops at the goal, when no legal neighbor exists, or at the total action
-   budget. The official executor scores the final plan separately.
+   budget. If the valid prefix itself exceeds the budget, the output keeps its
+   first `max_actions` actions and records `prefix_exceeds_budget` for that
+   sample. The official executor scores the final plan separately.
 
 `direct` and `prefix_state_repair` metrics use exactly the same saved
 environments. Results include the retained prefix, failure position, chosen
@@ -40,8 +42,34 @@ python scripts/run_main_prefix_state_repair.py --split test_id --out outputs/mai
 ```
 
 Use `--trace` for a different saved original full-model trace and `--max-actions`
-to set the same total path-length cap for all candidates. `--check-only` reads
+to cap each repaired output. Long valid candidates are also capped; when they
+reach the goal within the budget, the output stops at that first goal. The
+`direct` metric always evaluates the unchanged saved proposal and reports how
+many proposals exceed the repair budget. `--check-only` reads
 and validates existing artifacts without loading a model or writing results.
 Full evaluation needs CUDA. If a development selection file exists, the runner
 checks the state policy weight hash against it before inference. Each output
 directory must be new; old results are never overwritten.
+
+## Journaled agent runtime
+
+The same prefix transition is available in the live harness with the
+`prefix_state_repair` backend. Its first model call generates a whole-plan
+candidate through `submit_prefix_plan`. On failure, the harness commits the
+physically executed prefix through the first goal (if reached), records the
+original candidate and feedback, and gives the next call the reached position.
+The selected state policy then makes one legal `move` per call. An empty prefix
+still switches to the policy after that first proposal. The complete submitted
+candidate counts against the action-attempt budget; each recovery move counts
+once. The prefix and failure position are persisted in the journal, so resume
+does not repeat committed actions.
+
+```powershell
+python scripts/run_harness.py run --spec configs/harness/prefix_state_repair.json --out outputs/agent_harness/prefix_repair_001 --dry-run
+python scripts/run_harness.py run --spec configs/harness/prefix_state_repair.json --out outputs/agent_harness/prefix_repair_001
+python scripts/run_harness.py inspect --run outputs/agent_harness/prefix_repair_001
+```
+
+This backend uses the same model checkpoints as the standalone evaluation but
+generates a fresh first proposal. The offline results above replay saved
+proposals and therefore are not measurements of this runtime's success rate.

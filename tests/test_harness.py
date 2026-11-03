@@ -2,17 +2,21 @@
 import json
 from pathlib import Path
 import tempfile
+from types import SimpleNamespace
 import unittest
 
 from ppnl.core import Grid
 from ppnl.harness import Budgets, create_session, read_session, run_session
+from ppnl.harness_backends import PolicyBackend, RepairBackend, RepairPolicyBackend
 
 
 class Scripted:
     def __init__(self, calls):
         self.calls = iter(calls)
+        self.contexts = []
 
     def next_call(self, context):
+        self.contexts.append(context)
         call = next(self.calls)
         if isinstance(call, Exception):
             raise call
@@ -61,6 +65,71 @@ class AgentHarnessTests(unittest.TestCase):
         state = self.run_calls(call("verify_plan", plan="down right"), call("finish"))
         self.assertEqual(state["plan"], "")
         self.assertEqual(state["status"], "stopped")
+
+    def test_failed_whole_plan_commits_prefix_and_resumes_at_failure_position(self):
+        self.grid = Grid(2, 3, (), (0, 0), (0, 2))
+        self.create()
+        backend = Scripted([call("submit_prefix_plan", plan="right up left down"),
+                            call("move", action="right")])
+        state = run_session(self.directory, backend, self.identity)
+        self.assertEqual(backend.contexts[1]["position"], [0, 1])
+        self.assertEqual(backend.contexts[1]["state"]["plan"], "right")
+        self.assertEqual(state["plan"], "right right")
+        self.assertEqual(state["kept_prefix"], "right")
+        self.assertEqual(state["prefix_candidate"], "right up left down")
+        self.assertEqual(state["prefix_feedback"], "invalid | step=2 | reason=out_of_bounds")
+        self.assertEqual(state["failure_position"], [0, 1])
+        self.assertEqual(state["invalid_calls"], 1)
+        self.assertEqual(state["action_attempts"], 5)
+        self.assertEqual(state["status"], "success")
+
+    def test_prefix_commit_survives_resume_after_backend_error(self):
+        self.grid = Grid(2, 3, (), (0, 0), (0, 2))
+        self.create()
+        with self.assertRaises(RuntimeError):
+            self.run_calls(call("submit_prefix_plan", plan="right up"), RuntimeError("interrupted"))
+        (self.directory / "state.json").write_text("{}", encoding="utf-8")
+        backend = Scripted([call("move", action="right")])
+        state = run_session(self.directory, backend, self.identity)
+        self.assertEqual(backend.contexts[0]["position"], [0, 1])
+        self.assertEqual(state["plan"], "right right")
+        self.assertEqual(state["status"], "success")
+
+    def test_prefix_reaching_goal_stops_before_later_failure(self):
+        self.grid = Grid(2, 3, (), (0, 0), (0, 2))
+        self.create()
+        state = self.run_calls(call("submit_prefix_plan", plan="right right up"))
+        self.assertEqual(state["plan"], "right right")
+        self.assertEqual(state["status"], "success")
+        self.assertEqual(state["invalid_calls"], 1)
+
+    def test_prefix_submit_respects_entire_proposal_budget(self):
+        self.create(action_attempts=1)
+        state = self.run_calls(call("submit_prefix_plan", plan="right up"))
+        self.assertEqual(state["plan"], "")
+        self.assertEqual(state["status"], "budget_exhausted")
+
+    def test_prefix_submit_cannot_replace_a_committed_path(self):
+        self.create(model_calls=2)
+        state = self.run_calls(call("move", action="right"),
+                               call("submit_prefix_plan", plan="down right"))
+        self.assertEqual(state["plan"], "right")
+        self.assertEqual(state["feedback"], "prefix_requires_empty_committed_path")
+        self.assertEqual(state["action_attempts"], 1)
+
+    def test_prefix_repair_backend_runs_through_live_harness(self):
+        self.grid = Grid(2, 3, (), (0, 0), (0, 2))
+        self.create()
+        generator = SimpleNamespace(predict=lambda prompts, check: ["right up"])
+        scorer = SimpleNamespace(scores=lambda observations: [[0, 0, 0, 10]])
+        backend = RepairPolicyBackend(RepairBackend(generator, lambda: None, commit_prefix=True),
+                                      PolicyBackend(scorer, legal_mask=True, avoid_revisits=True), 1)
+        state = run_session(self.directory, backend, self.identity)
+        self.assertEqual(state["status"], "success")
+        self.assertEqual(state["plan"], "right right")
+        self.assertEqual(state["kept_prefix"], "right")
+        self.assertEqual(state["model_calls"], 2)
+        self.assertEqual(state["tool_calls"], 2)
 
     def test_model_budget_blocks_another_call(self):
         self.create(model_calls=1)

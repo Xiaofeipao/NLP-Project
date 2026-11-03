@@ -21,7 +21,7 @@ def backend_identity(spec, config):
         raise ValueError("Expected an existing local checkpoint, not a download identifier")
     modules = ("harness.py", "harness_backends.py", "core.py", "prompts.py", "policy.py", "modeling.py")
     recovery = None
-    if spec["backend"] == "repair_policy":
+    if spec["backend"] in ("repair_policy", "prefix_state_repair"):
         recovery_config = json.loads(Path(spec["recovery_config"]).read_text(encoding="utf-8"))
         recovery_config["local_files_only"] = True
         recovery_spec = {"backend": "policy", "checkpoint": spec["recovery_checkpoint"],
@@ -68,8 +68,8 @@ class PolicyBackend:
 class RepairBackend:
     """Whole-plan generation followed by executor-feedback repair prompts."""
 
-    def __init__(self, runner, check):
-        self.runner, self.check = runner, check
+    def __init__(self, runner, check, commit_prefix=False):
+        self.runner, self.check, self.commit_prefix = runner, check, commit_prefix
 
     def next_call(self, context):
         state = context["state"]
@@ -77,7 +77,8 @@ class RepairBackend:
         task = "repair" if state["tool_calls"] else "generation"
         text = prompt(task, grid, state["candidate"], state["feedback"])
         plan = self.runner.predict([text], self.check)[0]
-        return {"name": "submit_plan", "arguments": {"plan": plan}}
+        return {"name": "submit_prefix_plan" if self.commit_prefix else "submit_plan",
+                "arguments": {"plan": plan}}
 
 
 class RepairPolicyBackend:
@@ -104,7 +105,7 @@ def load_backend(spec, config, check):
     from .modeling import Seq2Seq, require_cuda
     require_cuda()
     runner = Seq2Seq(spec["checkpoint"], config)
-    if spec["backend"] in ("policy", "repair_policy"):
+    if spec["backend"] in ("policy", "repair_policy", "prefix_state_repair"):
         from .policy import NeuralPolicy
         if spec["backend"] == "policy":
             return PolicyBackend(NeuralPolicy(runner, check), spec.get("legal_mask", False),
@@ -113,6 +114,8 @@ def load_backend(spec, config, check):
         recovery_config["local_files_only"] = True
         recovery_runner = Seq2Seq(spec["recovery_checkpoint"], recovery_config)
         policy = PolicyBackend(NeuralPolicy(recovery_runner, check), True, spec.get("avoid_revisits", False))
+        if spec["backend"] == "prefix_state_repair":
+            return RepairPolicyBackend(RepairBackend(runner, check, commit_prefix=True), policy, 1)
         return RepairPolicyBackend(RepairBackend(runner, check), policy, spec.get("repair_calls", 2))
     if spec["backend"] == "repair":
         return RepairBackend(runner, check)

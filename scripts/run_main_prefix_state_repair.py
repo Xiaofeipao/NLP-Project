@@ -26,7 +26,8 @@ def main():
     parser.add_argument("--split", choices=("dev", "test_id", "test_ood"), required=True)
     parser.add_argument("--trace", help="original full-model pipeline_traces.jsonl")
     parser.add_argument("--out", help="new directory under outputs/main_prefix_state_repair")
-    parser.add_argument("--max-actions", type=int, default=36)
+    parser.add_argument("--max-actions", type=int, default=36,
+                        help="total action cap for each repaired output; direct baseline stays unchanged")
     parser.add_argument("--check-only", action="store_true", help="validate saved candidates without a model")
     args = parser.parse_args()
     if args.max_actions < 1:

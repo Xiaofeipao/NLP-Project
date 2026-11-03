@@ -79,10 +79,45 @@ class PrefixRepairTests(unittest.TestCase):
         result = repair_generated(self.grid, "right", Scores(), self.oracle, max_actions=1)
         self.assertEqual(result["stop_reason"], "action_budget")
         self.assertEqual(result["plan"], "right")
-        with self.assertRaisesRegex(ValueError, "prefix exceeds"):
-            repair_generated(self.grid, "right left", Scores(), self.oracle, max_actions=1)
+        scorer = Scores()
+        overflow = repair_generated(self.grid, "right left", scorer, self.oracle, max_actions=1)
+        self.assertEqual(overflow["plan"], "right")
+        self.assertEqual(overflow["kept_prefix"], "right")
+        self.assertEqual(overflow["failure_position"], [0, 0])
+        self.assertEqual(overflow["budget_position"], [0, 1])
+        self.assertEqual(overflow["stop_reason"], "prefix_exceeds_budget")
+        self.assertEqual(overflow["policy_calls"], 0)
+        self.assertEqual(scorer.calls, [])
         with self.assertRaisesRegex(ValueError, "finite"):
             repair_generated(self.grid, "right", Scores((0, 0, 0, float("nan"))), self.oracle)
+
+    def test_valid_long_candidate_obeys_repair_budget(self):
+        scorer = Scores()
+        long_valid = "right left right right"
+        result = repair_generated(self.grid, long_valid, scorer, self.oracle, max_actions=2)
+        self.assertEqual(result["initial_feedback"], "valid")
+        self.assertEqual(result["plan"], "right left")
+        self.assertEqual(result["final_feedback"], "invalid | step=3 | reason=goal_not_reached")
+        self.assertEqual(result["stop_reason"], "prefix_exceeds_budget")
+        self.assertEqual(result["failure_position"], None)
+        self.assertEqual(scorer.calls, [])
+
+    def test_valid_long_candidate_can_stop_at_earlier_goal_within_budget(self):
+        result = repair_generated(self.grid, "right right left right", Scores(), self.oracle,
+                                  max_actions=2)
+        self.assertEqual(result["plan"], "right right")
+        self.assertEqual(result["final_feedback"], "valid")
+        self.assertEqual(result["stop_reason"], "already_valid_trimmed_to_goal")
+
+    def test_one_overlong_prefix_does_not_abort_paired_evaluation(self):
+        paired = [(self.grid, "right left right right", "long"),
+                  (self.grid, "right", "short")]
+        metrics, records = evaluate_generated(paired, Scores(), self.oracle, max_actions=2)
+        self.assertEqual(len(records), 2)
+        self.assertEqual(records[0]["stop_reason"], "prefix_exceeds_budget")
+        self.assertEqual(records[1]["final_feedback"], "valid")
+        self.assertEqual(metrics["direct"]["over_repair_budget_count"], 1)
+        self.assertEqual(metrics["prefix_state_repair"]["prefix_over_budget_count"], 1)
 
     def test_generated_trace_requires_exact_frozen_environment_and_truth(self):
         with tempfile.TemporaryDirectory() as temp:
