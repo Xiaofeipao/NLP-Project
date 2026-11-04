@@ -8,6 +8,8 @@
 
 此前未发布的 9 个历史有效权重（包括 Flan-T5 逐步策略及其单/多动作对照）另存于 [历史模型备份](artifacts/historical_models/README.md)，避免与本轮模型和成绩混淆。
 
+上传完成并校验远端后，已按要求清理本机重复权重、原始运行目录及模型缓存。代码、数据集和公开报告保留；需要再次使用模型时运行 `git lfs pull --include="artifacts/campaign_20261103/**,artifacts/historical_models/**,artifacts/gvr/models/**"` 按需恢复。公开副本的脱敏与历史冻结边界见产物说明。
+
 `main` 是包含全部实验方法的统一代码版本，不是“纯基线”，也不表示所有方案都训练成功。方法用入口和配置区分，历史结果用提交/标签区分。先读 [项目、方法和分支导航](docs/project_map.md)，再选择运行入口；[模块分类](ppnl/README.md)、[脚本分类](scripts/README.md)、[配置分类](configs/README.md) 提供按职责索引。
 
 此前代码整合修正了 restart 消融、动作预算、测试前冻结和 RLVR 输入格式检查。该历史版本只有 **RLVR REINFORCE + LoRA**，结构化输入候选当时尚未训练。以下不同日期的成功率与测试数均为对应版本的历史记录；本轮 GPU 扩展的进度和新结果单独记录。
