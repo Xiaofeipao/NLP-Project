@@ -1,0 +1,13 @@
+{
+  "family": "full_finetune",
+  "trace_format": "gvr",
+  "config": "outputs\\campaign_20261103\\t5_small_policy.json",
+  "dataset_root": "data/derived",
+  "max_actions": 36,
+  "symbolic_only": false,
+  "traces": {
+    "dev": "outputs\\campaign_20261103\\full_harness\\t5_small\\dev\\pipeline_traces.jsonl",
+    "test_id": "outputs\\campaign_20261103\\full_harness\\t5_small\\test_id\\pipeline_traces.jsonl",
+    "test_ood": "outputs\\campaign_20261103\\full_harness\\t5_small\\test_ood\\pipeline_traces.jsonl"
+  }
+}

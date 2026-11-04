@@ -1,5 +1,7 @@
 # 项目方法、代码与分支导航
 
+本页下文记录代码整合时的历史状态。后续三模型 GPU 扩展已完成（2026-11-04），包括 outcome-GRPO、三个指定原始基线、两种输入格式的 GVR LoRA、验证辅助损失、独立逐步策略和前缀消融；99/99 份报告齐全。当前入口依次为 `run_gpu_campaign.py`、`run_campaign_status_ablation.py`、`run_campaign_policies.py`、`evaluate_gpu_campaign.py`，结果见 [三模型实验记录](gpu_campaign_20261103.md)。下文的“尚未训练”“未实现 GRPO”只描述历史版本；现有方法分支和归档标签没有被本轮本地实验改写。
+
 ## main 是什么
 
 `main` 是统一维护的完整代码版本：包含数据、全量微调基线、逐步策略、GVR LoRA、Harness、前缀修复和独立 RLVR 试验，以及测试和使用说明。它不是“只有 baseline”的分支，也不是某一个模型。稳定指本次 CPU 回归检查通过、入口和数据约束明确；不代表每种方法都训练过、成功率高，或 GPU 端到端已重新验证。

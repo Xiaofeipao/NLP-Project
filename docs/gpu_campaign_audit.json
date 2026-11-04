@@ -1,0 +1,16 @@
+{
+  "completed_date": "2026-11-04",
+  "campaign": "campaign_20261103",
+  "expected_reports": 99,
+  "completed_reports": 99,
+  "source_matching_freezes": 33,
+  "matching_test_freeze_receipts": 66,
+  "cpu_regression_tests_passed": 141,
+  "training_status_complete": true,
+  "evaluation_status_complete": true,
+  "audit_scope": "Report completeness, current source hashes against freezes, and test receipt hashes against lock files. This does not restore test blindness or independently rerun all inference.",
+  "test_status": "reused_exploratory",
+  "default_configuration_changed": false,
+  "weights_in_publication_bundle": true,
+  "publication_manifest": "artifacts/campaign_20261103/manifest.json"
+}

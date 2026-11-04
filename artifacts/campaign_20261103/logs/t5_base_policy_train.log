@@ -1,0 +1,78 @@
+t5_base: epoch 1/2, 1000 batches
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 100, "batches": 1000, "updates": 25, "mean_train_loss": 1.0025586342811585, "elapsed_seconds": 14.097162299998672}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 200, "batches": 1000, "updates": 50, "mean_train_loss": 0.6682846152409911, "elapsed_seconds": 27.183830999998463}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 300, "batches": 1000, "updates": 75, "mean_train_loss": 0.5261685277552655, "elapsed_seconds": 38.418386100000134}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 400, "batches": 1000, "updates": 100, "mean_train_loss": 0.4329235337990394, "elapsed_seconds": 49.420248299999}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 500, "batches": 1000, "updates": 125, "mean_train_loss": 0.3902334161313484, "elapsed_seconds": 61.35244280000006}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 600, "batches": 1000, "updates": 150, "mean_train_loss": 0.35612208826642017, "elapsed_seconds": 73.48397029999978}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 700, "batches": 1000, "updates": 175, "mean_train_loss": 0.3271838136893764, "elapsed_seconds": 84.90656139999919}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 800, "batches": 1000, "updates": 200, "mean_train_loss": 0.3104167040945322, "elapsed_seconds": 96.6822075}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 900, "batches": 1000, "updates": 225, "mean_train_loss": 0.2929703146384822, "elapsed_seconds": 108.95339649999914}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 1000, "batches": 1000, "updates": 250, "mean_train_loss": 0.27829760627949146, "elapsed_seconds": 121.36386609999863}
+t5_base: epoch 1, dev loss 0.146715
+t5_base: epoch 2/2, 1000 batches
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 100, "batches": 1000, "updates": 275, "mean_train_loss": 0.171686231099884, "elapsed_seconds": 134.9682987999986}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 200, "batches": 1000, "updates": 300, "mean_train_loss": 0.1428208137395268, "elapsed_seconds": 146.33048979999876}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 300, "batches": 1000, "updates": 325, "mean_train_loss": 0.14986941505252616, "elapsed_seconds": 157.75878699999885}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 400, "batches": 1000, "updates": 350, "mean_train_loss": 0.1666275158726057, "elapsed_seconds": 170.10601339999994}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 500, "batches": 1000, "updates": 375, "mean_train_loss": 0.1630352426310419, "elapsed_seconds": 181.9418339999993}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 600, "batches": 1000, "updates": 400, "mean_train_loss": 0.1575431411000803, "elapsed_seconds": 193.8222621999994}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 700, "batches": 1000, "updates": 425, "mean_train_loss": 0.1631572544894464, "elapsed_seconds": 205.88600889999907}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 800, "batches": 1000, "updates": 450, "mean_train_loss": 0.15968111829064582, "elapsed_seconds": 218.63382739999906}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 900, "batches": 1000, "updates": 475, "mean_train_loss": 0.15891898423255446, "elapsed_seconds": 229.3713416999999}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 1000, "batches": 1000, "updates": 500, "mean_train_loss": 0.1544412620762887, "elapsed_seconds": 241.56215689999954}
+t5_base: epoch 2, dev loss 0.236689
+{
+  "checkpoint": "google-t5/t5-base",
+  "requested_revision": "a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+  "resolved_revision": "a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+  "data_fingerprint": "8bdfe736c84375bccdef3079661c146f00385dd3996912f2d71f8a0ccecced7a",
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4,
+    "policy_loss": "optimal_actions"
+  },
+  "accumulation_normalization": "loss_units_v1",
+  "confirmation_note": "User requested the three linked checkpoints for this controlled GPU comparison.",
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 4627653120,
+  "peak_reserved_bytes": 5284823040,
+  "lengths": {
+    "max_input_tokens": 172,
+    "max_target_tokens": 16
+  },
+  "examples_processed": 8000,
+  "optimizer_updates": 500,
+  "train_and_loss_eval_seconds": 243.08143719999862,
+  "train_examples_per_second_including_validation": 32.910781226860564,
+  "generation_eval_seconds": 3.534358200000497,
+  "generation_examples_per_second": 56.587360047425825,
+  "history": [
+    {
+      "epoch": 1,
+      "train_batch_mean_loss": 0.27829760627949146,
+      "dev_loss": 0.14671522315533367,
+      "dev_token_mean_loss": null
+    },
+    {
+      "epoch": 2,
+      "train_batch_mean_loss": 0.1544412620762887,
+      "dev_loss": 0.2366892147237377,
+      "dev_token_mean_loss": null
+    }
+  ],
+  "dev_exact_match": 0.62,
+  "dev_policy_action_accuracy": 0.97,
+  "torch_version": "2.12.1+cu132",
+  "precision": "float32",
+  "loss_normalization": "example_mean_action_classification_and_verifier_text",
+  "matmul_precision": "high"
+}

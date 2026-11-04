@@ -1,0 +1,70 @@
+{
+  "split": "test_ood",
+  "planning": {
+    "original_whole_plan": {
+      "n": 200,
+      "success_rate": 0.0,
+      "feasibility": 0.0,
+      "optimality": 0.0,
+      "path_efficiency_on_success": null
+    },
+    "state_policy": {
+      "n": 200,
+      "success_rate": 0.76,
+      "feasibility": 0.76,
+      "optimality": 0.76,
+      "path_efficiency_on_success": 1.0
+    },
+    "legal_mask_no_search": {
+      "n": 200,
+      "success_rate": 0.95,
+      "feasibility": 1.0,
+      "optimality": 0.855,
+      "path_efficiency_on_success": 0.9594611528822055
+    },
+    "neural_best_first": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.995,
+      "path_efficiency_on_success": 0.9988888888888888
+    },
+    "symbolic_astar_no_model": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 1.0,
+      "path_efficiency_on_success": 1.0
+    }
+  },
+  "prefix_repair": {
+    "state_policy": {
+      "n": 100,
+      "success_rate": 0.86,
+      "feasibility": 0.86,
+      "optimality": 0.6,
+      "path_efficiency_on_success": 0.888711869525823
+    },
+    "legal_mask_no_search": {
+      "n": 100,
+      "success_rate": 0.96,
+      "feasibility": 1.0,
+      "optimality": 0.65,
+      "path_efficiency_on_success": 0.8749616702741703
+    },
+    "neural_best_first": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.7,
+      "path_efficiency_on_success": 0.8845844155844155
+    },
+    "symbolic_astar_no_model": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.7,
+      "path_efficiency_on_success": 0.8845844155844155
+    }
+  }
+}

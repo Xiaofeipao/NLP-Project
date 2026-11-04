@@ -1,0 +1,6 @@
+{
+  "method": "harness_visit",
+  "weights_sha256": "a2fb2eabdfca8e97e276bc04b6c4ac533b5dc97e9ef97bcf33bec37f7cc806d2",
+  "dev_report_sha256": "0c2a712f8dce729edbd779d3acfe998f5d85a1cbf14a7beda038fad9b70b0c10",
+  "rule": "Dev-only non-search success, optimality; ties keep simpler method"
+}

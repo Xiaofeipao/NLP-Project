@@ -1,0 +1,41 @@
+{
+  "method": "reinforce",
+  "updates_per_rollout": 1,
+  "optimizer_updates": 64,
+  "prompt_format": "vanilla",
+  "human_preferences": false,
+  "test_evaluated": false,
+  "history": [
+    {
+      "step": 0,
+      "success_rate": 0.025,
+      "mean_reward": -0.9528948412698413
+    },
+    {
+      "step": 16,
+      "success_rate": 0.025,
+      "mean_reward": -0.9528948412698413
+    },
+    {
+      "step": 32,
+      "success_rate": 0.025,
+      "mean_reward": -0.9528948412698413
+    },
+    {
+      "step": 48,
+      "success_rate": 0.0,
+      "mean_reward": -0.9413769841269838
+    },
+    {
+      "step": 64,
+      "success_rate": 0.0,
+      "mean_reward": -0.8983829365079365
+    }
+  ],
+  "selected": {
+    "step": 0,
+    "success_rate": 0.025,
+    "mean_reward": -0.9528948412698413
+  },
+  "limitation": "Reward shaping improvement alone is not planning success; dev-only exploratory pilot."
+}

@@ -625,3 +625,50 @@ python scripts/run_prefix_experiment.py evaluate --spec configs/prefix/lora_gvr.
 - `archive/20261103/full-prefix`：`fc6e181`，原 `codex/main-prefix-state-repair`。
 
 例如 `git show archive/20261103/lora-prefix:ppnl/prefix_state_repair.py` 可查看旧实现，无需保留重复分支。标签不包含忽略的本地新权重；权重仍留在本地，已有公开 LFS 产物不变。
+
+
+## 31. 三模型 GPU 扩展与首次 outcome-GRPO
+
+前述“尚未实现 GRPO”是上一轮代码整理时的状态。本轮按用户要求加入真正具有组内标准化优势、固定旧策略 log-prob、概率比裁剪和多次更新的 outcome-GRPO，并保留 REINFORCE 对照。它是序列到序列模型适配，不是原研究模型的复现，也没有人工偏好。实现细节、固定预算、BART BOS 对齐、磁盘失败恢复和所有负结果保留规则见 [三模型实验记录](docs/gpu_campaign_20261103.md)。当前实际进度以本轮输出中的完成报告为准。
+
+### 31.1 新入口如何串起来
+
+1. `scripts/run_gpu_campaign.py` 先训练三个原始多任务基线，然后给每个模型分别训练 vanilla / structured 的 G、V、R。G 全参数训练，V/R 冻结 G 并各自训练 LoRA；最后从开发集选择 G 的输入格式，分别训练 REINFORCE 和 GRPO adapter。模型保存后还要通过重载验证。
+2. `scripts/run_campaign_status_ablation.py` 保留选定的 G/R，只重训 V，对照普通 token loss 与逐样本归一化加判别 token 辅助损失。后者同时改变两个因素，所以不能把所有差异归因于判别 token。
+3. `scripts/run_campaign_policies.py` 从三个预训练底座分别训练逐步动作策略。这是独立的全参数训练，不是给 G/V/R 的 LoRA 加一个循环。使用开发集选择策略配置后，冻结模型、数据、源码和评测配置，再运行测试。
+4. `scripts/evaluate_gpu_campaign.py` 依次运行全量基线 Harness、三类 GVR 配置、RL 与无 RL 对照，最后用相同架构的逐步策略做前缀修复。每条生成路径都分别进入 direct、self、executor_one、executor_three，避免不同初始路径导致不公平比较。
+5. `scripts/summarize_gpu_campaign.py` 汇总预定的 99 份开发/测试报告。缺失报告明确标记 missing，不能把“脚本已启动”写成“实验已完成”。公开汇总只包含成绩和协议，不包含本地权重或机器身份。
+
+### 31.2 GRPO 代码到底增加了什么
+
+`ppnl/rlvr.py` 的 `group_advantages` 把同一个问题的 4 个采样奖励按组均值和标准差归一化；同奖励组的优势为零。`completion_mask` 保留 EOS 本身，排除 EOS 后的 padding。`grpo_objective` 计算新旧策略的 token 概率比，对正负优势分别执行 PPO 形式的裁剪，并加入冻结底座的采样 KL 项。`scripts/run_rlvr.py` 固定采样时的旧策略概率，在同一组样本上做两次更新，避免每次都重新计算旧策略而令裁剪失效。
+
+REINFORCE 对照使用 leave-one-out baseline，每组只更新一次。两者均采样 64 组，但 optimizer updates 分别是 64 和 128，计算预算并不相同。奖励来自网格执行器，没有人类偏好标签，因此称为 RLVR 更准确。奖励变高但成功数不变，只能说明奖励目标改善，不能说规划能力变强。
+
+### 31.3 为什么 BART 需要专门处理
+
+`ppnl/task_adapters.py` 根据模型架构选择注意力投影：T5 用 `q/v`，BART 用 `q_proj/v_proj`。BART 文本目标带 BOS，而动作策略直接给第一个 decoder 输出打分，所以 `ppnl/modeling.py` 只对动作训练标签移除 BOS，验证文本标签仍保留。相应地，`ppnl/gvr_objectives.py` 在 BART 的 BOS 后定位 valid/invalid 判别 token；T5 则使用第一个目标 token。
+
+### 31.4 怎样解释逐步策略消融
+
+`raw` 从四个动作直接选最高分；`legal_no_revisit` 排除非法动作和所有已访问位置；`harness_legal` 只排除非法动作；`harness_visit` 优先选择访问次数最少的合法位置，必要时允许回访。这四项统一最多 36 步。后两项通过持久化 Harness 调用执行器，它们没有搜索整张图。
+
+`neural_best_first`、`neural_optimal_astar` 和 `symbolic_astar` 是额外搜索对照。纯 A* 本身就能解决这些小网格，所以搜索版本的 100% 不能当作语言模型独立规划的证据。所有方法均同时报告成功率与最优率：到达终点可以成功，但绕路不会算最优。
+
+这些实验不覆盖旧默认配置，也不通过删除失败产物来美化结果。辅助损失等负结果保留为消融；新增 checkpoint 只保留在本地。ID/OOD 的生成网格配对、候选错误不同，因此纯生成和逐步策略的相同成绩不构成新的地图分布泛化证据。
+
+### 31.5 本轮实际结果（2026-11-04 完成）
+
+后续发布更新：根据新的备份要求，本轮 33 个有效权重文件、99 份报告和执行轨迹纳入 [Git LFS 产物目录](artifacts/campaign_20261103/README.md)。前文“只保留本地”描述训练完成时的决定，此次发布后不再适用；原始本地副本仍保留。公开元数据经过脱敏，原始/导出哈希分别记录，不能把迁移后的历史锁直接当作新运行的冻结证据。
+
+同时补充发布 [9 个历史有效权重](artifacts/historical_models/README.md)，包含早期多任务基线、改进 GVR、Flan-T5 逐步策略和旧 REINFORCE；已公开的原 GVR 权重不重复复制。历史模型的预算与代码版本仍按其原报告解释。
+
+99/99 份预定开发/测试报告全部完成；33 份冻结记录与当前源码匹配，66 份测试报告的冻结回执匹配。CPU 回归测试 141 项通过。完整数值见 [本轮报告](docs/gpu_campaign_20261103.md) 与 [指标 JSON](docs/gpu_campaign_results.json)。
+
+在各 200 个 ID 测试环境上，T5-small、T5-base、BART-base 的裸逐步策略分别成功 169、163、164 个；加入 Harness 最少访问次数约束后均成功 200 个，最短路径分别为 172、170、165 个。这是独立的逐步策略训练和推理约束的结果，不能写成“GRPO + LoRA 达到 100%”。统一预算为 36 步，与旧版不同调用预算的结果分开报告。
+
+同底座、同 48-token 上限的 GRPO 生成成功数分别为 4、0、1，无 RL 对照为 0、1、0。效果有限，T5-base 还出现下降；不升级为默认方法。REINFORCE、结构化输入和验证辅助损失也保留为消融，不因个别测试数字变化而倒改开发选模。
+
+前缀保留配合访问约束虽全部成功，最优率仅为 27.5%–37%；丢弃前缀从起点重启则为 82.5%–86%。这说明成功主要依赖后续逐步策略，而原始路径中的绕路会被保留下来。纯启发式前缀控制也全部成功，因此不能把前缀修复高分全部归功于模型。
+
+开发集预先选定的是 T5-small 的 legal_no_revisit（测试 195/200），以及 T5-base/BART 的 harness_visit（各 200/200）。T5-small 的 harness_visit 测试 200/200 属于事先列出的消融结果；不把这个事后观察包装成开发集事先选定的方案。所有新增权重保留本地，历史默认配置与分支归档不变。

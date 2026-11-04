@@ -1,0 +1,249 @@
+{
+  "metrics": {
+    "step": 64,
+    "success_rate": 0.0,
+    "mean_reward": -0.5130257936507936
+  },
+  "cases": [
+    {
+      "id": "dev-generation-31",
+      "plan": "up right",
+      "success": false,
+      "reward": -0.02
+    },
+    {
+      "id": "dev-generation-11",
+      "plan": "up up",
+      "success": false,
+      "reward": -0.895
+    },
+    {
+      "id": "dev-generation-36",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.02
+    },
+    {
+      "id": "dev-generation-0",
+      "plan": "up up",
+      "success": false,
+      "reward": -0.35333333333333333
+    },
+    {
+      "id": "dev-generation-37",
+      "plan": "up right",
+      "success": false,
+      "reward": -0.02
+    },
+    {
+      "id": "dev-generation-15",
+      "plan": "up up",
+      "success": false,
+      "reward": -0.18666666666666665
+    },
+    {
+      "id": "dev-generation-27",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.27
+    },
+    {
+      "id": "dev-generation-21",
+      "plan": "up up",
+      "success": false,
+      "reward": 0.18000000000000002
+    },
+    {
+      "id": "dev-generation-12",
+      "plan": "up up",
+      "success": false,
+      "reward": -0.52
+    },
+    {
+      "id": "dev-generation-23",
+      "plan": "up up",
+      "success": false,
+      "reward": -0.18666666666666665
+    },
+    {
+      "id": "dev-generation-39",
+      "plan": "up up",
+      "success": false,
+      "reward": 0.3133333333333333
+    },
+    {
+      "id": "dev-generation-2",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.145
+    },
+    {
+      "id": "dev-generation-29",
+      "plan": "up up",
+      "success": false,
+      "reward": 0.12285714285714285
+    },
+    {
+      "id": "dev-generation-38",
+      "plan": "up up",
+      "success": false,
+      "reward": 0.23
+    },
+    {
+      "id": "dev-generation-34",
+      "plan": "up right",
+      "success": false,
+      "reward": -0.02
+    },
+    {
+      "id": "dev-generation-16",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.02
+    },
+    {
+      "id": "dev-generation-10",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.02
+    },
+    {
+      "id": "dev-generation-9",
+      "plan": "up up",
+      "success": false,
+      "reward": -0.35333333333333333
+    },
+    {
+      "id": "dev-generation-26",
+      "plan": "up up",
+      "success": false,
+      "reward": -0.92
+    },
+    {
+      "id": "dev-generation-7",
+      "plan": "up up",
+      "success": false,
+      "reward": -0.35333333333333333
+    },
+    {
+      "id": "dev-generation-33",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.1866666666666668
+    },
+    {
+      "id": "dev-generation-4",
+      "plan": "up up",
+      "success": false,
+      "reward": -0.52
+    },
+    {
+      "id": "dev-generation-3",
+      "plan": "up right",
+      "success": false,
+      "reward": -1.02
+    },
+    {
+      "id": "dev-generation-28",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.12
+    },
+    {
+      "id": "dev-generation-14",
+      "plan": "up up",
+      "success": false,
+      "reward": -0.35333333333333333
+    },
+    {
+      "id": "dev-generation-19",
+      "plan": "up up",
+      "success": false,
+      "reward": -0.52
+    },
+    {
+      "id": "dev-generation-5",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.02
+    },
+    {
+      "id": "dev-generation-13",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.02
+    },
+    {
+      "id": "dev-generation-30",
+      "plan": "up right",
+      "success": false,
+      "reward": -0.895
+    },
+    {
+      "id": "dev-generation-25",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.02
+    },
+    {
+      "id": "dev-generation-32",
+      "plan": "up up",
+      "success": false,
+      "reward": 0.3133333333333333
+    },
+    {
+      "id": "dev-generation-20",
+      "plan": "up up",
+      "success": false,
+      "reward": 0.18000000000000002
+    },
+    {
+      "id": "dev-generation-17",
+      "plan": "up up",
+      "success": false,
+      "reward": 0.14666666666666667
+    },
+    {
+      "id": "dev-generation-18",
+      "plan": "up up",
+      "success": false,
+      "reward": 0.14666666666666667
+    },
+    {
+      "id": "dev-generation-1",
+      "plan": "up up",
+      "success": false,
+      "reward": 0.23
+    },
+    {
+      "id": "dev-generation-35",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.02
+    },
+    {
+      "id": "dev-generation-8",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.1866666666666668
+    },
+    {
+      "id": "dev-generation-24",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.27
+    },
+    {
+      "id": "dev-generation-6",
+      "plan": "up up",
+      "success": false,
+      "reward": -1.0755555555555556
+    },
+    {
+      "id": "dev-generation-22",
+      "plan": "up up",
+      "success": false,
+      "reward": 0.14666666666666667
+    }
+  ]
+}

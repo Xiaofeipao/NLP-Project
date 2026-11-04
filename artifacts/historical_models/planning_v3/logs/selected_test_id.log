@@ -1,0 +1,98 @@
+{
+  "split": "test_id",
+  "planning": {
+    "original_whole_plan": {
+      "n": 200,
+      "success_rate": 0.0,
+      "feasibility": 0.0,
+      "optimality": 0.0,
+      "path_efficiency_on_success": null
+    },
+    "state_policy": {
+      "n": 200,
+      "success_rate": 0.85,
+      "feasibility": 1.0,
+      "optimality": 0.825,
+      "path_efficiency_on_success": 0.9928104575163398
+    },
+    "legal_mask_no_search": {
+      "n": 200,
+      "success_rate": 0.975,
+      "feasibility": 1.0,
+      "optimality": 0.865,
+      "path_efficiency_on_success": 0.9607734176155232
+    },
+    "neural_best_first": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.99,
+      "path_efficiency_on_success": 0.9973214285714286
+    },
+    "symbolic_astar_no_model": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 1.0,
+      "path_efficiency_on_success": 1.0
+    },
+    "neural_optimal_astar": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 1.0,
+      "path_efficiency_on_success": 1.0
+    },
+    "symbolic_astar_goal_tiebreak": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 1.0,
+      "path_efficiency_on_success": 1.0
+    }
+  },
+  "prefix_repair": {
+    "state_policy": {
+      "n": 100,
+      "success_rate": 0.9,
+      "feasibility": 1.0,
+      "optimality": 0.67,
+      "path_efficiency_on_success": 0.903755010421677
+    },
+    "legal_mask_no_search": {
+      "n": 100,
+      "success_rate": 0.96,
+      "feasibility": 1.0,
+      "optimality": 0.68,
+      "path_efficiency_on_success": 0.8910270863395865
+    },
+    "neural_best_first": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.74,
+      "path_efficiency_on_success": 0.9018795093795096
+    },
+    "symbolic_astar_no_model": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.74,
+      "path_efficiency_on_success": 0.9018795093795096
+    },
+    "neural_optimal_astar": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.74,
+      "path_efficiency_on_success": 0.9018795093795096
+    },
+    "symbolic_astar_goal_tiebreak": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.74,
+      "path_efficiency_on_success": 0.9018795093795096
+    }
+  }
+}

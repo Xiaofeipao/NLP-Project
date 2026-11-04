@@ -1,0 +1,43 @@
+{
+  "checkpoint": "google/flan-t5-small",
+  "requested_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+  "resolved_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+  "data_fingerprint": "404b516de159512ea3d9395095628a077c15b96433bf8b0e4eeeed6942919271",
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 8,
+    "eval_batch_size": 8,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "confirmation_note": "User explicitly authorized full formal fine-tuning of Flan-T5-small and BART-base in this chat on 2026-10-18; no separate project-manager confirmation is asserted.",
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 2105703424,
+  "peak_reserved_bytes": 2290089984,
+  "lengths": {
+    "max_input_tokens": 159,
+    "max_target_tokens": 16
+  },
+  "examples_processed": 32,
+  "optimizer_updates": 2,
+  "train_and_loss_eval_seconds": 2.0466083000001163,
+  "train_examples_per_second_including_validation": 15.635625048524519,
+  "generation_eval_seconds": 7.3491725000001225,
+  "generation_examples_per_second": 27.213948237028955,
+  "history": [
+    {
+      "epoch": 1,
+      "train_batch_mean_loss": 3.3936787843704224,
+      "dev_token_mean_loss": 2.164262072042627
+    }
+  ],
+  "dev_exact_match": 0.0,
+  "torch_version": "2.12.1+cu132",
+  "precision": "float32",
+  "matmul_precision": "high"
+}

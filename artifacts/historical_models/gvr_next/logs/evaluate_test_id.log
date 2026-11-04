@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File ".\scripts\run_gvr.py", line 122, in <module>
+    main()
+  File ".\scripts\run_gvr.py", line 118, in main
+    print(json.dumps(evaluate_gvr(model, rows, output, identity, oracle, check), indent=2))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".\ppnl\gvr_evaluation.py", line 124, in evaluate_gvr
+    run_gvr_session(trial, model, identity, check)
+  File ".\ppnl\gvr_harness.py", line 79, in run_gvr_session
+    commit("decision")
+  File ".\ppnl\gvr_harness.py", line 50, in commit
+    previous, count = _commit(directory, state, kind, previous, count)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".\ppnl\harness.py", line 129, in _commit
+    _atomic_json(Path(directory) / "state.json", state)
+  File ".\ppnl\harness.py", line 77, in _atomic_json
+    os.replace(temporary, path)
+PermissionError: [WinError 5] 拒绝访问。: 'outputs\\gvr_next\\evaluation\\test_id\\sessions\\test_id-136\\executor_three\\state.json.tmp' -> 'outputs\\gvr_next\\evaluation\\test_id\\sessions\\test_id-136\\executor_three\\state.json'

@@ -1,0 +1,80 @@
+bart_base: epoch 1/2, 1000 batches
+{"model": "bart_base", "epoch": 1, "epochs": 2, "batch": 100, "batches": 1000, "updates": 25, "mean_train_loss": 1.6325925348699093, "elapsed_seconds": 5.748697499999253}
+{"model": "bart_base", "epoch": 1, "epochs": 2, "batch": 200, "batches": 1000, "updates": 50, "mean_train_loss": 1.2819563614577054, "elapsed_seconds": 11.243942799999786}
+{"model": "bart_base", "epoch": 1, "epochs": 2, "batch": 300, "batches": 1000, "updates": 75, "mean_train_loss": 1.2017129243910312, "elapsed_seconds": 17.203807800000504}
+{"model": "bart_base", "epoch": 1, "epochs": 2, "batch": 400, "batches": 1000, "updates": 100, "mean_train_loss": 1.1208787046582438, "elapsed_seconds": 23.098682499999995}
+{"model": "bart_base", "epoch": 1, "epochs": 2, "batch": 500, "batches": 1000, "updates": 125, "mean_train_loss": 1.051340812491253, "elapsed_seconds": 28.63643779999984}
+{"model": "bart_base", "epoch": 1, "epochs": 2, "batch": 600, "batches": 1000, "updates": 150, "mean_train_loss": 1.0033887549629434, "elapsed_seconds": 33.552496399999654}
+{"model": "bart_base", "epoch": 1, "epochs": 2, "batch": 700, "batches": 1000, "updates": 175, "mean_train_loss": 0.9557945953109966, "elapsed_seconds": 38.379293699999835}
+{"model": "bart_base", "epoch": 1, "epochs": 2, "batch": 800, "batches": 1000, "updates": 200, "mean_train_loss": 0.9111620633036364, "elapsed_seconds": 43.45072789999904}
+{"model": "bart_base", "epoch": 1, "epochs": 2, "batch": 900, "batches": 1000, "updates": 225, "mean_train_loss": 0.8844452816817082, "elapsed_seconds": 48.88132869999936}
+{"model": "bart_base", "epoch": 1, "epochs": 2, "batch": 1000, "batches": 1000, "updates": 250, "mean_train_loss": 0.8581182667827234, "elapsed_seconds": 54.026911999999356}
+bart_base: epoch 1, dev loss 0.460292
+<LOCAL_ENV> UserWarning: Moving the following attributes in the config to the generation config: {'early_stopping': True, 'num_beams': 4, 'no_repeat_ngram_size': 3, 'forced_bos_token_id': 0}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+bart_base: epoch 2/2, 1000 batches
+{"model": "bart_base", "epoch": 2, "epochs": 2, "batch": 100, "batches": 1000, "updates": 275, "mean_train_loss": 0.466563232736662, "elapsed_seconds": 60.44959259999996}
+{"model": "bart_base", "epoch": 2, "epochs": 2, "batch": 200, "batches": 1000, "updates": 300, "mean_train_loss": 0.4693341971701011, "elapsed_seconds": 65.33790520000002}
+{"model": "bart_base", "epoch": 2, "epochs": 2, "batch": 300, "batches": 1000, "updates": 325, "mean_train_loss": 0.434899956669348, "elapsed_seconds": 70.25469539999904}
+{"model": "bart_base", "epoch": 2, "epochs": 2, "batch": 400, "batches": 1000, "updates": 350, "mean_train_loss": 0.41583820088708306, "elapsed_seconds": 75.42169280000053}
+{"model": "bart_base", "epoch": 2, "epochs": 2, "batch": 500, "batches": 1000, "updates": 375, "mean_train_loss": 0.3897967400101479, "elapsed_seconds": 81.23299889999907}
+{"model": "bart_base", "epoch": 2, "epochs": 2, "batch": 600, "batches": 1000, "updates": 400, "mean_train_loss": 0.36461399074236395, "elapsed_seconds": 86.88349019999987}
+{"model": "bart_base", "epoch": 2, "epochs": 2, "batch": 700, "batches": 1000, "updates": 425, "mean_train_loss": 0.35213954529415264, "elapsed_seconds": 92.18821229999958}
+{"model": "bart_base", "epoch": 2, "epochs": 2, "batch": 800, "batches": 1000, "updates": 450, "mean_train_loss": 0.34069708939428894, "elapsed_seconds": 97.84003909999956}
+{"model": "bart_base", "epoch": 2, "epochs": 2, "batch": 900, "batches": 1000, "updates": 475, "mean_train_loss": 0.3378968474736353, "elapsed_seconds": 103.01235950000046}
+{"model": "bart_base", "epoch": 2, "epochs": 2, "batch": 1000, "batches": 1000, "updates": 500, "mean_train_loss": 0.32952743126246786, "elapsed_seconds": 107.8889693000001}
+bart_base: epoch 2, dev loss 0.359451
+{
+  "checkpoint": "facebook/bart-base",
+  "requested_revision": "aadd2ab0ae0c8268c7c9693540e9904811f36177",
+  "resolved_revision": "aadd2ab0ae0c8268c7c9693540e9904811f36177",
+  "data_fingerprint": "8bdfe736c84375bccdef3079661c146f00385dd3996912f2d71f8a0ccecced7a",
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4,
+    "policy_loss": "optimal_actions"
+  },
+  "accumulation_normalization": "loss_units_v1",
+  "confirmation_note": "User requested the three linked checkpoints for this controlled GPU comparison.",
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 2994646016,
+  "peak_reserved_bytes": 3397386240,
+  "lengths": {
+    "max_input_tokens": 153,
+    "max_target_tokens": 17
+  },
+  "examples_processed": 8000,
+  "optimizer_updates": 500,
+  "train_and_loss_eval_seconds": 109.15266410000004,
+  "train_examples_per_second_including_validation": 73.29184373063778,
+  "generation_eval_seconds": 0.9407658999989508,
+  "generation_examples_per_second": 212.59273959677222,
+  "history": [
+    {
+      "epoch": 1,
+      "train_batch_mean_loss": 0.8581182667827234,
+      "dev_loss": 0.46029241785407066,
+      "dev_token_mean_loss": null
+    },
+    {
+      "epoch": 2,
+      "train_batch_mean_loss": 0.32952743126246786,
+      "dev_loss": 0.35945129963336514,
+      "dev_token_mean_loss": null
+    }
+  ],
+  "dev_exact_match": 0.585,
+  "dev_policy_action_accuracy": 0.92,
+  "torch_version": "2.12.1+cu132",
+  "precision": "float32",
+  "loss_normalization": "example_mean_action_classification_and_verifier_text",
+  "matmul_precision": "high"
+}

@@ -1,0 +1,78 @@
+generation: loading google-t5/t5-base (structured)
+generation: epoch 1/1, 4 batches
+generation: batch 4/4, updates=1
+{
+  "stage": "generation",
+  "pilot": true,
+  "train_rows": 16,
+  "dev_rows": 40,
+  "examples_processed": 16,
+  "optimizer_updates": 1,
+  "history": [
+    {
+      "epoch": 1,
+      "dev_loss": 4.250119982538997,
+      "dev_diagnostics": null,
+      "selection_rank": [
+        -4.250119982538997
+      ]
+    }
+  ],
+  "source_checkpoint": "google-t5/t5-base",
+  "source_revision": "a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+  "generation_base_sha256": null,
+  "task_index_source_sha256": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+  "lengths": {
+    "max_input_tokens": 80,
+    "max_target_tokens": 11
+  },
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "prompt_format": "structured",
+  "training_signature": {
+    "training": {
+      "precision": "float32",
+      "epochs": 2,
+      "batch_size": 4,
+      "eval_batch_size": 4,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "max_input_tokens": 512,
+      "max_target_tokens": 128,
+      "pilot_batches": 4
+    },
+    "stage_options": {
+      "loss": "token_mean",
+      "status_weight": 0.0,
+      "selection": "task_metrics"
+    },
+    "lora": null,
+    "accumulation_normalization": "loss_units_v1",
+    "prompt_format": "structured"
+  },
+  "stage_options": {
+    "loss": "token_mean",
+    "status_weight": 0.0,
+    "selection": "task_metrics"
+  },
+  "best_epoch": 1,
+  "best_selection_rank": [
+    -4.250119982538997
+  ],
+  "effective_learning_rate": 0.0001,
+  "adapter": null,
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 4534642176,
+  "elapsed_seconds": 1.4939227000013489
+}

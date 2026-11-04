@@ -1,0 +1,78 @@
+generation: loading facebook/bart-base (structured)
+generation: epoch 1/1, 4 batches
+generation: batch 4/4, updates=1
+{
+  "stage": "generation",
+  "pilot": true,
+  "train_rows": 16,
+  "dev_rows": 40,
+  "examples_processed": 16,
+  "optimizer_updates": 1,
+  "history": [
+    {
+      "epoch": 1,
+      "dev_loss": 2.091833311182852,
+      "dev_diagnostics": null,
+      "selection_rank": [
+        -2.091833311182852
+      ]
+    }
+  ],
+  "source_checkpoint": "facebook/bart-base",
+  "source_revision": "aadd2ab0ae0c8268c7c9693540e9904811f36177",
+  "generation_base_sha256": null,
+  "task_index_source_sha256": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+  "lengths": {
+    "max_input_tokens": 91,
+    "max_target_tokens": 12
+  },
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "prompt_format": "structured",
+  "training_signature": {
+    "training": {
+      "precision": "float32",
+      "epochs": 2,
+      "batch_size": 4,
+      "eval_batch_size": 4,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "max_input_tokens": 512,
+      "max_target_tokens": 128,
+      "pilot_batches": 4
+    },
+    "stage_options": {
+      "loss": "token_mean",
+      "status_weight": 0.0,
+      "selection": "task_metrics"
+    },
+    "lora": null,
+    "accumulation_normalization": "loss_units_v1",
+    "prompt_format": "structured"
+  },
+  "stage_options": {
+    "loss": "token_mean",
+    "status_weight": 0.0,
+    "selection": "task_metrics"
+  },
+  "best_epoch": 1,
+  "best_selection_rank": [
+    -2.091833311182852
+  ],
+  "effective_learning_rate": 0.0001,
+  "adapter": null,
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 2866584576,
+  "elapsed_seconds": 0.813321999999971
+}

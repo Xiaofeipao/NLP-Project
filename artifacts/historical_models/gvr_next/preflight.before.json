@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "task_index": true,
+    "official_executor": true,
+    "shared_gpu_ledger": true,
+    "checkpoint_confirmation": true,
+    "evidence_declared": true,
+    "base_checkpoint": false,
+    "verification_adapter": false,
+    "repair_adapter": false
+  },
+  "gpu_seconds_recorded": 6691.105999999998,
+  "ready_for_training": true,
+  "ready_for_evaluation": false
+}

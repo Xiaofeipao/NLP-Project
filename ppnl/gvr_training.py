@@ -80,7 +80,7 @@ def train_stage(config, protocol, stage, output, pilot=False):
     if not (evidence.get("gpu_ledger_reconciled") and evidence.get("baseline_outputs_verified") and
             evidence.get("checkpoint_confirmed", evidence.get("checkpoint_manager_confirmed"))):
         raise ValueError("P0 evidence is incomplete; do not start GPU training")
-    item = confirmation(config, "flan_t5_small")
+    item = confirmation(config, protocol.get("model_key", "flan_t5_small"))
     root = Path(protocol["dataset_root"])
     index = task_index_manifest(root)
     expected = json.loads(Path(protocol["task_index"]).read_text(encoding="utf-8"))
@@ -103,6 +103,7 @@ def train_stage(config, protocol, stage, output, pilot=False):
         raise ValueError("Train and freeze G first")
     if stage != "generation":
         check_checkpoint_prompt_format(base, style)
+        print(f"{stage}: verifying frozen generation checkpoint", flush=True)
     base_hash = checkpoint_hash(base) if stage != "generation" else None
     if not pilot and prior["generation_base_sha256"] != base_hash:
         raise ValueError("Generation base changed since pilot")
@@ -128,6 +129,7 @@ def train_stage(config, protocol, stage, output, pilot=False):
         rows = rows[:settings["batch_size"] * settings["pilot_batches"]]
     out.mkdir(parents=True, exist_ok=True)
     with gpu_budget(config["gpu_ledger"], config["gpu_hours_cap"], f"gvr:{stage}:{'pilot' if pilot else 'train'}") as check:
+        print(f"{stage}: loading {item['checkpoint']} ({style})", flush=True)
         runner = Seq2Seq(item["checkpoint"] if stage == "generation" else str(base), config,
                          item.get("revision") if stage == "generation" else None)
         if stage != "generation":
@@ -155,6 +157,7 @@ def train_stage(config, protocol, stage, output, pilot=False):
         torch.cuda.reset_peak_memory_stats()
         started = time.perf_counter()
         for epoch in range(epochs):
+            print(f"{stage}: epoch {epoch + 1}/{epochs}, {len(loader)} batches", flush=True)
             runner.model.train()
             optimizer.zero_grad(set_to_none=True)
             reduction = "examples" if options["loss"] == "sequence_and_status" or runner.policy_loss else "tokens"
@@ -171,6 +174,8 @@ def train_stage(config, protocol, stage, output, pilot=False):
                     optimizer.step()
                     optimizer.zero_grad(set_to_none=True)
                     updates += 1
+                if (step + 1) % 100 == 0 or step + 1 == len(loader):
+                    print(f"{stage}: batch {step + 1}/{len(loader)}, updates={updates}", flush=True)
             runner.model.eval()
             weighted_loss = tokens = 0
             with torch.inference_mode():

@@ -1,0 +1,14 @@
+{
+  "format": "vanilla",
+  "dev_scores": {
+    "vanilla": [
+      0.0,
+      0.0
+    ],
+    "structured": [
+      0.0,
+      0.0
+    ]
+  },
+  "rule": "dev G success, optimality; tie keeps vanilla"
+}

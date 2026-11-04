@@ -73,7 +73,10 @@ def run(spec, split, output, freeze=None):
     config, oracle, weights, identity = prepare(spec)
     receipt = validate_lock(freeze, identity) if split != "dev" else None
     from . import full_prefix_repair, prefix_state_repair
-    module = full_prefix_repair if spec["family"] == "full_finetune" else prefix_state_repair
+    trace_format = spec.get("trace_format", "original" if spec["family"] == "full_finetune" else "gvr")
+    if trace_format not in ("original", "gvr"):
+        raise ValueError("Unknown trace_format")
+    module = full_prefix_repair if trace_format == "original" else prefix_state_repair
     paired = module.load_generated_candidates(spec["dataset_root"], split, spec["traces"][split], oracle)
 
     def evaluate(scorer, check=lambda: None):

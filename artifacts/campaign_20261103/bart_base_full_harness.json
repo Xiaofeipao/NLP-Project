@@ -1,0 +1,5 @@
+{
+  "kind": "full_harness",
+  "config": "outputs\\campaign_20261103\\baselines.json",
+  "base": "outputs\\campaign_20261103\\baselines\\bart_base\\train\\best"
+}

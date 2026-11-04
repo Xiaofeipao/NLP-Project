@@ -1,0 +1,50 @@
+flan_t5_small: epoch 1/1, 4 batches
+{"model": "flan_t5_small", "epoch": 1, "epochs": 1, "batch": 4, "batches": 4, "updates": 2, "mean_train_loss": 2.6372973918914795, "elapsed_seconds": 1.9518545000000813}
+flan_t5_small: epoch 1, dev loss 1.425813
+{
+  "checkpoint": "google/flan-t5-small",
+  "requested_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+  "resolved_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+  "data_fingerprint": "7de86cd04ba7a62f6fb316dce7320579d44d3c5190f8848acb0018b1b318a5c9",
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 8,
+    "eval_batch_size": 8,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4,
+    "policy_loss": "single_action"
+  },
+  "confirmation_note": "User explicitly authorized full formal fine-tuning of Flan-T5-small and BART-base in this chat on 2026-10-18; no separate project-manager confirmation is asserted. User authorized improving planning and code; retrain primary model using state-action representation of the same source examples.",
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 2155218432,
+  "peak_reserved_bytes": 2430599168,
+  "lengths": {
+    "max_input_tokens": 172,
+    "max_target_tokens": 16
+  },
+  "examples_processed": 32,
+  "optimizer_updates": 2,
+  "train_and_loss_eval_seconds": 2.5049715999998625,
+  "train_examples_per_second_including_validation": 12.774595927555328,
+  "generation_eval_seconds": 0.8302886999999828,
+  "generation_examples_per_second": 240.8800697877788,
+  "history": [
+    {
+      "epoch": 1,
+      "train_batch_mean_loss": 2.6372973918914795,
+      "dev_loss": 1.425812509059906,
+      "dev_token_mean_loss": null
+    }
+  ],
+  "dev_exact_match": 0.225,
+  "dev_policy_action_accuracy": 0.37,
+  "torch_version": "2.12.1+cu132",
+  "precision": "float32",
+  "loss_normalization": "example_mean_action_classification_and_verifier_text",
+  "matmul_precision": "high"
+}

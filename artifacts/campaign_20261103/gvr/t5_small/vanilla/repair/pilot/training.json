@@ -1,0 +1,84 @@
+{
+  "stage": "repair",
+  "pilot": true,
+  "train_rows": 16,
+  "dev_rows": 60,
+  "examples_processed": 16,
+  "optimizer_updates": 1,
+  "history": [
+    {
+      "epoch": 1,
+      "dev_loss": 0.8899290180917996,
+      "dev_diagnostics": null,
+      "selection_rank": [
+        -0.8899290180917996
+      ]
+    }
+  ],
+  "source_checkpoint": "outputs\\campaign_20261103\\gvr\\t5_small\\vanilla\\generation\\train\\best",
+  "source_revision": null,
+  "generation_base_sha256": "8c1b7cecbdcc7fbbfd7ea0c61123a0bbb8407cea2be4b440ea17befbd01e119d",
+  "task_index_source_sha256": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+  "lengths": {
+    "max_input_tokens": 122,
+    "max_target_tokens": 11
+  },
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "prompt_format": "vanilla",
+  "training_signature": {
+    "training": {
+      "precision": "float32",
+      "epochs": 2,
+      "batch_size": 4,
+      "eval_batch_size": 4,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "max_input_tokens": 512,
+      "max_target_tokens": 128,
+      "pilot_batches": 4
+    },
+    "stage_options": {
+      "loss": "token_mean",
+      "status_weight": 0.0,
+      "selection": "task_metrics",
+      "learning_rate": 0.001
+    },
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05
+    },
+    "accumulation_normalization": "loss_units_v1"
+  },
+  "stage_options": {
+    "loss": "token_mean",
+    "status_weight": 0.0,
+    "selection": "task_metrics",
+    "learning_rate": 0.001
+  },
+  "best_epoch": 1,
+  "best_selection_rank": [
+    -0.8899290180917996
+  ],
+  "effective_learning_rate": 0.001,
+  "adapter": {
+    "matched_modules": 36,
+    "trainable_parameters": 294912,
+    "total_parameters": 60801536
+  },
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 474561024,
+  "elapsed_seconds": 3.2771575000006123
+}

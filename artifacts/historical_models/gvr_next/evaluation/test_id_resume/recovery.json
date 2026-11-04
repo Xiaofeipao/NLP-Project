@@ -1,0 +1,2749 @@
+{
+  "source_directory": "outputs/gvr_next/evaluation/test_id",
+  "copied_sessions": [
+    {
+      "session": "sessions/test_id-0/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-0/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-0/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-0/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-1/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-1/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-1/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-1/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-2/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-2/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-2/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-2/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-3/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-3/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-3/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-3/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-4/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-4/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-4/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-4/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-5/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-5/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-5/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-5/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-6/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-6/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-6/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-6/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-7/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-7/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-7/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-7/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-8/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-8/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-8/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-8/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-9/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-9/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-9/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-9/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-10/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-10/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-10/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-10/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-11/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-11/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-11/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-11/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-12/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-12/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-12/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-12/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-13/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-13/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-13/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-13/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-14/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-14/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-14/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-14/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-15/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-15/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-15/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-15/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-16/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-16/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-16/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-16/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-17/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-17/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-17/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-17/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-18/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-18/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-18/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-18/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-19/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-19/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-19/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-19/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-20/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-20/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-20/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-20/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-21/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-21/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-21/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-21/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-22/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-22/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-22/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-22/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-23/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-23/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-23/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-23/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-24/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-24/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-24/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-24/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-25/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-25/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-25/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-25/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-26/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-26/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-26/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-26/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-27/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-27/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-27/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-27/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-28/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-28/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-28/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-28/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-29/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-29/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-29/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-29/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-30/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-30/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-30/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-30/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-31/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-31/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-31/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-31/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-32/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-32/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-32/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-32/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-33/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-33/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-33/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-33/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-34/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-34/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-34/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-34/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-35/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-35/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-35/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-35/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-36/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-36/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-36/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-36/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-37/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-37/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-37/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-37/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-38/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-38/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-38/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-38/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-39/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-39/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-39/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-39/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-40/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-40/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-40/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-40/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-41/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-41/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-41/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-41/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-42/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-42/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-42/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-42/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-43/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-43/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-43/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-43/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-44/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-44/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-44/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-44/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-45/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-45/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-45/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-45/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-46/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-46/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-46/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-46/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-47/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-47/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-47/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-47/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-48/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-48/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-48/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-48/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-49/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-49/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-49/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-49/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-50/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-50/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-50/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-50/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-51/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-51/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-51/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-51/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-52/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-52/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-52/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-52/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-53/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-53/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-53/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-53/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-54/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-54/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-54/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-54/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-55/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-55/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-55/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-55/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-56/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-56/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-56/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-56/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-57/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-57/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-57/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-57/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-58/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-58/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-58/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-58/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-59/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-59/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-59/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-59/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-60/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-60/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-60/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-60/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-61/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-61/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-61/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-61/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-62/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-62/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-62/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-62/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-63/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-63/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-63/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-63/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-64/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-64/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-64/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-64/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-65/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-65/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-65/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-65/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-66/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-66/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-66/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-66/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-67/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-67/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-67/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-67/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-68/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-68/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-68/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-68/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-69/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-69/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-69/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-69/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-70/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-70/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-70/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-70/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-71/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-71/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-71/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-71/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-72/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-72/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-72/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-72/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-73/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-73/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-73/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-73/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-74/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-74/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-74/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-74/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-75/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-75/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-75/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-75/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-76/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-76/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-76/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-76/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-77/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-77/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-77/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-77/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-78/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-78/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-78/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-78/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-79/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-79/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-79/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-79/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-80/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-80/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-80/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-80/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-81/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-81/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-81/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-81/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-82/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-82/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-82/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-82/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-83/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-83/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-83/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-83/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-84/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-84/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-84/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-84/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-85/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-85/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-85/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-85/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-86/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-86/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-86/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-86/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-87/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-87/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-87/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-87/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-88/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-88/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-88/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-88/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-89/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-89/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-89/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-89/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-90/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-90/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-90/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-90/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-91/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-91/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-91/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-91/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-92/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-92/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-92/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-92/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-93/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-93/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-93/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-93/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-94/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-94/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-94/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-94/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-95/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-95/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-95/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-95/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-96/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-96/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-96/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-96/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-97/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-97/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-97/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-97/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-98/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-98/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-98/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-98/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-99/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-99/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-99/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-99/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-100/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-100/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-100/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-100/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-101/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-101/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-101/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-101/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-102/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-102/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-102/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-102/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-103/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-103/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-103/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-103/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-104/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-104/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-104/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-104/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-105/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-105/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-105/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-105/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-106/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-106/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-106/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-106/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-107/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-107/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-107/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-107/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-108/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-108/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-108/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-108/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-109/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-109/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-109/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-109/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-110/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-110/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-110/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-110/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-111/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-111/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-111/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-111/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-112/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-112/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-112/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-112/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-113/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-113/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-113/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-113/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-114/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-114/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-114/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-114/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-115/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-115/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-115/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-115/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-116/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-116/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-116/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-116/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-117/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-117/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-117/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-117/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-118/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-118/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-118/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-118/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-119/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-119/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-119/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-119/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-120/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-120/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-120/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-120/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-121/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-121/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-121/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-121/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-122/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-122/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-122/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-122/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-123/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-123/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-123/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-123/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-124/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-124/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-124/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-124/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-125/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-125/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-125/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-125/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-126/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-126/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-126/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-126/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-127/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-127/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-127/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-127/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-128/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-128/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-128/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-128/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-129/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-129/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-129/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-129/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-130/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-130/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-130/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-130/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-131/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-131/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-131/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-131/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-132/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-132/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-132/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-132/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-133/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-133/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-133/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-133/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-134/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-134/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-134/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-134/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-135/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-135/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-135/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-135/executor_three",
+      "status": "stopped",
+      "model_calls": 4
+    },
+    {
+      "session": "sessions/test_id-136/direct",
+      "status": "stopped",
+      "model_calls": 1
+    },
+    {
+      "session": "sessions/test_id-136/self",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-136/executor_one",
+      "status": "stopped",
+      "model_calls": 2
+    },
+    {
+      "session": "sessions/test_id-136/executor_three",
+      "status": "running",
+      "model_calls": 1
+    }
+  ],
+  "candidate_predictions_rerun": true,
+  "candidate_predictions_identical": true,
+  "journal_is_authoritative": true,
+  "original_failed_directory_preserved": true
+}

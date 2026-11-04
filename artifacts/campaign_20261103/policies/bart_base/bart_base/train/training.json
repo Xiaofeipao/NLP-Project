@@ -1,0 +1,54 @@
+{
+  "checkpoint": "facebook/bart-base",
+  "requested_revision": "aadd2ab0ae0c8268c7c9693540e9904811f36177",
+  "resolved_revision": "aadd2ab0ae0c8268c7c9693540e9904811f36177",
+  "data_fingerprint": "8bdfe736c84375bccdef3079661c146f00385dd3996912f2d71f8a0ccecced7a",
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4,
+    "policy_loss": "optimal_actions"
+  },
+  "accumulation_normalization": "loss_units_v1",
+  "confirmation_note": "User requested the three linked checkpoints for this controlled GPU comparison.",
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 2994646016,
+  "peak_reserved_bytes": 3397386240,
+  "lengths": {
+    "max_input_tokens": 153,
+    "max_target_tokens": 17
+  },
+  "examples_processed": 8000,
+  "optimizer_updates": 500,
+  "train_and_loss_eval_seconds": 109.15266410000004,
+  "train_examples_per_second_including_validation": 73.29184373063778,
+  "generation_eval_seconds": 0.9407658999989508,
+  "generation_examples_per_second": 212.59273959677222,
+  "history": [
+    {
+      "epoch": 1,
+      "train_batch_mean_loss": 0.8581182667827234,
+      "dev_loss": 0.46029241785407066,
+      "dev_token_mean_loss": null
+    },
+    {
+      "epoch": 2,
+      "train_batch_mean_loss": 0.32952743126246786,
+      "dev_loss": 0.35945129963336514,
+      "dev_token_mean_loss": null
+    }
+  ],
+  "dev_exact_match": 0.585,
+  "dev_policy_action_accuracy": 0.92,
+  "torch_version": "2.12.1+cu132",
+  "precision": "float32",
+  "loss_normalization": "example_mean_action_classification_and_verifier_text",
+  "matmul_precision": "high"
+}

@@ -1,0 +1,121 @@
+{
+  "verification": {
+    "n": 100,
+    "macro_f1": 0.6290726817042607,
+    "format_accuracy": 1.0,
+    "first_error_localization_accuracy": 0.14,
+    "failure_type_accuracy": 0.5,
+    "joint_error_accuracy": 0.14
+  },
+  "repair": {
+    "n": 50,
+    "success_rate": 0.24,
+    "feasibility": 0.5,
+    "optimality": 0.24,
+    "path_efficiency_on_success": 1.0,
+    "repair_success_rate": 0.24
+  },
+  "by_failure_type": {
+    "goal_not_reached": {
+      "verification": {
+        "n": 30,
+        "macro_f1": 0.34782608695652173,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.13333333333333333,
+        "failure_type_accuracy": 0.5333333333333333,
+        "joint_error_accuracy": 0.13333333333333333
+      },
+      "repair": {
+        "n": 30,
+        "success_rate": 0.23333333333333334,
+        "feasibility": 0.6333333333333333,
+        "optimality": 0.23333333333333334,
+        "path_efficiency_on_success": 1.0
+      }
+    },
+    "invalid_action_token": {
+      "verification": {
+        "n": 10,
+        "macro_f1": 0.47368421052631576,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.3,
+        "failure_type_accuracy": 0.9,
+        "joint_error_accuracy": 0.3
+      },
+      "repair": {
+        "n": 10,
+        "success_rate": 0.5,
+        "feasibility": 0.6,
+        "optimality": 0.5,
+        "path_efficiency_on_success": 1.0
+      }
+    },
+    "obstacle_collision": {
+      "verification": {
+        "n": 4,
+        "macro_f1": 0.42857142857142855,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 4,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null
+      }
+    },
+    "out_of_bounds": {
+      "verification": {
+        "n": 6,
+        "macro_f1": 0.14285714285714285,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "repair": {
+        "n": 6,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null
+      }
+    },
+    "valid": {
+      "verification": {
+        "n": 50,
+        "macro_f1": 0.40476190476190477,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": null,
+        "failure_type_accuracy": null,
+        "joint_error_accuracy": null
+      },
+      "repair": {
+        "n": 0,
+        "success_rate": null,
+        "feasibility": null,
+        "optimality": null,
+        "path_efficiency_on_success": null
+      }
+    }
+  },
+  "direct_generation": {
+    "n": 98,
+    "success_rate": 0.0,
+    "feasibility": 0.0,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null
+  },
+  "definitions": {
+    "feasibility": "all tokens legal, no obstacle or boundary violation; goal not required",
+    "optimality": "successful and action count equals BFS shortest length, divided by all plans",
+    "first_error_localization": "correct invalid prediction and step / all invalid candidates",
+    "macro_f1": "fixed valid/invalid classes; malformed predictions count as false negatives",
+    "e2e": "success_rate over unique start/goal environments for each pipeline",
+    "paired_sets": "ID/OOD differ in supplied candidates; generation uses the same held-out grids"
+  },
+  "official_executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4"
+}

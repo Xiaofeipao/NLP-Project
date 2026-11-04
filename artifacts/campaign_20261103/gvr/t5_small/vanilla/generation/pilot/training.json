@@ -1,0 +1,74 @@
+{
+  "stage": "generation",
+  "pilot": true,
+  "train_rows": 16,
+  "dev_rows": 40,
+  "examples_processed": 16,
+  "optimizer_updates": 1,
+  "history": [
+    {
+      "epoch": 1,
+      "dev_loss": 7.270092923361976,
+      "dev_diagnostics": null,
+      "selection_rank": [
+        -7.270092923361976
+      ]
+    }
+  ],
+  "source_checkpoint": "google-t5/t5-small",
+  "source_revision": "df1b051c49625cf57a3d0d8d3863ed4d13564fe4",
+  "generation_base_sha256": null,
+  "task_index_source_sha256": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+  "lengths": {
+    "max_input_tokens": 92,
+    "max_target_tokens": 11
+  },
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "prompt_format": "vanilla",
+  "training_signature": {
+    "training": {
+      "precision": "float32",
+      "epochs": 2,
+      "batch_size": 4,
+      "eval_batch_size": 4,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "max_input_tokens": 512,
+      "max_target_tokens": 128,
+      "pilot_batches": 4
+    },
+    "stage_options": {
+      "loss": "token_mean",
+      "status_weight": 0.0,
+      "selection": "task_metrics"
+    },
+    "lora": null,
+    "accumulation_normalization": "loss_units_v1"
+  },
+  "stage_options": {
+    "loss": "token_mean",
+    "status_weight": 0.0,
+    "selection": "task_metrics"
+  },
+  "best_epoch": 1,
+  "best_selection_rank": [
+    -7.270092923361976
+  ],
+  "effective_learning_rate": 0.0001,
+  "adapter": null,
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 1278319104,
+  "elapsed_seconds": 2.609595199999603
+}

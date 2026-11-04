@@ -1,0 +1,1010 @@
+[
+  {
+    "source_id": "1_train_set_6x6_samples.json:20",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          5,
+          3
+        ]
+      ],
+      "start": [
+        3,
+        2
+      ],
+      "goal": [
+        5,
+        0
+      ]
+    },
+    "modes": {
+      "direct": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=3 | reason=out_of_bounds",
+        "model_calls": 1,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 70,
+        "output_tokens": 9,
+        "active_seconds": 0.11000000000058208,
+        "stop_reason": "direct_complete",
+        "feedback_source": null,
+        "false_valid_accept": false
+      },
+      "self": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=3 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 199,
+        "output_tokens": 12,
+        "active_seconds": 0.07800000000133878,
+        "stop_reason": "feedback_valid",
+        "feedback_source": "model",
+        "false_valid_accept": true
+      },
+      "executor_one": {
+        "candidate": "down down down down right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=3 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 2,
+        "repairs": 1,
+        "executor_seconds": 0.0,
+        "input_tokens": 172,
+        "output_tokens": 19,
+        "active_seconds": 0.125,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      },
+      "executor_three": {
+        "candidate": "down down down down down right right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=3 | reason=out_of_bounds",
+        "model_calls": 4,
+        "executor_calls": 4,
+        "repairs": 3,
+        "executor_seconds": 0.0,
+        "input_tokens": 379,
+        "output_tokens": 42,
+        "active_seconds": 0.2029999999977008,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      }
+    },
+    "initial_candidate": "down down down down right right right"
+  },
+  {
+    "source_id": "1_train_set_6x6_samples.json:15340",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "start": [
+        4,
+        4
+      ],
+      "goal": [
+        3,
+        5
+      ]
+    },
+    "modes": {
+      "direct": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 1,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 75,
+        "output_tokens": 9,
+        "active_seconds": 0.0470000000022992,
+        "stop_reason": "direct_complete",
+        "feedback_source": null,
+        "false_valid_accept": false
+      },
+      "self": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 209,
+        "output_tokens": 12,
+        "active_seconds": 0.0790000000015425,
+        "stop_reason": "feedback_valid",
+        "feedback_source": "model",
+        "false_valid_accept": true
+      },
+      "executor_one": {
+        "candidate": "down down down down down right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 2,
+        "repairs": 1,
+        "executor_seconds": 0.0,
+        "input_tokens": 182,
+        "output_tokens": 20,
+        "active_seconds": 0.12600000000020373,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      },
+      "executor_three": {
+        "candidate": "down down down down down down down down down down down down down down down down down down right right right right right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 4,
+        "executor_calls": 4,
+        "repairs": 3,
+        "executor_seconds": 0.0,
+        "input_tokens": 406,
+        "output_tokens": 65,
+        "active_seconds": 0.375,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      }
+    },
+    "initial_candidate": "down down down down right right right"
+  },
+  {
+    "source_id": "1_train_set_6x6_samples.json:15766",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          0,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "start": [
+        4,
+        5
+      ],
+      "goal": [
+        5,
+        1
+      ]
+    },
+    "modes": {
+      "direct": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 1,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 75,
+        "output_tokens": 9,
+        "active_seconds": 0.046999999998661224,
+        "stop_reason": "direct_complete",
+        "feedback_source": null,
+        "false_valid_accept": false
+      },
+      "self": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 209,
+        "output_tokens": 12,
+        "active_seconds": 0.06300000000192085,
+        "stop_reason": "feedback_valid",
+        "feedback_source": "model",
+        "false_valid_accept": true
+      },
+      "executor_one": {
+        "candidate": "down down down down down right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 2,
+        "repairs": 1,
+        "executor_seconds": 0.0,
+        "input_tokens": 182,
+        "output_tokens": 20,
+        "active_seconds": 0.10900000000037835,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      },
+      "executor_three": {
+        "candidate": "down down down down down down down down down down down down down down down down right right right right right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 4,
+        "executor_calls": 4,
+        "repairs": 3,
+        "executor_seconds": 0.0,
+        "input_tokens": 404,
+        "output_tokens": 61,
+        "active_seconds": 0.3280000000013388,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      }
+    },
+    "initial_candidate": "down down down down right right right"
+  },
+  {
+    "source_id": "1goals_unseen_6x6_samples.json:387",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "start": [
+        1,
+        5
+      ],
+      "goal": [
+        4,
+        4
+      ]
+    },
+    "modes": {
+      "direct": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=4 | reason=obstacle_collision",
+        "model_calls": 1,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 90,
+        "output_tokens": 9,
+        "active_seconds": 0.0790000000015425,
+        "stop_reason": "direct_complete",
+        "feedback_source": null,
+        "false_valid_accept": false
+      },
+      "self": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=4 | reason=obstacle_collision",
+        "model_calls": 2,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 239,
+        "output_tokens": 12,
+        "active_seconds": 0.06300000000192085,
+        "stop_reason": "feedback_valid",
+        "feedback_source": "model",
+        "false_valid_accept": true
+      },
+      "executor_one": {
+        "candidate": "down down down down right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=4 | reason=obstacle_collision",
+        "model_calls": 2,
+        "executor_calls": 2,
+        "repairs": 1,
+        "executor_seconds": 0.0,
+        "input_tokens": 212,
+        "output_tokens": 19,
+        "active_seconds": 0.125,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      },
+      "executor_three": {
+        "candidate": "down down down down down right right right right right right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=4 | reason=obstacle_collision",
+        "model_calls": 4,
+        "executor_calls": 4,
+        "repairs": 3,
+        "executor_seconds": 0.0,
+        "input_tokens": 460,
+        "output_tokens": 47,
+        "active_seconds": 0.29800000000250293,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      }
+    },
+    "initial_candidate": "down down down down right right right"
+  },
+  {
+    "source_id": "1_train_set_6x6_samples.json:14278",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          2,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "start": [
+        1,
+        4
+      ],
+      "goal": [
+        1,
+        0
+      ]
+    },
+    "modes": {
+      "direct": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=6 | reason=out_of_bounds",
+        "model_calls": 1,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 75,
+        "output_tokens": 9,
+        "active_seconds": 0.062000000001717126,
+        "stop_reason": "direct_complete",
+        "feedback_source": null,
+        "false_valid_accept": false
+      },
+      "self": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=6 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 209,
+        "output_tokens": 12,
+        "active_seconds": 0.09400000000096043,
+        "stop_reason": "feedback_valid",
+        "feedback_source": "model",
+        "false_valid_accept": true
+      },
+      "executor_one": {
+        "candidate": "down down down down down right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=5 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 2,
+        "repairs": 1,
+        "executor_seconds": 0.0,
+        "input_tokens": 182,
+        "output_tokens": 20,
+        "active_seconds": 0.13999999999941792,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      },
+      "executor_three": {
+        "candidate": "down down down down down down down down down down down down down down down down down down right right right right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=5 | reason=out_of_bounds",
+        "model_calls": 4,
+        "executor_calls": 4,
+        "repairs": 3,
+        "executor_seconds": 0.0,
+        "input_tokens": 406,
+        "output_tokens": 64,
+        "active_seconds": 0.31300000000192085,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      }
+    },
+    "initial_candidate": "down down down down right right right"
+  },
+  {
+    "source_id": "1goals_unseen_6x6_samples.json:1310",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "start": [
+        3,
+        4
+      ],
+      "goal": [
+        3,
+        2
+      ]
+    },
+    "modes": {
+      "direct": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=3 | reason=out_of_bounds",
+        "model_calls": 1,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 90,
+        "output_tokens": 9,
+        "active_seconds": 0.06300000000192085,
+        "stop_reason": "direct_complete",
+        "feedback_source": null,
+        "false_valid_accept": false
+      },
+      "self": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=3 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 239,
+        "output_tokens": 12,
+        "active_seconds": 0.09400000000096043,
+        "stop_reason": "feedback_valid",
+        "feedback_source": "model",
+        "false_valid_accept": true
+      },
+      "executor_one": {
+        "candidate": "down down down down right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=3 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 2,
+        "repairs": 1,
+        "executor_seconds": 0.0,
+        "input_tokens": 212,
+        "output_tokens": 19,
+        "active_seconds": 0.1559999999954016,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      },
+      "executor_three": {
+        "candidate": "down down down down down right right right right right right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=3 | reason=out_of_bounds",
+        "model_calls": 4,
+        "executor_calls": 4,
+        "repairs": 3,
+        "executor_seconds": 0.0,
+        "input_tokens": 460,
+        "output_tokens": 47,
+        "active_seconds": 0.3279999999977008,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      }
+    },
+    "initial_candidate": "down down down down right right right"
+  },
+  {
+    "source_id": "1_train_set_6x6_samples.json:5202",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "start": [
+        4,
+        0
+      ],
+      "goal": [
+        4,
+        2
+      ]
+    },
+    "modes": {
+      "direct": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 1,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 85,
+        "output_tokens": 9,
+        "active_seconds": 0.0319999999992433,
+        "stop_reason": "direct_complete",
+        "feedback_source": null,
+        "false_valid_accept": false
+      },
+      "self": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 229,
+        "output_tokens": 12,
+        "active_seconds": 0.125,
+        "stop_reason": "feedback_valid",
+        "feedback_source": "model",
+        "false_valid_accept": true
+      },
+      "executor_one": {
+        "candidate": "down down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 2,
+        "repairs": 1,
+        "executor_seconds": 0.0,
+        "input_tokens": 202,
+        "output_tokens": 19,
+        "active_seconds": 0.14099999999962165,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      },
+      "executor_three": {
+        "candidate": "down down down down down down down right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=out_of_bounds",
+        "model_calls": 4,
+        "executor_calls": 4,
+        "repairs": 3,
+        "executor_seconds": 0.0,
+        "input_tokens": 439,
+        "output_tokens": 43,
+        "active_seconds": 0.2510000000038417,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      }
+    },
+    "initial_candidate": "down down down down right right right"
+  },
+  {
+    "source_id": "1dev_set_6x6_samples.json:141",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "start": [
+        3,
+        0
+      ],
+      "goal": [
+        0,
+        4
+      ]
+    },
+    "modes": {
+      "direct": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=obstacle_collision",
+        "model_calls": 1,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 90,
+        "output_tokens": 9,
+        "active_seconds": 0.062000000001717126,
+        "stop_reason": "direct_complete",
+        "feedback_source": null,
+        "false_valid_accept": false
+      },
+      "self": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=obstacle_collision",
+        "model_calls": 2,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 239,
+        "output_tokens": 12,
+        "active_seconds": 0.09500000000116415,
+        "stop_reason": "feedback_valid",
+        "feedback_source": "model",
+        "false_valid_accept": true
+      },
+      "executor_one": {
+        "candidate": "down down down down right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=obstacle_collision",
+        "model_calls": 2,
+        "executor_calls": 2,
+        "repairs": 1,
+        "executor_seconds": 0.0,
+        "input_tokens": 212,
+        "output_tokens": 19,
+        "active_seconds": 0.09299999999711872,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      },
+      "executor_three": {
+        "candidate": "down down down down down right right right right right right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=2 | reason=obstacle_collision",
+        "model_calls": 4,
+        "executor_calls": 4,
+        "repairs": 3,
+        "executor_seconds": 0.0,
+        "input_tokens": 460,
+        "output_tokens": 47,
+        "active_seconds": 0.4210000000020955,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      }
+    },
+    "initial_candidate": "down down down down right right right"
+  },
+  {
+    "source_id": "1_train_set_6x6_samples.json:7701",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "start": [
+        5,
+        3
+      ],
+      "goal": [
+        2,
+        1
+      ]
+    },
+    "modes": {
+      "direct": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=1 | reason=out_of_bounds",
+        "model_calls": 1,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 85,
+        "output_tokens": 9,
+        "active_seconds": 0.06300000000192085,
+        "stop_reason": "direct_complete",
+        "feedback_source": null,
+        "false_valid_accept": false
+      },
+      "self": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=1 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 229,
+        "output_tokens": 12,
+        "active_seconds": 0.10900000000037835,
+        "stop_reason": "feedback_valid",
+        "feedback_source": "model",
+        "false_valid_accept": true
+      },
+      "executor_one": {
+        "candidate": "down down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=1 | reason=out_of_bounds",
+        "model_calls": 2,
+        "executor_calls": 2,
+        "repairs": 1,
+        "executor_seconds": 0.0,
+        "input_tokens": 202,
+        "output_tokens": 19,
+        "active_seconds": 0.10900000000037835,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      },
+      "executor_three": {
+        "candidate": "down down down down down down down right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=1 | reason=out_of_bounds",
+        "model_calls": 4,
+        "executor_calls": 4,
+        "repairs": 3,
+        "executor_seconds": 0.0,
+        "input_tokens": 439,
+        "output_tokens": 43,
+        "active_seconds": 0.25,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      }
+    },
+    "initial_candidate": "down down down down right right right"
+  },
+  {
+    "source_id": "1_train_set_6x6_samples.json:12757",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "start": [
+        3,
+        5
+      ],
+      "goal": [
+        4,
+        2
+      ]
+    },
+    "modes": {
+      "direct": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=1 | reason=obstacle_collision",
+        "model_calls": 1,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 75,
+        "output_tokens": 9,
+        "active_seconds": 0.0470000000022992,
+        "stop_reason": "direct_complete",
+        "feedback_source": null,
+        "false_valid_accept": false
+      },
+      "self": {
+        "candidate": "down down down down right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=1 | reason=obstacle_collision",
+        "model_calls": 2,
+        "executor_calls": 0,
+        "repairs": 0,
+        "executor_seconds": 0.0,
+        "input_tokens": 209,
+        "output_tokens": 12,
+        "active_seconds": 0.0930000000007567,
+        "stop_reason": "feedback_valid",
+        "feedback_source": "model",
+        "false_valid_accept": true
+      },
+      "executor_one": {
+        "candidate": "down down down down down right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=1 | reason=obstacle_collision",
+        "model_calls": 2,
+        "executor_calls": 2,
+        "repairs": 1,
+        "executor_seconds": 0.0,
+        "input_tokens": 182,
+        "output_tokens": 20,
+        "active_seconds": 0.0779999999977008,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      },
+      "executor_three": {
+        "candidate": "down down down down down down down down down down down down down down down down down down right right right right right right right right",
+        "success": false,
+        "feasible": false,
+        "optimal": false,
+        "truth": "invalid | step=1 | reason=obstacle_collision",
+        "model_calls": 4,
+        "executor_calls": 4,
+        "repairs": 3,
+        "executor_seconds": 0.0,
+        "input_tokens": 406,
+        "output_tokens": 65,
+        "active_seconds": 0.3900000000030559,
+        "stop_reason": "repair_limit",
+        "feedback_source": "executor",
+        "false_valid_accept": false
+      }
+    },
+    "initial_candidate": "down down down down right right right"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "family": "lora_gvr",
+  "trace_format": "gvr",
+  "config": "outputs\\campaign_20261103\\bart_base_policy.json",
+  "dataset_root": "data/derived",
+  "max_actions": 36,
+  "symbolic_only": false,
+  "traces": {
+    "dev": "outputs\\campaign_20261103\\gvr\\bart_base\\structured\\evaluation\\dev\\pipeline_traces.jsonl",
+    "test_id": "outputs\\campaign_20261103\\gvr\\bart_base\\structured\\evaluation\\test_id\\pipeline_traces.jsonl",
+    "test_ood": "outputs\\campaign_20261103\\gvr\\bart_base\\structured\\evaluation\\test_ood\\pipeline_traces.jsonl"
+  }
+}

@@ -86,7 +86,12 @@ def freeze_payload(config, protocol, selection_report, root=ROOT):
     """Bind all inference inputs, not just the selected weight files."""
     root = Path(root).resolve()
     report_path = Path(selection_report).resolve()
-    report_name = report_path.relative_to(root).as_posix()
+    # Output storage may live on another disk behind a workspace junction.
+    # The report contents remain hash-bound; this is a local reproducibility lock.
+    try:
+        report_name = report_path.relative_to(root).as_posix()
+    except ValueError:
+        report_name = report_path.as_posix()
     report = json.loads(report_path.read_text(encoding="utf-8"))
     from .prompts import protocol_model_config, check_checkpoint_prompt_format
     style = protocol_model_config(config, protocol)["prompt_format"]

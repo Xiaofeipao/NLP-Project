@@ -2,9 +2,15 @@
 
 ## 当前版本与方法导航
 
+**三模型 GPU 扩展已完成（2026-11-04）**：T5-small、T5-base、BART-base 的全量基线、GVR LoRA、outcome-GRPO/REINFORCE、逐步策略及前缀消融共生成 99/99 份评测报告。三个模型的逐步策略加访问约束均达到 200/200，最优率分别为 86%、85%、82.5%；GRPO 整路径生成仍只有 0–4/200。完整方法边界、负结果和开发选模规则见 [三模型 GPU 实验记录](docs/gpu_campaign_20261103.md)，原始指标见 [结果 JSON](docs/gpu_campaign_results.json)。
+
+本轮有效模型权重、训练记录、99 份报告和执行轨迹发布于 [实验产物目录](artifacts/campaign_20261103/README.md)。大文件通过 Git LFS 下载；加载方法、底座对应关系、脱敏与哈希校验范围见目录说明。
+
+此前未发布的 9 个历史有效权重（包括 Flan-T5 逐步策略及其单/多动作对照）另存于 [历史模型备份](artifacts/historical_models/README.md)，避免与本轮模型和成绩混淆。
+
 `main` 是包含全部实验方法的统一代码版本，不是“纯基线”，也不表示所有方案都训练成功。方法用入口和配置区分，历史结果用提交/标签区分。先读 [项目、方法和分支导航](docs/project_map.md)，再选择运行入口；[模块分类](ppnl/README.md)、[脚本分类](scripts/README.md)、[配置分类](configs/README.md) 提供按职责索引。
 
-本次整合全量微调 Harness 和两类前缀修复，修正 restart 消融、动作预算、测试前冻结和 RLVR 输入格式检查。强化学习实现是 **RLVR REINFORCE + LoRA**，不是完整 GRPO；结构化输入候选尚未训练。本次没有新 GPU 结果，以下不同日期的成功率与测试数都是对应版本的历史记录。
+此前代码整合修正了 restart 消融、动作预算、测试前冻结和 RLVR 输入格式检查。该历史版本只有 **RLVR REINFORCE + LoRA**，结构化输入候选当时尚未训练。以下不同日期的成功率与测试数均为对应版本的历史记录；本轮 GPU 扩展的进度和新结果单独记录。
 
 新增 Project 6 G／V／R 的生成底座、两套 LoRA、训练记录和逐条实验结果已收录至 [产物目录](artifacts/gvr/README.md)，权重需执行 `git lfs pull` 获取。ID／OOD 候选修复为 12%／6%，四种端到端流程均为 0%；开发集按修正配额重算后修复为 7/60（11.7%）。入口与审计说明见 [GVR 协议](docs/gvr_protocol.md)，完整结果见 [实验记录](docs/gvr_gpu_run.md)。下文原有数值为此前项目的历史实验记录。
 

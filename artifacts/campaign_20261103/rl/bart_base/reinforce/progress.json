@@ -1,0 +1,34 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "success_rate": 0.0,
+      "mean_reward": -1.1799126984126986
+    },
+    {
+      "step": 16,
+      "success_rate": 0.0,
+      "mean_reward": -1.1184126984126987
+    },
+    {
+      "step": 32,
+      "success_rate": 0.0,
+      "mean_reward": -1.0452936507936508
+    },
+    {
+      "step": 48,
+      "success_rate": 0.0,
+      "mean_reward": -1.0372103174603176
+    },
+    {
+      "step": 64,
+      "success_rate": 0.0,
+      "mean_reward": -0.8333829365079364
+    }
+  ],
+  "best": {
+    "step": 64,
+    "success_rate": 0.0,
+    "mean_reward": -0.8333829365079364
+  }
+}

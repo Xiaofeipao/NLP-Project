@@ -37,7 +37,7 @@ def preflight(config, protocol):
     except (OSError, ValueError, KeyError, TypeError):
         seconds = None
         checks["shared_gpu_ledger"] = False
-    item = config["models"]["flan_t5_small"]
+    item = config["models"][protocol.get("model_key", "flan_t5_small")]
     checks["checkpoint_confirmation"] = bool((item.get("manager_confirmed") or item.get("user_confirmed")) and str(item.get("confirmation_note") or "").strip())
     evidence = protocol["evidence"]
     checks["evidence_declared"] = (all(evidence.get(key) is True for key in

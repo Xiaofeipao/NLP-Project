@@ -1,0 +1,13 @@
+{
+  "family": "lora_gvr",
+  "trace_format": "gvr",
+  "config": "outputs\\campaign_20261103\\t5_base_policy.json",
+  "dataset_root": "data/derived",
+  "max_actions": 36,
+  "symbolic_only": false,
+  "traces": {
+    "dev": "outputs\\campaign_20261103\\gvr\\t5_base\\vanilla\\evaluation\\dev\\pipeline_traces.jsonl",
+    "test_id": "outputs\\campaign_20261103\\gvr\\t5_base\\vanilla\\evaluation\\test_id\\pipeline_traces.jsonl",
+    "test_ood": "outputs\\campaign_20261103\\gvr\\t5_base\\vanilla\\evaluation\\test_ood\\pipeline_traces.jsonl"
+  }
+}

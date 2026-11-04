@@ -1,0 +1,52 @@
+{
+  "started_unix": 1792337502.826179,
+  "stages": [
+    {
+      "name": "single_pilot",
+      "seconds": 15.514999999999873,
+      "returncode": 0
+    },
+    {
+      "name": "single_train",
+      "seconds": 126.14100000000008,
+      "returncode": 0
+    },
+    {
+      "name": "single_dev",
+      "seconds": 15.047000000000025,
+      "returncode": 0
+    },
+    {
+      "name": "multi_pilot",
+      "seconds": 15.592999999999847,
+      "returncode": 0
+    },
+    {
+      "name": "multi_train",
+      "seconds": 116.32900000000018,
+      "returncode": 0
+    },
+    {
+      "name": "multi_dev",
+      "seconds": 14.5,
+      "returncode": 0
+    },
+    {
+      "name": "v2_reference_dev",
+      "seconds": 16.0,
+      "returncode": 0
+    },
+    {
+      "name": "selected_test_id",
+      "seconds": 19.484999999999673,
+      "returncode": 0
+    },
+    {
+      "name": "selected_test_ood",
+      "seconds": 20.796000000000276,
+      "returncode": 0
+    }
+  ],
+  "completed_unix": 1792337862.243085,
+  "selected": "multi"
+}

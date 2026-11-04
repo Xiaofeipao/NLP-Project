@@ -24,9 +24,12 @@ def checkpoint_hash(path):
     return digest.hexdigest()
 
 
-def lora_config(settings):
+def lora_config(settings, model_type="t5"):
     from peft import LoraConfig, TaskType
-    return LoraConfig(task_type=TaskType.SEQ_2_SEQ_LM, target_modules=["q", "v"],
+    targets = {"t5": ["q", "v"], "bart": ["q_proj", "v_proj"]}
+    if model_type not in targets:
+        raise ValueError(f"Unsupported LoRA architecture: {model_type}")
+    return LoraConfig(task_type=TaskType.SEQ_2_SEQ_LM, target_modules=targets[model_type],
                       r=settings.get("r", 8), lora_alpha=settings.get("alpha", 16),
                       lora_dropout=settings.get("dropout", 0.05), bias="none")
 
@@ -35,10 +38,12 @@ def attach_adapter(runner, name, settings):
     from peft import get_peft_model
     if name not in ("verification", "repair"):
         raise ValueError(name)
-    targets = [n for n, _ in runner.model.named_modules() if n.endswith((".q", ".v"))]
+    settings_config = lora_config(settings, runner.model.config.model_type)
+    targets = [n for n, _ in runner.model.named_modules()
+               if n.split(".")[-1] in settings_config.target_modules]
     if not targets:
-        raise ValueError("No T5 attention q/v modules found")
-    runner.model = get_peft_model(runner.model, lora_config(settings), adapter_name=name)
+        raise ValueError("No matching attention projection modules found")
+    runner.model = get_peft_model(runner.model, settings_config, adapter_name=name)
     runner._collator.model = runner.model
     trainable = [n for n, p in runner.model.named_parameters() if p.requires_grad]
     if not trainable or any("lora_" not in n or name not in n for n in trainable):

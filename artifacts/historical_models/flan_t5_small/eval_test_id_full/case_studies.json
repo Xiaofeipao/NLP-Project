@@ -1,0 +1,2748 @@
+[
+  {
+    "id": "test_id-1",
+    "layout_id": "03a8164e508a182e902a",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "start": [
+        3,
+        4
+      ],
+      "goal": [
+        2,
+        5
+      ]
+    },
+    "candidate": {
+      "plan": "down right",
+      "verdict": "invalid | step=3 | reason=goal_not_reached",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            3,
+            4
+          ],
+          "action": "down",
+          "to": [
+            4,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            4,
+            4
+          ],
+          "action": "right",
+          "to": [
+            4,
+            5
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            4,
+            5
+          ],
+          "action": "<eos>",
+          "to": [
+            4,
+            5
+          ],
+          "reason": "goal_not_reached"
+        }
+      ]
+    },
+    "gold_verdict": "invalid | step=3 | reason=goal_not_reached",
+    "predicted_verdict": "invalid | step=2 | reason=goal_not_reached",
+    "edits": [
+      {
+        "kind": "substitution",
+        "original_index": 1,
+        "before": "up",
+        "after": "down"
+      }
+    ],
+    "repair": {
+      "plan": "down right right right",
+      "verdict": "invalid | step=3 | reason=out_of_bounds",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            3,
+            4
+          ],
+          "action": "down",
+          "to": [
+            4,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            4,
+            4
+          ],
+          "action": "right",
+          "to": [
+            4,
+            5
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            4,
+            5
+          ],
+          "action": "right",
+          "to": [
+            4,
+            6
+          ],
+          "reason": "out_of_bounds"
+        }
+      ]
+    },
+    "iterative_repair": [
+      {
+        "round": 1,
+        "result": {
+          "plan": "down right right right",
+          "verdict": "invalid | step=3 | reason=out_of_bounds",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                3,
+                4
+              ],
+              "action": "down",
+              "to": [
+                4,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                4,
+                4
+              ],
+              "action": "right",
+              "to": [
+                4,
+                5
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                4,
+                5
+              ],
+              "action": "right",
+              "to": [
+                4,
+                6
+              ],
+              "reason": "out_of_bounds"
+            }
+          ]
+        }
+      },
+      {
+        "round": 2,
+        "result": {
+          "plan": "down right right right right",
+          "verdict": "invalid | step=3 | reason=out_of_bounds",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                3,
+                4
+              ],
+              "action": "down",
+              "to": [
+                4,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                4,
+                4
+              ],
+              "action": "right",
+              "to": [
+                4,
+                5
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                4,
+                5
+              ],
+              "action": "right",
+              "to": [
+                4,
+                6
+              ],
+              "reason": "out_of_bounds"
+            }
+          ]
+        }
+      },
+      {
+        "round": 3,
+        "result": {
+          "plan": "down right right right right right right",
+          "verdict": "invalid | step=3 | reason=out_of_bounds",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                3,
+                4
+              ],
+              "action": "down",
+              "to": [
+                4,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                4,
+                4
+              ],
+              "action": "right",
+              "to": [
+                4,
+                5
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                4,
+                5
+              ],
+              "action": "right",
+              "to": [
+                4,
+                6
+              ],
+              "reason": "out_of_bounds"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "test_id-2",
+    "layout_id": "797aeb4764c1ed20daf0",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "start": [
+        4,
+        4
+      ],
+      "goal": [
+        3,
+        5
+      ]
+    },
+    "candidate": {
+      "plan": "up right",
+      "verdict": "valid",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            4,
+            4
+          ],
+          "action": "up",
+          "to": [
+            3,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            3,
+            4
+          ],
+          "action": "right",
+          "to": [
+            3,
+            5
+          ],
+          "reason": null
+        }
+      ]
+    },
+    "gold_verdict": "valid",
+    "predicted_verdict": "invalid | step=1 | reason=goal_not_reached",
+    "edits": []
+  },
+  {
+    "id": "test_id-3",
+    "layout_id": "7d62a0c72b6734a929c3",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          0,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "start": [
+        4,
+        5
+      ],
+      "goal": [
+        5,
+        1
+      ]
+    },
+    "candidate": {
+      "plan": "left left left left",
+      "verdict": "invalid | step=5 | reason=goal_not_reached",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            4,
+            5
+          ],
+          "action": "left",
+          "to": [
+            4,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            4,
+            4
+          ],
+          "action": "left",
+          "to": [
+            4,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            4,
+            3
+          ],
+          "action": "left",
+          "to": [
+            4,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            4,
+            2
+          ],
+          "action": "left",
+          "to": [
+            4,
+            1
+          ],
+          "reason": null
+        },
+        {
+          "step": 5,
+          "from": [
+            4,
+            1
+          ],
+          "action": "<eos>",
+          "to": [
+            4,
+            1
+          ],
+          "reason": "goal_not_reached"
+        }
+      ]
+    },
+    "gold_verdict": "invalid | step=5 | reason=goal_not_reached",
+    "predicted_verdict": "invalid | step=5 | reason=goal_not_reached",
+    "edits": [
+      {
+        "kind": "deletion",
+        "original_index": 4,
+        "before": "down",
+        "after": null
+      }
+    ],
+    "repair": {
+      "plan": "left left left left left",
+      "verdict": "invalid | step=6 | reason=goal_not_reached",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            4,
+            5
+          ],
+          "action": "left",
+          "to": [
+            4,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            4,
+            4
+          ],
+          "action": "left",
+          "to": [
+            4,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            4,
+            3
+          ],
+          "action": "left",
+          "to": [
+            4,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            4,
+            2
+          ],
+          "action": "left",
+          "to": [
+            4,
+            1
+          ],
+          "reason": null
+        },
+        {
+          "step": 5,
+          "from": [
+            4,
+            1
+          ],
+          "action": "left",
+          "to": [
+            4,
+            0
+          ],
+          "reason": null
+        },
+        {
+          "step": 6,
+          "from": [
+            4,
+            0
+          ],
+          "action": "<eos>",
+          "to": [
+            4,
+            0
+          ],
+          "reason": "goal_not_reached"
+        }
+      ]
+    },
+    "iterative_repair": [
+      {
+        "round": 1,
+        "result": {
+          "plan": "left left left left left",
+          "verdict": "invalid | step=6 | reason=goal_not_reached",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                4,
+                5
+              ],
+              "action": "left",
+              "to": [
+                4,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                4,
+                4
+              ],
+              "action": "left",
+              "to": [
+                4,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                4,
+                3
+              ],
+              "action": "left",
+              "to": [
+                4,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                4,
+                2
+              ],
+              "action": "left",
+              "to": [
+                4,
+                1
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                4,
+                1
+              ],
+              "action": "left",
+              "to": [
+                4,
+                0
+              ],
+              "reason": null
+            },
+            {
+              "step": 6,
+              "from": [
+                4,
+                0
+              ],
+              "action": "<eos>",
+              "to": [
+                4,
+                0
+              ],
+              "reason": "goal_not_reached"
+            }
+          ]
+        }
+      },
+      {
+        "round": 2,
+        "result": {
+          "plan": "left left left left left left",
+          "verdict": "invalid | step=6 | reason=out_of_bounds",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                4,
+                5
+              ],
+              "action": "left",
+              "to": [
+                4,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                4,
+                4
+              ],
+              "action": "left",
+              "to": [
+                4,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                4,
+                3
+              ],
+              "action": "left",
+              "to": [
+                4,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                4,
+                2
+              ],
+              "action": "left",
+              "to": [
+                4,
+                1
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                4,
+                1
+              ],
+              "action": "left",
+              "to": [
+                4,
+                0
+              ],
+              "reason": null
+            },
+            {
+              "step": 6,
+              "from": [
+                4,
+                0
+              ],
+              "action": "left",
+              "to": [
+                4,
+                -1
+              ],
+              "reason": "out_of_bounds"
+            }
+          ]
+        }
+      },
+      {
+        "round": 3,
+        "result": {
+          "plan": "left left left left left left",
+          "verdict": "invalid | step=6 | reason=out_of_bounds",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                4,
+                5
+              ],
+              "action": "left",
+              "to": [
+                4,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                4,
+                4
+              ],
+              "action": "left",
+              "to": [
+                4,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                4,
+                3
+              ],
+              "action": "left",
+              "to": [
+                4,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                4,
+                2
+              ],
+              "action": "left",
+              "to": [
+                4,
+                1
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                4,
+                1
+              ],
+              "action": "left",
+              "to": [
+                4,
+                0
+              ],
+              "reason": null
+            },
+            {
+              "step": 6,
+              "from": [
+                4,
+                0
+              ],
+              "action": "left",
+              "to": [
+                4,
+                -1
+              ],
+              "reason": "out_of_bounds"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "test_id-5",
+    "layout_id": "025185f07b8cb3a21275",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          2,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "start": [
+        1,
+        4
+      ],
+      "goal": [
+        1,
+        0
+      ]
+    },
+    "candidate": {
+      "plan": "left left right left left",
+      "verdict": "invalid | step=6 | reason=goal_not_reached",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            1,
+            4
+          ],
+          "action": "left",
+          "to": [
+            1,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            1,
+            3
+          ],
+          "action": "left",
+          "to": [
+            1,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            1,
+            2
+          ],
+          "action": "right",
+          "to": [
+            1,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            1,
+            3
+          ],
+          "action": "left",
+          "to": [
+            1,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 5,
+          "from": [
+            1,
+            2
+          ],
+          "action": "left",
+          "to": [
+            1,
+            1
+          ],
+          "reason": null
+        },
+        {
+          "step": 6,
+          "from": [
+            1,
+            1
+          ],
+          "action": "<eos>",
+          "to": [
+            1,
+            1
+          ],
+          "reason": "goal_not_reached"
+        }
+      ]
+    },
+    "gold_verdict": "invalid | step=6 | reason=goal_not_reached",
+    "predicted_verdict": "invalid | step=5 | reason=goal_not_reached",
+    "edits": [
+      {
+        "kind": "insertion",
+        "original_index": 3,
+        "before": "left",
+        "after": "right"
+      }
+    ],
+    "repair": {
+      "plan": "left left left left left",
+      "verdict": "invalid | step=5 | reason=out_of_bounds",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            1,
+            4
+          ],
+          "action": "left",
+          "to": [
+            1,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            1,
+            3
+          ],
+          "action": "left",
+          "to": [
+            1,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            1,
+            2
+          ],
+          "action": "left",
+          "to": [
+            1,
+            1
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            1,
+            1
+          ],
+          "action": "left",
+          "to": [
+            1,
+            0
+          ],
+          "reason": null
+        },
+        {
+          "step": 5,
+          "from": [
+            1,
+            0
+          ],
+          "action": "left",
+          "to": [
+            1,
+            -1
+          ],
+          "reason": "out_of_bounds"
+        }
+      ]
+    },
+    "iterative_repair": [
+      {
+        "round": 1,
+        "result": {
+          "plan": "left left left left left",
+          "verdict": "invalid | step=5 | reason=out_of_bounds",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                1,
+                4
+              ],
+              "action": "left",
+              "to": [
+                1,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                1,
+                3
+              ],
+              "action": "left",
+              "to": [
+                1,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                1,
+                2
+              ],
+              "action": "left",
+              "to": [
+                1,
+                1
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                1,
+                1
+              ],
+              "action": "left",
+              "to": [
+                1,
+                0
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                1,
+                0
+              ],
+              "action": "left",
+              "to": [
+                1,
+                -1
+              ],
+              "reason": "out_of_bounds"
+            }
+          ]
+        }
+      },
+      {
+        "round": 2,
+        "result": {
+          "plan": "left left left left left left",
+          "verdict": "invalid | step=5 | reason=out_of_bounds",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                1,
+                4
+              ],
+              "action": "left",
+              "to": [
+                1,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                1,
+                3
+              ],
+              "action": "left",
+              "to": [
+                1,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                1,
+                2
+              ],
+              "action": "left",
+              "to": [
+                1,
+                1
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                1,
+                1
+              ],
+              "action": "left",
+              "to": [
+                1,
+                0
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                1,
+                0
+              ],
+              "action": "left",
+              "to": [
+                1,
+                -1
+              ],
+              "reason": "out_of_bounds"
+            }
+          ]
+        }
+      },
+      {
+        "round": 3,
+        "result": {
+          "plan": "left left left left left left",
+          "verdict": "invalid | step=5 | reason=out_of_bounds",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                1,
+                4
+              ],
+              "action": "left",
+              "to": [
+                1,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                1,
+                3
+              ],
+              "action": "left",
+              "to": [
+                1,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                1,
+                2
+              ],
+              "action": "left",
+              "to": [
+                1,
+                1
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                1,
+                1
+              ],
+              "action": "left",
+              "to": [
+                1,
+                0
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                1,
+                0
+              ],
+              "action": "left",
+              "to": [
+                1,
+                -1
+              ],
+              "reason": "out_of_bounds"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "test_id-6",
+    "layout_id": "7b6a9f23b67aed333953",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "start": [
+        5,
+        1
+      ],
+      "goal": [
+        0,
+        0
+      ]
+    },
+    "candidate": {
+      "plan": "left up up up up up",
+      "verdict": "valid",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            5,
+            1
+          ],
+          "action": "left",
+          "to": [
+            5,
+            0
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            5,
+            0
+          ],
+          "action": "up",
+          "to": [
+            4,
+            0
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            4,
+            0
+          ],
+          "action": "up",
+          "to": [
+            3,
+            0
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            3,
+            0
+          ],
+          "action": "up",
+          "to": [
+            2,
+            0
+          ],
+          "reason": null
+        },
+        {
+          "step": 5,
+          "from": [
+            2,
+            0
+          ],
+          "action": "up",
+          "to": [
+            1,
+            0
+          ],
+          "reason": null
+        },
+        {
+          "step": 6,
+          "from": [
+            1,
+            0
+          ],
+          "action": "up",
+          "to": [
+            0,
+            0
+          ],
+          "reason": null
+        }
+      ]
+    },
+    "gold_verdict": "valid",
+    "predicted_verdict": "invalid | step=5 | reason=goal_not_reached",
+    "edits": []
+  },
+  {
+    "id": "test_id-7",
+    "layout_id": "96e388d88e967bdf9f8d",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "start": [
+        3,
+        4
+      ],
+      "goal": [
+        3,
+        2
+      ]
+    },
+    "candidate": {
+      "plan": "left",
+      "verdict": "invalid | step=2 | reason=goal_not_reached",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            3,
+            4
+          ],
+          "action": "left",
+          "to": [
+            3,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            3,
+            3
+          ],
+          "action": "<eos>",
+          "to": [
+            3,
+            3
+          ],
+          "reason": "goal_not_reached"
+        }
+      ]
+    },
+    "gold_verdict": "invalid | step=2 | reason=goal_not_reached",
+    "predicted_verdict": "invalid | step=1 | reason=goal_not_reached",
+    "edits": [
+      {
+        "kind": "premature_stopping",
+        "original_index": 2,
+        "removed": [
+          "left"
+        ]
+      }
+    ],
+    "repair": {
+      "plan": "left left",
+      "verdict": "valid",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            3,
+            4
+          ],
+          "action": "left",
+          "to": [
+            3,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            3,
+            3
+          ],
+          "action": "left",
+          "to": [
+            3,
+            2
+          ],
+          "reason": null
+        }
+      ]
+    },
+    "iterative_repair": [
+      {
+        "round": 1,
+        "result": {
+          "plan": "left left",
+          "verdict": "valid",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                3,
+                4
+              ],
+              "action": "left",
+              "to": [
+                3,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                3,
+                3
+              ],
+              "action": "left",
+              "to": [
+                3,
+                2
+              ],
+              "reason": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "test_id-9",
+    "layout_id": "3a5476b3821361667dbb",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "start": [
+        3,
+        0
+      ],
+      "goal": [
+        0,
+        4
+      ]
+    },
+    "candidate": {
+      "plan": "right right up up up jump right",
+      "verdict": "invalid | step=6 | reason=invalid_action_token",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            3,
+            0
+          ],
+          "action": "right",
+          "to": [
+            3,
+            1
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            3,
+            1
+          ],
+          "action": "right",
+          "to": [
+            3,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            3,
+            2
+          ],
+          "action": "up",
+          "to": [
+            2,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            2,
+            2
+          ],
+          "action": "up",
+          "to": [
+            1,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 5,
+          "from": [
+            1,
+            2
+          ],
+          "action": "up",
+          "to": [
+            0,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 6,
+          "from": [
+            0,
+            2
+          ],
+          "action": "jump",
+          "to": [
+            0,
+            2
+          ],
+          "reason": "invalid_action_token"
+        }
+      ]
+    },
+    "gold_verdict": "invalid | step=6 | reason=invalid_action_token",
+    "predicted_verdict": "invalid | step=5 | reason=invalid_action_token",
+    "edits": [
+      {
+        "kind": "invalid_token",
+        "original_index": 6,
+        "before": "right",
+        "after": "jump"
+      }
+    ],
+    "repair": {
+      "plan": "right right up up up right right",
+      "verdict": "valid",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            3,
+            0
+          ],
+          "action": "right",
+          "to": [
+            3,
+            1
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            3,
+            1
+          ],
+          "action": "right",
+          "to": [
+            3,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            3,
+            2
+          ],
+          "action": "up",
+          "to": [
+            2,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            2,
+            2
+          ],
+          "action": "up",
+          "to": [
+            1,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 5,
+          "from": [
+            1,
+            2
+          ],
+          "action": "up",
+          "to": [
+            0,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 6,
+          "from": [
+            0,
+            2
+          ],
+          "action": "right",
+          "to": [
+            0,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 7,
+          "from": [
+            0,
+            3
+          ],
+          "action": "right",
+          "to": [
+            0,
+            4
+          ],
+          "reason": null
+        }
+      ]
+    },
+    "iterative_repair": [
+      {
+        "round": 1,
+        "result": {
+          "plan": "right right up up up right right",
+          "verdict": "valid",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                3,
+                0
+              ],
+              "action": "right",
+              "to": [
+                3,
+                1
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                3,
+                1
+              ],
+              "action": "right",
+              "to": [
+                3,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                3,
+                2
+              ],
+              "action": "up",
+              "to": [
+                2,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                2,
+                2
+              ],
+              "action": "up",
+              "to": [
+                1,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                1,
+                2
+              ],
+              "action": "up",
+              "to": [
+                0,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 6,
+              "from": [
+                0,
+                2
+              ],
+              "action": "right",
+              "to": [
+                0,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 7,
+              "from": [
+                0,
+                3
+              ],
+              "action": "right",
+              "to": [
+                0,
+                4
+              ],
+              "reason": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "test_id-10",
+    "layout_id": "eaa7b91c130cf6672596",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "start": [
+        2,
+        5
+      ],
+      "goal": [
+        1,
+        2
+      ]
+    },
+    "candidate": {
+      "plan": "up left left left",
+      "verdict": "valid",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            2,
+            5
+          ],
+          "action": "up",
+          "to": [
+            1,
+            5
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            1,
+            5
+          ],
+          "action": "left",
+          "to": [
+            1,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            1,
+            4
+          ],
+          "action": "left",
+          "to": [
+            1,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            1,
+            3
+          ],
+          "action": "left",
+          "to": [
+            1,
+            2
+          ],
+          "reason": null
+        }
+      ]
+    },
+    "gold_verdict": "valid",
+    "predicted_verdict": "invalid | step=5 | reason=goal_not_reached",
+    "edits": []
+  },
+  {
+    "id": "test_id-11",
+    "layout_id": "8ae638f54e7bdb67af0b",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "start": [
+        5,
+        3
+      ],
+      "goal": [
+        2,
+        1
+      ]
+    },
+    "candidate": {
+      "plan": "up right up left left",
+      "verdict": "invalid | step=6 | reason=goal_not_reached",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            5,
+            3
+          ],
+          "action": "up",
+          "to": [
+            4,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            4,
+            3
+          ],
+          "action": "right",
+          "to": [
+            4,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            4,
+            4
+          ],
+          "action": "up",
+          "to": [
+            3,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            3,
+            4
+          ],
+          "action": "left",
+          "to": [
+            3,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 5,
+          "from": [
+            3,
+            3
+          ],
+          "action": "left",
+          "to": [
+            3,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 6,
+          "from": [
+            3,
+            2
+          ],
+          "action": "<eos>",
+          "to": [
+            3,
+            2
+          ],
+          "reason": "goal_not_reached"
+        }
+      ]
+    },
+    "gold_verdict": "invalid | step=6 | reason=goal_not_reached",
+    "predicted_verdict": "invalid | step=5 | reason=goal_not_reached",
+    "edits": [
+      {
+        "kind": "substitution",
+        "original_index": 2,
+        "before": "up",
+        "after": "right"
+      }
+    ],
+    "repair": {
+      "plan": "up right up left left",
+      "verdict": "invalid | step=6 | reason=goal_not_reached",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            5,
+            3
+          ],
+          "action": "up",
+          "to": [
+            4,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            4,
+            3
+          ],
+          "action": "right",
+          "to": [
+            4,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            4,
+            4
+          ],
+          "action": "up",
+          "to": [
+            3,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            3,
+            4
+          ],
+          "action": "left",
+          "to": [
+            3,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 5,
+          "from": [
+            3,
+            3
+          ],
+          "action": "left",
+          "to": [
+            3,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 6,
+          "from": [
+            3,
+            2
+          ],
+          "action": "<eos>",
+          "to": [
+            3,
+            2
+          ],
+          "reason": "goal_not_reached"
+        }
+      ]
+    },
+    "iterative_repair": [
+      {
+        "round": 1,
+        "result": {
+          "plan": "up right up left left",
+          "verdict": "invalid | step=6 | reason=goal_not_reached",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                5,
+                3
+              ],
+              "action": "up",
+              "to": [
+                4,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                4,
+                3
+              ],
+              "action": "right",
+              "to": [
+                4,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                4,
+                4
+              ],
+              "action": "up",
+              "to": [
+                3,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                3,
+                4
+              ],
+              "action": "left",
+              "to": [
+                3,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                3,
+                3
+              ],
+              "action": "left",
+              "to": [
+                3,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 6,
+              "from": [
+                3,
+                2
+              ],
+              "action": "<eos>",
+              "to": [
+                3,
+                2
+              ],
+              "reason": "goal_not_reached"
+            }
+          ]
+        }
+      },
+      {
+        "round": 2,
+        "result": {
+          "plan": "up right up left left",
+          "verdict": "invalid | step=6 | reason=goal_not_reached",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                5,
+                3
+              ],
+              "action": "up",
+              "to": [
+                4,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                4,
+                3
+              ],
+              "action": "right",
+              "to": [
+                4,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                4,
+                4
+              ],
+              "action": "up",
+              "to": [
+                3,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                3,
+                4
+              ],
+              "action": "left",
+              "to": [
+                3,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                3,
+                3
+              ],
+              "action": "left",
+              "to": [
+                3,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 6,
+              "from": [
+                3,
+                2
+              ],
+              "action": "<eos>",
+              "to": [
+                3,
+                2
+              ],
+              "reason": "goal_not_reached"
+            }
+          ]
+        }
+      },
+      {
+        "round": 3,
+        "result": {
+          "plan": "up right up left left",
+          "verdict": "invalid | step=6 | reason=goal_not_reached",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                5,
+                3
+              ],
+              "action": "up",
+              "to": [
+                4,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                4,
+                3
+              ],
+              "action": "right",
+              "to": [
+                4,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                4,
+                4
+              ],
+              "action": "up",
+              "to": [
+                3,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                3,
+                4
+              ],
+              "action": "left",
+              "to": [
+                3,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                3,
+                3
+              ],
+              "action": "left",
+              "to": [
+                3,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 6,
+              "from": [
+                3,
+                2
+              ],
+              "action": "<eos>",
+              "to": [
+                3,
+                2
+              ],
+              "reason": "goal_not_reached"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "test_id-13",
+    "layout_id": "0b09da63715478ff2f65",
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "obstacles": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "start": [
+        3,
+        5
+      ],
+      "goal": [
+        4,
+        2
+      ]
+    },
+    "candidate": {
+      "plan": "left down left",
+      "verdict": "invalid | step=4 | reason=goal_not_reached",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            3,
+            5
+          ],
+          "action": "left",
+          "to": [
+            3,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            3,
+            4
+          ],
+          "action": "down",
+          "to": [
+            4,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            4,
+            4
+          ],
+          "action": "left",
+          "to": [
+            4,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            4,
+            3
+          ],
+          "action": "<eos>",
+          "to": [
+            4,
+            3
+          ],
+          "reason": "goal_not_reached"
+        }
+      ]
+    },
+    "gold_verdict": "invalid | step=4 | reason=goal_not_reached",
+    "predicted_verdict": "invalid | step=5 | reason=goal_not_reached",
+    "edits": [
+      {
+        "kind": "deletion",
+        "original_index": 3,
+        "before": "left",
+        "after": null
+      }
+    ],
+    "repair": {
+      "plan": "left left left",
+      "verdict": "invalid | step=4 | reason=goal_not_reached",
+      "trace": [
+        {
+          "step": 1,
+          "from": [
+            3,
+            5
+          ],
+          "action": "left",
+          "to": [
+            3,
+            4
+          ],
+          "reason": null
+        },
+        {
+          "step": 2,
+          "from": [
+            3,
+            4
+          ],
+          "action": "left",
+          "to": [
+            3,
+            3
+          ],
+          "reason": null
+        },
+        {
+          "step": 3,
+          "from": [
+            3,
+            3
+          ],
+          "action": "left",
+          "to": [
+            3,
+            2
+          ],
+          "reason": null
+        },
+        {
+          "step": 4,
+          "from": [
+            3,
+            2
+          ],
+          "action": "<eos>",
+          "to": [
+            3,
+            2
+          ],
+          "reason": "goal_not_reached"
+        }
+      ]
+    },
+    "iterative_repair": [
+      {
+        "round": 1,
+        "result": {
+          "plan": "left left left",
+          "verdict": "invalid | step=4 | reason=goal_not_reached",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                3,
+                5
+              ],
+              "action": "left",
+              "to": [
+                3,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                3,
+                4
+              ],
+              "action": "left",
+              "to": [
+                3,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                3,
+                3
+              ],
+              "action": "left",
+              "to": [
+                3,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                3,
+                2
+              ],
+              "action": "<eos>",
+              "to": [
+                3,
+                2
+              ],
+              "reason": "goal_not_reached"
+            }
+          ]
+        }
+      },
+      {
+        "round": 2,
+        "result": {
+          "plan": "left left left left",
+          "verdict": "invalid | step=5 | reason=goal_not_reached",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                3,
+                5
+              ],
+              "action": "left",
+              "to": [
+                3,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                3,
+                4
+              ],
+              "action": "left",
+              "to": [
+                3,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                3,
+                3
+              ],
+              "action": "left",
+              "to": [
+                3,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                3,
+                2
+              ],
+              "action": "left",
+              "to": [
+                3,
+                1
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                3,
+                1
+              ],
+              "action": "<eos>",
+              "to": [
+                3,
+                1
+              ],
+              "reason": "goal_not_reached"
+            }
+          ]
+        }
+      },
+      {
+        "round": 3,
+        "result": {
+          "plan": "left left left left left",
+          "verdict": "invalid | step=6 | reason=goal_not_reached",
+          "trace": [
+            {
+              "step": 1,
+              "from": [
+                3,
+                5
+              ],
+              "action": "left",
+              "to": [
+                3,
+                4
+              ],
+              "reason": null
+            },
+            {
+              "step": 2,
+              "from": [
+                3,
+                4
+              ],
+              "action": "left",
+              "to": [
+                3,
+                3
+              ],
+              "reason": null
+            },
+            {
+              "step": 3,
+              "from": [
+                3,
+                3
+              ],
+              "action": "left",
+              "to": [
+                3,
+                2
+              ],
+              "reason": null
+            },
+            {
+              "step": 4,
+              "from": [
+                3,
+                2
+              ],
+              "action": "left",
+              "to": [
+                3,
+                1
+              ],
+              "reason": null
+            },
+            {
+              "step": 5,
+              "from": [
+                3,
+                1
+              ],
+              "action": "left",
+              "to": [
+                3,
+                0
+              ],
+              "reason": null
+            },
+            {
+              "step": 6,
+              "from": [
+                3,
+                0
+              ],
+              "action": "<eos>",
+              "to": [
+                3,
+                0
+              ],
+              "reason": "goal_not_reached"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

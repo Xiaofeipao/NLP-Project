@@ -1,0 +1,23 @@
+{
+  "completed": [
+    "pilot:generation",
+    "train:generation",
+    "pilot:verification",
+    "train:verification",
+    "pilot:repair",
+    "train:repair",
+    "verify",
+    "evaluate:dev",
+    "recompute:dev",
+    "evaluate_test_id_resume",
+    "recompute_test_id_resume",
+    "evaluate_test_ood",
+    "recompute_test_ood"
+  ],
+  "current": null,
+  "previous_failure": {
+    "phase": "evaluate:test_id",
+    "returncode": 1
+  },
+  "finished": true
+}

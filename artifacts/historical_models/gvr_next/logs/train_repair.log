@@ -1,0 +1,110 @@
+{
+  "stage": "repair",
+  "pilot": false,
+  "train_rows": 1200,
+  "dev_rows": 60,
+  "examples_processed": 2400,
+  "optimizer_updates": 150,
+  "history": [
+    {
+      "epoch": 1,
+      "dev_loss": 0.6706050009869817,
+      "dev_diagnostics": {
+        "n": 60,
+        "success_rate": 0.15,
+        "feasibility": 0.6333333333333333,
+        "optimality": 0.15,
+        "path_efficiency_on_success": 1.0,
+        "longest_repeated_action_run_ge_3": 35
+      },
+      "selection_rank": [
+        0.15,
+        0.15,
+        -0.6706050009869817
+      ]
+    },
+    {
+      "epoch": 2,
+      "dev_loss": 0.6621710181236267,
+      "dev_diagnostics": {
+        "n": 60,
+        "success_rate": 0.08333333333333333,
+        "feasibility": 0.6833333333333333,
+        "optimality": 0.08333333333333333,
+        "path_efficiency_on_success": 1.0,
+        "longest_repeated_action_run_ge_3": 32
+      },
+      "selection_rank": [
+        0.08333333333333333,
+        0.08333333333333333,
+        -0.6621710181236267
+      ]
+    }
+  ],
+  "source_checkpoint": "outputs\\gvr_next\\generation\\train\\best",
+  "source_revision": null,
+  "generation_base_sha256": "d0f497f2dfc455b343fb3045628353fa851876cb4adc56ba40fafa9acc8a1494",
+  "task_index_source_sha256": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+  "lengths": {
+    "max_input_tokens": 124,
+    "max_target_tokens": 12
+  },
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 8,
+    "eval_batch_size": 8,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "training_signature": {
+    "training": {
+      "precision": "float32",
+      "epochs": 2,
+      "batch_size": 8,
+      "eval_batch_size": 8,
+      "gradient_accumulation_steps": 2,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "max_input_tokens": 512,
+      "max_target_tokens": 128,
+      "pilot_batches": 4
+    },
+    "stage_options": {
+      "loss": "token_mean",
+      "status_weight": 0.0,
+      "selection": "task_metrics",
+      "learning_rate": 0.001
+    },
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05
+    }
+  },
+  "stage_options": {
+    "loss": "token_mean",
+    "status_weight": 0.0,
+    "selection": "task_metrics",
+    "learning_rate": 0.001
+  },
+  "best_epoch": 1,
+  "best_selection_rank": [
+    0.15,
+    0.15,
+    -0.6706050009869817
+  ],
+  "effective_learning_rate": 0.001,
+  "adapter": {
+    "matched_modules": 48,
+    "trainable_parameters": 344064,
+    "total_parameters": 77305216
+  },
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 938137088,
+  "elapsed_seconds": 32.43108930000017
+}

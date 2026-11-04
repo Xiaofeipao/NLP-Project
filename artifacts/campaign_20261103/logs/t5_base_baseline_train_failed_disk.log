@@ -1,0 +1,39 @@
+t5_base: epoch 1/2, 1000 batches
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 100, "batches": 1000, "updates": 25, "mean_train_loss": 1.5530078357458115, "elapsed_seconds": 11.69153099999994}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 200, "batches": 1000, "updates": 50, "mean_train_loss": 1.152640681937337, "elapsed_seconds": 24.19690970000056}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 300, "batches": 1000, "updates": 75, "mean_train_loss": 0.9928810881078243, "elapsed_seconds": 34.48253530000011}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 400, "batches": 1000, "updates": 100, "mean_train_loss": 0.9021794676408171, "elapsed_seconds": 44.98797070000046}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 500, "batches": 1000, "updates": 125, "mean_train_loss": 0.843265487998724, "elapsed_seconds": 55.592561099999784}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 600, "batches": 1000, "updates": 150, "mean_train_loss": 0.7977199214448532, "elapsed_seconds": 67.35983950000036}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 700, "batches": 1000, "updates": 175, "mean_train_loss": 0.7661605807925974, "elapsed_seconds": 78.39334129999997}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 800, "batches": 1000, "updates": 200, "mean_train_loss": 0.7386439602263272, "elapsed_seconds": 89.25512879999997}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 900, "batches": 1000, "updates": 225, "mean_train_loss": 0.7187526154186991, "elapsed_seconds": 99.67619479999985}
+{"model": "t5_base", "epoch": 1, "epochs": 2, "batch": 1000, "batches": 1000, "updates": 250, "mean_train_loss": 0.7085838533639908, "elapsed_seconds": 112.40679790000058}
+t5_base: epoch 1, dev loss 0.495231
+t5_base: epoch 2/2, 1000 batches
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 100, "batches": 1000, "updates": 275, "mean_train_loss": 0.5601725770533085, "elapsed_seconds": 129.72521069999993}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 200, "batches": 1000, "updates": 300, "mean_train_loss": 0.552164606153965, "elapsed_seconds": 139.91614600000003}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 300, "batches": 1000, "updates": 325, "mean_train_loss": 0.5340753010908763, "elapsed_seconds": 151.2509124000003}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 400, "batches": 1000, "updates": 350, "mean_train_loss": 0.5296528054401278, "elapsed_seconds": 164.11952780000001}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 500, "batches": 1000, "updates": 375, "mean_train_loss": 0.524043233782053, "elapsed_seconds": 175.3881210000004}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 600, "batches": 1000, "updates": 400, "mean_train_loss": 0.5177235619972149, "elapsed_seconds": 185.75634450000007}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 700, "batches": 1000, "updates": 425, "mean_train_loss": 0.5193991447346551, "elapsed_seconds": 196.67256719999978}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 800, "batches": 1000, "updates": 450, "mean_train_loss": 0.5221386342681944, "elapsed_seconds": 208.63086200000043}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 900, "batches": 1000, "updates": 475, "mean_train_loss": 0.5147309732271566, "elapsed_seconds": 219.8978535000001}
+{"model": "t5_base", "epoch": 2, "epochs": 2, "batch": 1000, "batches": 1000, "updates": 500, "mean_train_loss": 0.5122323365435004, "elapsed_seconds": 230.41182270000036}
+t5_base: epoch 2, dev loss 0.404493
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File ".\ppnl\cli.py", line 115, in <module>
+    main()
+  File ".\ppnl\cli.py", line 52, in main
+    report = train(config, args.model, dataset, root / args.model / args.command,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".\ppnl\modeling.py", line 279, in train
+    runner.model.save_pretrained(out / "best")
+  File "<LOCAL_ENV>", line 4173, in save_pretrained
+    safe_save_file(shard, os.path.join(save_directory, shard_file), metadata=metadata)
+  File "<LOCAL_ENV>", line 323, in save_file
+    serialize_file(
+safetensors._safetensors_rust.SafetensorError: Error while serializing: I/O error: 磁盘空间不足。 (os error 112)

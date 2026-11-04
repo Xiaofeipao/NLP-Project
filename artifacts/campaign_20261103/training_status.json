@@ -1,0 +1,325 @@
+{
+  "stages": [
+    {
+      "name": "t5_small_baseline_pilot",
+      "returncode": 0,
+      "seconds": 46.34400000000005
+    },
+    {
+      "name": "t5_small_baseline_train",
+      "returncode": 0,
+      "seconds": 136.53099999999995
+    },
+    {
+      "name": "t5_small_baseline_dev",
+      "returncode": 0,
+      "seconds": 13.391000000000076
+    },
+    {
+      "name": "t5_base_baseline_pilot",
+      "returncode": 0,
+      "seconds": 27.375
+    },
+    {
+      "name": "t5_base_baseline_train",
+      "returncode": 0,
+      "seconds": 260.5
+    },
+    {
+      "name": "t5_base_baseline_dev",
+      "returncode": 0,
+      "seconds": 28.125
+    },
+    {
+      "name": "bart_base_baseline_pilot",
+      "returncode": 0,
+      "seconds": 125.70300000000134
+    },
+    {
+      "name": "bart_base_baseline_train",
+      "returncode": 0,
+      "seconds": 266.3130000000001
+    },
+    {
+      "name": "bart_base_baseline_dev",
+      "returncode": 0,
+      "seconds": 23.95299999999952
+    },
+    {
+      "name": "baseline_select",
+      "returncode": 0,
+      "seconds": 0.23400000000037835
+    },
+    {
+      "name": "t5_small_vanilla_generation_pilot",
+      "returncode": 0,
+      "seconds": 22.531999999999243
+    },
+    {
+      "name": "t5_small_vanilla_generation_train",
+      "returncode": 0,
+      "seconds": 91.96800000000076
+    },
+    {
+      "name": "t5_small_vanilla_verification_pilot",
+      "returncode": 0,
+      "seconds": 90.625
+    },
+    {
+      "name": "t5_small_vanilla_verification_train",
+      "returncode": 0,
+      "seconds": 208.79699999999866
+    },
+    {
+      "name": "t5_small_vanilla_repair_pilot",
+      "returncode": 0,
+      "seconds": 23.813000000000102
+    },
+    {
+      "name": "t5_small_vanilla_repair_train",
+      "returncode": 0,
+      "seconds": 146.28100000000086
+    },
+    {
+      "name": "t5_small_vanilla_verify",
+      "returncode": 0,
+      "seconds": 70.3119999999999
+    },
+    {
+      "name": "t5_small_structured_generation_pilot",
+      "returncode": 0,
+      "seconds": 21.09399999999914
+    },
+    {
+      "name": "t5_small_structured_generation_train",
+      "returncode": 0,
+      "seconds": 90.8130000000001
+    },
+    {
+      "name": "t5_small_structured_verification_pilot",
+      "returncode": 0,
+      "seconds": 24.04699999999866
+    },
+    {
+      "name": "t5_small_structured_verification_train",
+      "returncode": 0,
+      "seconds": 251.40600000000086
+    },
+    {
+      "name": "t5_small_structured_repair_pilot",
+      "returncode": 0,
+      "seconds": 25.875
+    },
+    {
+      "name": "t5_small_structured_repair_train",
+      "returncode": 0,
+      "seconds": 138.375
+    },
+    {
+      "name": "t5_small_structured_verify",
+      "returncode": 0,
+      "seconds": 70.71899999999914
+    },
+    {
+      "name": "t5_small_reinforce",
+      "returncode": 0,
+      "seconds": 90.42200000000048
+    },
+    {
+      "name": "t5_small_reinforce_reload",
+      "returncode": 0,
+      "seconds": 21.234999999998763
+    },
+    {
+      "name": "t5_small_grpo",
+      "returncode": 0,
+      "seconds": 82.5
+    },
+    {
+      "name": "t5_small_grpo_reload",
+      "returncode": 0,
+      "seconds": 12.186999999999898
+    },
+    {
+      "name": "t5_base_vanilla_generation_pilot",
+      "returncode": 0,
+      "seconds": 23.53100000000086
+    },
+    {
+      "name": "t5_base_vanilla_generation_train",
+      "returncode": 0,
+      "seconds": 157.73500000000058
+    },
+    {
+      "name": "t5_base_vanilla_verification_pilot",
+      "returncode": 0,
+      "seconds": 31.139999999999418
+    },
+    {
+      "name": "t5_base_vanilla_verification_train",
+      "returncode": 0,
+      "seconds": 317.8909999999996
+    },
+    {
+      "name": "t5_base_vanilla_repair_pilot",
+      "returncode": 0,
+      "seconds": 13.29700000000048
+    },
+    {
+      "name": "t5_base_vanilla_repair_train",
+      "returncode": 0,
+      "seconds": 95.54700000000048
+    },
+    {
+      "name": "t5_base_vanilla_verify",
+      "returncode": 0,
+      "seconds": 42.63999999999942
+    },
+    {
+      "name": "t5_base_structured_generation_pilot",
+      "returncode": 0,
+      "seconds": 11.140999999999622
+    },
+    {
+      "name": "t5_base_structured_generation_train",
+      "returncode": 0,
+      "seconds": 69.5
+    },
+    {
+      "name": "t5_base_structured_verification_pilot",
+      "returncode": 0,
+      "seconds": 14.640999999999622
+    },
+    {
+      "name": "t5_base_structured_verification_train",
+      "returncode": 0,
+      "seconds": 156.09300000000076
+    },
+    {
+      "name": "t5_base_structured_repair_pilot",
+      "returncode": 0,
+      "seconds": 13.453999999999724
+    },
+    {
+      "name": "t5_base_structured_repair_train",
+      "returncode": 0,
+      "seconds": 100.11000000000058
+    },
+    {
+      "name": "t5_base_structured_verify",
+      "returncode": 0,
+      "seconds": 50.82799999999952
+    },
+    {
+      "name": "t5_base_reinforce",
+      "returncode": 0,
+      "seconds": 43.8130000000001
+    },
+    {
+      "name": "t5_base_reinforce_reload",
+      "returncode": 0,
+      "seconds": 12.421999999998661
+    },
+    {
+      "name": "t5_base_grpo",
+      "returncode": 0,
+      "seconds": 49.53100000000086
+    },
+    {
+      "name": "t5_base_grpo_reload",
+      "returncode": 0,
+      "seconds": 11.593999999999141
+    },
+    {
+      "name": "bart_base_vanilla_generation_pilot",
+      "returncode": 0,
+      "seconds": 10.343000000000757
+    },
+    {
+      "name": "bart_base_vanilla_generation_train",
+      "returncode": 0,
+      "seconds": 34.125
+    },
+    {
+      "name": "bart_base_vanilla_verification_pilot",
+      "returncode": 0,
+      "seconds": 11.34400000000096
+    },
+    {
+      "name": "bart_base_vanilla_verification_train",
+      "returncode": 0,
+      "seconds": 63.40599999999904
+    },
+    {
+      "name": "bart_base_vanilla_repair_pilot",
+      "returncode": 0,
+      "seconds": 11.890999999999622
+    },
+    {
+      "name": "bart_base_vanilla_repair_train",
+      "returncode": 0,
+      "seconds": 44.45299999999952
+    },
+    {
+      "name": "bart_base_vanilla_verify",
+      "returncode": 0,
+      "seconds": 32.11000000000058
+    },
+    {
+      "name": "bart_base_structured_generation_pilot",
+      "returncode": 0,
+      "seconds": 10.014999999999418
+    },
+    {
+      "name": "bart_base_structured_generation_train",
+      "returncode": 0,
+      "seconds": 32.76599999999962
+    },
+    {
+      "name": "bart_base_structured_verification_pilot",
+      "returncode": 0,
+      "seconds": 12.17200000000048
+    },
+    {
+      "name": "bart_base_structured_verification_train",
+      "returncode": 0,
+      "seconds": 64.73400000000038
+    },
+    {
+      "name": "bart_base_structured_repair_pilot",
+      "returncode": 0,
+      "seconds": 10.936999999999898
+    },
+    {
+      "name": "bart_base_structured_repair_train",
+      "returncode": 0,
+      "seconds": 44.59400000000096
+    },
+    {
+      "name": "bart_base_structured_verify",
+      "returncode": 0,
+      "seconds": 31.813000000000102
+    },
+    {
+      "name": "bart_base_reinforce",
+      "returncode": 0,
+      "seconds": 24.92200000000048
+    },
+    {
+      "name": "bart_base_reinforce_reload",
+      "returncode": 0,
+      "seconds": 10.531000000000859
+    },
+    {
+      "name": "bart_base_grpo",
+      "returncode": 0,
+      "seconds": 27.625
+    },
+    {
+      "name": "bart_base_grpo_reload",
+      "returncode": 0,
+      "seconds": 10.57799999999952
+    }
+  ],
+  "complete": true
+}

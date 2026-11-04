@@ -1,0 +1,133 @@
+{
+  "split": "test_ood",
+  "weights_sha256": "64dd8ed618b5b305ee649eb00224bdf43623e5a9b9ec3a9dc44d562808968194",
+  "planning": {
+    "original_whole_plan": {
+      "n": 200,
+      "success_rate": 0.0,
+      "feasibility": 0.0,
+      "optimality": 0.0,
+      "path_efficiency_on_success": null
+    },
+    "state_policy": {
+      "n": 200,
+      "success_rate": 0.85,
+      "feasibility": 1.0,
+      "optimality": 0.825,
+      "path_efficiency_on_success": 0.9928104575163398
+    },
+    "legal_mask_no_search": {
+      "n": 200,
+      "success_rate": 0.975,
+      "feasibility": 1.0,
+      "optimality": 0.865,
+      "path_efficiency_on_success": 0.9607734176155232
+    },
+    "neural_best_first": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.99,
+      "path_efficiency_on_success": 0.9973214285714286
+    },
+    "symbolic_astar_no_model": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 1.0,
+      "path_efficiency_on_success": 1.0
+    },
+    "neural_optimal_astar": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 1.0,
+      "path_efficiency_on_success": 1.0
+    },
+    "symbolic_astar_goal_tiebreak": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 1.0,
+      "path_efficiency_on_success": 1.0
+    }
+  },
+  "prefix_repair": {
+    "state_policy": {
+      "n": 100,
+      "success_rate": 0.9,
+      "feasibility": 1.0,
+      "optimality": 0.64,
+      "path_efficiency_on_success": 0.8945558762225428
+    },
+    "legal_mask_no_search": {
+      "n": 100,
+      "success_rate": 0.96,
+      "feasibility": 1.0,
+      "optimality": 0.65,
+      "path_efficiency_on_success": 0.8726716570466571
+    },
+    "neural_best_first": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.7,
+      "path_efficiency_on_success": 0.8835743145743145
+    },
+    "symbolic_astar_no_model": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.7,
+      "path_efficiency_on_success": 0.8845844155844155
+    },
+    "neural_optimal_astar": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.7,
+      "path_efficiency_on_success": 0.8845844155844155
+    },
+    "symbolic_astar_goal_tiebreak": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.7,
+      "path_efficiency_on_success": 0.8845844155844155
+    }
+  },
+  "seconds_by_planner": {
+    "state_policy": 5.981063999999606,
+    "legal_mask_no_search": 0.9720049999996263,
+    "neural_best_first": 0.7942820000007487,
+    "symbolic_astar_no_model": 0.009577900000294903,
+    "neural_optimal_astar": 0.08941289999984292,
+    "symbolic_astar_goal_tiebreak": 0.005336000000170316
+  },
+  "mean_expansions": {
+    "neural_best_first": 5.05,
+    "symbolic_astar_no_model": 8.26,
+    "neural_optimal_astar": 5.045,
+    "symbolic_astar_goal_tiebreak": 4.795
+  },
+  "inference": {
+    "max_steps": 36,
+    "max_expansions": 36,
+    "neural_weight": 0.25,
+    "reference_path_used": false,
+    "symbolic_legality": true,
+    "search_uses_manhattan_heuristic": true,
+    "cached_policy_states": 1157
+  },
+  "definitions": {
+    "state_policy": "learned one-action policy with explicit state observations; no movement mask or search",
+    "legal_mask_no_search": "same policy plus legal unvisited-action masking",
+    "neural_best_first": "hybrid best-first graph search ranked by learned action likelihood and Manhattan distance",
+    "symbolic_astar_no_model": "A* without any neural scores; necessary search ablation",
+    "neural_optimal_astar": "unit-cost A*, neural likelihood only breaks equal g+Manhattan ties",
+    "symbolic_astar_goal_tiebreak": "strong pure A* ablation: lower Manhattan breaks equal f ties",
+    "repair": "executor-valid prefix plus replanned suffix, invalid candidates only",
+    "timings": "shared state-score cache; times are incremental, not independent cold-start comparisons",
+    "paired_test": "ID/OOD use same grids; planning scores should match, prefix repair candidates differ"
+  }
+}

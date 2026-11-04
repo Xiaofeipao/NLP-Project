@@ -35,3 +35,34 @@ def sequence_objective(logp, reference_logp, mask, advantages, beta):
     kl = torch.exp(delta.clamp(-20, 20)) - 1 - delta
     per_token = -logp * advantages[:, None] + beta * kl
     return ((per_token * mask).sum(1) / mask.sum(1).clamp_min(1)).mean()
+
+
+def group_advantages(rewards):
+    """Outcome GRPO: within-prompt population standard deviation normalization."""
+    import torch
+    values = torch.as_tensor(rewards, dtype=torch.float32)
+    if values.numel() < 2:
+        raise ValueError("GRPO needs at least two completions")
+    return (values - values.mean()) / values.std(unbiased=False).clamp_min(1e-4)
+
+
+def completion_mask(labels, eos_id, pad_id):
+    """Include the first EOS, exclude post-EOS padding (including BART EOS start)."""
+    eos = labels.eq(eos_id)
+    before_or_first = eos.cumsum(1) - eos.to(labels.dtype) == 0
+    return before_or_first & labels.ne(pad_id)
+
+
+def grpo_objective(logp, old_logp, reference_logp, mask, advantages, beta, epsilon=.2):
+    """DeepSeekMath outcome-GRPO token ratios, clipping and reference KL.
+
+    old_logp must be captured before ALL updates on the sampled rollout.
+    Sequence means reproduce the original length normalization, not later DAPO.
+    """
+    import torch
+    ratio = torch.exp(logp - old_logp.detach())
+    advantage = advantages.detach()[:, None]
+    surrogate = torch.minimum(ratio * advantage, ratio.clamp(1-epsilon, 1+epsilon) * advantage)
+    delta = reference_logp.detach() - logp
+    kl = torch.exp(delta.clamp(-20, 20)) - 1 - delta
+    return ((-surrogate + beta * kl) * mask).sum(1).div(mask.sum(1).clamp_min(1)).mean()

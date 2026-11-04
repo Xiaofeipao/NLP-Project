@@ -1,0 +1,10 @@
+{
+  "model": "flan_t5_small",
+  "epoch": 2,
+  "epochs": 2,
+  "batch": 500,
+  "batches": 500,
+  "updates": 500,
+  "mean_train_loss": 0.19690477401111275,
+  "elapsed_seconds": 100.40055289999964
+}

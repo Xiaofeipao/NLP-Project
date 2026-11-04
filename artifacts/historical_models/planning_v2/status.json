@@ -1,0 +1,31 @@
+{
+  "started_unix": 1792336579.5790474,
+  "stages": [
+    {
+      "name": "pilot",
+      "seconds": 19.733999999999924,
+      "returncode": 0
+    },
+    {
+      "name": "train",
+      "seconds": 150.46900000000005,
+      "returncode": 0
+    },
+    {
+      "name": "dev",
+      "seconds": 17.75,
+      "returncode": 0
+    },
+    {
+      "name": "test_id",
+      "seconds": 20.936999999999898,
+      "returncode": 0
+    },
+    {
+      "name": "test_ood",
+      "seconds": 21.5,
+      "returncode": 0
+    }
+  ],
+  "completed_unix": 1792336809.9829805
+}

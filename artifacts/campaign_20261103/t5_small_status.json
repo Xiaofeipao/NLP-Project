@@ -1,0 +1,35 @@
+{
+  "model_key": "t5_small",
+  "dataset_root": "data/derived",
+  "task_index": "data/derived/gvr_task_index.json",
+  "output_root": "outputs\\campaign_20261103\\gvr\\t5_small\\status",
+  "generation_base": "outputs\\campaign_20261103\\gvr\\t5_small\\vanilla\\generation\\train\\best",
+  "verification_adapter": "outputs\\campaign_20261103\\gvr\\t5_small\\status\\verification\\train\\best\\verification",
+  "repair_adapter": "outputs\\campaign_20261103\\gvr\\t5_small\\vanilla\\repair\\train\\best\\repair",
+  "prompt_format": "vanilla",
+  "evidence": {
+    "gpu_ledger_reconciled": true,
+    "checkpoint_confirmed": true,
+    "baseline_outputs_verified": true
+  },
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05
+  },
+  "stages": {
+    "generation": {
+      "selection": "task_metrics"
+    },
+    "verification": {
+      "selection": "task_metrics",
+      "learning_rate": 0.001,
+      "loss": "sequence_and_status",
+      "status_weight": 1.0
+    },
+    "repair": {
+      "selection": "task_metrics",
+      "learning_rate": 0.001
+    }
+  }
+}

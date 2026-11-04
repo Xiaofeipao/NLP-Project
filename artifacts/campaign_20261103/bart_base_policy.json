@@ -1,0 +1,62 @@
+{
+  "seed": 42,
+  "dataset_root": "data/policy_v3",
+  "output_root": "outputs\\campaign_20261103\\policies\\bart_base",
+  "gpu_ledger": "outputs/gpu_ledger.json",
+  "gpu_hours_cap": 20,
+  "model_cache": ".cache/huggingface",
+  "repair_rounds": 3,
+  "models": {
+    "t5_small": {
+      "checkpoint": "google-t5/t5-small",
+      "revision": "df1b051c49625cf57a3d0d8d3863ed4d13564fe4",
+      "user_confirmed": true,
+      "manager_confirmed": false,
+      "confirmation_note": "User requested the three linked checkpoints for this controlled GPU comparison."
+    },
+    "t5_base": {
+      "checkpoint": "google-t5/t5-base",
+      "revision": "a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+      "user_confirmed": true,
+      "manager_confirmed": false,
+      "confirmation_note": "User requested the three linked checkpoints for this controlled GPU comparison."
+    },
+    "bart_base": {
+      "checkpoint": "facebook/bart-base",
+      "revision": "aadd2ab0ae0c8268c7c9693540e9904811f36177",
+      "user_confirmed": true,
+      "manager_confirmed": false,
+      "confirmation_note": "User requested the three linked checkpoints for this controlled GPU comparison."
+    }
+  },
+  "data": {
+    "train": {
+      "generation": 800,
+      "verification": 2000,
+      "repair": 1200
+    },
+    "dev": {
+      "generation": 40,
+      "verification": 100,
+      "repair": 60
+    },
+    "test_per_set": 200
+  },
+  "training": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4,
+    "policy_loss": "optimal_actions"
+  },
+  "local_files_only": true,
+  "policy_source_dataset": "data/derived",
+  "policy_checkpoint": "outputs\\campaign_20261103\\policies\\bart_base\\bart_base\\train\\best",
+  "policy_local_status": true
+}

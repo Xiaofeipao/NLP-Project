@@ -1,0 +1,10 @@
+{
+  "model": "t5_small",
+  "epoch": 2,
+  "epochs": 2,
+  "batch": 1000,
+  "batches": 1000,
+  "updates": 500,
+  "mean_train_loss": 0.20340994566571316,
+  "elapsed_seconds": 125.25650789999963
+}

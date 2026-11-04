@@ -1,0 +1,1069 @@
+{
+  "selection": {
+    "candidate": "multi",
+    "development_scores": {
+      "single": [
+        0.8163265306122449,
+        0.9387755102040817,
+        0.8163265306122449
+      ],
+      "multi": [
+        0.8469387755102041,
+        0.9489795918367347,
+        0.826530612244898
+      ],
+      "v2_reference": [
+        0.7448979591836735,
+        0.9183673469387755,
+        0.7448979591836735
+      ]
+    },
+    "rule": "dev unmasked policy success, then masked success, then raw optimality; exact ties keep v2 first",
+    "frozen_unix": 1792337821.9585621
+  },
+  "candidates": {
+    "v2_reference": {
+      "config": {
+        "seed": 42,
+        "dataset_root": "data/policy_v2",
+        "output_root": "outputs\\planning_v3\\v2_reference",
+        "gpu_ledger": "outputs/gpu_ledger.json",
+        "gpu_hours_cap": 20,
+        "model_cache": ".cache/huggingface",
+        "repair_rounds": 3,
+        "models": {
+          "flan_t5_small": {
+            "checkpoint": "google/flan-t5-small",
+            "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+            "manager_confirmed": false,
+            "confirmation_note": "User explicitly authorized full formal fine-tuning of Flan-T5-small and BART-base in this chat on 2026-10-18; no separate project-manager confirmation is asserted. User authorized improving planning and code; retrain primary model using state-action representation of the same source examples.",
+            "user_confirmed": true
+          }
+        },
+        "data": {
+          "train": {
+            "generation": 2000,
+            "verification": 2000,
+            "repair": 0
+          },
+          "dev": {
+            "generation": 100,
+            "verification": 100,
+            "repair": 0
+          },
+          "test_per_set": 200
+        },
+        "training": {
+          "precision": "float32",
+          "epochs": 2,
+          "batch_size": 8,
+          "eval_batch_size": 8,
+          "gradient_accumulation_steps": 2,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.01,
+          "max_input_tokens": 512,
+          "max_target_tokens": 128,
+          "pilot_batches": 4
+        },
+        "local_files_only": true,
+        "policy_source_dataset": "data/derived",
+        "baseline_root": "outputs/flan_t5_small",
+        "policy_optimal_search": true,
+        "policy_checkpoint": "outputs/planning_v2/flan_t5_small/train/best"
+      },
+      "dev": {
+        "split": "dev",
+        "weights_sha256": "bb4098903805cb92489b95e7d9950a324d4614299e87bf49e55affb47fef8198",
+        "planning": {
+          "original_whole_plan": {
+            "n": 98,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null
+          },
+          "state_policy": {
+            "n": 98,
+            "success_rate": 0.7448979591836735,
+            "feasibility": 0.7448979591836735,
+            "optimality": 0.7448979591836735,
+            "path_efficiency_on_success": 1.0
+          },
+          "legal_mask_no_search": {
+            "n": 98,
+            "success_rate": 0.9183673469387755,
+            "feasibility": 1.0,
+            "optimality": 0.8367346938775511,
+            "path_efficiency_on_success": 0.9656518789852122
+          },
+          "neural_best_first": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 1.0,
+            "path_efficiency_on_success": 1.0
+          },
+          "symbolic_astar_no_model": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 1.0,
+            "path_efficiency_on_success": 1.0
+          },
+          "neural_optimal_astar": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 1.0,
+            "path_efficiency_on_success": 1.0
+          },
+          "symbolic_astar_goal_tiebreak": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 1.0,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "prefix_repair": {
+          "state_policy": {
+            "n": 50,
+            "success_rate": 0.92,
+            "feasibility": 0.92,
+            "optimality": 0.72,
+            "path_efficiency_on_success": 0.9232746721877156
+          },
+          "legal_mask_no_search": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.74,
+            "path_efficiency_on_success": 0.9034733044733045
+          },
+          "neural_best_first": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          },
+          "symbolic_astar_no_model": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          },
+          "neural_optimal_astar": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          },
+          "symbolic_astar_goal_tiebreak": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          }
+        },
+        "seconds_by_planner": {
+          "state_policy": 3.8166731999999683,
+          "legal_mask_no_search": 0.43203859999994165,
+          "neural_best_first": 0.37093579999964277,
+          "symbolic_astar_no_model": 0.004400199999508914,
+          "neural_optimal_astar": 0.019436300000052142,
+          "symbolic_astar_goal_tiebreak": 0.0026295000006939517
+        },
+        "mean_expansions": {
+          "neural_best_first": 5.377551020408164,
+          "symbolic_astar_no_model": 8.510204081632653,
+          "neural_optimal_astar": 5.326530612244898,
+          "symbolic_astar_goal_tiebreak": 5.010204081632653
+        },
+        "inference": {
+          "max_steps": 36,
+          "max_expansions": 36,
+          "neural_weight": 0.25,
+          "reference_path_used": false,
+          "symbolic_legality": true,
+          "search_uses_manhattan_heuristic": true,
+          "cached_policy_states": 572
+        },
+        "definitions": {
+          "state_policy": "learned one-action policy with explicit state observations; no movement mask or search",
+          "legal_mask_no_search": "same policy plus legal unvisited-action masking",
+          "neural_best_first": "hybrid best-first graph search ranked by learned action likelihood and Manhattan distance",
+          "symbolic_astar_no_model": "A* without any neural scores; necessary search ablation",
+          "neural_optimal_astar": "unit-cost A*, neural likelihood only breaks equal g+Manhattan ties",
+          "symbolic_astar_goal_tiebreak": "strong pure A* ablation: lower Manhattan breaks equal f ties",
+          "repair": "executor-valid prefix plus replanned suffix, invalid candidates only",
+          "timings": "shared state-score cache; times are incremental, not independent cold-start comparisons",
+          "paired_test": "ID/OOD use same grids; planning scores should match, prefix repair candidates differ"
+        }
+      },
+      "weights_sha256": "bb4098903805cb92489b95e7d9950a324d4614299e87bf49e55affb47fef8198"
+    },
+    "single": {
+      "config": {
+        "seed": 42,
+        "dataset_root": "data/policy_v3",
+        "output_root": "outputs\\planning_v3\\single",
+        "gpu_ledger": "outputs/gpu_ledger.json",
+        "gpu_hours_cap": 20,
+        "model_cache": ".cache/huggingface",
+        "repair_rounds": 3,
+        "models": {
+          "flan_t5_small": {
+            "checkpoint": "google/flan-t5-small",
+            "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+            "manager_confirmed": false,
+            "confirmation_note": "User explicitly authorized full formal fine-tuning of Flan-T5-small and BART-base in this chat on 2026-10-18; no separate project-manager confirmation is asserted. User authorized improving planning and code; retrain primary model using state-action representation of the same source examples.",
+            "user_confirmed": true
+          }
+        },
+        "data": {
+          "train": {
+            "generation": 2000,
+            "verification": 2000,
+            "repair": 0
+          },
+          "dev": {
+            "generation": 100,
+            "verification": 100,
+            "repair": 0
+          },
+          "test_per_set": 200
+        },
+        "training": {
+          "precision": "float32",
+          "epochs": 2,
+          "batch_size": 8,
+          "eval_batch_size": 8,
+          "gradient_accumulation_steps": 2,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.01,
+          "max_input_tokens": 512,
+          "max_target_tokens": 128,
+          "pilot_batches": 4,
+          "policy_loss": "single_action"
+        },
+        "local_files_only": true,
+        "policy_source_dataset": "data/derived",
+        "baseline_root": "outputs/flan_t5_small",
+        "policy_optimal_search": true,
+        "policy_local_status": true
+      },
+      "dev": {
+        "split": "dev",
+        "weights_sha256": "a9dc999961eac17003ef17b1b50b02a450b4128309e981eea798b02d2a344f02",
+        "planning": {
+          "original_whole_plan": {
+            "n": 98,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null
+          },
+          "state_policy": {
+            "n": 98,
+            "success_rate": 0.8163265306122449,
+            "feasibility": 0.9489795918367347,
+            "optimality": 0.8163265306122449,
+            "path_efficiency_on_success": 1.0
+          },
+          "legal_mask_no_search": {
+            "n": 98,
+            "success_rate": 0.9387755102040817,
+            "feasibility": 1.0,
+            "optimality": 0.8469387755102041,
+            "path_efficiency_on_success": 0.9699949808645462
+          },
+          "neural_best_first": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 1.0,
+            "path_efficiency_on_success": 1.0
+          },
+          "symbolic_astar_no_model": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 1.0,
+            "path_efficiency_on_success": 1.0
+          },
+          "neural_optimal_astar": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 1.0,
+            "path_efficiency_on_success": 1.0
+          },
+          "symbolic_astar_goal_tiebreak": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 1.0,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "prefix_repair": {
+          "state_policy": {
+            "n": 50,
+            "success_rate": 0.96,
+            "feasibility": 1.0,
+            "optimality": 0.74,
+            "path_efficiency_on_success": 0.9181382275132276
+          },
+          "legal_mask_no_search": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.74,
+            "path_efficiency_on_success": 0.9096955266955269
+          },
+          "neural_best_first": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          },
+          "symbolic_astar_no_model": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          },
+          "neural_optimal_astar": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          },
+          "symbolic_astar_goal_tiebreak": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          }
+        },
+        "seconds_by_planner": {
+          "state_policy": 2.398402900000292,
+          "legal_mask_no_search": 1.0344021999999313,
+          "neural_best_first": 0.7362646999999924,
+          "symbolic_astar_no_model": 0.004275199999938195,
+          "neural_optimal_astar": 0.018752299999960087,
+          "symbolic_astar_goal_tiebreak": 0.002552200000081939
+        },
+        "mean_expansions": {
+          "neural_best_first": 5.336734693877551,
+          "symbolic_astar_no_model": 8.510204081632653,
+          "neural_optimal_astar": 5.336734693877551,
+          "symbolic_astar_goal_tiebreak": 5.010204081632653
+        },
+        "inference": {
+          "max_steps": 36,
+          "max_expansions": 36,
+          "neural_weight": 0.25,
+          "reference_path_used": false,
+          "symbolic_legality": true,
+          "search_uses_manhattan_heuristic": true,
+          "cached_policy_states": 559
+        },
+        "definitions": {
+          "state_policy": "learned one-action policy with explicit state observations; no movement mask or search",
+          "legal_mask_no_search": "same policy plus legal unvisited-action masking",
+          "neural_best_first": "hybrid best-first graph search ranked by learned action likelihood and Manhattan distance",
+          "symbolic_astar_no_model": "A* without any neural scores; necessary search ablation",
+          "neural_optimal_astar": "unit-cost A*, neural likelihood only breaks equal g+Manhattan ties",
+          "symbolic_astar_goal_tiebreak": "strong pure A* ablation: lower Manhattan breaks equal f ties",
+          "repair": "executor-valid prefix plus replanned suffix, invalid candidates only",
+          "timings": "shared state-score cache; times are incremental, not independent cold-start comparisons",
+          "paired_test": "ID/OOD use same grids; planning scores should match, prefix repair candidates differ"
+        }
+      },
+      "weights_sha256": "a9dc999961eac17003ef17b1b50b02a450b4128309e981eea798b02d2a344f02",
+      "training": {
+        "checkpoint": "google/flan-t5-small",
+        "requested_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+        "resolved_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+        "data_fingerprint": "7de86cd04ba7a62f6fb316dce7320579d44d3c5190f8848acb0018b1b318a5c9",
+        "training_config": {
+          "precision": "float32",
+          "epochs": 2,
+          "batch_size": 8,
+          "eval_batch_size": 8,
+          "gradient_accumulation_steps": 2,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.01,
+          "max_input_tokens": 512,
+          "max_target_tokens": 128,
+          "pilot_batches": 4,
+          "policy_loss": "single_action"
+        },
+        "confirmation_note": "User explicitly authorized full formal fine-tuning of Flan-T5-small and BART-base in this chat on 2026-10-18; no separate project-manager confirmation is asserted. User authorized improving planning and code; retrain primary model using state-action representation of the same source examples.",
+        "gpu": "CUDA GPU",
+        "peak_allocated_bytes": 2201157632,
+        "peak_reserved_bytes": 2401239040,
+        "lengths": {
+          "max_input_tokens": 172,
+          "max_target_tokens": 16
+        },
+        "examples_processed": 8000,
+        "optimizer_updates": 500,
+        "train_and_loss_eval_seconds": 111.76522320000004,
+        "train_examples_per_second_including_validation": 71.57861605737837,
+        "generation_eval_seconds": 1.2408015999999407,
+        "generation_examples_per_second": 161.18612355110565,
+        "history": [
+          {
+            "epoch": 1,
+            "train_batch_mean_loss": 0.5254865864142776,
+            "dev_loss": 0.1960087950527668,
+            "dev_token_mean_loss": null
+          },
+          {
+            "epoch": 2,
+            "train_batch_mean_loss": 0.28680450750514863,
+            "dev_loss": 0.24363598495721817,
+            "dev_token_mean_loss": null
+          }
+        ],
+        "dev_exact_match": 0.735,
+        "dev_policy_action_accuracy": 0.97,
+        "torch_version": "2.12.1+cu132",
+        "precision": "float32",
+        "loss_normalization": "example_mean_action_classification_and_verifier_text",
+        "matmul_precision": "high"
+      }
+    },
+    "multi": {
+      "config": {
+        "seed": 42,
+        "dataset_root": "data/policy_v3",
+        "output_root": "outputs\\planning_v3\\multi",
+        "gpu_ledger": "outputs/gpu_ledger.json",
+        "gpu_hours_cap": 20,
+        "model_cache": ".cache/huggingface",
+        "repair_rounds": 3,
+        "models": {
+          "flan_t5_small": {
+            "checkpoint": "google/flan-t5-small",
+            "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+            "manager_confirmed": false,
+            "confirmation_note": "User explicitly authorized full formal fine-tuning of Flan-T5-small and BART-base in this chat on 2026-10-18; no separate project-manager confirmation is asserted. User authorized improving planning and code; retrain primary model using state-action representation of the same source examples.",
+            "user_confirmed": true
+          }
+        },
+        "data": {
+          "train": {
+            "generation": 2000,
+            "verification": 2000,
+            "repair": 0
+          },
+          "dev": {
+            "generation": 100,
+            "verification": 100,
+            "repair": 0
+          },
+          "test_per_set": 200
+        },
+        "training": {
+          "precision": "float32",
+          "epochs": 2,
+          "batch_size": 8,
+          "eval_batch_size": 8,
+          "gradient_accumulation_steps": 2,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.01,
+          "max_input_tokens": 512,
+          "max_target_tokens": 128,
+          "pilot_batches": 4,
+          "policy_loss": "optimal_actions"
+        },
+        "local_files_only": true,
+        "policy_source_dataset": "data/derived",
+        "baseline_root": "outputs/flan_t5_small",
+        "policy_optimal_search": true,
+        "policy_local_status": true
+      },
+      "dev": {
+        "split": "dev",
+        "weights_sha256": "64dd8ed618b5b305ee649eb00224bdf43623e5a9b9ec3a9dc44d562808968194",
+        "planning": {
+          "original_whole_plan": {
+            "n": 98,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null
+          },
+          "state_policy": {
+            "n": 98,
+            "success_rate": 0.8469387755102041,
+            "feasibility": 1.0,
+            "optimality": 0.826530612244898,
+            "path_efficiency_on_success": 0.9938802830369096
+          },
+          "legal_mask_no_search": {
+            "n": 98,
+            "success_rate": 0.9489795918367347,
+            "feasibility": 1.0,
+            "optimality": 0.8673469387755102,
+            "path_efficiency_on_success": 0.9739018448695869
+          },
+          "neural_best_first": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.9897959183673469,
+            "path_efficiency_on_success": 0.9977324263038548
+          },
+          "symbolic_astar_no_model": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 1.0,
+            "path_efficiency_on_success": 1.0
+          },
+          "neural_optimal_astar": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 1.0,
+            "path_efficiency_on_success": 1.0
+          },
+          "symbolic_astar_goal_tiebreak": {
+            "n": 98,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 1.0,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "prefix_repair": {
+          "state_policy": {
+            "n": 50,
+            "success_rate": 0.94,
+            "feasibility": 1.0,
+            "optimality": 0.7,
+            "path_efficiency_on_success": 0.9086595437659267
+          },
+          "legal_mask_no_search": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          },
+          "neural_best_first": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          },
+          "symbolic_astar_no_model": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          },
+          "neural_optimal_astar": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          },
+          "symbolic_astar_goal_tiebreak": {
+            "n": 50,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.76,
+            "path_efficiency_on_success": 0.9141399711399713
+          }
+        },
+        "seconds_by_planner": {
+          "state_policy": 2.377638300000399,
+          "legal_mask_no_search": 0.4672930999995515,
+          "neural_best_first": 0.36900580000019545,
+          "symbolic_astar_no_model": 0.004292700000405603,
+          "neural_optimal_astar": 0.14258090000021184,
+          "symbolic_astar_goal_tiebreak": 0.002691600000616745
+        },
+        "mean_expansions": {
+          "neural_best_first": 5.122448979591836,
+          "symbolic_astar_no_model": 8.510204081632653,
+          "neural_optimal_astar": 5.122448979591836,
+          "symbolic_astar_goal_tiebreak": 5.010204081632653
+        },
+        "inference": {
+          "max_steps": 36,
+          "max_expansions": 36,
+          "neural_weight": 0.25,
+          "reference_path_used": false,
+          "symbolic_legality": true,
+          "search_uses_manhattan_heuristic": true,
+          "cached_policy_states": 547
+        },
+        "definitions": {
+          "state_policy": "learned one-action policy with explicit state observations; no movement mask or search",
+          "legal_mask_no_search": "same policy plus legal unvisited-action masking",
+          "neural_best_first": "hybrid best-first graph search ranked by learned action likelihood and Manhattan distance",
+          "symbolic_astar_no_model": "A* without any neural scores; necessary search ablation",
+          "neural_optimal_astar": "unit-cost A*, neural likelihood only breaks equal g+Manhattan ties",
+          "symbolic_astar_goal_tiebreak": "strong pure A* ablation: lower Manhattan breaks equal f ties",
+          "repair": "executor-valid prefix plus replanned suffix, invalid candidates only",
+          "timings": "shared state-score cache; times are incremental, not independent cold-start comparisons",
+          "paired_test": "ID/OOD use same grids; planning scores should match, prefix repair candidates differ"
+        }
+      },
+      "weights_sha256": "64dd8ed618b5b305ee649eb00224bdf43623e5a9b9ec3a9dc44d562808968194",
+      "training": {
+        "checkpoint": "google/flan-t5-small",
+        "requested_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+        "resolved_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+        "data_fingerprint": "7de86cd04ba7a62f6fb316dce7320579d44d3c5190f8848acb0018b1b318a5c9",
+        "training_config": {
+          "precision": "float32",
+          "epochs": 2,
+          "batch_size": 8,
+          "eval_batch_size": 8,
+          "gradient_accumulation_steps": 2,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.01,
+          "max_input_tokens": 512,
+          "max_target_tokens": 128,
+          "pilot_batches": 4,
+          "policy_loss": "optimal_actions"
+        },
+        "confirmation_note": "User explicitly authorized full formal fine-tuning of Flan-T5-small and BART-base in this chat on 2026-10-18; no separate project-manager confirmation is asserted. User authorized improving planning and code; retrain primary model using state-action representation of the same source examples.",
+        "gpu": "CUDA GPU",
+        "peak_allocated_bytes": 2201157632,
+        "peak_reserved_bytes": 2401239040,
+        "lengths": {
+          "max_input_tokens": 172,
+          "max_target_tokens": 16
+        },
+        "examples_processed": 8000,
+        "optimizer_updates": 500,
+        "train_and_loss_eval_seconds": 101.93982799999958,
+        "train_examples_per_second_including_validation": 78.4776682181574,
+        "generation_eval_seconds": 1.8079794999994192,
+        "generation_examples_per_second": 110.62072329916586,
+        "history": [
+          {
+            "epoch": 1,
+            "train_batch_mean_loss": 0.4060346782039851,
+            "dev_loss": 0.18340798258781432,
+            "dev_token_mean_loss": null
+          },
+          {
+            "epoch": 2,
+            "train_batch_mean_loss": 0.19690477401111275,
+            "dev_loss": 0.18180670995265247,
+            "dev_token_mean_loss": null
+          }
+        ],
+        "dev_exact_match": 0.63,
+        "dev_policy_action_accuracy": 0.98,
+        "torch_version": "2.12.1+cu132",
+        "precision": "float32",
+        "loss_normalization": "example_mean_action_classification_and_verifier_text",
+        "matmul_precision": "high"
+      }
+    }
+  },
+  "selected_test": {
+    "test_id": {
+      "split": "test_id",
+      "weights_sha256": "64dd8ed618b5b305ee649eb00224bdf43623e5a9b9ec3a9dc44d562808968194",
+      "planning": {
+        "original_whole_plan": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "state_policy": {
+          "n": 200,
+          "success_rate": 0.85,
+          "feasibility": 1.0,
+          "optimality": 0.825,
+          "path_efficiency_on_success": 0.9928104575163398
+        },
+        "legal_mask_no_search": {
+          "n": 200,
+          "success_rate": 0.975,
+          "feasibility": 1.0,
+          "optimality": 0.865,
+          "path_efficiency_on_success": 0.9607734176155232
+        },
+        "neural_best_first": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.99,
+          "path_efficiency_on_success": 0.9973214285714286
+        },
+        "symbolic_astar_no_model": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 1.0,
+          "path_efficiency_on_success": 1.0
+        },
+        "neural_optimal_astar": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 1.0,
+          "path_efficiency_on_success": 1.0
+        },
+        "symbolic_astar_goal_tiebreak": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 1.0,
+          "path_efficiency_on_success": 1.0
+        }
+      },
+      "prefix_repair": {
+        "state_policy": {
+          "n": 100,
+          "success_rate": 0.9,
+          "feasibility": 1.0,
+          "optimality": 0.67,
+          "path_efficiency_on_success": 0.903755010421677
+        },
+        "legal_mask_no_search": {
+          "n": 100,
+          "success_rate": 0.96,
+          "feasibility": 1.0,
+          "optimality": 0.68,
+          "path_efficiency_on_success": 0.8910270863395865
+        },
+        "neural_best_first": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.9018795093795096
+        },
+        "symbolic_astar_no_model": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.9018795093795096
+        },
+        "neural_optimal_astar": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.9018795093795096
+        },
+        "symbolic_astar_goal_tiebreak": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.9018795093795096
+        }
+      },
+      "seconds_by_planner": {
+        "state_policy": 4.179962700000033,
+        "legal_mask_no_search": 0.8656019999998534,
+        "neural_best_first": 1.7237613999996029,
+        "symbolic_astar_no_model": 0.017194500000186963,
+        "neural_optimal_astar": 0.2442934000000605,
+        "symbolic_astar_goal_tiebreak": 0.00990760000058799
+      },
+      "mean_expansions": {
+        "neural_best_first": 5.05,
+        "symbolic_astar_no_model": 8.26,
+        "neural_optimal_astar": 5.045,
+        "symbolic_astar_goal_tiebreak": 4.795
+      },
+      "inference": {
+        "max_steps": 36,
+        "max_expansions": 36,
+        "neural_weight": 0.25,
+        "reference_path_used": false,
+        "symbolic_legality": true,
+        "search_uses_manhattan_heuristic": true,
+        "cached_policy_states": 1110
+      },
+      "definitions": {
+        "state_policy": "learned one-action policy with explicit state observations; no movement mask or search",
+        "legal_mask_no_search": "same policy plus legal unvisited-action masking",
+        "neural_best_first": "hybrid best-first graph search ranked by learned action likelihood and Manhattan distance",
+        "symbolic_astar_no_model": "A* without any neural scores; necessary search ablation",
+        "neural_optimal_astar": "unit-cost A*, neural likelihood only breaks equal g+Manhattan ties",
+        "symbolic_astar_goal_tiebreak": "strong pure A* ablation: lower Manhattan breaks equal f ties",
+        "repair": "executor-valid prefix plus replanned suffix, invalid candidates only",
+        "timings": "shared state-score cache; times are incremental, not independent cold-start comparisons",
+        "paired_test": "ID/OOD use same grids; planning scores should match, prefix repair candidates differ"
+      }
+    },
+    "test_ood": {
+      "split": "test_ood",
+      "weights_sha256": "64dd8ed618b5b305ee649eb00224bdf43623e5a9b9ec3a9dc44d562808968194",
+      "planning": {
+        "original_whole_plan": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "state_policy": {
+          "n": 200,
+          "success_rate": 0.85,
+          "feasibility": 1.0,
+          "optimality": 0.825,
+          "path_efficiency_on_success": 0.9928104575163398
+        },
+        "legal_mask_no_search": {
+          "n": 200,
+          "success_rate": 0.975,
+          "feasibility": 1.0,
+          "optimality": 0.865,
+          "path_efficiency_on_success": 0.9607734176155232
+        },
+        "neural_best_first": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.99,
+          "path_efficiency_on_success": 0.9973214285714286
+        },
+        "symbolic_astar_no_model": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 1.0,
+          "path_efficiency_on_success": 1.0
+        },
+        "neural_optimal_astar": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 1.0,
+          "path_efficiency_on_success": 1.0
+        },
+        "symbolic_astar_goal_tiebreak": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 1.0,
+          "path_efficiency_on_success": 1.0
+        }
+      },
+      "prefix_repair": {
+        "state_policy": {
+          "n": 100,
+          "success_rate": 0.9,
+          "feasibility": 1.0,
+          "optimality": 0.64,
+          "path_efficiency_on_success": 0.8945558762225428
+        },
+        "legal_mask_no_search": {
+          "n": 100,
+          "success_rate": 0.96,
+          "feasibility": 1.0,
+          "optimality": 0.65,
+          "path_efficiency_on_success": 0.8726716570466571
+        },
+        "neural_best_first": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7,
+          "path_efficiency_on_success": 0.8835743145743145
+        },
+        "symbolic_astar_no_model": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7,
+          "path_efficiency_on_success": 0.8845844155844155
+        },
+        "neural_optimal_astar": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7,
+          "path_efficiency_on_success": 0.8845844155844155
+        },
+        "symbolic_astar_goal_tiebreak": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7,
+          "path_efficiency_on_success": 0.8845844155844155
+        }
+      },
+      "seconds_by_planner": {
+        "state_policy": 5.981063999999606,
+        "legal_mask_no_search": 0.9720049999996263,
+        "neural_best_first": 0.7942820000007487,
+        "symbolic_astar_no_model": 0.009577900000294903,
+        "neural_optimal_astar": 0.08941289999984292,
+        "symbolic_astar_goal_tiebreak": 0.005336000000170316
+      },
+      "mean_expansions": {
+        "neural_best_first": 5.05,
+        "symbolic_astar_no_model": 8.26,
+        "neural_optimal_astar": 5.045,
+        "symbolic_astar_goal_tiebreak": 4.795
+      },
+      "inference": {
+        "max_steps": 36,
+        "max_expansions": 36,
+        "neural_weight": 0.25,
+        "reference_path_used": false,
+        "symbolic_legality": true,
+        "search_uses_manhattan_heuristic": true,
+        "cached_policy_states": 1157
+      },
+      "definitions": {
+        "state_policy": "learned one-action policy with explicit state observations; no movement mask or search",
+        "legal_mask_no_search": "same policy plus legal unvisited-action masking",
+        "neural_best_first": "hybrid best-first graph search ranked by learned action likelihood and Manhattan distance",
+        "symbolic_astar_no_model": "A* without any neural scores; necessary search ablation",
+        "neural_optimal_astar": "unit-cost A*, neural likelihood only breaks equal g+Manhattan ties",
+        "symbolic_astar_goal_tiebreak": "strong pure A* ablation: lower Manhattan breaks equal f ties",
+        "repair": "executor-valid prefix plus replanned suffix, invalid candidates only",
+        "timings": "shared state-score cache; times are incremental, not independent cold-start comparisons",
+        "paired_test": "ID/OOD use same grids; planning scores should match, prefix repair candidates differ"
+      }
+    }
+  },
+  "previous_test": {
+    "split": "test_id",
+    "weights_sha256": "bb4098903805cb92489b95e7d9950a324d4614299e87bf49e55affb47fef8198",
+    "planning": {
+      "original_whole_plan": {
+        "n": 200,
+        "success_rate": 0.0,
+        "feasibility": 0.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null
+      },
+      "state_policy": {
+        "n": 200,
+        "success_rate": 0.76,
+        "feasibility": 0.76,
+        "optimality": 0.76,
+        "path_efficiency_on_success": 1.0
+      },
+      "legal_mask_no_search": {
+        "n": 200,
+        "success_rate": 0.95,
+        "feasibility": 1.0,
+        "optimality": 0.855,
+        "path_efficiency_on_success": 0.9594611528822055
+      },
+      "neural_best_first": {
+        "n": 200,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.995,
+        "path_efficiency_on_success": 0.9988888888888888
+      },
+      "symbolic_astar_no_model": {
+        "n": 200,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 1.0,
+        "path_efficiency_on_success": 1.0
+      }
+    },
+    "prefix_repair": {
+      "state_policy": {
+        "n": 100,
+        "success_rate": 0.86,
+        "feasibility": 0.86,
+        "optimality": 0.64,
+        "path_efficiency_on_success": 0.9035068290882246
+      },
+      "legal_mask_no_search": {
+        "n": 100,
+        "success_rate": 0.97,
+        "feasibility": 1.0,
+        "optimality": 0.69,
+        "path_efficiency_on_success": 0.8791711813965092
+      },
+      "neural_best_first": {
+        "n": 100,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.74,
+        "path_efficiency_on_success": 0.9018795093795096
+      },
+      "symbolic_astar_no_model": {
+        "n": 100,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.74,
+        "path_efficiency_on_success": 0.9018795093795096
+      }
+    },
+    "seconds_by_planner": {
+      "state_policy": 4.605139100000088,
+      "legal_mask_no_search": 1.6957742999998118,
+      "neural_best_first": 1.1436945999998898,
+      "symbolic_astar_no_model": 0.014250600000195845
+    },
+    "mean_expansions": {
+      "neural_best_first": 5.165,
+      "symbolic_astar_no_model": 8.26
+    },
+    "inference": {
+      "max_steps": 36,
+      "max_expansions": 36,
+      "neural_weight": 0.25,
+      "reference_path_used": false,
+      "symbolic_legality": true,
+      "search_uses_manhattan_heuristic": true,
+      "cached_policy_states": 1177
+    },
+    "definitions": {
+      "state_policy": "learned one-action policy with explicit state observations; no movement mask or search",
+      "legal_mask_no_search": "same policy plus legal unvisited-action masking",
+      "neural_best_first": "hybrid best-first graph search ranked by learned action likelihood and Manhattan distance",
+      "symbolic_astar_no_model": "A* without any neural scores; necessary search ablation",
+      "repair": "executor-valid prefix plus replanned suffix, invalid candidates only",
+      "timings": "shared state-score cache; times are incremental, not independent cold-start comparisons",
+      "paired_test": "ID/OOD use same grids; planning scores should match, prefix repair candidates differ"
+    }
+  },
+  "deployment_config": "config.policy.best.json",
+  "study_wall_seconds": 359.41690587997437,
+  "integrity": {
+    "v2_weights_unchanged": true,
+    "test_files_unchanged": true,
+    "original_baselines_unchanged": true,
+    "candidate_selection_development_only": true
+  },
+  "limitations": [
+    "Same previously evaluated 200 grid environments; not a new blind test.",
+    "Local-status observations and critical-state sampling are shared changes; only single vs set-valued loss is a focused ablation.",
+    "Four-action losses use per-example normalization, so loss magnitudes are not directly comparable to the prior text-token loss.",
+    "Search remains an explicit symbolic component. Strong pure A* is reported and may expand fewer states than neural search.",
+    "ID/OOD grids are paired; generation scores should agree while prefix-repair candidates differ."
+  ],
+  "total_gpu_reserved_wall_hours": 0.2663361111111109
+}

@@ -1,0 +1,381 @@
+{
+  "selection": {
+    "method": "neural_best_first",
+    "weights_sha256": "bb4098903805cb92489b95e7d9950a324d4614299e87bf49e55affb47fef8198",
+    "rule": "development success then optimality; ties retain simpler earlier method",
+    "dev_metrics_sha256": "a21f8d91ce6de505f7c260f5899bb8174d9921dd9c1bd39c2a2aed61c832f2ab"
+  },
+  "training": {
+    "checkpoint": "google/flan-t5-small",
+    "requested_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+    "resolved_revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+    "data_fingerprint": "00484a1d6f1d3f060c5bbdc15c03a1a842cd3d155478480901c56fd59d39583d",
+    "training_config": {
+      "precision": "float32",
+      "epochs": 2,
+      "batch_size": 8,
+      "eval_batch_size": 8,
+      "gradient_accumulation_steps": 2,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "max_input_tokens": 512,
+      "max_target_tokens": 128,
+      "pilot_batches": 4
+    },
+    "confirmation_note": "User explicitly authorized full formal fine-tuning of Flan-T5-small and BART-base in this chat on 2026-10-18; no separate project-manager confirmation is asserted. User authorized improving planning and code; retrain primary model using state-action representation of the same source examples.",
+    "gpu": "CUDA GPU",
+    "peak_allocated_bytes": 2110606336,
+    "peak_reserved_bytes": 2340421632,
+    "lengths": {
+      "max_input_tokens": 159,
+      "max_target_tokens": 16
+    },
+    "examples_processed": 8000,
+    "optimizer_updates": 500,
+    "train_and_loss_eval_seconds": 126.40238640000007,
+    "train_examples_per_second_including_validation": 63.28994434237988,
+    "generation_eval_seconds": 7.911167100000057,
+    "generation_examples_per_second": 25.2807199585,
+    "history": [
+      {
+        "epoch": 1,
+        "train_batch_mean_loss": 0.3972231051325798,
+        "dev_token_mean_loss": 0.26343488072128574
+      },
+      {
+        "epoch": 2,
+        "train_batch_mean_loss": 0.23622667552158236,
+        "dev_token_mean_loss": 0.20211784645125025
+      }
+    ],
+    "dev_exact_match": 0.665,
+    "torch_version": "2.12.1+cu132",
+    "precision": "float32",
+    "matmul_precision": "high"
+  },
+  "evaluations": {
+    "dev": {
+      "split": "dev",
+      "weights_sha256": "bb4098903805cb92489b95e7d9950a324d4614299e87bf49e55affb47fef8198",
+      "planning": {
+        "original_whole_plan": {
+          "n": 98,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "state_policy": {
+          "n": 98,
+          "success_rate": 0.7448979591836735,
+          "feasibility": 0.7448979591836735,
+          "optimality": 0.7448979591836735,
+          "path_efficiency_on_success": 1.0
+        },
+        "legal_mask_no_search": {
+          "n": 98,
+          "success_rate": 0.9183673469387755,
+          "feasibility": 1.0,
+          "optimality": 0.8367346938775511,
+          "path_efficiency_on_success": 0.9656518789852122
+        },
+        "neural_best_first": {
+          "n": 98,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 1.0,
+          "path_efficiency_on_success": 1.0
+        },
+        "symbolic_astar_no_model": {
+          "n": 98,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 1.0,
+          "path_efficiency_on_success": 1.0
+        }
+      },
+      "prefix_repair": {
+        "state_policy": {
+          "n": 50,
+          "success_rate": 0.92,
+          "feasibility": 0.92,
+          "optimality": 0.72,
+          "path_efficiency_on_success": 0.9232746721877156
+        },
+        "legal_mask_no_search": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.9034733044733045
+        },
+        "neural_best_first": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.76,
+          "path_efficiency_on_success": 0.9141399711399713
+        },
+        "symbolic_astar_no_model": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.76,
+          "path_efficiency_on_success": 0.9141399711399713
+        }
+      },
+      "seconds_by_planner": {
+        "state_policy": 2.4109247000001233,
+        "legal_mask_no_search": 0.7321151999999529,
+        "neural_best_first": 0.781731900000068,
+        "symbolic_astar_no_model": 0.004316599999583559
+      },
+      "mean_expansions": {
+        "neural_best_first": 5.377551020408164,
+        "symbolic_astar_no_model": 8.510204081632653
+      },
+      "inference": {
+        "max_steps": 36,
+        "max_expansions": 36,
+        "neural_weight": 0.25,
+        "reference_path_used": false,
+        "symbolic_legality": true,
+        "search_uses_manhattan_heuristic": true,
+        "cached_policy_states": 572
+      },
+      "definitions": {
+        "state_policy": "learned one-action policy with explicit state observations; no movement mask or search",
+        "legal_mask_no_search": "same policy plus legal unvisited-action masking",
+        "neural_best_first": "hybrid best-first graph search ranked by learned action likelihood and Manhattan distance",
+        "symbolic_astar_no_model": "A* without any neural scores; necessary search ablation",
+        "repair": "executor-valid prefix plus replanned suffix, invalid candidates only",
+        "timings": "shared state-score cache; times are incremental, not independent cold-start comparisons",
+        "paired_test": "ID/OOD use same grids; planning scores should match, prefix repair candidates differ"
+      }
+    },
+    "test_id": {
+      "split": "test_id",
+      "weights_sha256": "bb4098903805cb92489b95e7d9950a324d4614299e87bf49e55affb47fef8198",
+      "planning": {
+        "original_whole_plan": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "state_policy": {
+          "n": 200,
+          "success_rate": 0.76,
+          "feasibility": 0.76,
+          "optimality": 0.76,
+          "path_efficiency_on_success": 1.0
+        },
+        "legal_mask_no_search": {
+          "n": 200,
+          "success_rate": 0.95,
+          "feasibility": 1.0,
+          "optimality": 0.855,
+          "path_efficiency_on_success": 0.9594611528822055
+        },
+        "neural_best_first": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.995,
+          "path_efficiency_on_success": 0.9988888888888888
+        },
+        "symbolic_astar_no_model": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 1.0,
+          "path_efficiency_on_success": 1.0
+        }
+      },
+      "prefix_repair": {
+        "state_policy": {
+          "n": 100,
+          "success_rate": 0.86,
+          "feasibility": 0.86,
+          "optimality": 0.64,
+          "path_efficiency_on_success": 0.9035068290882246
+        },
+        "legal_mask_no_search": {
+          "n": 100,
+          "success_rate": 0.97,
+          "feasibility": 1.0,
+          "optimality": 0.69,
+          "path_efficiency_on_success": 0.8791711813965092
+        },
+        "neural_best_first": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.9018795093795096
+        },
+        "symbolic_astar_no_model": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.9018795093795096
+        }
+      },
+      "seconds_by_planner": {
+        "state_policy": 4.605139100000088,
+        "legal_mask_no_search": 1.6957742999998118,
+        "neural_best_first": 1.1436945999998898,
+        "symbolic_astar_no_model": 0.014250600000195845
+      },
+      "mean_expansions": {
+        "neural_best_first": 5.165,
+        "symbolic_astar_no_model": 8.26
+      },
+      "inference": {
+        "max_steps": 36,
+        "max_expansions": 36,
+        "neural_weight": 0.25,
+        "reference_path_used": false,
+        "symbolic_legality": true,
+        "search_uses_manhattan_heuristic": true,
+        "cached_policy_states": 1177
+      },
+      "definitions": {
+        "state_policy": "learned one-action policy with explicit state observations; no movement mask or search",
+        "legal_mask_no_search": "same policy plus legal unvisited-action masking",
+        "neural_best_first": "hybrid best-first graph search ranked by learned action likelihood and Manhattan distance",
+        "symbolic_astar_no_model": "A* without any neural scores; necessary search ablation",
+        "repair": "executor-valid prefix plus replanned suffix, invalid candidates only",
+        "timings": "shared state-score cache; times are incremental, not independent cold-start comparisons",
+        "paired_test": "ID/OOD use same grids; planning scores should match, prefix repair candidates differ"
+      }
+    },
+    "test_ood": {
+      "split": "test_ood",
+      "weights_sha256": "bb4098903805cb92489b95e7d9950a324d4614299e87bf49e55affb47fef8198",
+      "planning": {
+        "original_whole_plan": {
+          "n": 200,
+          "success_rate": 0.0,
+          "feasibility": 0.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "state_policy": {
+          "n": 200,
+          "success_rate": 0.76,
+          "feasibility": 0.76,
+          "optimality": 0.76,
+          "path_efficiency_on_success": 1.0
+        },
+        "legal_mask_no_search": {
+          "n": 200,
+          "success_rate": 0.95,
+          "feasibility": 1.0,
+          "optimality": 0.855,
+          "path_efficiency_on_success": 0.9594611528822055
+        },
+        "neural_best_first": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.995,
+          "path_efficiency_on_success": 0.9988888888888888
+        },
+        "symbolic_astar_no_model": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 1.0,
+          "path_efficiency_on_success": 1.0
+        }
+      },
+      "prefix_repair": {
+        "state_policy": {
+          "n": 100,
+          "success_rate": 0.86,
+          "feasibility": 0.86,
+          "optimality": 0.6,
+          "path_efficiency_on_success": 0.888711869525823
+        },
+        "legal_mask_no_search": {
+          "n": 100,
+          "success_rate": 0.96,
+          "feasibility": 1.0,
+          "optimality": 0.65,
+          "path_efficiency_on_success": 0.8749616702741703
+        },
+        "neural_best_first": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7,
+          "path_efficiency_on_success": 0.8845844155844155
+        },
+        "symbolic_astar_no_model": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7,
+          "path_efficiency_on_success": 0.8845844155844155
+        }
+      },
+      "seconds_by_planner": {
+        "state_policy": 6.069672199999786,
+        "legal_mask_no_search": 1.732116700000006,
+        "neural_best_first": 0.7043009999997594,
+        "symbolic_astar_no_model": 0.009998799999721086
+      },
+      "mean_expansions": {
+        "neural_best_first": 5.165,
+        "symbolic_astar_no_model": 8.26
+      },
+      "inference": {
+        "max_steps": 36,
+        "max_expansions": 36,
+        "neural_weight": 0.25,
+        "reference_path_used": false,
+        "symbolic_legality": true,
+        "search_uses_manhattan_heuristic": true,
+        "cached_policy_states": 1200
+      },
+      "definitions": {
+        "state_policy": "learned one-action policy with explicit state observations; no movement mask or search",
+        "legal_mask_no_search": "same policy plus legal unvisited-action masking",
+        "neural_best_first": "hybrid best-first graph search ranked by learned action likelihood and Manhattan distance",
+        "symbolic_astar_no_model": "A* without any neural scores; necessary search ablation",
+        "repair": "executor-valid prefix plus replanned suffix, invalid candidates only",
+        "timings": "shared state-score cache; times are incremental, not independent cold-start comparisons",
+        "paired_test": "ID/OOD use same grids; planning scores should match, prefix repair candidates differ"
+      }
+    }
+  },
+  "weights": ".\\outputs\\planning_v2\\flan_t5_small\\train\\best\\model.safetensors",
+  "weights_sha256": "bb4098903805cb92489b95e7d9950a324d4614299e87bf49e55affb47fef8198",
+  "study_wall_seconds": 230.4039330482483,
+  "integrity": {
+    "baseline_weights_unchanged": true,
+    "test_candidates_unchanged": true,
+    "selection_frozen_before_testing": true,
+    "source_example_ids_and_layouts_preserved": true
+  },
+  "limitations": [
+    "State policy receives exact current state, local legal moves and coordinate-derived goal direction; it is not the old one-shot natural-language baseline.",
+    "Search success includes symbolic graph search; pure A* also solves these environments.",
+    "ID/OOD share grids. OOD concerns corrupted candidate repair, not new grid sizes.",
+    "Original test aggregate performance was already known before this improvement; no per-test tuning was performed in this run.",
+    "Prefix repair includes symbolic execution and truncation before learned replanning.",
+    "Single seed, only one fixed retraining configuration; state count savings do not imply wall-clock speedup."
+  ],
+  "total_gpu_reserved_wall_seconds_all_studies": 623.2789999999998,
+  "source_sha256": {
+    "ppnl\\policy.py": "1d8b4b94c0525484642adf33d5a73e868b5e9d92aa75f4162b0f8001faf399b0",
+    "ppnl\\policy_data.py": "a138179478cadca9497a87221f501fccefd584145bf0fd2f4789b62595aa6661",
+    "scripts\\evaluate_policy.py": "35d376de299e4d51ad8177882b899b7dc2b0e607528327fb9cbf83ce80db2227",
+    "scripts\\run_policy_study.py": "e65713ccfbf588038bcb7181635141573cf2a3b6a7004eca8a2b49042f9a67a6",
+    "scripts\\plan_grid.py": "3bd2374b9245a3f047d20cc2f2f389ad79348de2fc98400f156827cfd62c2867",
+    "config.policy.json": "26f824cca93ed57c51eeafaa77f3a987f605a2136901f0b1748a394ae9984088"
+  }
+}

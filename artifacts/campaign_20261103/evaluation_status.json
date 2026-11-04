@@ -1,0 +1,485 @@
+{
+  "stages": [
+    {
+      "name": "t5_small_full_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_full_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_full_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_full_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_vanilla_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_vanilla_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_vanilla_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_vanilla_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_structured_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_structured_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_structured_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_structured_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_status_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_status_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_status_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_status_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_reference_eval_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_reference_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_reference_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_reference_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_reinforce_eval_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_reinforce_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_reinforce_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_reinforce_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_grpo_eval_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_grpo_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_grpo_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_grpo_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_full_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_full_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_full_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_full_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_vanilla_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_vanilla_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_vanilla_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_vanilla_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_structured_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_structured_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_structured_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_structured_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_status_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_status_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_status_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_status_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_reference_eval_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_reference_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_reference_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_reference_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_reinforce_eval_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_reinforce_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_reinforce_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_reinforce_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_grpo_eval_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_grpo_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_grpo_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_grpo_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_full_dev",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_full_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_full_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_full_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_vanilla_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_vanilla_dev",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_vanilla_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_vanilla_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_structured_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_structured_dev",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_structured_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_structured_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_status_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_status_dev",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_status_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_status_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_reference_eval_dev",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_reference_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_reference_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_reference_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_reinforce_eval_dev",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_reinforce_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_reinforce_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_reinforce_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_grpo_eval_dev",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_grpo_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_grpo_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_grpo_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_prefix_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_prefix_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_prefix_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_prefix_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_vanilla_prefix_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_vanilla_prefix_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_vanilla_prefix_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_vanilla_prefix_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_structured_prefix_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_structured_prefix_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_structured_prefix_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_small_structured_prefix_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_prefix_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_prefix_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_prefix_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_prefix_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_vanilla_prefix_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_vanilla_prefix_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_vanilla_prefix_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_vanilla_prefix_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_structured_prefix_dev",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_structured_prefix_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_structured_prefix_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "t5_base_structured_prefix_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_prefix_dev",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_prefix_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_prefix_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_prefix_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_vanilla_prefix_dev",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_vanilla_prefix_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_vanilla_prefix_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_vanilla_prefix_test_ood",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_structured_prefix_dev",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_structured_prefix_freeze",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_structured_prefix_test_id",
+      "returncode": 0
+    },
+    {
+      "name": "bart_base_structured_prefix_test_ood",
+      "returncode": 0
+    }
+  ],
+  "complete": true
+}

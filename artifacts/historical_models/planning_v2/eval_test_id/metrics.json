@@ -1,0 +1,99 @@
+{
+  "split": "test_id",
+  "weights_sha256": "bb4098903805cb92489b95e7d9950a324d4614299e87bf49e55affb47fef8198",
+  "planning": {
+    "original_whole_plan": {
+      "n": 200,
+      "success_rate": 0.0,
+      "feasibility": 0.0,
+      "optimality": 0.0,
+      "path_efficiency_on_success": null
+    },
+    "state_policy": {
+      "n": 200,
+      "success_rate": 0.76,
+      "feasibility": 0.76,
+      "optimality": 0.76,
+      "path_efficiency_on_success": 1.0
+    },
+    "legal_mask_no_search": {
+      "n": 200,
+      "success_rate": 0.95,
+      "feasibility": 1.0,
+      "optimality": 0.855,
+      "path_efficiency_on_success": 0.9594611528822055
+    },
+    "neural_best_first": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.995,
+      "path_efficiency_on_success": 0.9988888888888888
+    },
+    "symbolic_astar_no_model": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 1.0,
+      "path_efficiency_on_success": 1.0
+    }
+  },
+  "prefix_repair": {
+    "state_policy": {
+      "n": 100,
+      "success_rate": 0.86,
+      "feasibility": 0.86,
+      "optimality": 0.64,
+      "path_efficiency_on_success": 0.9035068290882246
+    },
+    "legal_mask_no_search": {
+      "n": 100,
+      "success_rate": 0.97,
+      "feasibility": 1.0,
+      "optimality": 0.69,
+      "path_efficiency_on_success": 0.8791711813965092
+    },
+    "neural_best_first": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.74,
+      "path_efficiency_on_success": 0.9018795093795096
+    },
+    "symbolic_astar_no_model": {
+      "n": 100,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.74,
+      "path_efficiency_on_success": 0.9018795093795096
+    }
+  },
+  "seconds_by_planner": {
+    "state_policy": 4.605139100000088,
+    "legal_mask_no_search": 1.6957742999998118,
+    "neural_best_first": 1.1436945999998898,
+    "symbolic_astar_no_model": 0.014250600000195845
+  },
+  "mean_expansions": {
+    "neural_best_first": 5.165,
+    "symbolic_astar_no_model": 8.26
+  },
+  "inference": {
+    "max_steps": 36,
+    "max_expansions": 36,
+    "neural_weight": 0.25,
+    "reference_path_used": false,
+    "symbolic_legality": true,
+    "search_uses_manhattan_heuristic": true,
+    "cached_policy_states": 1177
+  },
+  "definitions": {
+    "state_policy": "learned one-action policy with explicit state observations; no movement mask or search",
+    "legal_mask_no_search": "same policy plus legal unvisited-action masking",
+    "neural_best_first": "hybrid best-first graph search ranked by learned action likelihood and Manhattan distance",
+    "symbolic_astar_no_model": "A* without any neural scores; necessary search ablation",
+    "repair": "executor-valid prefix plus replanned suffix, invalid candidates only",
+    "timings": "shared state-score cache; times are incremental, not independent cold-start comparisons",
+    "paired_test": "ID/OOD use same grids; planning scores should match, prefix repair candidates differ"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "method": "grpo",
+  "updates_per_rollout": 2,
+  "optimizer_updates": 128,
+  "prompt_format": "vanilla",
+  "human_preferences": false,
+  "test_evaluated": false,
+  "history": [
+    {
+      "step": 0,
+      "success_rate": 0.025,
+      "mean_reward": -0.9528948412698413
+    },
+    {
+      "step": 16,
+      "success_rate": 0.025,
+      "mean_reward": -0.9528948412698413
+    },
+    {
+      "step": 32,
+      "success_rate": 0.0,
+      "mean_reward": -0.9569960317460315
+    },
+    {
+      "step": 48,
+      "success_rate": 0.025,
+      "mean_reward": -0.7117996031746033
+    },
+    {
+      "step": 64,
+      "success_rate": 0.0,
+      "mean_reward": -0.48722222222222217
+    }
+  ],
+  "selected": {
+    "step": 48,
+    "success_rate": 0.025,
+    "mean_reward": -0.7117996031746033
+  },
+  "limitation": "Reward shaping improvement alone is not planning success; dev-only exploratory pilot."
+}

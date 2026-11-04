@@ -1,0 +1,14 @@
+
+== test_id == n=2 (invalid rows 0)
+method                          success  feasible  optimal  efficiency  expand     sec  ��success
+------------------------------------------------------------------------------------------------
+symbolic_astar_goal_tiebreak     100.0%    100.0%   100.0%      100.0%    4.00    0.00          
+frozen comparison: no_frozen_result (0 differing field(s))
+
+Artifacts: <LOCAL_ENV>
+verification: verifying frozen generation checkpoint
+verification: verifying frozen generation checkpoint
+----------------------------------------------------------------------
+Ran 141 tests in 31.895s
+
+OK

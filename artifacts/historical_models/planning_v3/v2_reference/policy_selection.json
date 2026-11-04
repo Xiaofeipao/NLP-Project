@@ -1,0 +1,6 @@
+{
+  "method": "neural_optimal_astar",
+  "weights_sha256": "bb4098903805cb92489b95e7d9950a324d4614299e87bf49e55affb47fef8198",
+  "rule": "development success then optimality; ties retain simpler earlier method",
+  "dev_metrics_sha256": "f444c1c84a66d3ac6b816557eab8f364f5afe8f439e9917f8306de8deb91620c"
+}

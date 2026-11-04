@@ -1,0 +1,139 @@
+verification: verifying frozen generation checkpoint
+verification: loading google-t5/t5-small (vanilla)
+verification: epoch 1/2, 500 batches
+verification: batch 100/500, updates=25
+verification: batch 200/500, updates=50
+verification: batch 300/500, updates=75
+verification: batch 400/500, updates=100
+verification: batch 500/500, updates=125
+verification: epoch 2/2, 500 batches
+verification: batch 100/500, updates=150
+verification: batch 200/500, updates=175
+verification: batch 300/500, updates=200
+verification: batch 400/500, updates=225
+verification: batch 500/500, updates=250
+{
+  "stage": "verification",
+  "pilot": false,
+  "train_rows": 2000,
+  "dev_rows": 100,
+  "examples_processed": 4000,
+  "optimizer_updates": 250,
+  "history": [
+    {
+      "epoch": 1,
+      "dev_loss": 1.103259346783161,
+      "dev_diagnostics": {
+        "n": 100,
+        "macro_f1": 0.483110950835437,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.02,
+        "failure_type_accuracy": 0.14,
+        "joint_error_accuracy": 0.02,
+        "predicted_label_counts": {
+          "valid": 91,
+          "invalid": 9
+        },
+        "all_valid_warning": false
+      },
+      "selection_rank": [
+        0.483110950835437,
+        0.02,
+        0.14,
+        -1.103259346783161
+      ]
+    },
+    {
+      "epoch": 2,
+      "dev_loss": 0.878375169634819,
+      "dev_diagnostics": {
+        "n": 100,
+        "macro_f1": 0.6129302228266555,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.08,
+        "failure_type_accuracy": 0.2,
+        "joint_error_accuracy": 0.02,
+        "predicted_label_counts": {
+          "valid": 71,
+          "invalid": 29
+        },
+        "all_valid_warning": false
+      },
+      "selection_rank": [
+        0.6129302228266555,
+        0.08,
+        0.2,
+        -0.878375169634819
+      ]
+    }
+  ],
+  "source_checkpoint": "outputs\\campaign_20261103\\gvr\\t5_small\\vanilla\\generation\\train\\best",
+  "source_revision": null,
+  "generation_base_sha256": "8c1b7cecbdcc7fbbfd7ea0c61123a0bbb8407cea2be4b440ea17befbd01e119d",
+  "task_index_source_sha256": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+  "lengths": {
+    "max_input_tokens": 159,
+    "max_target_tokens": 16
+  },
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "prompt_format": "vanilla",
+  "training_signature": {
+    "training": {
+      "precision": "float32",
+      "epochs": 2,
+      "batch_size": 4,
+      "eval_batch_size": 4,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "max_input_tokens": 512,
+      "max_target_tokens": 128,
+      "pilot_batches": 4
+    },
+    "stage_options": {
+      "loss": "sequence_and_status",
+      "status_weight": 1.0,
+      "selection": "task_metrics",
+      "learning_rate": 0.001
+    },
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05
+    },
+    "accumulation_normalization": "loss_units_v1"
+  },
+  "stage_options": {
+    "loss": "sequence_and_status",
+    "status_weight": 1.0,
+    "selection": "task_metrics",
+    "learning_rate": 0.001
+  },
+  "best_epoch": 2,
+  "best_selection_rank": [
+    0.6129302228266555,
+    0.08,
+    0.2,
+    -0.878375169634819
+  ],
+  "effective_learning_rate": 0.001,
+  "adapter": {
+    "matched_modules": 36,
+    "trainable_parameters": 294912,
+    "total_parameters": 60801536
+  },
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 542133248,
+  "elapsed_seconds": 110.61951930000032
+}

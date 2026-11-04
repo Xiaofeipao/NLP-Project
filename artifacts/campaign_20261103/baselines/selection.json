@@ -1,0 +1,14 @@
+{
+  "primary": "t5_base",
+  "dev_scores": {
+    "t5_small": 0.2629815019270237,
+    "t5_base": 0.2864173336938148,
+    "bart_base": 0.27304630494172977
+  },
+  "training_fingerprints": {
+    "t5_small": "03cf7d1fb5aa1f0505b628bfbbd7484a9ca4cf623f621fb71044aa9ba3ae3c83",
+    "t5_base": "c16ae21b1e601574e06afde8843abc1a40c9ed19a9b6837b3f20ea2e177ff0d4",
+    "bart_base": "113f4be0782d7b6977538d954fc02e467ed35b86995e6d57c6cc8e2fbe3b6203"
+  },
+  "rule": "mean of dev generation success, verification macro-F1, repair success; lexical tie break"
+}

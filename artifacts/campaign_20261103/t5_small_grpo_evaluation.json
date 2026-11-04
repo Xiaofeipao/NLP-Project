@@ -1,0 +1,8 @@
+{
+  "kind": "rl_generation",
+  "config": "outputs\\campaign_20261103\\baselines.json",
+  "base": "outputs\\campaign_20261103\\gvr\\t5_small\\vanilla\\generation\\train\\best",
+  "adapter": "outputs\\campaign_20261103\\rl\\t5_small\\grpo\\best",
+  "prompt_format": "vanilla",
+  "max_new_tokens": 48
+}

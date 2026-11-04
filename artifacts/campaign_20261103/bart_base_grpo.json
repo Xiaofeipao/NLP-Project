@@ -1,0 +1,20 @@
+{
+  "config": "outputs\\campaign_20261103\\baselines.json",
+  "base": "outputs\\campaign_20261103\\gvr\\bart_base\\vanilla\\generation\\train\\best",
+  "output": "outputs\\campaign_20261103\\rl\\bart_base\\grpo",
+  "prompt_format": "vanilla",
+  "algorithm": "grpo",
+  "steps": 64,
+  "group_size": 4,
+  "max_new_tokens": 48,
+  "eval_every": 16,
+  "learning_rate": 5e-05,
+  "kl_beta": 0.02,
+  "clip_epsilon": 0.2,
+  "updates_per_rollout": 2,
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.0
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "base_sha256": "fee5994091cf8a407e2044115b8f4e645c7e4f0abe6f79e719eb6ce33f715ed1",
+    "adapters_sha256": {
+      "verification": "8b2af2685346faad615cd01d0c376aa1a4a4bade2f0591b8dc3e3cbdc3cb2eae",
+      "repair": "082be9bfd3f9ca448ac803e63932eb9d1b1f7d99f21817f2cd66d0dd434bc72c"
+    }
+  },
+  "disabled_adapter_matches_base": true,
+  "prompt_format": "vanilla",
+  "dev_diagnostics": {
+    "verification": {
+      "n": 100,
+      "macro_f1": 0.3333333333333333,
+      "format_accuracy": 1.0,
+      "first_error_localization_accuracy": 0.1,
+      "failure_type_accuracy": 0.38,
+      "joint_error_accuracy": 0.04,
+      "predicted_label_counts": {
+        "invalid": 100
+      },
+      "all_valid_warning": false
+    },
+    "generation": {
+      "n": 40,
+      "success_rate": 0.0,
+      "feasibility": 0.0,
+      "optimality": 0.0,
+      "path_efficiency_on_success": null,
+      "repeated_action_run_ge_3": 40
+    },
+    "repair": {
+      "n": 60,
+      "success_rate": 0.18333333333333332,
+      "feasibility": 0.6333333333333333,
+      "optimality": 0.18333333333333332,
+      "path_efficiency_on_success": 1.0,
+      "repeated_action_run_ge_3": 38
+    }
+  },
+  "verification_output": "invalid | step=2 | reason=obstacle_collision",
+  "repair_output": "up up up up up up right right"
+}

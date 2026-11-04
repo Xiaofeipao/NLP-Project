@@ -4,3 +4,8 @@ data/** -text
 artifacts/gvr/** -text -whitespace
 artifacts/gvr/models/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
 artifacts/rlvr/** -text -whitespace
+artifacts/campaign_20261103/** -text -whitespace
+artifacts/campaign_20261103/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
+artifacts/campaign_20261103/**/*.zip filter=lfs diff=lfs merge=lfs -text
+artifacts/historical_models/** -text -whitespace
+artifacts/historical_models/**/*.safetensors filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,71 @@
+{
+  "direct": {
+    "n": 200,
+    "success_rate": 0.0,
+    "feasibility": 0.07,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null,
+    "mean_model_calls": 1.0
+  },
+  "executor_one": {
+    "n": 200,
+    "success_rate": 0.0,
+    "feasibility": 0.045,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null,
+    "mean_model_calls": 2.0
+  },
+  "executor_three": {
+    "n": 200,
+    "success_rate": 0.0,
+    "feasibility": 0.02,
+    "optimality": 0.0,
+    "path_efficiency_on_success": null,
+    "mean_model_calls": 3.5
+  },
+  "prefix_raw": {
+    "n": 200,
+    "success_rate": 0.89,
+    "feasibility": 0.915,
+    "optimality": 0.35,
+    "path_efficiency_on_success": 0.7089840247143616,
+    "mean_policy_decisions": 5.26,
+    "mean_step_decisions": 5.26
+  },
+  "prefix_legal": {
+    "n": 200,
+    "success_rate": 0.91,
+    "feasibility": 1.0,
+    "optimality": 0.35,
+    "path_efficiency_on_success": 0.7074585670739515,
+    "mean_policy_decisions": 7.33,
+    "mean_step_decisions": 7.33
+  },
+  "prefix_visit": {
+    "n": 200,
+    "success_rate": 1.0,
+    "feasibility": 1.0,
+    "optimality": 0.37,
+    "path_efficiency_on_success": 0.6912168287365652,
+    "mean_policy_decisions": 5.62,
+    "mean_step_decisions": 5.62
+  },
+  "prefix_visit_heuristic": {
+    "n": 200,
+    "success_rate": 1.0,
+    "feasibility": 1.0,
+    "optimality": 0.39,
+    "path_efficiency_on_success": 0.7050159113332489,
+    "mean_policy_decisions": 0.0,
+    "mean_step_decisions": 5.31
+  },
+  "restart_visit": {
+    "n": 200,
+    "success_rate": 1.0,
+    "feasibility": 1.0,
+    "optimality": 0.825,
+    "path_efficiency_on_success": 0.9330480075480074,
+    "mean_policy_decisions": 5.32,
+    "mean_step_decisions": 5.32
+  }
+}

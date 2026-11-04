@@ -74,6 +74,17 @@ class ExperimentFreezeTests(unittest.TestCase):
         self.assertEqual(validate_freeze(self.lock(), self.config, self.protocol, self.root)["test_status"],
                          "reused_exploratory")
 
+    def test_development_report_on_external_output_disk_is_hash_bound(self):
+        with tempfile.TemporaryDirectory() as external:
+            external_report = Path(external) / "verify_dev.json"
+            external_report.write_bytes(self.report.read_bytes())
+            record = create_freeze(self.config, self.protocol, external_report, "Dev selection", self.root)
+            lock = self.root / "external_freeze.json"
+            write_new_json(lock, record)
+            self.assertEqual(validate_freeze(lock, self.config, self.protocol, self.root)["test_status"], "reused_exploratory")
+            external_report.write_text("{}")
+            with self.assertRaises(ValueError): validate_freeze(lock, self.config, self.protocol, self.root)
+
     def test_cross_split_ids_rejected(self):
         self.rows["dev"][0]["id"] = self.rows["train"][0]["id"]
         self.save_rows()

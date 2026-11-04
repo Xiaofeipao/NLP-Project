@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "base_sha256": "55ec438638017af1f1fc7d9e44950ebbcf6aabf154f162785936e83ee8700b2f",
+    "adapters_sha256": {
+      "verification": "a2d4f573b6e86387e7ed7bcaf75ecf41f46ae420fb938b9420e5992932ff6ab2",
+      "repair": "77db6bfa94ee0bb09ce23d7c51cd01556c01d9a4e086b5dcb6e765a348638a51"
+    }
+  },
+  "disabled_adapter_matches_base": true,
+  "prompt_format": "structured",
+  "dev_diagnostics": {
+    "verification": {
+      "n": 100,
+      "macro_f1": 0.3333333333333333,
+      "format_accuracy": 1.0,
+      "first_error_localization_accuracy": 0.1,
+      "failure_type_accuracy": 0.6,
+      "joint_error_accuracy": 0.04,
+      "predicted_label_counts": {
+        "invalid": 100
+      },
+      "all_valid_warning": false
+    },
+    "generation": {
+      "n": 40,
+      "success_rate": 0.0,
+      "feasibility": 0.0,
+      "optimality": 0.0,
+      "path_efficiency_on_success": null,
+      "repeated_action_run_ge_3": 40
+    },
+    "repair": {
+      "n": 60,
+      "success_rate": 0.13333333333333333,
+      "feasibility": 0.6333333333333333,
+      "optimality": 0.13333333333333333,
+      "path_efficiency_on_success": 1.0,
+      "repeated_action_run_ge_3": 47
+    }
+  },
+  "verification_output": "invalid | step=2 | reason=goal_not_reached",
+  "repair_output": "up left left left left left"
+}

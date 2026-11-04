@@ -1,0 +1,6 @@
+{
+  "method": "legal_no_revisit",
+  "weights_sha256": "4a1cd557dee6ee637c6a7b5acce936baf6b0860cedd76001afeed761c94c5028",
+  "dev_report_sha256": "3097456da77b24d6be9a963f5333086baec51435433087ea839f8eada3de0ae2",
+  "rule": "Dev-only non-search success, optimality; ties keep simpler method"
+}

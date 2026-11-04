@@ -1,0 +1,200 @@
+{"id": "test_id-0", "grid": {"rows": 6, "cols": 6, "obstacles": [[5, 3]], "start": [3, 2], "goal": [5, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-1", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 1], [2, 2], [3, 2]], "start": [3, 4], "goal": [2, 5]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-2", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 5], [5, 0]], "start": [4, 4], "goal": [3, 5]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-3", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3], [5, 3]], "start": [4, 5], "goal": [5, 1]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-4", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [1, 0], [3, 3], [4, 0], [5, 5]], "start": [1, 5], "goal": [4, 4]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-5", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [5, 1]], "start": [1, 4], "goal": [1, 0]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-6", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 5], [4, 1], [5, 5]], "start": [5, 1], "goal": [0, 0]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-7", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [1, 1], [2, 3], [3, 0], [5, 2]], "start": [3, 4], "goal": [3, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-8", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [2, 0], [3, 0], [5, 2]], "start": [4, 0], "goal": [4, 2]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-9", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [2, 1], [3, 3], [4, 2], [5, 0]], "start": [3, 0], "goal": [0, 4]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-10", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3], [2, 3], [4, 5]], "start": [2, 5], "goal": [1, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-11", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 0], [0, 3], [1, 2], [5, 0]], "start": [5, 3], "goal": [2, 1]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-12", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3], [2, 5], [5, 3]], "start": [3, 1], "goal": [1, 0]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-13", "grid": {"rows": 6, "cols": 6, "obstacles": [[4, 5], [5, 2]], "start": [3, 5], "goal": [4, 2]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-14", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [2, 2], [5, 1]], "start": [4, 0], "goal": [0, 2]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-15", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 5], [5, 1]], "start": [0, 5], "goal": [1, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-16", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3]], "start": [0, 4], "goal": [5, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-17", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [2, 0], [2, 5], [4, 1]], "start": [2, 3], "goal": [4, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-18", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [2, 2], [5, 1]], "start": [4, 4], "goal": [5, 0]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-19", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 1], [5, 2]], "start": [3, 4], "goal": [3, 1]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-20", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [1, 4]], "start": [5, 4], "goal": [2, 0]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-21", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [1, 1], [3, 1], [3, 2], [3, 3]], "start": [1, 4], "goal": [2, 5]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-22", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 0], [0, 3], [1, 2], [5, 0]], "start": [4, 1], "goal": [2, 3]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-23", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [1, 4], [2, 1], [3, 0], [5, 1]], "start": [0, 0], "goal": [0, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-24", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [1, 3], [4, 4], [5, 4]], "start": [2, 4], "goal": [5, 0]}, "plan": "up up up up up left left left left left"}
+{"id": "test_id-25", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [1, 1], [3, 1], [3, 2], [3, 3]], "start": [4, 3], "goal": [3, 5]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-26", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [1, 3], [4, 4], [5, 4]], "start": [1, 1], "goal": [5, 1]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-27", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [1, 5], [2, 3], [3, 3], [5, 2]], "start": [1, 3], "goal": [3, 4]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-28", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 2], [1, 4], [2, 1], [2, 2], [3, 4]], "start": [5, 5], "goal": [5, 3]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-29", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [1, 4], [3, 2], [5, 4], [5, 5]], "start": [0, 5], "goal": [0, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-30", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [2, 1], [2, 4]], "start": [4, 5], "goal": [3, 0]}, "plan": "up up up up up left left left left left"}
+{"id": "test_id-31", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [4, 0], [4, 3], [4, 5]], "start": [1, 5], "goal": [3, 4]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-32", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [1, 1], [2, 3], [3, 0], [5, 2]], "start": [4, 0], "goal": [1, 0]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-33", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [2, 1], [3, 3], [4, 2], [5, 0]], "start": [5, 2], "goal": [1, 2]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-34", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 5], [2, 4], [4, 3]], "start": [3, 2], "goal": [0, 5]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-35", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [5, 1]], "start": [3, 0], "goal": [0, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-36", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [0, 5], [4, 0]], "start": [1, 1], "goal": [0, 4]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-37", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [0, 4], [0, 5], [2, 1], [2, 2]], "start": [4, 2], "goal": [4, 4]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-38", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 1], [5, 2]], "start": [1, 0], "goal": [4, 0]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-39", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [3, 3], [5, 3]], "start": [5, 1], "goal": [0, 4]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-40", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [2, 2], [5, 1]], "start": [1, 4], "goal": [4, 5]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-41", "grid": {"rows": 6, "cols": 6, "obstacles": [[4, 1], [4, 4]], "start": [2, 3], "goal": [4, 0]}, "plan": "up up up up left left left left left"}
+{"id": "test_id-42", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 5], [4, 1], [5, 5]], "start": [0, 2], "goal": [5, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-43", "grid": {"rows": 6, "cols": 6, "obstacles": [[3, 2], [5, 0]], "start": [0, 1], "goal": [4, 3]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-44", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 4], [4, 5]], "start": [0, 2], "goal": [1, 0]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-45", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [2, 5], [3, 1], [3, 2], [5, 2]], "start": [3, 4], "goal": [0, 1]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-46", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [1, 0], [3, 3], [4, 0], [5, 5]], "start": [2, 4], "goal": [5, 3]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-47", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 2], [3, 5], [5, 3]], "start": [4, 5], "goal": [0, 0]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-48", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [1, 0], [2, 1], [3, 4], [4, 3]], "start": [4, 1], "goal": [0, 5]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-49", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3]], "start": [2, 1], "goal": [5, 5]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-50", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [1, 0], [3, 3], [4, 0], [5, 5]], "start": [0, 3], "goal": [5, 4]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-51", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [3, 0], [3, 1], [3, 4]], "start": [3, 5], "goal": [1, 0]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-52", "grid": {"rows": 6, "cols": 6, "obstacles": [[4, 0]], "start": [0, 5], "goal": [4, 3]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-53", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 2], [1, 4], [2, 1], [2, 2], [3, 4]], "start": [5, 1], "goal": [4, 0]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-54", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [1, 0], [2, 1], [3, 4], [4, 3]], "start": [2, 0], "goal": [3, 5]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-55", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [1, 4]], "start": [3, 4], "goal": [4, 3]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-56", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 2], [2, 2]], "start": [0, 4], "goal": [1, 0]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-57", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 2], [4, 5]], "start": [1, 1], "goal": [2, 4]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-58", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 0], [2, 4], [4, 1], [5, 2]], "start": [0, 1], "goal": [5, 4]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-59", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 5], [5, 1]], "start": [0, 1], "goal": [2, 5]}, "plan": "down down down down down down down right right"}
+{"id": "test_id-60", "grid": {"rows": 6, "cols": 6, "obstacles": [[4, 0]], "start": [2, 4], "goal": [5, 2]}, "plan": "down down down down down down down down"}
+{"id": "test_id-61", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [4, 0], [4, 4]], "start": [5, 2], "goal": [3, 5]}, "plan": "up up up up up left left left left left"}
+{"id": "test_id-62", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 0], [1, 1], [2, 0], [3, 1], [4, 3]], "start": [5, 0], "goal": [2, 3]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-63", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3], [2, 3], [4, 5]], "start": [5, 1], "goal": [1, 4]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-64", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [3, 3], [4, 2]], "start": [0, 1], "goal": [1, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-65", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 0], [0, 4], [3, 5], [4, 2], [5, 5]], "start": [1, 3], "goal": [2, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-66", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [1, 4], [3, 2], [5, 4], [5, 5]], "start": [2, 3], "goal": [0, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-67", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [2, 4], [3, 3]], "start": [4, 3], "goal": [4, 1]}, "plan": "up up up up up left left left left left"}
+{"id": "test_id-68", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 5], [5, 0]], "start": [4, 1], "goal": [4, 3]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-69", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 4], [4, 0]], "start": [0, 2], "goal": [2, 4]}, "plan": "down down down down down down down down down down down right"}
+{"id": "test_id-70", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [1, 2], [2, 0], [4, 1], [5, 3]], "start": [0, 0], "goal": [0, 3]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-71", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 0], [1, 2], [3, 1], [5, 0]], "start": [5, 2], "goal": [1, 5]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-72", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 5], [2, 4], [4, 3]], "start": [5, 3], "goal": [1, 4]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-73", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 1], [5, 2]], "start": [3, 0], "goal": [1, 4]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-74", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [0, 3]], "start": [1, 0], "goal": [4, 5]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-75", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [5, 0]], "start": [3, 0], "goal": [3, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-76", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [1, 0], [2, 2], [4, 2], [4, 3]], "start": [3, 5], "goal": [0, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-77", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 0], [0, 1], [2, 3], [3, 5], [4, 0]], "start": [0, 3], "goal": [1, 4]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-78", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [2, 4], [3, 3]], "start": [0, 2], "goal": [1, 3]}, "plan": "down down down down down down down down down down down down down down down"}
+{"id": "test_id-79", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 2], [1, 4], [2, 1], [2, 2], [3, 4]], "start": [5, 2], "goal": [4, 5]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-80", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [1, 0], [3, 3], [4, 0], [5, 5]], "start": [1, 5], "goal": [3, 5]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-81", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [5, 5]], "start": [0, 3], "goal": [2, 4]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-82", "grid": {"rows": 6, "cols": 6, "obstacles": [[4, 3], [5, 1]], "start": [1, 4], "goal": [5, 3]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-83", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [0, 4], [0, 5], [2, 1], [2, 2]], "start": [1, 2], "goal": [3, 1]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-84", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [1, 4]], "start": [0, 0], "goal": [2, 5]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-85", "grid": {"rows": 6, "cols": 6, "obstacles": [[4, 3], [4, 4]], "start": [3, 4], "goal": [1, 1]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-86", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [2, 1], [3, 3], [4, 2], [5, 0]], "start": [2, 5], "goal": [2, 2]}, "plan": "up up up up up left left left left left"}
+{"id": "test_id-87", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3], [1, 3], [1, 4], [2, 3], [4, 0]], "start": [2, 1], "goal": [3, 3]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-88", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [2, 1], [2, 4]], "start": [2, 0], "goal": [4, 1]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-89", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 2], [4, 4], [4, 5]], "start": [4, 3], "goal": [2, 0]}, "plan": "up up up up up up left left left left left"}
+{"id": "test_id-90", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [3, 3], [4, 2]], "start": [5, 1], "goal": [2, 3]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-91", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3], [5, 0]], "start": [5, 2], "goal": [2, 0]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-92", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 2], [2, 2]], "start": [0, 1], "goal": [4, 2]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-93", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 5], [4, 1], [5, 5]], "start": [1, 1], "goal": [1, 5]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-94", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [3, 0], [3, 1], [3, 4]], "start": [0, 0], "goal": [1, 4]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-95", "grid": {"rows": 6, "cols": 6, "obstacles": [[4, 3]], "start": [3, 2], "goal": [4, 0]}, "plan": "down down down down down down down down down down right"}
+{"id": "test_id-96", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [2, 2], [4, 1]], "start": [2, 4], "goal": [5, 1]}, "plan": "up up up up up left left left left left"}
+{"id": "test_id-97", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [1, 4]], "start": [4, 3], "goal": [5, 4]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-98", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 5], [5, 1]], "start": [4, 2], "goal": [3, 5]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-99", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [2, 0], [3, 0], [5, 2]], "start": [2, 5], "goal": [3, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-100", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 1], [4, 1], [5, 1], [5, 5]], "start": [5, 3], "goal": [1, 1]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-101", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [5, 1]], "start": [2, 3], "goal": [3, 5]}, "plan": "down down down down down down down down down right"}
+{"id": "test_id-102", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 1], [3, 3], [4, 4], [5, 0]], "start": [3, 4], "goal": [4, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-103", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [1, 1], [3, 1], [3, 2], [3, 3]], "start": [0, 1], "goal": [4, 4]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-104", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3], [2, 3], [4, 5]], "start": [4, 3], "goal": [1, 0]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-105", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [1, 1], [4, 0], [4, 2]], "start": [2, 2], "goal": [1, 0]}, "plan": "down down down down down down down down down"}
+{"id": "test_id-106", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 0], [0, 3], [1, 2], [5, 0]], "start": [1, 0], "goal": [4, 4]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-107", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [2, 1], [3, 3], [4, 2], [5, 0]], "start": [5, 3], "goal": [5, 1]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-108", "grid": {"rows": 6, "cols": 6, "obstacles": [[4, 0]], "start": [1, 3], "goal": [3, 1]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-109", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [5, 1]], "start": [4, 4], "goal": [0, 2]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-110", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [3, 5], [5, 5]], "start": [5, 3], "goal": [0, 3]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-111", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [4, 2], [4, 5]], "start": [2, 1], "goal": [5, 1]}, "plan": "up up up up up left left left left left"}
+{"id": "test_id-112", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [5, 5]], "start": [0, 2], "goal": [2, 3]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-113", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [3, 5], [5, 5]], "start": [1, 3], "goal": [5, 4]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-114", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [4, 0]], "start": [2, 2], "goal": [4, 5]}, "plan": "down down down down down right right"}
+{"id": "test_id-115", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 0], [0, 4], [3, 5], [4, 2], [5, 5]], "start": [4, 0], "goal": [5, 2]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-116", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [1, 0], [2, 2], [4, 2], [4, 3]], "start": [5, 1], "goal": [3, 5]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-117", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [2, 5], [3, 1], [3, 2], [5, 2]], "start": [2, 2], "goal": [0, 0]}, "plan": "down down down down down down down down down"}
+{"id": "test_id-118", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [5, 0]], "start": [5, 4], "goal": [2, 0]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-119", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [1, 4], [3, 2], [5, 4], [5, 5]], "start": [5, 3], "goal": [3, 3]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-120", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [2, 4], [3, 3]], "start": [2, 0], "goal": [3, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-121", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [2, 1], [2, 4]], "start": [0, 3], "goal": [3, 4]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-122", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [1, 4], [3, 2], [5, 4], [5, 5]], "start": [4, 1], "goal": [1, 5]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-123", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [3, 3], [5, 3]], "start": [3, 2], "goal": [4, 0]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-124", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [3, 3], [4, 2]], "start": [2, 3], "goal": [3, 1]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-125", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [1, 0], [4, 2], [5, 5]], "start": [4, 0], "goal": [0, 4]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-126", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [1, 2], [2, 0], [4, 1], [5, 3]], "start": [0, 5], "goal": [0, 3]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-127", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [2, 2], [5, 1]], "start": [0, 0], "goal": [5, 5]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-128", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [2, 1], [3, 3], [4, 2], [5, 0]], "start": [1, 1], "goal": [3, 5]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-129", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [4, 0], [4, 4]], "start": [3, 0], "goal": [4, 5]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-130", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 4], [2, 5], [3, 2], [3, 4]], "start": [5, 5], "goal": [2, 2]}, "plan": "up up up up up left left left left left"}
+{"id": "test_id-131", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [1, 5], [2, 3], [3, 3], [5, 2]], "start": [3, 1], "goal": [5, 5]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-132", "grid": {"rows": 6, "cols": 6, "obstacles": [[5, 2]], "start": [3, 1], "goal": [2, 4]}, "plan": "down down down down down down down down right right"}
+{"id": "test_id-133", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [1, 0], [4, 2], [5, 5]], "start": [5, 4], "goal": [2, 2]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-134", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [4, 0]], "start": [3, 4], "goal": [2, 3]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-135", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [1, 2], [2, 0], [4, 1], [5, 3]], "start": [5, 5], "goal": [2, 3]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-136", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [2, 5], [3, 1], [3, 2], [5, 2]], "start": [4, 1], "goal": [5, 4]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-137", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [0, 3]], "start": [5, 1], "goal": [3, 4]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-138", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 2], [1, 4], [2, 1], [2, 2], [3, 4]], "start": [4, 4], "goal": [3, 3]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-139", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [2, 0], [3, 0], [5, 2]], "start": [5, 1], "goal": [0, 0]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-140", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 0], [1, 1], [3, 3]], "start": [5, 0], "goal": [5, 2]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-141", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [5, 0]], "start": [5, 4], "goal": [0, 3]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-142", "grid": {"rows": 6, "cols": 6, "obstacles": [[4, 0]], "start": [1, 1], "goal": [4, 4]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-143", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [5, 1]], "start": [4, 5], "goal": [1, 1]}, "plan": "up up up up up up left left left left left"}
+{"id": "test_id-144", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [5, 1]], "start": [3, 4], "goal": [0, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-145", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [1, 0], [1, 1], [5, 2]], "start": [3, 0], "goal": [1, 3]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-146", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [1, 0], [4, 2], [5, 5]], "start": [0, 0], "goal": [1, 1]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-147", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 2], [1, 4], [2, 1], [2, 2], [3, 4]], "start": [2, 5], "goal": [4, 2]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-148", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [1, 1], [4, 0], [4, 2]], "start": [4, 5], "goal": [5, 1]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-149", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [3, 3], [4, 2]], "start": [4, 0], "goal": [4, 5]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-150", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [0, 5], [4, 0]], "start": [3, 1], "goal": [1, 3]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-151", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3], [2, 3], [4, 5]], "start": [1, 4], "goal": [5, 4]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-152", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 5], [2, 4], [4, 3]], "start": [5, 2], "goal": [3, 1]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-153", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [0, 4], [0, 5], [2, 1], [2, 2]], "start": [3, 4], "goal": [2, 0]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-154", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [1, 4], [2, 1], [3, 0], [5, 1]], "start": [0, 0], "goal": [4, 5]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-155", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [1, 0], [1, 1], [5, 2]], "start": [4, 3], "goal": [2, 1]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-156", "grid": {"rows": 6, "cols": 6, "obstacles": [[4, 3], [5, 1]], "start": [2, 0], "goal": [2, 2]}, "plan": "down down down down down down down down down"}
+{"id": "test_id-157", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3]], "start": [4, 1], "goal": [2, 1]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-158", "grid": {"rows": 6, "cols": 6, "obstacles": [[3, 4], [4, 3], [5, 4]], "start": [1, 1], "goal": [0, 2]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-159", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [2, 4], [3, 3]], "start": [4, 1], "goal": [5, 2]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-160", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [1, 0], [4, 2], [5, 5]], "start": [0, 3], "goal": [2, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-161", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 4], [2, 2], [5, 2], [5, 4]], "start": [5, 1], "goal": [5, 5]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-162", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [0, 3]], "start": [0, 0], "goal": [3, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-163", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [2, 5], [3, 1]], "start": [2, 0], "goal": [4, 5]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-164", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 0], [0, 1], [2, 3], [3, 5], [4, 0]], "start": [1, 5], "goal": [0, 4]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-165", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 4], [1, 3], [2, 2]], "start": [5, 3], "goal": [4, 4]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-166", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 1], [3, 3], [4, 4], [5, 0]], "start": [4, 0], "goal": [3, 5]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-167", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 0], [1, 2], [3, 1], [5, 0]], "start": [2, 2], "goal": [2, 5]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-168", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [1, 5], [2, 3], [3, 3], [5, 2]], "start": [4, 3], "goal": [3, 4]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-169", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 5], [2, 4], [4, 3]], "start": [3, 3], "goal": [0, 0]}, "plan": "down down down down down down down down down down down down down"}
+{"id": "test_id-170", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [2, 0], [2, 5], [4, 1]], "start": [4, 5], "goal": [5, 3]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-171", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [3, 3], [4, 2]], "start": [0, 2], "goal": [2, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-172", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3]], "start": [5, 1], "goal": [0, 4]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-173", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [1, 4], [2, 1], [3, 0], [5, 1]], "start": [3, 1], "goal": [1, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-174", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [1, 4], [2, 1], [3, 0], [5, 1]], "start": [4, 2], "goal": [3, 5]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-175", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [5, 1]], "start": [4, 5], "goal": [2, 4]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-176", "grid": {"rows": 6, "cols": 6, "obstacles": [[5, 3]], "start": [5, 4], "goal": [5, 1]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-177", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [0, 5], [1, 2], [1, 4], [3, 5]], "start": [0, 2], "goal": [1, 5]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-178", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3], [1, 3], [1, 4], [2, 3], [4, 0]], "start": [2, 4], "goal": [4, 5]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-179", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [4, 2], [4, 5]], "start": [0, 3], "goal": [3, 4]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-180", "grid": {"rows": 6, "cols": 6, "obstacles": [[3, 4], [4, 3], [5, 4]], "start": [2, 4], "goal": [1, 3]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-181", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [0, 5], [4, 0]], "start": [3, 5], "goal": [2, 4]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-182", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 5], [1, 0], [4, 2], [5, 5]], "start": [3, 4], "goal": [3, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-183", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [2, 0], [3, 0], [5, 2]], "start": [4, 4], "goal": [4, 2]}, "plan": "up up up up up left left left left left"}
+{"id": "test_id-184", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [1, 0], [3, 3], [4, 0], [5, 5]], "start": [1, 5], "goal": [1, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-185", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3], [5, 3]], "start": [3, 1], "goal": [1, 2]}, "plan": "down down down down down down down down down down down down"}
+{"id": "test_id-186", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 2], [0, 4], [0, 5], [2, 1], [2, 2]], "start": [2, 4], "goal": [1, 2]}, "plan": "down down down down down down down down down"}
+{"id": "test_id-187", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 1], [5, 2]], "start": [0, 5], "goal": [1, 0]}, "plan": "down down down down down down down down down down"}
+{"id": "test_id-188", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 2], [4, 5]], "start": [2, 1], "goal": [3, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-189", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [5, 1]], "start": [5, 0], "goal": [3, 3]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-190", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 0], [1, 2], [3, 1], [5, 0]], "start": [4, 3], "goal": [0, 5]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-191", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 0], [5, 1]], "start": [3, 2], "goal": [1, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-192", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 1], [2, 1], [2, 4]], "start": [3, 4], "goal": [3, 0]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-193", "grid": {"rows": 6, "cols": 6, "obstacles": [[3, 2], [5, 0]], "start": [1, 0], "goal": [4, 2]}, "plan": "down down down down down down down down down down down"}
+{"id": "test_id-194", "grid": {"rows": 6, "cols": 6, "obstacles": [[2, 4], [4, 5]], "start": [5, 5], "goal": [1, 3]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-195", "grid": {"rows": 6, "cols": 6, "obstacles": [[4, 3], [5, 1]], "start": [4, 5], "goal": [5, 4]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-196", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 1], [1, 4], [2, 1], [3, 0], [5, 1]], "start": [5, 4], "goal": [0, 1]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-197", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 3], [2, 3], [4, 5]], "start": [5, 4], "goal": [1, 0]}, "plan": "up up up up up up left left left left"}
+{"id": "test_id-198", "grid": {"rows": 6, "cols": 6, "obstacles": [[0, 0], [0, 4], [3, 5], [4, 2], [5, 5]], "start": [4, 0], "goal": [5, 1]}, "plan": "up up up up up up up left left left left"}
+{"id": "test_id-199", "grid": {"rows": 6, "cols": 6, "obstacles": [[1, 3], [2, 0], [2, 5], [4, 1]], "start": [0, 5], "goal": [2, 4]}, "plan": "down down down down down down down down down down down down"}

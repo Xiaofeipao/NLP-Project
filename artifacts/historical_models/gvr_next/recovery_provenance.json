@@ -1,0 +1,10 @@
+{
+  "reason": "Windows snapshot replacement PermissionError; journal remains authoritative",
+  "changed_sources": {
+    "ppnl/harness.py": "31b9ba2abf7c97975f16278012ac6c4fe33a6dc0a09d3329f5318643be4c2545"
+  },
+  "regression_tests_passed": 72,
+  "failed_evaluation_directory": "evaluation/test_id",
+  "completed_evaluation_directory": "evaluation/test_id_resume",
+  "monitor": "read_session journal inspection; no state.json reads"
+}

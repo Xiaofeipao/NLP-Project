@@ -1,0 +1,10 @@
+{
+  "model": "bart_base",
+  "epoch": 2,
+  "epochs": 2,
+  "batch": 1000,
+  "batches": 1000,
+  "updates": 500,
+  "mean_train_loss": 0.5072798664048314,
+  "elapsed_seconds": 231.13911369999914
+}

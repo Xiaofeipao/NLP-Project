@@ -32,7 +32,7 @@ def stage_options(protocol, stage):
     return options
 
 
-def sequence_status_loss(logits, labels, status_weight):
+def sequence_status_loss(logits, labels, status_weight, status_position=0):
     """Equal weight per example, plus supervision of the first verdict token.
 
     The caller checks that valid/invalid verdicts have distinct first tokens.
@@ -40,19 +40,20 @@ def sequence_status_loss(logits, labels, status_weight):
     """
     import torch.nn.functional as F
 
-    if labels.ndim != 2 or labels.shape[1] == 0 or (labels[:, 0] == -100).any():
+    if labels.ndim != 2 or labels.shape[1] <= status_position or (labels[:, status_position] == -100).any():
         raise ValueError("Verification labels need an unmasked first token")
     mask = labels != -100
     losses = F.cross_entropy(logits.float().transpose(1, 2), labels, ignore_index=-100, reduction="none")
     sequence_mean = (losses.sum(dim=1) / mask.sum(dim=1)).mean()
-    return sequence_mean + status_weight * losses[:, 0].mean()
+    return sequence_mean + status_weight * losses[:, status_position].mean()
 
 
 def training_loss(runner, batch, options):
     if options["loss"] == "token_mean":
         return runner.loss(batch)
     output = runner.model(**batch)
-    return sequence_status_loss(output.logits, batch["labels"], options["status_weight"])
+    position = 1 if getattr(runner.model.config, "model_type", None) == "bart" else 0
+    return sequence_status_loss(output.logits, batch["labels"], options["status_weight"], position)
 
 
 def checkpoint_rank(stage, dev_loss, diagnostics, options):

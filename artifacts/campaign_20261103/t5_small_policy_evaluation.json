@@ -1,0 +1,5 @@
+{
+  "kind": "state_policy",
+  "config": "outputs\\campaign_20261103\\t5_small_policy.json",
+  "base": "outputs\\campaign_20261103\\policies\\t5_small\\t5_small\\train\\best"
+}

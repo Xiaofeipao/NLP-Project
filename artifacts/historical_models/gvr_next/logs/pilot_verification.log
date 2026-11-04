@@ -1,0 +1,82 @@
+{
+  "stage": "verification",
+  "pilot": true,
+  "train_rows": 32,
+  "dev_rows": 100,
+  "examples_processed": 32,
+  "optimizer_updates": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "dev_loss": 11.063296432495116,
+      "dev_diagnostics": null,
+      "selection_rank": [
+        -11.063296432495116
+      ]
+    }
+  ],
+  "source_checkpoint": "outputs\\gvr_next\\generation\\train\\best",
+  "source_revision": null,
+  "generation_base_sha256": "d0f497f2dfc455b343fb3045628353fa851876cb4adc56ba40fafa9acc8a1494",
+  "task_index_source_sha256": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+  "lengths": {
+    "max_input_tokens": 158,
+    "max_target_tokens": 16
+  },
+  "training_config": {
+    "precision": "float32",
+    "epochs": 2,
+    "batch_size": 8,
+    "eval_batch_size": 8,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "max_input_tokens": 512,
+    "max_target_tokens": 128,
+    "pilot_batches": 4
+  },
+  "training_signature": {
+    "training": {
+      "precision": "float32",
+      "epochs": 2,
+      "batch_size": 8,
+      "eval_batch_size": 8,
+      "gradient_accumulation_steps": 2,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "max_input_tokens": 512,
+      "max_target_tokens": 128,
+      "pilot_batches": 4
+    },
+    "stage_options": {
+      "loss": "sequence_and_status",
+      "status_weight": 1.0,
+      "selection": "task_metrics",
+      "learning_rate": 0.001
+    },
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05
+    }
+  },
+  "stage_options": {
+    "loss": "sequence_and_status",
+    "status_weight": 1.0,
+    "selection": "task_metrics",
+    "learning_rate": 0.001
+  },
+  "best_epoch": 1,
+  "best_selection_rank": [
+    -11.063296432495116
+  ],
+  "effective_learning_rate": 0.001,
+  "adapter": {
+    "matched_modules": 48,
+    "trainable_parameters": 344064,
+    "total_parameters": 77305216
+  },
+  "gpu": "CUDA GPU",
+  "peak_allocated_bytes": 1079322624,
+  "elapsed_seconds": 1.9722435000003316
+}

@@ -1,0 +1,6 @@
+{
+  "generation_base_sha256": "57fcf1a44dbdaf41f9b47b5a20dafa59677b523f48059688b494a4b89fb1345a",
+  "stage": "repair",
+  "task_index_source_sha256": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+  "prompt_format": "structured"
+}

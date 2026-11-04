@@ -1,0 +1,5 @@
+{
+  "kind": "state_policy",
+  "config": "outputs\\campaign_20261103\\bart_base_policy.json",
+  "base": "outputs\\campaign_20261103\\policies\\bart_base\\bart_base\\train\\best"
+}

@@ -1,0 +1,249 @@
+{
+  "metrics": {
+    "step": 48,
+    "success_rate": 0.0,
+    "mean_reward": -0.9413769841269838
+  },
+  "cases": [
+    {
+      "id": "dev-generation-31",
+      "plan": "up up up right right right",
+      "success": false,
+      "reward": -1.2028571428571428
+    },
+    {
+      "id": "dev-generation-11",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -0.935
+    },
+    {
+      "id": "dev-generation-36",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.06
+    },
+    {
+      "id": "dev-generation-0",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -0.21666666666666667
+    },
+    {
+      "id": "dev-generation-37",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.36
+    },
+    {
+      "id": "dev-generation-15",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.2266666666666668
+    },
+    {
+      "id": "dev-generation-27",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -1.3
+    },
+    {
+      "id": "dev-generation-21",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -0.76
+    },
+    {
+      "id": "dev-generation-12",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -1.55
+    },
+    {
+      "id": "dev-generation-23",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.2266666666666668
+    },
+    {
+      "id": "dev-generation-39",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -0.06
+    },
+    {
+      "id": "dev-generation-2",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -1.175
+    },
+    {
+      "id": "dev-generation-29",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.06
+    },
+    {
+      "id": "dev-generation-38",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -0.81
+    },
+    {
+      "id": "dev-generation-34",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -0.06
+    },
+    {
+      "id": "dev-generation-16",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.06
+    },
+    {
+      "id": "dev-generation-10",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -1.05
+    },
+    {
+      "id": "dev-generation-9",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -0.21666666666666667
+    },
+    {
+      "id": "dev-generation-26",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -0.9500000000000001
+    },
+    {
+      "id": "dev-generation-7",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -1.3833333333333333
+    },
+    {
+      "id": "dev-generation-33",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -1.2166666666666668
+    },
+    {
+      "id": "dev-generation-4",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.56
+    },
+    {
+      "id": "dev-generation-3",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.06
+    },
+    {
+      "id": "dev-generation-28",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -1.1500000000000001
+    },
+    {
+      "id": "dev-generation-14",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -1.3833333333333333
+    },
+    {
+      "id": "dev-generation-19",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.81
+    },
+    {
+      "id": "dev-generation-5",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.06
+    },
+    {
+      "id": "dev-generation-13",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.06
+    },
+    {
+      "id": "dev-generation-30",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -0.925
+    },
+    {
+      "id": "dev-generation-25",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.06
+    },
+    {
+      "id": "dev-generation-32",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": 0.11666666666666665
+    },
+    {
+      "id": "dev-generation-20",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -0.8600000000000001
+    },
+    {
+      "id": "dev-generation-17",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": 0.3666666666666667
+    },
+    {
+      "id": "dev-generation-18",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -0.81
+    },
+    {
+      "id": "dev-generation-1",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": 0.075
+    },
+    {
+      "id": "dev-generation-35",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.06
+    },
+    {
+      "id": "dev-generation-8",
+      "plan": "up up up right right",
+      "success": false,
+      "reward": -1.2166666666666668
+    },
+    {
+      "id": "dev-generation-24",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.31
+    },
+    {
+      "id": "dev-generation-6",
+      "plan": "up up up up right right",
+      "success": false,
+      "reward": -1.1155555555555556
+    },
+    {
+      "id": "dev-generation-22",
+      "plan": "up up up right right right",
+      "success": false,
+      "reward": -0.8933333333333333
+    }
+  ]
+}

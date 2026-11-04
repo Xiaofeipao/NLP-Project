@@ -136,6 +136,13 @@ class Seq2Seq:
                 raise ValueError(f"{row['id']}: input={n}, target={m}; truncation is forbidden")
             features.append({k: values[i] for k, values in inputs.items()})
             features[-1]["labels"] = targets["input_ids"][i]
+            # BART text targets start with BOS, but the one-step action head is
+            # scored directly from decoder_start_token_id. Align policy labels
+            # only; retain the original text labels for verification examples.
+            if (self.policy_loss and row.get("optimal_actions") and
+                    self.model.config.model_type == "bart" and
+                    features[-1]["labels"][0] == self.tokenizer.bos_token_id):
+                features[-1]["labels"] = features[-1]["labels"][1:]
             if self.policy_loss:
                 actions = row.get("optimal_actions", [])
                 features[-1]["policy_actions"] = [a in actions for a in ("up", "down", "left", "right")]
