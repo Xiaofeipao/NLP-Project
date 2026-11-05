@@ -1,0 +1,4097 @@
+{
+  "kind": "diagnostic_only",
+  "probe": {
+    "unreachable_detected": 0,
+    "unreachable_total": 4,
+    "reachable_solved": 0,
+    "reachable_false_refusals": 0,
+    "reachable_total": 4
+  },
+  "predictions": {
+    "case-01": "up up up",
+    "case-02": "up up up",
+    "case-03": "down down down down",
+    "case-04": "down down down down",
+    "case-05": "down down down",
+    "case-06": "down down down",
+    "case-07": "down down down",
+    "case-08": "down down down"
+  },
+  "tree_sha256": "a2b1a7ff4f5d025a1f073774b4acde0cc678fc9da46bb6378a059125fd3a1b6c",
+  "baseline_sha256": "3a879746cfe461a1e3a19e8c1282aaa6038fc6fbe8d89fc49a9a297e77314432",
+  "policy_sha256": "7b328dc2240bb45f9471db69b5d084dc0dec3815e97bc3c9ee07271bfd8e2a13",
+  "test_status": "eight public curated probes; reused repair tests",
+  "repair": {
+    "dev": {
+      "tree": {
+        "metrics": {
+          "n": 60,
+          "success_rate": 0.18333333333333332,
+          "feasibility": 0.5666666666666667,
+          "optimality": 0.18333333333333332,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair_calls": 60,
+        "cases": [
+          {
+            "id": "dev-repair-48",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left left"
+          },
+          {
+            "id": "dev-repair-47",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "dev-repair-37",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-29",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down left left left"
+          },
+          {
+            "id": "dev-repair-7",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-56",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "dev-repair-59",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up up up up right right right"
+          },
+          {
+            "id": "dev-repair-57",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "left left left left"
+          },
+          {
+            "id": "dev-repair-20",
+            "feedback": "invalid | step=9 | reason=goal_not_reached",
+            "plan": "up up up up left up left up"
+          },
+          {
+            "id": "dev-repair-16",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "dev-repair-15",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down down right"
+          },
+          {
+            "id": "dev-repair-43",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-44",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up right right right right"
+          },
+          {
+            "id": "dev-repair-25",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up left left"
+          },
+          {
+            "id": "dev-repair-52",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up right right down down down"
+          },
+          {
+            "id": "dev-repair-10",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "right right up right up"
+          },
+          {
+            "id": "dev-repair-0",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up down down"
+          },
+          {
+            "id": "dev-repair-38",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "left down down down down down right"
+          },
+          {
+            "id": "dev-repair-35",
+            "feedback": "invalid | step=7 | reason=out_of_bounds",
+            "plan": "up up up left left left left"
+          },
+          {
+            "id": "dev-repair-53",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-4",
+            "feedback": "invalid | step=9 | reason=out_of_bounds",
+            "plan": "down down down down right right right right right right"
+          },
+          {
+            "id": "dev-repair-46",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "down left down down down down left"
+          },
+          {
+            "id": "dev-repair-23",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "left left left"
+          },
+          {
+            "id": "dev-repair-54",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "dev-repair-51",
+            "feedback": "invalid | step=2 | reason=out_of_bounds",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-32",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-27",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          },
+          {
+            "id": "dev-repair-1",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "right right right right right"
+          },
+          {
+            "id": "dev-repair-2",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "dev-repair-8",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up up right right right"
+          },
+          {
+            "id": "dev-repair-17",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down left"
+          },
+          {
+            "id": "dev-repair-36",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "dev-repair-13",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left down down left"
+          },
+          {
+            "id": "dev-repair-50",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "right down right right right right"
+          },
+          {
+            "id": "dev-repair-11",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "right right right right"
+          },
+          {
+            "id": "dev-repair-30",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up right"
+          },
+          {
+            "id": "dev-repair-19",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "down down down left left left left"
+          },
+          {
+            "id": "dev-repair-42",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-40",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up right down"
+          },
+          {
+            "id": "dev-repair-12",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down left left"
+          },
+          {
+            "id": "dev-repair-58",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "up right right"
+          },
+          {
+            "id": "dev-repair-28",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "up up up up left up left left left"
+          },
+          {
+            "id": "dev-repair-14",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up right right down right"
+          },
+          {
+            "id": "dev-repair-22",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up left"
+          },
+          {
+            "id": "dev-repair-26",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down left left left"
+          },
+          {
+            "id": "dev-repair-33",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          },
+          {
+            "id": "dev-repair-41",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "up up up up right up right"
+          },
+          {
+            "id": "dev-repair-39",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-45",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          },
+          {
+            "id": "dev-repair-3",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down right right"
+          },
+          {
+            "id": "dev-repair-18",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "up left left left up up right"
+          },
+          {
+            "id": "dev-repair-6",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-55",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down down down down down left"
+          },
+          {
+            "id": "dev-repair-24",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up right"
+          },
+          {
+            "id": "dev-repair-34",
+            "feedback": "invalid | step=11 | reason=goal_not_reached",
+            "plan": "up up up up left left left left left left"
+          },
+          {
+            "id": "dev-repair-5",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up right right"
+          },
+          {
+            "id": "dev-repair-31",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down left left left left up"
+          },
+          {
+            "id": "dev-repair-21",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-9",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "right up up up up up"
+          },
+          {
+            "id": "dev-repair-49",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "down down down down right right"
+          }
+        ]
+      },
+      "executor": {
+        "metrics": {
+          "n": 60,
+          "success_rate": 0.18333333333333332,
+          "feasibility": 0.5666666666666667,
+          "optimality": 0.18333333333333332,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair_calls": 60,
+        "cases": [
+          {
+            "id": "dev-repair-48",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left left"
+          },
+          {
+            "id": "dev-repair-47",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "dev-repair-37",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-29",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down left left left"
+          },
+          {
+            "id": "dev-repair-7",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-56",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "dev-repair-59",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up up up up right right right"
+          },
+          {
+            "id": "dev-repair-57",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "left left left left"
+          },
+          {
+            "id": "dev-repair-20",
+            "feedback": "invalid | step=9 | reason=goal_not_reached",
+            "plan": "up up up up left up left up"
+          },
+          {
+            "id": "dev-repair-16",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "dev-repair-15",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down down right"
+          },
+          {
+            "id": "dev-repair-43",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-44",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up right right right right"
+          },
+          {
+            "id": "dev-repair-25",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up left left"
+          },
+          {
+            "id": "dev-repair-52",
+            "feedback": "invalid | step=4 | reason=obstacle_collision",
+            "plan": "up right right down down down"
+          },
+          {
+            "id": "dev-repair-10",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "right right up right up"
+          },
+          {
+            "id": "dev-repair-0",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up down down"
+          },
+          {
+            "id": "dev-repair-38",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "left down down down down down right"
+          },
+          {
+            "id": "dev-repair-35",
+            "feedback": "invalid | step=7 | reason=out_of_bounds",
+            "plan": "up up up left left left left"
+          },
+          {
+            "id": "dev-repair-53",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-4",
+            "feedback": "invalid | step=1 | reason=obstacle_collision",
+            "plan": "down down down down right right right right right right"
+          },
+          {
+            "id": "dev-repair-46",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "down left down down down down left"
+          },
+          {
+            "id": "dev-repair-23",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "left left left"
+          },
+          {
+            "id": "dev-repair-54",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "dev-repair-51",
+            "feedback": "invalid | step=1 | reason=obstacle_collision",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-32",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-27",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          },
+          {
+            "id": "dev-repair-1",
+            "feedback": "invalid | step=2 | reason=obstacle_collision",
+            "plan": "right right right right right"
+          },
+          {
+            "id": "dev-repair-2",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "dev-repair-8",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up up right right right"
+          },
+          {
+            "id": "dev-repair-17",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down left"
+          },
+          {
+            "id": "dev-repair-36",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "dev-repair-13",
+            "feedback": "invalid | step=4 | reason=obstacle_collision",
+            "plan": "down down down left"
+          },
+          {
+            "id": "dev-repair-50",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "right down right right right right"
+          },
+          {
+            "id": "dev-repair-11",
+            "feedback": "invalid | step=1 | reason=obstacle_collision",
+            "plan": "right right right right"
+          },
+          {
+            "id": "dev-repair-30",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up right"
+          },
+          {
+            "id": "dev-repair-19",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "down down down left left left left"
+          },
+          {
+            "id": "dev-repair-42",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-40",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up right down"
+          },
+          {
+            "id": "dev-repair-12",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down left left"
+          },
+          {
+            "id": "dev-repair-58",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "up right right"
+          },
+          {
+            "id": "dev-repair-28",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "up up up up left up left left left"
+          },
+          {
+            "id": "dev-repair-14",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up right right down right"
+          },
+          {
+            "id": "dev-repair-22",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up left"
+          },
+          {
+            "id": "dev-repair-26",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down left left left"
+          },
+          {
+            "id": "dev-repair-33",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          },
+          {
+            "id": "dev-repair-41",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "up up up up right up right"
+          },
+          {
+            "id": "dev-repair-39",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-45",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          },
+          {
+            "id": "dev-repair-3",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down right right"
+          },
+          {
+            "id": "dev-repair-18",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "up left left left up up right"
+          },
+          {
+            "id": "dev-repair-6",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-55",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down down down down down left"
+          },
+          {
+            "id": "dev-repair-24",
+            "feedback": "invalid | step=2 | reason=obstacle_collision",
+            "plan": "up right"
+          },
+          {
+            "id": "dev-repair-34",
+            "feedback": "invalid | step=9 | reason=obstacle_collision",
+            "plan": "up up up up left left left left left left"
+          },
+          {
+            "id": "dev-repair-5",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up right right"
+          },
+          {
+            "id": "dev-repair-31",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down left left left left up"
+          },
+          {
+            "id": "dev-repair-21",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-9",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "right up up up up up"
+          },
+          {
+            "id": "dev-repair-49",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "down down down down right right"
+          }
+        ]
+      },
+      "model": {
+        "metrics": {
+          "n": 60,
+          "success_rate": 0.18333333333333332,
+          "feasibility": 0.65,
+          "optimality": 0.18333333333333332,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair_calls": 48,
+        "cases": [
+          {
+            "id": "dev-repair-48",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left left left"
+          },
+          {
+            "id": "dev-repair-47",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "dev-repair-37",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-29",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "down left left left"
+          },
+          {
+            "id": "dev-repair-7",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-56",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "dev-repair-59",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up up up right right right"
+          },
+          {
+            "id": "dev-repair-57",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left left left"
+          },
+          {
+            "id": "dev-repair-20",
+            "feedback": "valid",
+            "plan": "up up left up up left up down"
+          },
+          {
+            "id": "dev-repair-16",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "dev-repair-15",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down down right"
+          },
+          {
+            "id": "dev-repair-43",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-44",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up right right right right"
+          },
+          {
+            "id": "dev-repair-25",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up left left"
+          },
+          {
+            "id": "dev-repair-52",
+            "feedback": "valid",
+            "plan": "up right right down right down"
+          },
+          {
+            "id": "dev-repair-10",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "right right up right up"
+          },
+          {
+            "id": "dev-repair-0",
+            "feedback": "valid",
+            "plan": "up down down"
+          },
+          {
+            "id": "dev-repair-38",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "left down down down down down right"
+          },
+          {
+            "id": "dev-repair-35",
+            "feedback": "valid",
+            "plan": "up up up left left left left"
+          },
+          {
+            "id": "dev-repair-53",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-4",
+            "feedback": "valid",
+            "plan": "right down down down right right right right right"
+          },
+          {
+            "id": "dev-repair-46",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down left down down down down left"
+          },
+          {
+            "id": "dev-repair-23",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left left"
+          },
+          {
+            "id": "dev-repair-54",
+            "feedback": "valid",
+            "plan": "down up down right"
+          },
+          {
+            "id": "dev-repair-51",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-32",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-27",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          },
+          {
+            "id": "dev-repair-1",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "right right right right right"
+          },
+          {
+            "id": "dev-repair-2",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "dev-repair-8",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up up right right right"
+          },
+          {
+            "id": "dev-repair-17",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down left"
+          },
+          {
+            "id": "dev-repair-36",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "dev-repair-13",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left down down left"
+          },
+          {
+            "id": "dev-repair-50",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "right down right right right right"
+          },
+          {
+            "id": "dev-repair-11",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "right right right right"
+          },
+          {
+            "id": "dev-repair-30",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up right"
+          },
+          {
+            "id": "dev-repair-19",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "down down down left left left left"
+          },
+          {
+            "id": "dev-repair-42",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-40",
+            "feedback": "valid",
+            "plan": "up left right down"
+          },
+          {
+            "id": "dev-repair-12",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down left left"
+          },
+          {
+            "id": "dev-repair-58",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "up right right"
+          },
+          {
+            "id": "dev-repair-28",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up up up left up left left left"
+          },
+          {
+            "id": "dev-repair-14",
+            "feedback": "valid",
+            "plan": "up up right right down right"
+          },
+          {
+            "id": "dev-repair-22",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up left"
+          },
+          {
+            "id": "dev-repair-26",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down left left left"
+          },
+          {
+            "id": "dev-repair-33",
+            "feedback": "valid",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "dev-repair-41",
+            "feedback": "invalid | step=5 | reason=obstacle_collision",
+            "plan": "up up up up right up right"
+          },
+          {
+            "id": "dev-repair-39",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "left left"
+          },
+          {
+            "id": "dev-repair-45",
+            "feedback": "valid",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "dev-repair-3",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down right right"
+          },
+          {
+            "id": "dev-repair-18",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up left left left up up right"
+          },
+          {
+            "id": "dev-repair-6",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-55",
+            "feedback": "valid",
+            "plan": "down down down down left"
+          },
+          {
+            "id": "dev-repair-24",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "up right"
+          },
+          {
+            "id": "dev-repair-34",
+            "feedback": "valid",
+            "plan": "up up up up left left left down left left"
+          },
+          {
+            "id": "dev-repair-5",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "up right right"
+          },
+          {
+            "id": "dev-repair-31",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down left left left left up"
+          },
+          {
+            "id": "dev-repair-21",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "dev-repair-9",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "right up up up up up"
+          },
+          {
+            "id": "dev-repair-49",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "down down down down right right"
+          }
+        ]
+      }
+    },
+    "test_id": {
+      "tree": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.24,
+          "feasibility": 0.6,
+          "optimality": 0.24,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair_calls": 100,
+        "cases": [
+          {
+            "id": "test_id-1",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down right right"
+          },
+          {
+            "id": "test_id-3",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left left left left"
+          },
+          {
+            "id": "test_id-5",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "left left left left left left"
+          },
+          {
+            "id": "test_id-7",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-9",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "right right up up up right right"
+          },
+          {
+            "id": "test_id-11",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up left left"
+          },
+          {
+            "id": "test_id-13",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "left down left"
+          },
+          {
+            "id": "test_id-15",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "down left down left left left left left"
+          },
+          {
+            "id": "test_id-17",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down down"
+          },
+          {
+            "id": "test_id-19",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left left left"
+          },
+          {
+            "id": "test_id-21",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-23",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "right right"
+          },
+          {
+            "id": "test_id-25",
+            "feedback": "invalid | step=4 | reason=out_of_bounds",
+            "plan": "right right up right"
+          },
+          {
+            "id": "test_id-27",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down down"
+          },
+          {
+            "id": "test_id-29",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left left left left left"
+          },
+          {
+            "id": "test_id-31",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-33",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up up up"
+          },
+          {
+            "id": "test_id-35",
+            "feedback": "invalid | step=5 | reason=out_of_bounds",
+            "plan": "up up up up left"
+          },
+          {
+            "id": "test_id-37",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up right right"
+          },
+          {
+            "id": "test_id-39",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "up up up up right right right"
+          },
+          {
+            "id": "test_id-41",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down left left left up down"
+          },
+          {
+            "id": "test_id-43",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          },
+          {
+            "id": "test_id-45",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "up left up up left left left"
+          },
+          {
+            "id": "test_id-47",
+            "feedback": "invalid | step=9 | reason=goal_not_reached",
+            "plan": "up up up up left left left"
+          },
+          {
+            "id": "test_id-49",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "down down down right right right right"
+          },
+          {
+            "id": "test_id-51",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "up left left left left left up"
+          },
+          {
+            "id": "test_id-53",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-55",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-57",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-59",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down right right right right right"
+          },
+          {
+            "id": "test_id-61",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up right right right right"
+          },
+          {
+            "id": "test_id-63",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up right right right"
+          },
+          {
+            "id": "test_id-65",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up left"
+          },
+          {
+            "id": "test_id-67",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "test_id-69",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down right right right"
+          },
+          {
+            "id": "test_id-71",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "up up up right right right right"
+          },
+          {
+            "id": "test_id-73",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up right right right right right"
+          },
+          {
+            "id": "test_id-75",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "right right right"
+          },
+          {
+            "id": "test_id-77",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-79",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up right right right"
+          },
+          {
+            "id": "test_id-81",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down right"
+          },
+          {
+            "id": "test_id-83",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down right"
+          },
+          {
+            "id": "test_id-85",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up left left left left"
+          },
+          {
+            "id": "test_id-87",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-89",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up left left up left"
+          },
+          {
+            "id": "test_id-91",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up left left"
+          },
+          {
+            "id": "test_id-93",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "right right right right"
+          },
+          {
+            "id": "test_id-95",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up left left"
+          },
+          {
+            "id": "test_id-97",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-99",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left left left"
+          },
+          {
+            "id": "test_id-101",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down right right"
+          },
+          {
+            "id": "test_id-103",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "down down down down right right down"
+          },
+          {
+            "id": "test_id-105",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left down up"
+          },
+          {
+            "id": "test_id-107",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-109",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up up left left"
+          },
+          {
+            "id": "test_id-111",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-113",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down down right"
+          },
+          {
+            "id": "test_id-115",
+            "feedback": "invalid | step=2 | reason=out_of_bounds",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-117",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up left"
+          },
+          {
+            "id": "test_id-119",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up"
+          },
+          {
+            "id": "test_id-121",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up down down right"
+          },
+          {
+            "id": "test_id-123",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down left"
+          },
+          {
+            "id": "test_id-125",
+            "feedback": "invalid | step=10 | reason=goal_not_reached",
+            "plan": "up up up up right right right right"
+          },
+          {
+            "id": "test_id-127",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down down down"
+          },
+          {
+            "id": "test_id-129",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right right right right right right down"
+          },
+          {
+            "id": "test_id-131",
+            "feedback": "invalid | step=6 | reason=out_of_bounds",
+            "plan": "down right right right right right right right"
+          },
+          {
+            "id": "test_id-133",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up left"
+          },
+          {
+            "id": "test_id-135",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up left up left left"
+          },
+          {
+            "id": "test_id-137",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up right"
+          },
+          {
+            "id": "test_id-139",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "up up up up up left left"
+          },
+          {
+            "id": "test_id-141",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up up left"
+          },
+          {
+            "id": "test_id-143",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up left left left"
+          },
+          {
+            "id": "test_id-145",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up right right up up right right"
+          },
+          {
+            "id": "test_id-147",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-149",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "down right right right right right right"
+          },
+          {
+            "id": "test_id-151",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down down"
+          },
+          {
+            "id": "test_id-153",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left left left up"
+          },
+          {
+            "id": "test_id-155",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up left left"
+          },
+          {
+            "id": "test_id-157",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_id-159",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down left"
+          },
+          {
+            "id": "test_id-161",
+            "feedback": "invalid | step=6 | reason=out_of_bounds",
+            "plan": "right right right right right down"
+          },
+          {
+            "id": "test_id-163",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "down down down right right right right right"
+          },
+          {
+            "id": "test_id-165",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up right"
+          },
+          {
+            "id": "test_id-167",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "right right"
+          },
+          {
+            "id": "test_id-169",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "up up up left left left"
+          },
+          {
+            "id": "test_id-171",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down left"
+          },
+          {
+            "id": "test_id-173",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up left down"
+          },
+          {
+            "id": "test_id-175",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up up left"
+          },
+          {
+            "id": "test_id-177",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-179",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down down down down right"
+          },
+          {
+            "id": "test_id-181",
+            "feedback": "invalid | step=2 | reason=out_of_bounds",
+            "plan": "up right"
+          },
+          {
+            "id": "test_id-183",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-185",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up right"
+          },
+          {
+            "id": "test_id-187",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-189",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up right right right right"
+          },
+          {
+            "id": "test_id-191",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up left left"
+          },
+          {
+            "id": "test_id-193",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down down right"
+          },
+          {
+            "id": "test_id-195",
+            "feedback": "invalid | step=2 | reason=out_of_bounds",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-197",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "up up up up left left left"
+          },
+          {
+            "id": "test_id-199",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left down"
+          }
+        ]
+      },
+      "executor": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.24,
+          "feasibility": 0.6,
+          "optimality": 0.24,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair_calls": 100,
+        "cases": [
+          {
+            "id": "test_id-1",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down right right"
+          },
+          {
+            "id": "test_id-3",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left left left left"
+          },
+          {
+            "id": "test_id-5",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "left left left left left left"
+          },
+          {
+            "id": "test_id-7",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-9",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "right right up up up right right"
+          },
+          {
+            "id": "test_id-11",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up left left"
+          },
+          {
+            "id": "test_id-13",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "left down left"
+          },
+          {
+            "id": "test_id-15",
+            "feedback": "invalid | step=1 | reason=obstacle_collision",
+            "plan": "down left down left left left left left"
+          },
+          {
+            "id": "test_id-17",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down down"
+          },
+          {
+            "id": "test_id-19",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left left left"
+          },
+          {
+            "id": "test_id-21",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-23",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "right right"
+          },
+          {
+            "id": "test_id-25",
+            "feedback": "invalid | step=4 | reason=out_of_bounds",
+            "plan": "right right up right"
+          },
+          {
+            "id": "test_id-27",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down down"
+          },
+          {
+            "id": "test_id-29",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left left left left left"
+          },
+          {
+            "id": "test_id-31",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-33",
+            "feedback": "invalid | step=4 | reason=obstacle_collision",
+            "plan": "up up up up"
+          },
+          {
+            "id": "test_id-35",
+            "feedback": "invalid | step=1 | reason=obstacle_collision",
+            "plan": "up up up up left"
+          },
+          {
+            "id": "test_id-37",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up right right"
+          },
+          {
+            "id": "test_id-39",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "up up up up right right right"
+          },
+          {
+            "id": "test_id-41",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down left left left up down"
+          },
+          {
+            "id": "test_id-43",
+            "feedback": "invalid | step=4 | reason=obstacle_collision",
+            "plan": "down down down down right right"
+          },
+          {
+            "id": "test_id-45",
+            "feedback": "invalid | step=3 | reason=obstacle_collision",
+            "plan": "up left up up left left left"
+          },
+          {
+            "id": "test_id-47",
+            "feedback": "invalid | step=9 | reason=goal_not_reached",
+            "plan": "up up up up left left left"
+          },
+          {
+            "id": "test_id-49",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "down down down right right right right"
+          },
+          {
+            "id": "test_id-51",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "up left left left left left up"
+          },
+          {
+            "id": "test_id-53",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-55",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-57",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-59",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down right right right right right"
+          },
+          {
+            "id": "test_id-61",
+            "feedback": "invalid | step=5 | reason=obstacle_collision",
+            "plan": "up up right right right right"
+          },
+          {
+            "id": "test_id-63",
+            "feedback": "invalid | step=5 | reason=obstacle_collision",
+            "plan": "up up up right right right"
+          },
+          {
+            "id": "test_id-65",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up left"
+          },
+          {
+            "id": "test_id-67",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "test_id-69",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down right right right"
+          },
+          {
+            "id": "test_id-71",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "up up up right right right right"
+          },
+          {
+            "id": "test_id-73",
+            "feedback": "invalid | step=2 | reason=obstacle_collision",
+            "plan": "up right right right right right"
+          },
+          {
+            "id": "test_id-75",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "right right right"
+          },
+          {
+            "id": "test_id-77",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-79",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up right right right"
+          },
+          {
+            "id": "test_id-81",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down right"
+          },
+          {
+            "id": "test_id-83",
+            "feedback": "invalid | step=2 | reason=obstacle_collision",
+            "plan": "down down down right"
+          },
+          {
+            "id": "test_id-85",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up left left left left"
+          },
+          {
+            "id": "test_id-87",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-89",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up left left up left"
+          },
+          {
+            "id": "test_id-91",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up left left"
+          },
+          {
+            "id": "test_id-93",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "right right right right"
+          },
+          {
+            "id": "test_id-95",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up left left"
+          },
+          {
+            "id": "test_id-97",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-99",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left left left"
+          },
+          {
+            "id": "test_id-101",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down right right"
+          },
+          {
+            "id": "test_id-103",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "down down down down right right down"
+          },
+          {
+            "id": "test_id-105",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left down up"
+          },
+          {
+            "id": "test_id-107",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-109",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up up left left"
+          },
+          {
+            "id": "test_id-111",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-113",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down down right"
+          },
+          {
+            "id": "test_id-115",
+            "feedback": "invalid | step=2 | reason=out_of_bounds",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-117",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up left"
+          },
+          {
+            "id": "test_id-119",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up"
+          },
+          {
+            "id": "test_id-121",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up down down right"
+          },
+          {
+            "id": "test_id-123",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down left"
+          },
+          {
+            "id": "test_id-125",
+            "feedback": "invalid | step=10 | reason=goal_not_reached",
+            "plan": "up up up up right right right right"
+          },
+          {
+            "id": "test_id-127",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down down down"
+          },
+          {
+            "id": "test_id-129",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right right right right right right down"
+          },
+          {
+            "id": "test_id-131",
+            "feedback": "invalid | step=6 | reason=out_of_bounds",
+            "plan": "down right right right right right right right"
+          },
+          {
+            "id": "test_id-133",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up left"
+          },
+          {
+            "id": "test_id-135",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up left up left left"
+          },
+          {
+            "id": "test_id-137",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up right"
+          },
+          {
+            "id": "test_id-139",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "up up up up up left left"
+          },
+          {
+            "id": "test_id-141",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up up left"
+          },
+          {
+            "id": "test_id-143",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up left left left"
+          },
+          {
+            "id": "test_id-145",
+            "feedback": "invalid | step=5 | reason=obstacle_collision",
+            "plan": "up right right up up right right"
+          },
+          {
+            "id": "test_id-147",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-149",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "down right right right right right right"
+          },
+          {
+            "id": "test_id-151",
+            "feedback": "invalid | step=2 | reason=obstacle_collision",
+            "plan": "down down down down"
+          },
+          {
+            "id": "test_id-153",
+            "feedback": "invalid | step=4 | reason=obstacle_collision",
+            "plan": "left left left left up"
+          },
+          {
+            "id": "test_id-155",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up left left"
+          },
+          {
+            "id": "test_id-157",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_id-159",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down left"
+          },
+          {
+            "id": "test_id-161",
+            "feedback": "invalid | step=3 | reason=obstacle_collision",
+            "plan": "right right right right right down"
+          },
+          {
+            "id": "test_id-163",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "down down down right right right right right"
+          },
+          {
+            "id": "test_id-165",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up right"
+          },
+          {
+            "id": "test_id-167",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "right right"
+          },
+          {
+            "id": "test_id-169",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "up up up left left left"
+          },
+          {
+            "id": "test_id-171",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down left"
+          },
+          {
+            "id": "test_id-173",
+            "feedback": "invalid | step=6 | reason=obstacle_collision",
+            "plan": "up up up left down"
+          },
+          {
+            "id": "test_id-175",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up up left"
+          },
+          {
+            "id": "test_id-177",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-179",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down down down down right"
+          },
+          {
+            "id": "test_id-181",
+            "feedback": "invalid | step=2 | reason=out_of_bounds",
+            "plan": "up right"
+          },
+          {
+            "id": "test_id-183",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-185",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up right"
+          },
+          {
+            "id": "test_id-187",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-189",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up right right right right"
+          },
+          {
+            "id": "test_id-191",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up left left"
+          },
+          {
+            "id": "test_id-193",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down down right"
+          },
+          {
+            "id": "test_id-195",
+            "feedback": "invalid | step=2 | reason=out_of_bounds",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-197",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "up up up up left left left"
+          },
+          {
+            "id": "test_id-199",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left down"
+          }
+        ]
+      },
+      "model": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.21,
+          "feasibility": 0.66,
+          "optimality": 0.21,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair_calls": 72,
+        "cases": [
+          {
+            "id": "test_id-1",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down right right"
+          },
+          {
+            "id": "test_id-3",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left left left left"
+          },
+          {
+            "id": "test_id-5",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left left left left left"
+          },
+          {
+            "id": "test_id-7",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-9",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "right right up up up right right"
+          },
+          {
+            "id": "test_id-11",
+            "feedback": "valid",
+            "plan": "up right up left left"
+          },
+          {
+            "id": "test_id-13",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "left down left"
+          },
+          {
+            "id": "test_id-15",
+            "feedback": "invalid | step=5 | reason=obstacle_collision",
+            "plan": "down left down left left left left left"
+          },
+          {
+            "id": "test_id-17",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down down"
+          },
+          {
+            "id": "test_id-19",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "left left left"
+          },
+          {
+            "id": "test_id-21",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-23",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "right right"
+          },
+          {
+            "id": "test_id-25",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "right right up right"
+          },
+          {
+            "id": "test_id-27",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down down"
+          },
+          {
+            "id": "test_id-29",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "left left left left left"
+          },
+          {
+            "id": "test_id-31",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-33",
+            "feedback": "invalid | step=5 | reason=obstacle_collision",
+            "plan": "up up up up"
+          },
+          {
+            "id": "test_id-35",
+            "feedback": "invalid | step=5 | reason=obstacle_collision",
+            "plan": "up up up up left"
+          },
+          {
+            "id": "test_id-37",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up right right"
+          },
+          {
+            "id": "test_id-39",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up up up right right right"
+          },
+          {
+            "id": "test_id-41",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down left left left up down"
+          },
+          {
+            "id": "test_id-43",
+            "feedback": "valid",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-45",
+            "feedback": "valid",
+            "plan": "up left up up left left left"
+          },
+          {
+            "id": "test_id-47",
+            "feedback": "invalid | step=5 | reason=obstacle_collision",
+            "plan": "up up up up left left left"
+          },
+          {
+            "id": "test_id-49",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "down down down right right right right"
+          },
+          {
+            "id": "test_id-51",
+            "feedback": "valid",
+            "plan": "up left left left left right up"
+          },
+          {
+            "id": "test_id-53",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-55",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-57",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-59",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "down right right right right right"
+          },
+          {
+            "id": "test_id-61",
+            "feedback": "valid",
+            "plan": "up left right right right"
+          },
+          {
+            "id": "test_id-63",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up right right right"
+          },
+          {
+            "id": "test_id-65",
+            "feedback": "valid",
+            "plan": "up down left"
+          },
+          {
+            "id": "test_id-67",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "test_id-69",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down right right right"
+          },
+          {
+            "id": "test_id-71",
+            "feedback": "valid",
+            "plan": "up up up right left right right"
+          },
+          {
+            "id": "test_id-73",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up right right right right right"
+          },
+          {
+            "id": "test_id-75",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "right right right"
+          },
+          {
+            "id": "test_id-77",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-79",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "up right right right"
+          },
+          {
+            "id": "test_id-81",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down right"
+          },
+          {
+            "id": "test_id-83",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down right"
+          },
+          {
+            "id": "test_id-85",
+            "feedback": "valid",
+            "plan": "up up left left left left"
+          },
+          {
+            "id": "test_id-87",
+            "feedback": "invalid | step=1 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-89",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "up left left up left"
+          },
+          {
+            "id": "test_id-91",
+            "feedback": "valid",
+            "plan": "up up down left left"
+          },
+          {
+            "id": "test_id-93",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "right right right right"
+          },
+          {
+            "id": "test_id-95",
+            "feedback": "valid",
+            "plan": "down up left left"
+          },
+          {
+            "id": "test_id-97",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_id-99",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "left left left left"
+          },
+          {
+            "id": "test_id-101",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down down right right"
+          },
+          {
+            "id": "test_id-103",
+            "feedback": "valid",
+            "plan": "right down down right right down"
+          },
+          {
+            "id": "test_id-105",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left down up"
+          },
+          {
+            "id": "test_id-107",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-109",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up up left left"
+          },
+          {
+            "id": "test_id-111",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-113",
+            "feedback": "valid",
+            "plan": "down down down right"
+          },
+          {
+            "id": "test_id-115",
+            "feedback": "valid",
+            "plan": "down down right right"
+          },
+          {
+            "id": "test_id-117",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up left"
+          },
+          {
+            "id": "test_id-119",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up"
+          },
+          {
+            "id": "test_id-121",
+            "feedback": "valid",
+            "plan": "up down down right"
+          },
+          {
+            "id": "test_id-123",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "down left"
+          },
+          {
+            "id": "test_id-125",
+            "feedback": "valid",
+            "plan": "up down up right up up right right right"
+          },
+          {
+            "id": "test_id-127",
+            "feedback": "valid",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-129",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "right right right right right down"
+          },
+          {
+            "id": "test_id-131",
+            "feedback": "valid",
+            "plan": "down right right right right right"
+          },
+          {
+            "id": "test_id-133",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up left"
+          },
+          {
+            "id": "test_id-135",
+            "feedback": "valid",
+            "plan": "up up left up left left"
+          },
+          {
+            "id": "test_id-137",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up right"
+          },
+          {
+            "id": "test_id-139",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up up up up left left"
+          },
+          {
+            "id": "test_id-141",
+            "feedback": "valid",
+            "plan": "up down up up up left"
+          },
+          {
+            "id": "test_id-143",
+            "feedback": "valid",
+            "plan": "up up up left left left"
+          },
+          {
+            "id": "test_id-145",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up right right up up right right"
+          },
+          {
+            "id": "test_id-147",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-149",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "down right right right right right right"
+          },
+          {
+            "id": "test_id-151",
+            "feedback": "valid",
+            "plan": "left down down down"
+          },
+          {
+            "id": "test_id-153",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left left left up"
+          },
+          {
+            "id": "test_id-155",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up left left"
+          },
+          {
+            "id": "test_id-157",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_id-159",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down left"
+          },
+          {
+            "id": "test_id-161",
+            "feedback": "invalid | step=5 | reason=obstacle_collision",
+            "plan": "right right right right right down"
+          },
+          {
+            "id": "test_id-163",
+            "feedback": "valid",
+            "plan": "down down right right right right"
+          },
+          {
+            "id": "test_id-165",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up right"
+          },
+          {
+            "id": "test_id-167",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "right right"
+          },
+          {
+            "id": "test_id-169",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up up left left left"
+          },
+          {
+            "id": "test_id-171",
+            "feedback": "valid",
+            "plan": "down down up left"
+          },
+          {
+            "id": "test_id-173",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up left down"
+          },
+          {
+            "id": "test_id-175",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up left"
+          },
+          {
+            "id": "test_id-177",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-179",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "down down down down right"
+          },
+          {
+            "id": "test_id-181",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up right"
+          },
+          {
+            "id": "test_id-183",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "left left"
+          },
+          {
+            "id": "test_id-185",
+            "feedback": "valid",
+            "plan": "down up up right"
+          },
+          {
+            "id": "test_id-187",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_id-189",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "up right right right right"
+          },
+          {
+            "id": "test_id-191",
+            "feedback": "valid",
+            "plan": "down up left left"
+          },
+          {
+            "id": "test_id-193",
+            "feedback": "valid",
+            "plan": "down down down right"
+          },
+          {
+            "id": "test_id-195",
+            "feedback": "valid",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_id-197",
+            "feedback": "valid",
+            "plan": "up up up up left left left"
+          },
+          {
+            "id": "test_id-199",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "left left down"
+          }
+        ]
+      }
+    },
+    "test_ood": {
+      "tree": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.05,
+          "feasibility": 0.54,
+          "optimality": 0.05,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair_calls": 99,
+        "cases": [
+          {
+            "id": "test_ood-1",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left up up"
+          },
+          {
+            "id": "test_ood-3",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "left left left"
+          },
+          {
+            "id": "test_ood-5",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left left"
+          },
+          {
+            "id": "test_ood-7",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left up left"
+          },
+          {
+            "id": "test_ood-9",
+            "feedback": "invalid | step=6 | reason=out_of_bounds",
+            "plan": "up right right up up up right right"
+          },
+          {
+            "id": "test_ood-11",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right up left left"
+          },
+          {
+            "id": "test_ood-13",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "left down"
+          },
+          {
+            "id": "test_ood-15",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "down left down left left left left down"
+          },
+          {
+            "id": "test_ood-17",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_ood-19",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "left down"
+          },
+          {
+            "id": "test_ood-21",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          },
+          {
+            "id": "test_ood-23",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down"
+          },
+          {
+            "id": "test_ood-25",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-27",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left down down"
+          },
+          {
+            "id": "test_ood-29",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "left left left left"
+          },
+          {
+            "id": "test_ood-31",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left down left left"
+          },
+          {
+            "id": "test_ood-33",
+            "feedback": "invalid | step=9 | reason=goal_not_reached",
+            "plan": "up up up up up up"
+          },
+          {
+            "id": "test_ood-35",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "right right up up left"
+          },
+          {
+            "id": "test_ood-37",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "test_ood-39",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up up right right"
+          },
+          {
+            "id": "test_ood-41",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "down left right right down"
+          },
+          {
+            "id": "test_ood-43",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_ood-45",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up up up left left left left"
+          },
+          {
+            "id": "test_ood-47",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "left up up up left left left left"
+          },
+          {
+            "id": "test_ood-49",
+            "feedback": "invalid | step=7 | reason=out_of_bounds",
+            "plan": "down down down down right right down right"
+          },
+          {
+            "id": "test_ood-51",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up left left left left up"
+          },
+          {
+            "id": "test_ood-53",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-55",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left down down"
+          },
+          {
+            "id": "test_ood-57",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_ood-59",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down right right right"
+          },
+          {
+            "id": "test_ood-61",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up up up right right"
+          },
+          {
+            "id": "test_ood-63",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up right up right right right right"
+          },
+          {
+            "id": "test_ood-65",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up"
+          },
+          {
+            "id": "test_ood-67",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right right left"
+          },
+          {
+            "id": "test_ood-69",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down right right down right"
+          },
+          {
+            "id": "test_ood-71",
+            "feedback": "invalid | step=9 | reason=goal_not_reached",
+            "plan": "up up up up right right right right"
+          },
+          {
+            "id": "test_ood-73",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up down right right right right right"
+          },
+          {
+            "id": "test_ood-75",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up"
+          },
+          {
+            "id": "test_ood-77",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down"
+          },
+          {
+            "id": "test_ood-79",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "up right"
+          },
+          {
+            "id": "test_ood-81",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-83",
+            "feedback": "invalid | step=3 | reason=out_of_bounds",
+            "plan": "left left left down right right"
+          },
+          {
+            "id": "test_ood-85",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "right up left left left"
+          },
+          {
+            "id": "test_ood-87",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "up down right right"
+          },
+          {
+            "id": "test_ood-89",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "left up left left up left"
+          },
+          {
+            "id": "test_ood-91",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up left left left"
+          },
+          {
+            "id": "test_ood-93",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "right down down right right"
+          },
+          {
+            "id": "test_ood-95",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down left down left"
+          },
+          {
+            "id": "test_ood-97",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left"
+          },
+          {
+            "id": "test_ood-99",
+            "feedback": "invalid | step=3 | reason=out_of_bounds",
+            "plan": "up up left"
+          },
+          {
+            "id": "test_ood-101",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-103",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "right down down down down down down down"
+          },
+          {
+            "id": "test_ood-105",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "left right right"
+          },
+          {
+            "id": "test_ood-107",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-109",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "up up up up left"
+          },
+          {
+            "id": "test_ood-111",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "right down down down"
+          },
+          {
+            "id": "test_ood-113",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down down down down down"
+          },
+          {
+            "id": "test_ood-115",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-117",
+            "feedback": "invalid | step=3 | reason=out_of_bounds",
+            "plan": "up up up up left left left"
+          },
+          {
+            "id": "test_ood-119",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-121",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down down down down"
+          },
+          {
+            "id": "test_ood-123",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_ood-125",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "up up up up right up right down right"
+          },
+          {
+            "id": "test_ood-127",
+            "feedback": "invalid | step=2 | reason=out_of_bounds",
+            "plan": "down down down down down right right right right right"
+          },
+          {
+            "id": "test_ood-129",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "right right right right right right right"
+          },
+          {
+            "id": "test_ood-131",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "down right right right right"
+          },
+          {
+            "id": "test_ood-133",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up left"
+          },
+          {
+            "id": "test_ood-135",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up up left up left left"
+          },
+          {
+            "id": "test_ood-137",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up right right right up"
+          },
+          {
+            "id": "test_ood-139",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down down up up up up left left left"
+          },
+          {
+            "id": "test_ood-141",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up up up"
+          },
+          {
+            "id": "test_ood-143",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up left left left"
+          },
+          {
+            "id": "test_ood-145",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right right up right"
+          },
+          {
+            "id": "test_ood-147",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "down left left left"
+          },
+          {
+            "id": "test_ood-149",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "down right right right up right right"
+          },
+          {
+            "id": "test_ood-151",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down jump down down"
+          },
+          {
+            "id": "test_ood-153",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "left left left up"
+          },
+          {
+            "id": "test_ood-155",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-157",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left"
+          },
+          {
+            "id": "test_ood-159",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-161",
+            "feedback": "valid",
+            "plan": "right up right right right down"
+          },
+          {
+            "id": "test_ood-163",
+            "feedback": "invalid | step=10 | reason=goal_not_reached",
+            "plan": "up down down right right right right right right"
+          },
+          {
+            "id": "test_ood-165",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up"
+          },
+          {
+            "id": "test_ood-167",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left right right"
+          },
+          {
+            "id": "test_ood-169",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up left left left left"
+          },
+          {
+            "id": "test_ood-171",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down down left left"
+          },
+          {
+            "id": "test_ood-173",
+            "feedback": "invalid | step=5 | reason=out_of_bounds",
+            "plan": "left up up up left left left"
+          },
+          {
+            "id": "test_ood-175",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-177",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down down down right left up"
+          },
+          {
+            "id": "test_ood-179",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down left up"
+          },
+          {
+            "id": "test_ood-181",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-183",
+            "feedback": "invalid | step=3 | reason=out_of_bounds",
+            "plan": "down left down"
+          },
+          {
+            "id": "test_ood-185",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right right up right"
+          },
+          {
+            "id": "test_ood-187",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "down left left left left left"
+          },
+          {
+            "id": "test_ood-189",
+            "feedback": "invalid | step=2 | reason=out_of_bounds",
+            "plan": "up left right right right"
+          },
+          {
+            "id": "test_ood-191",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up up up left left"
+          },
+          {
+            "id": "test_ood-193",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up right right right"
+          },
+          {
+            "id": "test_ood-195",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "right down up left"
+          },
+          {
+            "id": "test_ood-197",
+            "feedback": "invalid | step=8 | reason=goal_not_reached",
+            "plan": "up up up up left up left"
+          },
+          {
+            "id": "test_ood-199",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          }
+        ]
+      },
+      "executor": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.06,
+          "feasibility": 0.55,
+          "optimality": 0.06,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair_calls": 100,
+        "cases": [
+          {
+            "id": "test_ood-1",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left up up"
+          },
+          {
+            "id": "test_ood-3",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "left left left"
+          },
+          {
+            "id": "test_ood-5",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left left"
+          },
+          {
+            "id": "test_ood-7",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left up left"
+          },
+          {
+            "id": "test_ood-9",
+            "feedback": "invalid | step=1 | reason=obstacle_collision",
+            "plan": "up right right up up up right right"
+          },
+          {
+            "id": "test_ood-11",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right up left left"
+          },
+          {
+            "id": "test_ood-13",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "left down"
+          },
+          {
+            "id": "test_ood-15",
+            "feedback": "invalid | step=1 | reason=obstacle_collision",
+            "plan": "down left down left left left left down"
+          },
+          {
+            "id": "test_ood-17",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_ood-19",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "left down"
+          },
+          {
+            "id": "test_ood-21",
+            "feedback": "invalid | step=3 | reason=obstacle_collision",
+            "plan": "down down down down right right"
+          },
+          {
+            "id": "test_ood-23",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down"
+          },
+          {
+            "id": "test_ood-25",
+            "feedback": "invalid | step=1 | reason=obstacle_collision",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-27",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left down down"
+          },
+          {
+            "id": "test_ood-29",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "left left left left"
+          },
+          {
+            "id": "test_ood-31",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left down left left"
+          },
+          {
+            "id": "test_ood-33",
+            "feedback": "invalid | step=5 | reason=obstacle_collision",
+            "plan": "up up up up up up"
+          },
+          {
+            "id": "test_ood-35",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "right right up up left"
+          },
+          {
+            "id": "test_ood-37",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "test_ood-39",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up up right right"
+          },
+          {
+            "id": "test_ood-41",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "down left right right down"
+          },
+          {
+            "id": "test_ood-43",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_ood-45",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up up up left left left left"
+          },
+          {
+            "id": "test_ood-47",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "left up up up left left left left"
+          },
+          {
+            "id": "test_ood-49",
+            "feedback": "invalid | step=7 | reason=out_of_bounds",
+            "plan": "down down down down right right down right"
+          },
+          {
+            "id": "test_ood-51",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up left left left left up"
+          },
+          {
+            "id": "test_ood-53",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-55",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left down down"
+          },
+          {
+            "id": "test_ood-57",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_ood-59",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down right right right"
+          },
+          {
+            "id": "test_ood-61",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up up up right right"
+          },
+          {
+            "id": "test_ood-63",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up right up right right right right"
+          },
+          {
+            "id": "test_ood-65",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up"
+          },
+          {
+            "id": "test_ood-67",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right right left"
+          },
+          {
+            "id": "test_ood-69",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down right right down right"
+          },
+          {
+            "id": "test_ood-71",
+            "feedback": "invalid | step=9 | reason=goal_not_reached",
+            "plan": "up up up up right right right right"
+          },
+          {
+            "id": "test_ood-73",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up down right right right right right"
+          },
+          {
+            "id": "test_ood-75",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up"
+          },
+          {
+            "id": "test_ood-77",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down"
+          },
+          {
+            "id": "test_ood-79",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "up right"
+          },
+          {
+            "id": "test_ood-81",
+            "feedback": "invalid | step=1 | reason=obstacle_collision",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-83",
+            "feedback": "invalid | step=3 | reason=out_of_bounds",
+            "plan": "left left left down right right"
+          },
+          {
+            "id": "test_ood-85",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "right up left left left"
+          },
+          {
+            "id": "test_ood-87",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "up down right right"
+          },
+          {
+            "id": "test_ood-89",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "left up left left up left"
+          },
+          {
+            "id": "test_ood-91",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up left left left"
+          },
+          {
+            "id": "test_ood-93",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "right down down right right"
+          },
+          {
+            "id": "test_ood-95",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down left down left"
+          },
+          {
+            "id": "test_ood-97",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left"
+          },
+          {
+            "id": "test_ood-99",
+            "feedback": "invalid | step=3 | reason=out_of_bounds",
+            "plan": "up up left"
+          },
+          {
+            "id": "test_ood-101",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-103",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "right down down down down down down down"
+          },
+          {
+            "id": "test_ood-105",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "left right right"
+          },
+          {
+            "id": "test_ood-107",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-109",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "up up up up left"
+          },
+          {
+            "id": "test_ood-111",
+            "feedback": "invalid | step=3 | reason=obstacle_collision",
+            "plan": "right down down down"
+          },
+          {
+            "id": "test_ood-113",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down down down down down"
+          },
+          {
+            "id": "test_ood-115",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-117",
+            "feedback": "invalid | step=3 | reason=out_of_bounds",
+            "plan": "up up up up left left left"
+          },
+          {
+            "id": "test_ood-119",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-121",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down down down down"
+          },
+          {
+            "id": "test_ood-123",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_ood-125",
+            "feedback": "invalid | step=6 | reason=invalid_action_token",
+            "plan": "up up up up right up right down right"
+          },
+          {
+            "id": "test_ood-127",
+            "feedback": "invalid | step=2 | reason=out_of_bounds",
+            "plan": "down down down down down right right right right right"
+          },
+          {
+            "id": "test_ood-129",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "right right right right right right right"
+          },
+          {
+            "id": "test_ood-131",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "down right right right right"
+          },
+          {
+            "id": "test_ood-133",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up left"
+          },
+          {
+            "id": "test_ood-135",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "up up left up left left"
+          },
+          {
+            "id": "test_ood-137",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up right right right up"
+          },
+          {
+            "id": "test_ood-139",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down down up up up up left left left"
+          },
+          {
+            "id": "test_ood-141",
+            "feedback": "invalid | step=7 | reason=goal_not_reached",
+            "plan": "up up up up up"
+          },
+          {
+            "id": "test_ood-143",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up left left left"
+          },
+          {
+            "id": "test_ood-145",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right right up right"
+          },
+          {
+            "id": "test_ood-147",
+            "feedback": "invalid | step=2 | reason=obstacle_collision",
+            "plan": "down left left left"
+          },
+          {
+            "id": "test_ood-149",
+            "feedback": "invalid | step=4 | reason=obstacle_collision",
+            "plan": "down right right right up right right"
+          },
+          {
+            "id": "test_ood-151",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down jump down down"
+          },
+          {
+            "id": "test_ood-153",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "left left left up"
+          },
+          {
+            "id": "test_ood-155",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-157",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left"
+          },
+          {
+            "id": "test_ood-159",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-161",
+            "feedback": "invalid | step=1 | reason=obstacle_collision",
+            "plan": "up right right right right down"
+          },
+          {
+            "id": "test_ood-163",
+            "feedback": "invalid | step=4 | reason=obstacle_collision",
+            "plan": "up down down right right right right right right"
+          },
+          {
+            "id": "test_ood-165",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up"
+          },
+          {
+            "id": "test_ood-167",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "left left right right"
+          },
+          {
+            "id": "test_ood-169",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "up left left left left"
+          },
+          {
+            "id": "test_ood-171",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "down down left left"
+          },
+          {
+            "id": "test_ood-173",
+            "feedback": "invalid | step=1 | reason=obstacle_collision",
+            "plan": "left up up up left left left"
+          },
+          {
+            "id": "test_ood-175",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-177",
+            "feedback": "invalid | step=3 | reason=obstacle_collision",
+            "plan": "down down down right left up"
+          },
+          {
+            "id": "test_ood-179",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down left up"
+          },
+          {
+            "id": "test_ood-181",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-183",
+            "feedback": "invalid | step=3 | reason=out_of_bounds",
+            "plan": "down left down"
+          },
+          {
+            "id": "test_ood-185",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "right right up right"
+          },
+          {
+            "id": "test_ood-187",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "down left left left left left"
+          },
+          {
+            "id": "test_ood-189",
+            "feedback": "invalid | step=2 | reason=out_of_bounds",
+            "plan": "up left right right right"
+          },
+          {
+            "id": "test_ood-191",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up up up left left"
+          },
+          {
+            "id": "test_ood-193",
+            "feedback": "invalid | step=6 | reason=goal_not_reached",
+            "plan": "up up right right right"
+          },
+          {
+            "id": "test_ood-195",
+            "feedback": "invalid | step=1 | reason=out_of_bounds",
+            "plan": "right down up left"
+          },
+          {
+            "id": "test_ood-197",
+            "feedback": "invalid | step=6 | reason=obstacle_collision",
+            "plan": "up up up up left up left"
+          },
+          {
+            "id": "test_ood-199",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          }
+        ]
+      },
+      "model": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.03,
+          "feasibility": 0.54,
+          "optimality": 0.03,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair_calls": 79,
+        "cases": [
+          {
+            "id": "test_ood-1",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left up up"
+          },
+          {
+            "id": "test_ood-3",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left left"
+          },
+          {
+            "id": "test_ood-5",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left left left"
+          },
+          {
+            "id": "test_ood-7",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left up left"
+          },
+          {
+            "id": "test_ood-9",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up right right up up up right right"
+          },
+          {
+            "id": "test_ood-11",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "right up left left"
+          },
+          {
+            "id": "test_ood-13",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "left down"
+          },
+          {
+            "id": "test_ood-15",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down left down left left left left down"
+          },
+          {
+            "id": "test_ood-17",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_ood-19",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "left down"
+          },
+          {
+            "id": "test_ood-21",
+            "feedback": "valid",
+            "plan": "down down left right"
+          },
+          {
+            "id": "test_ood-23",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down"
+          },
+          {
+            "id": "test_ood-25",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-27",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left down down"
+          },
+          {
+            "id": "test_ood-29",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left left left"
+          },
+          {
+            "id": "test_ood-31",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "left down left left"
+          },
+          {
+            "id": "test_ood-33",
+            "feedback": "invalid | step=5 | reason=obstacle_collision",
+            "plan": "up up up up up up"
+          },
+          {
+            "id": "test_ood-35",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "right right up up left"
+          },
+          {
+            "id": "test_ood-37",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up up"
+          },
+          {
+            "id": "test_ood-39",
+            "feedback": "valid",
+            "plan": "up up up right up right"
+          },
+          {
+            "id": "test_ood-41",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "down left right right down"
+          },
+          {
+            "id": "test_ood-43",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "down down down right right"
+          },
+          {
+            "id": "test_ood-45",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up up left left left left"
+          },
+          {
+            "id": "test_ood-47",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "left up up up left left left left"
+          },
+          {
+            "id": "test_ood-49",
+            "feedback": "valid",
+            "plan": "left down down down right right down right"
+          },
+          {
+            "id": "test_ood-51",
+            "feedback": "valid",
+            "plan": "up left left right left up"
+          },
+          {
+            "id": "test_ood-53",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-55",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "left down down"
+          },
+          {
+            "id": "test_ood-57",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down down left"
+          },
+          {
+            "id": "test_ood-59",
+            "feedback": "valid",
+            "plan": "down down right right"
+          },
+          {
+            "id": "test_ood-61",
+            "feedback": "valid",
+            "plan": "down up up right right"
+          },
+          {
+            "id": "test_ood-63",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up right up right right right right"
+          },
+          {
+            "id": "test_ood-65",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up"
+          },
+          {
+            "id": "test_ood-67",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "right right left"
+          },
+          {
+            "id": "test_ood-69",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "down right right down right"
+          },
+          {
+            "id": "test_ood-71",
+            "feedback": "valid",
+            "plan": "up up down right up left right right"
+          },
+          {
+            "id": "test_ood-73",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up down right right right right right"
+          },
+          {
+            "id": "test_ood-75",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up"
+          },
+          {
+            "id": "test_ood-77",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "down"
+          },
+          {
+            "id": "test_ood-79",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up right"
+          },
+          {
+            "id": "test_ood-81",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-83",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "left left left down right right"
+          },
+          {
+            "id": "test_ood-85",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "right up left left left"
+          },
+          {
+            "id": "test_ood-87",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "up down right right"
+          },
+          {
+            "id": "test_ood-89",
+            "feedback": "valid",
+            "plan": "left up down left up left"
+          },
+          {
+            "id": "test_ood-91",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up left left left"
+          },
+          {
+            "id": "test_ood-93",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "right down down right right"
+          },
+          {
+            "id": "test_ood-95",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down left down left"
+          },
+          {
+            "id": "test_ood-97",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "left left"
+          },
+          {
+            "id": "test_ood-99",
+            "feedback": "valid",
+            "plan": "down up right left"
+          },
+          {
+            "id": "test_ood-101",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-103",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "right down down down down down down down"
+          },
+          {
+            "id": "test_ood-105",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "left right right"
+          },
+          {
+            "id": "test_ood-107",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-109",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "up up up up left"
+          },
+          {
+            "id": "test_ood-111",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "right down down down"
+          },
+          {
+            "id": "test_ood-113",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "down down down down down"
+          },
+          {
+            "id": "test_ood-115",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-117",
+            "feedback": "valid",
+            "plan": "up up up right left left"
+          },
+          {
+            "id": "test_ood-119",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-121",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "down down down down"
+          },
+          {
+            "id": "test_ood-123",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down"
+          },
+          {
+            "id": "test_ood-125",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up up up up right up right down right"
+          },
+          {
+            "id": "test_ood-127",
+            "feedback": "valid",
+            "plan": "down left down down down right right down right right"
+          },
+          {
+            "id": "test_ood-129",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "right right right right right right right"
+          },
+          {
+            "id": "test_ood-131",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "down right right right right"
+          },
+          {
+            "id": "test_ood-133",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "up up left"
+          },
+          {
+            "id": "test_ood-135",
+            "feedback": "valid",
+            "plan": "down up left up left left"
+          },
+          {
+            "id": "test_ood-137",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up right right right up"
+          },
+          {
+            "id": "test_ood-139",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "down down up up up up left left left"
+          },
+          {
+            "id": "test_ood-141",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up up up"
+          },
+          {
+            "id": "test_ood-143",
+            "feedback": "valid",
+            "plan": "up up left left left"
+          },
+          {
+            "id": "test_ood-145",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "right right up right"
+          },
+          {
+            "id": "test_ood-147",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "down left left left"
+          },
+          {
+            "id": "test_ood-149",
+            "feedback": "valid",
+            "plan": "down right right up down right"
+          },
+          {
+            "id": "test_ood-151",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "down jump down down"
+          },
+          {
+            "id": "test_ood-153",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "left left left up"
+          },
+          {
+            "id": "test_ood-155",
+            "feedback": "invalid | step=3 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-157",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "left left"
+          },
+          {
+            "id": "test_ood-159",
+            "feedback": "invalid | step=2 | reason=invalid_action_token",
+            "plan": "right right"
+          },
+          {
+            "id": "test_ood-161",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up right right right right down"
+          },
+          {
+            "id": "test_ood-163",
+            "feedback": "valid",
+            "plan": "up down down right right right left right right"
+          },
+          {
+            "id": "test_ood-165",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up"
+          },
+          {
+            "id": "test_ood-167",
+            "feedback": "invalid | step=4 | reason=invalid_action_token",
+            "plan": "left left right right"
+          },
+          {
+            "id": "test_ood-169",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up left left left left"
+          },
+          {
+            "id": "test_ood-171",
+            "feedback": "valid",
+            "plan": "right down up left left"
+          },
+          {
+            "id": "test_ood-173",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "left up up up left left left"
+          },
+          {
+            "id": "test_ood-175",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-177",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "down down down down down right left up"
+          },
+          {
+            "id": "test_ood-179",
+            "feedback": "valid",
+            "plan": "down down left up"
+          },
+          {
+            "id": "test_ood-181",
+            "feedback": "invalid | step=1 | reason=invalid_action_token",
+            "plan": "up up"
+          },
+          {
+            "id": "test_ood-183",
+            "feedback": "invalid | step=4 | reason=goal_not_reached",
+            "plan": "down left down"
+          },
+          {
+            "id": "test_ood-185",
+            "feedback": "invalid | step=3 | reason=invalid_action_token",
+            "plan": "right right up right"
+          },
+          {
+            "id": "test_ood-187",
+            "feedback": "valid",
+            "plan": "right down left left left left"
+          },
+          {
+            "id": "test_ood-189",
+            "feedback": "invalid | step=5 | reason=invalid_action_token",
+            "plan": "up left right right right"
+          },
+          {
+            "id": "test_ood-191",
+            "feedback": "invalid | step=5 | reason=goal_not_reached",
+            "plan": "up up up up left left"
+          },
+          {
+            "id": "test_ood-193",
+            "feedback": "valid",
+            "plan": "up down right right right"
+          },
+          {
+            "id": "test_ood-195",
+            "feedback": "valid",
+            "plan": "right down up left"
+          },
+          {
+            "id": "test_ood-197",
+            "feedback": "valid",
+            "plan": "up up up up left up left"
+          },
+          {
+            "id": "test_ood-199",
+            "feedback": "invalid | step=2 | reason=goal_not_reached",
+            "plan": "down down down down right right"
+          }
+        ]
+      }
+    }
+  },
+  "policy_cases": {
+    "case-01": {
+      "plan": "right right down down down left up up left down down up up up up right right up left left down right down right down down down left up up up right up up left left",
+      "status": "budget_exhausted",
+      "last_feedback": "invalid | step=37 | reason=goal_not_reached",
+      "model_calls": 36
+    },
+    "case-02": {
+      "plan": "right right down down right right up up right",
+      "status": "success",
+      "last_feedback": "valid",
+      "model_calls": 9
+    },
+    "case-03": {
+      "plan": "down down right right right right up left up right left left down left up down down right right right up left left up left left left down down right left up right down right right",
+      "status": "budget_exhausted",
+      "last_feedback": "invalid | step=37 | reason=goal_not_reached",
+      "model_calls": 36
+    },
+    "case-04": {
+      "plan": "down down right right right right up left up right left left down left up down down right right right up left left up left left left down down down down down right right right right",
+      "status": "success",
+      "last_feedback": "valid",
+      "model_calls": 36
+    },
+    "case-05": {
+      "plan": "down down down right right down right down right right up down left left left left up left down up up right up right right up right right down up up left left left down left",
+      "status": "budget_exhausted",
+      "last_feedback": "invalid | step=37 | reason=goal_not_reached",
+      "model_calls": 36
+    },
+    "case-06": {
+      "plan": "down down down right right down right right up",
+      "status": "success",
+      "last_feedback": "valid",
+      "model_calls": 9
+    },
+    "case-07": {
+      "plan": "",
+      "status": "stopped",
+      "last_feedback": "agent_finished_without_verified_goal",
+      "model_calls": 1
+    },
+    "case-08": {
+      "plan": "down down down down right right right right right",
+      "status": "success",
+      "last_feedback": "valid",
+      "model_calls": 9
+    }
+  },
+  "policy_probe": {
+    "unreachable_detected": 0,
+    "unreachable_total": 4,
+    "reachable_solved": 4,
+    "reachable_false_refusals": 0,
+    "reachable_total": 4
+  }
+}

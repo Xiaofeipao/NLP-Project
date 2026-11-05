@@ -1,0 +1,338 @@
+[
+  {
+    "step": 1,
+    "responses": [
+      "down down down",
+      "down down",
+      "down down",
+      "0 off to (5, 5)"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 2,
+    "responses": [
+      "down down down to 5 down",
+      "up up with low down right",
+      "down is right",
+      "down"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 3,
+    "responses": [
+      ", FALL",
+      "away; 5 down down",
+      "if down down down down",
+      "down down down"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 4,
+    "responses": [
+      "up 5",
+      "down down depressed down",
+      "developed by 3-1-1 (2-0, 0-2)",
+      "from 0 to 5"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 5,
+    "responses": [
+      "down down down down",
+      "up up after 5 but not 5",
+      "no_pATH",
+      "down down down down"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 6,
+    "responses": [
+      "down down down",
+      "down down down down 0.3",
+      "up down up from about faza3 to 5",
+      "down down down down down down scroll down"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 7,
+    "responses": [
+      "down down down down",
+      "current).",
+      "up up up up 5",
+      "down to 5 or down"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 8,
+    "responses": [
+      "down down down",
+      "at (5, %),",
+      "maximum down to the 5 down",
+      "down down down"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 9,
+    "responses": [
+      "(0, 0), decree right five, 5 leader 5",
+      "from (0, 0)",
+      "right",
+      "away from compare 5 to 5"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 10,
+    "responses": [
+      "up 5",
+      "down down down to up up,",
+      "f down to 5",
+      "down down down down"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 11,
+    "responses": [
+      "down down down down down down",
+      "0 in the middle",
+      "back to 5- 5",
+      "down down down down"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 12,
+    "responses": [
+      "the right way any director 5 5",
+      "down down down right",
+      "down down down down",
+      "down down"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 13,
+    "responses": [
+      "up up",
+      "no_PATH",
+      "(5, 5), 1 (2, 2), (2, 0), (2, 4), (4, 5), (5, 3), (5, 3)",
+      "= FINAL"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 14,
+    "responses": [
+      "down down down down down in down down",
+      "down down",
+      "(0, 0)",
+      "down down down down down"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 15,
+    "responses": [
+      "down down",
+      "down down",
+      "left left left",
+      "down down down down down right four right"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "step": 16,
+    "responses": [
+      "down down down down",
+      "minsta is daylight",
+      "down down right",
+      "continues up 5"
+    ],
+    "rewards": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+]

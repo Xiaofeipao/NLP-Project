@@ -9,3 +9,6 @@ artifacts/campaign_20261103/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
 artifacts/campaign_20261103/**/*.zip filter=lfs diff=lfs merge=lfs -text
 artifacts/historical_models/** -text -whitespace
 artifacts/historical_models/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
+artifacts/reachability_experiments/** -text whitespace=cr-at-eol
+artifacts/reachability_experiments/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
+data/reachability_feedback_pending/** whitespace=cr-at-eol

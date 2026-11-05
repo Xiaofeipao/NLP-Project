@@ -1,0 +1,81 @@
+{
+  "kind": "diagnostic_only",
+  "probe": {
+    "unreachable_detected": 0,
+    "unreachable_total": 4,
+    "reachable_solved": 0,
+    "reachable_false_refusals": 0,
+    "reachable_total": 4
+  },
+  "predictions": {
+    "case-01": "down down down down right right right",
+    "case-02": "down down down down right right right",
+    "case-03": "down down down down right right right",
+    "case-04": "down down down down right right right",
+    "case-05": "down down down down right right right",
+    "case-06": "down down down down right right right",
+    "case-07": "down down down down right right right",
+    "case-08": "down down down down right right right"
+  },
+  "tree_sha256": "a2b1a7ff4f5d025a1f073774b4acde0cc678fc9da46bb6378a059125fd3a1b6c",
+  "baseline_sha256": "d440663b1979fcbd9ba4f4b2a4f703d47b0b284b7e7d0cfce584d03bf6c5fe6e",
+  "policy_sha256": "a2fb2eabdfca8e97e276bc04b6c4ac533b5dc97e9ef97bcf33bec37f7cc806d2",
+  "test_status": "eight public curated probes; reused repair tests",
+  "policy_cases": {
+    "case-01": {
+      "plan": "right right up up left down left up right right down down down down down left up up left down down up up up right up left up right right down down down down down left",
+      "status": "budget_exhausted",
+      "last_feedback": "invalid | step=37 | reason=goal_not_reached",
+      "model_calls": 36
+    },
+    "case-02": {
+      "plan": "right right up up left down left up right right down down down down right right up up up up right down down",
+      "status": "success",
+      "last_feedback": "valid",
+      "model_calls": 23
+    },
+    "case-03": {
+      "plan": "right right right down down right up up left down left down left up left down left up up right right right down down right right up up left down down right up up left left",
+      "status": "budget_exhausted",
+      "last_feedback": "invalid | step=37 | reason=goal_not_reached",
+      "model_calls": 36
+    },
+    "case-04": {
+      "plan": "right right right down down right up up left down left down left up left down left up up right right right down down right right up up left down down right up up left left",
+      "status": "budget_exhausted",
+      "last_feedback": "invalid | step=37 | reason=goal_not_reached",
+      "model_calls": 36
+    },
+    "case-05": {
+      "plan": "right right right right down right down up up left down left down left up left down down right down right down right right up down up down left left left left up left up up",
+      "status": "budget_exhausted",
+      "last_feedback": "invalid | step=37 | reason=goal_not_reached",
+      "model_calls": 36
+    },
+    "case-06": {
+      "plan": "right right right right down right down up up left down left down left up left down down right down right right up",
+      "status": "success",
+      "last_feedback": "valid",
+      "model_calls": 23
+    },
+    "case-07": {
+      "plan": "",
+      "status": "stopped",
+      "last_feedback": "agent_finished_without_verified_goal",
+      "model_calls": 1
+    },
+    "case-08": {
+      "plan": "down right right right right right down down down",
+      "status": "success",
+      "last_feedback": "valid",
+      "model_calls": 9
+    }
+  },
+  "policy_probe": {
+    "unreachable_detected": 0,
+    "unreachable_total": 4,
+    "reachable_solved": 3,
+    "reachable_false_refusals": 0,
+    "reachable_total": 4
+  }
+}

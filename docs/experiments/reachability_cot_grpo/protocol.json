@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "train": 16,
+  "dev": 8,
+  "sft_passes": 3,
+  "rl_groups": 16,
+  "group_size": 4,
+  "updates_per_rollout": 2,
+  "human_feedback": false,
+  "base_sha256": "5944717d22ae7959e856c89e84344f5235d9e9403d2477f0726f0ff9210a0fa8",
+  "scope": "exploratory extra-data pilot; not a compliant replacement for the 4000-example main run",
+  "selection": "retain SFT unless GRPO strictly improves balanced dev outcome score",
+  "reasoning_evaluation": "score final outcome only; generated rationale is not certified"
+}

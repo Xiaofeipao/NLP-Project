@@ -1,0 +1,103 @@
+{
+  "baseline_dev": {
+    "metrics": {
+      "unreachable_detected": 0,
+      "unreachable_total": 4,
+      "reachable_solved": 0,
+      "reachable_false_refusals": 0,
+      "reachable_total": 4,
+      "format_valid": 0
+    },
+    "responses": {
+      "dev-00": "down down down",
+      "dev-01": "down down down",
+      "dev-02": "down down down",
+      "dev-03": "down down down",
+      "dev-04": "down down down",
+      "dev-05": "down down down",
+      "dev-06": "down down down",
+      "dev-07": "down down down"
+    }
+  },
+  "sft_dev": {
+    "metrics": {
+      "unreachable_detected": 0,
+      "unreachable_total": 4,
+      "reachable_solved": 0,
+      "reachable_false_refusals": 0,
+      "reachable_total": 4,
+      "format_valid": 0
+    },
+    "responses": {
+      "dev-00": "down down down down",
+      "dev-01": "down down down down down",
+      "dev-02": "down down down down",
+      "dev-03": "down down down down",
+      "dev-04": "down down down down",
+      "dev-05": "down down down down",
+      "dev-06": "down down down down",
+      "dev-07": "down down down down down"
+    }
+  },
+  "sft_probe": {
+    "metrics": {
+      "unreachable_detected": 0,
+      "unreachable_total": 4,
+      "reachable_solved": 0,
+      "reachable_false_refusals": 0,
+      "reachable_total": 4,
+      "format_valid": 0
+    },
+    "responses": {
+      "case-01": "up up",
+      "case-02": "up up",
+      "case-03": "down down down down",
+      "case-04": "down down down down",
+      "case-05": "down down down down",
+      "case-06": "down down down",
+      "case-07": "down down down down",
+      "case-08": "down down down down"
+    }
+  },
+  "grpo_dev": {
+    "metrics": {
+      "unreachable_detected": 0,
+      "unreachable_total": 4,
+      "reachable_solved": 0,
+      "reachable_false_refusals": 0,
+      "reachable_total": 4,
+      "format_valid": 0
+    },
+    "responses": {
+      "dev-00": "down down down down down",
+      "dev-01": "down down down down down",
+      "dev-02": "down down down down down",
+      "dev-03": "down down down down down",
+      "dev-04": "down down down down down",
+      "dev-05": "down down down down down",
+      "dev-06": "down down down down down",
+      "dev-07": "down down down down down"
+    }
+  },
+  "grpo_probe": {
+    "metrics": {
+      "unreachable_detected": 0,
+      "unreachable_total": 4,
+      "reachable_solved": 0,
+      "reachable_false_refusals": 0,
+      "reachable_total": 4,
+      "format_valid": 0
+    },
+    "responses": {
+      "case-01": "up up",
+      "case-02": "up up",
+      "case-03": "down down down down down",
+      "case-04": "down down down down down",
+      "case-05": "down down down down",
+      "case-06": "down down down down",
+      "case-07": "down down down down",
+      "case-08": "down down down down"
+    }
+  },
+  "selected": "sft"
+}

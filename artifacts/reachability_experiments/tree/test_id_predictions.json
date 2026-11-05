@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "test_id-0",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-1",
+    "prediction": "invalid | step=3 | reason=goal_not_reached",
+    "truth": "invalid | step=3 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-2",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-3",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-4",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-5",
+    "prediction": "invalid | step=6 | reason=goal_not_reached",
+    "truth": "invalid | step=6 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-6",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-7",
+    "prediction": "invalid | step=2 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-8",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-9",
+    "prediction": "invalid | step=6 | reason=invalid_action_token",
+    "truth": "invalid | step=6 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-10",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-11",
+    "prediction": "invalid | step=6 | reason=goal_not_reached",
+    "truth": "invalid | step=6 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-12",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-13",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-14",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-15",
+    "prediction": "invalid | step=8 | reason=goal_not_reached",
+    "truth": "invalid | step=1 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-16",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-17",
+    "prediction": "invalid | step=3 | reason=goal_not_reached",
+    "truth": "invalid | step=3 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-18",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-19",
+    "prediction": "invalid | step=3 | reason=invalid_action_token",
+    "truth": "invalid | step=3 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-20",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-21",
+    "prediction": "invalid | step=3 | reason=goal_not_reached",
+    "truth": "invalid | step=3 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-22",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-23",
+    "prediction": "invalid | step=2 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-24",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-25",
+    "prediction": "invalid | step=4 | reason=out_of_bounds",
+    "truth": "invalid | step=4 | reason=out_of_bounds"
+  },
+  {
+    "id": "test_id-26",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-27",
+    "prediction": "invalid | step=3 | reason=goal_not_reached",
+    "truth": "invalid | step=3 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-28",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-29",
+    "prediction": "invalid | step=3 | reason=invalid_action_token",
+    "truth": "invalid | step=3 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-30",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-31",
+    "prediction": "invalid | step=1 | reason=out_of_bounds",
+    "truth": "invalid | step=1 | reason=out_of_bounds"
+  },
+  {
+    "id": "test_id-32",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-33",
+    "prediction": "invalid | step=6 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-34",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-35",
+    "prediction": "invalid | step=5 | reason=out_of_bounds",
+    "truth": "invalid | step=1 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-36",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-37",
+    "prediction": "invalid | step=1 | reason=goal_not_reached",
+    "truth": "invalid | step=1 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-38",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-39",
+    "prediction": "invalid | step=6 | reason=invalid_action_token",
+    "truth": "invalid | step=6 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-40",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-41",
+    "prediction": "invalid | step=6 | reason=goal_not_reached",
+    "truth": "invalid | step=6 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-42",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-43",
+    "prediction": "invalid | step=6 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-44",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-45",
+    "prediction": "invalid | step=8 | reason=goal_not_reached",
+    "truth": "invalid | step=3 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-46",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-47",
+    "prediction": "invalid | step=9 | reason=goal_not_reached",
+    "truth": "invalid | step=9 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-48",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-49",
+    "prediction": "invalid | step=4 | reason=invalid_action_token",
+    "truth": "invalid | step=4 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-50",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-51",
+    "prediction": "invalid | step=8 | reason=goal_not_reached",
+    "truth": "invalid | step=8 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-52",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-53",
+    "prediction": "invalid | step=2 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-54",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-55",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-56",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-57",
+    "prediction": "invalid | step=2 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-58",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-59",
+    "prediction": "invalid | step=2 | reason=invalid_action_token",
+    "truth": "invalid | step=2 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-60",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-61",
+    "prediction": "invalid | step=6 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-62",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-63",
+    "prediction": "invalid | step=7 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-64",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-65",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-66",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-67",
+    "prediction": "invalid | step=1 | reason=goal_not_reached",
+    "truth": "invalid | step=1 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-68",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-69",
+    "prediction": "invalid | step=2 | reason=invalid_action_token",
+    "truth": "invalid | step=2 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-70",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-71",
+    "prediction": "invalid | step=8 | reason=goal_not_reached",
+    "truth": "invalid | step=8 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-72",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-73",
+    "prediction": "invalid | step=6 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-74",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-75",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-76",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-77",
+    "prediction": "invalid | step=1 | reason=goal_not_reached",
+    "truth": "invalid | step=1 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-78",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-79",
+    "prediction": "invalid | step=2 | reason=invalid_action_token",
+    "truth": "invalid | step=2 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-80",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-81",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-82",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-83",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-84",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-85",
+    "prediction": "invalid | step=7 | reason=goal_not_reached",
+    "truth": "invalid | step=7 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-86",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-87",
+    "prediction": "invalid | step=1 | reason=goal_not_reached",
+    "truth": "invalid | step=1 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-88",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-89",
+    "prediction": "invalid | step=2 | reason=invalid_action_token",
+    "truth": "invalid | step=2 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-90",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-91",
+    "prediction": "invalid | step=6 | reason=goal_not_reached",
+    "truth": "invalid | step=6 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-92",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-93",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-94",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-95",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-96",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-97",
+    "prediction": "invalid | step=2 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-98",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-99",
+    "prediction": "invalid | step=1 | reason=invalid_action_token",
+    "truth": "invalid | step=1 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-100",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-101",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-102",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-103",
+    "prediction": "invalid | step=7 | reason=goal_not_reached",
+    "truth": "invalid | step=7 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-104",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-105",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-106",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-107",
+    "prediction": "invalid | step=2 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-108",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-109",
+    "prediction": "invalid | step=1 | reason=invalid_action_token",
+    "truth": "invalid | step=1 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-110",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-111",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-112",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-113",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-114",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-115",
+    "prediction": "invalid | step=2 | reason=out_of_bounds",
+    "truth": "invalid | step=2 | reason=out_of_bounds"
+  },
+  {
+    "id": "test_id-116",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-117",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-118",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-119",
+    "prediction": "invalid | step=1 | reason=invalid_action_token",
+    "truth": "invalid | step=1 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-120",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-121",
+    "prediction": "invalid | step=1 | reason=out_of_bounds",
+    "truth": "invalid | step=1 | reason=out_of_bounds"
+  },
+  {
+    "id": "test_id-122",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-123",
+    "prediction": "invalid | step=3 | reason=goal_not_reached",
+    "truth": "invalid | step=3 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-124",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-125",
+    "prediction": "invalid | step=10 | reason=goal_not_reached",
+    "truth": "invalid | step=10 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-126",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-127",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-128",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-129",
+    "prediction": "invalid | step=1 | reason=invalid_action_token",
+    "truth": "invalid | step=1 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-130",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-131",
+    "prediction": "invalid | step=6 | reason=out_of_bounds",
+    "truth": "invalid | step=6 | reason=out_of_bounds"
+  },
+  {
+    "id": "test_id-132",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-133",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-134",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-135",
+    "prediction": "invalid | step=7 | reason=goal_not_reached",
+    "truth": "invalid | step=7 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-136",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-137",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-138",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-139",
+    "prediction": "invalid | step=4 | reason=invalid_action_token",
+    "truth": "invalid | step=4 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-140",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-141",
+    "prediction": "invalid | step=7 | reason=goal_not_reached",
+    "truth": "invalid | step=7 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-142",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-143",
+    "prediction": "invalid | step=7 | reason=goal_not_reached",
+    "truth": "invalid | step=7 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-144",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-145",
+    "prediction": "invalid | step=7 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-146",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-147",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-148",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-149",
+    "prediction": "invalid | step=3 | reason=invalid_action_token",
+    "truth": "invalid | step=3 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-150",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-151",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-152",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-153",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-154",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-155",
+    "prediction": "invalid | step=6 | reason=goal_not_reached",
+    "truth": "invalid | step=6 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-156",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-157",
+    "prediction": "invalid | step=2 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-158",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-159",
+    "prediction": "invalid | step=2 | reason=invalid_action_token",
+    "truth": "invalid | step=2 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-160",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-161",
+    "prediction": "invalid | step=6 | reason=out_of_bounds",
+    "truth": "invalid | step=3 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-162",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-163",
+    "prediction": "invalid | step=7 | reason=goal_not_reached",
+    "truth": "invalid | step=7 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-164",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-165",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-166",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-167",
+    "prediction": "invalid | step=2 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-168",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-169",
+    "prediction": "invalid | step=6 | reason=invalid_action_token",
+    "truth": "invalid | step=6 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-170",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-171",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-172",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-173",
+    "prediction": "invalid | step=7 | reason=goal_not_reached",
+    "truth": "invalid | step=6 | reason=obstacle_collision"
+  },
+  {
+    "id": "test_id-174",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-175",
+    "prediction": "invalid | step=1 | reason=out_of_bounds",
+    "truth": "invalid | step=1 | reason=out_of_bounds"
+  },
+  {
+    "id": "test_id-176",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-177",
+    "prediction": "invalid | step=4 | reason=goal_not_reached",
+    "truth": "invalid | step=4 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-178",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-179",
+    "prediction": "invalid | step=1 | reason=invalid_action_token",
+    "truth": "invalid | step=1 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-180",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-181",
+    "prediction": "invalid | step=2 | reason=out_of_bounds",
+    "truth": "invalid | step=2 | reason=out_of_bounds"
+  },
+  {
+    "id": "test_id-182",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-183",
+    "prediction": "invalid | step=2 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-184",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-185",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-186",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-187",
+    "prediction": "invalid | step=2 | reason=goal_not_reached",
+    "truth": "invalid | step=2 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-188",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-189",
+    "prediction": "invalid | step=2 | reason=invalid_action_token",
+    "truth": "invalid | step=2 | reason=invalid_action_token"
+  },
+  {
+    "id": "test_id-190",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-191",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-192",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-193",
+    "prediction": "invalid | step=5 | reason=goal_not_reached",
+    "truth": "invalid | step=5 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-194",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-195",
+    "prediction": "invalid | step=2 | reason=out_of_bounds",
+    "truth": "invalid | step=2 | reason=out_of_bounds"
+  },
+  {
+    "id": "test_id-196",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-197",
+    "prediction": "invalid | step=8 | reason=goal_not_reached",
+    "truth": "invalid | step=8 | reason=goal_not_reached"
+  },
+  {
+    "id": "test_id-198",
+    "prediction": "valid",
+    "truth": "valid"
+  },
+  {
+    "id": "test_id-199",
+    "prediction": "invalid | step=1 | reason=invalid_action_token",
+    "truth": "invalid | step=1 | reason=invalid_action_token"
+  }
+]

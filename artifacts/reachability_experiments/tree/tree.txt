@@ -1,0 +1,31 @@
+|--- feature_13 <= 0.50
+|   |--- feature_12 <= 0.50
+|   |   |--- feature_5 <= 5.50
+|   |   |   |--- feature_5 <= -0.50
+|   |   |   |   |--- class: out_of_bounds
+|   |   |   |--- feature_5 >  -0.50
+|   |   |   |   |--- feature_4 <= -0.50
+|   |   |   |   |   |--- class: out_of_bounds
+|   |   |   |   |--- feature_4 >  -0.50
+|   |   |   |   |   |--- feature_4 <= 5.50
+|   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |--- feature_4 >  5.50
+|   |   |   |   |   |   |--- class: out_of_bounds
+|   |   |--- feature_5 >  5.50
+|   |   |   |--- class: out_of_bounds
+|   |--- feature_12 >  0.50
+|   |   |--- feature_7 <= 0.50
+|   |   |   |--- feature_7 <= -0.50
+|   |   |   |   |--- class: goal_not_reached
+|   |   |   |--- feature_7 >  -0.50
+|   |   |   |   |--- feature_6 <= -0.50
+|   |   |   |   |   |--- class: goal_not_reached
+|   |   |   |   |--- feature_6 >  -0.50
+|   |   |   |   |   |--- feature_6 <= 0.50
+|   |   |   |   |   |   |--- class: ok
+|   |   |   |   |   |--- feature_6 >  0.50
+|   |   |   |   |   |   |--- class: goal_not_reached
+|   |   |--- feature_7 >  0.50
+|   |   |   |--- class: goal_not_reached
+|--- feature_13 >  0.50
+|   |--- class: invalid_action_token

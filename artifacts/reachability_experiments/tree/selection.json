@@ -1,0 +1,70 @@
+{
+  "training_candidates": 2000,
+  "expanded_steps": 10380,
+  "selected_depth": 8,
+  "selection": "dev macro-F1 then joint error accuracy; ties prefer shallower tree",
+  "dev_candidates": [
+    {
+      "depth": 4,
+      "metrics": {
+        "n": 100,
+        "macro_f1": 0.9194847020933977,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.78,
+        "failure_type_accuracy": 0.78,
+        "joint_error_accuracy": 0.78
+      }
+    },
+    {
+      "depth": 8,
+      "metrics": {
+        "n": 100,
+        "macro_f1": 1.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.92,
+        "failure_type_accuracy": 0.92,
+        "joint_error_accuracy": 0.92
+      }
+    },
+    {
+      "depth": 12,
+      "metrics": {
+        "n": 100,
+        "macro_f1": 0.9899989998999901,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.92,
+        "failure_type_accuracy": 0.92,
+        "joint_error_accuracy": 0.92
+      }
+    },
+    {
+      "depth": null,
+      "metrics": {
+        "n": 100,
+        "macro_f1": 0.949874686716792,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.88,
+        "failure_type_accuracy": 0.88,
+        "joint_error_accuracy": 0.88
+      }
+    }
+  ],
+  "test_status": "reused_exploratory",
+  "metrics": {
+    "dev": {
+      "n": 100,
+      "macro_f1": 1.0,
+      "format_accuracy": 1.0,
+      "first_error_localization_accuracy": 0.92,
+      "failure_type_accuracy": 0.92,
+      "joint_error_accuracy": 0.92
+    }
+  },
+  "training_classes": [
+    "goal_not_reached",
+    "invalid_action_token",
+    "obstacle_collision",
+    "ok",
+    "out_of_bounds"
+  ]
+}

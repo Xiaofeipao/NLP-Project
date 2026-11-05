@@ -1,0 +1,79 @@
+{
+  "kind": "diagnostic_only",
+  "probe": {
+    "unreachable_detected": 0,
+    "unreachable_total": 4,
+    "reachable_solved": 0,
+    "reachable_false_refusals": 0,
+    "reachable_total": 4
+  },
+  "predictions": {
+    "case-01": "up up up",
+    "case-02": "up up up",
+    "case-03": "up up up",
+    "case-04": "up up up",
+    "case-05": "up up up",
+    "case-06": "up up up",
+    "case-07": "up up up",
+    "case-08": "up up up"
+  },
+  "tree_sha256": "a2b1a7ff4f5d025a1f073774b4acde0cc678fc9da46bb6378a059125fd3a1b6c",
+  "test_status": "eight public curated probes; reused repair tests",
+  "policy_cases": {
+    "case-01": {
+      "plan": "right right up up left down left up right right down down down down down left up up left down down right right up up left up up left down down down right right up up",
+      "status": "budget_exhausted",
+      "stop_reason": null,
+      "model_calls": 36
+    },
+    "case-02": {
+      "plan": "right right up up left down left up right right down down down down right right right up up",
+      "status": "success",
+      "stop_reason": null,
+      "model_calls": 19
+    },
+    "case-03": {
+      "plan": "right right right down down left left left left up right right right right right down left left left left left up up right right right right right down down left left up left left right",
+      "status": "budget_exhausted",
+      "stop_reason": null,
+      "model_calls": 36
+    },
+    "case-04": {
+      "plan": "right right right down down left left left left down down right right right right down",
+      "status": "success",
+      "stop_reason": null,
+      "model_calls": 16
+    },
+    "case-05": {
+      "plan": "right right right right down left down left down down right down right right up down left left left left up up up up right right right right down up up left right left left left",
+      "status": "budget_exhausted",
+      "stop_reason": null,
+      "model_calls": 36
+    },
+    "case-06": {
+      "plan": "right right right right down left down left down down right right up",
+      "status": "success",
+      "stop_reason": null,
+      "model_calls": 13
+    },
+    "case-07": {
+      "plan": "",
+      "status": "stopped",
+      "stop_reason": null,
+      "model_calls": 1
+    },
+    "case-08": {
+      "plan": "down right right right right right down down down",
+      "status": "success",
+      "stop_reason": null,
+      "model_calls": 9
+    }
+  },
+  "policy_probe": {
+    "unreachable_detected": 0,
+    "unreachable_total": 4,
+    "reachable_solved": 4,
+    "reachable_false_refusals": 0,
+    "reachable_total": 4
+  }
+}
