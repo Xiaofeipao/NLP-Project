@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "source_base_commit": "86b52edc3de69481352bec5d0a15c1aa372a3e2b",
+  "code_commit": "0978c1a84ae4891f72d87b7ba321e11229de3553",
+  "freeze_sha256": "1b6285e3f1fa03d611f3839916fdf0b4cc84130fdaf075392e47d4fa57e6877c",
+  "evidence_zip_sha256": "e3f8574fa3da7094887929f7b1ed17d434171a8cb9fb445e262492716aeb8ba4",
+  "test_status": "reused_exploratory",
+  "quotas": {
+    "train": 4000,
+    "dev": 200,
+    "test_id": 200,
+    "test_ood": 200
+  },
+  "development": {
+    "generation": {
+      "E1": 0,
+      "B4": 0,
+      "C4": 36,
+      "U4": 37,
+      "H4": 40
+    },
+    "repair": {
+      "E1": 10,
+      "B4": 8,
+      "C4": 60,
+      "U4": 57,
+      "H4": 60
+    },
+    "direct": 0.0,
+    "self": 0.0,
+    "executor_one": 0.0,
+    "executor_three": 0.0,
+    "verification_macro_f1": 0.6290726817042607,
+    "legacy_candidate_success_rate": 0.16666666666666666
+  },
+  "test_generation_paired_n": 200,
+  "test_id": {
+    "generation_success": {
+      "direct": 0.0,
+      "self": 0.0,
+      "executor_one": 0.0,
+      "executor_three": 0.0,
+      "B4": 0.0,
+      "C4": 0.92,
+      "U4": 0.955,
+      "H4": 1.0
+    },
+    "generation_optimality": {
+      "B4": 0.0,
+      "C4": 0.43,
+      "U4": 0.37,
+      "H4": 0.995
+    },
+    "candidate_success": {
+      "B4": 0.25,
+      "C4": 0.98,
+      "U4": 0.95,
+      "H4": 1.0,
+      "E1": 0.19
+    },
+    "verification_macro_f1": 0.7189883580891208
+  },
+  "test_ood": {
+    "generation_reuses_id": true,
+    "candidate_success": {
+      "B4": 0.08,
+      "C4": 0.94,
+      "U4": 0.95,
+      "H4": 1.0,
+      "E1": 0.07
+    },
+    "verification_macro_f1": 0.7749943748593715
+  },
+  "budget": {
+    "new_gpu_seconds": 1569.0459999999998,
+    "global_gpu_hours": 7.104873333333334,
+    "global_runs": 247
+  }
+}
