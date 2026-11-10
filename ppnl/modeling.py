@@ -186,6 +186,64 @@ class Seq2Seq:
             result.extend(self.tokenizer.batch_decode(output, skip_special_tokens=True))
         return result
 
+    def action_scorer(self, source, check=lambda: None):
+        """Return a batched full-vocabulary next-action scorer for a T5 repair prompt."""
+        from transformers.modeling_outputs import BaseModelOutput
+        from .core import ACTIONS
+
+        if self.model.config.model_type != "t5":
+            raise ValueError("Action beam tokenization is currently validated only for T5")
+        tokenizer = self.tokenizer
+        action_ids = {name: tokenizer.encode(name, add_special_tokens=False) for name in ACTIONS}
+        if any(len(ids) != 1 for ids in action_ids.values()):
+            raise ValueError("Each action must be exactly one tokenizer token")
+        action_ids = {name: ids[0] for name, ids in action_ids.items()}
+        for left in ACTIONS:
+            for right in ACTIONS:
+                if tokenizer.encode(f"{left} {right}", add_special_tokens=False) != [
+                        action_ids[left], action_ids[right]]:
+                    raise ValueError("Action tokens change after a space")
+                for third in ACTIONS:
+                    if tokenizer.encode(f"{left} {right} {third}", add_special_tokens=False) != [
+                            action_ids[left], action_ids[right], action_ids[third]]:
+                        raise ValueError("Action tokens change in a longer prefix")
+        eos = tokenizer.eos_token_id
+        start = self.model.config.decoder_start_token_id
+        if (eos is None or start is None or len(set(action_ids.values())) != 4
+                or eos in action_ids.values()):
+            raise ValueError("Invalid T5 action/EOS/decoder-start token contract")
+        check()
+        encoded = tokenizer([source], truncation=False, return_tensors="pt").to(self.device)
+        if encoded.input_ids.shape[1] > self.input_limit:
+            raise ValueError("Inference input exceeds configured limit; refusing truncation")
+        self.model.eval()
+        with self.torch.inference_mode(), self.autocast():
+            hidden = self.model.get_encoder()(**encoded).last_hidden_state
+        usage = {"encoder_input_tokens": int(encoded.input_ids.shape[1]),
+                 "decoder_input_tokens_processed": 0}
+        names = (*ACTIONS, "<eos>")
+        ids = [action_ids[name] for name in ACTIONS] + [eos]
+
+        def score(prefixes):
+            if not prefixes:
+                return []
+            check()
+            tokens = [[start] + [action_ids[action] for action in prefix] for prefix in prefixes]
+            if len({len(row) for row in tokens}) != 1:
+                raise ValueError("A scorer batch must contain equal-length prefixes")
+            decoder = self.torch.tensor(tokens, dtype=self.torch.long, device=self.device)
+            usage["decoder_input_tokens_processed"] += decoder.numel()
+            encoder = BaseModelOutput(last_hidden_state=hidden.expand(len(prefixes), -1, -1))
+            mask = encoded.attention_mask.expand(len(prefixes), -1)
+            with self.torch.inference_mode(), self.autocast():
+                output = self.model(encoder_outputs=encoder, attention_mask=mask,
+                                    decoder_input_ids=decoder, use_cache=False)
+                logprobs = self.torch.log_softmax(output.logits[:, -1, :].float(), dim=-1)
+                selected = logprobs[:, ids].cpu().tolist()
+            return [dict(zip(names, row)) for row in selected]
+
+        return score, usage
+
 
 def dataset_fingerprint(directory):
     value = hashlib.sha256()
