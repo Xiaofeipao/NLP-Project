@@ -1,0 +1,22 @@
+{
+  "description": "持久化模型与工具循环、预算、恢复、逐步策略",
+  "commands": {
+    "run": [
+      "scripts/run_harness.py"
+    ],
+    "compare": [
+      "scripts/compare_harness.py"
+    ],
+    "evaluate": [
+      "scripts/run_eval_harness.py"
+    ]
+  },
+  "configs": [
+    "configs/harness"
+  ],
+  "modules": [
+    "ppnl/harness.py",
+    "ppnl/harness_backends.py",
+    "ppnl/policy.py"
+  ]
+}

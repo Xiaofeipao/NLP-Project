@@ -1,5 +1,7 @@
 # 命令入口分类
 
+新增 [methods/](../methods/README.md) 分类入口，原脚本继续作为实现来源。转发保留参数、退出码、冻结和预算检查。
+
 - 数据与模型下载：`fetch_official.py`、`fetch_models.py`。
 - 原基线：`run_study.py`，以及 `python -m ppnl.cli`。
 - 逐步策略：`run_policy_study.py`、`run_policy_v3.py`、`evaluate_policy.py`、`plan_grid.py`。

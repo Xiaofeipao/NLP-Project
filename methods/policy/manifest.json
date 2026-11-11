@@ -1,0 +1,21 @@
+{
+  "description": "独立逐步动作训练、规划及搜索对照",
+  "commands": {
+    "run": [
+      "scripts/plan_grid.py"
+    ],
+    "train": [
+      "scripts/run_policy_v3.py"
+    ],
+    "evaluate": [
+      "scripts/evaluate_policy.py"
+    ]
+  },
+  "configs": [
+    "config.policy.best.json"
+  ],
+  "modules": [
+    "ppnl/policy.py",
+    "ppnl/policy_v3_data.py"
+  ]
+}

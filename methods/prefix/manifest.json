@@ -1,0 +1,16 @@
+{
+  "description": "保留合法前缀与从起点重启的独立消融",
+  "commands": {
+    "run": [
+      "scripts/run_prefix_experiment.py"
+    ]
+  },
+  "configs": [
+    "configs/prefix"
+  ],
+  "modules": [
+    "ppnl/prefix_evaluation.py",
+    "ppnl/full_prefix_repair.py",
+    "ppnl/prefix_state_repair.py"
+  ]
+}

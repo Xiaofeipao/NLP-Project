@@ -1,0 +1,17 @@
+{
+  "description": "执行器奖励训练：REINFORCE 或 GRPO，可使用 LoRA；不是人工反馈 RLHF",
+  "commands": {
+    "run": [
+      "scripts/run_rlvr.py"
+    ],
+    "verify": [
+      "scripts/verify_rlvr.py"
+    ]
+  },
+  "configs": [
+    "configs/rlvr.json"
+  ],
+  "modules": [
+    "ppnl/rlvr.py"
+  ]
+}

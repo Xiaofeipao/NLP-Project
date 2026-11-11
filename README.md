@@ -2,6 +2,8 @@
 
 ## 当前版本与方法导航
 
+**按方法运行**：新增 [methods/](methods/README.md)，按 baseline、gvr、harness、lora、rl、policy、prefix 分目录，每个目录提供运行入口和配置映射。用 `python -m methods.baseline --describe` 查看归属。旧命令兼容，main 保留完整项目，两个研究分支尚未合并。
+
 **三模型 GPU 扩展已完成（2026-11-04）**：T5-small、T5-base、BART-base 的全量基线、GVR LoRA、outcome-GRPO/REINFORCE、逐步策略及前缀消融共生成 99/99 份评测报告。三个模型的逐步策略加访问约束均达到 200/200，最优率分别为 86%、85%、82.5%；GRPO 整路径生成仍只有 0–4/200。完整方法边界、负结果和开发选模规则见 [三模型 GPU 实验记录](docs/gpu_campaign_20261103.md)，原始指标见 [结果 JSON](docs/gpu_campaign_results.json)。
 
 本轮有效模型权重、训练记录、99 份报告和执行轨迹发布于 [实验产物目录](artifacts/campaign_20261103/README.md)。大文件通过 Git LFS 下载；加载方法、底座对应关系、脱敏与哈希校验范围见目录说明。

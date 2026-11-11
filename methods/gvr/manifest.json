@@ -1,0 +1,15 @@
+{
+  "description": "全量模型的生成、验证、修复流程；不是独立训练算法",
+  "commands": {
+    "run": [
+      "scripts/run_full_finetune_gvr.py"
+    ]
+  },
+  "configs": [
+    "config.json"
+  ],
+  "modules": [
+    "ppnl/full_finetune_gvr.py",
+    "ppnl/gvr_harness.py"
+  ]
+}

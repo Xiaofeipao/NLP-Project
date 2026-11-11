@@ -8,7 +8,9 @@
 - 逐步策略与搜索：`policy.py`、`policy_data.py`、`policy_v3_data.py`。
 - 运行控制：`harness.py`、`harness_backends.py`、`gvr_harness.py`、`full_finetune_gvr.py`。
 - 前缀修复：`prefix_state_repair.py`（GVR trace）、`full_prefix_repair.py`（原全量模型 trace）、`prefix_evaluation.py`（统一冻结入口）。
-- 奖励训练：`rlvr.py`（REINFORCE，不是 GRPO）。
+- 奖励训练：`rlvr.py`（REINFORCE 与带裁剪概率比的 GRPO，由实验 spec 决定）。
 - 指标与复核：`evaluation.py`、`eval_harness.py`、`gvr_evaluation.py`、`gvr_audit.py`、`experiment_freeze.py`。
 
 方法和历史结果的边界见 [项目导航](../docs/project_map.md)。
+
+按方法运行与配置映射见 [methods/](../methods/README.md)。公共实现保留本目录，避免算法副本与历史导入失效。

@@ -1,0 +1,21 @@
+{
+  "description": "全量多任务基线：数据准备、训练、开发选模与评测",
+  "commands": {
+    "run": [
+      "-m",
+      "ppnl.cli"
+    ],
+    "study": [
+      "scripts/run_study.py"
+    ]
+  },
+  "configs": [
+    "config.json",
+    "configs/campaign_20261103/baselines.json"
+  ],
+  "modules": [
+    "ppnl/modeling.py",
+    "ppnl/optimization.py",
+    "ppnl/evaluation.py"
+  ]
+}

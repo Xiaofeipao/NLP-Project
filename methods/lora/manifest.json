@@ -1,0 +1,21 @@
+{
+  "description": "GVR 参数高效微调：共享 G 底座，独立 V/R adapter",
+  "commands": {
+    "run": [
+      "scripts/run_gvr.py"
+    ],
+    "freeze": [
+      "scripts/freeze_experiment.py"
+    ]
+  },
+  "configs": [
+    "config.gvr.json",
+    "configs/gvr_format_vanilla.json",
+    "configs/gvr_format_structured.json"
+  ],
+  "modules": [
+    "ppnl/task_adapters.py",
+    "ppnl/gvr_training.py",
+    "ppnl/gvr_objectives.py"
+  ]
+}
