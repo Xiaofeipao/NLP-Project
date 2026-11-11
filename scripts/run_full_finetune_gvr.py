@@ -16,12 +16,13 @@ def repair_spec(spec):
     method = spec.get("repair_decoding", "ordinary")
     if method == "ordinary":
         return None
-    if method != "constrained":
+    if method not in ("constrained", "backtrack"):
         raise ValueError("Unknown repair decoding")
     if spec["mode"] in ("self", "direct"):
         raise ValueError("Constrained repair requires executor feedback mode")
     return DecodeSpec(beam_width=spec.get("beam_width", 4),
-                      max_actions=spec.get("max_actions", 36), state_constraints=True)
+                      max_actions=spec.get("max_actions", 36), state_constraints=True,
+                      backtrack=method == "backtrack", max_score_rows=spec.get("max_score_rows"))
 
 
 def prepare(spec):
@@ -39,7 +40,12 @@ def prepare(spec):
         model_config = json.loads((Path(spec["checkpoint"])/"config.json").read_text(encoding="utf-8"))
         if model_config.get("model_type") != "t5":
             raise ValueError("Constrained repair currently supports T5 checkpoints only")
-    identity = checkpoint_identity(spec["checkpoint"], config, decoding)
+    feedback = spec.get("repair_feedback", "original")
+    if feedback not in ("original", "none", "generic"):
+        raise ValueError("Unknown repair feedback ablation")
+    if feedback != "original" and spec["mode"] not in ("executor_one", "executor_three"):
+        raise ValueError("Feedback ablation requires executor feedback mode")
+    identity = checkpoint_identity(spec["checkpoint"], config, decoding, feedback)
     return config, grid, oracle, identity
 
 
@@ -55,7 +61,9 @@ def main():
     start.add_argument("--active-seconds", type=float, default=300.0)
     start.add_argument("--out", required=True, help="new directory under outputs/full_finetune_gvr")
     start.add_argument("--dry-run", action="store_true")
-    start.add_argument("--repair-decoding", choices=("ordinary", "constrained"), default="ordinary")
+    start.add_argument("--repair-decoding", choices=("ordinary", "constrained", "backtrack"), default="ordinary")
+    start.add_argument("--max-score-rows", type=int, help="Required for backtrack; use same cap for constrained control")
+    start.add_argument("--repair-feedback", choices=("original", "none", "generic"), default="original")
     start.add_argument("--beam-width", type=int, default=4)
     start.add_argument("--max-actions", type=int, default=36)
     for name in ("resume", "inspect", "score"):
@@ -77,9 +85,10 @@ def main():
                 "mode": args.mode, "model_calls": args.model_calls,
                 "active_seconds": args.active_seconds,
                 "repair_decoding": args.repair_decoding,
-                "beam_width": args.beam_width, "max_actions": args.max_actions}
+                "beam_width": args.beam_width, "max_actions": args.max_actions,
+                "max_score_rows": args.max_score_rows, "repair_feedback": args.repair_feedback}
         repair_spec(spec)
-        if args.repair_decoding == "ordinary" and (args.beam_width != 4 or args.max_actions != 36):
+        if args.repair_decoding == "ordinary" and (args.beam_width != 4 or args.max_actions != 36 or args.max_score_rows is not None):
             raise ValueError("Beam/action options apply only to constrained repair")
         if directory.exists():
             raise FileExistsError("Choose a new trial directory")
@@ -115,7 +124,7 @@ def main():
     from ppnl.modeling import Seq2Seq, gpu_budget, require_cuda
     require_cuda()
     with gpu_budget(config["gpu_ledger"], config["gpu_hours_cap"], "full_finetune_gvr") as check:
-        model = FullFinetuneGVRModel(Seq2Seq(spec["checkpoint"], config), repair_spec(spec))
+        model = FullFinetuneGVRModel(Seq2Seq(spec["checkpoint"], config), repair_spec(spec), spec.get("repair_feedback", "original"))
         state = run_gvr_session(directory, model, identity, check)
     print(json.dumps(state, ensure_ascii=False, indent=2))
 

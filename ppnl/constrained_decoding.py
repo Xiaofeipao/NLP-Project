@@ -15,10 +15,19 @@ class DecodeSpec:
     beam_width: int = 4
     max_actions: int = 36
     state_constraints: bool = True
+    backtrack: bool = False
+    max_score_rows: int | None = None
 
     def __post_init__(self):
-        if not 1 <= self.beam_width <= 16 or not 1 <= self.max_actions <= 128:
+        if (type(self.beam_width) is not int or type(self.max_actions) is not int
+                or not 1 <= self.beam_width <= 16 or not 1 <= self.max_actions <= 128):
             raise ValueError("Invalid action beam budget")
+        if type(self.backtrack) is not bool or type(self.state_constraints) is not bool:
+            raise ValueError("Decoder switches must be booleans")
+        if self.max_score_rows is not None and (type(self.max_score_rows) is not int or not 1 <= self.max_score_rows <= 100000):
+            raise ValueError("Invalid scorer row budget")
+        if self.backtrack and (not self.state_constraints or self.max_score_rows is None):
+            raise ValueError("Backtracking requires state constraints and an explicit scorer row budget")
 
 
 @dataclass(frozen=True)
@@ -53,13 +62,28 @@ def decode_actions(grid: Grid, score, spec: DecodeSpec = DecodeSpec(), check=lam
     complete = []
     last_partial = active[0]
     batches = rows = illegal = revisits = dead = 0
+    deferred = []
+    row_budget_hit = False
 
     def rank(beam):
         return (-beam.logprob, tuple(ACTION_ORDER[action] for action in beam.actions))
 
-    for _ in range(spec.max_actions + 1):
+    for _ in range(spec.max_score_rows if spec.backtrack else spec.max_actions + 1):
+        if not active and deferred:
+            # Recover siblings from the most recent abandoned depth. Each batch
+            # has equal-length prefixes, as required by the T5 scorer.
+            siblings = deferred.pop()
+            active = siblings[:spec.beam_width]
+            if len(siblings) > spec.beam_width:
+                deferred.append(siblings[spec.beam_width:])
         if not active:
             break
+        if spec.max_score_rows is not None:
+            remaining = spec.max_score_rows - rows
+            if remaining <= 0:
+                row_budget_hit = True
+                break
+            active = active[:remaining]
         check()
         values = score([b.actions for b in active])
         if len(values) != len(active):
@@ -101,11 +125,15 @@ def decode_actions(grid: Grid, score, spec: DecodeSpec = DecodeSpec(), check=lam
             if not expanded:
                 dead += 1
         complete = sorted(complete, key=rank)[:spec.beam_width]
-        active = sorted(next_active, key=rank)[:spec.beam_width]
+        ordered = sorted(next_active, key=rank)
+        if spec.backtrack and len(ordered) > spec.beam_width:
+            deferred.append(ordered[spec.beam_width:])
+        active = ordered[:spec.beam_width]
         if active:
             last_partial = active[0]
     winner = complete[0] if complete else last_partial
-    reason = ("complete" if complete else "action_budget" if active or
+    row_budget_hit = row_budget_hit or (spec.max_score_rows is not None and rows >= spec.max_score_rows)
+    reason = ("complete" if complete else "scorer_budget" if row_budget_hit else "action_budget" if active or
               len(last_partial.actions) >= spec.max_actions else "dead_end")
     return DecodeResult(" ".join(winner.actions), reason, bool(complete), winner.logprob,
                         len(winner.actions), batches, rows, illegal, revisits, dead)

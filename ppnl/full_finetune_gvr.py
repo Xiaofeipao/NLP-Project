@@ -18,7 +18,7 @@ def _sha256(path):
     return digest.hexdigest()
 
 
-def checkpoint_identity(checkpoint, config, repair_decoding=None):
+def checkpoint_identity(checkpoint, config, repair_decoding=None, repair_feedback="original"):
     """Bind a session to one local full checkpoint, config, code and runtime."""
     checkpoint = Path(checkpoint)
     if not checkpoint.is_dir() or (checkpoint / "adapter_config.json").exists():
@@ -40,6 +40,7 @@ def checkpoint_identity(checkpoint, config, repair_decoding=None):
             packages[name] = None
     return {"kind": "full_finetune_gvr", "config_sha256": fingerprint(config),
             "repair_decoding": asdict(repair_decoding) if repair_decoding else None,
+            "repair_feedback": repair_feedback,
             "checkpoint": {p.relative_to(checkpoint).as_posix(): _sha256(p) for p in files},
             "code": {name: _sha256(source / name) for name in code}, "packages": packages}
 
@@ -47,12 +48,18 @@ def checkpoint_identity(checkpoint, config, repair_decoding=None):
 class FullFinetuneGVRModel:
     """Reuse the original multi-task model and exact training/evaluation prompts."""
 
-    def __init__(self, runner, repair_decoding=None):
+    def __init__(self, runner, repair_decoding=None, repair_feedback="original"):
+        if repair_feedback not in ("original", "none", "generic"):
+            raise ValueError("Unknown repair feedback ablation")
         self.runner = runner
         self.repair_decoding = repair_decoding
+        self.repair_feedback = repair_feedback
         self.last_usage = {}
 
     def predict(self, task, grid, candidate="", feedback="", check=lambda: None):
+        if task == "repair":
+            if self.repair_feedback == "none": feedback = ""
+            elif self.repair_feedback == "generic": feedback = "The candidate is invalid. Find a valid path."
         source = prompt(task, grid, candidate, feedback)
         decoder_usage = {}
         if task == "repair" and self.repair_decoding is not None:
@@ -73,5 +80,6 @@ class FullFinetuneGVRModel:
         tokenizer = self.runner.tokenizer
         self.last_usage = {"input_tokens": len(tokenizer(source)["input_ids"]),
                            "output_tokens": len(tokenizer(result)["input_ids"]),
+                           "repair_feedback_used": feedback if task == "repair" else None,
                            **decoder_usage}
         return result

@@ -141,6 +141,7 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
                     state["repairs"] += 1
                 state["phase"] = "done" if mode == "direct" else "feedback"
                 state["history"].append({"task": task, "candidate": state["candidate"],
+                                         "repair_feedback_used": usage.get("repair_feedback_used"),
                                          "decode_status": usage.get("decode_status")})
                 if repeated:
                     state.update(status="stopped", stop_reason="repeated_candidate")

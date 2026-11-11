@@ -8,6 +8,14 @@
 
 ## 两种修复解码（本地接入）
 
+### 新增候选：已编码，尚未运行
+
+`--repair-decoding backtrack --max-score-rows 148` 开启有限预算回溯：当前 beam 无可扩展节点时，恢复最近被裁剪的同深度备选。沿用合法动作、不回访和终点 EOS 条件。148 只是试验预算示例，不是调优值。`--repair-decoding constrained --max-score-rows 148` 是同 scorer-row 上限对照；相同行数不等于相同 token/FLOPs/耗时，仍需报告 decoder_input_tokens_processed 和时间。预算耗尽不能输出 NO_PATH，也无最优性保证。
+
+`--repair-feedback original|none|generic` 分别提供原错误诊断、空反馈、只说明候选错误的通用反馈，默认 original。仅 executor_one/three 允许从 CLI 开启消融；执行器仍负责判分和停止，只改变 R 看到的文本。身份记录绑定选项，历史记录 repair_feedback_used 保存实际模型反馈。该消融尚不包含跨案例打乱。
+
+普通解码默认与既有 beam 默认不变。新增选项只接入单网格入口；旧批量研究脚本仍是原 C4/B4 协议，尚不能声称已完成新方法的同预算全测试。先定义开发实验矩阵和新冻结，再开展正式对照。新增测试文件已写但按要求未运行，历史 158 项通过不覆盖本次修改。
+
 `run` 子命令新增 `--repair-decoding ordinary|constrained`，默认 ordinary，沿用原普通解码。constrained 仅用于 executor_one / executor_three 模式、T5 全量 checkpoint；G/V 不变，R 使用合法动作、路径内不回访、终点 EOS 门控的 beam 解码。默认 beam=4、最多 36 动作，可通过 --beam-width / --max-actions 显式设置。这不保证最短路，也不能用 dead_end 推断 NO_PATH。
 
 ```powershell
