@@ -1,0 +1,661 @@
+{
+  "development_identical": true,
+  "numeric_absolute_tolerance": 1e-12,
+  "excluded": "elapsed seconds; freeze identities differ by design",
+  "packages": {
+    "torch": "2.12.1+cu132",
+    "transformers": "4.57.6",
+    "peft": "0.18.1"
+  },
+  "splits": {
+    "test_id": {
+      "generation": {
+        "identical": true,
+        "local": {
+          "B4": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null
+          },
+          "C4": {
+            "n": 200,
+            "success_rate": 0.92,
+            "feasibility": 1.0,
+            "optimality": 0.43,
+            "path_efficiency_on_success": 0.6912498870790992
+          },
+          "U4": {
+            "n": 200,
+            "success_rate": 0.955,
+            "feasibility": 1.0,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.6545841208493198
+          },
+          "H4": {
+            "n": 200,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.995,
+            "path_efficiency_on_success": 0.9988888888888888
+          }
+        },
+        "peer": {
+          "B4": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null
+          },
+          "C4": {
+            "n": 200,
+            "success_rate": 0.92,
+            "feasibility": 1.0,
+            "optimality": 0.43,
+            "path_efficiency_on_success": 0.6912498870790993
+          },
+          "U4": {
+            "n": 200,
+            "success_rate": 0.955,
+            "feasibility": 1.0,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.6545841208493197
+          },
+          "H4": {
+            "n": 200,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.995,
+            "path_efficiency_on_success": 0.9988888888888888
+          }
+        }
+      },
+      "candidate_repair": {
+        "identical": true,
+        "local": {
+          "B4": {
+            "n": 100,
+            "success_rate": 0.25,
+            "feasibility": 0.56,
+            "optimality": 0.25,
+            "path_efficiency_on_success": 1.0
+          },
+          "C4": {
+            "n": 100,
+            "success_rate": 0.98,
+            "feasibility": 1.0,
+            "optimality": 0.96,
+            "path_efficiency_on_success": 0.9849854227405247
+          },
+          "U4": {
+            "n": 100,
+            "success_rate": 0.95,
+            "feasibility": 1.0,
+            "optimality": 0.35,
+            "path_efficiency_on_success": 0.6379158624474636
+          },
+          "H4": {
+            "n": 100,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.99,
+            "path_efficiency_on_success": 0.9977777777777778
+          },
+          "E1": {
+            "n": 100,
+            "success_rate": 0.19,
+            "feasibility": 0.46,
+            "optimality": 0.19,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "peer": {
+          "B4": {
+            "n": 100,
+            "success_rate": 0.25,
+            "feasibility": 0.56,
+            "optimality": 0.25,
+            "path_efficiency_on_success": 1.0
+          },
+          "C4": {
+            "n": 100,
+            "success_rate": 0.98,
+            "feasibility": 1.0,
+            "optimality": 0.96,
+            "path_efficiency_on_success": 0.9849854227405247
+          },
+          "U4": {
+            "n": 100,
+            "success_rate": 0.95,
+            "feasibility": 1.0,
+            "optimality": 0.35,
+            "path_efficiency_on_success": 0.6379158624474633
+          },
+          "H4": {
+            "n": 100,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.99,
+            "path_efficiency_on_success": 0.9977777777777778
+          },
+          "E1": {
+            "n": 100,
+            "success_rate": 0.19,
+            "feasibility": 0.46,
+            "optimality": 0.19,
+            "path_efficiency_on_success": 1.0
+          }
+        }
+      },
+      "verification": {
+        "identical": true,
+        "local": {
+          "n": 200,
+          "macro_f1": 0.7189883580891208,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.08,
+          "failure_type_accuracy": 0.53,
+          "joint_error_accuracy": 0.07,
+          "predicted_label_counts": {
+            "valid": 112,
+            "invalid": 88
+          },
+          "all_valid_warning": false
+        },
+        "peer": {
+          "n": 200,
+          "macro_f1": 0.7189883580891208,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.08,
+          "failure_type_accuracy": 0.53,
+          "joint_error_accuracy": 0.07,
+          "predicted_label_counts": {
+            "valid": 112,
+            "invalid": 88
+          },
+          "all_valid_warning": false
+        }
+      },
+      "legacy_modes": {
+        "identical": true,
+        "local": {
+          "direct": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 1.0,
+            "mean_executor_calls": 0.0,
+            "mean_input_tokens": 83.15,
+            "mean_output_tokens": 10.785,
+            "stop_reason_counts": {
+              "direct_complete": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          },
+          "self": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 2.0,
+            "mean_executor_calls": 0.0,
+            "mean_input_tokens": 147.935,
+            "mean_output_tokens": 2.0,
+            "stop_reason_counts": {
+              "feedback_valid": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 200
+          },
+          "executor_one": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 2.0,
+            "mean_executor_calls": 2.0,
+            "mean_input_tokens": 115.225,
+            "mean_output_tokens": 11.785,
+            "stop_reason_counts": {
+              "repair_limit": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          },
+          "executor_three": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 4.0,
+            "mean_executor_calls": 4.0,
+            "mean_input_tokens": 349.1,
+            "mean_output_tokens": 41.215,
+            "stop_reason_counts": {
+              "repair_limit": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          }
+        },
+        "peer": {
+          "direct": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 1.0,
+            "mean_executor_calls": 0.0,
+            "mean_input_tokens": 83.15,
+            "mean_output_tokens": 10.785,
+            "stop_reason_counts": {
+              "direct_complete": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          },
+          "self": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 2.0,
+            "mean_executor_calls": 0.0,
+            "mean_input_tokens": 147.935,
+            "mean_output_tokens": 2.0,
+            "stop_reason_counts": {
+              "feedback_valid": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 200
+          },
+          "executor_one": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 2.0,
+            "mean_executor_calls": 2.0,
+            "mean_input_tokens": 115.225,
+            "mean_output_tokens": 11.785,
+            "stop_reason_counts": {
+              "repair_limit": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          },
+          "executor_three": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 4.0,
+            "mean_executor_calls": 4.0,
+            "mean_input_tokens": 349.1,
+            "mean_output_tokens": 41.215,
+            "stop_reason_counts": {
+              "repair_limit": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          }
+        }
+      }
+    },
+    "test_ood": {
+      "generation": {
+        "identical": true,
+        "local": {
+          "B4": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null
+          },
+          "C4": {
+            "n": 200,
+            "success_rate": 0.92,
+            "feasibility": 1.0,
+            "optimality": 0.43,
+            "path_efficiency_on_success": 0.6912498870790992
+          },
+          "U4": {
+            "n": 200,
+            "success_rate": 0.955,
+            "feasibility": 1.0,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.6545841208493198
+          },
+          "H4": {
+            "n": 200,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.995,
+            "path_efficiency_on_success": 0.9988888888888888
+          }
+        },
+        "peer": {
+          "B4": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null
+          },
+          "C4": {
+            "n": 200,
+            "success_rate": 0.92,
+            "feasibility": 1.0,
+            "optimality": 0.43,
+            "path_efficiency_on_success": 0.6912498870790993
+          },
+          "U4": {
+            "n": 200,
+            "success_rate": 0.955,
+            "feasibility": 1.0,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.6545841208493197
+          },
+          "H4": {
+            "n": 200,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.995,
+            "path_efficiency_on_success": 0.9988888888888888
+          }
+        }
+      },
+      "candidate_repair": {
+        "identical": true,
+        "local": {
+          "B4": {
+            "n": 100,
+            "success_rate": 0.08,
+            "feasibility": 0.51,
+            "optimality": 0.08,
+            "path_efficiency_on_success": 1.0
+          },
+          "C4": {
+            "n": 100,
+            "success_rate": 0.94,
+            "feasibility": 1.0,
+            "optimality": 0.83,
+            "path_efficiency_on_success": 0.9492823370482947
+          },
+          "U4": {
+            "n": 100,
+            "success_rate": 0.95,
+            "feasibility": 1.0,
+            "optimality": 0.35,
+            "path_efficiency_on_success": 0.6379158624474636
+          },
+          "H4": {
+            "n": 100,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.99,
+            "path_efficiency_on_success": 0.9977777777777778
+          },
+          "E1": {
+            "n": 100,
+            "success_rate": 0.07,
+            "feasibility": 0.45,
+            "optimality": 0.07,
+            "path_efficiency_on_success": 1.0
+          }
+        },
+        "peer": {
+          "B4": {
+            "n": 100,
+            "success_rate": 0.08,
+            "feasibility": 0.51,
+            "optimality": 0.08,
+            "path_efficiency_on_success": 1.0
+          },
+          "C4": {
+            "n": 100,
+            "success_rate": 0.94,
+            "feasibility": 1.0,
+            "optimality": 0.83,
+            "path_efficiency_on_success": 0.9492823370482945
+          },
+          "U4": {
+            "n": 100,
+            "success_rate": 0.95,
+            "feasibility": 1.0,
+            "optimality": 0.35,
+            "path_efficiency_on_success": 0.6379158624474633
+          },
+          "H4": {
+            "n": 100,
+            "success_rate": 1.0,
+            "feasibility": 1.0,
+            "optimality": 0.99,
+            "path_efficiency_on_success": 0.9977777777777778
+          },
+          "E1": {
+            "n": 100,
+            "success_rate": 0.07,
+            "feasibility": 0.45,
+            "optimality": 0.07,
+            "path_efficiency_on_success": 1.0
+          }
+        }
+      },
+      "verification": {
+        "identical": true,
+        "local": {
+          "n": 200,
+          "macro_f1": 0.7749943748593715,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.2,
+          "failure_type_accuracy": 0.54,
+          "joint_error_accuracy": 0.11
+        },
+        "peer": {
+          "n": 200,
+          "macro_f1": 0.7749943748593715,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.2,
+          "failure_type_accuracy": 0.54,
+          "joint_error_accuracy": 0.11
+        }
+      },
+      "legacy_modes": {
+        "identical": true,
+        "local": {
+          "direct": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 1.0,
+            "mean_executor_calls": 0.0,
+            "mean_input_tokens": 83.15,
+            "mean_output_tokens": 10.785,
+            "stop_reason_counts": {
+              "direct_complete": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          },
+          "self": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 2.0,
+            "mean_executor_calls": 0.0,
+            "mean_input_tokens": 147.935,
+            "mean_output_tokens": 2.0,
+            "stop_reason_counts": {
+              "feedback_valid": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 200
+          },
+          "executor_one": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 2.0,
+            "mean_executor_calls": 2.0,
+            "mean_input_tokens": 115.225,
+            "mean_output_tokens": 11.785,
+            "stop_reason_counts": {
+              "repair_limit": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          },
+          "executor_three": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 4.0,
+            "mean_executor_calls": 4.0,
+            "mean_input_tokens": 349.1,
+            "mean_output_tokens": 41.215,
+            "stop_reason_counts": {
+              "repair_limit": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          }
+        },
+        "peer": {
+          "direct": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 1.0,
+            "mean_executor_calls": 0.0,
+            "mean_input_tokens": 83.15,
+            "mean_output_tokens": 10.785,
+            "stop_reason_counts": {
+              "direct_complete": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          },
+          "self": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 2.0,
+            "mean_executor_calls": 0.0,
+            "mean_input_tokens": 147.935,
+            "mean_output_tokens": 2.0,
+            "stop_reason_counts": {
+              "feedback_valid": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 200
+          },
+          "executor_one": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 2.0,
+            "mean_executor_calls": 2.0,
+            "mean_input_tokens": 115.225,
+            "mean_output_tokens": 11.785,
+            "stop_reason_counts": {
+              "repair_limit": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          },
+          "executor_three": {
+            "n": 200,
+            "success_rate": 0.0,
+            "feasibility": 0.0,
+            "optimality": 0.0,
+            "path_efficiency_on_success": null,
+            "mean_model_calls": 4.0,
+            "mean_executor_calls": 4.0,
+            "mean_input_tokens": 349.1,
+            "mean_output_tokens": 41.215,
+            "stop_reason_counts": {
+              "repair_limit": 200
+            },
+            "repeated_action_run_ge_3": 200,
+            "false_valid_accepts": 0
+          }
+        }
+      }
+    }
+  },
+  "per_case_plans": {
+    "test_id/generation_traces.jsonl": {
+      "n": 200,
+      "different": 1,
+      "details": [
+        {
+          "id": "1_train_set_6x6_samples.json:15354",
+          "methods": {
+            "B4": {
+              "local": "up up up right right right right right right",
+              "peer": "up up up right right right right right right right"
+            }
+          }
+        }
+      ]
+    },
+    "test_id/candidate_traces.jsonl": {
+      "n": 100,
+      "different": 1,
+      "details": [
+        {
+          "id": "test_id-171",
+          "methods": {
+            "B4": {
+              "local": "down down down left",
+              "peer": "down down left"
+            }
+          }
+        }
+      ]
+    },
+    "test_ood/candidate_traces.jsonl": {
+      "n": 100,
+      "different": 1,
+      "details": [
+        {
+          "id": "test_ood-75",
+          "methods": {
+            "B4": {
+              "local": "up right",
+              "peer": "up up"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

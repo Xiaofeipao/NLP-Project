@@ -10,6 +10,7 @@
   ],
   "modules": [
     "ppnl/full_finetune_gvr.py",
-    "ppnl/gvr_harness.py"
+    "ppnl/gvr_harness.py",
+    "ppnl/constrained_decoding.py"
   ]
 }

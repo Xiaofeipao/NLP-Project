@@ -2,6 +2,12 @@
 
 ## 方法目录整理（2026-11-11）
 
+发布补充：双解码入口和本地 GPU 复现结果现整理进 main，普通解码仍默认。同伴研究实现为选择性接入，没有删除研究分支；此前“未 push”是运行时记录。公开证据包与差异说明见 docs/gvr_local_gpu_run.md。下一步候选为同预算回溯搜索、路径成本与模型分数组合、过程监督及反馈消融，均尚未运行，详见 docs/gvr_next_methods.md。
+
+后续 GPU 验证已完成，覆盖开发、重新冻结、ID/OOD 及 methods.gvr 两种入口。C4 端到端成功 184/200、ID/OOD 候选修复 98/100 与 94/100，与同伴一致；全部汇总指标在 1e-12 容差下一致。B4 有三条逐例路径差异但不影响指标，C4/U4/H4 对应路径一致。首次 CUDA 运行时异常的失败证据和耗时保留，重试完成。见 [本地 GPU 复现](docs/gvr_local_gpu_run.md)。下文“GPU 未完成”描述此前 CPU 接入阶段。本轮未 push。
+
+本地 GVR 接入补充：`methods.gvr run -- run` 支持 `--repair-decoding ordinary|constrained`，默认普通解码。约束方式只改变执行器反馈模式中的 R，T5 动作 beam 默认宽度 4、上限 36 步，禁止非法动作和路径内回访，到终点才允许结束。G/V、公共执行器和评分函数复用原实现；规则对照、冻结入口及同伴历史报告单独保存。本地 158 项 CPU 回归通过，两种入口 dry-run 均通过；NVIDIA 访问权限拒绝导致 GPU 实跑未完成，不能将同伴历史分数作为本次成绩。此接入尚未 push。
+
 新增 methods/ 方法层：baseline 对应全量训练，gvr 对应生成验证修复流程，harness 对应运行控制，lora 对应参数高效微调，rl 对应 REINFORCE/GRPO，policy 对应逐步策略，prefix 对应前缀消融。每个子目录有 manifest.json，明确实现模块、原配置和命令；通过 `python -m methods.<方法> <命令> -- <原参数>` 调用。见 [统一入口说明](methods/README.md)。
 
 底层 ppnl 和 scripts 保留原路径，执行器、数据、指标及预算共用，不复制训练代码，也不改变历史冻结源码。LoRA、GVR、Harness、GRPO 可以组合，不是四个互斥模型。方法分支只保留未合并的研究；本次没有合并两个实验分支，也没有重新训练。

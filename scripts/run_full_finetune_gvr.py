@@ -9,6 +9,19 @@ from ppnl.core import Grid, OfficialOracle
 from ppnl.full_finetune_gvr import FullFinetuneGVRModel, checkpoint_identity
 from ppnl.gvr_harness import MODES, create_gvr_session, run_gvr_session, score_gvr_session, validate_gvr_protocol
 from ppnl.harness import read_session
+from ppnl.constrained_decoding import DecodeSpec
+
+
+def repair_spec(spec):
+    method = spec.get("repair_decoding", "ordinary")
+    if method == "ordinary":
+        return None
+    if method != "constrained":
+        raise ValueError("Unknown repair decoding")
+    if spec["mode"] in ("self", "direct"):
+        raise ValueError("Constrained repair requires executor feedback mode")
+    return DecodeSpec(beam_width=spec.get("beam_width", 4),
+                      max_actions=spec.get("max_actions", 36), state_constraints=True)
 
 
 def prepare(spec):
@@ -21,7 +34,12 @@ def prepare(spec):
     oracle = OfficialOracle(manifest["executor_path"])
     if oracle.sha256 != manifest["executor_sha256"]:
         raise ValueError("Official executor differs from the data manifest")
-    identity = checkpoint_identity(spec["checkpoint"], config)
+    decoding = repair_spec(spec)
+    if decoding is not None:
+        model_config = json.loads((Path(spec["checkpoint"])/"config.json").read_text(encoding="utf-8"))
+        if model_config.get("model_type") != "t5":
+            raise ValueError("Constrained repair currently supports T5 checkpoints only")
+    identity = checkpoint_identity(spec["checkpoint"], config, decoding)
     return config, grid, oracle, identity
 
 
@@ -37,6 +55,9 @@ def main():
     start.add_argument("--active-seconds", type=float, default=300.0)
     start.add_argument("--out", required=True, help="new directory under outputs/full_finetune_gvr")
     start.add_argument("--dry-run", action="store_true")
+    start.add_argument("--repair-decoding", choices=("ordinary", "constrained"), default="ordinary")
+    start.add_argument("--beam-width", type=int, default=4)
+    start.add_argument("--max-actions", type=int, default=36)
     for name in ("resume", "inspect", "score"):
         sub.add_parser(name).add_argument("--run", required=True, dest="directory")
     args = parser.parse_args()
@@ -54,7 +75,12 @@ def main():
                 "grid": str(Path(args.grid).resolve()),
                 "model_config": str(Path(args.model_config).resolve()),
                 "mode": args.mode, "model_calls": args.model_calls,
-                "active_seconds": args.active_seconds}
+                "active_seconds": args.active_seconds,
+                "repair_decoding": args.repair_decoding,
+                "beam_width": args.beam_width, "max_actions": args.max_actions}
+        repair_spec(spec)
+        if args.repair_decoding == "ordinary" and (args.beam_width != 4 or args.max_actions != 36):
+            raise ValueError("Beam/action options apply only to constrained repair")
         if directory.exists():
             raise FileExistsError("Choose a new trial directory")
     else:
@@ -89,7 +115,7 @@ def main():
     from ppnl.modeling import Seq2Seq, gpu_budget, require_cuda
     require_cuda()
     with gpu_budget(config["gpu_ledger"], config["gpu_hours_cap"], "full_finetune_gvr") as check:
-        model = FullFinetuneGVRModel(Seq2Seq(spec["checkpoint"], config))
+        model = FullFinetuneGVRModel(Seq2Seq(spec["checkpoint"], config), repair_spec(spec))
         state = run_gvr_session(directory, model, identity, check)
     print(json.dumps(state, ensure_ascii=False, indent=2))
 

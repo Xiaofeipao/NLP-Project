@@ -39,6 +39,8 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
         if spec.get("kind") != "gvr" or spec["model"] != identity:
             raise ValueError("GVR model/base/adapter identity changed")
         mode = spec["mode"]
+        if mode == "self" and getattr(model, "repair_decoding", None) is not None:
+            raise ValueError("Self-verification cannot use executor-constrained repair decoding")
         grid = Grid.from_dict(manifest["grid"])
         state.setdefault("phase", "generate")
         state.setdefault("repairs", 0)
@@ -50,6 +52,10 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
         state.setdefault("raw_feedback", "")
         state.setdefault("input_tokens", 0)
         state.setdefault("output_tokens", 0)
+        for field in ("forward_batches", "decoder_row_steps", "decoder_input_tokens_processed",
+                      "pruned_illegal", "pruned_revisit", "dead_beams"):
+            state.setdefault(field, 0)
+        state.setdefault("decode_status", None)
         if state["status"] in ("stopped", "budget_exhausted"):
             return state
 
@@ -115,6 +121,11 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
             usage = getattr(model, "last_usage", {})
             state["input_tokens"] += usage.get("input_tokens", 0)
             state["output_tokens"] += usage.get("output_tokens", 0)
+            for field in ("forward_batches", "decoder_row_steps", "decoder_input_tokens_processed",
+                          "pruned_illegal", "pruned_revisit", "dead_beams"):
+                state[field] += usage.get(field, 0)
+            if task == "repair" and "decode_status" in usage:
+                state["decode_status"] = usage["decode_status"]
             if task == "verification":
                 state["raw_feedback"] = output[:2048]
                 state["feedback_source"] = "model"
@@ -129,7 +140,8 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
                 if task == "repair":
                     state["repairs"] += 1
                 state["phase"] = "done" if mode == "direct" else "feedback"
-                state["history"].append({"task": task, "candidate": state["candidate"]})
+                state["history"].append({"task": task, "candidate": state["candidate"],
+                                         "decode_status": usage.get("decode_status")})
                 if repeated:
                     state.update(status="stopped", stop_reason="repeated_candidate")
             commit("model_response")
@@ -150,6 +162,13 @@ def score_gvr_session(directory, oracle=None):
             "executor_calls": state["executor_calls"], "repairs": state["repairs"],
             "executor_seconds": state.get("executor_seconds", 0.0),
             "input_tokens": state["input_tokens"], "output_tokens": state["output_tokens"],
+            "forward_batches": state.get("forward_batches", 0),
+            "decoder_row_steps": state.get("decoder_row_steps", 0),
+            "decoder_input_tokens_processed": state.get("decoder_input_tokens_processed", 0),
+            "pruned_illegal": state.get("pruned_illegal", 0),
+            "pruned_revisit": state.get("pruned_revisit", 0),
+            "dead_beams": state.get("dead_beams", 0),
+            "decode_status": state.get("decode_status"),
             "active_seconds": state["active_seconds"],
             "stop_reason": state["stop_reason"], "feedback_source": state["feedback_source"],
             "false_valid_accept": (state["feedback_source"] == "model" and
