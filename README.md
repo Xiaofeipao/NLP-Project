@@ -1,4 +1,31 @@
-# PPNL 单目标路径规划 验证与修复
+# PPNL：自然语言网格路径规划
+
+本项目研究模型能否把自然语言网格描述转成可执行的路径。给定起点、终点和障碍物，模型输出 `up / down / left / right`；确定性执行器检查每一步，报告 **成功率**（合法且到达终点）、**可行率**（每步合法）和 **最优率**（成功且等于 BFS 最短路）。指标定义见 [实验协议](docs/experiment_protocol.md)。
+
+> **先区分研究口径。** 随任务提供的 poster 讨论 T5/BART 的单任务微调与 GPT-5-mini 的 Zero-shot、Few-shot、CoT、ReAct 提示；本仓库发布的是多任务基线、GVR、逐步策略等后续实验。训练样本、测试网格和推理方法不同，不能把 poster 的 95.8% 与仓库的 200 例结果直接比较。对照见 [poster 与仓库内容导览](docs/poster_guide.md)。
+
+## 从哪里开始
+
+| 想了解 | 阅读入口 |
+| --- | --- |
+| 研究问题、poster 的方法与结果如何对应现有仓库 | [poster 导览](docs/poster_guide.md) |
+| 当前代码支持哪些方法、如何选择入口 | [方法目录](methods/README.md) · [项目地图](docs/project_map.md) |
+| 已发布的三模型实验结果和负结果 | [实验记录](docs/gpu_campaign_20261103.md) · [机器可读结果](docs/gpu_campaign_results.json) |
+| 数据来源、划分和指标定义 | [数据说明](data/README.md) · [实验协议](docs/experiment_protocol.md) |
+| 权重、报告与逐条轨迹 | [实验产物](artifacts/campaign_20261103/README.md) |
+
+## 快速检查
+
+在仓库根目录配置 Python 3.11 环境，按 [环境说明](docs/environment.md) 安装依赖；随后可在 **CPU** 上查看方法映射并运行逻辑测试：
+
+```powershell
+python -m methods.baseline --describe
+python -m unittest discover -s tests -q
+```
+
+模型训练与推理需要 CUDA 和相应权重；下载方式见 [产物说明](artifacts/campaign_20261103/README.md)。以下详细记录按实验阶段保留，引用数值时请同时核对所用 checkpoint、数据划分、样本量与运行预算。
+
+---
 
 ## 当前版本与方法导航
 
