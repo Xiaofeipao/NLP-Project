@@ -64,6 +64,20 @@ class HarnessTests(unittest.TestCase):
         self.assertIn("Feedback: invalid | step=1", runner.inputs[2])
         self.assertGreater(model.last_usage["input_tokens"], 0)
 
+    def test_failed_adapter_call_does_not_expose_previous_usage(self):
+        runner = FakeRunner()
+        model = FullFinetuneGVRModel(runner)
+        model.predict("generation", self.grid)
+        self.assertGreater(model.last_usage["output_tokens"], 0)
+
+        def fail(inputs, check):
+            raise RuntimeError("runner failed")
+
+        runner.predict = fail
+        with self.assertRaisesRegex(RuntimeError, "runner failed"):
+            model.predict("repair", self.grid, "up", "invalid | step=1 | reason=out_of_bounds")
+        self.assertEqual(model.last_usage, {})
+
     def test_direct_and_self_feedback_are_separate_from_scoring(self):
         direct = self.session("direct", "direct", calls=1)
         self.assertEqual(run_gvr_session(direct, ScriptedModel(["up"]), self.identity)["stop_reason"],

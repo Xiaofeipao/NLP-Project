@@ -94,16 +94,18 @@ def _rollout(grid, prefix, scorer, mode, max_steps, check):
         return " ".join(plan), trace, "goal_reached"
     for _ in range(max(0, max_steps - len(plan))):
         check()
+        legal = neighbors(grid, position)
+        choices = list(ACTIONS) if mode == "prefix_raw" else list(legal)
+        if not choices:
+            return " ".join(plan), trace, "no_legal_action"
+        if scorer is None:
+            raise ValueError("A learned policy scorer is required for an unfinished path")
         scores = scorer.scores([(grid, position)])[0]
         if len(scores) != len(ACTIONS) or any(not math.isfinite(score) for score in scores):
             raise ValueError("Policy must return four finite action scores")
-        legal = neighbors(grid, position)
-        choices = list(ACTIONS) if mode == "prefix_raw" else list(legal)
         if mode in ("prefix_visit", "prefix_visit_heuristic", "restart_visit") and choices:
             least = min(visits[legal[action]] for action in choices)
             choices = [action for action in choices if visits[legal[action]] == least]
-        if not choices:
-            return " ".join(plan), trace, "no_legal_action"
         action = max(choices, key=lambda item: scores[list(ACTIONS).index(item)])
         target = legal.get(action)
         trace.append({"position": list(position), "action": action,

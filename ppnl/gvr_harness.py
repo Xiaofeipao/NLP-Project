@@ -9,6 +9,11 @@ from .core import Grid, execute, parse_verdict
 from .harness import _commit, _lock, create_session, read_session
 
 MODES = {"direct": 0, "self": 1, "executor_one": 1, "executor_three": 3}
+# Counters supplied by the adapter, distinct from controller requests and local
+# executor calls. Decoder costs are zero for ordinary text generation because
+# that backend does not expose forward-pass accounting.
+USAGE_COUNTERS = ("input_tokens", "output_tokens", "forward_batches", "decoder_row_steps",
+                  "decoder_input_tokens_processed", "pruned_illegal", "pruned_revisit", "dead_beams")
 
 
 def validate_gvr_protocol(mode, model_calls, active_seconds):
@@ -50,10 +55,7 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
         state.setdefault("executor_calls", 0)
         state.setdefault("executor_seconds", 0.0)
         state.setdefault("raw_feedback", "")
-        state.setdefault("input_tokens", 0)
-        state.setdefault("output_tokens", 0)
-        for field in ("forward_batches", "decoder_row_steps", "decoder_input_tokens_processed",
-                      "pruned_illegal", "pruned_revisit", "dead_beams"):
+        for field in USAGE_COUNTERS:
             state.setdefault(field, 0)
         state.setdefault("decode_status", None)
         if state["status"] in ("stopped", "budget_exhausted"):
@@ -119,10 +121,7 @@ def run_gvr_session(directory, model, identity, check=lambda: None):
                 raise
             state["active_seconds"] += time.monotonic() - started
             usage = getattr(model, "last_usage", {})
-            state["input_tokens"] += usage.get("input_tokens", 0)
-            state["output_tokens"] += usage.get("output_tokens", 0)
-            for field in ("forward_batches", "decoder_row_steps", "decoder_input_tokens_processed",
-                          "pruned_illegal", "pruned_revisit", "dead_beams"):
+            for field in USAGE_COUNTERS:
                 state[field] += usage.get(field, 0)
             if task == "repair" and "decode_status" in usage:
                 state["decode_status"] = usage["decode_status"]
@@ -162,13 +161,7 @@ def score_gvr_session(directory, oracle=None):
             "truth": verdict.label(), "model_calls": state["model_calls"],
             "executor_calls": state["executor_calls"], "repairs": state["repairs"],
             "executor_seconds": state.get("executor_seconds", 0.0),
-            "input_tokens": state["input_tokens"], "output_tokens": state["output_tokens"],
-            "forward_batches": state.get("forward_batches", 0),
-            "decoder_row_steps": state.get("decoder_row_steps", 0),
-            "decoder_input_tokens_processed": state.get("decoder_input_tokens_processed", 0),
-            "pruned_illegal": state.get("pruned_illegal", 0),
-            "pruned_revisit": state.get("pruned_revisit", 0),
-            "dead_beams": state.get("dead_beams", 0),
+            **{field: state.get(field, 0) for field in USAGE_COUNTERS},
             "decode_status": state.get("decode_status"),
             "active_seconds": state["active_seconds"],
             "stop_reason": state["stop_reason"], "feedback_source": state["feedback_source"],

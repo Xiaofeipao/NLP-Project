@@ -12,6 +12,13 @@ ACTION_ORDER = {name: index for index, name in enumerate(ACTIONS)}
 
 @dataclass(frozen=True)
 class DecodeSpec:
+    """Repair search controls, independent of weights and feedback wording.
+
+    Disabling state constraints keeps the action grammar and beam budget (B4).
+    Enabling them masks illegal moves, revisits and premature EOS (C4).
+    Backtracking additionally revisits discarded siblings within a row budget.
+    """
+
     beam_width: int = 4
     max_actions: int = 36
     state_constraints: bool = True
@@ -40,6 +47,13 @@ class BeamState:
 
 @dataclass(frozen=True)
 class DecodeResult:
+    """Decoder outcome; ``completed`` means EOS, not externally scored success.
+
+    In grammar-only decoding EOS may precede the goal. State-constrained decoding
+    guarantees validity only for completed plans; partial plans can miss the goal.
+    Neither setting guarantees shortest paths: ranking uses model log-probability.
+    """
+
     plan: str
     stop_reason: str
     completed: bool
@@ -57,6 +71,8 @@ def decode_actions(grid: Grid, score, spec: DecodeSpec = DecodeSpec(), check=lam
 
     ``score(prefixes)`` returns one {action/eos: full-vocabulary log-prob}
     mapping per prefix. It may batch the prefixes in one model forward.
+    ``decoder_row_steps`` counts scored prefixes, whereas ``forward_batches``
+    counts scorer invocations. A row cap includes the final EOS-scoring row.
     """
     active = [BeamState((), grid.start, frozenset((grid.start,)))]
     complete = []

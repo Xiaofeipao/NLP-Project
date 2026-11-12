@@ -4,7 +4,7 @@
 
 main 保留完整项目，按 [methods/](../methods/README.md) 分目录提供 baseline、gvr、harness、lora、rl、policy、prefix 入口及配置映射。底层实现保留原路径，旧命令兼容。
 
-现在仅有 main、tree-verifier-reachability、gvr-constrained-repair-study 三个分支。后两者为未合并实验；旧 full-finetune/LoRA 命名分支因内容已包含在 main 而删除。下文关于旧分支和早期未实现功能的说明均为历史记录，请勿据此创建重复分支。
+当前主线的固定多任务权重后处理使用 [统一配对入口](post_training.md)，C4 与可选回溯已接入。研究分支的保留不表示代码缺失；旧 full-finetune/LoRA 命名分支因内容已包含在 main 而删除。下文关于旧分支和早期未实现功能的说明均为历史记录，请勿据此创建重复分支。
 
 本页下文记录代码整合时的历史状态。后续三模型 GPU 扩展已完成（2026-11-04），包括 outcome-GRPO、三个指定原始基线、两种输入格式的 GVR LoRA、验证辅助损失、独立逐步策略和前缀消融；99/99 份报告齐全。当前入口依次为 `run_gpu_campaign.py`、`run_campaign_status_ablation.py`、`run_campaign_policies.py`、`evaluate_gpu_campaign.py`，结果见 [三模型实验记录](gpu_campaign_20261103.md)。下文的“尚未训练”“未实现 GRPO”只描述历史版本；现有方法分支和归档标签没有被本轮本地实验改写。
 

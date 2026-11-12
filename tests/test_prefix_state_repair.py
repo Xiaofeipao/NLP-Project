@@ -66,6 +66,16 @@ class PrefixStateRepairTests(unittest.TestCase):
         self.assertEqual(restart["plan"], "right right")
         self.assertEqual(restart["policy_decisions"], 2)
 
+    def test_no_legal_action_does_not_call_policy(self):
+        grid = Grid(2, 2, ((0, 1), (1, 0)), (0, 0), (1, 1))
+        for mode in ("prefix_legal", "prefix_visit", "prefix_visit_heuristic", "restart_visit"):
+            with self.subTest(mode=mode):
+                scorer = Scores([0, 0, 0, 9])
+                result = repair_generated(grid, "jump", scorer, self.oracle, mode)
+                self.assertEqual(result["stop_reason"], "no_legal_action")
+                self.assertEqual(result["policy_decisions"], 0)
+                self.assertEqual(scorer.positions, [])
+
     def test_visit_rule_can_backtrack_and_budget_counts_prefix(self):
         grid = Grid(3, 3, ((0, 2), (1, 1)), (0, 0), (2, 2))
         scorer = Scores([0, 0, 9, 10])

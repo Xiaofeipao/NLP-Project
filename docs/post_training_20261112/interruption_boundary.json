@@ -1,0 +1,23 @@
+[
+  {
+    "session": "planning/0e6d8e390612bc2f5af216dda6fcf2070c87f78832b9fae87bba19fe5d8d7fd9/executor_three",
+    "status": "running",
+    "phase": "decide",
+    "model_calls": 2,
+    "journal_events": 7,
+    "history": [
+      {
+        "task": "generation",
+        "candidate": "up up up up right right right right right right",
+        "repair_feedback_used": null,
+        "decode_status": null
+      },
+      {
+        "task": "repair",
+        "candidate": "up up up right right right right right right right right",
+        "repair_feedback_used": "invalid | step=3 | reason=obstacle_collision",
+        "decode_status": null
+      }
+    ]
+  }
+]

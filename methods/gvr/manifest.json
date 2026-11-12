@@ -3,14 +3,19 @@
   "commands": {
     "run": [
       "scripts/run_full_finetune_gvr.py"
+    ],
+    "study": [
+      "scripts/run_post_training.py"
     ]
   },
   "configs": [
-    "config.json"
+    "config.json",
+    "configs/post_training.json"
   ],
   "modules": [
     "ppnl/full_finetune_gvr.py",
     "ppnl/gvr_harness.py",
-    "ppnl/constrained_decoding.py"
+    "ppnl/constrained_decoding.py",
+    "ppnl/post_training.py"
   ]
 }

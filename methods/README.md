@@ -21,6 +21,7 @@ python -m methods.baseline --describe
 python -m methods.baseline run -- --help
 python -m methods.baseline run -- --config config.json train --model t5_small
 python -m methods.gvr run -- --help
+python -m methods.gvr study -- --help
 python -m methods.harness run -- --help
 python -m methods.lora run -- preflight --protocol config.gvr.json
 python -m methods.rl run -- --help
@@ -36,4 +37,4 @@ python -m methods.prefix run -- --help
 
 configs/rlvr.json 的历史默认是 REINFORCE；GRPO 需独立 spec 明确 algorithm=grpo。统一入口不改变训练预算、数据划分、开发选模或测试冻结，也不自动使不同 checkpoint 的结果可直接比较。
 
-tree-verifier-reachability 与 gvr-constrained-repair-study 仍是未合并实验，不包含在本次 main 整理中。已删除的方法名称分支不代表删除对应代码。
+固定多任务权重的批量比较统一使用 `gvr study`，见 [后处理与消融](../docs/post_training.md)。C4 约束解码已集成，历史研究分支的保留不表示实现缺失。逐步策略、LoRA、RL 和树验证研究按各自训练产物与协议独立阅读。

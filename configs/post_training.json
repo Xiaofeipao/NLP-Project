@@ -1,0 +1,30 @@
+{
+  "checkpoint": "artifacts/historical_models/flan_t5_small/train/best",
+  "model_config": "config.json",
+  "dataset_root": "data/derived",
+  "executor": "vendor/ppnl/executor-point-sg.py",
+  "ledger": "outputs/gpu_ledger.json",
+  "gpu_hours_cap": 20,
+  "seed": 42,
+  "splits": ["dev", "test_id", "test_ood"],
+  "model_calls": 8,
+  "case_seconds": 300,
+  "beam_width": 4,
+  "max_actions": 36,
+  "max_score_rows": 148,
+  "methods": [
+    {"name": "direct", "mode": "direct"},
+    {"name": "self", "mode": "self"},
+    {"name": "executor_one"},
+    {"name": "executor_three", "mode": "executor_three"},
+    {"name": "syntax_beam", "decoding": "syntax_beam"},
+    {"name": "constrained", "decoding": "constrained"},
+    {"name": "backtrack", "decoding": "backtrack"},
+    {"name": "constrained_none", "decoding": "constrained", "feedback": "none"},
+    {"name": "constrained_generic", "decoding": "constrained", "feedback": "generic"},
+    {"name": "backtrack_none", "decoding": "backtrack", "feedback": "none"},
+    {"name": "backtrack_generic", "decoding": "backtrack", "feedback": "generic"},
+    {"name": "uniform", "decoding": "constrained", "rule": "uniform"},
+    {"name": "manhattan", "decoding": "constrained", "rule": "manhattan"}
+  ]
+}

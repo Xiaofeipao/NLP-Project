@@ -60,6 +60,17 @@ class PrefixRepairTests(unittest.TestCase):
         self.assertEqual(result["stop_reason"], "already_valid")
         self.assertEqual(scorer.calls, [])
 
+    def test_valid_candidate_retains_historical_text_without_a_scorer(self):
+        candidate = "  right   right  "
+        result = repair_generated(self.grid, candidate, None, self.oracle)
+        self.assertEqual(result["plan"], candidate)
+        self.assertEqual(result["kept_prefix"], candidate)
+        self.assertEqual(result["final_feedback"], "valid")
+
+    def test_unfinished_candidate_requires_a_scorer(self):
+        with self.assertRaisesRegex(ValueError, "policy scorer"):
+            repair_generated(self.grid, "right", None, self.oracle)
+
     def test_prefix_already_at_goal_drops_later_failure(self):
         scorer = Scores()
         result = repair_generated(self.grid, "right right up", scorer, self.oracle)

@@ -1,4 +1,9 @@
-"""Freeze the GVR repair study after all development gates pass."""
+"""Legacy freeze for the GVR repair study schema at commit 23183e2.
+
+Requires the archived development drivers and their historical output layout.
+New studies use run_post_training.py and its own protocol.json; their reports
+must not be supplied to this legacy freeze procedure.
+"""
 from pathlib import Path
 import sys
 
@@ -12,6 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
+    print("Legacy GVR freeze (23183e2 output schema); new studies use run_post_training.py.",
+          file=sys.stderr)
     out = ROOT / "outputs/gvr_repair_study"
     report = out / "dev_decision.json"
     lock = out / "freeze.json"

@@ -6,17 +6,15 @@ graph at inference time.
 """
 from __future__ import annotations
 
-from collections import Counter
 from dataclasses import asdict
 import hashlib
-import math
 from pathlib import Path
 
 from .core import ACTIONS, Grid
 from .data import read_jsonl, write_json, write_jsonl
-from .eval_harness import repair_prefix
 from .evaluation import plan_metrics
 from .policy import neighbors
+from .prefix_state_repair import repair_generated as repair_from_prefix
 
 
 def _key(grid):
@@ -59,75 +57,40 @@ def load_generated_candidates(dataset_root, split, trace_path, oracle):
 
 
 def repair_generated(grid, candidate, scorer, oracle, max_actions=36, check=lambda: None):
-    """Keep a physically valid prefix within budget, then repair one step at a time."""
+    """Adapt the shared prefix/visit rollout to the historical full-model trace."""
     if not isinstance(candidate, str):
         raise TypeError("Generated candidate must be text")
     if isinstance(max_actions, bool) or not isinstance(max_actions, int) or max_actions < 1:
         raise ValueError("max_actions must be a positive integer")
-    original = oracle.check(grid, candidate)
-    if original.valid and len(candidate.split()) <= max_actions:
-        return {"plan": candidate, "kept_prefix": candidate, "failure_position": None,
-                "initial_feedback": original.label(), "final_feedback": original.label(),
-                "policy_calls": 0, "steps": [], "stop_reason": "already_valid"}
-    prefix, remaining = repair_prefix(grid, candidate)
-    failure_position = (None if original.valid else
-                        list(remaining.start if remaining is not None else grid.goal))
-    plan = list(prefix[:max_actions])
-    visits = Counter({grid.start: 1})
-    cursor = grid.start
-    for action in plan:
-        cursor = neighbors(grid, cursor)[action]
-        visits[cursor] += 1
-    if len(prefix) > max_actions:
-        final_plan = " ".join(plan)
-        final = oracle.check(grid, final_plan)
-        return {"plan": final_plan, "kept_prefix": final_plan,
-                "failure_position": failure_position,
-                "budget_position": list(cursor), "initial_feedback": original.label(),
-                "final_feedback": final.label(), "policy_calls": 0, "steps": [],
-                "stop_reason": "prefix_exceeds_budget"}
-    if original.valid:
-        final_plan = " ".join(plan)
-        final = oracle.check(grid, final_plan)
-        if not final.valid:
-            raise AssertionError("First goal prefix of a valid candidate must remain valid")
-        return {"plan": final_plan, "kept_prefix": final_plan, "failure_position": None,
-                "initial_feedback": original.label(), "final_feedback": final.label(),
-                "policy_calls": 0, "steps": [], "stop_reason": "already_valid_trimmed_to_goal"}
-    position = remaining.start if remaining is not None else grid.goal
-    steps = []
-    if cursor != position:
-        raise AssertionError("Executor prefix and failure position disagree")
-    stop_reason = "goal_reached_in_prefix" if position == grid.goal else "action_budget"
-    while position != grid.goal and len(plan) < max_actions:
-        check()
-        legal = neighbors(grid, position)
-        if not legal:
-            stop_reason = "no_legal_action"
-            break
-        if scorer is None:
-            raise ValueError("A learned policy scorer is required for an unfinished path")
-        scores = scorer.scores([(grid, position)])[0]
-        if len(scores) != len(ACTIONS) or any(not math.isfinite(value) for value in scores):
-            raise ValueError("Policy must return four finite action scores")
-        least = min(visits[next_position] for next_position in legal.values())
-        choices = [action for action, next_position in legal.items() if visits[next_position] == least]
-        action = max(choices, key=lambda name: scores[list(ACTIONS).index(name)])
-        next_position = legal[action]
-        steps.append({"position": list(position), "legal_actions": list(legal),
-                      "least_visited_choices": choices, "action": action,
-                      "next_position": list(next_position)})
-        plan.append(action)
-        position = next_position
-        visits[position] += 1
-        if position == grid.goal:
-            stop_reason = "goal_reached"
-    final_plan = " ".join(plan)
-    final = oracle.check(grid, final_plan)
-    return {"plan": final_plan, "kept_prefix": " ".join(prefix),
-            "failure_position": failure_position,
-            "initial_feedback": original.label(), "final_feedback": final.label(),
-            "policy_calls": len(steps), "steps": steps, "stop_reason": stop_reason}
+    result = repair_from_prefix(grid, candidate, scorer, oracle, "prefix_visit",
+                                max_actions, check)
+
+    def endpoint(plan):
+        position = grid.start
+        for action in plan.split():
+            dr, dc = ACTIONS[action]
+            position = position[0] + dr, position[1] + dc
+        return list(position)
+
+    initially_valid = result["feedback"] == "valid"
+    stopped = result["stop_reason"]
+    if initially_valid and stopped == "goal_reached_in_prefix":
+        stopped = "already_valid_trimmed_to_goal"
+    steps = [{"position": step["position"],
+              "legal_actions": list(neighbors(grid, tuple(step["position"]))),
+              "least_visited_choices": step["allowed_actions"],
+              "action": step["action"], "next_position": step["next_position"]}
+             for step in result["policy_trace"]]
+    record = {"plan": result["plan"],
+              "kept_prefix": candidate if stopped == "already_valid" else result["kept_prefix"],
+              "failure_position": None if initially_valid else endpoint(result["observed_prefix"]),
+              "initial_feedback": result["feedback"],
+              "final_feedback": (result["feedback"] if stopped == "already_valid" else
+                                 oracle.check(grid, result["plan"]).label()),
+              "policy_calls": result["policy_decisions"], "steps": steps, "stop_reason": stopped}
+    if stopped == "prefix_exceeds_budget":
+        record["budget_position"] = endpoint(result["kept_prefix"])
+    return record
 
 
 def evaluate_generated(paired, scorer, oracle, max_actions=36, check=lambda: None):
@@ -167,6 +130,8 @@ def save_result(directory, dataset_root, split, trace_path, policy_sha256,
               "dataset_sha256": hashlib.sha256(dataset.read_bytes()).hexdigest(),
               "policy_weights_sha256": policy_sha256, "official_executor_sha256": oracle_sha256,
               "implementation_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+              "repair_core_sha256": hashlib.sha256(
+                  Path(__file__).with_name("prefix_state_repair.py").read_bytes()).hexdigest(),
               "metrics": metrics}
     write_json(directory / "results.json", report)
     write_jsonl(directory / "traces.jsonl", records)

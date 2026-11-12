@@ -2,7 +2,7 @@ import math
 import unittest
 
 from ppnl.constrained_decoding import DecodeSpec, decode_actions
-from ppnl.core import Grid, execute
+from ppnl.core import Grid, execute, shortest_path
 
 
 class ConstrainedDecodingTests(unittest.TestCase):
@@ -18,6 +18,7 @@ class ConstrainedDecodingTests(unittest.TestCase):
         bare = decode_actions(self.grid, self.scores, DecodeSpec(beam_width=4, max_actions=4,
                                                                 state_constraints=False))
         constrained = decode_actions(self.grid, self.scores, DecodeSpec(beam_width=4, max_actions=4))
+        self.assertTrue(bare.completed)  # EOS alone is not a task-success signal.
         self.assertFalse(execute(self.grid, bare.plan).valid)
         self.assertTrue(constrained.completed)
         self.assertTrue(execute(self.grid, constrained.plan).valid)
@@ -25,6 +26,24 @@ class ConstrainedDecodingTests(unittest.TestCase):
         self.assertGreater(constrained.pruned_illegal, 0)
         self.assertGreater(constrained.pruned_revisit, 0)
         self.assertGreater(constrained.forward_batches, 0)
+
+    def test_state_constraints_preserve_model_ranking_not_shortest_path(self):
+        detour = ("down", "right", "right", "up")
+
+        def scores(prefixes):
+            rows = []
+            for prefix in prefixes:
+                row = dict.fromkeys(("up", "down", "left", "right", "<eos>"), -10.0)
+                if prefix == detour[:len(prefix)]:
+                    row[detour[len(prefix)] if len(prefix) < len(detour) else "<eos>"] = -0.01
+                rows.append(row)
+            return rows
+
+        result = decode_actions(self.grid, scores, DecodeSpec(max_actions=4))
+        self.assertTrue(result.completed)
+        self.assertTrue(execute(self.grid, result.plan).valid)
+        self.assertEqual(result.plan, " ".join(detour))
+        self.assertGreater(result.action_count, len(shortest_path(self.grid)))
 
     def test_straight_repeated_actions_are_allowed(self):
         grid = Grid(1, 4, (), (0, 0), (0, 3))

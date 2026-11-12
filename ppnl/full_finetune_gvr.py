@@ -46,7 +46,12 @@ def checkpoint_identity(checkpoint, config, repair_decoding=None, repair_feedbac
 
 
 class FullFinetuneGVRModel:
-    """Reuse the original multi-task model and exact training/evaluation prompts."""
+    """Reuse one full multitask checkpoint, changing only repair-time treatment.
+
+    Generation and learned verification retain the original prompt and ordinary
+    decoding. Feedback ablations affect the repair input, not executor stopping
+    decisions. ``last_usage`` describes the latest call and is empty on failure.
+    """
 
     def __init__(self, runner, repair_decoding=None, repair_feedback="original"):
         if repair_feedback not in ("original", "none", "generic"):
@@ -57,9 +62,12 @@ class FullFinetuneGVRModel:
         self.last_usage = {}
 
     def predict(self, task, grid, candidate="", feedback="", check=lambda: None):
+        self.last_usage = {}
         if task == "repair":
-            if self.repair_feedback == "none": feedback = ""
-            elif self.repair_feedback == "generic": feedback = "The candidate is invalid. Find a valid path."
+            if self.repair_feedback == "none":
+                feedback = ""
+            elif self.repair_feedback == "generic":
+                feedback = "The candidate is invalid. Find a valid path."
         source = prompt(task, grid, candidate, feedback)
         decoder_usage = {}
         if task == "repair" and self.repair_decoding is not None:

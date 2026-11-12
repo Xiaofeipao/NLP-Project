@@ -1,0 +1,15 @@
+{
+  "validated_sessions": 1827,
+  "pending": [
+    {
+      "session": "planning/97b0a7299e602128f3e1113d098beedad194e8f0ca85c7b6669472fde4caaa28/backtrack_none",
+      "status": "running",
+      "phase": "repair",
+      "model_calls": 2,
+      "events": 5
+    }
+  ],
+  "interrupted_reservation_seconds": 870.6777400970459,
+  "start_unix": 1794477796.8801343,
+  "mechanism": "WMI process creation, independent of SSH process tree"
+}

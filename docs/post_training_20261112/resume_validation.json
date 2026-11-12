@@ -1,0 +1,13 @@
+{
+  "source": "desktop HDD: study_001",
+  "destination": "desktop SSD: study_001",
+  "protocol_sha256": "159ce983c1711f2be0c71acb5c7251d3886408add79cd9492d69f7e9b21a8bfd",
+  "validated_sessions": 551,
+  "stopped_process_ids": [
+    22064,
+    10436
+  ],
+  "ledger_runs_before": 262,
+  "interrupted_wall_seconds": 528.4220000000023,
+  "reason": "Move durable journal writes from HDD E: to SSD C:; source, checkpoint and spec unchanged."
+}

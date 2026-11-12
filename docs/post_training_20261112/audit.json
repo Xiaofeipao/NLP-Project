@@ -1,0 +1,105 @@
+{
+  "status": "passed_with_interruption_accounting_limit",
+  "method": "Independent Python grid execution, BFS and metric formulas; no ppnl evaluation functions imported. Independently verified raw session hash chains and counted neural request/response events.",
+  "artifact_sha256": {
+    "raw_results_zip": "43f4e07e3bb7e6ff32ec031389a5108bbc2d0d195247941e2fb5ceee144ae349",
+    "traces_zip": "aefd5917305b617cba39145812bc99097d56b971d650766ea3d19c389bf8bfb8",
+    "source_snapshot_zip": "5e3236de96098adde980291722238c4d711d76bc53a959b06074f4772c433736"
+  },
+  "protocol_sha256": "159ce983c1711f2be0c71acb5c7251d3886408add79cd9492d69f7e9b21a8bfd",
+  "checks": {
+    "value_comparisons": 225521,
+    "record_hashes": 14,
+    "metric_fields": 429,
+    "group_metric_fields": 1391,
+    "official_unique_plans": 2435,
+    "strict_unknown_token_plans": 92
+  },
+  "metrics": {
+    "dev": {
+      "verification": {
+        "n": 100,
+        "macro_f1": 0.6290726817042607,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.14,
+        "failure_type_accuracy": 0.5,
+        "joint_error_accuracy": 0.14
+      },
+      "n_generation": 40,
+      "n_repair": 60
+    },
+    "test_id": {
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.7189883580891208,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.08,
+        "failure_type_accuracy": 0.53,
+        "joint_error_accuracy": 0.07
+      },
+      "n_generation": 200,
+      "n_repair": 100
+    },
+    "test_ood": {
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.7749943748593715,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.2,
+        "failure_type_accuracy": 0.54,
+        "joint_error_accuracy": 0.11
+      },
+      "n_generation": 200,
+      "n_repair": 100
+    }
+  },
+  "paired_id_ood": {
+    "environments": 200,
+    "identical_initial_and_method_records": true,
+    "unique_generation_environments_including_dev": 240
+  },
+  "source_files_verified": 32,
+  "session_counts": {
+    "candidate_processing": 3380,
+    "planning_after_initial": 3120,
+    "shared_initial_generation": 240
+  },
+  "journal_events_verified": 52645,
+  "neural_requests_charged": {
+    "candidate_processing": 3306,
+    "planning_after_initial": 2881,
+    "shared_initial_generation": 240,
+    "independent_verification": 500
+  },
+  "neural_responses_completed": {
+    "candidate_processing": 3306,
+    "planning_after_initial": 2880,
+    "shared_initial_generation": 240,
+    "independent_verification": 500
+  },
+  "total_neural_requests_charged": 6927,
+  "total_neural_responses_completed": 6926,
+  "interrupted_requests": [
+    {
+      "session": "planning/97b0a7299e602128f3e1113d098beedad194e8f0ca85c7b6669472fde4caaa28/backtrack_none",
+      "abandoned_request": {
+        "event": 5,
+        "phase": "repair",
+        "charged_calls": 2,
+        "neural": true
+      },
+      "retried_request": 6
+    }
+  ],
+  "cost_limits": [
+    "One interrupted repair request was durably charged before disconnection, then retried. Charged requests include one more attempt than completed neural responses.",
+    "The interrupted attempt has no response/usage event: its partial decoder work, tokens and active_seconds cannot be reconstructed from the journal. Reported task telemetry covers recorded completed calls, not all abandoned compute.",
+    "GPU reservation wall time for the interrupted process is retained separately in the ledger/recovery record; it is not interchangeable with task active_seconds.",
+    "executor_calls excludes post-hoc OfficialOracle checks, metric BFS and per-action decoding masks."
+  ],
+  "official_executor_sha256_verified": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+  "verification_limits": [
+    "Official is_goal agrees on success/collision for all unique legal-token paths. Unknown-token rejection and first-error labels are independently checked against the documented strict local extension."
+  ],
+  "discrepancies": []
+}

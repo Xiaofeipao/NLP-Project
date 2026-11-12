@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-11-12T09:52:05.768682+00:00",
+  "stages": [
+    {
+      "stage": "smoke",
+      "returncode": 0,
+      "wall_seconds": 62.43800000000192
+    },
+    {
+      "stage": "full_hdd_interrupted",
+      "returncode": 4294967295,
+      "wall_seconds": 528.4220000000023
+    },
+    {
+      "stage": "full_ssd_ssh_interrupted",
+      "returncode": null,
+      "wall_seconds_upper_bound": 870.6777400970459
+    },
+    {
+      "stage": "full_detached_resume",
+      "returncode": 0,
+      "wall_seconds": 2560.813000000002
+    }
+  ],
+  "active_stage": null,
+  "status": "completed",
+  "output": "desktop SSD: study_001",
+  "resumed_utc": "2026-11-12T10:17:48.330483+00:00",
+  "finished_utc": "2026-11-12T11:00:29.135675+00:00"
+}
