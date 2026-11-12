@@ -701,3 +701,13 @@ REINFORCE 对照使用 leave-one-out baseline，每组只更新一次。两者�
 生成脚本 `scripts/build_generalization_dataset.py` 固定随机种子，排除原 derived/policy 数据及 manifest 中所有保留布局；每个新布局只用一次。训练/开发配额和原 ID/OOD 文件完全不变。manifest 记录输入、代码、执行器与新文件哈希；CPU 测试检查逐字节复现、400 条候选的标签/参考最短路、防泄漏和拒绝覆盖。
 
 当前只完成数据构造与 CPU 校验，没有新模型分数，也没有训练。运行模型前须独立冻结方法和预算，尤其预先规定 7×7 是否仍限 36 动作；不得混入历史冻结测试入口或用新评测集挑选模型。相对于原候选错误 OOD，这两组评估地图尺寸/密度变化，但合成采样本身也有分布差异，不能当作完全单因素的尺寸实验。
+
+
+## 恢复历史高最优率入口（2026-11-12）
+
+按用户要求恢复以历史规划方法为主的使用入口。近期 GVR 约束解码/回溯仍为独立实验，不替换这里的规划器。底层旧算法本来仍在，因此不回滚整个仓库或撤销后续正确性修复。
+
+- 最高最优率路线：`python -m methods.harness plan -- --grid examples/grid.json`。复用原 `neural_optimal_astar`、历史多最优动作 Flan-T5-small 权重与 36 次节点展开上限。历史 ID 成功率/最优率均为 100%，纯 A* 对照也为 100%；不是无搜索模型成绩。展开预算内找不到解仍会失败，不保证所有新地图成功。
+- 原逐步 Agent Harness：`python -m methods.harness run -- run --out outputs/agent_harness/restored_001`。默认读取 `configs/harness/policy.json`，每次只选一步，合法动作过滤 + 最少访问次数约束，最多 16 次模型/工具调用；历史 ID 成功 199/200，最短 173/200（86.5%）。未加入整路径修复或回溯搜索。
+
+两条入口指向已发布的 `artifacts/historical_models/planning_v3/multi/flan_t5_small/train/best`；需要 Git LFS 实体权重和官方执行器。本轮只恢复入口和有效权重路径，不重新训练，不把旧成绩写成新运行结果，也不宣称对新增 7×7/密集 6×6 测试集已有成绩。此次按用户偏好采用历史观察结果，不重写原开发集选择记录。

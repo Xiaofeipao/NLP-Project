@@ -46,5 +46,6 @@
   "baseline_root": "outputs/flan_t5_small",
   "policy_optimal_search": true,
   "policy_local_status": true,
-  "deployment_method": "neural_optimal_astar"
+  "deployment_method": "neural_optimal_astar",
+  "policy_checkpoint": "artifacts/historical_models/planning_v3/multi/flan_t5_small/train/best"
 }

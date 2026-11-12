@@ -9,6 +9,9 @@
     ],
     "evaluate": [
       "scripts/run_eval_harness.py"
+    ],
+    "plan": [
+      "scripts/plan_grid.py"
     ]
   },
   "configs": [

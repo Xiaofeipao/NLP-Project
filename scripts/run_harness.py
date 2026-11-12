@@ -36,7 +36,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     start = sub.add_parser("run")
-    start.add_argument("--spec", required=True)
+    start.add_argument("--spec", default="configs/harness/policy.json")
     start.add_argument("--out", required=True, help="new directory under outputs/agent_harness")
     start.add_argument("--dry-run", action="store_true", help="validate artifacts; write nothing and load no model")
     for command in ("resume", "inspect"):
