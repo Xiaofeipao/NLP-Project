@@ -8,6 +8,7 @@
 
 | 想了解 | 阅读入口 |
 | --- | --- |
+| 项目全貌、课程主线与实验结论 | [Project 6 项目整理](docs/project6_overview.md) |
 | 研究问题、poster 的方法与结果如何对应现有仓库 | [poster 导览](docs/poster_guide.md) |
 | 当前代码支持哪些方法、如何选择入口 | [方法目录](methods/README.md) · [项目地图](docs/project_map.md) |
 | 已发布的三模型实验结果和负结果 | [实验记录](docs/gpu_campaign_20261103.md) · [机器可读结果](docs/gpu_campaign_results.json) |
