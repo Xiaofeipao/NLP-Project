@@ -11,3 +11,17 @@ artifacts/historical_models/** -text -whitespace
 artifacts/historical_models/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
 # Preserve the byte-level checksums of the fixed-checkpoint GPU rerun evidence.
 docs/post_training_20261112/** -text whitespace=cr-at-eol
+
+# Checkout bytes required by the FirstPart selection manifest.
+state_baselines/protocol.json text eol=lf
+state_baselines/run.py text eol=lf
+state_baselines/workflow.py text eol=lf
+ppnl/core.py text eol=crlf
+ppnl/data.py text eol=crlf
+ppnl/evaluation.py text eol=crlf
+ppnl/experiment_freeze.py text eol=crlf
+ppnl/local_finish.py text eol=lf
+ppnl/modeling.py text eol=crlf
+ppnl/optimization.py text eol=crlf
+ppnl/policy.py text eol=crlf
+ppnl/prompts.py text eol=crlf

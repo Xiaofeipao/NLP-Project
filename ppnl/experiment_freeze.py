@@ -39,7 +39,11 @@ def audit_splits(directory):
         if any(row["layout_id"] not in allowed for row in examples):
             raise ValueError(f"Rows outside declared layout split: {split}")
         expected = manifest["counts"][split]
-        actual = dict(Counter(row["task"] for row in examples)) if isinstance(expected, dict) else len(examples)
+        if isinstance(expected, dict):
+            actual = Counter(row["task"] for row in examples)
+            expected = Counter(expected)
+        else:
+            actual = len(examples)
         if actual != expected:
             raise ValueError(f"Count differs from manifest: {split}")
         result[split] = {

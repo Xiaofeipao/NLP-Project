@@ -1,5 +1,7 @@
 # PPNL：自然语言网格路径规划
 
+第一部分实验记录包含三模型训练、开发集选模、单错与双错验证，以及主模型的自验证失败案例。[实验记录](docs/state_policy_experiment_log.md) · [复现入口](state_baselines/README.md)
+
 本项目研究小型语言模型在单目标网格中的生成、验证和修复能力。模型输出 `up / down / left / right`；严格执行器报告 success（合法且到达目标）、feasibility（所有动作合法）和 optimality（成功且等于 BFS 最短路）。
 
 ## 当前主线
