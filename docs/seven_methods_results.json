@@ -1,0 +1,3846 @@
+{
+  "selection": {
+    "method": {
+      "name": "terminal_visit",
+      "style": "ordinary",
+      "guard": "terminal",
+      "decoder": "visit",
+      "rounds": 1
+    },
+    "dev_rank": [
+      1.0,
+      0.82,
+      0.8795811518324608,
+      0.82
+    ],
+    "dev_sha256": "4e58dd1d343dbffe5bfd15d8ba4db5e58768fe1232eeb62f5e18d287a5d46a9e",
+    "weights_sha256": "199332793094904518fff0a0c3597d082d12caebbe7378d911be3f0a09803f0a"
+  },
+  "overall_dev_comparison": {
+    "scope": "all predeclared methods including controls; research selection remains unchanged",
+    "method": {
+      "name": "executor_visit_control",
+      "style": "ordinary",
+      "guard": "executor",
+      "decoder": "visit",
+      "rounds": 1,
+      "control": true
+    },
+    "dev_rank": [
+      1.0,
+      1.0,
+      0.8795811518324608,
+      1.0
+    ],
+    "selection_uses_test": false,
+    "source_dev_sha256": "4e58dd1d343dbffe5bfd15d8ba4db5e58768fe1232eeb62f5e18d287a5d46a9e"
+  },
+  "dev": {
+    "candidates": {
+      "direct": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.5,
+          "feasibility": 0.8,
+          "optimality": 0.25,
+          "path_efficiency_on_success": 0.8313809523809526
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.0,
+          "feasibility": 0.6,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6296711929076422,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.18,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.18
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_seconds": 0.007999299999937648,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "self": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.63,
+          "feasibility": 0.89,
+          "optimality": 0.37,
+          "path_efficiency_on_success": 0.8598261526832957
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.78,
+          "optimality": 0.24,
+          "path_efficiency_on_success": 0.9692307692307692
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6296711929076422,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.18,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.18
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 37,
+          "repair_seconds": 0.4106084000013652,
+          "policy": {
+            "requested_states": 37,
+            "cache_hits": 28,
+            "forward_batches": 9,
+            "scored_states": 9
+          }
+        }
+      },
+      "self_visit": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.63,
+          "feasibility": 0.89,
+          "optimality": 0.37,
+          "path_efficiency_on_success": 0.8571050642479215
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.78,
+          "optimality": 0.24,
+          "path_efficiency_on_success": 0.9560439560439561
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6296711929076422,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.18,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.18
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 39,
+          "repair_seconds": 0.1398657000027015,
+          "policy": {
+            "requested_states": 39,
+            "cache_hits": 37,
+            "forward_batches": 2,
+            "scored_states": 2
+          }
+        }
+      },
+      "structured": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.62,
+          "feasibility": 0.89,
+          "optimality": 0.36,
+          "path_efficiency_on_success": 0.8548003072196622
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.24,
+          "feasibility": 0.78,
+          "optimality": 0.22,
+          "path_efficiency_on_success": 0.9523809523809524
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6178622120318812,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.12,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.12
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 41,
+          "repair_seconds": 0.17341669999950682,
+          "policy": {
+            "requested_states": 41,
+            "cache_hits": 38,
+            "forward_batches": 3,
+            "scored_states": 3
+          }
+        }
+      },
+      "cot": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.5,
+          "feasibility": 0.8,
+          "optimality": 0.25,
+          "path_efficiency_on_success": 0.8313809523809526
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.0,
+          "feasibility": 0.6,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.0,
+          "format_accuracy": 0.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 0,
+          "repair_seconds": 0.008089400002063485,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "tool_trace": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.6,
+          "feasibility": 0.9,
+          "optimality": 0.34,
+          "path_efficiency_on_success": 0.8539285714285716
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.2,
+          "feasibility": 0.8,
+          "optimality": 0.18,
+          "path_efficiency_on_success": 0.9666666666666666
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6011396011396011,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.06,
+          "failure_type_accuracy": 0.3,
+          "joint_error_accuracy": 0.06
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 38,
+          "repair_seconds": 0.24111880000054953,
+          "policy": {
+            "requested_states": 38,
+            "cache_hits": 33,
+            "forward_batches": 5,
+            "scored_states": 5
+          }
+        }
+      },
+      "iterative_self": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.63,
+          "feasibility": 0.89,
+          "optimality": 0.37,
+          "path_efficiency_on_success": 0.8598261526832957
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.78,
+          "optimality": 0.24,
+          "path_efficiency_on_success": 0.9692307692307692
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6296711929076422,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.18,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.18
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 37,
+          "repair_seconds": 0.06078259999776492,
+          "policy": {
+            "requested_states": 37,
+            "cache_hits": 37,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "terminal_raw": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.9,
+          "feasibility": 0.91,
+          "optimality": 0.54,
+          "path_efficiency_on_success": 0.8626631393298057
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.8,
+          "feasibility": 0.82,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.9017658730158731
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.9092650468797259,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.82,
+          "failure_type_accuracy": 0.82,
+          "joint_error_accuracy": 0.82
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 114,
+          "repair_seconds": 1.0108470999985002,
+          "policy": {
+            "requested_states": 114,
+            "cache_hits": 90,
+            "forward_batches": 24,
+            "scored_states": 24
+          }
+        }
+      },
+      "verifier_guided": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.9,
+          "feasibility": 0.91,
+          "optimality": 0.54,
+          "path_efficiency_on_success": 0.8626631393298057
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.8,
+          "feasibility": 0.82,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.9017658730158731
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.9092650468797259,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.82,
+          "failure_type_accuracy": 0.82,
+          "joint_error_accuracy": 0.82
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 114,
+          "repair_seconds": 0.17357909999918775,
+          "policy": {
+            "requested_states": 114,
+            "cache_hits": 114,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "constrained_legal": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.9,
+          "feasibility": 0.91,
+          "optimality": 0.54,
+          "path_efficiency_on_success": 0.8626631393298057
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.8,
+          "feasibility": 0.82,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.9017658730158731
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.9092650468797259,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.82,
+          "failure_type_accuracy": 0.82,
+          "joint_error_accuracy": 0.82
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 114,
+          "repair_seconds": 0.17372719999912078,
+          "policy": {
+            "requested_states": 114,
+            "cache_hits": 114,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "terminal_visit": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.91,
+          "feasibility": 0.91,
+          "optimality": 0.54,
+          "path_efficiency_on_success": 0.8558782487353912
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.8857530003871468
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.9092650468797259,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.82,
+          "failure_type_accuracy": 0.82,
+          "joint_error_accuracy": 0.82
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 89,
+          "repair_seconds": 0.25664770000003045,
+          "policy": {
+            "requested_states": 89,
+            "cache_hits": 85,
+            "forward_batches": 4,
+            "scored_states": 4
+          }
+        }
+      },
+      "iterative_terminal_visit": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.91,
+          "feasibility": 0.91,
+          "optimality": 0.54,
+          "path_efficiency_on_success": 0.8558782487353912
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.8857530003871468
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.9092650468797259,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.82,
+          "failure_type_accuracy": 0.82,
+          "joint_error_accuracy": 0.82
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 89,
+          "repair_seconds": 0.13364910000018426,
+          "policy": {
+            "requested_states": 89,
+            "cache_hits": 89,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "executor_control": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.99,
+          "feasibility": 1.0,
+          "optimality": 0.62,
+          "path_efficiency_on_success": 0.8714752138994559
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.98,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.912387725653032
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 128,
+          "repair_seconds": 0.3063036999992619,
+          "policy": {
+            "requested_states": 128,
+            "cache_hits": 124,
+            "forward_batches": 4,
+            "scored_states": 4
+          }
+        }
+      },
+      "executor_visit_control": {
+        "planning": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.62,
+          "path_efficiency_on_success": 0.8642338217338212
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.897086691086691
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 105,
+          "repair_seconds": 0.24782679999771062,
+          "policy": {
+            "requested_states": 105,
+            "cache_hits": 102,
+            "forward_batches": 3,
+            "scored_states": 3
+          }
+        }
+      },
+      "uniform_control": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.82,
+          "feasibility": 0.91,
+          "optimality": 0.3,
+          "path_efficiency_on_success": 0.6803389230623965
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.64,
+          "feasibility": 0.82,
+          "optimality": 0.1,
+          "path_efficiency_on_success": 0.44433575225215255
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.9092650468797259,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.82,
+          "failure_type_accuracy": 0.82,
+          "joint_error_accuracy": 0.82
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 742,
+          "repair_seconds": 0.015676300001359778,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "continuation_control_model": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.61,
+          "feasibility": 0.9,
+          "optimality": 0.35,
+          "path_efficiency_on_success": 0.8563231850117098
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.22,
+          "feasibility": 0.8,
+          "optimality": 0.2,
+          "path_efficiency_on_success": 0.9696969696969696
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6155585707824514,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.18,
+          "failure_type_accuracy": 0.3,
+          "joint_error_accuracy": 0.16
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 30,
+          "repair_seconds": 0.05063990000053309,
+          "policy": {
+            "requested_states": 30,
+            "cache_hits": 30,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "continuation_control_terminal": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.9,
+          "feasibility": 0.9,
+          "optimality": 0.54,
+          "path_efficiency_on_success": 0.8606261022927687
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.8,
+          "feasibility": 0.8,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.8971825396825397
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.9092650468797259,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.82,
+          "failure_type_accuracy": 0.8,
+          "joint_error_accuracy": 0.8
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 85,
+          "repair_seconds": 0.13339369999812334,
+          "policy": {
+            "requested_states": 85,
+            "cache_hits": 85,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "multitask_model": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.64,
+          "feasibility": 0.9,
+          "optimality": 0.38,
+          "path_efficiency_on_success": 0.8630580357142859
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.28,
+          "feasibility": 0.8,
+          "optimality": 0.26,
+          "path_efficiency_on_success": 0.9761904761904762
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6598639455782312,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.18,
+          "failure_type_accuracy": 0.54,
+          "joint_error_accuracy": 0.14
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 38,
+          "repair_seconds": 0.07254579999789712,
+          "policy": {
+            "requested_states": 38,
+            "cache_hits": 38,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "multitask_terminal": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.9,
+          "feasibility": 0.9,
+          "optimality": 0.54,
+          "path_efficiency_on_success": 0.8606261022927687
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.8,
+          "feasibility": 0.8,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.8971825396825397
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.7874278773155178,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.84,
+          "failure_type_accuracy": 0.8,
+          "joint_error_accuracy": 0.8
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 85,
+          "repair_seconds": 0.15440010000020266,
+          "policy": {
+            "requested_states": 85,
+            "cache_hits": 85,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "augmentation_model": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.59,
+          "feasibility": 0.87,
+          "optimality": 0.33,
+          "path_efficiency_on_success": 0.851452784503632
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.18,
+          "feasibility": 0.74,
+          "optimality": 0.16,
+          "path_efficiency_on_success": 0.9629629629629631
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6296711929076422,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.14,
+          "failure_type_accuracy": 0.32,
+          "joint_error_accuracy": 0.14
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 24,
+          "repair_seconds": 0.06049369999891496,
+          "policy": {
+            "requested_states": 24,
+            "cache_hits": 24,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "augmentation_terminal": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.9,
+          "feasibility": 0.9,
+          "optimality": 0.54,
+          "path_efficiency_on_success": 0.8606261022927687
+        },
+        "repair": {
+          "n": 50,
+          "success_rate": 0.8,
+          "feasibility": 0.8,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.8971825396825397
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.9092650468797259,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.8,
+          "failure_type_accuracy": 0.8,
+          "joint_error_accuracy": 0.8
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 100,
+          "new_actions": 85,
+          "repair_seconds": 0.18754649999755202,
+          "policy": {
+            "requested_states": 85,
+            "cache_hits": 85,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      }
+    },
+    "generated": {
+      "direct": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.4349112426035503,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_seconds": 0.020627899997634813,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "self": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.4349112426035503,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 0,
+          "repair_seconds": 0.023097999997844454,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "self_visit": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.4349112426035503,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 0,
+          "repair_seconds": 0.023117000000638654,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "structured": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8848167539267016,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 0.9983093829247676
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.043478260869565216,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.7142857142857143
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.3833609271523179,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 41,
+          "repair_seconds": 0.32572739999886835,
+          "policy": {
+            "requested_states": 41,
+            "cache_hits": 38,
+            "forward_batches": 3,
+            "scored_states": 3
+          }
+        }
+      },
+      "cot": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.0,
+          "format_accuracy": 0.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 0,
+          "repair_seconds": 0.015349400000559399,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "tool_trace": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.467966573816156,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 0,
+          "repair_seconds": 0.015754799998831004,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "iterative_self": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.4349112426035503,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 0,
+          "repair_seconds": 0.01495230000000447,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "terminal_raw": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.8099502487562189,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 828,
+          "repair_seconds": 1.1764269000013883,
+          "policy": {
+            "requested_states": 828,
+            "cache_hits": 828,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "verifier_guided": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.8099502487562189,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 828,
+          "repair_seconds": 1.1869015999982366,
+          "policy": {
+            "requested_states": 828,
+            "cache_hits": 828,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "constrained_legal": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.8099502487562189,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 828,
+          "repair_seconds": 1.1513507000017853,
+          "policy": {
+            "requested_states": 828,
+            "cache_hits": 828,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "terminal_visit": {
+        "planning": {
+          "n": 191,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 0.8981787754907454
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.15444113559705963
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.8099502487562189,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 168,
+          "repair_seconds": 4.773951499999384,
+          "policy": {
+            "requested_states": 168,
+            "cache_hits": 41,
+            "forward_batches": 127,
+            "scored_states": 127
+          }
+        }
+      },
+      "iterative_terminal_visit": {
+        "planning": {
+          "n": 191,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 0.8981787754907454
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.15444113559705963
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.8099502487562189,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 194,
+          "new_actions": 168,
+          "extra_verifier_calls": 3,
+          "repair_seconds": 0.562920700001996,
+          "policy": {
+            "requested_states": 168,
+            "cache_hits": 168,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "executor_control": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 828,
+          "repair_seconds": 1.2472801000003528,
+          "policy": {
+            "requested_states": 828,
+            "cache_hits": 828,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "executor_visit_control": {
+        "planning": {
+          "n": 191,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 0.8981787754907454
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.15444113559705963
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 168,
+          "repair_seconds": 0.30562319999808096,
+          "policy": {
+            "requested_states": 168,
+            "cache_hits": 168,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "uniform_control": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.9633507853403142,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 0.9249620065041143
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.6956521739130435,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1370630747973142
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.8099502487562189,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 483,
+          "repair_seconds": 0.022848600001452724,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "continuation_control_model": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.44314868804664725,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 0,
+          "repair_seconds": 0.014289999999164138,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "continuation_control_terminal": {
+        "planning": {
+          "n": 191,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 0.8981787754907454
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.15444113559705963
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.8459677419354839,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 168,
+          "repair_seconds": 0.24752749999970547,
+          "policy": {
+            "requested_states": 168,
+            "cache_hits": 168,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "multitask_model": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.36899065846434265,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.8260869565217391,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 0,
+          "repair_seconds": 0.014549800001987023,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "multitask_terminal": {
+        "planning": {
+          "n": 191,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 0.8981787754907454
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.15444113559705963
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.39556962025316456,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 168,
+          "repair_seconds": 0.2615440000008675,
+          "policy": {
+            "requested_states": 168,
+            "cache_hits": 168,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "augmentation_model": {
+        "planning": {
+          "n": 191,
+          "success_rate": 0.8795811518324608,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 1.0
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.45584045584045585,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 0,
+          "repair_seconds": 0.013917899999796646,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "augmentation_terminal": {
+        "planning": {
+          "n": 191,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.8795811518324608,
+          "path_efficiency_on_success": 0.8981787754907454
+        },
+        "repair": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.15444113559705963
+        },
+        "verification": {
+          "n": 191,
+          "macro_f1": 0.9137308039747064,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 191,
+          "new_actions": 168,
+          "repair_seconds": 0.2509333999987575,
+          "policy": {
+            "requested_states": 168,
+            "cache_hits": 168,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      }
+    }
+  },
+  "test_id": {
+    "candidates": {
+      "direct": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.5,
+          "feasibility": 0.79,
+          "optimality": 0.25,
+          "path_efficiency_on_success": 0.8283571428571428
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.0,
+          "feasibility": 0.58,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.6280980266992313,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.15,
+          "failure_type_accuracy": 0.35,
+          "joint_error_accuracy": 0.15
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_seconds": 0.014760600002773572,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "self": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.6,
+          "feasibility": 0.845,
+          "optimality": 0.35,
+          "path_efficiency_on_success": 0.8569642857142855
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.2,
+          "feasibility": 0.69,
+          "optimality": 0.2,
+          "path_efficiency_on_success": 1.0
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.6280980266992313,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.15,
+          "failure_type_accuracy": 0.35,
+          "joint_error_accuracy": 0.15
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 93,
+          "repair_seconds": 1.178088900000148,
+          "policy": {
+            "requested_states": 93,
+            "cache_hits": 65,
+            "forward_batches": 28,
+            "scored_states": 28
+          }
+        }
+      },
+      "self_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.605,
+          "feasibility": 0.845,
+          "optimality": 0.355,
+          "path_efficiency_on_success": 0.8581463990554897
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.21,
+          "feasibility": 0.69,
+          "optimality": 0.21,
+          "path_efficiency_on_success": 1.0
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.6280980266992313,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.15,
+          "failure_type_accuracy": 0.35,
+          "joint_error_accuracy": 0.15
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 62,
+          "repair_seconds": 0.33078999999997905,
+          "policy": {
+            "requested_states": 62,
+            "cache_hits": 58,
+            "forward_batches": 4,
+            "scored_states": 4
+          }
+        }
+      },
+      "structured": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.615,
+          "feasibility": 0.85,
+          "optimality": 0.355,
+          "path_efficiency_on_success": 0.8536778939217962
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.23,
+          "feasibility": 0.7,
+          "optimality": 0.21,
+          "path_efficiency_on_success": 0.9637681159420289
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.6419270833333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.16,
+          "failure_type_accuracy": 0.37,
+          "joint_error_accuracy": 0.15
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 76,
+          "repair_seconds": 0.4211137999991479,
+          "policy": {
+            "requested_states": 76,
+            "cache_hits": 67,
+            "forward_batches": 9,
+            "scored_states": 9
+          }
+        }
+      },
+      "cot": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.5,
+          "feasibility": 0.79,
+          "optimality": 0.25,
+          "path_efficiency_on_success": 0.8283571428571428
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.0,
+          "feasibility": 0.58,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.0,
+          "format_accuracy": 0.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 0,
+          "repair_seconds": 0.015711600000940962,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "tool_trace": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.565,
+          "feasibility": 0.845,
+          "optimality": 0.31,
+          "path_efficiency_on_success": 0.8451538137378845
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.13,
+          "feasibility": 0.69,
+          "optimality": 0.12,
+          "path_efficiency_on_success": 0.9743589743589743
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.5788987914972167,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.07,
+          "failure_type_accuracy": 0.27,
+          "joint_error_accuracy": 0.07
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 53,
+          "repair_seconds": 0.11318140000003041,
+          "policy": {
+            "requested_states": 53,
+            "cache_hits": 52,
+            "forward_batches": 1,
+            "scored_states": 1
+          }
+        }
+      },
+      "iterative_self": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.6,
+          "feasibility": 0.845,
+          "optimality": 0.35,
+          "path_efficiency_on_success": 0.8569642857142855
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.2,
+          "feasibility": 0.69,
+          "optimality": 0.2,
+          "path_efficiency_on_success": 1.0
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.6280980266992313,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.15,
+          "failure_type_accuracy": 0.35,
+          "joint_error_accuracy": 0.15
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 201,
+          "new_actions": 69,
+          "extra_verifier_calls": 1,
+          "repair_seconds": 0.16093769999861252,
+          "policy": {
+            "requested_states": 69,
+            "cache_hits": 69,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "terminal_raw": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.875,
+          "feasibility": 0.89,
+          "optimality": 0.51,
+          "path_efficiency_on_success": 0.852693052978767
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.75,
+          "feasibility": 0.78,
+          "optimality": 0.52,
+          "path_efficiency_on_success": 0.8851409331409331
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8787878787878788,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 263,
+          "repair_seconds": 1.9359739999999874,
+          "policy": {
+            "requested_states": 263,
+            "cache_hits": 208,
+            "forward_batches": 55,
+            "scored_states": 55
+          }
+        }
+      },
+      "verifier_guided": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.875,
+          "feasibility": 0.89,
+          "optimality": 0.51,
+          "path_efficiency_on_success": 0.852693052978767
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.75,
+          "feasibility": 0.78,
+          "optimality": 0.52,
+          "path_efficiency_on_success": 0.8851409331409331
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8787878787878788,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 263,
+          "repair_seconds": 0.38372289999824716,
+          "policy": {
+            "requested_states": 263,
+            "cache_hits": 263,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "constrained_legal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.875,
+          "feasibility": 0.89,
+          "optimality": 0.51,
+          "path_efficiency_on_success": 0.852693052978767
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.75,
+          "feasibility": 0.78,
+          "optimality": 0.52,
+          "path_efficiency_on_success": 0.8851409331409331
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8787878787878788,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 263,
+          "repair_seconds": 0.3810498999991978,
+          "policy": {
+            "requested_states": 263,
+            "cache_hits": 263,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "terminal_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.89,
+          "feasibility": 0.89,
+          "optimality": 0.515,
+          "path_efficiency_on_success": 0.842977388318341
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.53,
+          "path_efficiency_on_success": 0.8617212927557756
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8787878787878788,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 220,
+          "repair_seconds": 1.477236200000334,
+          "policy": {
+            "requested_states": 220,
+            "cache_hits": 181,
+            "forward_batches": 39,
+            "scored_states": 39
+          }
+        }
+      },
+      "iterative_terminal_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.89,
+          "feasibility": 0.89,
+          "optimality": 0.515,
+          "path_efficiency_on_success": 0.842977388318341
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.53,
+          "path_efficiency_on_success": 0.8617212927557756
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8787878787878788,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 203,
+          "new_actions": 220,
+          "extra_verifier_calls": 3,
+          "repair_seconds": 0.4498754000014742,
+          "policy": {
+            "requested_states": 220,
+            "cache_hits": 220,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "executor_control": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.97,
+          "feasibility": 1.0,
+          "optimality": 0.59,
+          "path_efficiency_on_success": 0.8626403951146215
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.94,
+          "feasibility": 1.0,
+          "optimality": 0.68,
+          "path_efficiency_on_success": 0.8991119400693869
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 425,
+          "repair_seconds": 1.264842900000076,
+          "policy": {
+            "requested_states": 425,
+            "cache_hits": 401,
+            "forward_batches": 24,
+            "scored_states": 24
+          }
+        }
+      },
+      "executor_visit_control": {
+        "planning": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.605,
+          "path_efficiency_on_success": 0.8534046375080854
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.71,
+          "path_efficiency_on_success": 0.8784521321590286
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 291,
+          "repair_seconds": 0.8681501999999455,
+          "policy": {
+            "requested_states": 291,
+            "cache_hits": 279,
+            "forward_batches": 12,
+            "scored_states": 12
+          }
+        }
+      },
+      "uniform_control": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.82,
+          "feasibility": 0.89,
+          "optimality": 0.29,
+          "path_efficiency_on_success": 0.6659367902073828
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.64,
+          "feasibility": 0.78,
+          "optimality": 0.08,
+          "path_efficiency_on_success": 0.4121549891921326
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8787878787878788,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 1392,
+          "repair_seconds": 0.032983200002490776,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "continuation_control_model": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.625,
+          "feasibility": 0.86,
+          "optimality": 0.365,
+          "path_efficiency_on_success": 0.8554857142857142
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.25,
+          "feasibility": 0.72,
+          "optimality": 0.23,
+          "path_efficiency_on_success": 0.9640000000000001
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.6416659775627773,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.22,
+          "failure_type_accuracy": 0.35,
+          "joint_error_accuracy": 0.22
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 67,
+          "repair_seconds": 0.28389249999963795,
+          "policy": {
+            "requested_states": 67,
+            "cache_hits": 62,
+            "forward_batches": 5,
+            "scored_states": 5
+          }
+        }
+      },
+      "continuation_control_terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.89,
+          "feasibility": 0.89,
+          "optimality": 0.515,
+          "path_efficiency_on_success": 0.842977388318341
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.53,
+          "path_efficiency_on_success": 0.8617212927557756
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8891017239641092,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 220,
+          "repair_seconds": 0.32893350000085775,
+          "policy": {
+            "requested_states": 220,
+            "cache_hits": 220,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "multitask_model": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.675,
+          "feasibility": 0.86,
+          "optimality": 0.395,
+          "path_efficiency_on_success": 0.8528571428571426
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.35,
+          "feasibility": 0.72,
+          "optimality": 0.29,
+          "path_efficiency_on_success": 0.9228571428571429
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7089522280208751,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.32,
+          "failure_type_accuracy": 0.59,
+          "joint_error_accuracy": 0.28
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 102,
+          "repair_seconds": 0.33338200000071083,
+          "policy": {
+            "requested_states": 102,
+            "cache_hits": 98,
+            "forward_batches": 4,
+            "scored_states": 4
+          }
+        }
+      },
+      "multitask_terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.89,
+          "feasibility": 0.89,
+          "optimality": 0.515,
+          "path_efficiency_on_success": 0.842977388318341
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.53,
+          "path_efficiency_on_success": 0.8617212927557756
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8001998001998003,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.82,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 224,
+          "repair_seconds": 0.3387644999966142,
+          "policy": {
+            "requested_states": 224,
+            "cache_hits": 224,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "augmentation_model": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.62,
+          "feasibility": 0.855,
+          "optimality": 0.37,
+          "path_efficiency_on_success": 0.8615783410138247
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.24,
+          "feasibility": 0.71,
+          "optimality": 0.24,
+          "path_efficiency_on_success": 1.0
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.6254367575122292,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.22,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.22
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 61,
+          "repair_seconds": 0.11342510000031325,
+          "policy": {
+            "requested_states": 61,
+            "cache_hits": 61,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "augmentation_terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.89,
+          "feasibility": 0.89,
+          "optimality": 0.515,
+          "path_efficiency_on_success": 0.842977388318341
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.53,
+          "path_efficiency_on_success": 0.8617212927557756
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8837179908491115,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 220,
+          "repair_seconds": 0.3505833999988681,
+          "policy": {
+            "requested_states": 220,
+            "cache_hits": 220,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      }
+    },
+    "generated": {
+      "direct": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4186046511627907,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_seconds": 0.017293799999606563,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "self": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4186046511627907,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 3,
+          "repair_seconds": 0.023477400001866044,
+          "policy": {
+            "requested_states": 3,
+            "cache_hits": 3,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "self_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4186046511627907,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 3,
+          "repair_seconds": 0.02233649999834597,
+          "policy": {
+            "requested_states": 3,
+            "cache_hits": 3,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "structured": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.86,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9972545219638242
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.034482758620689655,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.75
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.3765542362789394,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.034482758620689655,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 45,
+          "repair_seconds": 0.13258459999997285,
+          "policy": {
+            "requested_states": 45,
+            "cache_hits": 43,
+            "forward_batches": 2,
+            "scored_states": 2
+          }
+        }
+      },
+      "cot": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.0,
+          "format_accuracy": 0.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 0,
+          "repair_seconds": 0.016710600000806153,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "tool_trace": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4609164420485175,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 0,
+          "repair_seconds": 0.014953999998397194,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "iterative_self": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4186046511627907,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 3,
+          "repair_seconds": 0.019342200001119636,
+          "policy": {
+            "requested_states": 3,
+            "cache_hits": 3,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "terminal_raw": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7983193277310925,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 1047,
+          "repair_seconds": 1.4688267999990785,
+          "policy": {
+            "requested_states": 1047,
+            "cache_hits": 1047,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "verifier_guided": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7983193277310925,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 1047,
+          "repair_seconds": 1.5411248000018531,
+          "policy": {
+            "requested_states": 1047,
+            "cache_hits": 1047,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "constrained_legal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7983193277310925,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 1047,
+          "repair_seconds": 1.4432229999983974,
+          "policy": {
+            "requested_states": 1047,
+            "cache_hits": 1047,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "terminal_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.985,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.884739518276095
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.896551724137931,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1352272047158809
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7983193277310925,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 286,
+          "repair_seconds": 4.2037296000016795,
+          "policy": {
+            "requested_states": 286,
+            "cache_hits": 183,
+            "forward_batches": 103,
+            "scored_states": 103
+          }
+        }
+      },
+      "iterative_terminal_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.985,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.884739518276095
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.896551724137931,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1352272047158809
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7983193277310925,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 210,
+          "new_actions": 286,
+          "extra_verifier_calls": 10,
+          "repair_seconds": 1.0755352000014682,
+          "policy": {
+            "requested_states": 286,
+            "cache_hits": 286,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "executor_control": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 1044,
+          "repair_seconds": 1.501403099999152,
+          "policy": {
+            "requested_states": 1044,
+            "cache_hits": 1044,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "executor_visit_control": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.985,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.884739518276095
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.896551724137931,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1352272047158809
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 283,
+          "repair_seconds": 0.4269904000029783,
+          "policy": {
+            "requested_states": 283,
+            "cache_hits": 283,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "uniform_control": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.96,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9026696948885106
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.7241379310344828,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.12070493527696383
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7983193277310925,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 585,
+          "repair_seconds": 0.02440080000087619,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "continuation_control_model": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4269340974212034,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 0,
+          "repair_seconds": 0.014830300002358854,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "continuation_control_terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.985,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.884739518276095
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.896551724137931,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1352272047158809
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.828125,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 283,
+          "repair_seconds": 0.3976903000002494,
+          "policy": {
+            "requested_states": 283,
+            "cache_hits": 283,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "multitask_model": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4252873563218391,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.9655172413793104,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 4,
+          "repair_seconds": 0.02013479999732226,
+          "policy": {
+            "requested_states": 4,
+            "cache_hits": 4,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "multitask_terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.985,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.884739518276095
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.896551724137931,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1352272047158809
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4313378928763544,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 287,
+          "repair_seconds": 0.4142747000005329,
+          "policy": {
+            "requested_states": 287,
+            "cache_hits": 287,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "augmentation_model": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.44598337950138506,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 0,
+          "repair_seconds": 0.015313500000047497,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "augmentation_terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.985,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.884739518276095
+        },
+        "repair": {
+          "n": 29,
+          "success_rate": 0.896551724137931,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1352272047158809
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.9114103472714387,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 283,
+          "repair_seconds": 0.42735389999870677,
+          "policy": {
+            "requested_states": 283,
+            "cache_hits": 283,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      }
+    }
+  },
+  "test_ood": {
+    "candidates": {
+      "direct": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.5,
+          "feasibility": 0.65,
+          "optimality": 0.25,
+          "path_efficiency_on_success": 0.8283571428571428
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.0,
+          "feasibility": 0.3,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7821350762527233,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.14,
+          "failure_type_accuracy": 0.53,
+          "joint_error_accuracy": 0.12
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_seconds": 0.013327199998457218,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "self": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.64,
+          "feasibility": 0.77,
+          "optimality": 0.35,
+          "path_efficiency_on_success": 0.8406249999999998
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.28,
+          "feasibility": 0.54,
+          "optimality": 0.2,
+          "path_efficiency_on_success": 0.884438775510204
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7821350762527233,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.14,
+          "failure_type_accuracy": 0.53,
+          "joint_error_accuracy": 0.12
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 170,
+          "repair_seconds": 3.411404599999514,
+          "policy": {
+            "requested_states": 170,
+            "cache_hits": 67,
+            "forward_batches": 103,
+            "scored_states": 103
+          }
+        }
+      },
+      "self_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.65,
+          "feasibility": 0.77,
+          "optimality": 0.355,
+          "path_efficiency_on_success": 0.8364468864468863
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.54,
+          "optimality": 0.21,
+          "path_efficiency_on_success": 0.8634126984126984
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7821350762527233,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.14,
+          "failure_type_accuracy": 0.53,
+          "joint_error_accuracy": 0.12
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 119,
+          "repair_seconds": 1.082714099997247,
+          "policy": {
+            "requested_states": 119,
+            "cache_hits": 90,
+            "forward_batches": 29,
+            "scored_states": 29
+          }
+        }
+      },
+      "structured": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.68,
+          "feasibility": 0.775,
+          "optimality": 0.385,
+          "path_efficiency_on_success": 0.8418242296918765
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.36,
+          "feasibility": 0.55,
+          "optimality": 0.27,
+          "path_efficiency_on_success": 0.8792328042328044
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7789828069183522,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.17,
+          "failure_type_accuracy": 0.51,
+          "joint_error_accuracy": 0.15
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 139,
+          "repair_seconds": 1.0306580999967991,
+          "policy": {
+            "requested_states": 139,
+            "cache_hits": 111,
+            "forward_batches": 28,
+            "scored_states": 28
+          }
+        }
+      },
+      "cot": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.5,
+          "feasibility": 0.65,
+          "optimality": 0.25,
+          "path_efficiency_on_success": 0.8283571428571428
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.0,
+          "feasibility": 0.3,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.0,
+          "format_accuracy": 0.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 0,
+          "repair_seconds": 0.014833299999736482,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "tool_trace": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.615,
+          "feasibility": 0.76,
+          "optimality": 0.34,
+          "path_efficiency_on_success": 0.8441347270615561
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.23,
+          "feasibility": 0.52,
+          "optimality": 0.18,
+          "path_efficiency_on_success": 0.9127329192546583
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.713474867652677,
+          "format_accuracy": 0.985,
+          "first_error_localization_accuracy": 0.08,
+          "failure_type_accuracy": 0.46,
+          "joint_error_accuracy": 0.08
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 93,
+          "repair_seconds": 0.6481003000008059,
+          "policy": {
+            "requested_states": 93,
+            "cache_hits": 76,
+            "forward_batches": 17,
+            "scored_states": 17
+          }
+        }
+      },
+      "iterative_self": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.64,
+          "feasibility": 0.77,
+          "optimality": 0.35,
+          "path_efficiency_on_success": 0.8406249999999998
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.28,
+          "feasibility": 0.54,
+          "optimality": 0.2,
+          "path_efficiency_on_success": 0.884438775510204
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7821350762527233,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.14,
+          "failure_type_accuracy": 0.53,
+          "joint_error_accuracy": 0.12
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 202,
+          "new_actions": 122,
+          "extra_verifier_calls": 2,
+          "repair_seconds": 0.29561330000069574,
+          "policy": {
+            "requested_states": 122,
+            "cache_hits": 122,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "terminal_raw": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.865,
+          "feasibility": 0.89,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.848016498594533
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.73,
+          "feasibility": 0.78,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8749471228923286
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8993558776167472,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.77,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 393,
+          "repair_seconds": 4.337599800001044,
+          "policy": {
+            "requested_states": 393,
+            "cache_hits": 260,
+            "forward_batches": 133,
+            "scored_states": 133
+          }
+        }
+      },
+      "verifier_guided": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.865,
+          "feasibility": 0.89,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.848016498594533
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.73,
+          "feasibility": 0.78,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8749471228923286
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8993558776167472,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.77,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 393,
+          "repair_seconds": 0.5586741000006441,
+          "policy": {
+            "requested_states": 393,
+            "cache_hits": 393,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "constrained_legal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.865,
+          "feasibility": 0.89,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.848016498594533
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.73,
+          "feasibility": 0.78,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8749471228923286
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8993558776167472,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.77,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 393,
+          "repair_seconds": 0.5511555999983102,
+          "policy": {
+            "requested_states": 393,
+            "cache_hits": 393,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "terminal_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.89,
+          "feasibility": 0.89,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8347929536131783
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8430439930439929
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8993558776167472,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.77,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 284,
+          "repair_seconds": 1.7412469000009878,
+          "policy": {
+            "requested_states": 284,
+            "cache_hits": 239,
+            "forward_batches": 45,
+            "scored_states": 45
+          }
+        }
+      },
+      "iterative_terminal_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.89,
+          "feasibility": 0.89,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8347929536131783
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8430439930439929
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8993558776167472,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.77,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 202,
+          "new_actions": 284,
+          "extra_verifier_calls": 2,
+          "repair_seconds": 0.5255042000026151,
+          "policy": {
+            "requested_states": 284,
+            "cache_hits": 284,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "executor_control": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.96,
+          "feasibility": 1.0,
+          "optimality": 0.57,
+          "path_efficiency_on_success": 0.853797273328523
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.64,
+          "path_efficiency_on_success": 0.8814495890582847
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 580,
+          "repair_seconds": 3.7612785999990592,
+          "policy": {
+            "requested_states": 580,
+            "cache_hits": 491,
+            "forward_batches": 89,
+            "scored_states": 89
+          }
+        }
+      },
+      "executor_visit_control": {
+        "planning": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.8417691475191473
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.66,
+          "path_efficiency_on_success": 0.8551811521811521
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 383,
+          "repair_seconds": 0.964462400002958,
+          "policy": {
+            "requested_states": 383,
+            "cache_hits": 370,
+            "forward_batches": 13,
+            "scored_states": 13
+          }
+        }
+      },
+      "uniform_control": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.815,
+          "feasibility": 0.89,
+          "optimality": 0.27,
+          "path_efficiency_on_success": 0.6403051739382639
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.63,
+          "feasibility": 0.78,
+          "optimality": 0.04,
+          "path_efficiency_on_success": 0.3418099851781385
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8993558776167472,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.77,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 1536,
+          "repair_seconds": 0.033772300001146505,
+          "policy": {
+            "requested_states": 0,
+            "cache_hits": 0,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "continuation_control_model": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.665,
+          "feasibility": 0.78,
+          "optimality": 0.355,
+          "path_efficiency_on_success": 0.8300274495763217
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.33,
+          "feasibility": 0.56,
+          "optimality": 0.21,
+          "path_efficiency_on_success": 0.8350889850889851
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7877352385389972,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.24,
+          "failure_type_accuracy": 0.54,
+          "joint_error_accuracy": 0.23
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 128,
+          "repair_seconds": 0.19717560000208323,
+          "policy": {
+            "requested_states": 128,
+            "cache_hits": 128,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "continuation_control_terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.88,
+          "feasibility": 0.88,
+          "optimality": 0.49,
+          "path_efficiency_on_success": 0.8329156008133279
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.76,
+          "feasibility": 0.76,
+          "optimality": 0.48,
+          "path_efficiency_on_success": 0.8389135718083086
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8993558776167472,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.76,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 275,
+          "repair_seconds": 0.4009001000013086,
+          "policy": {
+            "requested_states": 275,
+            "cache_hits": 275,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "multitask_model": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.67,
+          "feasibility": 0.785,
+          "optimality": 0.375,
+          "path_efficiency_on_success": 0.839463397299218
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.34,
+          "feasibility": 0.57,
+          "optimality": 0.25,
+          "path_efficiency_on_success": 0.8721288515406164
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7618504724987966,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.19,
+          "failure_type_accuracy": 0.67,
+          "joint_error_accuracy": 0.16
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 145,
+          "repair_seconds": 0.7849568999990879,
+          "policy": {
+            "requested_states": 145,
+            "cache_hits": 131,
+            "forward_batches": 14,
+            "scored_states": 14
+          }
+        }
+      },
+      "multitask_terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.89,
+          "feasibility": 0.89,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8347929536131783
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8430439930439929
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8001998001998003,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 288,
+          "repair_seconds": 0.48546910000004573,
+          "policy": {
+            "requested_states": 288,
+            "cache_hits": 288,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "augmentation_model": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.66,
+          "feasibility": 0.77,
+          "optimality": 0.36,
+          "path_efficiency_on_success": 0.8357683982683981
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.32,
+          "feasibility": 0.54,
+          "optimality": 0.22,
+          "path_efficiency_on_success": 0.8589285714285714
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7868967488760104,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.25,
+          "failure_type_accuracy": 0.53,
+          "joint_error_accuracy": 0.24
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 118,
+          "repair_seconds": 0.17661339999904158,
+          "policy": {
+            "requested_states": 118,
+            "cache_hits": 118,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      },
+      "augmentation_terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.88,
+          "feasibility": 0.88,
+          "optimality": 0.495,
+          "path_efficiency_on_success": 0.8351883280860551
+        },
+        "repair": {
+          "n": 100,
+          "success_rate": 0.76,
+          "feasibility": 0.76,
+          "optimality": 0.49,
+          "path_efficiency_on_success": 0.8441767297030455
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.9043086298506711,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.76,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75
+        },
+        "regressions": 0,
+        "cost": {
+          "repair_attempts": 200,
+          "new_actions": 276,
+          "repair_seconds": 0.39727140000104555,
+          "policy": {
+            "requested_states": 276,
+            "cache_hits": 276,
+            "forward_batches": 0,
+            "scored_states": 0
+          }
+        }
+      }
+    }
+  },
+  "audit": {
+    "passed": true,
+    "metric_checks": 1062,
+    "method_cases": 18711,
+    "method_count": 21,
+    "selected": {
+      "name": "terminal_visit",
+      "style": "ordinary",
+      "guard": "terminal",
+      "decoder": "visit",
+      "rounds": 1
+    },
+    "code_data_and_weight_hashes_match": true,
+    "training_lineage_counts_checked": true,
+    "all_methods_completed": true
+  }
+}

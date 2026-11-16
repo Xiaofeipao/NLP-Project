@@ -15,3 +15,8 @@
 - 结果整理：`summarize_*.py`、`export_gvr_artifacts.py`、`export_rlvr_evidence.py`。导出权重需遵守项目当前发布约定。
 
 新前缀实验请按 [项目导航](../docs/project_map.md) 操作。低层 Python API 与单网格调试入口不能替代受冻结约束的测试集评估。
+
+
+## Part2 与 Part3
+
+课程主线使用 `python -m part2.run` 和 `python -m part3.run`。`run_phase2_feedback.py` 为反馈比较实现；`run_method_sweep.py` 为21配置比较；`run_selected_method.py` 为保留方案；`audit_method_sweep.py`支持用原源码ZIP核查历史冻结，CLI整理不冒充重跑。详见各part目录README。

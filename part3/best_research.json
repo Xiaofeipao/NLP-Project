@@ -1,0 +1,25 @@
+{
+  "scope": "original frozen non-control research selection",
+  "method": {
+    "name": "terminal_visit",
+    "style": "ordinary",
+    "guard": "terminal",
+    "decoder": "visit",
+    "rounds": 1
+  },
+  "generator_checkpoint": "outputs/phase2_reproduction/run/train/flan_t5_base/best",
+  "verifier_checkpoint": "outputs/phase2_reproduction/run/train/flan_t5_base/best",
+  "generator_checkpoint_sha256": "199332793094904518fff0a0c3597d082d12caebbe7378d911be3f0a09803f0a",
+  "verifier_checkpoint_sha256": "199332793094904518fff0a0c3597d082d12caebbe7378d911be3f0a09803f0a",
+  "model_config": "part2/protocol.json",
+  "gpu_ledger": "outputs/phase2_reproduction/gpu_ledger.json",
+  "source_study": "outputs\\seven_methods\\run_001",
+  "dev_rank": [
+    1.0,
+    0.82,
+    0.8795811518324608,
+    0.82
+  ],
+  "new_actions_cap": 36,
+  "note": "G/R frozen state policy; rule or model V explicit; no full-sequence R training"
+}

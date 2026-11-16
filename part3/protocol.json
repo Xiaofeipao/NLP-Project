@@ -1,0 +1,189 @@
+{
+  "seed": 42,
+  "methods": [
+    {
+      "name": "direct",
+      "style": "ordinary",
+      "guard": "model",
+      "decoder": "raw",
+      "rounds": 0
+    },
+    {
+      "name": "self",
+      "style": "ordinary",
+      "guard": "model",
+      "decoder": "raw",
+      "rounds": 1
+    },
+    {
+      "name": "self_visit",
+      "style": "ordinary",
+      "guard": "model",
+      "decoder": "visit",
+      "rounds": 1
+    },
+    {
+      "name": "structured",
+      "style": "structured",
+      "guard": "model",
+      "decoder": "visit",
+      "rounds": 1
+    },
+    {
+      "name": "cot",
+      "style": "cot",
+      "guard": "model",
+      "decoder": "visit",
+      "rounds": 1
+    },
+    {
+      "name": "tool_trace",
+      "style": "tool_trace",
+      "guard": "model",
+      "decoder": "visit",
+      "rounds": 1
+    },
+    {
+      "name": "iterative_self",
+      "style": "ordinary",
+      "guard": "model",
+      "decoder": "raw",
+      "rounds": 3
+    },
+    {
+      "name": "terminal_raw",
+      "style": "ordinary",
+      "guard": "terminal",
+      "decoder": "raw",
+      "rounds": 1
+    },
+    {
+      "name": "verifier_guided",
+      "style": "ordinary",
+      "guard": "terminal",
+      "decoder": "verifier_top2",
+      "rounds": 1
+    },
+    {
+      "name": "constrained_legal",
+      "style": "ordinary",
+      "guard": "terminal",
+      "decoder": "legal",
+      "rounds": 1
+    },
+    {
+      "name": "terminal_visit",
+      "style": "ordinary",
+      "guard": "terminal",
+      "decoder": "visit",
+      "rounds": 1
+    },
+    {
+      "name": "iterative_terminal_visit",
+      "style": "ordinary",
+      "guard": "terminal",
+      "decoder": "visit",
+      "rounds": 3
+    },
+    {
+      "name": "executor_control",
+      "style": "ordinary",
+      "guard": "executor",
+      "decoder": "raw",
+      "rounds": 1,
+      "control": true
+    },
+    {
+      "name": "executor_visit_control",
+      "style": "ordinary",
+      "guard": "executor",
+      "decoder": "visit",
+      "rounds": 1,
+      "control": true
+    },
+    {
+      "name": "uniform_control",
+      "style": "ordinary",
+      "guard": "terminal",
+      "decoder": "uniform_visit",
+      "rounds": 1,
+      "control": true
+    },
+    {
+      "name": "continuation_control_model",
+      "weights": "continuation_control",
+      "style": "ordinary",
+      "guard": "model",
+      "decoder": "visit",
+      "rounds": 1,
+      "control": true
+    },
+    {
+      "name": "continuation_control_terminal",
+      "weights": "continuation_control",
+      "style": "ordinary",
+      "guard": "terminal",
+      "decoder": "visit",
+      "rounds": 1,
+      "control": true
+    },
+    {
+      "name": "multitask_model",
+      "weights": "multitask",
+      "style": "ordinary",
+      "guard": "model",
+      "decoder": "visit",
+      "rounds": 1,
+      "control": false
+    },
+    {
+      "name": "multitask_terminal",
+      "weights": "multitask",
+      "style": "ordinary",
+      "guard": "terminal",
+      "decoder": "visit",
+      "rounds": 1,
+      "control": false
+    },
+    {
+      "name": "augmentation_model",
+      "weights": "augmentation",
+      "style": "structured",
+      "guard": "model",
+      "decoder": "visit",
+      "rounds": 1,
+      "control": false
+    },
+    {
+      "name": "augmentation_terminal",
+      "weights": "augmentation",
+      "style": "structured",
+      "guard": "terminal",
+      "decoder": "visit",
+      "rounds": 1,
+      "control": false
+    }
+  ],
+  "training": {
+    "branches": [
+      "continuation_control",
+      "multitask",
+      "augmentation"
+    ],
+    "epochs": 1,
+    "examples_each": 1984,
+    "excluded_pilot_verification_examples": 16,
+    "microbatch": 4,
+    "effective_batch": 16,
+    "learning_rate": 0.0001
+  },
+  "max_new_actions": 36,
+  "iterative_rounds": 3,
+  "selection": [
+    "dev_generation_success",
+    "dev_invalid_repair_success",
+    "dev_generation_optimality",
+    "dev_joint_error_accuracy"
+  ],
+  "model_config": "part2/protocol.json"
+}

@@ -1,3 +1,5 @@
+> 当前课程主线请先阅读 [FirstPart 到 Part2 Part3](docs/part1_part2_part3.md)、[Part2](part2/README.md)、[Part3](part3/README.md)。旧章节中的 Flan-T5-small、A*、LoRA 数值是历史实验，不能与本轮 Flan-T5-base 混用。
+
 # NLP Project：代码逐步讲解与面试说明
 
 ## 方法目录整理（2026-11-11）
@@ -711,3 +713,16 @@ REINFORCE 对照使用 leave-one-out baseline，每组只更新一次。两者�
 - 原逐步 Agent Harness：`python -m methods.harness run -- run --out outputs/agent_harness/restored_001`。默认读取 `configs/harness/policy.json`，每次只选一步，合法动作过滤 + 最少访问次数约束，最多 16 次模型/工具调用；历史 ID 成功 199/200，最短 173/200（86.5%）。未加入整路径修复或回溯搜索。
 
 两条入口指向已发布的 `artifacts/historical_models/planning_v3/multi/flan_t5_small/train/best`；需要 Git LFS 实体权重和官方执行器。本轮只恢复入口和有效权重路径，不重新训练，不把旧成绩写成新运行结果，也不宣称对新增 7×7/密集 6×6 测试集已有成绩。此次按用户偏好采用历史观察结果，不重写原开发集选择记录。
+
+
+## FirstPart 到 Part2 Part3 的当前主线
+
+FirstPart(f00fbdf)按开发集选定Flan-T5-base主模型、BART-base第二验证模型。主模型生成有一定能力，但验证误接受、定位和reason薄弱。同伴历史局部规则修复不是本轮正式R。
+
+Part2独立复现相同模型家族，明确G为状态动作模型、V为模型/规则诊断、R为反馈引导的学习式续走。固定非法候选的模型反馈修复ID/OOD为20%/28%，执行器反馈94%/92%；自生成循环仅准确诊断仍不能解除，完整成功85.5%。终点校验与访问约束结合后98.5%成功、100%可行、85%最优；两者单独使用都未提高完整成功率。
+
+Part3固定七类代表方案、21配置和等预算追加训练控制，先开发选优再测ID/OOD。研究选择terminal_visit，单错/双错非法候选修复78%/78%；包含规则控制的总体开发最佳executor_visit_control为100%/100%，完整成功同为98.5%。前者存part3/best_research.json，后者存part3/best_overall.json。迭代没有进一步提高，CoT格式不适配，输入增强未超过控制，辅助分类损失ID有部分收益但OOD不稳定；负结果全部保留。
+
+代码遵循FirstPart的run.py、workflow.py、protocol.json、README.md结构，公共算法继续复用ppnl。使用python -m part2.run和python -m part3.run，不将旧A*入口当本轮GVR。完整逻辑和分母说明见docs/part1_part2_part3.md。
+
+没有另训整路径文本R，reason不输入动作策略，没有BFS/A*补路或S缩短。符号规则贡献明确；不能宣称模型学会全局最优规划。新增权重不上传，deliverables证据包可在无权重/GPU时重算指标和轨迹，GPU复现需自行准备/训练实体checkpoint及共用账本。

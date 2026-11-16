@@ -1,0 +1,995 @@
+{
+  "dev": {
+    "candidates": {
+      "direct": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.5,
+          "feasibility": 0.8,
+          "optimality": 0.25,
+          "path_efficiency_on_success": 0.8313809523809526
+        },
+        "repair_invalid_only": {
+          "n": 50,
+          "success_rate": 0.0,
+          "feasibility": 0.6,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6296711929076422,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.18,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.18
+        },
+        "outcomes": {
+          "no_repair": 100
+        },
+        "regressions": 0
+      },
+      "self": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.63,
+          "feasibility": 0.89,
+          "optimality": 0.37,
+          "path_efficiency_on_success": 0.8598261526832957
+        },
+        "repair_invalid_only": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.78,
+          "optimality": 0.24,
+          "path_efficiency_on_success": 0.9692307692307692
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6296711929076422,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.18,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.18
+        },
+        "outcomes": {
+          "accepted": 83,
+          "policy_reaches_goal": 13,
+          "bad_step": 2,
+          "illegal_reported_prefix": 2
+        },
+        "regressions": 0
+      },
+      "vocabulary": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.64,
+          "feasibility": 0.91,
+          "optimality": 0.38,
+          "path_efficiency_on_success": 0.8620163690476191
+        },
+        "repair_invalid_only": {
+          "n": 50,
+          "success_rate": 0.28,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "path_efficiency_on_success": 0.9714285714285714
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6296711929076422,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.3,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.3
+        },
+        "outcomes": {
+          "accepted": 83,
+          "policy_reaches_goal": 14,
+          "bad_step": 2,
+          "action_budget": 1
+        },
+        "regressions": 0
+      },
+      "terminal": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.9,
+          "feasibility": 0.91,
+          "optimality": 0.54,
+          "path_efficiency_on_success": 0.8626631393298057
+        },
+        "repair_invalid_only": {
+          "n": 50,
+          "success_rate": 0.8,
+          "feasibility": 0.82,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.9017658730158731
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.9092650468797259,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.82,
+          "failure_type_accuracy": 0.82,
+          "joint_error_accuracy": 0.82
+        },
+        "outcomes": {
+          "accepted": 59,
+          "policy_reaches_goal": 40,
+          "action_budget": 1
+        },
+        "regressions": 0
+      },
+      "executor": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.99,
+          "feasibility": 1.0,
+          "optimality": 0.62,
+          "path_efficiency_on_success": 0.8714752138994559
+        },
+        "repair_invalid_only": {
+          "n": 50,
+          "success_rate": 0.98,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.912387725653032
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "outcomes": {
+          "accepted": 50,
+          "policy_reaches_goal": 45,
+          "prefix_reaches_goal": 4,
+          "action_budget": 1
+        },
+        "regressions": 0
+      },
+      "self_visit": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.63,
+          "feasibility": 0.89,
+          "optimality": 0.37,
+          "path_efficiency_on_success": 0.8571050642479215
+        },
+        "repair_invalid_only": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.78,
+          "optimality": 0.24,
+          "path_efficiency_on_success": 0.9560439560439561
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.6296711929076422,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.18,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.18
+        },
+        "outcomes": {
+          "accepted": 83,
+          "policy_reaches_goal": 13,
+          "bad_step": 2,
+          "illegal_reported_prefix": 2
+        },
+        "regressions": 0
+      },
+      "terminal_visit": {
+        "planning": {
+          "n": 100,
+          "success_rate": 0.91,
+          "feasibility": 0.91,
+          "optimality": 0.54,
+          "path_efficiency_on_success": 0.8558782487353912
+        },
+        "repair_invalid_only": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.8857530003871468
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 0.9092650468797259,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.82,
+          "failure_type_accuracy": 0.82,
+          "joint_error_accuracy": 0.82
+        },
+        "outcomes": {
+          "accepted": 59,
+          "policy_reaches_goal": 41
+        },
+        "regressions": 0
+      },
+      "executor_visit": {
+        "planning": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.62,
+          "path_efficiency_on_success": 0.8642338217338212
+        },
+        "repair_invalid_only": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.897086691086691
+        },
+        "verification": {
+          "n": 100,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "outcomes": {
+          "accepted": 50,
+          "policy_reaches_goal": 46,
+          "prefix_reaches_goal": 4
+        },
+        "regressions": 0
+      }
+    }
+  },
+  "test_id": {
+    "candidates": {
+      "direct": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.5,
+          "feasibility": 0.79,
+          "optimality": 0.25,
+          "path_efficiency_on_success": 0.8283571428571428
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.0,
+          "feasibility": 0.58,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.6280980266992313,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.15,
+          "failure_type_accuracy": 0.35,
+          "joint_error_accuracy": 0.15
+        },
+        "outcomes": {
+          "no_repair": 200
+        },
+        "regressions": 0
+      },
+      "self": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.6,
+          "feasibility": 0.845,
+          "optimality": 0.35,
+          "path_efficiency_on_success": 0.8569642857142855
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.2,
+          "feasibility": 0.69,
+          "optimality": 0.2,
+          "path_efficiency_on_success": 1.0
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.6280980266992313,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.15,
+          "failure_type_accuracy": 0.35,
+          "joint_error_accuracy": 0.15
+        },
+        "outcomes": {
+          "accepted": 163,
+          "policy_reaches_goal": 20,
+          "bad_step": 7,
+          "illegal_reported_prefix": 9,
+          "action_budget": 1
+        },
+        "regressions": 0
+      },
+      "vocabulary": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.645,
+          "feasibility": 0.89,
+          "optimality": 0.395,
+          "path_efficiency_on_success": 0.8669435215946841
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.29,
+          "feasibility": 0.78,
+          "optimality": 0.29,
+          "path_efficiency_on_success": 1.0
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.6280980266992313,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.3,
+          "failure_type_accuracy": 0.35,
+          "joint_error_accuracy": 0.3
+        },
+        "outcomes": {
+          "accepted": 163,
+          "policy_reaches_goal": 29,
+          "bad_step": 7,
+          "action_budget": 1
+        },
+        "regressions": 0
+      },
+      "terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.875,
+          "feasibility": 0.89,
+          "optimality": 0.51,
+          "path_efficiency_on_success": 0.852693052978767
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.75,
+          "feasibility": 0.78,
+          "optimality": 0.52,
+          "path_efficiency_on_success": 0.8851409331409331
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8787878787878788,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78
+        },
+        "outcomes": {
+          "accepted": 120,
+          "policy_reaches_goal": 75,
+          "bad_step": 2,
+          "action_budget": 3
+        },
+        "regressions": 0
+      },
+      "executor": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.97,
+          "feasibility": 1.0,
+          "optimality": 0.59,
+          "path_efficiency_on_success": 0.8626403951146215
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.94,
+          "feasibility": 1.0,
+          "optimality": 0.68,
+          "path_efficiency_on_success": 0.8991119400693869
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "outcomes": {
+          "accepted": 100,
+          "policy_reaches_goal": 93,
+          "prefix_reaches_goal": 1,
+          "action_budget": 6
+        },
+        "regressions": 0
+      },
+      "self_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.605,
+          "feasibility": 0.845,
+          "optimality": 0.355,
+          "path_efficiency_on_success": 0.8581463990554897
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.21,
+          "feasibility": 0.69,
+          "optimality": 0.21,
+          "path_efficiency_on_success": 1.0
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.6280980266992313,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.15,
+          "failure_type_accuracy": 0.35,
+          "joint_error_accuracy": 0.15
+        },
+        "outcomes": {
+          "accepted": 163,
+          "policy_reaches_goal": 21,
+          "bad_step": 7,
+          "illegal_reported_prefix": 9
+        },
+        "regressions": 0
+      },
+      "terminal_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.89,
+          "feasibility": 0.89,
+          "optimality": 0.515,
+          "path_efficiency_on_success": 0.842977388318341
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.53,
+          "path_efficiency_on_success": 0.8617212927557756
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8787878787878788,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78
+        },
+        "outcomes": {
+          "accepted": 120,
+          "policy_reaches_goal": 78,
+          "bad_step": 2
+        },
+        "regressions": 0
+      },
+      "executor_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.605,
+          "path_efficiency_on_success": 0.8534046375080854
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.71,
+          "path_efficiency_on_success": 0.8784521321590286
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "outcomes": {
+          "accepted": 100,
+          "policy_reaches_goal": 99,
+          "prefix_reaches_goal": 1
+        },
+        "regressions": 0
+      }
+    },
+    "generated": {
+      "direct": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair_invalid_only": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4186046511627907,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "outcomes": {
+          "no_repair": 200
+        },
+        "regressions": 0
+      },
+      "self": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair_invalid_only": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4186046511627907,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "outcomes": {
+          "accepted": 173,
+          "bad_step": 20,
+          "policy_reaches_goal": 3,
+          "prefix_reaches_goal": 4
+        },
+        "regressions": 0
+      },
+      "vocabulary": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair_invalid_only": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4186046511627907,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "outcomes": {
+          "accepted": 173,
+          "bad_step": 20,
+          "policy_reaches_goal": 3,
+          "prefix_reaches_goal": 4
+        },
+        "regressions": 0
+      },
+      "terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair_invalid_only": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7983193277310925,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "outcomes": {
+          "accepted": 144,
+          "bad_step": 20,
+          "policy_reaches_goal": 3,
+          "action_budget": 29,
+          "prefix_reaches_goal": 4
+        },
+        "regressions": 0
+      },
+      "executor": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair_invalid_only": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "outcomes": {
+          "accepted": 171,
+          "action_budget": 29
+        },
+        "regressions": 0
+      },
+      "self_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.855,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9987004548408057
+        },
+        "repair_invalid_only": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.4186046511627907,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0
+        },
+        "outcomes": {
+          "accepted": 173,
+          "bad_step": 20,
+          "policy_reaches_goal": 3,
+          "prefix_reaches_goal": 4
+        },
+        "regressions": 0
+      },
+      "terminal_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.985,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.884739518276095
+        },
+        "repair_invalid_only": {
+          "n": 29,
+          "success_rate": 0.896551724137931,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1352272047158809
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7983193277310925,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "outcomes": {
+          "accepted": 144,
+          "bad_step": 20,
+          "policy_reaches_goal": 29,
+          "action_budget": 3,
+          "prefix_reaches_goal": 4
+        },
+        "regressions": 0
+      },
+      "executor_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.985,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.884739518276095
+        },
+        "repair_invalid_only": {
+          "n": 29,
+          "success_rate": 0.896551724137931,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1352272047158809
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "outcomes": {
+          "accepted": 171,
+          "policy_reaches_goal": 26,
+          "action_budget": 3
+        },
+        "regressions": 0
+      }
+    }
+  },
+  "test_ood": {
+    "candidates": {
+      "direct": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.5,
+          "feasibility": 0.65,
+          "optimality": 0.25,
+          "path_efficiency_on_success": 0.8283571428571428
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.0,
+          "feasibility": 0.3,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7821350762527233,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.14,
+          "failure_type_accuracy": 0.53,
+          "joint_error_accuracy": 0.12
+        },
+        "outcomes": {
+          "no_repair": 200
+        },
+        "regressions": 0
+      },
+      "self": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.64,
+          "feasibility": 0.77,
+          "optimality": 0.35,
+          "path_efficiency_on_success": 0.8406249999999998
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.28,
+          "feasibility": 0.54,
+          "optimality": 0.2,
+          "path_efficiency_on_success": 0.884438775510204
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7821350762527233,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.14,
+          "failure_type_accuracy": 0.53,
+          "joint_error_accuracy": 0.12
+        },
+        "outcomes": {
+          "accepted": 138,
+          "policy_reaches_goal": 28,
+          "illegal_reported_prefix": 22,
+          "bad_step": 10,
+          "action_budget": 2
+        },
+        "regressions": 0
+      },
+      "vocabulary": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.75,
+          "feasibility": 0.89,
+          "optimality": 0.455,
+          "path_efficiency_on_success": 0.8632804232804231
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.5,
+          "feasibility": 0.78,
+          "optimality": 0.41,
+          "path_efficiency_on_success": 0.9331269841269842
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7821350762527233,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.53,
+          "failure_type_accuracy": 0.53,
+          "joint_error_accuracy": 0.51
+        },
+        "outcomes": {
+          "accepted": 138,
+          "policy_reaches_goal": 49,
+          "illegal_reported_prefix": 3,
+          "bad_step": 5,
+          "action_budget": 4,
+          "prefix_reaches_goal": 1
+        },
+        "regressions": 0
+      },
+      "terminal": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.865,
+          "feasibility": 0.89,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.848016498594533
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.73,
+          "feasibility": 0.78,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8749471228923286
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8993558776167472,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.77,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75
+        },
+        "outcomes": {
+          "accepted": 116,
+          "policy_reaches_goal": 72,
+          "illegal_reported_prefix": 3,
+          "bad_step": 3,
+          "action_budget": 5,
+          "prefix_reaches_goal": 1
+        },
+        "regressions": 0
+      },
+      "executor": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.96,
+          "feasibility": 1.0,
+          "optimality": 0.57,
+          "path_efficiency_on_success": 0.853797273328523
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.64,
+          "path_efficiency_on_success": 0.8814495890582847
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "outcomes": {
+          "accepted": 100,
+          "policy_reaches_goal": 91,
+          "action_budget": 8,
+          "prefix_reaches_goal": 1
+        },
+        "regressions": 0
+      },
+      "self_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.65,
+          "feasibility": 0.77,
+          "optimality": 0.355,
+          "path_efficiency_on_success": 0.8364468864468863
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.54,
+          "optimality": 0.21,
+          "path_efficiency_on_success": 0.8634126984126984
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.7821350762527233,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.14,
+          "failure_type_accuracy": 0.53,
+          "joint_error_accuracy": 0.12
+        },
+        "outcomes": {
+          "accepted": 138,
+          "policy_reaches_goal": 30,
+          "illegal_reported_prefix": 22,
+          "bad_step": 10
+        },
+        "regressions": 0
+      },
+      "terminal_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 0.89,
+          "feasibility": 0.89,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8347929536131783
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.5,
+          "path_efficiency_on_success": 0.8430439930439929
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 0.8993558776167472,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.77,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75
+        },
+        "outcomes": {
+          "accepted": 116,
+          "policy_reaches_goal": 77,
+          "illegal_reported_prefix": 3,
+          "bad_step": 3,
+          "prefix_reaches_goal": 1
+        },
+        "regressions": 0
+      },
+      "executor_visit": {
+        "planning": {
+          "n": 200,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.58,
+          "path_efficiency_on_success": 0.8417691475191473
+        },
+        "repair_invalid_only": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.66,
+          "path_efficiency_on_success": 0.8551811521811521
+        },
+        "verification": {
+          "n": 200,
+          "macro_f1": 1.0,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0
+        },
+        "outcomes": {
+          "accepted": 100,
+          "policy_reaches_goal": 99,
+          "prefix_reaches_goal": 1
+        },
+        "regressions": 0
+      }
+    }
+  }
+}

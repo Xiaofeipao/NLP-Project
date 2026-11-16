@@ -1,0 +1,26 @@
+{
+  "scope": "best overall including rule controls, ranked only on dev",
+  "method": {
+    "name": "executor_visit_control",
+    "style": "ordinary",
+    "guard": "executor",
+    "decoder": "visit",
+    "rounds": 1,
+    "control": true
+  },
+  "generator_checkpoint": "outputs/phase2_reproduction/run/train/flan_t5_base/best",
+  "verifier_checkpoint": "outputs/phase2_reproduction/run/train/flan_t5_base/best",
+  "generator_checkpoint_sha256": "199332793094904518fff0a0c3597d082d12caebbe7378d911be3f0a09803f0a",
+  "verifier_checkpoint_sha256": "199332793094904518fff0a0c3597d082d12caebbe7378d911be3f0a09803f0a",
+  "model_config": "part2/protocol.json",
+  "gpu_ledger": "outputs/phase2_reproduction/gpu_ledger.json",
+  "source_study": "outputs\\seven_methods\\run_001",
+  "dev_rank": [
+    1.0,
+    1.0,
+    0.8795811518324608,
+    1.0
+  ],
+  "new_actions_cap": 36,
+  "note": "G/R frozen state policy; rule or model V explicit; no full-sequence R training"
+}

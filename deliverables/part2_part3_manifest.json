@@ -1,0 +1,22 @@
+{
+  "firstpart_commit": "f00fbdf8efae20418656665a70bd6ec01e717375",
+  "weights_included": false,
+  "files": {
+    "firstpart_training_source_f00fbdf.zip": {
+      "bytes": 93612,
+      "sha256": "214cc81976b45d0319e4f567b6b97144ae6db1ca286e71e10545ba874ba360b1"
+    },
+    "part2_evidence_20261116.zip": {
+      "bytes": 156000,
+      "sha256": "40069334c4a4a21e025b0e262ee134306378778438147947063bb36c28a2f254"
+    },
+    "part2_part3_original_source_20261116.zip": {
+      "bytes": 37328,
+      "sha256": "5134197d0e11e59baedb35933ded967dfbf13d01d66a064e035c2dc9da0b7a21"
+    },
+    "part3_evidence_20261116.zip": {
+      "bytes": 707400,
+      "sha256": "70564d75d831c51c3a5524e2001da10083da3b1ae18c7edd62cf5dc2b3800eeb"
+    }
+  }
+}

@@ -1,5 +1,14 @@
 # PPNL 单目标路径规划 验证与修复
 
+## 当前课程阶段 FirstPart Part2 Part3
+
+第一部分参考同伴 [FirstPart 分支](https://github.com/Xiaofeipao/NLP-Project/tree/FirstPart)，提交f00fbdf。本分支补充明确的 [Part2 反馈流程](part2/README.md) 和 [Part3 改进比较](part3/README.md)，遵循相同的run/workflow/protocol/README组织方式。先读 [三阶段逻辑关系](docs/part1_part2_part3.md)，再看 [Part2结果](docs/phase2_feedback_results.md) 和 [Part3全部21配置](docs/seven_methods_results.md)。
+
+本地独立复现Flan-T5-base后，直接生成85.5%成功；验证校验与访问约束组合达到98.5%成功、100%可行、85%最优。单/双错误候选修复：研究配置78%/78%，完整规则V控制100%/100%。两者的模型/规则贡献有区别，不能把规则验证准确率计为学习能力。历史版本和不同模型结果见下文，不能混合比较。
+
+本次发布代码、协议、指标、训练摘要和逐例证据，**不发布新权重**。`python -m part2.run verify-results`、`python -m part3.run verify-results`可无权重/GPU复核。运行最佳方案需要本地权重：`python -m part3.run plan --check-only`。
+
+
 ## 当前版本与方法导航
 
 **按方法运行**：新增 [methods/](methods/README.md)，按 baseline、gvr、harness、lora、rl、policy、prefix 分目录，每个目录提供运行入口和配置映射。用 `python -m methods.baseline --describe` 查看归属。旧命令兼容，main 保留完整项目，两个研究分支尚未合并。

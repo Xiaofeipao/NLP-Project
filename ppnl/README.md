@@ -14,3 +14,8 @@
 方法和历史结果的边界见 [项目导航](../docs/project_map.md)。
 
 按方法运行与配置映射见 [methods/](../methods/README.md)。公共实现保留本目录，避免算法副本与历史导入失效。
+
+
+## Part2 与 Part3 公共实现
+
+`verifier_guard.py`实现明确的符号验证辅助；`method_sweep.py`实现七类代表提示/恢复策略。`part2/workflow.py`与`part3/workflow.py`复用这些算法，阶段命令位于各part/run.py，不复制模型与执行器。
