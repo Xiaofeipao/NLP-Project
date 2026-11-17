@@ -1,0 +1,30 @@
+{
+  "seed": 20261112,
+  "purpose": "optional_generalization_test_only",
+  "cpu_construction_seconds": 0.04712719999952242,
+  "gpu_seconds": 0,
+  "source_sha256": {
+    "data\\generalization_v1\\test_7x7.jsonl": "773e58eaacc9d253417317900a9905fbc88760d92374ef8e66bff42db69aa7b1",
+    "data\\generalization_v1\\test_dense_6x6.jsonl": "c3d60b010959385ca4fcecfe441d83668d52676e84c00674b80972059b821d16"
+  },
+  "generator_sha256": "ef4a001831d8fae5303a8b5eef0f7bcb7752d97c20d82365678f915782b77648",
+  "files_sha256": {
+    "test_7x7_double.jsonl": "b5a168aa29628272e88d9ec0f6a9b3a5671e3101bf1005c55f42cc5c176a8617",
+    "test_dense_6x6_double.jsonl": "ad9128215f88ff245a86e2da1ed77631fd7d8bfa1dcc0d5ab32f12d69c719da9"
+  },
+  "counts": {
+    "test_7x7_double": {
+      "rows": 200,
+      "valid": 100,
+      "invalid_double_edit": 100,
+      "unique_layouts": 200
+    },
+    "test_dense_6x6_double": {
+      "rows": 200,
+      "valid": 100,
+      "invalid_double_edit": 100,
+      "unique_layouts": 200
+    }
+  },
+  "rules": "same held-out layouts/start/goal/valid controls as v1; two distinct original edit sites and token edit distance2; two edits do not imply two observable failures; targets used only for construction/scoring; no train/dev changes"
+}

@@ -1,0 +1,75 @@
+{
+  "variants": [
+    {
+      "name": "raw_probability",
+      "mode": "raw"
+    },
+    {
+      "name": "visit_probability",
+      "mode": "visit"
+    },
+    {
+      "name": "raw_erase",
+      "mode": "raw",
+      "erase": true
+    },
+    {
+      "name": "visit_erase",
+      "mode": "visit",
+      "erase": true
+    },
+    {
+      "name": "top3_budget36",
+      "mode": "beam",
+      "score_cap": 36
+    },
+    {
+      "name": "top3_budget108",
+      "mode": "beam",
+      "score_cap": 108
+    },
+    {
+      "name": "soft_cycle_penalty",
+      "mode": "soft"
+    },
+    {
+      "name": "hard_cycle_ban",
+      "mode": "ban"
+    },
+    {
+      "name": "top3_soft108",
+      "mode": "beam_soft",
+      "score_cap": 108
+    },
+    {
+      "name": "top3_soft108_erase",
+      "mode": "beam_soft",
+      "score_cap": 108,
+      "erase": true
+    }
+  ],
+  "weights_sha256": "199332793094904518fff0a0c3597d082d12caebbe7378d911be3f0a09803f0a",
+  "cases_sha256": {
+    "dev_candidates": "5ab14d6358e530c4713444cd2af5c26b661623a54d759a407d4d6bb52c5b595f",
+    "dev_generated": "a35c90bfbeda708d35586011e877b985b8a56696b2e639789187a63ac0422200",
+    "test_id": "ebd29289e5a13a911b94ef70aa573582ba1e53382bbf9689597e06582fc5dfe4",
+    "test_ood": "1493d2ca750810bc8fb24672947ed1527c9447f1321f0d3eb681cd0b12bfe54c",
+    "test_generated": "2248c2f0c26ec009d1512787405694a1d277e492480d2149b6d8037c34f97060"
+  },
+  "counts": {
+    "dev_candidates": 50,
+    "dev_generated": 23,
+    "test_id": 100,
+    "test_ood": 100,
+    "test_generated": 29
+  },
+  "feedback": "same exact executor diagnosis for every R",
+  "probabilities": "softmax over four action logits, temperature 1; not calibrated route success probability",
+  "selection": "dev mean unconditional optimality first, mean success second, fewer score rows, earlier method; every optimal plan must succeed",
+  "device": "cpu",
+  "code_sha256": {
+    "D:\\NLP Project\\part3\\run_r_variants.py": "e72a64bcd6a52ee35113d3ac7ecf4028daf4784dd680c58cd1f7698104aeace9",
+    "ppnl/repair_variants.py": "04c8c8c9fc7ece5508bd6e6ff7d71b9b68ab3828cdb3d3c5481d922fbc670ded"
+  },
+  "scope": "reused exploratory error cases; no new training; erasure preserves endpoint and cannot alone rescue failures"
+}

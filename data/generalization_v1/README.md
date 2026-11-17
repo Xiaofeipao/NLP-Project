@@ -1,6 +1,6 @@
 # 可选地图泛化评测集（v1）
 
-本目录为**项目合成数据，不是官方直接下载的样本**。已构造并完成 CPU 真值检查，尚未运行模型。生成脚本：`scripts/build_generalization_dataset.py`，固定 seed `20261112`。
+本目录为**项目合成数据，不是官方直接下载的样本**。已构造并完成 CPU 真值检查。2026-11-17 已完成固定原始 R 的 GPU 验证器对照，见 `docs/generalization_verifier_results.md`；manifest 的 `not_run` 是生成数据时的历史状态，不修改冻结快照。生成脚本：`scripts/build_generalization_dataset.py`，固定 seed `20261112`。
 
 - `test_7x7.jsonl`：200 个互不重复的障碍布局。按原训练样本的障碍数量分布抽样，再按面积 49/36 缩放并取整；实际含 1、3、4、5 或 7 个障碍。密度近似匹配，不能声称是完全隔离其他因素的纯尺寸消融。
 - `test_dense_6x6.jsonl`：200 个互不重复的布局，每图随机 9–12 个障碍，占全部格子的 25%–33.33%。原训练图为 1–5 个障碍。

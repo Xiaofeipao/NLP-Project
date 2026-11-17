@@ -1,0 +1,19 @@
+{
+  "backoff": 36,
+  "backend": {
+    "mode": "beam_soft",
+    "score_cap": 108,
+    "erase": true
+  },
+  "feedback": "executor",
+  "source": "development ranking only",
+  "selected_cut_is_full_restart": true,
+  "weights_sha256": "199332793094904518fff0a0c3597d082d12caebbe7378d911be3f0a09803f0a",
+  "full_200_replay": {
+    "n": 200,
+    "success_rate": 1.0,
+    "feasibility": 1.0,
+    "optimality": 0.955,
+    "path_efficiency_on_success": 0.9886150793650793
+  }
+}

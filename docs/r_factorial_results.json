@@ -1,0 +1,1792 @@
+{
+  "selected": {
+    "model": "T0P1E0",
+    "vocabulary": "T0P1E0",
+    "terminal": "T1P1E1",
+    "executor": "T1P1E1"
+  },
+  "results": {
+    "dev_candidates": {
+      "model": {
+        "T0P0E0": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 121
+        },
+        "T0P0E1": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 121
+        },
+        "T0P1E0": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 68
+        },
+        "T0P1E1": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 68
+        },
+        "T1P0E0": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 328
+        },
+        "T1P0E1": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 328
+        },
+        "T1P1E0": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "T1P1E1": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "budget36": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        }
+      },
+      "vocabulary": {
+        "T0P0E0": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 121
+        },
+        "T0P0E1": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 121
+        },
+        "T0P1E0": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 68
+        },
+        "T0P1E1": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 68
+        },
+        "T1P0E0": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 328
+        },
+        "T1P0E1": {
+          "n": 50,
+          "success_rate": 0.26,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 328
+        },
+        "T1P1E0": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "T1P1E1": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "budget36": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        }
+      },
+      "terminal": {
+        "T0P0E0": {
+          "n": 50,
+          "success_rate": 0.74,
+          "feasibility": 0.82,
+          "optimality": 0.74,
+          "score_rows": 307
+        },
+        "T0P0E1": {
+          "n": 50,
+          "success_rate": 0.74,
+          "feasibility": 0.82,
+          "optimality": 0.74,
+          "score_rows": 307
+        },
+        "T0P1E0": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.74,
+          "score_rows": 202
+        },
+        "T0P1E1": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.74,
+          "score_rows": 202
+        },
+        "T1P0E0": {
+          "n": 50,
+          "success_rate": 0.74,
+          "feasibility": 0.82,
+          "optimality": 0.74,
+          "score_rows": 830
+        },
+        "T1P0E1": {
+          "n": 50,
+          "success_rate": 0.74,
+          "feasibility": 0.82,
+          "optimality": 0.74,
+          "score_rows": 830
+        },
+        "T1P1E0": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.76,
+          "score_rows": 503
+        },
+        "T1P1E1": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "budget36": {
+          "n": 50,
+          "success_rate": 0.8,
+          "feasibility": 0.82,
+          "optimality": 0.76,
+          "score_rows": 496
+        }
+      },
+      "executor": {
+        "T0P0E0": {
+          "n": 50,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.92,
+          "score_rows": 353
+        },
+        "T0P0E1": {
+          "n": 50,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.92,
+          "score_rows": 353
+        },
+        "T0P1E0": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.92,
+          "score_rows": 248
+        },
+        "T0P1E1": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.92,
+          "score_rows": 248
+        },
+        "T1P0E0": {
+          "n": 50,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.92,
+          "score_rows": 947
+        },
+        "T1P0E1": {
+          "n": 50,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.92,
+          "score_rows": 947
+        },
+        "T1P1E0": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.94,
+          "score_rows": 620
+        },
+        "T1P1E1": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "budget36": {
+          "n": 50,
+          "success_rate": 0.98,
+          "feasibility": 1.0,
+          "optimality": 0.94,
+          "score_rows": 613
+        }
+      }
+    },
+    "dev_generated": {
+      "model": {
+        "T0P0E0": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P0E1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P1E0": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P1E1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P0E0": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P0E1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P1E0": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P1E1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "budget36": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        }
+      },
+      "vocabulary": {
+        "T0P0E0": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P0E1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P1E0": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P1E1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P0E0": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P0E1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P1E0": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P1E1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "budget36": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        }
+      },
+      "terminal": {
+        "T0P0E0": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 828
+        },
+        "T0P0E1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 828
+        },
+        "T0P1E0": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.043478260869565216,
+          "score_rows": 299
+        },
+        "T0P1E1": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5652173913043478,
+          "score_rows": 299
+        },
+        "T1P0E0": {
+          "n": 23,
+          "success_rate": 0.391304347826087,
+          "feasibility": 1.0,
+          "optimality": 0.34782608695652173,
+          "score_rows": 1636
+        },
+        "T1P0E1": {
+          "n": 23,
+          "success_rate": 0.391304347826087,
+          "feasibility": 1.0,
+          "optimality": 0.34782608695652173,
+          "score_rows": 1636
+        },
+        "T1P1E0": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 538
+        },
+        "T1P1E1": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.782608695652174,
+          "score_rows": 538
+        },
+        "budget36": {
+          "n": 23,
+          "success_rate": 0.8260869565217391,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 505
+        }
+      },
+      "executor": {
+        "T0P0E0": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 828
+        },
+        "T0P0E1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 828
+        },
+        "T0P1E0": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.043478260869565216,
+          "score_rows": 299
+        },
+        "T0P1E1": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5652173913043478,
+          "score_rows": 299
+        },
+        "T1P0E0": {
+          "n": 23,
+          "success_rate": 0.391304347826087,
+          "feasibility": 1.0,
+          "optimality": 0.34782608695652173,
+          "score_rows": 1636
+        },
+        "T1P0E1": {
+          "n": 23,
+          "success_rate": 0.391304347826087,
+          "feasibility": 1.0,
+          "optimality": 0.34782608695652173,
+          "score_rows": 1636
+        },
+        "T1P1E0": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 538
+        },
+        "T1P1E1": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.782608695652174,
+          "score_rows": 538
+        },
+        "budget36": {
+          "n": 23,
+          "success_rate": 0.8260869565217391,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 505
+        }
+      }
+    },
+    "test_id": {
+      "model": {
+        "T0P0E0": {
+          "n": 100,
+          "success_rate": 0.27,
+          "feasibility": 0.78,
+          "optimality": 0.26,
+          "score_rows": 220
+        },
+        "T0P0E1": {
+          "n": 100,
+          "success_rate": 0.27,
+          "feasibility": 0.78,
+          "optimality": 0.26,
+          "score_rows": 220
+        },
+        "T0P1E0": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.26,
+          "score_rows": 142
+        },
+        "T0P1E1": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.28,
+          "score_rows": 142
+        },
+        "T1P0E0": {
+          "n": 100,
+          "success_rate": 0.29,
+          "feasibility": 0.78,
+          "optimality": 0.28,
+          "score_rows": 403
+        },
+        "T1P0E1": {
+          "n": 100,
+          "success_rate": 0.29,
+          "feasibility": 0.78,
+          "optimality": 0.28,
+          "score_rows": 403
+        },
+        "T1P1E0": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "T1P1E1": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "budget36": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        }
+      },
+      "vocabulary": {
+        "T0P0E0": {
+          "n": 100,
+          "success_rate": 0.27,
+          "feasibility": 0.78,
+          "optimality": 0.26,
+          "score_rows": 220
+        },
+        "T0P0E1": {
+          "n": 100,
+          "success_rate": 0.27,
+          "feasibility": 0.78,
+          "optimality": 0.26,
+          "score_rows": 220
+        },
+        "T0P1E0": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.26,
+          "score_rows": 142
+        },
+        "T0P1E1": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.28,
+          "score_rows": 142
+        },
+        "T1P0E0": {
+          "n": 100,
+          "success_rate": 0.29,
+          "feasibility": 0.78,
+          "optimality": 0.28,
+          "score_rows": 403
+        },
+        "T1P0E1": {
+          "n": 100,
+          "success_rate": 0.29,
+          "feasibility": 0.78,
+          "optimality": 0.28,
+          "score_rows": 403
+        },
+        "T1P1E0": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "T1P1E1": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "budget36": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        }
+      },
+      "terminal": {
+        "T0P0E0": {
+          "n": 100,
+          "success_rate": 0.71,
+          "feasibility": 0.78,
+          "optimality": 0.7,
+          "score_rows": 557
+        },
+        "T0P0E1": {
+          "n": 100,
+          "success_rate": 0.71,
+          "feasibility": 0.78,
+          "optimality": 0.7,
+          "score_rows": 557
+        },
+        "T0P1E0": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.7,
+          "score_rows": 374
+        },
+        "T0P1E1": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.74,
+          "score_rows": 374
+        },
+        "T1P0E0": {
+          "n": 100,
+          "success_rate": 0.74,
+          "feasibility": 0.78,
+          "optimality": 0.73,
+          "score_rows": 1212
+        },
+        "T1P0E1": {
+          "n": 100,
+          "success_rate": 0.74,
+          "feasibility": 0.78,
+          "optimality": 0.73,
+          "score_rows": 1212
+        },
+        "T1P1E0": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.75,
+          "score_rows": 879
+        },
+        "T1P1E1": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "budget36": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        }
+      },
+      "executor": {
+        "T0P0E0": {
+          "n": 100,
+          "success_rate": 0.88,
+          "feasibility": 1.0,
+          "optimality": 0.87,
+          "score_rows": 815
+        },
+        "T0P0E1": {
+          "n": 100,
+          "success_rate": 0.88,
+          "feasibility": 1.0,
+          "optimality": 0.87,
+          "score_rows": 815
+        },
+        "T0P1E0": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.88,
+          "score_rows": 501
+        },
+        "T0P1E1": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.94,
+          "score_rows": 501
+        },
+        "T1P0E0": {
+          "n": 100,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.91,
+          "score_rows": 1842
+        },
+        "T1P0E1": {
+          "n": 100,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.91,
+          "score_rows": 1842
+        },
+        "T1P1E0": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 1149
+        },
+        "T1P1E1": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "budget36": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        }
+      }
+    },
+    "test_ood": {
+      "model": {
+        "T0P0E0": {
+          "n": 100,
+          "success_rate": 0.47,
+          "feasibility": 0.76,
+          "optimality": 0.47,
+          "score_rows": 371
+        },
+        "T0P0E1": {
+          "n": 100,
+          "success_rate": 0.47,
+          "feasibility": 0.76,
+          "optimality": 0.47,
+          "score_rows": 371
+        },
+        "T0P1E0": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.48,
+          "score_rows": 243
+        },
+        "T0P1E1": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.5,
+          "score_rows": 243
+        },
+        "T1P0E0": {
+          "n": 100,
+          "success_rate": 0.49,
+          "feasibility": 0.76,
+          "optimality": 0.49,
+          "score_rows": 810
+        },
+        "T1P0E1": {
+          "n": 100,
+          "success_rate": 0.49,
+          "feasibility": 0.76,
+          "optimality": 0.49,
+          "score_rows": 810
+        },
+        "T1P1E0": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "T1P1E1": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "budget36": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        }
+      },
+      "vocabulary": {
+        "T0P0E0": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.81,
+          "optimality": 0.52,
+          "score_rows": 381
+        },
+        "T0P0E1": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.81,
+          "optimality": 0.52,
+          "score_rows": 381
+        },
+        "T0P1E0": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.53,
+          "score_rows": 253
+        },
+        "T0P1E1": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.55,
+          "score_rows": 253
+        },
+        "T1P0E0": {
+          "n": 100,
+          "success_rate": 0.54,
+          "feasibility": 0.81,
+          "optimality": 0.54,
+          "score_rows": 829
+        },
+        "T1P0E1": {
+          "n": 100,
+          "success_rate": 0.54,
+          "feasibility": 0.81,
+          "optimality": 0.54,
+          "score_rows": 829
+        },
+        "T1P1E0": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "T1P1E1": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "budget36": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        }
+      },
+      "terminal": {
+        "T0P0E0": {
+          "n": 100,
+          "success_rate": 0.72,
+          "feasibility": 0.81,
+          "optimality": 0.72,
+          "score_rows": 621
+        },
+        "T0P0E1": {
+          "n": 100,
+          "success_rate": 0.72,
+          "feasibility": 0.81,
+          "optimality": 0.72,
+          "score_rows": 621
+        },
+        "T0P1E0": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.73,
+          "score_rows": 384
+        },
+        "T0P1E1": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.77,
+          "score_rows": 384
+        },
+        "T1P0E0": {
+          "n": 100,
+          "success_rate": 0.76,
+          "feasibility": 0.81,
+          "optimality": 0.76,
+          "score_rows": 1308
+        },
+        "T1P0E1": {
+          "n": 100,
+          "success_rate": 0.76,
+          "feasibility": 0.81,
+          "optimality": 0.76,
+          "score_rows": 1308
+        },
+        "T1P1E0": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "T1P1E1": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "budget36": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        }
+      },
+      "executor": {
+        "T0P0E0": {
+          "n": 100,
+          "success_rate": 0.88,
+          "feasibility": 1.0,
+          "optimality": 0.87,
+          "score_rows": 815
+        },
+        "T0P0E1": {
+          "n": 100,
+          "success_rate": 0.88,
+          "feasibility": 1.0,
+          "optimality": 0.87,
+          "score_rows": 815
+        },
+        "T0P1E0": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.88,
+          "score_rows": 501
+        },
+        "T0P1E1": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.94,
+          "score_rows": 501
+        },
+        "T1P0E0": {
+          "n": 100,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.91,
+          "score_rows": 1842
+        },
+        "T1P0E1": {
+          "n": 100,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.91,
+          "score_rows": 1842
+        },
+        "T1P1E0": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 1149
+        },
+        "T1P1E1": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "budget36": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        }
+      }
+    },
+    "test_generated": {
+      "model": {
+        "T0P0E0": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P0E1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P1E0": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P1E1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P0E0": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P0E1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P1E0": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P1E1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "budget36": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        }
+      },
+      "vocabulary": {
+        "T0P0E0": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P0E1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P1E0": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T0P1E1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P0E0": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P0E1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P1E0": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "T1P1E1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "budget36": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        }
+      },
+      "terminal": {
+        "T0P0E0": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 1044
+        },
+        "T0P0E1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 1044
+        },
+        "T0P1E0": {
+          "n": 29,
+          "success_rate": 0.9655172413793104,
+          "feasibility": 1.0,
+          "optimality": 0.06896551724137931,
+          "score_rows": 303
+        },
+        "T0P1E1": {
+          "n": 29,
+          "success_rate": 0.9655172413793104,
+          "feasibility": 1.0,
+          "optimality": 0.41379310344827586,
+          "score_rows": 303
+        },
+        "T1P0E0": {
+          "n": 29,
+          "success_rate": 0.3448275862068966,
+          "feasibility": 1.0,
+          "optimality": 0.3448275862068966,
+          "score_rows": 2149
+        },
+        "T1P0E1": {
+          "n": 29,
+          "success_rate": 0.3448275862068966,
+          "feasibility": 1.0,
+          "optimality": 0.3448275862068966,
+          "score_rows": 2149
+        },
+        "T1P1E0": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6551724137931034,
+          "score_rows": 508
+        },
+        "T1P1E1": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7241379310344828,
+          "score_rows": 508
+        },
+        "budget36": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7241379310344828,
+          "score_rows": 508
+        }
+      },
+      "executor": {
+        "T0P0E0": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 1044
+        },
+        "T0P0E1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 1044
+        },
+        "T0P1E0": {
+          "n": 29,
+          "success_rate": 0.9655172413793104,
+          "feasibility": 1.0,
+          "optimality": 0.06896551724137931,
+          "score_rows": 303
+        },
+        "T0P1E1": {
+          "n": 29,
+          "success_rate": 0.9655172413793104,
+          "feasibility": 1.0,
+          "optimality": 0.41379310344827586,
+          "score_rows": 303
+        },
+        "T1P0E0": {
+          "n": 29,
+          "success_rate": 0.3448275862068966,
+          "feasibility": 1.0,
+          "optimality": 0.3448275862068966,
+          "score_rows": 2149
+        },
+        "T1P0E1": {
+          "n": 29,
+          "success_rate": 0.3448275862068966,
+          "feasibility": 1.0,
+          "optimality": 0.3448275862068966,
+          "score_rows": 2149
+        },
+        "T1P1E0": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6551724137931034,
+          "score_rows": 508
+        },
+        "T1P1E1": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7241379310344828,
+          "score_rows": 508
+        },
+        "budget36": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7241379310344828,
+          "score_rows": 508
+        }
+      }
+    }
+  },
+  "paired_effects": {
+    "dev_candidates": {
+      "model": {
+        "Top3": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        },
+        "penalty": {
+          "success_gain": 8,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        }
+      },
+      "vocabulary": {
+        "Top3": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        },
+        "penalty": {
+          "success_gain": 8,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        }
+      },
+      "terminal": {
+        "Top3": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 3,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        },
+        "penalty": {
+          "success_gain": 16,
+          "success_loss": 0,
+          "optimal_gain": 3,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 1,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        }
+      },
+      "executor": {
+        "Top3": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 3,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        },
+        "penalty": {
+          "success_gain": 16,
+          "success_loss": 0,
+          "optimal_gain": 3,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 1,
+          "optimal_loss": 0,
+          "paired_comparisons": 200
+        }
+      }
+    },
+    "dev_generated": {
+      "model": {
+        "Top3": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        },
+        "penalty": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        }
+      },
+      "vocabulary": {
+        "Top3": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        },
+        "penalty": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        }
+      },
+      "terminal": {
+        "Top3": {
+          "success_gain": 20,
+          "success_loss": 0,
+          "optimal_gain": 34,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        },
+        "penalty": {
+          "success_gain": 72,
+          "success_loss": 0,
+          "optimal_gain": 30,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 16,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        }
+      },
+      "executor": {
+        "Top3": {
+          "success_gain": 20,
+          "success_loss": 0,
+          "optimal_gain": 34,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        },
+        "penalty": {
+          "success_gain": 72,
+          "success_loss": 0,
+          "optimal_gain": 30,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 16,
+          "optimal_loss": 0,
+          "paired_comparisons": 92
+        }
+      }
+    },
+    "test_id": {
+      "model": {
+        "Top3": {
+          "success_gain": 4,
+          "success_loss": 0,
+          "optimal_gain": 10,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "penalty": {
+          "success_gain": 8,
+          "success_loss": 0,
+          "optimal_gain": 6,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 2,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        }
+      },
+      "vocabulary": {
+        "Top3": {
+          "success_gain": 4,
+          "success_loss": 0,
+          "optimal_gain": 10,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "penalty": {
+          "success_gain": 8,
+          "success_loss": 0,
+          "optimal_gain": 6,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 2,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        }
+      },
+      "terminal": {
+        "Top3": {
+          "success_gain": 6,
+          "success_loss": 0,
+          "optimal_gain": 13,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "penalty": {
+          "success_gain": 22,
+          "success_loss": 0,
+          "optimal_gain": 9,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 5,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        }
+      },
+      "executor": {
+        "Top3": {
+          "success_gain": 8,
+          "success_loss": 0,
+          "optimal_gain": 19,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "penalty": {
+          "success_gain": 40,
+          "success_loss": 0,
+          "optimal_gain": 19,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 7,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        }
+      }
+    },
+    "test_ood": {
+      "model": {
+        "Top3": {
+          "success_gain": 4,
+          "success_loss": 0,
+          "optimal_gain": 8,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "penalty": {
+          "success_gain": 16,
+          "success_loss": 0,
+          "optimal_gain": 8,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 2,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        }
+      },
+      "vocabulary": {
+        "Top3": {
+          "success_gain": 4,
+          "success_loss": 0,
+          "optimal_gain": 8,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "penalty": {
+          "success_gain": 16,
+          "success_loss": 0,
+          "optimal_gain": 8,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 2,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        }
+      },
+      "terminal": {
+        "Top3": {
+          "success_gain": 8,
+          "success_loss": 0,
+          "optimal_gain": 14,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "penalty": {
+          "success_gain": 28,
+          "success_loss": 0,
+          "optimal_gain": 10,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 4,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        }
+      },
+      "executor": {
+        "Top3": {
+          "success_gain": 8,
+          "success_loss": 0,
+          "optimal_gain": 19,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "penalty": {
+          "success_gain": 40,
+          "success_loss": 0,
+          "optimal_gain": 19,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 7,
+          "optimal_loss": 0,
+          "paired_comparisons": 400
+        }
+      }
+    },
+    "test_generated": {
+      "model": {
+        "Top3": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        },
+        "penalty": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        }
+      },
+      "vocabulary": {
+        "Top3": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        },
+        "penalty": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 0,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        }
+      },
+      "terminal": {
+        "Top3": {
+          "success_gain": 22,
+          "success_loss": 0,
+          "optimal_gain": 46,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        },
+        "penalty": {
+          "success_gain": 94,
+          "success_loss": 0,
+          "optimal_gain": 34,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 12,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        }
+      },
+      "executor": {
+        "Top3": {
+          "success_gain": 22,
+          "success_loss": 0,
+          "optimal_gain": 46,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        },
+        "penalty": {
+          "success_gain": 94,
+          "success_loss": 0,
+          "optimal_gain": 34,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        },
+        "erasure": {
+          "success_gain": 0,
+          "success_loss": 0,
+          "optimal_gain": 12,
+          "optimal_loss": 0,
+          "paired_comparisons": 116
+        }
+      }
+    }
+  }
+}

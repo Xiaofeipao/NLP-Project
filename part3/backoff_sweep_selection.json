@@ -1,0 +1,16 @@
+{
+  "selected_by_dev": {
+    "model": 2,
+    "vocabulary": 1,
+    "terminal": 2,
+    "executor": 2
+  },
+  "backend": {
+    "mode": "beam_soft",
+    "score_cap": 108,
+    "erase": true
+  },
+  "source": "outputs\\feedback_backoff_sweep\\run_001\\selection.json",
+  "status": "ablation only; existing best_rollback K36 unchanged; no claim of test-optimal K",
+  "criterion": "per feedback source, dev_candidates50 only: success, optimality, fewer score rows, smaller K; selected before evaluating tests"
+}

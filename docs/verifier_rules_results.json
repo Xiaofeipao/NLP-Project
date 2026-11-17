@@ -1,0 +1,813 @@
+{
+  "id_candidates": {
+    "direct": {
+      "n": 200,
+      "success_rate": 0.5,
+      "feasibility": 0.79,
+      "optimality": 0.25,
+      "path_efficiency_on_success": 0.8283571428571428
+    },
+    "vanilla_model": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.65,
+        "feasibility": 0.89,
+        "optimality": 0.4,
+        "path_efficiency_on_success": 0.8679670329670327
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.3,
+        "feasibility": 0.78,
+        "optimality": 0.3,
+        "path_efficiency_on_success": 1.0
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.6280980266992313,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.15,
+        "failure_type_accuracy": 0.35,
+        "joint_error_accuracy": 0.15
+      },
+      "false_accepts": 65,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 163,
+        "success": 30,
+        "bad_step": 7
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "vanilla_vocabulary": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.65,
+        "feasibility": 0.89,
+        "optimality": 0.4,
+        "path_efficiency_on_success": 0.8679670329670327
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.3,
+        "feasibility": 0.78,
+        "optimality": 0.3,
+        "path_efficiency_on_success": 1.0
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.6280980266992313,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.3,
+        "failure_type_accuracy": 0.35,
+        "joint_error_accuracy": 0.3
+      },
+      "false_accepts": 65,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 163,
+        "success": 30,
+        "bad_step": 7
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "vanilla_terminal": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.89,
+        "feasibility": 0.89,
+        "optimality": 0.63,
+        "path_efficiency_on_success": 0.9005617977528089
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.78,
+        "feasibility": 0.78,
+        "optimality": 0.76,
+        "path_efficiency_on_success": 0.993131868131868
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.8787878787878788,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.78,
+        "failure_type_accuracy": 0.78,
+        "joint_error_accuracy": 0.78
+      },
+      "false_accepts": 22,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 120,
+        "success": 78,
+        "bad_step": 2
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "vanilla_trace": {
+      "planning": {
+        "n": 200,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.735,
+        "path_efficiency_on_success": 0.9098333333333332
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.97,
+        "path_efficiency_on_success": 0.9913095238095236
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 1.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 1.0,
+        "failure_type_accuracy": 1.0,
+        "joint_error_accuracy": 1.0
+      },
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 100,
+        "success": 100
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "structured_model": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.645,
+        "feasibility": 0.88,
+        "optimality": 0.395,
+        "path_efficiency_on_success": 0.8669435215946842
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.29,
+        "feasibility": 0.76,
+        "optimality": 0.29,
+        "path_efficiency_on_success": 1.0
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.6142557651991614,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.16,
+        "failure_type_accuracy": 0.33,
+        "joint_error_accuracy": 0.16
+      },
+      "false_accepts": 67,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 165,
+        "success": 31,
+        "bad_step": 4
+      },
+      "v_prediction_matches_previous": 185
+    },
+    "structured_vocabulary": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.655,
+        "feasibility": 0.89,
+        "optimality": 0.405,
+        "path_efficiency_on_success": 0.8689749182115591
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.31,
+        "feasibility": 0.78,
+        "optimality": 0.31,
+        "path_efficiency_on_success": 1.0
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.6280980266992313,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.31,
+        "failure_type_accuracy": 0.35,
+        "joint_error_accuracy": 0.31
+      },
+      "false_accepts": 65,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 163,
+        "success": 33,
+        "bad_step": 4
+      },
+      "v_prediction_matches_previous": 185
+    },
+    "structured_terminal": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.89,
+        "feasibility": 0.89,
+        "optimality": 0.63,
+        "path_efficiency_on_success": 0.9005617977528089
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.78,
+        "feasibility": 0.78,
+        "optimality": 0.76,
+        "path_efficiency_on_success": 0.993131868131868
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.8787878787878788,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.78,
+        "failure_type_accuracy": 0.78,
+        "joint_error_accuracy": 0.78
+      },
+      "false_accepts": 22,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 120,
+        "success": 80
+      },
+      "v_prediction_matches_previous": 185
+    },
+    "structured_trace": {
+      "planning": {
+        "n": 200,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.735,
+        "path_efficiency_on_success": 0.9098333333333332
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.97,
+        "path_efficiency_on_success": 0.9913095238095236
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 1.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 1.0,
+        "failure_type_accuracy": 1.0,
+        "joint_error_accuracy": 1.0
+      },
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 100,
+        "success": 100
+      },
+      "v_prediction_matches_previous": 185
+    }
+  },
+  "ood_candidates": {
+    "direct": {
+      "n": 200,
+      "success_rate": 0.5,
+      "feasibility": 0.65,
+      "optimality": 0.25,
+      "path_efficiency_on_success": 0.8283571428571428
+    },
+    "vanilla_model": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.76,
+        "feasibility": 0.88,
+        "optimality": 0.505,
+        "path_efficiency_on_success": 0.8848840852130325
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.52,
+        "feasibility": 0.76,
+        "optimality": 0.51,
+        "path_efficiency_on_success": 0.9935897435897435
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.7821350762527233,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.14,
+        "failure_type_accuracy": 0.53,
+        "joint_error_accuracy": 0.12
+      },
+      "false_accepts": 40,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 138,
+        "success": 52,
+        "bad_step": 10
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "vanilla_vocabulary": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.785,
+        "feasibility": 0.905,
+        "optimality": 0.53,
+        "path_efficiency_on_success": 0.888550197148923
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.57,
+        "feasibility": 0.81,
+        "optimality": 0.56,
+        "path_efficiency_on_success": 0.9941520467836257
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.7821350762527233,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.53,
+        "failure_type_accuracy": 0.53,
+        "joint_error_accuracy": 0.51
+      },
+      "false_accepts": 40,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 138,
+        "success": 57,
+        "bad_step": 5
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "vanilla_terminal": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.905,
+        "feasibility": 0.905,
+        "optimality": 0.64,
+        "path_efficiency_on_success": 0.90036832412523
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.81,
+        "feasibility": 0.81,
+        "optimality": 0.78,
+        "path_efficiency_on_success": 0.9892710170487946
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.8993558776167472,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.77,
+        "failure_type_accuracy": 0.75,
+        "joint_error_accuracy": 0.75
+      },
+      "false_accepts": 18,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 116,
+        "success": 81,
+        "bad_step": 3
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "vanilla_trace": {
+      "planning": {
+        "n": 200,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.735,
+        "path_efficiency_on_success": 0.9098333333333332
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.97,
+        "path_efficiency_on_success": 0.9913095238095236
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 1.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 1.0,
+        "failure_type_accuracy": 1.0,
+        "joint_error_accuracy": 1.0
+      },
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 100,
+        "success": 100
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "structured_model": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.765,
+        "feasibility": 0.88,
+        "optimality": 0.51,
+        "path_efficiency_on_success": 0.8856364768129473
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.53,
+        "feasibility": 0.76,
+        "optimality": 0.52,
+        "path_efficiency_on_success": 0.9937106918238994
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.7765014683333766,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.17,
+        "failure_type_accuracy": 0.5,
+        "joint_error_accuracy": 0.15
+      },
+      "false_accepts": 41,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 139,
+        "success": 55,
+        "bad_step": 6
+      },
+      "v_prediction_matches_previous": 184
+    },
+    "structured_vocabulary": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.795,
+        "feasibility": 0.91,
+        "optimality": 0.54,
+        "path_efficiency_on_success": 0.8899520814615152
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.59,
+        "feasibility": 0.82,
+        "optimality": 0.58,
+        "path_efficiency_on_success": 0.9943502824858756
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.7821350762527233,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.52,
+        "failure_type_accuracy": 0.51,
+        "joint_error_accuracy": 0.5
+      },
+      "false_accepts": 40,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 138,
+        "success": 61,
+        "bad_step": 1
+      },
+      "v_prediction_matches_previous": 184
+    },
+    "structured_terminal": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.91,
+        "feasibility": 0.91,
+        "optimality": 0.645,
+        "path_efficiency_on_success": 0.9009157509157508
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 0.82,
+        "feasibility": 0.82,
+        "optimality": 0.79,
+        "path_efficiency_on_success": 0.9894018583042972
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.8993558776167472,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.77,
+        "failure_type_accuracy": 0.75,
+        "joint_error_accuracy": 0.75
+      },
+      "false_accepts": 18,
+      "false_rejects": 2,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 116,
+        "success": 84
+      },
+      "v_prediction_matches_previous": 184
+    },
+    "structured_trace": {
+      "planning": {
+        "n": 200,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.735,
+        "path_efficiency_on_success": 0.9098333333333332
+      },
+      "invalid_only": {
+        "n": 100,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.97,
+        "path_efficiency_on_success": 0.9913095238095236
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 1.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 1.0,
+        "failure_type_accuracy": 1.0,
+        "joint_error_accuracy": 1.0
+      },
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 100,
+        "success": 100
+      },
+      "v_prediction_matches_previous": 184
+    }
+  },
+  "generated": {
+    "direct": {
+      "n": 200,
+      "success_rate": 0.855,
+      "feasibility": 1.0,
+      "optimality": 0.85,
+      "path_efficiency_on_success": 0.9987004548408057
+    },
+    "vanilla_model": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.855,
+        "feasibility": 1.0,
+        "optimality": 0.85,
+        "path_efficiency_on_success": 0.9987004548408057
+      },
+      "invalid_only": {
+        "n": 29,
+        "success_rate": 0.0,
+        "feasibility": 1.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.4186046511627907,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "false_accepts": 29,
+      "false_rejects": 27,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 173,
+        "bad_step": 20,
+        "success": 7
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "vanilla_vocabulary": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.855,
+        "feasibility": 1.0,
+        "optimality": 0.85,
+        "path_efficiency_on_success": 0.9987004548408057
+      },
+      "invalid_only": {
+        "n": 29,
+        "success_rate": 0.0,
+        "feasibility": 1.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.4186046511627907,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "false_accepts": 29,
+      "false_rejects": 27,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 173,
+        "bad_step": 20,
+        "success": 7
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "vanilla_terminal": {
+      "planning": {
+        "n": 200,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.955,
+        "path_efficiency_on_success": 0.9886150793650793
+      },
+      "invalid_only": {
+        "n": 29,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.7241379310344828,
+        "path_efficiency_on_success": 0.9291461412151067
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.7983193277310925,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 1.0,
+        "failure_type_accuracy": 1.0,
+        "joint_error_accuracy": 1.0
+      },
+      "false_accepts": 0,
+      "false_rejects": 27,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 144,
+        "bad_step": 20,
+        "success": 36
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "vanilla_trace": {
+      "planning": {
+        "n": 200,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.955,
+        "path_efficiency_on_success": 0.9886150793650793
+      },
+      "invalid_only": {
+        "n": 29,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.7241379310344828,
+        "path_efficiency_on_success": 0.9291461412151067
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 1.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 1.0,
+        "failure_type_accuracy": 1.0,
+        "joint_error_accuracy": 1.0
+      },
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 171,
+        "success": 29
+      },
+      "v_prediction_matches_previous": 200
+    },
+    "structured_model": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.855,
+        "feasibility": 1.0,
+        "optimality": 0.85,
+        "path_efficiency_on_success": 0.9987004548408057
+      },
+      "invalid_only": {
+        "n": 29,
+        "success_rate": 0.0,
+        "feasibility": 1.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.4186046511627907,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "false_accepts": 29,
+      "false_rejects": 27,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 173,
+        "bad_step": 8,
+        "success": 19
+      },
+      "v_prediction_matches_previous": 181
+    },
+    "structured_vocabulary": {
+      "planning": {
+        "n": 200,
+        "success_rate": 0.855,
+        "feasibility": 1.0,
+        "optimality": 0.85,
+        "path_efficiency_on_success": 0.9987004548408057
+      },
+      "invalid_only": {
+        "n": 29,
+        "success_rate": 0.0,
+        "feasibility": 1.0,
+        "optimality": 0.0,
+        "path_efficiency_on_success": null
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.4186046511627907,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.0,
+        "failure_type_accuracy": 0.0,
+        "joint_error_accuracy": 0.0
+      },
+      "false_accepts": 29,
+      "false_rejects": 27,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 173,
+        "bad_step": 8,
+        "success": 19
+      },
+      "v_prediction_matches_previous": 181
+    },
+    "structured_terminal": {
+      "planning": {
+        "n": 200,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.955,
+        "path_efficiency_on_success": 0.9886150793650793
+      },
+      "invalid_only": {
+        "n": 29,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.7241379310344828,
+        "path_efficiency_on_success": 0.9291461412151067
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 0.7983193277310925,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 1.0,
+        "failure_type_accuracy": 1.0,
+        "joint_error_accuracy": 1.0
+      },
+      "false_accepts": 0,
+      "false_rejects": 27,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 144,
+        "bad_step": 8,
+        "success": 48
+      },
+      "v_prediction_matches_previous": 181
+    },
+    "structured_trace": {
+      "planning": {
+        "n": 200,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.955,
+        "path_efficiency_on_success": 0.9886150793650793
+      },
+      "invalid_only": {
+        "n": 29,
+        "success_rate": 1.0,
+        "feasibility": 1.0,
+        "optimality": 0.7241379310344828,
+        "path_efficiency_on_success": 0.9291461412151067
+      },
+      "verification": {
+        "n": 200,
+        "macro_f1": 1.0,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 1.0,
+        "failure_type_accuracy": 1.0,
+        "joint_error_accuracy": 1.0
+      },
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "valid_routes_broken": 0,
+      "statuses": {
+        "accepted": 171,
+        "success": 29
+      },
+      "v_prediction_matches_previous": 181
+    }
+  }
+}

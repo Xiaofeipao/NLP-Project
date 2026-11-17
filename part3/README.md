@@ -31,3 +31,13 @@ python -m part3.run run --checkpoint LOCAL_PRIMARY_CHECKPOINT --out outputs/part
 将调用相同21配置和开发选优规则，新目录记录配置、代码/数据/权重哈希、训练样本IDs、选择文件、逐例轨迹。默认使用 `part2/protocol.json`。三训练支从共同两轮权重独立出发，只更新V；每支追加一遍1,984条样本，排除pilot已用满遍数的16例。G/R权重保持固定。
 
 CLI没有替换旧main的默认规划器，也没有删除FirstPart或历史研究。此次打包只改善目录、可复现入口和结果归属，不重新声称跑了一轮GPU。
+
+
+## 后续 R 最优率实验
+
+新增删环、Top3、四动作概率、软循环惩罚与硬禁止的10方案，在错误集用CPU完成。开发选择Top3+软惩罚+删环，固定原G轨迹回放200环境为100%成功、92.5%最优。详见 [R最优率实验](../docs/r_variants_results.md)。独立运行：`python -m part3.run_r_variants --out outputs/r_variants/new_run --ledger SHARED_LEDGER --device cpu`；依赖同一份本地权重及本地G失败轨迹，CPU不扣GPU推理时间。此新研究未替换旧best_overall配置，也未push。
+
+
+## 新地图单错/双错 × 原始/增强R
+
+冻结两种R、4种V来源和7种规则，在400配对泛化环境上评测，详见[结果](../docs/generalization_r_pair_results.md)。双错数据仅测试，生成命令：`python -m scripts.build_generalization_double --output outputs/double_rebuild`。GPU评测：`python -m part3.run_generalization_r_pair --out outputs/generalization_r_pair/new_run`；CPU复核/报告：`python -m part3.report_generalization_r_pair --run outputs/generalization_r_pair/run_001`。单错V复用已核验历史输出，双错V重新推理，两种R均重新执行，无新训练或测试选型。

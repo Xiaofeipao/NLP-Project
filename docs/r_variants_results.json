@@ -1,0 +1,1123 @@
+{
+  "results": {
+    "dev_candidates": {
+      "raw_probability": {
+        "metrics": {
+          "n": 50,
+          "success_rate": 0.98,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.912387725653032
+        },
+        "cost": {
+          "score_rows": 128,
+          "removed_actions": 0
+        },
+        "seconds": 19.816410900006304,
+        "policy_usage": {
+          "requested_states": 128,
+          "cache_hits": 35,
+          "forward_batches": 93,
+          "scored_states": 93
+        }
+      },
+      "visit_probability": {
+        "metrics": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.897086691086691
+        },
+        "cost": {
+          "score_rows": 105,
+          "removed_actions": 0
+        },
+        "seconds": 2.6734053999971366,
+        "policy_usage": {
+          "requested_states": 105,
+          "cache_hits": 92,
+          "forward_batches": 13,
+          "scored_states": 13
+        }
+      },
+      "raw_erase": {
+        "metrics": {
+          "n": 50,
+          "success_rate": 0.98,
+          "feasibility": 1.0,
+          "optimality": 0.88,
+          "path_efficiency_on_success": 0.9669096209912535
+        },
+        "cost": {
+          "score_rows": 128,
+          "removed_actions": 50
+        },
+        "seconds": 0.22260239999741316,
+        "policy_usage": {
+          "requested_states": 128,
+          "cache_hits": 128,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "visit_erase": {
+        "metrics": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.84,
+          "path_efficiency_on_success": 0.937904761904762
+        },
+        "cost": {
+          "score_rows": 105,
+          "removed_actions": 16
+        },
+        "seconds": 0.16412680000939872,
+        "policy_usage": {
+          "requested_states": 105,
+          "cache_hits": 105,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "top3_budget36": {
+        "metrics": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.76,
+          "path_efficiency_on_success": 0.9141399711399713
+        },
+        "cost": {
+          "score_rows": 184,
+          "removed_actions": 0
+        },
+        "seconds": 11.073016100010136,
+        "policy_usage": {
+          "requested_states": 184,
+          "cache_hits": 120,
+          "forward_batches": 39,
+          "scored_states": 60
+        }
+      },
+      "top3_budget108": {
+        "metrics": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.76,
+          "path_efficiency_on_success": 0.9141399711399713
+        },
+        "cost": {
+          "score_rows": 184,
+          "removed_actions": 0
+        },
+        "seconds": 0.17043199999898206,
+        "policy_usage": {
+          "requested_states": 184,
+          "cache_hits": 184,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "soft_cycle_penalty": {
+        "metrics": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.9021399711399712
+        },
+        "cost": {
+          "score_rows": 101,
+          "removed_actions": 0
+        },
+        "seconds": 0.15156800000113435,
+        "policy_usage": {
+          "requested_states": 101,
+          "cache_hits": 101,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "hard_cycle_ban": {
+        "metrics": {
+          "n": 50,
+          "success_rate": 0.96,
+          "feasibility": 1.0,
+          "optimality": 0.74,
+          "path_efficiency_on_success": 0.914318783068783
+        },
+        "cost": {
+          "score_rows": 97,
+          "removed_actions": 0
+        },
+        "seconds": 0.14301060000434518,
+        "policy_usage": {
+          "requested_states": 97,
+          "cache_hits": 97,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "top3_soft108": {
+        "metrics": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.76,
+          "path_efficiency_on_success": 0.9141399711399713
+        },
+        "cost": {
+          "score_rows": 184,
+          "removed_actions": 0
+        },
+        "seconds": 0.9337961999990512,
+        "policy_usage": {
+          "requested_states": 184,
+          "cache_hits": 180,
+          "forward_batches": 4,
+          "scored_states": 4
+        }
+      },
+      "top3_soft108_erase": {
+        "metrics": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.9,
+          "path_efficiency_on_success": 0.9675714285714285
+        },
+        "cost": {
+          "score_rows": 184,
+          "removed_actions": 16
+        },
+        "seconds": 0.17082959999970626,
+        "policy_usage": {
+          "requested_states": 184,
+          "cache_hits": 184,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      }
+    },
+    "dev_generated": {
+      "raw_probability": {
+        "metrics": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "cost": {
+          "score_rows": 828,
+          "removed_actions": 0
+        },
+        "seconds": 9.7560713999992,
+        "policy_usage": {
+          "requested_states": 828,
+          "cache_hits": 784,
+          "forward_batches": 44,
+          "scored_states": 44
+        }
+      },
+      "visit_probability": {
+        "metrics": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.15444113559705963
+        },
+        "cost": {
+          "score_rows": 168,
+          "removed_actions": 0
+        },
+        "seconds": 28.517502200003946,
+        "policy_usage": {
+          "requested_states": 168,
+          "cache_hits": 38,
+          "forward_batches": 130,
+          "scored_states": 130
+        }
+      },
+      "raw_erase": {
+        "metrics": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "cost": {
+          "score_rows": 828,
+          "removed_actions": 1596
+        },
+        "seconds": 1.2426953999965917,
+        "policy_usage": {
+          "requested_states": 828,
+          "cache_hits": 828,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "visit_erase": {
+        "metrics": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.4782608695652174,
+          "path_efficiency_on_success": 0.8415364828408307
+        },
+        "cost": {
+          "score_rows": 168,
+          "removed_actions": 808
+        },
+        "seconds": 0.244160300004296,
+        "policy_usage": {
+          "requested_states": 168,
+          "cache_hits": 168,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "top3_budget36": {
+        "metrics": {
+          "n": 23,
+          "success_rate": 0.30434782608695654,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.16235167743959575
+        },
+        "cost": {
+          "score_rows": 655,
+          "removed_actions": 0
+        },
+        "seconds": 6.651499600004172,
+        "policy_usage": {
+          "requested_states": 655,
+          "cache_hits": 626,
+          "forward_batches": 28,
+          "scored_states": 29
+        }
+      },
+      "top3_budget108": {
+        "metrics": {
+          "n": 23,
+          "success_rate": 0.30434782608695654,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.16235167743959575
+        },
+        "cost": {
+          "score_rows": 1769,
+          "removed_actions": 0
+        },
+        "seconds": 0.966131499997573,
+        "policy_usage": {
+          "requested_states": 1769,
+          "cache_hits": 1769,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "soft_cycle_penalty": {
+        "metrics": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.15031938589717775
+        },
+        "cost": {
+          "score_rows": 214,
+          "removed_actions": 0
+        },
+        "seconds": 0.9319629000092391,
+        "policy_usage": {
+          "requested_states": 214,
+          "cache_hits": 211,
+          "forward_batches": 3,
+          "scored_states": 3
+        }
+      },
+      "hard_cycle_ban": {
+        "metrics": {
+          "n": 23,
+          "success_rate": 0.8260869565217391,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.15722433804694863
+        },
+        "cost": {
+          "score_rows": 155,
+          "removed_actions": 0
+        },
+        "seconds": 0.22636159999819938,
+        "policy_usage": {
+          "requested_states": 155,
+          "cache_hits": 155,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "top3_soft108": {
+        "metrics": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1544397218997422
+        },
+        "cost": {
+          "score_rows": 473,
+          "removed_actions": 0
+        },
+        "seconds": 11.445877899997868,
+        "policy_usage": {
+          "requested_states": 473,
+          "cache_hits": 412,
+          "forward_batches": 43,
+          "scored_states": 54
+        }
+      },
+      "top3_soft108_erase": {
+        "metrics": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "path_efficiency_on_success": 0.8811655516200971
+        },
+        "cost": {
+          "score_rows": 473,
+          "removed_actions": 826
+        },
+        "seconds": 0.2952196999976877,
+        "policy_usage": {
+          "requested_states": 473,
+          "cache_hits": 473,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      }
+    },
+    "test_id": {
+      "raw_probability": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.94,
+          "feasibility": 1.0,
+          "optimality": 0.68,
+          "path_efficiency_on_success": 0.8991119400693869
+        },
+        "cost": {
+          "score_rows": 425,
+          "removed_actions": 0
+        },
+        "seconds": 44.461018700007116,
+        "policy_usage": {
+          "requested_states": 425,
+          "cache_hits": 202,
+          "forward_batches": 223,
+          "scored_states": 223
+        }
+      },
+      "visit_probability": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.71,
+          "path_efficiency_on_success": 0.8784521321590286
+        },
+        "cost": {
+          "score_rows": 291,
+          "removed_actions": 0
+        },
+        "seconds": 12.510573699997622,
+        "policy_usage": {
+          "requested_states": 291,
+          "cache_hits": 228,
+          "forward_batches": 63,
+          "scored_states": 63
+        }
+      },
+      "raw_erase": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.94,
+          "feasibility": 1.0,
+          "optimality": 0.85,
+          "path_efficiency_on_success": 0.9612630867950018
+        },
+        "cost": {
+          "score_rows": 425,
+          "removed_actions": 254
+        },
+        "seconds": 0.6443805000017164,
+        "policy_usage": {
+          "requested_states": 425,
+          "cache_hits": 425,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "visit_erase": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.88,
+          "path_efficiency_on_success": 0.9527539682539684
+        },
+        "cost": {
+          "score_rows": 291,
+          "removed_actions": 92
+        },
+        "seconds": 0.4037319000053685,
+        "policy_usage": {
+          "requested_states": 291,
+          "cache_hits": 291,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "top3_budget36": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.96,
+          "feasibility": 1.0,
+          "optimality": 0.69,
+          "path_efficiency_on_success": 0.8960054413179415
+        },
+        "cost": {
+          "score_rows": 594,
+          "removed_actions": 0
+        },
+        "seconds": 28.506055399993784,
+        "policy_usage": {
+          "requested_states": 594,
+          "cache_hits": 416,
+          "forward_batches": 106,
+          "scored_states": 157
+        }
+      },
+      "top3_budget108": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.96,
+          "feasibility": 1.0,
+          "optimality": 0.69,
+          "path_efficiency_on_success": 0.8960054413179415
+        },
+        "cost": {
+          "score_rows": 873,
+          "removed_actions": 0
+        },
+        "seconds": 0.5590955000079703,
+        "policy_usage": {
+          "requested_states": 873,
+          "cache_hits": 873,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "soft_cycle_penalty": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7,
+          "path_efficiency_on_success": 0.8847207792207794
+        },
+        "cost": {
+          "score_rows": 247,
+          "removed_actions": 0
+        },
+        "seconds": 0.3454771999968216,
+        "policy_usage": {
+          "requested_states": 247,
+          "cache_hits": 247,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "hard_cycle_ban": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.99,
+          "feasibility": 1.0,
+          "optimality": 0.71,
+          "path_efficiency_on_success": 0.8891627452233514
+        },
+        "cost": {
+          "score_rows": 248,
+          "removed_actions": 0
+        },
+        "seconds": 0.8701862999878358,
+        "policy_usage": {
+          "requested_states": 248,
+          "cache_hits": 245,
+          "forward_batches": 3,
+          "scored_states": 3
+        }
+      },
+      "top3_soft108": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.71,
+          "path_efficiency_on_success": 0.8928318903318905
+        },
+        "cost": {
+          "score_rows": 498,
+          "removed_actions": 0
+        },
+        "seconds": 4.336486599990167,
+        "policy_usage": {
+          "requested_states": 498,
+          "cache_hits": 474,
+          "forward_batches": 21,
+          "scored_states": 21
+        }
+      },
+      "top3_soft108_erase": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.89,
+          "path_efficiency_on_success": 0.9577539682539684
+        },
+        "cost": {
+          "score_rows": 498,
+          "removed_actions": 42
+        },
+        "seconds": 0.37453760000062175,
+        "policy_usage": {
+          "requested_states": 498,
+          "cache_hits": 498,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      }
+    },
+    "test_ood": {
+      "raw_probability": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.64,
+          "path_efficiency_on_success": 0.8814495890582847
+        },
+        "cost": {
+          "score_rows": 580,
+          "removed_actions": 0
+        },
+        "seconds": 30.796611999991,
+        "policy_usage": {
+          "requested_states": 580,
+          "cache_hits": 419,
+          "forward_batches": 161,
+          "scored_states": 161
+        }
+      },
+      "visit_probability": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.66,
+          "path_efficiency_on_success": 0.8551811521811521
+        },
+        "cost": {
+          "score_rows": 383,
+          "removed_actions": 0
+        },
+        "seconds": 11.120488300002762,
+        "policy_usage": {
+          "requested_states": 383,
+          "cache_hits": 327,
+          "forward_batches": 56,
+          "scored_states": 56
+        }
+      },
+      "raw_erase": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.92,
+          "feasibility": 1.0,
+          "optimality": 0.8,
+          "path_efficiency_on_success": 0.9471359558316081
+        },
+        "cost": {
+          "score_rows": 580,
+          "removed_actions": 332
+        },
+        "seconds": 0.8703540999995312,
+        "policy_usage": {
+          "requested_states": 580,
+          "cache_hits": 580,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "visit_erase": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.78,
+          "path_efficiency_on_success": 0.9098095238095238
+        },
+        "cost": {
+          "score_rows": 383,
+          "removed_actions": 68
+        },
+        "seconds": 0.543283800012432,
+        "policy_usage": {
+          "requested_states": 383,
+          "cache_hits": 383,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "top3_budget36": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.96,
+          "feasibility": 1.0,
+          "optimality": 0.66,
+          "path_efficiency_on_success": 0.877460618085618
+        },
+        "cost": {
+          "score_rows": 860,
+          "removed_actions": 0
+        },
+        "seconds": 27.817696300000534,
+        "policy_usage": {
+          "requested_states": 860,
+          "cache_hits": 696,
+          "forward_batches": 113,
+          "scored_states": 152
+        }
+      },
+      "top3_budget108": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.96,
+          "feasibility": 1.0,
+          "optimality": 0.66,
+          "path_efficiency_on_success": 0.877460618085618
+        },
+        "cost": {
+          "score_rows": 1137,
+          "removed_actions": 0
+        },
+        "seconds": 0.6891947999974946,
+        "policy_usage": {
+          "requested_states": 1137,
+          "cache_hits": 1137,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "soft_cycle_penalty": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.64,
+          "path_efficiency_on_success": 0.8502754892166656
+        },
+        "cost": {
+          "score_rows": 369,
+          "removed_actions": 0
+        },
+        "seconds": 0.54152630000317,
+        "policy_usage": {
+          "requested_states": 369,
+          "cache_hits": 369,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "hard_cycle_ban": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 0.98,
+          "feasibility": 1.0,
+          "optimality": 0.66,
+          "path_efficiency_on_success": 0.8624017139323261
+        },
+        "cost": {
+          "score_rows": 344,
+          "removed_actions": 0
+        },
+        "seconds": 0.5185938000067836,
+        "policy_usage": {
+          "requested_states": 344,
+          "cache_hits": 344,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "top3_soft108": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.69,
+          "path_efficiency_on_success": 0.8769076479076479
+        },
+        "cost": {
+          "score_rows": 780,
+          "removed_actions": 0
+        },
+        "seconds": 5.86253920001036,
+        "policy_usage": {
+          "requested_states": 780,
+          "cache_hits": 750,
+          "forward_batches": 24,
+          "scored_states": 25
+        }
+      },
+      "top3_soft108_erase": {
+        "metrics": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.84,
+          "path_efficiency_on_success": 0.9377142857142857
+        },
+        "cost": {
+          "score_rows": 780,
+          "removed_actions": 46
+        },
+        "seconds": 0.5491629000025569,
+        "policy_usage": {
+          "requested_states": 780,
+          "cache_hits": 780,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      }
+    },
+    "test_generated": {
+      "raw_probability": {
+        "metrics": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "cost": {
+          "score_rows": 1044,
+          "removed_actions": 0
+        },
+        "seconds": 9.800068000011379,
+        "policy_usage": {
+          "requested_states": 1044,
+          "cache_hits": 1006,
+          "forward_batches": 38,
+          "scored_states": 38
+        }
+      },
+      "visit_probability": {
+        "metrics": {
+          "n": 29,
+          "success_rate": 0.896551724137931,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1352272047158809
+        },
+        "cost": {
+          "score_rows": 283,
+          "removed_actions": 0
+        },
+        "seconds": 20.423656300001312,
+        "policy_usage": {
+          "requested_states": 283,
+          "cache_hits": 188,
+          "forward_batches": 95,
+          "scored_states": 95
+        }
+      },
+      "raw_erase": {
+        "metrics": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": null
+        },
+        "cost": {
+          "score_rows": 1044,
+          "removed_actions": 2010
+        },
+        "seconds": 1.5209062999929301,
+        "policy_usage": {
+          "requested_states": 1044,
+          "cache_hits": 1044,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "visit_erase": {
+        "metrics": {
+          "n": 29,
+          "success_rate": 0.896551724137931,
+          "feasibility": 1.0,
+          "optimality": 0.3103448275862069,
+          "path_efficiency_on_success": 0.7731830970961405
+        },
+        "cost": {
+          "score_rows": 283,
+          "removed_actions": 1104
+        },
+        "seconds": 0.3906950999953551,
+        "policy_usage": {
+          "requested_states": 283,
+          "cache_hits": 283,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "top3_budget36": {
+        "metrics": {
+          "n": 29,
+          "success_rate": 0.27586206896551724,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.13626112613988395
+        },
+        "cost": {
+          "score_rows": 836,
+          "removed_actions": 0
+        },
+        "seconds": 6.850807800001348,
+        "policy_usage": {
+          "requested_states": 836,
+          "cache_hits": 804,
+          "forward_batches": 32,
+          "scored_states": 32
+        }
+      },
+      "top3_budget108": {
+        "metrics": {
+          "n": 29,
+          "success_rate": 0.27586206896551724,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.13626112613988395
+        },
+        "cost": {
+          "score_rows": 2295,
+          "removed_actions": 0
+        },
+        "seconds": 1.1945193999999901,
+        "policy_usage": {
+          "requested_states": 2295,
+          "cache_hits": 2295,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "soft_cycle_penalty": {
+        "metrics": {
+          "n": 29,
+          "success_rate": 0.896551724137931,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.13289143942199344
+        },
+        "cost": {
+          "score_rows": 303,
+          "removed_actions": 0
+        },
+        "seconds": 1.226732199997059,
+        "policy_usage": {
+          "requested_states": 303,
+          "cache_hits": 299,
+          "forward_batches": 4,
+          "scored_states": 4
+        }
+      },
+      "hard_cycle_ban": {
+        "metrics": {
+          "n": 29,
+          "success_rate": 0.6551724137931034,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.1407706239288172
+        },
+        "cost": {
+          "score_rows": 104,
+          "removed_actions": 0
+        },
+        "seconds": 0.17885019999812357,
+        "policy_usage": {
+          "requested_states": 104,
+          "cache_hits": 104,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      },
+      "top3_soft108": {
+        "metrics": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "path_efficiency_on_success": 0.13683730226156052
+        },
+        "cost": {
+          "score_rows": 534,
+          "removed_actions": 0
+        },
+        "seconds": 11.26369189999241,
+        "policy_usage": {
+          "requested_states": 534,
+          "cache_hits": 473,
+          "forward_batches": 42,
+          "scored_states": 55
+        }
+      },
+      "top3_soft108_erase": {
+        "metrics": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "path_efficiency_on_success": 0.8682539682539682
+        },
+        "cost": {
+          "score_rows": 534,
+          "removed_actions": 1048
+        },
+        "seconds": 0.34616400000231806,
+        "policy_usage": {
+          "requested_states": 534,
+          "cache_hits": 534,
+          "forward_batches": 0,
+          "scored_states": 0
+        }
+      }
+    }
+  },
+  "full_200_replay": {
+    "raw_probability": {
+      "n": 200,
+      "success_rate": 0.855,
+      "feasibility": 1.0,
+      "optimality": 0.85,
+      "path_efficiency_on_success": 0.9987004548408057
+    },
+    "visit_probability": {
+      "n": 200,
+      "success_rate": 0.985,
+      "feasibility": 1.0,
+      "optimality": 0.85,
+      "path_efficiency_on_success": 0.884739518276095
+    },
+    "raw_erase": {
+      "n": 200,
+      "success_rate": 0.855,
+      "feasibility": 1.0,
+      "optimality": 0.85,
+      "path_efficiency_on_success": 0.9987004548408057
+    },
+    "visit_erase": {
+      "n": 200,
+      "success_rate": 0.985,
+      "feasibility": 1.0,
+      "optimality": 0.895,
+      "path_efficiency_on_success": 0.9689367426511545
+    },
+    "top3_budget36": {
+      "n": 200,
+      "success_rate": 0.895,
+      "feasibility": 1.0,
+      "optimality": 0.85,
+      "path_efficiency_on_success": 0.9601556803737255
+    },
+    "top3_budget108": {
+      "n": 200,
+      "success_rate": 0.895,
+      "feasibility": 1.0,
+      "optimality": 0.85,
+      "path_efficiency_on_success": 0.9601556803737255
+    },
+    "soft_cycle_penalty": {
+      "n": 200,
+      "success_rate": 0.985,
+      "feasibility": 1.0,
+      "optimality": 0.85,
+      "path_efficiency_on_success": 0.8844312446840082
+    },
+    "hard_cycle_ban": {
+      "n": 200,
+      "success_rate": 0.95,
+      "feasibility": 1.0,
+      "optimality": 0.85,
+      "path_efficiency_on_success": 0.9129074717496071
+    },
+    "top3_soft108": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.85,
+      "path_efficiency_on_success": 0.8737302977168153
+    },
+    "top3_soft108_erase": {
+      "n": 200,
+      "success_rate": 1.0,
+      "feasibility": 1.0,
+      "optimality": 0.925,
+      "path_efficiency_on_success": 0.9797857142857143
+    }
+  },
+  "selection": {
+    "variant": {
+      "name": "top3_soft108_erase",
+      "mode": "beam_soft",
+      "score_cap": 108,
+      "erase": true
+    },
+    "rank": [
+      0.7108695652173913,
+      0.9782608695652174,
+      -657
+    ],
+    "selection_source": "dev only"
+  },
+  "completed": {
+    "completed": true,
+    "chosen": {
+      "name": "top3_soft108_erase",
+      "mode": "beam_soft",
+      "score_cap": 108,
+      "erase": true
+    },
+    "device": "cpu",
+    "elapsed_seconds": 341.7027550000057,
+    "gpu_calls": 0
+  },
+  "audit": {
+    "passed": true,
+    "checks": 1156,
+    "method_cases": 3020,
+    "official_executor": true,
+    "score_and_action_caps_checked": true,
+    "probabilities_sum_one": true,
+    "loop_erasure_endpoint_and_pairs_checked": true,
+    "selection_dev_only": true,
+    "endpoint_checks": 906
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "backoff": 36,
+  "source": "dev_candidates50 only",
+  "criterion": "dev_candidates50 only: success, optimality, fewer score rows, fewer enabled features; budget36 excluded from selection",
+  "by_feedback": {
+    "model": {
+      "variant": "T0P1E0",
+      "backend": {
+        "mode": "soft",
+        "score_cap": 108,
+        "erase": false
+      }
+    },
+    "vocabulary": {
+      "variant": "T0P1E0",
+      "backend": {
+        "mode": "soft",
+        "score_cap": 108,
+        "erase": false
+      }
+    },
+    "terminal": {
+      "variant": "T1P1E1",
+      "backend": {
+        "mode": "beam_soft",
+        "score_cap": 108,
+        "erase": true
+      }
+    },
+    "executor": {
+      "variant": "T1P1E1",
+      "backend": {
+        "mode": "beam_soft",
+        "score_cap": 108,
+        "erase": true
+      }
+    }
+  },
+  "main_recommendation": "terminal and executor retain T1P1E1; pure-model/vocabulary dev ties select cheaper penalty-only, with lower test optimality explicitly reported",
+  "evidence": "outputs\\r_factorial\\run_001",
+  "weights_sha256": "199332793094904518fff0a0c3597d082d12caebbe7378d911be3f0a09803f0a"
+}

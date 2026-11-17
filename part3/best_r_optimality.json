@@ -1,0 +1,21 @@
+{
+  "variant": {
+    "name": "top3_soft108_erase",
+    "mode": "beam_soft",
+    "score_cap": 108,
+    "erase": true
+  },
+  "selection": "development unconditional optimality first, success second, logical scoring cost third",
+  "source_run": "outputs\\r_variants\\run_002",
+  "weights_sha256": "199332793094904518fff0a0c3597d082d12caebbe7378d911be3f0a09803f0a",
+  "feedback": "exact executor",
+  "device_measured": "cpu",
+  "full_200_replay": {
+    "n": 200,
+    "success_rate": 1.0,
+    "feasibility": 1.0,
+    "optimality": 0.925,
+    "path_efficiency_on_success": 0.9797857142857143
+  },
+  "note": "R callable ppnl.repair_variants.repair; does not replace previous frozen study selection"
+}

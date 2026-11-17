@@ -1,0 +1,5106 @@
+{
+  "selected": {
+    "model": 2,
+    "vocabulary": 1,
+    "terminal": 2,
+    "executor": 2
+  },
+  "results": {
+    "dev_candidates": {
+      "model": {
+        "1": {
+          "n": 50,
+          "success_rate": 0.28,
+          "feasibility": 0.8,
+          "optimality": 0.28,
+          "score_rows": 112
+        },
+        "2": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.28,
+          "score_rows": 143
+        },
+        "3": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "4": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "5": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "6": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "7": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "8": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "9": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "10": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "11": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "12": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "13": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "14": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "15": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "16": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "17": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "18": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "19": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "20": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "21": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "22": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "23": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "24": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "25": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "26": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "27": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "28": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "29": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "30": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "31": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "32": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "33": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "34": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "35": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "36": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        }
+      },
+      "vocabulary": {
+        "1": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.28,
+          "score_rows": 105
+        },
+        "2": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.28,
+          "score_rows": 131
+        },
+        "3": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 151
+        },
+        "4": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "5": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "6": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "7": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "8": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "9": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "10": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "11": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "12": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "13": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "14": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "15": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "16": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "17": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "18": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "19": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "20": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "21": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "22": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "23": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "24": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "25": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "26": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "27": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "28": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "29": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "30": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "31": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "32": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "33": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "34": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "35": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        },
+        "36": {
+          "n": 50,
+          "success_rate": 0.3,
+          "feasibility": 0.82,
+          "optimality": 0.26,
+          "score_rows": 157
+        }
+      },
+      "terminal": {
+        "1": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.74,
+          "score_rows": 233
+        },
+        "2": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 322
+        },
+        "3": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.76,
+          "score_rows": 398
+        },
+        "4": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 449
+        },
+        "5": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 471
+        },
+        "6": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 498
+        },
+        "7": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 501
+        },
+        "8": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "9": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "10": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "11": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "12": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "13": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "14": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "15": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "16": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "17": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "18": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "19": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "20": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "21": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "22": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "23": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "24": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "25": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "26": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "27": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "28": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "29": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "30": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "31": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "32": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "33": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "34": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "35": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        },
+        "36": {
+          "n": 50,
+          "success_rate": 0.82,
+          "feasibility": 0.82,
+          "optimality": 0.78,
+          "score_rows": 503
+        }
+      },
+      "executor": {
+        "1": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.92,
+          "score_rows": 274
+        },
+        "2": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 381
+        },
+        "3": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.94,
+          "score_rows": 475
+        },
+        "4": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 544
+        },
+        "5": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 578
+        },
+        "6": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 611
+        },
+        "7": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 618
+        },
+        "8": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "9": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "10": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "11": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "12": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "13": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "14": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "15": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "16": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "17": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "18": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "19": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "20": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "21": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "22": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "23": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "24": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "25": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "26": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "27": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "28": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "29": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "30": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "31": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "32": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "33": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "34": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "35": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        },
+        "36": {
+          "n": 50,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 620
+        }
+      }
+    },
+    "dev_generated": {
+      "model": {
+        "1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "2": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "3": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "4": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "5": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "6": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "7": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "8": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "9": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "10": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "11": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "12": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "13": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "14": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "15": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "16": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "17": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "18": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "19": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "20": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "21": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "22": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "23": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "24": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "25": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "26": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "27": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "28": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "29": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "30": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "31": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "32": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "33": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "34": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "35": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "36": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        }
+      },
+      "vocabulary": {
+        "1": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "2": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "3": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "4": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "5": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "6": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "7": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "8": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "9": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "10": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "11": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "12": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "13": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "14": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "15": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "16": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "17": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "18": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "19": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "20": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "21": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "22": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "23": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "24": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "25": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "26": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "27": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "28": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "29": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "30": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "31": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "32": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "33": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "34": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "35": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "36": {
+          "n": 23,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        }
+      },
+      "terminal": {
+        "1": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 378
+        },
+        "2": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 473
+        },
+        "3": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 378
+        },
+        "4": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 461
+        },
+        "5": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 348
+        },
+        "6": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 461
+        },
+        "7": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 348
+        },
+        "8": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 461
+        },
+        "9": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 348
+        },
+        "10": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 461
+        },
+        "11": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 348
+        },
+        "12": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 437
+        },
+        "13": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 342
+        },
+        "14": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5652173913043478,
+          "score_rows": 425
+        },
+        "15": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 342
+        },
+        "16": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5652173913043478,
+          "score_rows": 413
+        },
+        "17": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 354
+        },
+        "18": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5652173913043478,
+          "score_rows": 389
+        },
+        "19": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 348
+        },
+        "20": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5652173913043478,
+          "score_rows": 377
+        },
+        "21": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 336
+        },
+        "22": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 347
+        },
+        "23": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 336
+        },
+        "24": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 323
+        },
+        "25": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 336
+        },
+        "26": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 359
+        },
+        "27": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 372
+        },
+        "28": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 353
+        },
+        "29": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 360
+        },
+        "30": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 377
+        },
+        "31": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6956521739130435,
+          "score_rows": 403
+        },
+        "32": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 402
+        },
+        "33": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6956521739130435,
+          "score_rows": 460
+        },
+        "34": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 461
+        },
+        "35": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.782608695652174,
+          "score_rows": 555
+        },
+        "36": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.782608695652174,
+          "score_rows": 538
+        }
+      },
+      "executor": {
+        "1": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 378
+        },
+        "2": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 473
+        },
+        "3": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 378
+        },
+        "4": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 461
+        },
+        "5": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 348
+        },
+        "6": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 461
+        },
+        "7": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 348
+        },
+        "8": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 461
+        },
+        "9": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 348
+        },
+        "10": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 461
+        },
+        "11": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 348
+        },
+        "12": {
+          "n": 23,
+          "success_rate": 0.9565217391304348,
+          "feasibility": 1.0,
+          "optimality": 0.5217391304347826,
+          "score_rows": 437
+        },
+        "13": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 342
+        },
+        "14": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5652173913043478,
+          "score_rows": 425
+        },
+        "15": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 342
+        },
+        "16": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5652173913043478,
+          "score_rows": 413
+        },
+        "17": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 354
+        },
+        "18": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5652173913043478,
+          "score_rows": 389
+        },
+        "19": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 348
+        },
+        "20": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5652173913043478,
+          "score_rows": 377
+        },
+        "21": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 336
+        },
+        "22": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 347
+        },
+        "23": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 336
+        },
+        "24": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 323
+        },
+        "25": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 336
+        },
+        "26": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 359
+        },
+        "27": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 372
+        },
+        "28": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 353
+        },
+        "29": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6521739130434783,
+          "score_rows": 360
+        },
+        "30": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 377
+        },
+        "31": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6956521739130435,
+          "score_rows": 403
+        },
+        "32": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 402
+        },
+        "33": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6956521739130435,
+          "score_rows": 460
+        },
+        "34": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6086956521739131,
+          "score_rows": 461
+        },
+        "35": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.782608695652174,
+          "score_rows": 555
+        },
+        "36": {
+          "n": 23,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.782608695652174,
+          "score_rows": 538
+        }
+      }
+    },
+    "test_id": {
+      "model": {
+        "1": {
+          "n": 100,
+          "success_rate": 0.26,
+          "feasibility": 0.74,
+          "optimality": 0.26,
+          "score_rows": 230
+        },
+        "2": {
+          "n": 100,
+          "success_rate": 0.28,
+          "feasibility": 0.76,
+          "optimality": 0.28,
+          "score_rows": 271
+        },
+        "3": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "4": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "5": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "6": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "7": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "8": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "9": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "10": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "11": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "12": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "13": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "14": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "15": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "16": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "17": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "18": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "19": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "20": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "21": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "22": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "23": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "24": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "25": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "26": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "27": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "28": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "29": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "30": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "31": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "32": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "33": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "34": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "35": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "36": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        }
+      },
+      "vocabulary": {
+        "1": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 257
+        },
+        "2": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 282
+        },
+        "3": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 295
+        },
+        "4": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 305
+        },
+        "5": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "6": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "7": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "8": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "9": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "10": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "11": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "12": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "13": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "14": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "15": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "16": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "17": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "18": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "19": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "20": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "21": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "22": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "23": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "24": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "25": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "26": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "27": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "28": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "29": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "30": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "31": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "32": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "33": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "34": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "35": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        },
+        "36": {
+          "n": 100,
+          "success_rate": 0.3,
+          "feasibility": 0.78,
+          "optimality": 0.3,
+          "score_rows": 313
+        }
+      },
+      "terminal": {
+        "1": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.71,
+          "score_rows": 506
+        },
+        "2": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.74,
+          "score_rows": 623
+        },
+        "3": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.73,
+          "score_rows": 722
+        },
+        "4": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.75,
+          "score_rows": 788
+        },
+        "5": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 831
+        },
+        "6": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 863
+        },
+        "7": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 877
+        },
+        "8": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 876
+        },
+        "9": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "10": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "11": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "12": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "13": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "14": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "15": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "16": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "17": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "18": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "19": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "20": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "21": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "22": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "23": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "24": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "25": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "26": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "27": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "28": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "29": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "30": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "31": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "32": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "33": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "34": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "35": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        },
+        "36": {
+          "n": 100,
+          "success_rate": 0.78,
+          "feasibility": 0.78,
+          "optimality": 0.76,
+          "score_rows": 879
+        }
+      },
+      "executor": {
+        "1": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.92,
+          "score_rows": 709
+        },
+        "2": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.94,
+          "score_rows": 852
+        },
+        "3": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.94,
+          "score_rows": 971
+        },
+        "4": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 1053
+        },
+        "5": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1101
+        },
+        "6": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1133
+        },
+        "7": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1147
+        },
+        "8": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1146
+        },
+        "9": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "10": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "11": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "12": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "13": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "14": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "15": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "16": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "17": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "18": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "19": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "20": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "21": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "22": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "23": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "24": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "25": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "26": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "27": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "28": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "29": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "30": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "31": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "32": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "33": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "34": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "35": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "36": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        }
+      }
+    },
+    "test_ood": {
+      "model": {
+        "1": {
+          "n": 100,
+          "success_rate": 0.47,
+          "feasibility": 0.71,
+          "optimality": 0.46,
+          "score_rows": 445
+        },
+        "2": {
+          "n": 100,
+          "success_rate": 0.5,
+          "feasibility": 0.74,
+          "optimality": 0.49,
+          "score_rows": 493
+        },
+        "3": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "4": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "5": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "6": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "7": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "8": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "9": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "10": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "11": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "12": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "13": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "14": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "15": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "16": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "17": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "18": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "19": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "20": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "21": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "22": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "23": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "24": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "25": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "26": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "27": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "28": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "29": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "30": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "31": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "32": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "33": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "34": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "35": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        },
+        "36": {
+          "n": 100,
+          "success_rate": 0.52,
+          "feasibility": 0.76,
+          "optimality": 0.51,
+          "score_rows": 549
+        }
+      },
+      "vocabulary": {
+        "1": {
+          "n": 100,
+          "success_rate": 0.56,
+          "feasibility": 0.8,
+          "optimality": 0.52,
+          "score_rows": 511
+        },
+        "2": {
+          "n": 100,
+          "success_rate": 0.56,
+          "feasibility": 0.8,
+          "optimality": 0.55,
+          "score_rows": 525
+        },
+        "3": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 550
+        },
+        "4": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 563
+        },
+        "5": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "6": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "7": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "8": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "9": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "10": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "11": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "12": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "13": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "14": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "15": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "16": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "17": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "18": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "19": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "20": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "21": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "22": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "23": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "24": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "25": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "26": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "27": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "28": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "29": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "30": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "31": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "32": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "33": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "34": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "35": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        },
+        "36": {
+          "n": 100,
+          "success_rate": 0.57,
+          "feasibility": 0.81,
+          "optimality": 0.56,
+          "score_rows": 568
+        }
+      },
+      "terminal": {
+        "1": {
+          "n": 100,
+          "success_rate": 0.8,
+          "feasibility": 0.8,
+          "optimality": 0.72,
+          "score_rows": 676
+        },
+        "2": {
+          "n": 100,
+          "success_rate": 0.8,
+          "feasibility": 0.8,
+          "optimality": 0.74,
+          "score_rows": 738
+        },
+        "3": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.76,
+          "score_rows": 796
+        },
+        "4": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 830
+        },
+        "5": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 857
+        },
+        "6": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 870
+        },
+        "7": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 873
+        },
+        "8": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "9": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "10": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "11": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "12": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "13": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "14": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "15": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "16": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "17": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "18": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "19": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "20": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "21": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "22": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "23": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "24": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "25": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "26": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "27": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "28": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "29": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "30": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "31": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "32": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "33": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "34": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "35": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        },
+        "36": {
+          "n": 100,
+          "success_rate": 0.81,
+          "feasibility": 0.81,
+          "optimality": 0.78,
+          "score_rows": 876
+        }
+      },
+      "executor": {
+        "1": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.9,
+          "score_rows": 926
+        },
+        "2": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.92,
+          "score_rows": 1007
+        },
+        "3": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.94,
+          "score_rows": 1057
+        },
+        "4": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.96,
+          "score_rows": 1100
+        },
+        "5": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1133
+        },
+        "6": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1143
+        },
+        "7": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1146
+        },
+        "8": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "9": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "10": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "11": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "12": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "13": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "14": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "15": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "16": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "17": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "18": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "19": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "20": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "21": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "22": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "23": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "24": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "25": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "26": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "27": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "28": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "29": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "30": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "31": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "32": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "33": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "34": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "35": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        },
+        "36": {
+          "n": 100,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.97,
+          "score_rows": 1149
+        }
+      }
+    },
+    "test_generated": {
+      "model": {
+        "1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "2": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "3": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "4": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "5": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "6": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "7": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "8": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "9": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "10": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "11": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "12": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "13": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "14": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "15": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "16": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "17": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "18": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "19": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "20": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "21": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "22": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "23": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "24": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "25": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "26": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "27": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "28": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "29": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "30": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "31": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "32": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "33": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "34": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "35": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "36": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        }
+      },
+      "vocabulary": {
+        "1": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "2": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "3": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "4": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "5": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "6": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "7": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "8": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "9": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "10": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "11": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "12": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "13": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "14": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "15": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "16": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "17": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "18": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "19": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "20": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "21": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "22": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "23": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "24": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "25": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "26": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "27": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "28": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "29": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "30": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "31": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "32": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "33": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "34": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "35": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        },
+        "36": {
+          "n": 29,
+          "success_rate": 0.0,
+          "feasibility": 1.0,
+          "optimality": 0.0,
+          "score_rows": 0
+        }
+      },
+      "terminal": {
+        "1": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "2": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 534
+        },
+        "3": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "4": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 534
+        },
+        "5": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "6": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 534
+        },
+        "7": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 362
+        },
+        "8": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 534
+        },
+        "9": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 362
+        },
+        "10": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 516
+        },
+        "11": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 350
+        },
+        "12": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 456
+        },
+        "13": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 350
+        },
+        "14": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 378
+        },
+        "15": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 362
+        },
+        "16": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 384
+        },
+        "17": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "18": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 384
+        },
+        "19": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "20": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 384
+        },
+        "21": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "22": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 384
+        },
+        "23": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "24": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 384
+        },
+        "25": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 398
+        },
+        "26": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 408
+        },
+        "27": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 398
+        },
+        "28": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 408
+        },
+        "29": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 410
+        },
+        "30": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 420
+        },
+        "31": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 416
+        },
+        "32": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 432
+        },
+        "33": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 417
+        },
+        "34": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6206896551724138,
+          "score_rows": 461
+        },
+        "35": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6206896551724138,
+          "score_rows": 472
+        },
+        "36": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7241379310344828,
+          "score_rows": 508
+        }
+      },
+      "executor": {
+        "1": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "2": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 534
+        },
+        "3": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "4": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 534
+        },
+        "5": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "6": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 534
+        },
+        "7": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 362
+        },
+        "8": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 534
+        },
+        "9": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 362
+        },
+        "10": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 516
+        },
+        "11": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 350
+        },
+        "12": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 456
+        },
+        "13": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 350
+        },
+        "14": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 378
+        },
+        "15": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 362
+        },
+        "16": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 384
+        },
+        "17": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "18": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 384
+        },
+        "19": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "20": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 384
+        },
+        "21": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "22": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 384
+        },
+        "23": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 374
+        },
+        "24": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 384
+        },
+        "25": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 398
+        },
+        "26": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 408
+        },
+        "27": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 398
+        },
+        "28": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 408
+        },
+        "29": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 410
+        },
+        "30": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 420
+        },
+        "31": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5517241379310345,
+          "score_rows": 416
+        },
+        "32": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 432
+        },
+        "33": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.5172413793103449,
+          "score_rows": 417
+        },
+        "34": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6206896551724138,
+          "score_rows": 461
+        },
+        "35": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.6206896551724138,
+          "score_rows": 472
+        },
+        "36": {
+          "n": 29,
+          "success_rate": 1.0,
+          "feasibility": 1.0,
+          "optimality": 0.7241379310344828,
+          "score_rows": 508
+        }
+      }
+    }
+  },
+  "audit": {
+    "outcomes_recomputed": 43488,
+    "hashes_match": true,
+    "previous_k36_exactly_reproduced": true,
+    "recommendation": "no replacement of stable K36; dev-selected shorter cut did not demonstrate quality gains on held-out tests"
+  }
+}

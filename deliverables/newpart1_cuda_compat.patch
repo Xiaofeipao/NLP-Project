@@ -1,0 +1,11 @@
+--- a/state_baselines/run.py
++++ b/state_baselines/run.py
+@@ -131,7 +131,7 @@
+     with gpu_budget(args.ledger, 20, f"phase1:{args.command}:{args.model}") as check:
+         runner = Seq2Seq(str(args.pretrained), CONFIG)
+         if args.model == "flan_t5_base":
+-            runner.model.gradient_checkpointing_enable()
++            # Compatibility: activation checkpoint recomputation disabled; objective/batches unchanged.
+             runner.model.config.use_cache = False
+         parameters = list(runner.model.parameters())
+         optimizer = torch.optim.AdamW(parameters, lr=settings["learning_rate"],
