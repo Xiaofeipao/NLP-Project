@@ -1,0 +1,29 @@
+{
+  "peer_commit": "6939390",
+  "independent_reproduction": true,
+  "checkpoint_sha256": "bd1f0fedf24aea433c998fc22749c72cf3d597027149e6f4bffdf40ffb231072",
+  "weights_included": false,
+  "runtime_compatibility": "activation checkpoint recomputation disabled after two backward failures; same objective/data/updates",
+  "files": {
+    "deliverables\\newpart1_transfer_evidence.zip": {
+      "sha256": "79f8392cdfb16e3aa376825e70fbee2065812cacb5ac2c1c376e201593ec1810",
+      "bytes": 2510286
+    },
+    "deliverables\\newpart1_compat_training_source.zip": {
+      "sha256": "0c5bbda25e866dca7480925f0cca6f98dc255a78edc040e3006d1330e2e581ab",
+      "bytes": 531410
+    },
+    "deliverables\\newpart1_training_source_6939390.zip": {
+      "sha256": "f61398e362a9a1accf52a9048074707a201c45432aa1a04c860b03fc604efd73",
+      "bytes": 532627
+    },
+    "deliverables\\newpart1_cuda_compat.patch": {
+      "sha256": "0c4e5a37aabce0a3e0f312f0cd06152e6a770efa86667868f6997f5fc24cfba3",
+      "bytes": 623
+    }
+  },
+  "public_cpu_recompute_pass": true,
+  "outputs_recomputed": 158400,
+  "selected_epoch": 2,
+  "main_model_replaced": false
+}

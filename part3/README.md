@@ -41,3 +41,8 @@ CLI没有替换旧main的默认规划器，也没有删除FirstPart或历史研�
 ## 新地图单错/双错 × 原始/增强R
 
 冻结两种R、4种V来源和7种规则，在400配对泛化环境上评测，详见[结果](../docs/generalization_r_pair_results.md)。双错数据仅测试，生成命令：`python -m scripts.build_generalization_double --output outputs/double_rebuild`。GPU评测：`python -m part3.run_generalization_r_pair --out outputs/generalization_r_pair/new_run`；CPU复核/报告：`python -m part3.report_generalization_r_pair --run outputs/generalization_r_pair/run_001`。单错V复用已核验历史输出，双错V重新推理，两种R均重新执行，无新训练或测试选型。
+
+
+## NewPart1拆分损失迁移实验
+
+同伴源码6939390和本地兼容训练均隔离保存，未覆盖旧主模型。见[主要发现](../docs/newpart1_findings.md)和[全部结果](../docs/newpart1_transfer_results.md)。原始/兼容源码包及patch在deliverables，checkpoint仍需本地准备，权重不发布。GPU命令：`python -m part3.run_newpart1_transfer --checkpoint LOCAL_SPLIT_LOSS_CHECKPOINT --out NEW_RUN --compat-no-checkpoint`。无权重复核：解压`deliverables/newpart1_transfer_evidence.zip`后，`python -m part3.report_newpart1_transfer --run EXTRACTED/evaluation --public-evidence`。完整规则均列出，不按测试选新方法。

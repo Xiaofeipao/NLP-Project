@@ -4,6 +4,7 @@ from collections import Counter
 import hashlib
 import json
 from pathlib import Path
+import time
 import zipfile
 
 from ppnl.core import Grid,execute,parse_verdict,OfficialOracle
@@ -65,7 +66,7 @@ def main():
         'selection':'frozen methods; all tests exploratory; no selection on tests','generation':'fresh raw greedy36 per layout pool, shared single/double environments'})
     with zipfile.ZipFile(a.out/'source_snapshot.zip','w',zipfile.ZIP_DEFLATED) as z:
         for f in [__file__,'ppnl/verifier_rules.py','ppnl/repair_variants.py','scripts/run_phase2_feedback.py','ppnl/modeling.py']:z.write(f)
-    results={};audit=0
+    results={};audit=0;throughput={}
     with gpu_budget(a.out/'gpu_ledger.json',2,'NewPart1 transfer all map old-new R') as check:
         runner=Seq2Seq(str(a.checkpoint),config);scorer=NeuralPolicy(runner,check)
         oracle=OfficialOracle('vendor/ppnl/executor-point-sg.py');newcache={}
@@ -83,7 +84,13 @@ def main():
                 print('V',name,style,flush=True)
                 inputs=[prompt('verification',g,c,input_format='structured' if style=='structured' else 'vanilla') for g,c in zip(grids,candidates)]
                 if style=='review':inputs=[s+'\nYour previous diagnosis: '+v+'\nCheck the action indices and endpoint again. Return only the diagnosis in the required format.' for s,v in zip(inputs,predictions['vanilla'])]
+                tick=time.monotonic()
                 predictions[style]=runner.predict(inputs,check)
+                elapsed=time.monotonic()-tick
+                throughput[f'{name}:{style}']={'examples':len(inputs),'seconds':elapsed,
+                    'examples_per_second':len(inputs)/elapsed,
+                    'max_input_tokens':max(len(runner.tokenizer(s)['input_ids']) for s in inputs)}
+                write_json(a.out/'v_throughput.json',throughput)
             predictions['executor']=[t.label() for t in truth]
             write_jsonl(a.out/f'{name}_inputs.jsonl',[{'id':r['id'],'grid':r['grid'],'candidate':c,'gold':t.label(),'predictions':{s:v[i] for s,v in predictions.items()}} for i,(r,c,t) in enumerate(zip(rows,candidates,truth))])
             bad=[i for i,t in enumerate(truth) if not t.valid];good=[i for i,t in enumerate(truth) if t.valid]
@@ -113,7 +120,8 @@ def main():
                             'statuses':dict(Counter(t['status'] for t in traces))}
                         write_jsonl(a.out/f'{name}_{source}_{rule}_{backend}.jsonl',traces)
                 write_json(a.out/'results.json',results);print(name,source,'done',flush=True)
-        write_json(a.out/'completed.json',{'official_agreement_count':audit,'usage':scorer.usage,'training_updates':0})
+        write_json(a.out/'completed.json',{'official_agreement_count':audit,'usage':scorer.usage,'training_updates':0,
+            'peak_reserved_bytes':runner.torch.cuda.max_memory_reserved(),'peak_allocated_bytes':runner.torch.cuda.max_memory_allocated()})
 
 
 if __name__=='__main__':main()

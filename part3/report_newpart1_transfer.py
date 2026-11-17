@@ -5,6 +5,7 @@ import csv
 import hashlib
 import json
 from pathlib import Path
+import time
 
 from ppnl.core import Grid,execute
 from ppnl.data import read_jsonl,write_json
@@ -14,10 +15,17 @@ from ppnl.evaluation import plan_metrics
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--run',type=Path,required=True)
-    a=p.parse_args();assert (a.run/'completed.json').exists()
+    p.add_argument('--public-evidence',action='store_true')
+    a=p.parse_args();started=time.monotonic();assert (a.run/'completed.json').exists()
     results=json.loads((a.run/'results.json').read_text());protocol=json.loads((a.run/'protocol.json').read_text())
-    for category in ['code_sha256','files_sha256']:
-        for f,h in protocol[category].items():assert hashlib.sha256(Path(f).read_bytes()).hexdigest()==h,f
+    if a.public_evidence:
+        public=json.loads((a.run.parent/'PUBLIC_EXPORT.json').read_text())
+        for relative,info in public['exports'].items():
+            f=a.run.parent/relative
+            assert hashlib.sha256(f.read_bytes()).hexdigest()==info['export_sha256'],relative
+    else:
+        for category in ['code_sha256','files_sha256']:
+            for f,h in protocol[category].items():assert hashlib.sha256(Path(f).read_bytes()).hexdigest()==h,f
     export=[];failure_audit={};checked=0
     lines=['# NewPart1新代码：本地复现与V/R跨地图对照','',
         '同伴分支NewPart1，提交6939390。主要改动：验证首个valid/invalid token CE和后续token平均CE各占一半，其他动作损失和两轮500更新协议不变。同伴未上传该模型实体权重，因此本轮在outputs/newpart1_code_6939390隔离导出源码，用冻结预训练revision独立复现。不是同伴原权重，不覆盖原实验。训练仅在开发集按原规则选epoch，测试全部复用且标为探索，不在新测试选策略。','',
@@ -69,7 +77,8 @@ def main():
                 assert q==y['verification']
                 lines.append(f'| {source}+{rule} | {100*x["judgment_accuracy"]:.1f} | {100*q["macro_f1"]:.1f} | {100*q["first_error_localization_accuracy"]:.1f}/{100*q["failure_type_accuracy"]:.1f} | {x["false_accepts"]}/{x["false_rejects"]} | {fmt(x["invalid_only"])} | {fmt(y["invalid_only"])} | {fmt(y["planning"])} |')
     write_json(a.run/'failure_cases.json',failure_audit)
-    write_json(a.run/'recompute_audit.json',{'outputs_recomputed':checked,'hashes_match':True,'executor_rules_idempotent':True})
+    write_json(a.run/'recompute_audit.json',{'outputs_recomputed':checked,'hashes_match':True,'executor_rules_idempotent':True,
+        'device':'cpu','cpu_audit_seconds':time.monotonic()-started,'public_export_verification':a.public_evidence})
     with Path('docs/newpart1_transfer_results.csv').open('w',newline='',encoding='utf-8-sig') as f:
         w=csv.DictWriter(f,fieldnames=list(export[0]));w.writeheader();w.writerows(export)
     write_json('docs/newpart1_transfer_results.json',results)
