@@ -112,6 +112,7 @@ def train(args):
     torch.set_num_threads(1)
     settings = CONFIG["training"]
     model = CONFIG["models"][args.model]
+    split_verification_loss = model.get("split_verification_loss", False)
     rows = read_jsonl(args.data / "train.jsonl")
     dev = read_jsonl(args.data / "dev.jsonl")
     expected = json.loads((args.out / "dataset_audit.json").read_bytes())["identity"]
@@ -139,6 +140,19 @@ def train(args):
             rows = [r for task in ("generation", "verification")
                     for r in [r for r in rows if r["task"] == task][:16]]
         features = runner.encode_rows(rows)
+        if split_verification_loss:
+            verdict_ids = {valid: runner.tokenizer.encode(word, add_special_tokens=False)
+                           for valid, word in ((True, "valid"), (False, "invalid"))}
+            if any(len(ids) != 1 for ids in verdict_ids.values()) or verdict_ids[True] == verdict_ids[False]:
+                raise ValueError("Split verification loss needs distinct single-token verdicts")
+            eos = runner.tokenizer.eos_token_id
+            for row, feature in zip(rows, features, strict=True):
+                if row["task"] == "verification":
+                    labels = feature["labels"]
+                    if (any(feature["policy_actions"]) or len(labels) < 2
+                            or labels[:1] != verdict_ids[row["valid"]] or labels[-1] != eos
+                            or (len(labels) == 2) != row["valid"]):
+                        raise ValueError(f"Invalid split-verification target: {row['id']}")
         action_index = next(i for i, row in enumerate(rows) if row["task"] == "generation")
         action_batch = runner.collate([features[action_index]]).to(runner.device)
         if action_batch["labels"][0, 0].item() not in runner.action_ids:
@@ -159,7 +173,7 @@ def train(args):
             for _, batch, scale, update in accumulated_batches(
                     loader, CONFIG["effective_batch"] // batch_size, "examples"):
                 check()
-                loss = runner.loss(batch.to(runner.device))
+                loss = runner.loss(batch.to(runner.device), split_verification_loss=split_verification_loss)
                 value = float(loss.detach())
                 if not torch.isfinite(loss).item():
                     raise ValueError("Non-finite training loss")
@@ -201,10 +215,11 @@ def train(args):
 
 def select(args):
     expected = identity(args)
+    names = (args.model,) if args.model else CONFIG["models"]
     results = {name: json.loads((args.out / "train" / name / "training.json").read_bytes())
-               for name in CONFIG["models"]}
+               for name in names}
     if any(r["identity"] != expected or r["updates"] != 500 for r in results.values()):
-        raise ValueError("All three complete training runs must match the current protocol")
+        raise ValueError("Selected training runs must be complete and match the current protocol")
     main = max(results, key=lambda name: (*rank(results[name]["best"]), -results[name]["parameters"]))
     write_json(args.out / "selection.json", {
         "main_model": main, "development": {name: r["best"] for name, r in results.items()},

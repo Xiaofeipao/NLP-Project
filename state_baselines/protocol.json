@@ -16,7 +16,7 @@
   },
   "models": {
     "flan_t5_small": {"repo": "google/flan-t5-small", "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab", "microbatch": 4},
-    "flan_t5_base": {"repo": "google/flan-t5-base", "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2", "microbatch": 1},
+    "flan_t5_base": {"repo": "google/flan-t5-base", "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2", "microbatch": 1, "split_verification_loss": true},
     "bart_base": {"repo": "facebook/bart-base", "revision": "aadd2ab0ae0c8268c7c9693540e9904811f36177", "microbatch": 4}
   }
 }

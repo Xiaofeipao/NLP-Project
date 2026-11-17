@@ -51,8 +51,8 @@ def confirmation(config, key):
     return item
 
 
-def action_set_loss(logits, labels, action_ids, allowed, mode):
-    """Per-example objective: four-action CE/set mass for policy, text CE for verifier."""
+def action_set_loss(logits, labels, action_ids, allowed, mode, *, split_verification_loss=False):
+    """Per-example action-set loss and verifier loss with optional status weighting."""
     import torch
     import torch.nn.functional as F
     is_policy = allowed.any(dim=1)
@@ -69,7 +69,13 @@ def action_set_loss(logits, labels, action_ids, allowed, mode):
     else:
         raise ValueError(mode)
     tokens = F.cross_entropy(logits.float().transpose(1, 2), labels, ignore_index=-100, reduction="none")
-    text_loss = tokens.sum(dim=1) / (labels != -100).sum(dim=1).clamp_min(1)
+    lengths = (labels != -100).sum(dim=1)
+    if split_verification_loss:
+        # Valid continues with EOS only. Invalid continues with step, reason and EOS.
+        continuation = tokens[:, 1:].sum(dim=1) / (lengths - 1).clamp_min(1)
+        text_loss = 0.5 * tokens[:, 0] + 0.5 * continuation
+    else:
+        text_loss = tokens.sum(dim=1) / lengths.clamp_min(1)
     return torch.where(is_policy, policy_loss, text_loss).mean()
 
 
@@ -158,12 +164,13 @@ class Seq2Seq:
         batch["policy_actions"] = self.torch.tensor(masks, dtype=self.torch.bool)
         return batch
 
-    def loss(self, batch):
+    def loss(self, batch, *, split_verification_loss=False):
         inputs = {k: v for k, v in batch.items() if k != "policy_actions"}
         output = self.model(**inputs)
         if self.policy_loss:
             return action_set_loss(output.logits, batch["labels"], self.action_ids,
-                                   batch["policy_actions"], self.policy_loss)
+                                   batch["policy_actions"], self.policy_loss,
+                                   split_verification_loss=split_verification_loss)
         return output.loss
 
     def predict(self, inputs, check=lambda: None):
