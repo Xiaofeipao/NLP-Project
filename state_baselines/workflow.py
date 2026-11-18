@@ -51,8 +51,8 @@ def verifier_report(rows, predictions):
     }
 
 
-def compare(runner, grids, plans, oracle, check):
-    predictions = verify(runner, grids, plans, check)
+def compare(runner, grids, plans, oracle, check, *, verifier=verify):
+    predictions = verifier(runner, grids, plans, check)
     records = []
     for grid, plan, prediction in zip(grids, plans, predictions, strict=True):
         truth = oracle.check(grid, plan)

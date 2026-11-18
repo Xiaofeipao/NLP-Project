@@ -1,5 +1,7 @@
 # PPNL：自然语言网格路径规划
 
+本分支收录 Flan-T5-base 的逐步验证 v1 和双标签 v2。[实验记录](docs/step_verification_v1_v2.md) · [输入输出与错误案例](docs/step_verification_cases.md) · [复现入口](state_baselines/README.md)
+
 NewPart1 在 FirstPart 选定的 Flan-T5-base 上采用拆分验证损失。实验记录包含开发结果、单错与双错验证、规则修复对照和错误案例。[实验记录](docs/state_policy_experiment_log.md) · [复现入口](state_baselines/README.md)
 
 本项目研究小型语言模型在单目标网格中的生成、验证和修复能力。模型输出 `up / down / left / right`；严格执行器报告 success（合法且到达目标）、feasibility（所有动作合法）和 optimality（成功且等于 BFS 最短路）。

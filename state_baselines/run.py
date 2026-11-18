@@ -3,6 +3,7 @@
 import argparse
 from collections import Counter
 from dataclasses import asdict
+from functools import partial
 import json
 from pathlib import Path
 import time
@@ -14,11 +15,14 @@ from ppnl.experiment_freeze import audit_splits, file_hash
 from ppnl.modeling import Seq2Seq, gpu_budget, require_cuda
 from ppnl.optimization import accumulated_batches
 from ppnl.policy import NAMES, NeuralPolicy, greedy_plans
+from state_baselines.prepare_dual_label_data import generation_row, verification_row
+from state_baselines.step_verification import step_prompt, verify_steps
 from state_baselines.workflow import compare, verifier_report, verify
 
 
 PROTOCOL = Path(__file__).with_name("protocol.json")
 CONFIG = json.loads(PROTOCOL.read_bytes())
+STATE_VERIFICATION_WEIGHT = 0.5
 SOURCES = (
     PROTOCOL, Path(__file__), Path(__file__).with_name("workflow.py"),
     *(Path("ppnl") / f"{name}.py" for name in (
@@ -36,16 +40,79 @@ def unique_grids(rows):
 
 
 def identity(args):
-    return {
+    result = {
         "source": {path.name: file_hash(path) for path in SOURCES},
         "data": {name: file_hash(args.data / f"{name}.jsonl")
                  for name in ("train", "dev", "test_id", "test_ood")},
         "manifest": file_hash(args.data / "manifest.json"),
         "executor": OfficialOracle(args.executor).sha256,
     }
+    if args.step_train:
+        result["step_verification"] = {
+            "train_sha256": file_hash(args.step_train),
+            "scanner_sha256": file_hash(Path(__file__).with_name("step_verification.py")),
+        }
+    if getattr(args, "dual_train", None):
+        result["dual_verification"] = {
+            "train_sha256": file_hash(args.dual_train),
+            "scanner_sha256": file_hash(Path(__file__).with_name("step_verification.py")),
+            "preparation_sha256": file_hash(Path(__file__).with_name("prepare_dual_label_data.py")),
+            "state_loss_weight": STATE_VERIFICATION_WEIGHT,
+        }
+    return result
+
+
+def training_rows(args):
+    rows = read_jsonl(args.data / "train.jsonl")
+    if getattr(args, "dual_train", None):
+        replacements = read_jsonl(args.dual_train)
+        oracle = OfficialOracle(args.executor)
+        for source, row in zip(rows, replacements, strict=True):
+            grid = Grid.from_dict(source["grid"])
+            build = generation_row if source["task"] == "generation" else verification_row
+            expected = build(source, grid, oracle)
+            if json.dumps(row, sort_keys=True) != json.dumps(expected, sort_keys=True):
+                raise ValueError(f"Dual label row does not match its source: {row['id']}")
+        return replacements
+    if not args.step_train:
+        return rows
+    replacements = read_jsonl(args.step_train)
+    by_parent = {row["parent_id"]: row for row in replacements}
+    original = {row["id"]: row for row in rows if row["task"] == "verification"}
+    if len(by_parent) != len(replacements) or by_parent.keys() != original.keys():
+        raise ValueError("Expected exactly one step verification row per original verification row")
+    for key, row in by_parent.items():
+        parent = original[key]
+        if row["task"] != "verification" or any(
+                row[k] != parent[k] for k in ("grid", "layout_id", "source_id", "valid", "reason")):
+            raise ValueError(f"Step verification row does not match its source: {row['id']}")
+    return [by_parent[row["id"]] if row["task"] == "verification" else row for row in rows]
+
+
+def state_rows(rows):
+    """Generate the V view of a G record without adding rows to the sampler."""
+    result = []
+    for index, row in enumerate(rows):
+        if "state_verification" in row:
+            label = row["state_verification"]
+            result.append((index, {
+                "id": row["id"] + "-state", "task": "verification", "valid": label["valid"],
+                "input": step_prompt(Grid.from_dict(row["grid"]), row["policy_position"], None),
+                "target": label["local_stop_target"],
+            }))
+    return result
+
+
+def collate_dual(runner, pairs):
+    primary = runner.collate([feature for feature, _ in pairs])
+    states = [state for _, state in pairs if state is not None]
+    if states:
+        primary["state_batch"] = runner.collate(states)
+    return primary
 
 
 def audit(args):
+    training_rows(args)
     result = audit_splits(args.data)
     oracle = OfficialOracle(args.executor)
     manifest = json.loads((args.data / "manifest.json").read_bytes())
@@ -73,7 +140,7 @@ def audit(args):
            for name, value in result["splits"].items()}, flush=True)
 
 
-def dev_eval(runner, rows, oracle, check, pilot):
+def dev_eval(runner, rows, oracle, check, pilot, verifier=verify):
     policy_rows = [row for row in rows if row["task"] == "generation"]
     verification = [row for row in rows if row["task"] == "verification"]
     if pilot:
@@ -89,7 +156,7 @@ def dev_eval(runner, rows, oracle, check, pilot):
     plans = greedy_plans(grids, scorer, masked=False, max_steps=CONFIG["max_steps"])
     for grid, plan in zip(grids, plans, strict=True):
         oracle.check(grid, plan)
-    predictions = runner.predict([row["input"] for row in verification], check)
+    predictions = verifier(runner, grids_for(verification), [row["candidate"] for row in verification], check)
     return {
         "planning": plan_metrics(grids, plans),
         "action_accuracy": action_accuracy,
@@ -113,7 +180,7 @@ def train(args):
     settings = CONFIG["training"]
     model = CONFIG["models"][args.model]
     split_verification_loss = model.get("split_verification_loss", False)
-    rows = read_jsonl(args.data / "train.jsonl")
+    rows = training_rows(args)
     dev = read_jsonl(args.data / "dev.jsonl")
     expected = json.loads((args.out / "dataset_audit.json").read_bytes())["identity"]
     if identity(args) != expected:
@@ -140,13 +207,16 @@ def train(args):
             rows = [r for task in ("generation", "verification")
                     for r in [r for r in rows if r["task"] == task][:16]]
         features = runner.encode_rows(rows)
+        states = state_rows(rows) if args.dual_train else []
+        state_samples = [sample for _, sample in states]
+        state_features = runner.encode_rows(state_samples) if states else []
         if split_verification_loss:
             verdict_ids = {valid: runner.tokenizer.encode(word, add_special_tokens=False)
                            for valid, word in ((True, "valid"), (False, "invalid"))}
             if any(len(ids) != 1 for ids in verdict_ids.values()) or verdict_ids[True] == verdict_ids[False]:
                 raise ValueError("Split verification loss needs distinct single-token verdicts")
             eos = runner.tokenizer.eos_token_id
-            for row, feature in zip(rows, features, strict=True):
+            for row, feature in zip(rows + state_samples, features + state_features, strict=True):
                 if row["task"] == "verification":
                     labels = feature["labels"]
                     if (any(feature["policy_actions"]) or len(labels) < 2
@@ -160,8 +230,14 @@ def train(args):
         if action_batch["decoder_input_ids"][0, 0].item() != runner.model.config.decoder_start_token_id:
             raise ValueError("Training and inference use different action decoder starts")
         batch_size = model["microbatch"]
+        if states:
+            state_by_index = dict(zip((index for index, _ in states), state_features, strict=True))
+            dataset = [(feature, state_by_index.get(index)) for index, feature in enumerate(features)]
+            collate = partial(collate_dual, runner)
+        else:
+            dataset, collate = features, runner.collate
         loader = torch.utils.data.DataLoader(
-            features, batch_size=batch_size, shuffle=True, collate_fn=runner.collate,
+            dataset, batch_size=batch_size, shuffle=True, collate_fn=collate,
             generator=torch.Generator().manual_seed(CONFIG["seed"]),
         )
         history, best, updates = [], None, 0
@@ -170,15 +246,27 @@ def train(args):
         for epoch in range(1, (1 if pilot else CONFIG["epochs"]) + 1):
             runner.model.train()
             total_loss = 0
+            total_state_loss, state_examples = 0, 0
             for _, batch, scale, update in accumulated_batches(
                     loader, CONFIG["effective_batch"] // batch_size, "examples"):
                 check()
+                state_batch = batch.pop("state_batch", None)
                 loss = runner.loss(batch.to(runner.device), split_verification_loss=split_verification_loss)
                 value = float(loss.detach())
                 if not torch.isfinite(loss).item():
                     raise ValueError("Non-finite training loss")
                 total_loss += value * len(batch["labels"])
                 (loss * scale).backward()
+                if state_batch is not None:
+                    size = len(state_batch["labels"])
+                    state_loss = runner.loss(state_batch.to(runner.device), split_verification_loss=True)
+                    state_value = float(state_loss.detach())
+                    if not torch.isfinite(state_loss).item():
+                        raise ValueError("Non-finite state verification loss")
+                    state_scale = STATE_VERIFICATION_WEIGHT * size / len(batch["labels"])
+                    (state_loss * scale * state_scale).backward()
+                    state_examples += size
+                    total_state_loss += state_value * size
                 if update:
                     grad_norm = torch.nn.utils.clip_grad_norm_(parameters, 1.0, error_if_nonfinite=True)
                     if updates == 0 and not grad_norm.item() > 0:
@@ -193,8 +281,14 @@ def train(args):
                                     "seconds": time.perf_counter() - started}
                         write_json(out / "progress.json", progress)
                         print(args.model, progress, flush=True)
-            metrics, traces = dev_eval(runner, dev, oracle, check, pilot)
+            metrics, traces = dev_eval(runner, dev, oracle, check, pilot,
+                                       verifier=verify_steps if args.step_train or args.dual_train else verify)
             entry = {"epoch": epoch, "train_loss": total_loss / len(rows), **metrics}
+            if states:
+                if state_examples != len(states):
+                    raise ValueError("Not all G state labels participated in the epoch")
+                entry.update(state_examples=state_examples, state_loss=total_state_loss / state_examples,
+                             objective_loss=(total_loss + STATE_VERIFICATION_WEIGHT * total_state_loss) / len(rows))
             history.append(entry)
             write_json(out / f"dev_epoch_{epoch}.json", traces)
             print(args.model, entry, flush=True)
@@ -240,23 +334,42 @@ def evaluate(args):
     out = args.out / args.split / args.model
     out.mkdir(parents=True)
     rows = read_jsonl(args.data / f"{args.split}.jsonl")
+    candidate_rows = [row for row in rows if "candidate" in row]
+    verifier = verify_steps if args.step_train or args.dual_train else verify
     oracle = OfficialOracle(args.executor)
     require_cuda().set_num_threads(1)
     with gpu_budget(args.ledger, 20, f"phase1:{args.split}:{args.model}") as check:
         runner = Seq2Seq(str(checkpoint), CONFIG)
-        grids = grids_for(rows)
-        metrics = {"test_status": "reused_exploratory", "model": args.model}
-        if args.split == "test_id":
+        grids = grids_for(candidate_rows)
+        metrics = {"test_status": "reused_exploratory" if args.split != "dev" else "development",
+                   "model": args.model}
+        if args.split == "dev":
+            dev_grids = unique_grids(rows)
+            plans = greedy_plans(dev_grids, NeuralPolicy(runner, check), masked=False, max_steps=CONFIG["max_steps"])
+            metrics["planning"], traces = compare(runner, dev_grids, plans, oracle, check, verifier=verifier)
+            write_jsonl(out / "planning.jsonl", [dict(grid=asdict(grid), **trace)
+                                                 for grid, trace in zip(dev_grids, traces, strict=True)])
+        elif args.split == "test_id":
             plans = greedy_plans(grids, NeuralPolicy(runner, check), masked=False, max_steps=CONFIG["max_steps"])
-            metrics["planning"], traces = compare(runner, grids, plans, oracle, check)
+            metrics["planning"], traces = compare(runner, grids, plans, oracle, check, verifier=verifier)
             write_jsonl(out / "planning.jsonl", [dict(id=row["id"], grid=row["grid"], **trace)
                                                  for row, trace in zip(rows, traces, strict=True)])
         else:
             metrics["planning"] = {"shared_id_environments": True}
-        candidates = [row["candidate"] for row in rows]
-        metrics["fixed_candidates"], traces = compare(runner, grids, candidates, oracle, check)
+        candidates = [row["candidate"] for row in candidate_rows]
+        metrics["fixed_candidates"], traces = compare(runner, grids, candidates, oracle, check, verifier=verifier)
         write_jsonl(out / "candidates.jsonl", [dict(id=row["id"], grid=row["grid"], **trace)
-                                               for row, trace in zip(rows, traces, strict=True)])
+                                               for row, trace in zip(candidate_rows, traces, strict=True)])
+        for index, source in enumerate(args.frozen_plans or (), 1):
+            saved = read_jsonl(source)
+            if [(r["id"], r["grid"]) for r in saved] != [(r["id"], r["grid"]) for r in candidate_rows]:
+                raise ValueError(f"Frozen generation inputs do not match the evaluation split: {source}")
+            report, traces = compare(runner, grids, [r["direct"] for r in saved], oracle, check,
+                                     verifier=verifier)
+            name = f"frozen_plans_{index}"
+            metrics[name] = {"source": str(source), "sha256": file_hash(source), **report}
+            write_jsonl(out / f"{name}.jsonl", [dict(id=r["id"], grid=r["grid"], **trace)
+                                                 for r, trace in zip(saved, traces, strict=True)])
         write_json(out / "metrics.json", metrics)
 
 
@@ -269,7 +382,11 @@ def main():
     parser.add_argument("--ledger", type=Path)
     parser.add_argument("--pretrained", type=Path)
     parser.add_argument("--model", choices=CONFIG["models"])
-    parser.add_argument("--split", choices=("test_id", "test_ood"))
+    parser.add_argument("--split", choices=("dev", "test_id", "test_ood"))
+    training_data = parser.add_mutually_exclusive_group()
+    training_data.add_argument("--step-train", type=Path)
+    training_data.add_argument("--dual-train", type=Path)
+    parser.add_argument("--frozen-plans", type=Path, action="append")
     args = parser.parse_args()
     if args.command in ("pilot", "train", "evaluate") and not (args.ledger and args.model):
         parser.error("GPU commands require --ledger and --model")
@@ -277,6 +394,8 @@ def main():
         parser.error("Training requires --pretrained")
     if args.command == "evaluate" and not args.split:
         parser.error("Evaluation requires --split")
+    if (args.step_train or args.dual_train) and args.command != "audit" and args.model != "flan_t5_base":
+        parser.error("Step verification runs require --model flan_t5_base")
     {"audit": audit, "pilot": train, "train": train, "select": select, "evaluate": evaluate}[args.command](args)
 
 
