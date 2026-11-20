@@ -1,0 +1,600 @@
+{
+  "checkpoint": "checkpoint-epoch-2",
+  "dev": {
+    "greedy": {
+      "correct": 46,
+      "n": 100,
+      "macro_f1": 0.3739,
+      "recall_counts": {
+        "valid": [
+          19,
+          20
+        ],
+        "obstacle_collision": [
+          0,
+          20
+        ],
+        "out_of_bounds": [
+          7,
+          20
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          20
+        ]
+      },
+      "precision_counts": {
+        "valid": [
+          19,
+          68
+        ],
+        "obstacle_collision": [
+          0,
+          0
+        ],
+        "out_of_bounds": [
+          7,
+          12
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          0
+        ]
+      },
+      "predictions": {
+        "invalid_action_token": 20,
+        "valid": 68,
+        "out_of_bounds": 12
+      },
+      "confusion": {
+        "invalid_action_token": {
+          "invalid_action_token": 20
+        },
+        "goal_not_reached": {
+          "valid": 18,
+          "out_of_bounds": 2
+        },
+        "obstacle_collision": {
+          "valid": 18,
+          "out_of_bounds": 2
+        },
+        "out_of_bounds": {
+          "valid": 13,
+          "out_of_bounds": 7
+        },
+        "valid": {
+          "valid": 19,
+          "out_of_bounds": 1
+        }
+      }
+    },
+    "paired_controls": {
+      "swap_walls": {
+        "pairs": 4,
+        "different_prediction": 0,
+        "both_correct": 0,
+        "both_valid_prediction": 4
+      },
+      "change_goal": {
+        "pairs": 1,
+        "different_prediction": 0,
+        "both_correct": 0,
+        "both_valid_prediction": 1
+      },
+      "change_wall": {
+        "pairs": 1,
+        "different_prediction": 0,
+        "both_correct": 0,
+        "both_valid_prediction": 1
+      },
+      "change_edge": {
+        "pairs": 1,
+        "different_prediction": 1,
+        "both_correct": 0,
+        "both_valid_prediction": 0
+      }
+    },
+    "reproduced_archived_predictions": 100,
+    "scores": {
+      "lengths_including_eos": {
+        "valid": 2,
+        "obstacle_collision": 6,
+        "out_of_bounds": 7,
+        "invalid_action_token": 7,
+        "goal_not_reached": 7
+      },
+      "conditional_first_token_probability_among_five_by_gold": {
+        "invalid_action_token": {
+          "valid": 0.00735184270888567,
+          "obstacle_collision": 0.0014161027502268553,
+          "out_of_bounds": 0.006645873188972473,
+          "invalid_action_token": 0.9843937158584595,
+          "goal_not_reached": 0.00019252936181146652
+        },
+        "goal_not_reached": {
+          "valid": 0.5760812759399414,
+          "obstacle_collision": 0.11012598127126694,
+          "out_of_bounds": 0.1581103354692459,
+          "invalid_action_token": 0.004676767624914646,
+          "goal_not_reached": 0.15100565552711487
+        },
+        "obstacle_collision": {
+          "valid": 0.5763535499572754,
+          "obstacle_collision": 0.11137422174215317,
+          "out_of_bounds": 0.15592721104621887,
+          "invalid_action_token": 0.004171987529844046,
+          "goal_not_reached": 0.15217304229736328
+        },
+        "out_of_bounds": {
+          "valid": 0.42032209038734436,
+          "obstacle_collision": 0.0937960296869278,
+          "out_of_bounds": 0.3130723536014557,
+          "invalid_action_token": 0.030752938240766525,
+          "goal_not_reached": 0.14205659925937653
+        },
+        "valid": {
+          "valid": 0.5878010988235474,
+          "obstacle_collision": 0.1076270341873169,
+          "out_of_bounds": 0.15114720165729523,
+          "invalid_action_token": 0.0030561676248908043,
+          "goal_not_reached": 0.15036852657794952
+        }
+      },
+      "teacher_forcing": {
+        "invalid_action_token": {
+          "rows": 20,
+          "first_token_correct_full_vocabulary": 20,
+          "suffix_tokens": 120,
+          "suffix_correct_given_gold_prefix": 120
+        },
+        "goal_not_reached": {
+          "rows": 20,
+          "first_token_correct_full_vocabulary": 0,
+          "suffix_tokens": 120,
+          "suffix_correct_given_gold_prefix": 120
+        },
+        "obstacle_collision": {
+          "rows": 20,
+          "first_token_correct_full_vocabulary": 0,
+          "suffix_tokens": 100,
+          "suffix_correct_given_gold_prefix": 100
+        },
+        "out_of_bounds": {
+          "rows": 20,
+          "first_token_correct_full_vocabulary": 6,
+          "suffix_tokens": 120,
+          "suffix_correct_given_gold_prefix": 120
+        },
+        "valid": {
+          "rows": 20,
+          "first_token_correct_full_vocabulary": 19,
+          "suffix_tokens": 20,
+          "suffix_correct_given_gold_prefix": 20
+        }
+      },
+      "decision_diagnostics": {
+        "first_token": {
+          "correct": 45,
+          "n": 100,
+          "macro_f1": 0.3628,
+          "recall_counts": {
+            "valid": [
+              19,
+              20
+            ],
+            "obstacle_collision": [
+              0,
+              20
+            ],
+            "out_of_bounds": [
+              6,
+              20
+            ],
+            "invalid_action_token": [
+              20,
+              20
+            ],
+            "goal_not_reached": [
+              0,
+              20
+            ]
+          },
+          "precision_counts": {
+            "valid": [
+              19,
+              69
+            ],
+            "obstacle_collision": [
+              0,
+              0
+            ],
+            "out_of_bounds": [
+              6,
+              11
+            ],
+            "invalid_action_token": [
+              20,
+              20
+            ],
+            "goal_not_reached": [
+              0,
+              0
+            ]
+          },
+          "predictions": {
+            "invalid_action_token": 20,
+            "valid": 69,
+            "out_of_bounds": 11
+          },
+          "confusion": {
+            "invalid_action_token": {
+              "invalid_action_token": 20
+            },
+            "goal_not_reached": {
+              "valid": 18,
+              "out_of_bounds": 2
+            },
+            "obstacle_collision": {
+              "valid": 18,
+              "out_of_bounds": 2
+            },
+            "out_of_bounds": {
+              "valid": 14,
+              "out_of_bounds": 6
+            },
+            "valid": {
+              "valid": 19,
+              "out_of_bounds": 1
+            }
+          }
+        },
+        "sequence_sum": {
+          "correct": 45,
+          "n": 100,
+          "macro_f1": 0.3628,
+          "recall_counts": {
+            "valid": [
+              19,
+              20
+            ],
+            "obstacle_collision": [
+              0,
+              20
+            ],
+            "out_of_bounds": [
+              6,
+              20
+            ],
+            "invalid_action_token": [
+              20,
+              20
+            ],
+            "goal_not_reached": [
+              0,
+              20
+            ]
+          },
+          "precision_counts": {
+            "valid": [
+              19,
+              69
+            ],
+            "obstacle_collision": [
+              0,
+              0
+            ],
+            "out_of_bounds": [
+              6,
+              11
+            ],
+            "invalid_action_token": [
+              20,
+              20
+            ],
+            "goal_not_reached": [
+              0,
+              0
+            ]
+          },
+          "predictions": {
+            "invalid_action_token": 20,
+            "valid": 69,
+            "out_of_bounds": 11
+          },
+          "confusion": {
+            "invalid_action_token": {
+              "invalid_action_token": 20
+            },
+            "goal_not_reached": {
+              "valid": 18,
+              "out_of_bounds": 2
+            },
+            "obstacle_collision": {
+              "valid": 18,
+              "out_of_bounds": 2
+            },
+            "out_of_bounds": {
+              "valid": 14,
+              "out_of_bounds": 6
+            },
+            "valid": {
+              "valid": 19,
+              "out_of_bounds": 1
+            }
+          }
+        },
+        "sequence_mean": {
+          "correct": 47,
+          "n": 100,
+          "macro_f1": 0.4213,
+          "recall_counts": {
+            "valid": [
+              10,
+              20
+            ],
+            "obstacle_collision": [
+              0,
+              20
+            ],
+            "out_of_bounds": [
+              14,
+              20
+            ],
+            "invalid_action_token": [
+              20,
+              20
+            ],
+            "goal_not_reached": [
+              3,
+              20
+            ]
+          },
+          "precision_counts": {
+            "valid": [
+              10,
+              33
+            ],
+            "obstacle_collision": [
+              0,
+              0
+            ],
+            "out_of_bounds": [
+              14,
+              29
+            ],
+            "invalid_action_token": [
+              20,
+              20
+            ],
+            "goal_not_reached": [
+              3,
+              18
+            ]
+          },
+          "predictions": {
+            "invalid_action_token": 20,
+            "out_of_bounds": 29,
+            "goal_not_reached": 18,
+            "valid": 33
+          },
+          "confusion": {
+            "invalid_action_token": {
+              "invalid_action_token": 20
+            },
+            "goal_not_reached": {
+              "out_of_bounds": 7,
+              "goal_not_reached": 3,
+              "valid": 10
+            },
+            "obstacle_collision": {
+              "valid": 10,
+              "out_of_bounds": 4,
+              "goal_not_reached": 6
+            },
+            "out_of_bounds": {
+              "out_of_bounds": 14,
+              "goal_not_reached": 3,
+              "valid": 3
+            },
+            "valid": {
+              "valid": 10,
+              "goal_not_reached": 6,
+              "out_of_bounds": 4
+            }
+          }
+        },
+        "first_token_times_label_length": {
+          "correct": 47,
+          "n": 100,
+          "macro_f1": 0.4073,
+          "recall_counts": {
+            "valid": [
+              12,
+              20
+            ],
+            "obstacle_collision": [
+              0,
+              20
+            ],
+            "out_of_bounds": [
+              14,
+              20
+            ],
+            "invalid_action_token": [
+              20,
+              20
+            ],
+            "goal_not_reached": [
+              1,
+              20
+            ]
+          },
+          "precision_counts": {
+            "valid": [
+              12,
+              38
+            ],
+            "obstacle_collision": [
+              0,
+              0
+            ],
+            "out_of_bounds": [
+              14,
+              30
+            ],
+            "invalid_action_token": [
+              20,
+              20
+            ],
+            "goal_not_reached": [
+              1,
+              12
+            ]
+          },
+          "predictions": {
+            "invalid_action_token": 20,
+            "out_of_bounds": 30,
+            "valid": 38,
+            "goal_not_reached": 12
+          },
+          "confusion": {
+            "invalid_action_token": {
+              "invalid_action_token": 20
+            },
+            "goal_not_reached": {
+              "out_of_bounds": 8,
+              "valid": 11,
+              "goal_not_reached": 1
+            },
+            "obstacle_collision": {
+              "valid": 12,
+              "out_of_bounds": 4,
+              "goal_not_reached": 4
+            },
+            "out_of_bounds": {
+              "out_of_bounds": 14,
+              "goal_not_reached": 3,
+              "valid": 3
+            },
+            "valid": {
+              "valid": 12,
+              "goal_not_reached": 4,
+              "out_of_bounds": 4
+            }
+          }
+        }
+      }
+    }
+  },
+  "train": {
+    "greedy": {
+      "correct": 906,
+      "n": 2000,
+      "macro_f1": 0.364,
+      "recall_counts": {
+        "valid": [
+          379,
+          400
+        ],
+        "obstacle_collision": [
+          0,
+          400
+        ],
+        "out_of_bounds": [
+          127,
+          400
+        ],
+        "invalid_action_token": [
+          400,
+          400
+        ],
+        "goal_not_reached": [
+          0,
+          400
+        ]
+      },
+      "precision_counts": {
+        "valid": [
+          379,
+          1339
+        ],
+        "obstacle_collision": [
+          0,
+          0
+        ],
+        "out_of_bounds": [
+          127,
+          261
+        ],
+        "invalid_action_token": [
+          400,
+          400
+        ],
+        "goal_not_reached": [
+          0,
+          0
+        ]
+      },
+      "predictions": {
+        "invalid_action_token": 400,
+        "valid": 1339,
+        "out_of_bounds": 261
+      },
+      "confusion": {
+        "invalid_action_token": {
+          "invalid_action_token": 400
+        },
+        "goal_not_reached": {
+          "valid": 338,
+          "out_of_bounds": 62
+        },
+        "obstacle_collision": {
+          "valid": 349,
+          "out_of_bounds": 51
+        },
+        "valid": {
+          "valid": 379,
+          "out_of_bounds": 21
+        },
+        "out_of_bounds": {
+          "valid": 273,
+          "out_of_bounds": 127
+        }
+      }
+    },
+    "paired_controls": {
+      "swap_walls": {
+        "pairs": 80,
+        "different_prediction": 0,
+        "both_correct": 0,
+        "both_valid_prediction": 80
+      },
+      "change_goal": {
+        "pairs": 20,
+        "different_prediction": 0,
+        "both_correct": 0,
+        "both_valid_prediction": 18
+      },
+      "change_wall": {
+        "pairs": 20,
+        "different_prediction": 0,
+        "both_correct": 0,
+        "both_valid_prediction": 17
+      },
+      "change_edge": {
+        "pairs": 20,
+        "different_prediction": 6,
+        "both_correct": 0,
+        "both_valid_prediction": 14
+      }
+    }
+  }
+}

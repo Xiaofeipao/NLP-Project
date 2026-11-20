@@ -1,0 +1,9 @@
+{
+  "input_unknown_tokens": 0,
+  "max_input_tokens": 105,
+  "max_target_tokens": 7,
+  "mixed_backward": true,
+  "model": "random small T5 CPU, interface test",
+  "single_real_action_decode": true,
+  "target_roundtrips": 4200
+}

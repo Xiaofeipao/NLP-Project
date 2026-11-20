@@ -1,0 +1,451 @@
+{
+  "design": {
+    "dataset_sha256": "aa10f89318ee14b061158a7eb333054c19786adf62af8706813df8871837adbc",
+    "identical_dataset_files": 15,
+    "changed_source_files": [
+      "step_data_v3/g_probes.py",
+      "step_data_v3/test_g_probes.py",
+      "step_data_v3/train_gpu.py",
+      "step_data_v3/validate_g_balanced.py"
+    ],
+    "seed": 42,
+    "microbatch": 4,
+    "effective_batch": 16,
+    "epochs": 2,
+    "model": "google/flan-t5-base",
+    "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+    "data_only_selection": "dev V macro F1, then dev G greedy success and optimal next action",
+    "label_lengths_including_eos": {
+      "valid": 2,
+      "obstacle_collision": 6,
+      "out_of_bounds": 7,
+      "invalid_action_token": 7,
+      "goal_not_reached": 7
+    }
+  },
+  "runs": {
+    "token_mean": {
+      "epochs": [
+        {
+          "epoch": 1,
+          "V_correct_out_of_100": 20,
+          "V_macro_f1": 0.0696,
+          "predicted_labels": {
+            "valid": 95,
+            "invalid_action_token": 5
+          },
+          "recall_counts": {
+            "valid": [
+              20,
+              20
+            ],
+            "obstacle_collision": [
+              0,
+              20
+            ],
+            "out_of_bounds": [
+              0,
+              20
+            ],
+            "invalid_action_token": [
+              0,
+              20
+            ],
+            "goal_not_reached": [
+              0,
+              20
+            ]
+          },
+          "valid_precision_counts": [
+            20,
+            95
+          ],
+          "G_one_step_correct": 46,
+          "G_greedy_success_rate": 0.03
+        },
+        {
+          "epoch": 2,
+          "V_correct_out_of_100": 46,
+          "V_macro_f1": 0.3739,
+          "predicted_labels": {
+            "invalid_action_token": 20,
+            "valid": 68,
+            "out_of_bounds": 12
+          },
+          "recall_counts": {
+            "valid": [
+              19,
+              20
+            ],
+            "obstacle_collision": [
+              0,
+              20
+            ],
+            "out_of_bounds": [
+              7,
+              20
+            ],
+            "invalid_action_token": [
+              20,
+              20
+            ],
+            "goal_not_reached": [
+              0,
+              20
+            ]
+          },
+          "valid_precision_counts": [
+            19,
+            68
+          ],
+          "G_one_step_correct": 66,
+          "G_greedy_success_rate": 0.2
+        }
+      ],
+      "selected_epoch": 2,
+      "seconds_including_pilot_and_eval": 777.969,
+      "loss": "mean CE over label tokens including EOS",
+      "gold_prefix_suffix_accuracy": [
+        480,
+        480
+      ],
+      "train_V_confusion": {
+        "invalid_action_token": {
+          "invalid_action_token": 400
+        },
+        "goal_not_reached": {
+          "valid": 338,
+          "out_of_bounds": 62
+        },
+        "obstacle_collision": {
+          "valid": 349,
+          "out_of_bounds": 51
+        },
+        "valid": {
+          "valid": 379,
+          "out_of_bounds": 21
+        },
+        "out_of_bounds": {
+          "valid": 273,
+          "out_of_bounds": 127
+        }
+      },
+      "dev_V_confusion": {
+        "invalid_action_token": {
+          "invalid_action_token": 20
+        },
+        "goal_not_reached": {
+          "valid": 18,
+          "out_of_bounds": 2
+        },
+        "obstacle_collision": {
+          "valid": 18,
+          "out_of_bounds": 2
+        },
+        "out_of_bounds": {
+          "valid": 13,
+          "out_of_bounds": 7
+        },
+        "valid": {
+          "valid": 19,
+          "out_of_bounds": 1
+        }
+      },
+      "train_counterfactual_pairs": {
+        "swap_walls": {
+          "pairs": 80,
+          "different_prediction": 0,
+          "both_correct": 0,
+          "both_valid_prediction": 80
+        },
+        "change_goal": {
+          "pairs": 20,
+          "different_prediction": 0,
+          "both_correct": 0,
+          "both_valid_prediction": 18
+        },
+        "change_wall": {
+          "pairs": 20,
+          "different_prediction": 0,
+          "both_correct": 0,
+          "both_valid_prediction": 17
+        },
+        "change_edge": {
+          "pairs": 20,
+          "different_prediction": 6,
+          "both_correct": 0,
+          "both_valid_prediction": 14
+        }
+      },
+      "dev_counterfactual_pairs": {
+        "swap_walls": {
+          "pairs": 4,
+          "different_prediction": 0,
+          "both_correct": 0,
+          "both_valid_prediction": 4
+        },
+        "change_goal": {
+          "pairs": 1,
+          "different_prediction": 0,
+          "both_correct": 0,
+          "both_valid_prediction": 1
+        },
+        "change_wall": {
+          "pairs": 1,
+          "different_prediction": 0,
+          "both_correct": 0,
+          "both_valid_prediction": 1
+        },
+        "change_edge": {
+          "pairs": 1,
+          "different_prediction": 1,
+          "both_correct": 0,
+          "both_valid_prediction": 0
+        }
+      },
+      "heldout": {
+        "test_id": {
+          "predictions_on_100_valid_candidates": {
+            "valid": 71,
+            "out_of_bounds": 29
+          },
+          "full_path_exact_out_of_200": 93,
+          "binary_macro_f1": 0.5263103696838636,
+          "first_error_location_accuracy": 0.24,
+          "step_wall_recall": [
+            0,
+            14
+          ]
+        },
+        "test_ood": {
+          "predictions_on_100_valid_candidates": {
+            "valid": 71,
+            "out_of_bounds": 29
+          },
+          "full_path_exact_out_of_200": 114,
+          "binary_macro_f1": 0.6694711538461539,
+          "first_error_location_accuracy": 0.45,
+          "step_wall_recall": [
+            0,
+            14
+          ]
+        }
+      }
+    },
+    "equal_first": {
+      "epochs": [
+        {
+          "epoch": 1,
+          "V_correct_out_of_100": 40,
+          "V_macro_f1": 0.28,
+          "predicted_labels": {
+            "invalid_action_token": 20,
+            "valid": 80
+          },
+          "recall_counts": {
+            "valid": [
+              20,
+              20
+            ],
+            "obstacle_collision": [
+              0,
+              20
+            ],
+            "out_of_bounds": [
+              0,
+              20
+            ],
+            "invalid_action_token": [
+              20,
+              20
+            ],
+            "goal_not_reached": [
+              0,
+              20
+            ]
+          },
+          "valid_precision_counts": [
+            20,
+            80
+          ],
+          "G_one_step_correct": 35,
+          "G_greedy_success_rate": 0.03
+        },
+        {
+          "epoch": 2,
+          "V_correct_out_of_100": 53,
+          "V_macro_f1": 0.4617,
+          "predicted_labels": {
+            "invalid_action_token": 20,
+            "out_of_bounds": 42,
+            "obstacle_collision": 20,
+            "valid": 18
+          },
+          "recall_counts": {
+            "valid": [
+              5,
+              20
+            ],
+            "obstacle_collision": [
+              8,
+              20
+            ],
+            "out_of_bounds": [
+              20,
+              20
+            ],
+            "invalid_action_token": [
+              20,
+              20
+            ],
+            "goal_not_reached": [
+              0,
+              20
+            ]
+          },
+          "valid_precision_counts": [
+            5,
+            18
+          ],
+          "G_one_step_correct": 60,
+          "G_greedy_success_rate": 0.1
+        }
+      ],
+      "selected_epoch": 2,
+      "seconds_including_pilot_and_eval": 736.156,
+      "loss": "0.5 * first_token_CE + 0.5 * mean_remaining_token_CE",
+      "gold_prefix_suffix_accuracy": [
+        480,
+        480
+      ],
+      "train_V_confusion": {
+        "invalid_action_token": {
+          "invalid_action_token": 400
+        },
+        "goal_not_reached": {
+          "valid": 104,
+          "out_of_bounds": 256,
+          "obstacle_collision": 40
+        },
+        "obstacle_collision": {
+          "valid": 139,
+          "obstacle_collision": 42,
+          "out_of_bounds": 219
+        },
+        "valid": {
+          "out_of_bounds": 197,
+          "valid": 168,
+          "obstacle_collision": 35
+        },
+        "out_of_bounds": {
+          "out_of_bounds": 400
+        }
+      },
+      "dev_V_confusion": {
+        "invalid_action_token": {
+          "invalid_action_token": 20
+        },
+        "goal_not_reached": {
+          "out_of_bounds": 5,
+          "obstacle_collision": 8,
+          "valid": 7
+        },
+        "obstacle_collision": {
+          "out_of_bounds": 6,
+          "valid": 6,
+          "obstacle_collision": 8
+        },
+        "out_of_bounds": {
+          "out_of_bounds": 20
+        },
+        "valid": {
+          "valid": 5,
+          "out_of_bounds": 11,
+          "obstacle_collision": 4
+        }
+      },
+      "train_counterfactual_pairs": {
+        "swap_walls": {
+          "pairs": 80,
+          "different_prediction": 6,
+          "both_correct": 0,
+          "both_valid_prediction": 40
+        },
+        "change_goal": {
+          "pairs": 20,
+          "different_prediction": 2,
+          "both_correct": 0,
+          "both_valid_prediction": 7
+        },
+        "change_wall": {
+          "pairs": 20,
+          "different_prediction": 1,
+          "both_correct": 0,
+          "both_valid_prediction": 8
+        },
+        "change_edge": {
+          "pairs": 20,
+          "different_prediction": 9,
+          "both_correct": 0,
+          "both_valid_prediction": 0
+        }
+      },
+      "dev_counterfactual_pairs": {
+        "swap_walls": {
+          "pairs": 4,
+          "different_prediction": 0,
+          "both_correct": 0,
+          "both_valid_prediction": 2
+        },
+        "change_goal": {
+          "pairs": 1,
+          "different_prediction": 0,
+          "both_correct": 0,
+          "both_valid_prediction": 0
+        },
+        "change_wall": {
+          "pairs": 1,
+          "different_prediction": 0,
+          "both_correct": 0,
+          "both_valid_prediction": 1
+        },
+        "change_edge": {
+          "pairs": 1,
+          "different_prediction": 1,
+          "both_correct": 0,
+          "both_valid_prediction": 0
+        }
+      },
+      "heldout": {
+        "test_id": {
+          "predictions_on_100_valid_candidates": {
+            "out_of_bounds": 79,
+            "obstacle_collision": 13,
+            "valid": 8
+          },
+          "full_path_exact_out_of_200": 23,
+          "binary_macro_f1": 0.3869455463397043,
+          "first_error_location_accuracy": 0.17,
+          "step_wall_recall": [
+            3,
+            14
+          ]
+        },
+        "test_ood": {
+          "predictions_on_100_valid_candidates": {
+            "out_of_bounds": 79,
+            "obstacle_collision": 13,
+            "valid": 8
+          },
+          "full_path_exact_out_of_200": 42,
+          "binary_macro_f1": 0.39884676726781987,
+          "first_error_location_accuracy": 0.38,
+          "step_wall_recall": [
+            2,
+            14
+          ]
+        }
+      }
+    }
+  }
+}

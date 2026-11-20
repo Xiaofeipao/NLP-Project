@@ -1,0 +1,192 @@
+{
+  "commits": {
+    "v2": "9eeb494fe1f775ad033ce2f668e22517cd194aee",
+    "new_text_v": "ba1620f01fdc255d0f590180b3b4192e75a6cf67",
+    "part2_part3": "5f06e80b2302c67fcafac3b0920c36ed1d4c3c61"
+  },
+  "training_sha256": "1ecde1455615eae41e464c9b0922423f87908d70eaf031dc01fe6adf85694dd4",
+  "records": {
+    "G": 2000,
+    "direct_V": 2000
+  },
+  "text_format": {
+    "verification_exact_render": 2000,
+    "literal_record_id_in_input": 0,
+    "carriage_return_or_tab_in_input": 0,
+    "generation_exact_render": 2000,
+    "direct_V_distinct_inputs": 1907,
+    "direct_V_conflicting_identical_inputs": 0
+  },
+  "verified_training_targets": {
+    "G_optimal_action_sets": 2000,
+    "V_direct": 2000,
+    "V_auxiliary_stop": 2000
+  },
+  "G_parent_task": {
+    "generation": 800,
+    "repair": 1200
+  },
+  "direct_V_by_class": {
+    "valid": 1589,
+    "invalid_action_token": 200,
+    "obstacle_collision": 139,
+    "out_of_bounds": 72
+  },
+  "original_candidates_when_replayed": {
+    "train": {
+      "candidate_count": 2000,
+      "max_actions": 14,
+      "local_observations_to_first_failure_or_end": 8849,
+      "legal_nonterminal_real_action_observations": 7344
+    },
+    "dev": {
+      "candidate_count": 100,
+      "max_actions": 10,
+      "local_observations_to_first_failure_or_end": 472,
+      "legal_nonterminal_real_action_observations": 394
+    },
+    "test_id": {
+      "candidate_count": 200,
+      "max_actions": 10,
+      "local_observations_to_first_failure_or_end": 881,
+      "legal_nonterminal_real_action_observations": 732
+    },
+    "test_ood": {
+      "candidate_count": 200,
+      "max_actions": 10,
+      "local_observations_to_first_failure_or_end": 829,
+      "legal_nonterminal_real_action_observations": 657
+    }
+  },
+  "direct_V_illegal_word_tokens": {
+    "jump": 200
+  },
+  "positive_path_sampling": {
+    "valid_rows": 1589,
+    "horizontal_last_move": 1267,
+    "both_final_axes_shortest": 944,
+    "published_horizontal_among_those": 941,
+    "horizontal_with_reversed_axis_priority": 1,
+    "nonoptimal_positive_rows": 500,
+    "nonoptimal_only_add_two_inverse_initial_actions": 500,
+    "same_last_input_and_target_as_shortest": 500
+  },
+  "paired_training_groups": {
+    "v2": {
+      "move_only_goal_changed_both_arrival_labels": 0,
+      "move_only_destination_wall_changed_free_nonterminal_and_collision": 0
+    },
+    "shortcut": {
+      "move_only_goal_changed_both_arrival_labels": 1,
+      "move_only_destination_wall_changed_free_nonterminal_and_collision": 0
+    },
+    "hierarchical": {
+      "move_only_goal_changed_both_arrival_labels": 3,
+      "move_only_destination_wall_changed_free_nonterminal_and_collision": 0
+    }
+  },
+  "train_grid_shapes": [
+    "(6, 6)"
+  ],
+  "train_obstacles": {
+    "4": 934,
+    "5": 1017,
+    "2": 944,
+    "3": 932,
+    "1": 173
+  },
+  "distinct_layouts": {
+    "train": 652,
+    "dev": 76,
+    "test_id": 79,
+    "test_ood": 79
+  },
+  "train_layouts_shared_with_dev_or_test": 0,
+  "G_training_states_where_all_shortest_next_moves_increase_Manhattan": 177,
+  "G_rollout_failures": {
+    "dev": {
+      "failed": 23,
+      "exhausted_36": 23,
+      "alternating_two_cells_for_last_six_moves": 23,
+      "such_cycles_with_a_state_requiring_moving_away": 23
+    },
+    "test_id": {
+      "failed": 20,
+      "exhausted_36": 20,
+      "alternating_two_cells_for_last_six_moves": 20,
+      "such_cycles_with_a_state_requiring_moving_away": 20
+    }
+  },
+  "fixed_candidate_predictions": {
+    "test_id": {
+      "truth": {
+        "valid": 100,
+        "goal_not_reached": 58,
+        "invalid_action_token": 20,
+        "obstacle_collision": 14,
+        "out_of_bounds": 8
+      },
+      "correct_failure_type_including_valid": {
+        "valid": 100,
+        "invalid_action_token": 20,
+        "goal_not_reached": 4
+      }
+    },
+    "test_ood": {
+      "truth": {
+        "valid": 100,
+        "invalid_action_token": 45,
+        "goal_not_reached": 30,
+        "obstacle_collision": 14,
+        "out_of_bounds": 11
+      },
+      "correct_failure_type_including_valid": {
+        "valid": 100,
+        "invalid_action_token": 45
+      }
+    }
+  },
+  "three_rule_prediction_exact_agreement": {
+    "dev": {
+      "n": 100,
+      "same_as_archived_model_feedback": 100
+    },
+    "test_id": {
+      "n": 200,
+      "same_as_archived_model_feedback": 200
+    },
+    "test_ood": {
+      "n": 200,
+      "same_as_archived_model_feedback": 200
+    }
+  },
+  "V2_direct_only_action_lookup_F1": {
+    "test_id": 0.5238095238095238,
+    "test_ood": 0.7333333333333334
+  },
+  "V2_learned_F1": {
+    "test_id": 0.5558672276764843,
+    "test_ood": 0.7333333333333334
+  },
+  "part2_part3_held_out": {
+    "7x7": {
+      "n": 200,
+      "obstacle_counts": {
+        "5": 37,
+        "3": 54,
+        "7": 58,
+        "4": 46,
+        "1": 5
+      }
+    },
+    "dense_6x6": {
+      "n": 200,
+      "obstacle_counts": {
+        "12": 45,
+        "9": 58,
+        "11": 45,
+        "10": 52
+      }
+    }
+  }
+}

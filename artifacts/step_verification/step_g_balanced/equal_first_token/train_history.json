@@ -1,0 +1,130 @@
+[
+  {
+    "G_one_step_correct": 35,
+    "G_one_step_total": 100,
+    "G_greedy": {
+      "n": 100,
+      "success_rate": 0.03,
+      "feasibility": 0.07,
+      "optimality": 0.03,
+      "path_efficiency_on_success": 1.0
+    },
+    "V": {
+      "correct": 40,
+      "n": 100,
+      "macro_f1": 0.28,
+      "recall_counts": {
+        "valid": [
+          20,
+          20
+        ],
+        "obstacle_collision": [
+          0,
+          20
+        ],
+        "out_of_bounds": [
+          0,
+          20
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          20
+        ]
+      },
+      "precision_counts": {
+        "valid": [
+          20,
+          80
+        ],
+        "obstacle_collision": [
+          0,
+          0
+        ],
+        "out_of_bounds": [
+          0,
+          0
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          0
+        ]
+      },
+      "malformed": 0
+    },
+    "epoch": 1,
+    "updates": 250,
+    "train_mean_loss": 1.034081895083189
+  },
+  {
+    "G_one_step_correct": 60,
+    "G_one_step_total": 100,
+    "G_greedy": {
+      "n": 100,
+      "success_rate": 0.1,
+      "feasibility": 0.55,
+      "optimality": 0.1,
+      "path_efficiency_on_success": 1.0
+    },
+    "V": {
+      "correct": 53,
+      "n": 100,
+      "macro_f1": 0.4617,
+      "recall_counts": {
+        "valid": [
+          5,
+          20
+        ],
+        "obstacle_collision": [
+          8,
+          20
+        ],
+        "out_of_bounds": [
+          20,
+          20
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          20
+        ]
+      },
+      "precision_counts": {
+        "valid": [
+          5,
+          18
+        ],
+        "obstacle_collision": [
+          8,
+          20
+        ],
+        "out_of_bounds": [
+          20,
+          42
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          0
+        ]
+      },
+      "malformed": 0
+    },
+    "epoch": 2,
+    "updates": 500,
+    "train_mean_loss": 0.7750097567364573
+  }
+]

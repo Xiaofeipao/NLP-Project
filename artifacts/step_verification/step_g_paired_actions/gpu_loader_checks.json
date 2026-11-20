@@ -1,0 +1,41 @@
+{
+  "device": "NVIDIA GeForce RTX 3050",
+  "torch": "2.11.0+cu128",
+  "precision": "bfloat16",
+  "dataset_manifest_sha256": "142bf234eb6fd4331796e29bd83d1c92ba165114be062e7f0238bdf70c4a1bdd",
+  "optimizer_updates": 0,
+  "text": {
+    "checkpoint": "E:\\YanbingChen\\gv_balanced_equal_first_20261120\\run\\checkpoint-epoch-2",
+    "verifier_loss": "0.5 * first_token_CE + 0.5 * mean_remaining_token_CE",
+    "train_features": 4000,
+    "mixed_batch_row_ids": [
+      "train-3426",
+      "train-balanced-V-0079",
+      "train-balanced-V-0474",
+      "train-paired-V-0209",
+      "train-balanced-V-1449",
+      "train-balanced-V-1732"
+    ],
+    "finite_cuda_mixed_loss": 0.5523567199707031,
+    "public_and_direct_loss_equal": true,
+    "prior_dev_decisions_reproduced": 100,
+    "dev_accuracy_count": 53
+  },
+  "five_class": {
+    "checkpoint": "E:\\YanbingChen\\gv_balanced_five_class_20261120\\run\\checkpoint-epoch-3",
+    "verifier_loss": "five_class_cross_entropy",
+    "train_features": 4000,
+    "mixed_batch_row_ids": [
+      "train-3426",
+      "train-balanced-V-0079",
+      "train-balanced-V-0474",
+      "train-paired-V-0209",
+      "train-balanced-V-1449",
+      "train-balanced-V-1732"
+    ],
+    "finite_cuda_mixed_loss": 1.1100883483886719,
+    "public_and_direct_loss_equal": true,
+    "prior_dev_decisions_reproduced": 100,
+    "dev_accuracy_count": 43
+  }
+}

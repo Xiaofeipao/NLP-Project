@@ -38,3 +38,15 @@ python -m ppnl.cli audit
 ```
 
 下载脚本校验已有官方文件，并获取 `vendor/ppnl/executor-point-sg.py`。如需重新构造数据，应使用新的 `dataset_root`，避免覆盖已发布数据。`.gitattributes` 禁用数据文件的自动换行转换，以保留原始字节及校验值。
+
+## 单步 G/V 数据演进
+
+| 版本 | 用途 |
+| --- | --- |
+| [step_semantic_v3](step_semantic_v3/) | 初版 G/V 语义整理 |
+| [step_semantic_single](step_semantic_single/) | 验证统一为单步 |
+| [step_last_move](step_last_move/) | V 使用动作前状态和实际候选动作 |
+| [step_g_balanced](step_g_balanced/) | 五类均衡、多最优方向及 G 派生 V |
+| [step_g_paired_actions](step_g_paired_actions/) | 最新正式数据，增加 G 和旧 V 在同一状态下的动作对照 |
+
+各目录含独立清单和审计。正式训练读取所选版本的 `train.jsonl`，诊断题保存在各自目录中。 [当前任务定义和复现](../docs/step_verification_gv.md)

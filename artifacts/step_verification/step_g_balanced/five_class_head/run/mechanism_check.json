@@ -1,0 +1,401 @@
+{
+  "classes": [
+    "valid",
+    "goal_not_reached",
+    "obstacle_collision",
+    "out_of_bounds",
+    "invalid_action_token"
+  ],
+  "uniform_cross_entropy": 1.6094379425048828,
+  "epochs": {
+    "1": {
+      "weight_l2_change_from_initial": 0.09861871600151062,
+      "weight_l2_change_from_previous_saved": 0.09861871600151062,
+      "weight_shape": [
+        5,
+        768
+      ],
+      "bias": [
+        -0.029841694980859756,
+        -0.033469680696725845,
+        -0.009362653829157352,
+        0.027122879400849342,
+        0.017410406842827797
+      ],
+      "train": {
+        "n": 2000,
+        "predictions": {
+          "obstacle_collision": 2000
+        },
+        "correct": 400,
+        "mean_cross_entropy": 1.6089112758636475,
+        "mean_top_probability": 0.2146422117948532,
+        "mean_logits": [
+          -0.026070373132824898,
+          0.0006655416800640523,
+          0.07425452023744583,
+          -0.011482196860015392,
+          -0.022817717865109444
+        ],
+        "std_of_centered_class_logits_across_inputs": [
+          0.004780943505465984,
+          0.004306028131395578,
+          0.0046211848966777325,
+          0.004049334675073624,
+          0.0027886515017598867
+        ],
+        "top_two_logit_margin_median": 0.073699951171875,
+        "mean_pooled_hidden_norm": 1.4703399007916451
+      },
+      "dev": {
+        "n": 100,
+        "predictions": {
+          "obstacle_collision": 100
+        },
+        "correct": 20,
+        "mean_cross_entropy": 1.608834981918335,
+        "mean_top_probability": 0.21467572450637817,
+        "mean_logits": [
+          -0.02572936937212944,
+          2.4184584617614746e-05,
+          0.07436034828424454,
+          -0.01242980919778347,
+          -0.021917114034295082
+        ],
+        "std_of_centered_class_logits_across_inputs": [
+          0.004505999851971865,
+          0.0037116294261068106,
+          0.004477878101170063,
+          0.0035235723480582237,
+          0.0030900107230991125
+        ],
+        "top_two_logit_margin_median": 0.0743408203125,
+        "mean_pooled_hidden_norm": 1.4733819806575774
+      },
+      "dev_FP32_predictions": {
+        "obstacle_collision": 100
+      },
+      "dev_saved_predictions_reproduced": 100,
+      "dev_correct_after_subtracting_train_mean_logits_diagnostic_only": 35,
+      "loss_and_routes": {
+        "g_example_id": "train-3426",
+        "v_example_ids": [
+          "train-balanced-V-0079",
+          "train-balanced-V-0474",
+          "train-balanced-V-0325",
+          "train-balanced-V-1449",
+          "train-balanced-V-1732"
+        ],
+        "mixed_loss_reference": 1.397996425628662,
+        "mixed_loss_actual": 1.3979952335357666,
+        "V_head_weight_gradient_norm": 0.06694582104682922,
+        "V_encoder_final_norm_gradient_norm": 0.01309099793434143,
+        "G_encoder_final_norm_gradient_norm": 0.9428251385688782,
+        "V_decoder_gradient_absent": true,
+        "G_head_gradient_absent": true,
+        "head_gradient_matches_analytic_CE": true,
+        "fixed_input_id_for_routes": "train-balanced-V-0079",
+        "class_routes": [
+          {
+            "code": "A",
+            "target_index": 0,
+            "decoded_if_highest": "valid",
+            "ce_on_same_input": 1.636588454246521,
+            "bias_gradient": [
+              -0.805357038974762,
+              0.19945348799228668,
+              0.21407030522823334,
+              0.19707292318344116,
+              0.19476036727428436
+            ]
+          },
+          {
+            "code": "B",
+            "target_index": 1,
+            "decoded_if_highest": "goal_not_reached",
+            "ce_on_same_input": 1.612174153327942,
+            "bias_gradient": [
+              0.19464294612407684,
+              -0.8005465269088745,
+              0.21407030522823334,
+              0.19707292318344116,
+              0.19476036727428436
+            ]
+          },
+          {
+            "code": "C",
+            "target_index": 2,
+            "decoded_if_highest": "obstacle_collision",
+            "ce_on_same_input": 1.54145085811615,
+            "bias_gradient": [
+              0.19464294612407684,
+              0.19945348799228668,
+              -0.7859296798706055,
+              0.19707292318344116,
+              0.19476036727428436
+            ]
+          },
+          {
+            "code": "D",
+            "target_index": 3,
+            "decoded_if_highest": "out_of_bounds",
+            "ce_on_same_input": 1.6241813898086548,
+            "bias_gradient": [
+              0.19464294612407684,
+              0.19945348799228668,
+              0.21407030522823334,
+              -0.8029270768165588,
+              0.19476036727428436
+            ]
+          },
+          {
+            "code": "E",
+            "target_index": 4,
+            "decoded_if_highest": "invalid_action_token",
+            "ce_on_same_input": 1.6359853744506836,
+            "bias_gradient": [
+              0.19464294612407684,
+              0.19945348799228668,
+              0.21407030522823334,
+              0.19707292318344116,
+              -0.8052396178245544
+            ]
+          }
+        ]
+      }
+    },
+    "2": {
+      "weight_l2_change_from_initial": 0.13168500363826752,
+      "weight_l2_change_from_previous_saved": 0.06765126436948776,
+      "weight_shape": [
+        5,
+        768
+      ],
+      "bias": [
+        -0.02945205569267273,
+        -0.03280111402273178,
+        -0.010408507660031319,
+        0.026724571362137794,
+        0.017780598253011703
+      ],
+      "train": {
+        "n": 2000,
+        "predictions": {
+          "goal_not_reached": 1992,
+          "obstacle_collision": 8
+        },
+        "correct": 402,
+        "mean_cross_entropy": 1.6068964004516602,
+        "mean_top_probability": 0.2075767070055008,
+        "mean_logits": [
+          -0.01862841285765171,
+          0.03923620656132698,
+          0.025035614147782326,
+          -0.030819518491625786,
+          -0.0063390000723302364
+        ],
+        "std_of_centered_class_logits_across_inputs": [
+          0.010746320709586143,
+          0.005406429059803486,
+          0.004329127259552479,
+          0.004758519120514393,
+          0.006849092897027731
+        ],
+        "top_two_logit_margin_median": 0.0142822265625,
+        "mean_pooled_hidden_norm": 1.5069459457993508
+      },
+      "dev": {
+        "n": 100,
+        "predictions": {
+          "goal_not_reached": 100
+        },
+        "correct": 20,
+        "mean_cross_entropy": 1.606611728668213,
+        "mean_top_probability": 0.20738807320594788,
+        "mean_logits": [
+          -0.017925644293427467,
+          0.038048096001148224,
+          0.024017333984375,
+          -0.03123779222369194,
+          -0.005758528597652912
+        ],
+        "std_of_centered_class_logits_across_inputs": [
+          0.009918589144945145,
+          0.004503440111875534,
+          0.004357404075562954,
+          0.004005046561360359,
+          0.006771640386432409
+        ],
+        "top_two_logit_margin_median": 0.0145263671875,
+        "mean_pooled_hidden_norm": 1.4981007552146912
+      },
+      "dev_FP32_predictions": {
+        "goal_not_reached": 100
+      },
+      "dev_saved_predictions_reproduced": 100,
+      "dev_correct_after_subtracting_train_mean_logits_diagnostic_only": 41
+    },
+    "3": {
+      "weight_l2_change_from_initial": 0.46167507767677307,
+      "weight_l2_change_from_previous_saved": 0.40064653754234314,
+      "weight_shape": [
+        5,
+        768
+      ],
+      "bias": [
+        -0.029054703190922737,
+        -0.03380351886153221,
+        -0.010891402140259743,
+        0.026804188266396523,
+        0.018810171633958817
+      ],
+      "train": {
+        "n": 2000,
+        "predictions": {
+          "invalid_action_token": 400,
+          "valid": 1250,
+          "goal_not_reached": 350
+        },
+        "correct": 818,
+        "mean_cross_entropy": 1.2639621496200562,
+        "mean_top_probability": 0.3118080794811249,
+        "mean_logits": [
+          0.19081835448741913,
+          0.19932031631469727,
+          0.12868115305900574,
+          0.11951415985822678,
+          -0.8146874904632568
+        ],
+        "std_of_centered_class_logits_across_inputs": [
+          0.2974376976490021,
+          0.2590371370315552,
+          0.15147222578525543,
+          0.3319333791732788,
+          1.0393325090408325
+        ],
+        "top_two_logit_margin_median": 0.017578125,
+        "mean_pooled_hidden_norm": 3.6463701432943343
+      },
+      "dev": {
+        "n": 100,
+        "predictions": {
+          "invalid_action_token": 20,
+          "goal_not_reached": 15,
+          "valid": 65
+        },
+        "correct": 43,
+        "mean_cross_entropy": 1.263720989227295,
+        "mean_top_probability": 0.3116157054901123,
+        "mean_logits": [
+          0.19255858659744263,
+          0.2008398473262787,
+          0.12978515028953552,
+          0.11788085848093033,
+          -0.8164843916893005
+        ],
+        "std_of_centered_class_logits_across_inputs": [
+          0.2975814938545227,
+          0.26041707396507263,
+          0.15225908160209656,
+          0.33284223079681396,
+          1.0426071882247925
+        ],
+        "top_two_logit_margin_median": 0.013671875,
+        "mean_pooled_hidden_norm": 3.644713659286499
+      },
+      "dev_FP32_predictions": {
+        "invalid_action_token": 20,
+        "goal_not_reached": 17,
+        "valid": 63
+      },
+      "dev_saved_predictions_reproduced": 100,
+      "dev_correct_after_subtracting_train_mean_logits_diagnostic_only": 46,
+      "loss_and_routes": {
+        "g_example_id": "train-3426",
+        "v_example_ids": [
+          "train-balanced-V-0079",
+          "train-balanced-V-0474",
+          "train-balanced-V-0325",
+          "train-balanced-V-1449",
+          "train-balanced-V-1732"
+        ],
+        "mixed_loss_reference": 1.1108920574188232,
+        "mixed_loss_actual": 1.1109004020690918,
+        "V_head_weight_gradient_norm": 0.5130362510681152,
+        "V_encoder_final_norm_gradient_norm": 0.09698348492383957,
+        "G_encoder_final_norm_gradient_norm": 0.7512925863265991,
+        "V_decoder_gradient_absent": true,
+        "G_head_gradient_absent": true,
+        "head_gradient_matches_analytic_CE": true,
+        "fixed_input_id_for_routes": "train-balanced-V-0079",
+        "class_routes": [
+          {
+            "code": "A",
+            "target_index": 0,
+            "decoded_if_highest": "valid",
+            "ce_on_same_input": 1.399618148803711,
+            "bias_gradient": [
+              -0.7533088326454163,
+              0.2491050362586975,
+              0.2183361053466797,
+              0.23855696618556976,
+              0.04731069505214691
+            ]
+          },
+          {
+            "code": "B",
+            "target_index": 1,
+            "decoded_if_highest": "goal_not_reached",
+            "ce_on_same_input": 1.389880657196045,
+            "bias_gradient": [
+              0.24669115245342255,
+              -0.7508949637413025,
+              0.2183361053466797,
+              0.23855696618556976,
+              0.04731069505214691
+            ]
+          },
+          {
+            "code": "C",
+            "target_index": 2,
+            "decoded_if_highest": "obstacle_collision",
+            "ce_on_same_input": 1.5217196941375732,
+            "bias_gradient": [
+              0.24669115245342255,
+              0.2491050362586975,
+              -0.7816638946533203,
+              0.23855696618556976,
+              0.04731069505214691
+            ]
+          },
+          {
+            "code": "D",
+            "target_index": 3,
+            "decoded_if_highest": "out_of_bounds",
+            "ce_on_same_input": 1.4331471920013428,
+            "bias_gradient": [
+              0.24669115245342255,
+              0.2491050362586975,
+              0.2183361053466797,
+              -0.761443018913269,
+              0.04731069505214691
+            ]
+          },
+          {
+            "code": "E",
+            "target_index": 4,
+            "decoded_if_highest": "invalid_action_token",
+            "ce_on_same_input": 3.0510189533233643,
+            "bias_gradient": [
+              0.24669115245342255,
+              0.2491050362586975,
+              0.2183361053466797,
+              0.23855696618556976,
+              -0.9526892900466919
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

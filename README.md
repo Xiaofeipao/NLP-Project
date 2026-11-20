@@ -1,12 +1,14 @@
 # PPNL：自然语言网格路径规划
 
+本分支现阶段以共享状态上的单步 G/V 为主。G 预测最短路的下一方向，V 只检查当前一个候选动作。程序负责路径拆步、推进状态、首错定位和回撤重选。 [任务定位与复现](docs/step_verification_gv.md) · [最终数据](data/step_g_paired_actions/) · [两组各三轮的结果](artifacts/step_verification/step_g_paired_actions/retrain_3ep/三轮对照结果.md)
+
 本分支收录 Flan-T5-base 的逐步验证 v1 和双标签 v2。[实验记录](docs/step_verification_v1_v2.md) · [输入输出与错误案例](docs/step_verification_cases.md) · [复现入口](state_baselines/README.md)
 
 NewPart1 在 FirstPart 选定的 Flan-T5-base 上采用拆分验证损失。实验记录包含开发结果、单错与双错验证、规则修复对照和错误案例。[实验记录](docs/state_policy_experiment_log.md) · [复现入口](state_baselines/README.md)
 
 本项目研究小型语言模型在单目标网格中的生成、验证和修复能力。模型输出 `up / down / left / right`；严格执行器报告 success（合法且到达目标）、feasibility（所有动作合法）和 optimality（成功且等于 BFS 最短路）。
 
-## 当前主线
+## 早期 Harness 实验
 
 **固定已有多任务全量微调权重，比较后续 Harness 的处理方式。** 同一个 Flan-T5-small checkpoint 提供 G、V、R；用配置切换自验证、执行器反馈、修复轮数、动作约束、回溯及反馈文本。规则搜索提供移除神经评分的对照。
 

@@ -1,0 +1,92 @@
+{
+  "probe_sha256": "f1ea9071467c61923185566d25b0c95ee5862afc09d32205c13093c58d169a18",
+  "shared_with_formal_dev_V": 60,
+  "text_epoch_2": {
+    "correct_steps": [
+      75,
+      400
+    ],
+    "states_all_four_correct": [
+      0,
+      100
+    ],
+    "states_four_identical_predictions": [
+      96,
+      100
+    ],
+    "adjacent_states_only_arriving_direction_marked_valid": [
+      0,
+      10
+    ],
+    "false_valid_by_true_class": {
+      "obstacle_collision": 23,
+      "goal_not_reached": 82
+    },
+    "recall_by_class": {
+      "obstacle_collision": [
+        13,
+        65
+      ],
+      "out_of_bounds": [
+        59,
+        59
+      ],
+      "goal_not_reached": [
+        0,
+        266
+      ],
+      "valid": [
+        3,
+        10
+      ]
+    }
+  },
+  "five_class_selected": {
+    "correct_steps": [
+      82,
+      400
+    ],
+    "states_all_four_correct": [
+      3,
+      100
+    ],
+    "states_four_identical_predictions": [
+      66,
+      100
+    ],
+    "adjacent_states_only_arriving_direction_marked_valid": [
+      0,
+      10
+    ],
+    "false_valid_by_true_class": {
+      "obstacle_collision": 50,
+      "out_of_bounds": 39,
+      "goal_not_reached": 194
+    },
+    "recall_by_class": {
+      "obstacle_collision": [
+        0,
+        65
+      ],
+      "out_of_bounds": [
+        0,
+        59
+      ],
+      "goal_not_reached": [
+        72,
+        266
+      ],
+      "valid": [
+        10,
+        10
+      ]
+    }
+  },
+  "public_api_check": {
+    "selected_dev_decisions_reproduced": 100,
+    "five_class_features": 4000,
+    "mixed_public_loss": 1.110740303993225,
+    "mixed_direct_loss": 1.110740303993225,
+    "verifier_loss": "five_class_cross_entropy"
+  }
+}

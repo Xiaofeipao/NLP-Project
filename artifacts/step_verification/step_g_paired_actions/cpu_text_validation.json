@@ -1,0 +1,38 @@
+{
+  "G_mask_cardinalities_including_zero_for_V": {
+    "0": 2000,
+    "1": 911,
+    "2": 1079,
+    "3": 10
+  },
+  "V_prompt_parity_rows_by_file": {
+    "dev.jsonl": 100,
+    "g_dev_balanced.jsonl": 50,
+    "g_dev_four.jsonl": 400,
+    "g_train_balanced.jsonl": 940,
+    "g_train_four.jsonl": 8000,
+    "test_id_local.jsonl": 196,
+    "test_ood_local.jsonl": 200,
+    "train.jsonl": 2000,
+    "v_dev_four.jsonl": 300,
+    "v_train_four.jsonl": 5872
+  },
+  "V_target_lengths_including_eos": {
+    "goal_not_reached": 7,
+    "invalid_action_token": 7,
+    "obstacle_collision": 6,
+    "out_of_bounds": 7,
+    "valid": 2
+  },
+  "all_five_V_labels_in_mixed_batch": true,
+  "finite_mixed_backward": true,
+  "four_action_scores": true,
+  "model": "random one-layer T5, CPU interface check",
+  "prompt_sha256": "62ae5ab00b02924b03981e80d031d542d3566f226f61588e1889858d884aa70a",
+  "single_action_greedy_decode": true,
+  "tied_optimal_mass_invariant": true,
+  "tokenizer_sha256": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a",
+  "train_features": 4000,
+  "verified_manifest_file_count": 17,
+  "verifier_loss": "0.5 * first_token_CE + 0.5 * mean_remaining_token_CE"
+}

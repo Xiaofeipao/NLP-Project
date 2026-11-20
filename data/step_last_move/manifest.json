@@ -1,0 +1,27 @@
+{
+  "base_commit": "9eeb494fe1f775ad033ce2f668e22517cd194aee",
+  "executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+  "previous_manifest_sha256": "1142517f029ae4d32a37b464ae39a41a3b0cc2098fe456f4648bb4f03c64c849",
+  "schema": "ppnl-last-move-v1",
+  "seed": {
+    "dev": 43,
+    "train": 42
+  },
+  "sha256": {
+    "audit.json": "6cd960f282002b8b957a078a7078a8a32f6d40597e88bf94677c4d8eb8793297",
+    "dev.jsonl": "b607c93e296dddecc98f4a05b4c6a64472376a277f7b0ea650e3624d6d2f7ad9",
+    "shortcut_audit.json": "829e5a575ea4f08b915a8958a04b4c995506344b24c5a667808e3306adf2cbab",
+    "states.jsonl": "2ad104b2889cb9806a14dee2a510f37e1b46f9bb83bb83db95708ccd9b468984",
+    "test_id.jsonl": "26b5f561b9fd7b3bd5e963b0186abdf0b42cb7da726f20833b229969900220c1",
+    "test_ood.jsonl": "c3e5b77f488931c15708ffdd32e88f725cda710f6eb3df517767fe1e390ba80c",
+    "train.jsonl": "fa9dffe077ca8cd29a3383655ab2ac786b1f815799a4adc5e7e8c07bf90124a5"
+  },
+  "source_sha256": {
+    "dev.jsonl": "6b60713aa88053bacbe2a009c68baf69d51a1f3121390d0aea1c7f256a92bb3a",
+    "manifest.json": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+    "test_id.jsonl": "26b5f561b9fd7b3bd5e963b0186abdf0b42cb7da726f20833b229969900220c1",
+    "test_ood.jsonl": "c3e5b77f488931c15708ffdd32e88f725cda710f6eb3df517767fe1e390ba80c",
+    "train.jsonl": "d1212c424d5e1dcdc7d99fd0520ce9d28ab7ef292c7c5121a3dd4cc54d5842a2"
+  },
+  "template_sha256": "68d37adf63964fadabd9f46cf433ef5b94c71f513d09bd5878198d53ea735305"
+}

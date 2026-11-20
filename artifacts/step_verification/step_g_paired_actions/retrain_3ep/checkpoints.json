@@ -1,0 +1,218 @@
+{
+  "experiment": "step_g_paired_actions/retrain_3ep",
+  "dataset_manifest_sha256": "142bf234eb6fd4331796e29bd83d1c92ba165114be062e7f0238bdf70c4a1bdd",
+  "weight_storage": "desktop GPU run directory",
+  "repository_companion_files": "checkpoints/",
+  "files": [
+    {
+      "run": "text",
+      "epoch": 1,
+      "path": "text/checkpoint-epoch-1/config.json",
+      "bytes": 1802,
+      "sha256": "ec550c138a531ee32ac9a49db5105f96b174b2f39a093c33e4ab8fbb891617e7"
+    },
+    {
+      "run": "text",
+      "epoch": 1,
+      "path": "text/checkpoint-epoch-1/generation_config.json",
+      "bytes": 229,
+      "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307"
+    },
+    {
+      "run": "text",
+      "epoch": 1,
+      "path": "text/checkpoint-epoch-1/model.safetensors",
+      "bytes": 990345064,
+      "sha256": "1675875cb6cba7ee01bac47d01fc27198ce39098454d1d6dc302c1c913379d6c"
+    },
+    {
+      "run": "text",
+      "epoch": 1,
+      "path": "text/checkpoint-epoch-1/tokenizer.json",
+      "bytes": 2424221,
+      "sha256": "2decd69470c4f02ecfd9e1122c215f16737854b0ce0a49bd7dbf098a1bff965e"
+    },
+    {
+      "run": "text",
+      "epoch": 1,
+      "path": "text/checkpoint-epoch-1/tokenizer_config.json",
+      "bytes": 2493,
+      "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19"
+    },
+    {
+      "run": "text",
+      "epoch": 2,
+      "path": "text/checkpoint-epoch-2/config.json",
+      "bytes": 1802,
+      "sha256": "ec550c138a531ee32ac9a49db5105f96b174b2f39a093c33e4ab8fbb891617e7"
+    },
+    {
+      "run": "text",
+      "epoch": 2,
+      "path": "text/checkpoint-epoch-2/generation_config.json",
+      "bytes": 229,
+      "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307"
+    },
+    {
+      "run": "text",
+      "epoch": 2,
+      "path": "text/checkpoint-epoch-2/model.safetensors",
+      "bytes": 990345064,
+      "sha256": "b3d1efea36f442135cfa31667198eb0f8c6d6b0c992bd6d72ff7e2ba4bded24d"
+    },
+    {
+      "run": "text",
+      "epoch": 2,
+      "path": "text/checkpoint-epoch-2/tokenizer.json",
+      "bytes": 2424221,
+      "sha256": "2decd69470c4f02ecfd9e1122c215f16737854b0ce0a49bd7dbf098a1bff965e"
+    },
+    {
+      "run": "text",
+      "epoch": 2,
+      "path": "text/checkpoint-epoch-2/tokenizer_config.json",
+      "bytes": 2493,
+      "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19"
+    },
+    {
+      "run": "text",
+      "epoch": 3,
+      "path": "text/checkpoint-epoch-3/config.json",
+      "bytes": 1802,
+      "sha256": "ec550c138a531ee32ac9a49db5105f96b174b2f39a093c33e4ab8fbb891617e7"
+    },
+    {
+      "run": "text",
+      "epoch": 3,
+      "path": "text/checkpoint-epoch-3/generation_config.json",
+      "bytes": 229,
+      "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307"
+    },
+    {
+      "run": "text",
+      "epoch": 3,
+      "path": "text/checkpoint-epoch-3/model.safetensors",
+      "bytes": 990345064,
+      "sha256": "76de0ee4d73f7fe35f597a807fea000432084e1a931f15e177a49c1dbaf699e0"
+    },
+    {
+      "run": "text",
+      "epoch": 3,
+      "path": "text/checkpoint-epoch-3/tokenizer.json",
+      "bytes": 2424221,
+      "sha256": "2decd69470c4f02ecfd9e1122c215f16737854b0ce0a49bd7dbf098a1bff965e"
+    },
+    {
+      "run": "text",
+      "epoch": 3,
+      "path": "text/checkpoint-epoch-3/tokenizer_config.json",
+      "bytes": 2493,
+      "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19"
+    },
+    {
+      "run": "five_class",
+      "epoch": 1,
+      "path": "five_class/checkpoint-epoch-1/config.json",
+      "bytes": 1974,
+      "sha256": "2368707522f66d36062df01391e6b0bcaeca1f8c739e41754e2dc46865aa51e8"
+    },
+    {
+      "run": "five_class",
+      "epoch": 1,
+      "path": "five_class/checkpoint-epoch-1/generation_config.json",
+      "bytes": 229,
+      "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307"
+    },
+    {
+      "run": "five_class",
+      "epoch": 1,
+      "path": "five_class/checkpoint-epoch-1/model.safetensors",
+      "bytes": 990360620,
+      "sha256": "9f3f53bb7ff493e089cf1a6cc9b01f7c876892342c2282925ff46a8a0a044da4"
+    },
+    {
+      "run": "five_class",
+      "epoch": 1,
+      "path": "five_class/checkpoint-epoch-1/tokenizer.json",
+      "bytes": 2424221,
+      "sha256": "2decd69470c4f02ecfd9e1122c215f16737854b0ce0a49bd7dbf098a1bff965e"
+    },
+    {
+      "run": "five_class",
+      "epoch": 1,
+      "path": "five_class/checkpoint-epoch-1/tokenizer_config.json",
+      "bytes": 2493,
+      "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19"
+    },
+    {
+      "run": "five_class",
+      "epoch": 2,
+      "path": "five_class/checkpoint-epoch-2/config.json",
+      "bytes": 1974,
+      "sha256": "2368707522f66d36062df01391e6b0bcaeca1f8c739e41754e2dc46865aa51e8"
+    },
+    {
+      "run": "five_class",
+      "epoch": 2,
+      "path": "five_class/checkpoint-epoch-2/generation_config.json",
+      "bytes": 229,
+      "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307"
+    },
+    {
+      "run": "five_class",
+      "epoch": 2,
+      "path": "five_class/checkpoint-epoch-2/model.safetensors",
+      "bytes": 990360620,
+      "sha256": "e0fbb49ca55b8fcb34e0ab7e937d3f25b648a1810408fea0f6296a872ef13d6e"
+    },
+    {
+      "run": "five_class",
+      "epoch": 2,
+      "path": "five_class/checkpoint-epoch-2/tokenizer.json",
+      "bytes": 2424221,
+      "sha256": "2decd69470c4f02ecfd9e1122c215f16737854b0ce0a49bd7dbf098a1bff965e"
+    },
+    {
+      "run": "five_class",
+      "epoch": 2,
+      "path": "five_class/checkpoint-epoch-2/tokenizer_config.json",
+      "bytes": 2493,
+      "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19"
+    },
+    {
+      "run": "five_class",
+      "epoch": 3,
+      "path": "five_class/checkpoint-epoch-3/config.json",
+      "bytes": 1974,
+      "sha256": "2368707522f66d36062df01391e6b0bcaeca1f8c739e41754e2dc46865aa51e8"
+    },
+    {
+      "run": "five_class",
+      "epoch": 3,
+      "path": "five_class/checkpoint-epoch-3/generation_config.json",
+      "bytes": 229,
+      "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307"
+    },
+    {
+      "run": "five_class",
+      "epoch": 3,
+      "path": "five_class/checkpoint-epoch-3/model.safetensors",
+      "bytes": 990360620,
+      "sha256": "612f05ca4a3c56dadea6313eb9aea0a0fe23e3126284b47a0783bf2cc4c2d764"
+    },
+    {
+      "run": "five_class",
+      "epoch": 3,
+      "path": "five_class/checkpoint-epoch-3/tokenizer.json",
+      "bytes": 2424221,
+      "sha256": "2decd69470c4f02ecfd9e1122c215f16737854b0ce0a49bd7dbf098a1bff965e"
+    },
+    {
+      "run": "five_class",
+      "epoch": 3,
+      "path": "five_class/checkpoint-epoch-3/tokenizer_config.json",
+      "bytes": 2493,
+      "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "phase": "train",
+  "epoch": 3,
+  "updates": 750,
+  "epoch_examples": 4000,
+  "train_mean_loss": 1.096193759046495,
+  "elapsed_seconds": 1046.6569999999992,
+  "peak_reserved_mib": 4520
+}

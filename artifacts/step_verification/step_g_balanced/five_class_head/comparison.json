@@ -1,0 +1,1011 @@
+{
+  "pretrained_revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+  "manifest_sha256": "aa10f89318ee14b061158a7eb333054c19786adf62af8706813df8871837adbc",
+  "training": {
+    "verifier_head": "encoder_masked_mean_linear",
+    "class_order": [
+      "valid",
+      "goal_not_reached",
+      "obstacle_collision",
+      "out_of_bounds",
+      "invalid_action_token"
+    ],
+    "trainable_head_parameters": 3845,
+    "train_examples_per_epoch": 4000,
+    "effective_batch": 16,
+    "seed": 42,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "optimizer": "AdamW",
+    "pretrained_revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+    "manifest_sha256": "aa10f89318ee14b061158a7eb333054c19786adf62af8706813df8871837adbc",
+    "prompt_sha256": "62ae5ab00b02924b03981e80d031d542d3566f226f61588e1889858d884aa70a"
+  },
+  "gpu": "NVIDIA GeForce RTX 3050",
+  "precision": "bfloat16",
+  "updates": 750,
+  "training_and_evaluation_seconds": 1065.8600000000006,
+  "selected_epoch": 3,
+  "remote_selected_checkpoint": "E:/YanbingChen/gv_balanced_five_class_20261120/run/checkpoint-epoch-3",
+  "selected_checkpoint_replayed_dev": 100,
+  "label_order": [
+    "valid",
+    "goal_not_reached",
+    "obstacle_collision",
+    "out_of_bounds",
+    "invalid_action_token"
+  ],
+  "five_class_dev": [
+    {
+      "epoch": 1,
+      "V_correct_of_100": 20,
+      "V_macro_F1": 0.0667,
+      "counts": {
+        "valid": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "goal_not_reached": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "obstacle_collision": {
+          "true_positive": 20,
+          "gold": 20,
+          "predicted": 100
+        },
+        "out_of_bounds": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "invalid_action_token": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        }
+      },
+      "false_valid": 0,
+      "confusion_actual_by_predicted": {
+        "valid": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 20,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "goal_not_reached": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 20,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "obstacle_collision": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 20,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "out_of_bounds": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 20,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "invalid_action_token": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 20,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        }
+      },
+      "G_correct_of_100": 62,
+      "G_greedy_success_rate": 0.12,
+      "dev_control_groups_all_correct_by_kind": {
+        "swap_walls": [
+          0,
+          2
+        ],
+        "change_goal": [
+          0,
+          1
+        ],
+        "change_wall": [
+          0,
+          1
+        ],
+        "change_edge": [
+          0,
+          1
+        ],
+        "four_open": [
+          0,
+          1
+        ],
+        "four_adjacent": [
+          0,
+          1
+        ],
+        "four_detour": [
+          0,
+          2
+        ],
+        "four_tie": [
+          0,
+          1
+        ],
+        "four_ordinary": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "epoch": 2,
+      "V_correct_of_100": 20,
+      "V_macro_F1": 0.0667,
+      "counts": {
+        "valid": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "goal_not_reached": {
+          "true_positive": 20,
+          "gold": 20,
+          "predicted": 100
+        },
+        "obstacle_collision": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "out_of_bounds": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "invalid_action_token": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        }
+      },
+      "false_valid": 0,
+      "confusion_actual_by_predicted": {
+        "valid": {
+          "valid": 0,
+          "goal_not_reached": 20,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "goal_not_reached": {
+          "valid": 0,
+          "goal_not_reached": 20,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "obstacle_collision": {
+          "valid": 0,
+          "goal_not_reached": 20,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "out_of_bounds": {
+          "valid": 0,
+          "goal_not_reached": 20,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "invalid_action_token": {
+          "valid": 0,
+          "goal_not_reached": 20,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        }
+      },
+      "G_correct_of_100": 69,
+      "G_greedy_success_rate": 0.14,
+      "dev_control_groups_all_correct_by_kind": {
+        "swap_walls": [
+          0,
+          2
+        ],
+        "change_goal": [
+          0,
+          1
+        ],
+        "change_wall": [
+          0,
+          1
+        ],
+        "change_edge": [
+          0,
+          1
+        ],
+        "four_open": [
+          1,
+          1
+        ],
+        "four_adjacent": [
+          0,
+          1
+        ],
+        "four_detour": [
+          0,
+          2
+        ],
+        "four_tie": [
+          0,
+          1
+        ],
+        "four_ordinary": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "epoch": 3,
+      "V_correct_of_100": 43,
+      "V_macro_F1": 0.3284,
+      "counts": {
+        "valid": {
+          "true_positive": 20,
+          "gold": 20,
+          "predicted": 65
+        },
+        "goal_not_reached": {
+          "true_positive": 3,
+          "gold": 20,
+          "predicted": 15
+        },
+        "obstacle_collision": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "out_of_bounds": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "invalid_action_token": {
+          "true_positive": 20,
+          "gold": 20,
+          "predicted": 20
+        }
+      },
+      "false_valid": 45,
+      "confusion_actual_by_predicted": {
+        "valid": {
+          "valid": 20,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "goal_not_reached": {
+          "valid": 17,
+          "goal_not_reached": 3,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "obstacle_collision": {
+          "valid": 14,
+          "goal_not_reached": 6,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "out_of_bounds": {
+          "valid": 14,
+          "goal_not_reached": 6,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "invalid_action_token": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 20
+        }
+      },
+      "G_correct_of_100": 60,
+      "G_greedy_success_rate": 0.15,
+      "dev_control_groups_all_correct_by_kind": {
+        "swap_walls": [
+          0,
+          2
+        ],
+        "change_goal": [
+          0,
+          1
+        ],
+        "change_wall": [
+          0,
+          1
+        ],
+        "change_edge": [
+          0,
+          1
+        ],
+        "four_open": [
+          0,
+          1
+        ],
+        "four_adjacent": [
+          0,
+          1
+        ],
+        "four_detour": [
+          0,
+          2
+        ],
+        "four_tie": [
+          0,
+          1
+        ],
+        "four_ordinary": [
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "text_loss_dev": [
+    {
+      "epoch": 1,
+      "V_correct_of_100": 40,
+      "V_macro_F1": 0.28,
+      "counts": {
+        "valid": {
+          "true_positive": 20,
+          "gold": 20,
+          "predicted": 80
+        },
+        "goal_not_reached": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "obstacle_collision": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "out_of_bounds": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "invalid_action_token": {
+          "true_positive": 20,
+          "gold": 20,
+          "predicted": 20
+        }
+      },
+      "false_valid": 60,
+      "confusion_actual_by_predicted": {
+        "valid": {
+          "valid": 20,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "goal_not_reached": {
+          "valid": 20,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "obstacle_collision": {
+          "valid": 20,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "out_of_bounds": {
+          "valid": 20,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "invalid_action_token": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 20
+        }
+      },
+      "G_correct_of_100": 35,
+      "G_greedy_success_rate": 0.03,
+      "dev_control_groups_all_correct_by_kind": {
+        "swap_walls": [
+          0,
+          2
+        ],
+        "change_goal": [
+          0,
+          1
+        ],
+        "change_wall": [
+          0,
+          1
+        ],
+        "change_edge": [
+          0,
+          1
+        ],
+        "four_open": [
+          0,
+          1
+        ],
+        "four_adjacent": [
+          0,
+          1
+        ],
+        "four_detour": [
+          0,
+          2
+        ],
+        "four_tie": [
+          0,
+          1
+        ],
+        "four_ordinary": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "epoch": 2,
+      "V_correct_of_100": 53,
+      "V_macro_F1": 0.4617,
+      "counts": {
+        "valid": {
+          "true_positive": 5,
+          "gold": 20,
+          "predicted": 18
+        },
+        "goal_not_reached": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "obstacle_collision": {
+          "true_positive": 8,
+          "gold": 20,
+          "predicted": 20
+        },
+        "out_of_bounds": {
+          "true_positive": 20,
+          "gold": 20,
+          "predicted": 42
+        },
+        "invalid_action_token": {
+          "true_positive": 20,
+          "gold": 20,
+          "predicted": 20
+        }
+      },
+      "false_valid": 13,
+      "confusion_actual_by_predicted": {
+        "valid": {
+          "valid": 5,
+          "goal_not_reached": 0,
+          "obstacle_collision": 4,
+          "out_of_bounds": 11,
+          "invalid_action_token": 0
+        },
+        "goal_not_reached": {
+          "valid": 7,
+          "goal_not_reached": 0,
+          "obstacle_collision": 8,
+          "out_of_bounds": 5,
+          "invalid_action_token": 0
+        },
+        "obstacle_collision": {
+          "valid": 6,
+          "goal_not_reached": 0,
+          "obstacle_collision": 8,
+          "out_of_bounds": 6,
+          "invalid_action_token": 0
+        },
+        "out_of_bounds": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 20,
+          "invalid_action_token": 0
+        },
+        "invalid_action_token": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 20
+        }
+      },
+      "G_correct_of_100": 60,
+      "G_greedy_success_rate": 0.1,
+      "dev_control_groups_all_correct_by_kind": {
+        "swap_walls": [
+          0,
+          2
+        ],
+        "change_goal": [
+          0,
+          1
+        ],
+        "change_wall": [
+          0,
+          1
+        ],
+        "change_edge": [
+          0,
+          1
+        ],
+        "four_open": [
+          0,
+          1
+        ],
+        "four_adjacent": [
+          0,
+          1
+        ],
+        "four_detour": [
+          0,
+          2
+        ],
+        "four_tie": [
+          0,
+          1
+        ],
+        "four_ordinary": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "epoch": 3,
+      "V_correct_of_100": 47,
+      "V_macro_F1": 0.3911,
+      "counts": {
+        "valid": {
+          "true_positive": 19,
+          "gold": 20,
+          "predicted": 70
+        },
+        "goal_not_reached": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "obstacle_collision": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 0
+        },
+        "out_of_bounds": {
+          "true_positive": 8,
+          "gold": 20,
+          "predicted": 10
+        },
+        "invalid_action_token": {
+          "true_positive": 20,
+          "gold": 20,
+          "predicted": 20
+        }
+      },
+      "false_valid": 51,
+      "confusion_actual_by_predicted": {
+        "valid": {
+          "valid": 19,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 1,
+          "invalid_action_token": 0
+        },
+        "goal_not_reached": {
+          "valid": 19,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 1,
+          "invalid_action_token": 0
+        },
+        "obstacle_collision": {
+          "valid": 20,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 0
+        },
+        "out_of_bounds": {
+          "valid": 12,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 8,
+          "invalid_action_token": 0
+        },
+        "invalid_action_token": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 20
+        }
+      },
+      "G_correct_of_100": 72,
+      "G_greedy_success_rate": 0.52,
+      "dev_control_groups_all_correct_by_kind": {
+        "swap_walls": [
+          0,
+          2
+        ],
+        "change_goal": [
+          0,
+          1
+        ],
+        "change_wall": [
+          0,
+          1
+        ],
+        "change_edge": [
+          0,
+          1
+        ],
+        "four_open": [
+          0,
+          1
+        ],
+        "four_adjacent": [
+          0,
+          1
+        ],
+        "four_detour": [
+          0,
+          2
+        ],
+        "four_tie": [
+          0,
+          1
+        ],
+        "four_ordinary": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "epoch": 4,
+      "V_correct_of_100": 55,
+      "V_macro_F1": 0.4891,
+      "counts": {
+        "valid": {
+          "true_positive": 6,
+          "gold": 20,
+          "predicted": 19
+        },
+        "goal_not_reached": {
+          "true_positive": 0,
+          "gold": 20,
+          "predicted": 1
+        },
+        "obstacle_collision": {
+          "true_positive": 9,
+          "gold": 20,
+          "predicted": 27
+        },
+        "out_of_bounds": {
+          "true_positive": 20,
+          "gold": 20,
+          "predicted": 33
+        },
+        "invalid_action_token": {
+          "true_positive": 20,
+          "gold": 20,
+          "predicted": 20
+        }
+      },
+      "false_valid": 13,
+      "confusion_actual_by_predicted": {
+        "valid": {
+          "valid": 6,
+          "goal_not_reached": 1,
+          "obstacle_collision": 8,
+          "out_of_bounds": 5,
+          "invalid_action_token": 0
+        },
+        "goal_not_reached": {
+          "valid": 7,
+          "goal_not_reached": 0,
+          "obstacle_collision": 10,
+          "out_of_bounds": 3,
+          "invalid_action_token": 0
+        },
+        "obstacle_collision": {
+          "valid": 6,
+          "goal_not_reached": 0,
+          "obstacle_collision": 9,
+          "out_of_bounds": 5,
+          "invalid_action_token": 0
+        },
+        "out_of_bounds": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 20,
+          "invalid_action_token": 0
+        },
+        "invalid_action_token": {
+          "valid": 0,
+          "goal_not_reached": 0,
+          "obstacle_collision": 0,
+          "out_of_bounds": 0,
+          "invalid_action_token": 20
+        }
+      },
+      "G_correct_of_100": 73,
+      "G_greedy_success_rate": 0.17,
+      "dev_control_groups_all_correct_by_kind": {
+        "swap_walls": [
+          0,
+          2
+        ],
+        "change_goal": [
+          0,
+          1
+        ],
+        "change_wall": [
+          0,
+          1
+        ],
+        "change_edge": [
+          0,
+          1
+        ],
+        "four_open": [
+          0,
+          1
+        ],
+        "four_adjacent": [
+          0,
+          1
+        ],
+        "four_detour": [
+          0,
+          2
+        ],
+        "four_tie": [
+          0,
+          1
+        ],
+        "four_ordinary": [
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "text_epochs_3_4_optimizer": "fresh AdamW",
+  "heldout": {
+    "five_class_selected": {
+      "test_id": {
+        "full_path_exact_of_200": 122,
+        "accepted_true_paths_of_100": 90,
+        "accepted_bad_paths_of_100": 62,
+        "exact_on_bad_paths_of_100": 32,
+        "first_error_localization_rate": 0.32,
+        "balanced_local_correct": [
+          17,
+          40
+        ],
+        "balanced_local_macro_F1": 0.3375
+      },
+      "test_ood": {
+        "full_path_exact_of_200": 146,
+        "accepted_true_paths_of_100": 90,
+        "accepted_bad_paths_of_100": 33,
+        "exact_on_bad_paths_of_100": 56,
+        "first_error_localization_rate": 0.56,
+        "balanced_local_correct": [
+          24,
+          55
+        ],
+        "balanced_local_macro_F1": 0.3545
+      }
+    },
+    "text_epoch_2": {
+      "test_id": {
+        "full_path_exact_of_200": 23,
+        "accepted_true_paths_of_100": 8,
+        "accepted_bad_paths_of_100": 10,
+        "exact_on_bad_paths_of_100": 15,
+        "first_error_localization_rate": 0.17,
+        "balanced_local_correct": [
+          20,
+          40
+        ],
+        "balanced_local_macro_F1": 0.421
+      },
+      "test_ood": {
+        "full_path_exact_of_200": 42,
+        "accepted_true_paths_of_100": 8,
+        "accepted_bad_paths_of_100": 6,
+        "exact_on_bad_paths_of_100": 34,
+        "first_error_localization_rate": 0.38,
+        "balanced_local_correct": [
+          30,
+          55
+        ],
+        "balanced_local_macro_F1": 0.4683
+      }
+    },
+    "text_epoch_3": {
+      "test_id": {
+        "full_path_exact_of_200": 91,
+        "accepted_true_paths_of_100": 68,
+        "accepted_bad_paths_of_100": 62,
+        "exact_on_bad_paths_of_100": 23,
+        "first_error_localization_rate": 0.24,
+        "balanced_local_correct": [
+          18,
+          40
+        ],
+        "balanced_local_macro_F1": 0.3592
+      },
+      "test_ood": {
+        "full_path_exact_of_200": 113,
+        "accepted_true_paths_of_100": 68,
+        "accepted_bad_paths_of_100": 38,
+        "exact_on_bad_paths_of_100": 45,
+        "first_error_localization_rate": 0.46,
+        "balanced_local_correct": [
+          24,
+          55
+        ],
+        "balanced_local_macro_F1": 0.3446
+      }
+    },
+    "text_epoch_4": {
+      "test_id": {
+        "full_path_exact_of_200": 22,
+        "accepted_true_paths_of_100": 8,
+        "accepted_bad_paths_of_100": 7,
+        "exact_on_bad_paths_of_100": 14,
+        "first_error_localization_rate": 0.16,
+        "balanced_local_correct": [
+          19,
+          40
+        ],
+        "balanced_local_macro_F1": 0.4214
+      },
+      "test_ood": {
+        "full_path_exact_of_200": 40,
+        "accepted_true_paths_of_100": 8,
+        "accepted_bad_paths_of_100": 4,
+        "exact_on_bad_paths_of_100": 32,
+        "first_error_localization_rate": 0.34,
+        "balanced_local_correct": [
+          31,
+          55
+        ],
+        "balanced_local_macro_F1": 0.4998
+      }
+    }
+  },
+  "four_moves_from_each_dev_G_state": {
+    "probe_sha256": "f1ea9071467c61923185566d25b0c95ee5862afc09d32205c13093c58d169a18",
+    "shared_with_formal_dev_V": 60,
+    "text_epoch_2": {
+      "correct_steps": [
+        75,
+        400
+      ],
+      "states_all_four_correct": [
+        0,
+        100
+      ],
+      "states_four_identical_predictions": [
+        96,
+        100
+      ],
+      "adjacent_states_only_arriving_direction_marked_valid": [
+        0,
+        10
+      ],
+      "false_valid_by_true_class": {
+        "obstacle_collision": 23,
+        "goal_not_reached": 82
+      },
+      "recall_by_class": {
+        "obstacle_collision": [
+          13,
+          65
+        ],
+        "out_of_bounds": [
+          59,
+          59
+        ],
+        "goal_not_reached": [
+          0,
+          266
+        ],
+        "valid": [
+          3,
+          10
+        ]
+      }
+    },
+    "five_class_selected": {
+      "correct_steps": [
+        82,
+        400
+      ],
+      "states_all_four_correct": [
+        3,
+        100
+      ],
+      "states_four_identical_predictions": [
+        66,
+        100
+      ],
+      "adjacent_states_only_arriving_direction_marked_valid": [
+        0,
+        10
+      ],
+      "false_valid_by_true_class": {
+        "obstacle_collision": 50,
+        "out_of_bounds": 39,
+        "goal_not_reached": 194
+      },
+      "recall_by_class": {
+        "obstacle_collision": [
+          0,
+          65
+        ],
+        "out_of_bounds": [
+          0,
+          59
+        ],
+        "goal_not_reached": [
+          72,
+          266
+        ],
+        "valid": [
+          10,
+          10
+        ]
+      }
+    },
+    "public_api_check": {
+      "selected_dev_decisions_reproduced": 100,
+      "five_class_features": 4000,
+      "mixed_public_loss": 1.110740303993225,
+      "mixed_direct_loss": 1.110740303993225,
+      "verifier_loss": "five_class_cross_entropy"
+    }
+  }
+}

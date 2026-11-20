@@ -1,0 +1,61 @@
+{
+  "dev": {
+    "G": 100,
+    "G_with_multiple_optimal_directions": 49,
+    "STOP_labels": {
+      "goal_not_reached": 12,
+      "valid": 12
+    },
+    "V": 100,
+    "V_labels": {
+      "goal_not_reached": 12,
+      "invalid_action_token": 12,
+      "obstacle_collision": 13,
+      "out_of_bounds": 13,
+      "valid": 50
+    },
+    "V_sources": {
+      "depart_goal": 2,
+      "mixed_path": 21,
+      "mixed_step": 60,
+      "original_path": 1,
+      "stop_pair": 16
+    },
+    "layouts": 76,
+    "shared_G_states": 36,
+    "shared_V_rows": 41
+  },
+  "test_id": {
+    "frozen_candidates": 200,
+    "reference_scan_exact": 200
+  },
+  "test_ood": {
+    "frozen_candidates": 200,
+    "reference_scan_exact": 200
+  },
+  "train": {
+    "G": 2000,
+    "G_with_multiple_optimal_directions": 1089,
+    "STOP_labels": {
+      "goal_not_reached": 250,
+      "valid": 250
+    },
+    "V": 2000,
+    "V_labels": {
+      "goal_not_reached": 250,
+      "invalid_action_token": 250,
+      "obstacle_collision": 250,
+      "out_of_bounds": 250,
+      "valid": 1000
+    },
+    "V_sources": {
+      "depart_goal": 20,
+      "mixed_path": 440,
+      "mixed_step": 1200,
+      "stop_pair": 340
+    },
+    "layouts": 652,
+    "shared_G_states": 711,
+    "shared_V_rows": 820
+  }
+}

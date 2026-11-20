@@ -1,0 +1,76 @@
+{
+  "phase": "pilot",
+  "microbatch": 4,
+  "precision": "bfloat16",
+  "updates": 2,
+  "verifier_loss": "0.5 * first_token_CE + 0.5 * mean_remaining_token_CE",
+  "gpu": "NVIDIA GeForce RTX 3050",
+  "peak_reserved_mib": 4540,
+  "seconds": 4.140000000000327,
+  "dev": [
+    {
+      "G_one_step_correct": 4,
+      "G_one_step_total": 12,
+      "G_greedy": {
+        "n": 12,
+        "success_rate": 0.08333333333333333,
+        "feasibility": 0.08333333333333333,
+        "optimality": 0.08333333333333333,
+        "path_efficiency_on_success": 1.0
+      },
+      "V": {
+        "correct": 2,
+        "n": 12,
+        "macro_f1": 0.0571,
+        "recall_counts": {
+          "valid": [
+            0,
+            2
+          ],
+          "obstacle_collision": [
+            0,
+            3
+          ],
+          "out_of_bounds": [
+            0,
+            1
+          ],
+          "invalid_action_token": [
+            2,
+            2
+          ],
+          "goal_not_reached": [
+            0,
+            4
+          ]
+        },
+        "precision_counts": {
+          "valid": [
+            0,
+            0
+          ],
+          "obstacle_collision": [
+            0,
+            0
+          ],
+          "out_of_bounds": [
+            0,
+            0
+          ],
+          "invalid_action_token": [
+            2,
+            12
+          ],
+          "goal_not_reached": [
+            0,
+            0
+          ]
+        },
+        "malformed": 0
+      },
+      "epoch": 1,
+      "updates": 2,
+      "train_mean_loss": 2.1409107595682144
+    }
+  ]
+}

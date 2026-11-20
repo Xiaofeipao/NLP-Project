@@ -1,0 +1,83 @@
+{
+  "dataset_manifest_sha256": "aa10f89318ee14b061158a7eb333054c19786adf62af8706813df8871837adbc",
+  "G_derived_diagnostics": {
+    "rows": 8000,
+    "identical_rows_in_formal_V": 1208,
+    "diagnostic_only": 6792
+  },
+  "D4_wall_classes_shared": {
+    "train__dev": 20,
+    "train__test_id": 20,
+    "train__test_ood": 20,
+    "dev__test_id": 6,
+    "dev__test_ood": 6,
+    "test_id__test_ood": 73
+  },
+  "D4_train_dev_g_observations": [
+    {
+      "train": [
+        "train-2851"
+      ],
+      "dev": [
+        "dev-0110"
+      ]
+    }
+  ],
+  "D4_train_dev_v_observations": [],
+  "official_reference_path_steps": {
+    "test_id": {
+      "reference_reachable_steps": 877,
+      "D4_shared_train_V_exact_action": [],
+      "D4_shared_train_G_state": [
+        {
+          "case": "test_id-56",
+          "step": 2,
+          "train_G": [
+            "train-2570"
+          ]
+        },
+        {
+          "case": "test_id-96",
+          "step": 7,
+          "train_G": [
+            "train-2595"
+          ]
+        },
+        {
+          "case": "test_id-118",
+          "step": 2,
+          "train_G": [
+            "train-3597"
+          ]
+        }
+      ]
+    },
+    "test_ood": {
+      "reference_reachable_steps": 829,
+      "D4_shared_train_V_exact_action": [],
+      "D4_shared_train_G_state": [
+        {
+          "case": "test_ood-56",
+          "step": 2,
+          "train_G": [
+            "train-2570"
+          ]
+        },
+        {
+          "case": "test_ood-96",
+          "step": 7,
+          "train_G": [
+            "train-2595"
+          ]
+        },
+        {
+          "case": "test_ood-118",
+          "step": 2,
+          "train_G": [
+            "train-3597"
+          ]
+        }
+      ]
+    }
+  }
+}

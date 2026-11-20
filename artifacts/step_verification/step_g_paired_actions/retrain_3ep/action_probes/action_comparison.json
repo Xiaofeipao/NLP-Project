@@ -1,0 +1,590 @@
+{
+  "probe_hashes": {
+    "g": "f1ea9071467c61923185566d25b0c95ee5862afc09d32205c13093c58d169a18",
+    "v": "7b13659cf2165ff35dd2fb133f8f798ed6931211bfa23d208c6d17dddde76745"
+  },
+  "shared_with_formal_dev_V": {
+    "g": 60,
+    "v": 80,
+    "v_only": 20
+  },
+  "old_text": {
+    "checkpoint": "E:\\YanbingChen\\gv_balanced_equal_first_20261120\\run\\checkpoint-epoch-2",
+    "g": {
+      "steps_correct": [
+        75,
+        400
+      ],
+      "states_all_four_correct": [
+        0,
+        100
+      ],
+      "states_same_prediction_for_all_moves": [
+        96,
+        100
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        10
+      ],
+      "false_valid": 105,
+      "confusion": {
+        "obstacle_collision": {
+          "out_of_bounds": 29,
+          "valid": 23,
+          "obstacle_collision": 13
+        },
+        "out_of_bounds": {
+          "out_of_bounds": 59
+        },
+        "goal_not_reached": {
+          "out_of_bounds": 143,
+          "valid": 82,
+          "obstacle_collision": 41
+        },
+        "valid": {
+          "out_of_bounds": 6,
+          "valid": 3,
+          "obstacle_collision": 1
+        }
+      }
+    },
+    "v": {
+      "steps_correct": [
+        71,
+        300
+      ],
+      "states_all_four_correct": [
+        0,
+        75
+      ],
+      "states_same_prediction_for_all_moves": [
+        71,
+        75
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        20
+      ],
+      "false_valid": 58,
+      "confusion": {
+        "goal_not_reached": {
+          "out_of_bounds": 104,
+          "valid": 46,
+          "obstacle_collision": 28
+        },
+        "out_of_bounds": {
+          "out_of_bounds": 53
+        },
+        "valid": {
+          "out_of_bounds": 11,
+          "valid": 5,
+          "obstacle_collision": 4
+        },
+        "obstacle_collision": {
+          "out_of_bounds": 24,
+          "valid": 12,
+          "obstacle_collision": 13
+        }
+      }
+    },
+    "v_only": {
+      "steps_correct": [
+        15,
+        68
+      ],
+      "states_all_four_correct": [
+        0,
+        17
+      ],
+      "states_same_prediction_for_all_moves": [
+        14,
+        17
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        10
+      ],
+      "false_valid": 17,
+      "confusion": {
+        "goal_not_reached": {
+          "out_of_bounds": 17,
+          "valid": 14,
+          "obstacle_collision": 9
+        },
+        "out_of_bounds": {
+          "out_of_bounds": 10
+        },
+        "valid": {
+          "out_of_bounds": 5,
+          "valid": 2,
+          "obstacle_collision": 3
+        },
+        "obstacle_collision": {
+          "out_of_bounds": 2,
+          "valid": 3,
+          "obstacle_collision": 3
+        }
+      }
+    }
+  },
+  "new_text": {
+    "checkpoint": "E:\\YanbingChen\\gv_paired_actions_20261120\\retrain_3ep\\text\\checkpoint-epoch-3",
+    "g": {
+      "steps_correct": [
+        92,
+        400
+      ],
+      "states_all_four_correct": [
+        0,
+        100
+      ],
+      "states_same_prediction_for_all_moves": [
+        32,
+        100
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        10
+      ],
+      "false_valid": 215,
+      "confusion": {
+        "obstacle_collision": {
+          "obstacle_collision": 25,
+          "out_of_bounds": 1,
+          "valid": 39
+        },
+        "out_of_bounds": {
+          "out_of_bounds": 58,
+          "obstacle_collision": 1
+        },
+        "goal_not_reached": {
+          "obstacle_collision": 79,
+          "valid": 176,
+          "out_of_bounds": 9,
+          "goal_not_reached": 2
+        },
+        "valid": {
+          "obstacle_collision": 3,
+          "valid": 7
+        }
+      }
+    },
+    "v": {
+      "steps_correct": [
+        87,
+        300
+      ],
+      "states_all_four_correct": [
+        0,
+        75
+      ],
+      "states_same_prediction_for_all_moves": [
+        21,
+        75
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        20
+      ],
+      "false_valid": 136,
+      "confusion": {
+        "goal_not_reached": {
+          "valid": 107,
+          "obstacle_collision": 59,
+          "goal_not_reached": 2,
+          "out_of_bounds": 10
+        },
+        "out_of_bounds": {
+          "out_of_bounds": 53
+        },
+        "valid": {
+          "obstacle_collision": 7,
+          "valid": 13
+        },
+        "obstacle_collision": {
+          "obstacle_collision": 19,
+          "valid": 29,
+          "out_of_bounds": 1
+        }
+      }
+    },
+    "v_only": {
+      "steps_correct": [
+        18,
+        68
+      ],
+      "states_all_four_correct": [
+        0,
+        17
+      ],
+      "states_same_prediction_for_all_moves": [
+        7,
+        17
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        10
+      ],
+      "false_valid": 39,
+      "confusion": {
+        "goal_not_reached": {
+          "valid": 33,
+          "out_of_bounds": 1,
+          "obstacle_collision": 6
+        },
+        "out_of_bounds": {
+          "out_of_bounds": 10
+        },
+        "valid": {
+          "obstacle_collision": 4,
+          "valid": 6
+        },
+        "obstacle_collision": {
+          "obstacle_collision": 2,
+          "valid": 6
+        }
+      }
+    }
+  },
+  "new_text_epoch_2": {
+    "checkpoint": "E:\\YanbingChen\\gv_paired_actions_20261120\\retrain_3ep\\text\\checkpoint-epoch-2",
+    "g": {
+      "steps_correct": [
+        83,
+        400
+      ],
+      "states_all_four_correct": [
+        0,
+        100
+      ],
+      "states_same_prediction_for_all_moves": [
+        61,
+        100
+      ],
+      "states_only_arriving_move_called_valid": [
+        1,
+        10
+      ],
+      "false_valid": 75,
+      "confusion": {
+        "obstacle_collision": {
+          "out_of_bounds": 24,
+          "valid": 13,
+          "obstacle_collision": 28
+        },
+        "out_of_bounds": {
+          "out_of_bounds": 49,
+          "obstacle_collision": 9,
+          "valid": 1
+        },
+        "goal_not_reached": {
+          "out_of_bounds": 83,
+          "obstacle_collision": 121,
+          "valid": 61,
+          "goal_not_reached": 1
+        },
+        "valid": {
+          "obstacle_collision": 4,
+          "valid": 5,
+          "out_of_bounds": 1
+        }
+      }
+    },
+    "v": {
+      "steps_correct": [
+        73,
+        300
+      ],
+      "states_all_four_correct": [
+        0,
+        75
+      ],
+      "states_same_prediction_for_all_moves": [
+        48,
+        75
+      ],
+      "states_only_arriving_move_called_valid": [
+        4,
+        20
+      ],
+      "false_valid": 42,
+      "confusion": {
+        "goal_not_reached": {
+          "out_of_bounds": 69,
+          "obstacle_collision": 75,
+          "valid": 33,
+          "goal_not_reached": 1
+        },
+        "out_of_bounds": {
+          "out_of_bounds": 44,
+          "obstacle_collision": 8,
+          "valid": 1
+        },
+        "valid": {
+          "out_of_bounds": 4,
+          "obstacle_collision": 8,
+          "valid": 8
+        },
+        "obstacle_collision": {
+          "out_of_bounds": 21,
+          "obstacle_collision": 20,
+          "valid": 8
+        }
+      }
+    },
+    "v_only": {
+      "steps_correct": [
+        15,
+        68
+      ],
+      "states_all_four_correct": [
+        0,
+        17
+      ],
+      "states_same_prediction_for_all_moves": [
+        10,
+        17
+      ],
+      "states_only_arriving_move_called_valid": [
+        3,
+        10
+      ],
+      "false_valid": 7,
+      "confusion": {
+        "goal_not_reached": {
+          "out_of_bounds": 11,
+          "valid": 5,
+          "obstacle_collision": 24
+        },
+        "out_of_bounds": {
+          "out_of_bounds": 8,
+          "obstacle_collision": 2
+        },
+        "valid": {
+          "out_of_bounds": 3,
+          "obstacle_collision": 4,
+          "valid": 3
+        },
+        "obstacle_collision": {
+          "out_of_bounds": 2,
+          "obstacle_collision": 4,
+          "valid": 2
+        }
+      }
+    }
+  },
+  "old_head": {
+    "checkpoint": "E:\\YanbingChen\\gv_balanced_five_class_20261120\\run\\checkpoint-epoch-3",
+    "g": {
+      "steps_correct": [
+        82,
+        400
+      ],
+      "states_all_four_correct": [
+        3,
+        100
+      ],
+      "states_same_prediction_for_all_moves": [
+        66,
+        100
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        10
+      ],
+      "false_valid": 283,
+      "confusion": {
+        "obstacle_collision": {
+          "valid": 50,
+          "goal_not_reached": 15
+        },
+        "out_of_bounds": {
+          "valid": 39,
+          "goal_not_reached": 20
+        },
+        "goal_not_reached": {
+          "valid": 194,
+          "goal_not_reached": 72
+        },
+        "valid": {
+          "valid": 10
+        }
+      }
+    },
+    "v": {
+      "steps_correct": [
+        63,
+        300
+      ],
+      "states_all_four_correct": [
+        0,
+        75
+      ],
+      "states_same_prediction_for_all_moves": [
+        46,
+        75
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        20
+      ],
+      "false_valid": 206,
+      "confusion": {
+        "goal_not_reached": {
+          "valid": 135,
+          "goal_not_reached": 43
+        },
+        "out_of_bounds": {
+          "goal_not_reached": 19,
+          "valid": 34
+        },
+        "valid": {
+          "valid": 20
+        },
+        "obstacle_collision": {
+          "goal_not_reached": 12,
+          "valid": 37
+        }
+      }
+    },
+    "v_only": {
+      "steps_correct": [
+        19,
+        68
+      ],
+      "states_all_four_correct": [
+        0,
+        17
+      ],
+      "states_same_prediction_for_all_moves": [
+        8,
+        17
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        10
+      ],
+      "false_valid": 44,
+      "confusion": {
+        "goal_not_reached": {
+          "valid": 31,
+          "goal_not_reached": 9
+        },
+        "out_of_bounds": {
+          "goal_not_reached": 4,
+          "valid": 6
+        },
+        "valid": {
+          "valid": 10
+        },
+        "obstacle_collision": {
+          "valid": 7,
+          "goal_not_reached": 1
+        }
+      }
+    }
+  },
+  "new_head": {
+    "checkpoint": "E:\\YanbingChen\\gv_paired_actions_20261120\\retrain_3ep\\five_class\\checkpoint-epoch-3",
+    "g": {
+      "steps_correct": [
+        266,
+        400
+      ],
+      "states_all_four_correct": [
+        19,
+        100
+      ],
+      "states_same_prediction_for_all_moves": [
+        100,
+        100
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        10
+      ],
+      "false_valid": 0,
+      "confusion": {
+        "obstacle_collision": {
+          "goal_not_reached": 65
+        },
+        "out_of_bounds": {
+          "goal_not_reached": 59
+        },
+        "goal_not_reached": {
+          "goal_not_reached": 266
+        },
+        "valid": {
+          "goal_not_reached": 10
+        }
+      }
+    },
+    "v": {
+      "steps_correct": [
+        178,
+        300
+      ],
+      "states_all_four_correct": [
+        4,
+        75
+      ],
+      "states_same_prediction_for_all_moves": [
+        75,
+        75
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        20
+      ],
+      "false_valid": 0,
+      "confusion": {
+        "goal_not_reached": {
+          "goal_not_reached": 178
+        },
+        "out_of_bounds": {
+          "goal_not_reached": 53
+        },
+        "valid": {
+          "goal_not_reached": 20
+        },
+        "obstacle_collision": {
+          "goal_not_reached": 49
+        }
+      }
+    },
+    "v_only": {
+      "steps_correct": [
+        40,
+        68
+      ],
+      "states_all_four_correct": [
+        0,
+        17
+      ],
+      "states_same_prediction_for_all_moves": [
+        17,
+        17
+      ],
+      "states_only_arriving_move_called_valid": [
+        0,
+        10
+      ],
+      "false_valid": 0,
+      "confusion": {
+        "goal_not_reached": {
+          "goal_not_reached": 40
+        },
+        "out_of_bounds": {
+          "goal_not_reached": 10
+        },
+        "valid": {
+          "goal_not_reached": 10
+        },
+        "obstacle_collision": {
+          "goal_not_reached": 8
+        }
+      }
+    }
+  }
+}

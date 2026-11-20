@@ -1,0 +1,37 @@
+{
+  "base_commit": "9eeb494fe1f775ad033ce2f668e22517cd194aee",
+  "executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+  "previous_manifest_sha256": "2102eca5dfda59e4c358ec09162c67e1759f12bc52b08eaa43359edc59d7be30",
+  "schema": "ppnl-g-state-balanced-v1",
+  "seeds": {
+    "dev": 43,
+    "test_id_view": 44,
+    "test_ood_view": 45,
+    "train": 42
+  },
+  "sha256": {
+    "audit.json": "357d94d548c461bd00f4b72c30b54cb1680229598b87cc44e0239e4635d4d6c6",
+    "control_groups.json": "e2d5b91643fbecbf524d33ed7b24403a23967209c656bec5b4b75ebc30d7aa6a",
+    "dev.jsonl": "46331218bdab0c512d22bc2630c3b6b306fc2b1eb07356298babb4710380aa5e",
+    "diagnostics/g_dev_balanced.jsonl": "fe2b2780a2693a54baaf301b7e68681d1e2a0afd17d1453dd0c2f6dc8cad786e",
+    "diagnostics/g_dev_four.jsonl": "f1ea9071467c61923185566d25b0c95ee5862afc09d32205c13093c58d169a18",
+    "diagnostics/g_train_balanced.jsonl": "d4254c01d74e4d14f8b2552582f3e774840cb5cd6a9c7f109e0a77fc3b481883",
+    "diagnostics/g_train_four.jsonl": "b7dc200507eb184054ea5fc390f4f2695725a7193362b1e65bdac98bc4bf0042",
+    "diagnostics/test_id_local.jsonl": "c9d8d9f4348402947f402971f962c8339ac68ae9d05fcb7a141a274c659f7c2a",
+    "diagnostics/test_ood_local.jsonl": "b70dc3f9551e5ff2a21517bf7d75dd93ec37a70ff798dfb02676160fb5773fa2",
+    "shortcut_audit.json": "a27ef4d3692f6c879367936ce150b8384c8019471ecb3d1b715e2a187dca3f8b",
+    "states.jsonl": "71e81774247666045e0ed68a78ff2f006934fa7ccdabc9a134225b7da72f3149",
+    "test_id.jsonl": "26b5f561b9fd7b3bd5e963b0186abdf0b42cb7da726f20833b229969900220c1",
+    "test_ood.jsonl": "c3e5b77f488931c15708ffdd32e88f725cda710f6eb3df517767fe1e390ba80c",
+    "train.jsonl": "e13754bd7a70d49aac6972db92d7b1b3f03f11803927b3424e83181d7ae83947"
+  },
+  "source_sha256": {
+    "dev.jsonl": "6b60713aa88053bacbe2a009c68baf69d51a1f3121390d0aea1c7f256a92bb3a",
+    "manifest.json": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+    "test_id.jsonl": "26b5f561b9fd7b3bd5e963b0186abdf0b42cb7da726f20833b229969900220c1",
+    "test_ood.jsonl": "c3e5b77f488931c15708ffdd32e88f725cda710f6eb3df517767fe1e390ba80c",
+    "train.jsonl": "d1212c424d5e1dcdc7d99fd0520ce9d28ab7ef292c7c5121a3dd4cc54d5842a2"
+  },
+  "template_sha256": "62ae5ab00b02924b03981e80d031d542d3566f226f61588e1889858d884aa70a",
+  "tokenizer_sha256": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a"
+}

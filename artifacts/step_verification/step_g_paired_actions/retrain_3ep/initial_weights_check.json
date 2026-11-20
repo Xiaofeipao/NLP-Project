@@ -1,0 +1,5 @@
+{
+  "backbone_sha256": "9202aab865feee51ce427b385b3516cbf3d882de05097747de98d41e3f4998fa",
+  "shared_and_lm_head_tied": false,
+  "verifier_head_extra_parameters": 3845
+}

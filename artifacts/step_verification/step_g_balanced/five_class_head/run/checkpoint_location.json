@@ -1,0 +1,27 @@
+{
+  "selected_directory": "E:\\YanbingChen\\gv_balanced_five_class_20261120\\run\\checkpoint-epoch-3",
+  "weights_sha256": "a0b0d9393d27b75771e7a7a98749cd1de66c5e75cf98adc54d291d40abc5de56",
+  "weights_bytes": 990360620,
+  "head_tensor_shapes": {
+    "verifier_head.weight": [
+      5,
+      768
+    ],
+    "verifier_head.bias": [
+      5
+    ]
+  },
+  "class_order": [
+    "valid",
+    "goal_not_reached",
+    "obstacle_collision",
+    "out_of_bounds",
+    "invalid_action_token"
+  ],
+  "torch": "2.11.0+cu128",
+  "transformers": "5.20.0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "gpu": "NVIDIA GeForce RTX 3050",
+  "train_command": "python -m step_data_v3.train_gpu --data data/step_g_balanced --pretrained E:/YanbingChen/phase1_pretrained/flan_t5_base --out ../run --epochs 3 --microbatch 4 --verifier-head",
+  "source_at_launch": "source_at_launch contains the original versions of the three files subsequently checked for public API compatibility; all other training sources are in workspace."
+}

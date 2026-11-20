@@ -1,0 +1,538 @@
+{
+  "phase": "train",
+  "microbatch": 4,
+  "precision": "bfloat16",
+  "updates": 750,
+  "verifier_loss": "0.5 * first_token_CE + 0.5 * mean_remaining_token_CE",
+  "gpu": "NVIDIA GeForce RTX 3050",
+  "peak_reserved_mib": 4542,
+  "seconds": 1067.405999999999,
+  "dev": [
+    {
+      "G_one_step_correct": 47,
+      "G_one_step_total": 100,
+      "G_greedy": {
+        "n": 100,
+        "success_rate": 0.03,
+        "feasibility": 0.73,
+        "optimality": 0.03,
+        "path_efficiency_on_success": 1.0
+      },
+      "V": {
+        "correct": 45,
+        "n": 100,
+        "macro_f1": 0.3615,
+        "recall_counts": {
+          "valid": [
+            17,
+            20
+          ],
+          "obstacle_collision": [
+            8,
+            20
+          ],
+          "out_of_bounds": [
+            0,
+            20
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "goal_not_reached": [
+            0,
+            20
+          ]
+        },
+        "precision_counts": {
+          "valid": [
+            17,
+            54
+          ],
+          "obstacle_collision": [
+            8,
+            26
+          ],
+          "out_of_bounds": [
+            0,
+            0
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "goal_not_reached": [
+            0,
+            0
+          ]
+        },
+        "malformed": 0
+      },
+      "epoch": 1,
+      "updates": 250,
+      "train_mean_loss": 1.0147833958566188
+    },
+    {
+      "G_one_step_correct": 61,
+      "G_one_step_total": 100,
+      "G_greedy": {
+        "n": 100,
+        "success_rate": 0.17,
+        "feasibility": 0.54,
+        "optimality": 0.16,
+        "path_efficiency_on_success": 0.9764705882352942
+      },
+      "V": {
+        "correct": 55,
+        "n": 100,
+        "macro_f1": 0.4942,
+        "recall_counts": {
+          "valid": [
+            8,
+            20
+          ],
+          "obstacle_collision": [
+            9,
+            20
+          ],
+          "out_of_bounds": [
+            18,
+            20
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "goal_not_reached": [
+            0,
+            20
+          ]
+        },
+        "precision_counts": {
+          "valid": [
+            8,
+            21
+          ],
+          "obstacle_collision": [
+            9,
+            28
+          ],
+          "out_of_bounds": [
+            18,
+            31
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "goal_not_reached": [
+            0,
+            0
+          ]
+        },
+        "malformed": 0
+      },
+      "epoch": 2,
+      "updates": 500,
+      "train_mean_loss": 0.747511699628085
+    },
+    {
+      "G_one_step_correct": 64,
+      "G_one_step_total": 100,
+      "G_greedy": {
+        "n": 100,
+        "success_rate": 0.37,
+        "feasibility": 0.62,
+        "optimality": 0.29,
+        "path_efficiency_on_success": 0.9287410787410787
+      },
+      "V": {
+        "correct": 57,
+        "n": 100,
+        "macro_f1": 0.5221,
+        "recall_counts": {
+          "valid": [
+            13,
+            20
+          ],
+          "obstacle_collision": [
+            4,
+            20
+          ],
+          "out_of_bounds": [
+            20,
+            20
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "goal_not_reached": [
+            0,
+            20
+          ]
+        },
+        "precision_counts": {
+          "valid": [
+            13,
+            44
+          ],
+          "obstacle_collision": [
+            4,
+            15
+          ],
+          "out_of_bounds": [
+            20,
+            21
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "goal_not_reached": [
+            0,
+            0
+          ]
+        },
+        "malformed": 0
+      },
+      "epoch": 3,
+      "updates": 750,
+      "train_mean_loss": 0.6168232259467477
+    }
+  ],
+  "experiment": {
+    "train_examples_per_epoch": 4000,
+    "effective_batch": 16,
+    "seed": 42,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "optimizer": "AdamW",
+    "pretrained_revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+    "manifest_sha256": "142bf234eb6fd4331796e29bd83d1c92ba165114be062e7f0238bdf70c4a1bdd",
+    "prompt_sha256": "62ae5ab00b02924b03981e80d031d542d3566f226f61588e1889858d884aa70a"
+  },
+  "checkpoint": "checkpoint-epoch-3",
+  "selected_dev_predictions_reproduced": 100,
+  "test": {
+    "test_id": {
+      "full_paths": {
+        "n": 200,
+        "macro_f1": 0.5117062013312431,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.2,
+        "failure_type_accuracy": 0.3,
+        "joint_error_accuracy": 0.2,
+        "predicted_labels": {
+          "obstacle_collision": 108,
+          "valid": 67,
+          "out_of_bounds": 10,
+          "invalid_action_token": 11,
+          "goal_not_reached": 4
+        },
+        "by_error": {
+          "goal_not_reached": {
+            "n": 58,
+            "macro_f1": 0.3333333333333333,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.06896551724137931,
+            "failure_type_accuracy": 0.06896551724137931,
+            "joint_error_accuracy": 0.06896551724137931
+          },
+          "invalid_action_token": {
+            "n": 20,
+            "macro_f1": 0.5,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.55,
+            "failure_type_accuracy": 0.55,
+            "joint_error_accuracy": 0.55
+          },
+          "obstacle_collision": {
+            "n": 14,
+            "macro_f1": 0.46153846153846156,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.14285714285714285,
+            "failure_type_accuracy": 0.8571428571428571,
+            "joint_error_accuracy": 0.14285714285714285
+          },
+          "out_of_bounds": {
+            "n": 8,
+            "macro_f1": 0.5,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.375,
+            "failure_type_accuracy": 0.375,
+            "joint_error_accuracy": 0.375
+          },
+          "valid": {
+            "n": 100,
+            "macro_f1": 0.2647058823529412,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": null,
+            "failure_type_accuracy": null,
+            "joint_error_accuracy": null
+          }
+        },
+        "exact": 56
+      },
+      "local_steps": {
+        "correct": 108,
+        "n": 196,
+        "macro_f1": 0.5576,
+        "recall_counts": {
+          "valid": [
+            77,
+            100
+          ],
+          "obstacle_collision": [
+            3,
+            14
+          ],
+          "out_of_bounds": [
+            8,
+            8
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "goal_not_reached": [
+            0,
+            54
+          ]
+        },
+        "precision_counts": {
+          "valid": [
+            77,
+            129
+          ],
+          "obstacle_collision": [
+            3,
+            38
+          ],
+          "out_of_bounds": [
+            8,
+            8
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "goal_not_reached": [
+            0,
+            1
+          ]
+        },
+        "malformed": 0
+      },
+      "balanced_local_steps": {
+        "correct": 22,
+        "n": 40,
+        "macro_f1": 0.5167,
+        "recall_counts": {
+          "valid": [
+            4,
+            8
+          ],
+          "obstacle_collision": [
+            2,
+            8
+          ],
+          "out_of_bounds": [
+            8,
+            8
+          ],
+          "invalid_action_token": [
+            8,
+            8
+          ],
+          "goal_not_reached": [
+            0,
+            8
+          ]
+        },
+        "precision_counts": {
+          "valid": [
+            4,
+            16
+          ],
+          "obstacle_collision": [
+            2,
+            8
+          ],
+          "out_of_bounds": [
+            8,
+            8
+          ],
+          "invalid_action_token": [
+            8,
+            8
+          ],
+          "goal_not_reached": [
+            0,
+            0
+          ]
+        },
+        "malformed": 0
+      }
+    },
+    "test_ood": {
+      "full_paths": {
+        "n": 200,
+        "macro_f1": 0.5776581142434801,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.41,
+        "failure_type_accuracy": 0.49,
+        "joint_error_accuracy": 0.41,
+        "predicted_labels": {
+          "obstacle_collision": 97,
+          "invalid_action_token": 35,
+          "valid": 54,
+          "out_of_bounds": 14
+        },
+        "by_error": {
+          "goal_not_reached": {
+            "n": 30,
+            "macro_f1": 0.34782608695652173,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.0,
+            "failure_type_accuracy": 0.0,
+            "joint_error_accuracy": 0.0
+          },
+          "invalid_action_token": {
+            "n": 45,
+            "macro_f1": 0.5,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.7555555555555555,
+            "failure_type_accuracy": 0.7555555555555555,
+            "joint_error_accuracy": 0.7555555555555555
+          },
+          "obstacle_collision": {
+            "n": 14,
+            "macro_f1": 0.44,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.14285714285714285,
+            "failure_type_accuracy": 0.6428571428571429,
+            "joint_error_accuracy": 0.14285714285714285
+          },
+          "out_of_bounds": {
+            "n": 11,
+            "macro_f1": 0.5,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": 0.45454545454545453,
+            "failure_type_accuracy": 0.5454545454545454,
+            "joint_error_accuracy": 0.45454545454545453
+          },
+          "valid": {
+            "n": 100,
+            "macro_f1": 0.27007299270072993,
+            "format_accuracy": 1.0,
+            "first_error_localization_accuracy": null,
+            "failure_type_accuracy": null,
+            "joint_error_accuracy": null
+          }
+        },
+        "exact": 78
+      },
+      "local_steps": {
+        "correct": 139,
+        "n": 200,
+        "macro_f1": 0.5946,
+        "recall_counts": {
+          "valid": [
+            77,
+            100
+          ],
+          "obstacle_collision": [
+            7,
+            14
+          ],
+          "out_of_bounds": [
+            10,
+            11
+          ],
+          "invalid_action_token": [
+            45,
+            45
+          ],
+          "goal_not_reached": [
+            0,
+            30
+          ]
+        },
+        "precision_counts": {
+          "valid": [
+            77,
+            108
+          ],
+          "obstacle_collision": [
+            7,
+            36
+          ],
+          "out_of_bounds": [
+            10,
+            10
+          ],
+          "invalid_action_token": [
+            45,
+            45
+          ],
+          "goal_not_reached": [
+            0,
+            1
+          ]
+        },
+        "malformed": 0
+      },
+      "balanced_local_steps": {
+        "correct": 36,
+        "n": 55,
+        "macro_f1": 0.6016,
+        "recall_counts": {
+          "valid": [
+            10,
+            11
+          ],
+          "obstacle_collision": [
+            5,
+            11
+          ],
+          "out_of_bounds": [
+            10,
+            11
+          ],
+          "invalid_action_token": [
+            11,
+            11
+          ],
+          "goal_not_reached": [
+            0,
+            11
+          ]
+        },
+        "precision_counts": {
+          "valid": [
+            10,
+            25
+          ],
+          "obstacle_collision": [
+            5,
+            9
+          ],
+          "out_of_bounds": [
+            10,
+            10
+          ],
+          "invalid_action_token": [
+            11,
+            11
+          ],
+          "goal_not_reached": [
+            0,
+            0
+          ]
+        },
+        "malformed": 0
+      }
+    }
+  }
+}

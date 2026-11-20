@@ -1,0 +1,668 @@
+{
+  "g_diagnostics": {
+    "dev": {
+      "G_all_optimal_actions_V_labels": {
+        "goal_not_reached": 141,
+        "valid": 10
+      },
+      "G_representative_action_V_labels": {
+        "goal_not_reached": 90,
+        "valid": 10
+      },
+      "G_states": 100,
+      "balanced_also_in_same_split_V": 15,
+      "balanced_labels": {
+        "goal_not_reached": 10,
+        "invalid_action_token": 10,
+        "obstacle_collision": 10,
+        "out_of_bounds": 10,
+        "valid": 10
+      },
+      "four_prompts": 400,
+      "natural_also_in_same_split_V": 60,
+      "natural_labels": {
+        "goal_not_reached": 266,
+        "obstacle_collision": 65,
+        "out_of_bounds": 59,
+        "valid": 10
+      }
+    },
+    "train": {
+      "G_all_optimal_actions_V_labels": {
+        "goal_not_reached": 2911,
+        "valid": 188
+      },
+      "G_representative_action_V_labels": {
+        "goal_not_reached": 1812,
+        "valid": 188
+      },
+      "G_states": 2000,
+      "balanced_also_in_same_split_V": 307,
+      "balanced_labels": {
+        "goal_not_reached": 188,
+        "invalid_action_token": 188,
+        "obstacle_collision": 188,
+        "out_of_bounds": 188,
+        "valid": 188
+      },
+      "four_prompts": 8000,
+      "natural_also_in_same_split_V": 1208,
+      "natural_labels": {
+        "goal_not_reached": 5361,
+        "obstacle_collision": 1126,
+        "out_of_bounds": 1325,
+        "valid": 188
+      }
+    }
+  },
+  "heldout": {
+    "test_id": {
+      "balanced_labels": {
+        "goal_not_reached": 8,
+        "invalid_action_token": 8,
+        "obstacle_collision": 8,
+        "out_of_bounds": 8,
+        "valid": 8
+      },
+      "labels": {
+        "goal_not_reached": 54,
+        "invalid_action_token": 20,
+        "obstacle_collision": 14,
+        "out_of_bounds": 8,
+        "valid": 100
+      },
+      "no_move_case_ids": [
+        "test_id-37",
+        "test_id-67",
+        "test_id-77",
+        "test_id-87"
+      ],
+      "original_cases": 200,
+      "original_edit_counts": {
+        "0": 100,
+        "1": 100
+      },
+      "real_action_rows": 196,
+      "reference_scan_exact": 200,
+      "source_edit_kinds_vs_first_failure": {
+        "deletion": {
+          "goal_not_reached": 13,
+          "obstacle_collision": 7
+        },
+        "insertion": {
+          "goal_not_reached": 12,
+          "obstacle_collision": 4,
+          "out_of_bounds": 4
+        },
+        "invalid_token": {
+          "invalid_action_token": 20
+        },
+        "premature_stopping": {
+          "goal_not_reached": 20
+        },
+        "substitution": {
+          "goal_not_reached": 13,
+          "obstacle_collision": 3,
+          "out_of_bounds": 4
+        },
+        "unchanged": {
+          "valid": 100
+        }
+      },
+      "unique_local_inputs": 195
+    },
+    "test_ood": {
+      "balanced_labels": {
+        "goal_not_reached": 11,
+        "invalid_action_token": 11,
+        "obstacle_collision": 11,
+        "out_of_bounds": 11,
+        "valid": 11
+      },
+      "labels": {
+        "goal_not_reached": 30,
+        "invalid_action_token": 45,
+        "obstacle_collision": 14,
+        "out_of_bounds": 11,
+        "valid": 100
+      },
+      "no_move_case_ids": [],
+      "original_cases": 200,
+      "original_edit_counts": {
+        "0": 100,
+        "2": 100
+      },
+      "real_action_rows": 200,
+      "reference_scan_exact": 200,
+      "source_edit_kinds_vs_first_failure": {
+        "deletion+deletion": {
+          "goal_not_reached": 13,
+          "obstacle_collision": 2
+        },
+        "deletion+invalid_token": {
+          "invalid_action_token": 2,
+          "obstacle_collision": 1
+        },
+        "deletion+substitution": {
+          "goal_not_reached": 2,
+          "obstacle_collision": 2
+        },
+        "insertion+deletion": {
+          "goal_not_reached": 1,
+          "obstacle_collision": 1,
+          "out_of_bounds": 3
+        },
+        "insertion+insertion": {
+          "goal_not_reached": 2,
+          "obstacle_collision": 3,
+          "out_of_bounds": 2
+        },
+        "insertion+invalid_token": {
+          "invalid_action_token": 5,
+          "obstacle_collision": 2
+        },
+        "insertion+substitution": {
+          "goal_not_reached": 2,
+          "obstacle_collision": 1,
+          "out_of_bounds": 3
+        },
+        "invalid_token+deletion": {
+          "invalid_action_token": 10
+        },
+        "invalid_token+insertion": {
+          "invalid_action_token": 8
+        },
+        "invalid_token+invalid_token": {
+          "invalid_action_token": 8
+        },
+        "invalid_token+substitution": {
+          "invalid_action_token": 6
+        },
+        "substitution+deletion": {
+          "goal_not_reached": 4,
+          "obstacle_collision": 1
+        },
+        "substitution+insertion": {
+          "goal_not_reached": 3,
+          "out_of_bounds": 1
+        },
+        "substitution+invalid_token": {
+          "invalid_action_token": 6,
+          "obstacle_collision": 1,
+          "out_of_bounds": 1
+        },
+        "substitution+substitution": {
+          "goal_not_reached": 3,
+          "out_of_bounds": 1
+        },
+        "unchanged": {
+          "valid": 100
+        }
+      },
+      "unique_local_inputs": 199
+    }
+  },
+  "nonoptimal_paths": {
+    "reference_valid_by_shape": {
+      "backtrack": 20,
+      "simple_detour": 20,
+      "square": 20
+    },
+    "shortest_route_length_range": [
+      3,
+      9
+    ]
+  },
+  "overlaps": {
+    "fixed_ID_OOD_identical_grid_and_candidate": 100,
+    "fixed_ID_OOD_shared_layouts": 79,
+    "learning_environment_or_input_overlap_with_other_partitions": 0
+  },
+  "supervised": {
+    "dev": {
+      "G_optimal_action_memberships": {
+        "down": 37,
+        "left": 39,
+        "right": 41,
+        "up": 34
+      },
+      "G_optimal_set_sizes": {
+        "1": 51,
+        "2": 47,
+        "3": 2
+      },
+      "G_representative_actions": {
+        "down": 21,
+        "left": 22,
+        "right": 33,
+        "up": 24
+      },
+      "V_origins": {
+        "G_direction": 34,
+        "G_word": 17,
+        "previous_V": 41,
+        "source_shortest_arrival": 8
+      },
+      "conflicting_identical_inputs": 0,
+      "control_groups": {
+        "change_edge": 1,
+        "change_goal": 1,
+        "change_wall": 1,
+        "four_adjacent": 1,
+        "four_detour": 2,
+        "four_open": 1,
+        "four_ordinary": 1,
+        "four_tie": 1,
+        "swap_walls": 2
+      },
+      "coverage": {
+        "G_forced_to_increase_Manhattan": 28,
+        "G_reference_rollouts_shortest_and_cycle_free": 100,
+        "V_moves_from_goal": 1,
+        "V_real_nonempty_single_moves": 100,
+        "V_shared_G": 80
+      },
+      "duplicate_inputs": 0,
+      "generation": 100,
+      "invalid_words": {
+        "climb": 2,
+        "forwards": 2,
+        "jump": 2,
+        "north": 2,
+        "pivot": 2,
+        "rght": 2,
+        "spin": 2,
+        "turn": 2,
+        "wait": 2,
+        "west": 2
+      },
+      "labels": {
+        "goal_not_reached": 20,
+        "invalid_action_token": 20,
+        "obstacle_collision": 20,
+        "out_of_bounds": 20,
+        "valid": 20
+      },
+      "layouts": 76,
+      "malformed_prompts": 0,
+      "paired_controls_without_walls": {
+        "change_edge": {
+          "correct_without_walls": 2,
+          "total": 2
+        },
+        "change_goal": {
+          "correct_without_walls": 2,
+          "total": 2
+        },
+        "change_wall": {
+          "correct_without_walls": 1,
+          "total": 2
+        },
+        "four_adjacent": {
+          "correct_without_walls": 2,
+          "total": 4
+        },
+        "four_detour": {
+          "correct_without_walls": 5,
+          "total": 8
+        },
+        "four_open": {
+          "correct_without_walls": 4,
+          "total": 4
+        },
+        "four_ordinary": {
+          "correct_without_walls": 1,
+          "total": 4
+        },
+        "four_tie": {
+          "correct_without_walls": 3,
+          "total": 4
+        },
+        "swap_walls": {
+          "correct_without_walls": 4,
+          "total": 8
+        }
+      },
+      "per_direction": {
+        "goal_not_reached": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        },
+        "obstacle_collision": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        },
+        "out_of_bounds": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        },
+        "valid": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        }
+      },
+      "previous_shortest_arrival_axes": {
+        "directions": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        },
+        "dual_axis_directions": {
+          "left": 5,
+          "right": 2,
+          "up": 1
+        },
+        "dual_axis_original_grids_observed_on_both_axes": 0,
+        "eligibility": {
+          "both_axes_horizontal": 7,
+          "both_axes_vertical": 1,
+          "different_goal": 6,
+          "one_axis_horizontal": 2,
+          "one_axis_vertical": 4
+        }
+      },
+      "shortest_arrival_axes": {
+        "directions": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        },
+        "dual_axis_directions": {
+          "down": 2,
+          "left": 4,
+          "right": 1,
+          "up": 3
+        },
+        "dual_axis_original_grids_observed_on_both_axes": 3,
+        "eligibility": {
+          "both_axes_horizontal": 5,
+          "both_axes_vertical": 5,
+          "different_goal": 8,
+          "one_axis_horizontal": 1,
+          "one_axis_vertical": 1
+        }
+      },
+      "unique_inputs": 200,
+      "verification": 100,
+      "wrong_oracle_targets": 0
+    },
+    "train": {
+      "G_optimal_action_memberships": {
+        "down": 744,
+        "left": 790,
+        "right": 763,
+        "up": 802
+      },
+      "G_optimal_set_sizes": {
+        "1": 911,
+        "2": 1079,
+        "3": 10
+      },
+      "G_representative_actions": {
+        "down": 479,
+        "left": 510,
+        "right": 511,
+        "up": 500
+      },
+      "V_origins": {
+        "G_direction": 551,
+        "G_word": 322,
+        "previous_V": 976,
+        "source_shortest_arrival": 151
+      },
+      "conflicting_identical_inputs": 0,
+      "control_groups": {
+        "change_edge": 20,
+        "change_goal": 20,
+        "change_wall": 20,
+        "four_adjacent": 52,
+        "four_detour": 64,
+        "four_open": 4,
+        "four_ordinary": 23,
+        "four_tie": 12,
+        "swap_walls": 40
+      },
+      "coverage": {
+        "G_forced_to_increase_Manhattan": 531,
+        "G_reference_rollouts_shortest_and_cycle_free": 2000,
+        "V_moves_from_goal": 10,
+        "V_real_nonempty_single_moves": 2000,
+        "V_shared_G": 1608
+      },
+      "duplicate_inputs": 0,
+      "generation": 2000,
+      "invalid_words": {
+        "DOWN": 20,
+        "back": 20,
+        "backward": 20,
+        "dash": 20,
+        "east": 20,
+        "hop": 20,
+        "idle": 20,
+        "jump": 20,
+        "leap": 20,
+        "leftwards": 20,
+        "north": 20,
+        "rigt": 20,
+        "sidestep": 20,
+        "slide": 20,
+        "spin": 20,
+        "stay": 20,
+        "turn": 20,
+        "upward": 20,
+        "wait": 20,
+        "walk": 20
+      },
+      "labels": {
+        "goal_not_reached": 400,
+        "invalid_action_token": 400,
+        "obstacle_collision": 400,
+        "out_of_bounds": 400,
+        "valid": 400
+      },
+      "layouts": 652,
+      "malformed_prompts": 0,
+      "paired_controls_without_walls": {
+        "change_edge": {
+          "correct_without_walls": 40,
+          "total": 40
+        },
+        "change_goal": {
+          "correct_without_walls": 40,
+          "total": 40
+        },
+        "change_wall": {
+          "correct_without_walls": 20,
+          "total": 40
+        },
+        "four_adjacent": {
+          "correct_without_walls": 174,
+          "total": 208
+        },
+        "four_detour": {
+          "correct_without_walls": 163,
+          "total": 256
+        },
+        "four_open": {
+          "correct_without_walls": 16,
+          "total": 16
+        },
+        "four_ordinary": {
+          "correct_without_walls": 71,
+          "total": 92
+        },
+        "four_tie": {
+          "correct_without_walls": 42,
+          "total": 48
+        },
+        "swap_walls": {
+          "correct_without_walls": 80,
+          "total": 160
+        }
+      },
+      "per_direction": {
+        "goal_not_reached": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "obstacle_collision": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "out_of_bounds": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "valid": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        }
+      },
+      "previous_shortest_arrival_axes": {
+        "directions": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "dual_axis_directions": {
+          "down": 11,
+          "left": 44,
+          "right": 45,
+          "up": 16
+        },
+        "dual_axis_original_grids_observed_on_both_axes": 2,
+        "eligibility": {
+          "both_axes_horizontal": 89,
+          "both_axes_vertical": 27,
+          "different_goal": 145,
+          "one_axis_horizontal": 31,
+          "one_axis_vertical": 87,
+          "outside_donor_shortest_approaches": 21
+        }
+      },
+      "shortest_arrival_axes": {
+        "directions": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "dual_axis_directions": {
+          "down": 50,
+          "left": 50,
+          "right": 50,
+          "up": 50
+        },
+        "dual_axis_original_grids_observed_on_both_axes": 99,
+        "eligibility": {
+          "both_axes_horizontal": 100,
+          "both_axes_vertical": 100,
+          "different_goal": 125,
+          "one_axis_horizontal": 23,
+          "one_axis_vertical": 31,
+          "outside_donor_shortest_approaches": 21
+        }
+      },
+      "unique_inputs": 4000,
+      "verification": 2000,
+      "wrong_oracle_targets": 0
+    }
+  },
+  "tokenization": {
+    "all_targets_roundtrip": true,
+    "files": {
+      "dev.jsonl": {
+        "max_input_tokens": 114,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 86.39,
+        "rows": 200
+      },
+      "diagnostics/g_dev_balanced.jsonl": {
+        "max_input_tokens": 114,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 108.02,
+        "rows": 50
+      },
+      "diagnostics/g_dev_four.jsonl": {
+        "max_input_tokens": 111,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.69,
+        "rows": 400
+      },
+      "diagnostics/g_train_balanced.jsonl": {
+        "max_input_tokens": 113,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.82,
+        "rows": 940
+      },
+      "diagnostics/g_train_four.jsonl": {
+        "max_input_tokens": 111,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.65,
+        "rows": 8000
+      },
+      "diagnostics/test_id_local.jsonl": {
+        "max_input_tokens": 112,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.55,
+        "rows": 196
+      },
+      "diagnostics/test_ood_local.jsonl": {
+        "max_input_tokens": 112,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.72,
+        "rows": 200
+      },
+      "train.jsonl": {
+        "max_input_tokens": 113,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 86.14,
+        "rows": 4000
+      }
+    },
+    "input_unknown_tokens": 0,
+    "mean_train_prompt_tokens_same_states": {
+      "g_next": {
+        "current": 64.65,
+        "previous_single": 64.65,
+        "v2": 166.92
+      },
+      "v_step": {
+        "current": 107.62,
+        "previous_single": 99.62,
+        "v2": 190.69
+      }
+    },
+    "tokenizer_sha256": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a",
+    "truncated_rows": 0
+  },
+  "train_grid_sizes": [
+    [
+      6,
+      6
+    ]
+  ],
+  "train_wall_count_range": [
+    1,
+    5
+  ]
+}

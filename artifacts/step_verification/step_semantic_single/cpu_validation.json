@@ -1,0 +1,14 @@
+{
+  "CPU_random_T5_mixed_backward": true,
+  "G_four_action_scores": true,
+  "five_V_labels_tested": [
+    "valid",
+    "obstacle_collision",
+    "out_of_bounds",
+    "invalid_action_token",
+    "goal_not_reached"
+  ],
+  "full_train_and_dev_target_roundtrip": 4200,
+  "max_input_tokens": 117,
+  "max_target_tokens": 7
+}

@@ -1,0 +1,9 @@
+{
+  "selected": "checkpoint-epoch-3",
+  "epoch": 3,
+  "rank": [
+    "dev V macro F1",
+    "dev G greedy success rate",
+    "dev G one-step correct"
+  ]
+}

@@ -51,6 +51,13 @@ def confirmation(config, key):
     return item
 
 
+def optimal_action_loss(action_logits, allowed):
+    """One loss per G state. Each row must contain at least one optimal move."""
+    import torch
+    log_probs = torch.log_softmax(action_logits.float(), dim=-1)
+    return -torch.logsumexp(log_probs.masked_fill(~allowed, -float("inf")), dim=-1)
+
+
 def action_set_loss(logits, labels, action_ids, allowed, mode, *, split_verification_loss=False):
     """Per-example action-set loss and verifier loss with optional status weighting."""
     import torch
@@ -64,8 +71,7 @@ def action_set_loss(logits, labels, action_ids, allowed, mode, *, split_verifica
     elif mode == "optimal_actions":
         # Avoid all-minus-infinity rows and NaN gradients for verification examples.
         safe_allowed = torch.where(is_policy[:, None], allowed, torch.ones_like(allowed))
-        probabilities = F.log_softmax(action_logits, dim=-1)
-        policy_loss = -torch.logsumexp(probabilities.masked_fill(~safe_allowed, -float("inf")), dim=-1)
+        policy_loss = optimal_action_loss(action_logits, safe_allowed)
     else:
         raise ValueError(mode)
     tokens = F.cross_entropy(logits.float().transpose(1, 2), labels, ignore_index=-100, reduction="none")
@@ -80,9 +86,16 @@ def action_set_loss(logits, labels, action_ids, allowed, mode, *, split_verifica
 
 
 class Seq2Seq:
+    def load_model(self, checkpoint, **kwargs):
+        from transformers import AutoModelForSeq2SeqLM
+        model = AutoModelForSeq2SeqLM.from_pretrained(checkpoint, **kwargs)
+        if getattr(model.config, "ppnl_verifier_head", None):
+            raise ValueError("This checkpoint has a separate verifier head. Use its matching runner.")
+        return model
+
     def __init__(self, checkpoint, config, revision=None):
         import torch
-        from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, DataCollatorForSeq2Seq, set_seed
+        from transformers import AutoTokenizer, DataCollatorForSeq2Seq, set_seed
         set_seed(config["seed"])
         self.config, self.torch = config, torch
         self.device = "cuda"
@@ -104,7 +117,7 @@ class Seq2Seq:
             if any(len(ids) != 1 for ids in token_ids):
                 raise ValueError("Action loss requires single-token action words")
             self.action_ids = [ids[0] for ids in token_ids]
-        self.model = AutoModelForSeq2SeqLM.from_pretrained(checkpoint, **kwargs).to(self.device)
+        self.model = self.load_model(checkpoint, **kwargs).to(self.device)
         self.source_revision = getattr(self.model.config, "_commit_hash", None) or revision
         # Upstream BART config enables beam-only early stopping; use a clean greedy setting.
         self.model.generation_config.early_stopping = False

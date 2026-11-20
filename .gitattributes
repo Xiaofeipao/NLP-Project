@@ -27,3 +27,8 @@ ppnl/modeling.py text eol=crlf
 ppnl/optimization.py text eol=crlf
 ppnl/policy.py text eol=crlf
 ppnl/prompts.py text eol=crlf
+
+# Freeze G/V runs and trainer source used in recorded hashes.
+artifacts/step_verification/** -text -whitespace
+step_data_v3/** -text whitespace=cr-at-eol
+data/step_*/** whitespace=cr-at-eol

@@ -1,0 +1,72 @@
+{
+  "dev": {
+    "G": 100,
+    "V": 100,
+    "empty_or_multitoken_candidates": 0,
+    "groups": {
+      "G_move": 14,
+      "change_edge": 2,
+      "change_goal": 3,
+      "change_wall": 3,
+      "depart_goal": 2,
+      "four_adjacent": 3,
+      "four_detour": 2,
+      "four_open": 1,
+      "four_tie": 2,
+      "lexical": 10,
+      "prefix": 12,
+      "shortest_prefix": 6,
+      "swap_walls": 2
+    },
+    "labels": {
+      "goal_not_reached": 35,
+      "invalid_action_token": 10,
+      "obstacle_collision": 22,
+      "out_of_bounds": 13,
+      "valid": 20
+    },
+    "layouts": 76,
+    "matched_wall_swap_rows": 8,
+    "matched_wall_swap_wall_blind_correct": 4
+  },
+  "test_id": {
+    "empty_cases_with_no_model_call": 4,
+    "frozen_cases": 200,
+    "reference_step_verdicts_aggregated_correctly": 200
+  },
+  "test_ood": {
+    "empty_cases_with_no_model_call": 0,
+    "frozen_cases": 200,
+    "reference_step_verdicts_aggregated_correctly": 200
+  },
+  "train": {
+    "G": 2000,
+    "V": 2000,
+    "empty_or_multitoken_candidates": 0,
+    "groups": {
+      "G_move": 363,
+      "change_edge": 40,
+      "change_goal": 60,
+      "change_wall": 60,
+      "depart_goal": 20,
+      "four_adjacent": 60,
+      "four_detour": 40,
+      "four_open": 20,
+      "four_tie": 40,
+      "lexical": 200,
+      "prefix": 290,
+      "shortest_prefix": 7,
+      "swap_walls": 40
+    },
+    "labels": {
+      "goal_not_reached": 700,
+      "invalid_action_token": 200,
+      "obstacle_collision": 450,
+      "out_of_bounds": 250,
+      "valid": 400
+    },
+    "layouts": 652,
+    "matched_wall_swap_rows": 160,
+    "matched_wall_swap_wall_blind_correct": 80
+  }
+}

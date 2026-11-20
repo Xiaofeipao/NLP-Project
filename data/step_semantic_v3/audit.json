@@ -1,0 +1,251 @@
+{
+  "frozen_id_ood_shared_layouts": 79,
+  "learning_split_overlap_with_other_partitions": 0,
+  "schema": "ppnl-step-semantic-v3.1",
+  "splits": {
+    "dev": {
+      "G_states_also_in_V": 35,
+      "V_rows_also_in_G": 54,
+      "all_shared_V_labels": {
+        "goal_not_reached": 7,
+        "invalid_action_token": 8,
+        "obstacle_collision": 9,
+        "out_of_bounds": 10,
+        "valid": 20
+      },
+      "coverage": {
+        "full_errors_after_first_step": 18,
+        "full_nonempty_unfinished": 5,
+        "move/goal_not_reached": 15,
+        "move/invalid_action_token": 8,
+        "move/obstacle_collision": 8,
+        "move/out_of_bounds": 8,
+        "move/valid": 13,
+        "multiple_optimal_actions": 49,
+        "must_increase_manhattan": 28,
+        "original_trace_changed_goal": 6,
+        "original_trace_factual": 18,
+        "stop/goal_not_reached": 4,
+        "stop/valid": 4
+      },
+      "directions": {
+        "down/goal_not_reached": 4,
+        "down/obstacle_collision": 2,
+        "down/out_of_bounds": 2,
+        "down/valid": 4,
+        "left/goal_not_reached": 4,
+        "left/obstacle_collision": 2,
+        "left/out_of_bounds": 2,
+        "left/valid": 4,
+        "right/goal_not_reached": 1,
+        "right/obstacle_collision": 1,
+        "right/valid": 2,
+        "up/goal_not_reached": 6,
+        "up/obstacle_collision": 3,
+        "up/out_of_bounds": 4,
+        "up/valid": 3
+      },
+      "explicit_shared_G_anchors_by_V_label": {
+        "goal_not_reached": 7,
+        "invalid_action_token": 7,
+        "obstacle_collision": 7,
+        "out_of_bounds": 7,
+        "valid": 7
+      },
+      "full_path_kinds": {
+        "edit/delete": 2,
+        "edit/insert": 8,
+        "edit/replace": 8,
+        "edit/truncate": 2,
+        "valid/backtrack": 4,
+        "valid/shortest": 10,
+        "valid/simple_detour": 3,
+        "valid/square": 3
+      },
+      "groups": {
+        "arrive": 3,
+        "bounds": 4,
+        "collision": 4,
+        "continue": 1,
+        "edge": 4,
+        "forced": 25,
+        "move_goal": 6,
+        "ordinary": 20,
+        "plan_pair": 20,
+        "shared": 35,
+        "stop_goal": 4,
+        "tie": 20,
+        "token": 4,
+        "unknown": 4,
+        "wall": 4
+      },
+      "labels": {
+        "v_plan": {
+          "goal_not_reached": 5,
+          "invalid_action_token": 5,
+          "obstacle_collision": 5,
+          "out_of_bounds": 5,
+          "valid": 20
+        },
+        "v_step": {
+          "goal_not_reached": 19,
+          "invalid_action_token": 8,
+          "obstacle_collision": 8,
+          "out_of_bounds": 8,
+          "valid": 17
+        }
+      },
+      "layouts": 76,
+      "modes": {
+        "g_next": 100,
+        "v_plan": 40,
+        "v_step": 60
+      },
+      "shared_nonempty_step_attempts": 27,
+      "shared_step_move_is_G_optimal": 8,
+      "step_shortcut": {
+        "best_in_sample_lookup_by_action_exact": 28,
+        "rows": 60,
+        "v2_action_only_rule_exact": 19
+      },
+      "unique_model_inputs": 200
+    },
+    "test_id": {
+      "labels": {
+        "goal_not_reached": 58,
+        "invalid_action_token": 20,
+        "obstacle_collision": 14,
+        "out_of_bounds": 8,
+        "valid": 100
+      },
+      "layouts": 79,
+      "modes": {
+        "v_plan": 200
+      },
+      "source_records_matched_in_order": 200
+    },
+    "test_ood": {
+      "labels": {
+        "goal_not_reached": 30,
+        "invalid_action_token": 45,
+        "obstacle_collision": 14,
+        "out_of_bounds": 11,
+        "valid": 100
+      },
+      "layouts": 79,
+      "modes": {
+        "v_plan": 200
+      },
+      "source_records_matched_in_order": 200
+    },
+    "train": {
+      "G_states_also_in_V": 705,
+      "V_rows_also_in_G": 1058,
+      "all_shared_V_labels": {
+        "goal_not_reached": 173,
+        "invalid_action_token": 170,
+        "obstacle_collision": 165,
+        "out_of_bounds": 175,
+        "valid": 375
+      },
+      "coverage": {
+        "full_errors_after_first_step": 326,
+        "full_nonempty_unfinished": 94,
+        "move/goal_not_reached": 300,
+        "move/invalid_action_token": 160,
+        "move/obstacle_collision": 160,
+        "move/out_of_bounds": 160,
+        "move/valid": 260,
+        "multiple_optimal_actions": 1089,
+        "must_increase_manhattan": 531,
+        "original_trace_changed_goal": 120,
+        "original_trace_factual": 360,
+        "stop/goal_not_reached": 80,
+        "stop/valid": 80
+      },
+      "directions": {
+        "down/goal_not_reached": 72,
+        "down/obstacle_collision": 32,
+        "down/out_of_bounds": 38,
+        "down/valid": 75,
+        "left/goal_not_reached": 76,
+        "left/obstacle_collision": 45,
+        "left/out_of_bounds": 39,
+        "left/valid": 65,
+        "right/goal_not_reached": 80,
+        "right/obstacle_collision": 44,
+        "right/out_of_bounds": 44,
+        "right/valid": 58,
+        "up/goal_not_reached": 72,
+        "up/obstacle_collision": 39,
+        "up/out_of_bounds": 39,
+        "up/valid": 62
+      },
+      "explicit_shared_G_anchors_by_V_label": {
+        "goal_not_reached": 140,
+        "invalid_action_token": 140,
+        "obstacle_collision": 140,
+        "out_of_bounds": 140,
+        "valid": 140
+      },
+      "full_path_kinds": {
+        "edit/delete": 58,
+        "edit/insert": 159,
+        "edit/replace": 158,
+        "edit/truncate": 25,
+        "valid/backtrack": 67,
+        "valid/shortest": 200,
+        "valid/simple_detour": 66,
+        "valid/square": 67
+      },
+      "groups": {
+        "arrive": 60,
+        "bounds": 80,
+        "collision": 80,
+        "continue": 20,
+        "edge": 80,
+        "forced": 500,
+        "move_goal": 120,
+        "ordinary": 400,
+        "plan_pair": 400,
+        "shared": 700,
+        "stop_goal": 80,
+        "tie": 400,
+        "token": 80,
+        "unknown": 80,
+        "wall": 80
+      },
+      "labels": {
+        "v_plan": {
+          "goal_not_reached": 100,
+          "invalid_action_token": 100,
+          "obstacle_collision": 100,
+          "out_of_bounds": 100,
+          "valid": 400
+        },
+        "v_step": {
+          "goal_not_reached": 380,
+          "invalid_action_token": 160,
+          "obstacle_collision": 160,
+          "out_of_bounds": 160,
+          "valid": 340
+        }
+      },
+      "layouts": 652,
+      "modes": {
+        "g_next": 2000,
+        "v_plan": 800,
+        "v_step": 1200
+      },
+      "shared_nonempty_step_attempts": 478,
+      "shared_step_move_is_G_optimal": 151,
+      "step_shortcut": {
+        "best_in_sample_lookup_by_action_exact": 543,
+        "rows": 1200,
+        "v2_action_only_rule_exact": 365
+      },
+      "unique_model_inputs": 4000
+    }
+  },
+  "unique_state_count": 3124
+}

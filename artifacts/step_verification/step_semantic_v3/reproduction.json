@@ -1,0 +1,16 @@
+{
+  "construction_and_audit_cpu_seconds": 1.438,
+  "construction_and_audit_wall_seconds": 1.647,
+  "files": {
+    "audit.json": "9da23d3b03a86de9eb72c287c74f5bef2795fd2a680c7777be23af06849770b3",
+    "dev.jsonl": "80ea856ae2bee680e9d6df2aabad254b1ac70b5a012db4f7ce277e7c85f82934",
+    "manifest.json": "c354883b8dbc2751625f7bd8a4d0223b0f0aea08ebc2bda034d4150c09e4c5e5",
+    "states.jsonl": "fdce94550005d61f4bcffaaeed9c84bd426b8f2390be511758587c9db405a836",
+    "test_id.jsonl": "daff08da5ebb0804fb8f5fd68ea7379bc1dae33595cebf4cda4b8c30f34e6d8a",
+    "test_ood.jsonl": "9fa94284b7b4479f31825157e6cd3a30aa76ab540c2cbad3de3373ed297ab9b3",
+    "train.jsonl": "6415b53bdebd5cbc3dd9885757a21c87f93f38e891fa76041f69f7b0e771edb8"
+  },
+  "gpu_seconds": 0,
+  "independent_builds_matching_all_files": 2,
+  "seed": 42
+}

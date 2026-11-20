@@ -1,0 +1,23 @@
+{
+  "base_commit": "9eeb494fe1f775ad033ce2f668e22517cd194aee",
+  "dev_seed": 43,
+  "executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+  "schema": "ppnl-step-semantic-v3.1",
+  "seed": 42,
+  "sha256": {
+    "audit.json": "9da23d3b03a86de9eb72c287c74f5bef2795fd2a680c7777be23af06849770b3",
+    "dev.jsonl": "80ea856ae2bee680e9d6df2aabad254b1ac70b5a012db4f7ce277e7c85f82934",
+    "states.jsonl": "fdce94550005d61f4bcffaaeed9c84bd426b8f2390be511758587c9db405a836",
+    "test_id.jsonl": "daff08da5ebb0804fb8f5fd68ea7379bc1dae33595cebf4cda4b8c30f34e6d8a",
+    "test_ood.jsonl": "9fa94284b7b4479f31825157e6cd3a30aa76ab540c2cbad3de3373ed297ab9b3",
+    "train.jsonl": "6415b53bdebd5cbc3dd9885757a21c87f93f38e891fa76041f69f7b0e771edb8"
+  },
+  "source_sha256": {
+    "dev.jsonl": "6b60713aa88053bacbe2a009c68baf69d51a1f3121390d0aea1c7f256a92bb3a",
+    "manifest.json": "b2b1a83ff6f62d0d056fd50b7b2a8ab3c1b824bbe5356000589243343a83e766",
+    "test_id.jsonl": "26b5f561b9fd7b3bd5e963b0186abdf0b42cb7da726f20833b229969900220c1",
+    "test_ood.jsonl": "c3e5b77f488931c15708ffdd32e88f725cda710f6eb3df517767fe1e390ba80c",
+    "train.jsonl": "d1212c424d5e1dcdc7d99fd0520ce9d28ab7ef292c7c5121a3dd4cc54d5842a2"
+  },
+  "template_sha256": "48c0d3d02bc18bdb7a0fc6cd1bd021cf27c870b2ddd7f8cdd5358477d7ba806e"
+}

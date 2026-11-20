@@ -1,0 +1,249 @@
+{
+  "dataset_manifest_sha256": "aa10f89318ee14b061158a7eb333054c19786adf62af8706813df8871837adbc",
+  "continuation": {
+    "from_checkpoint": "E:\\YanbingChen\\gv_balanced_equal_first_20261120\\run\\checkpoint-epoch-2",
+    "completed_epochs": 2,
+    "optimizer": "fresh AdamW",
+    "shuffle_seed": 42
+  },
+  "GPU": "NVIDIA GeForce RTX 3050",
+  "elapsed_seconds_including_evaluation": 759.7810000000009,
+  "optimizer_updates_added": 500,
+  "results": [
+    {
+      "epoch": 2,
+      "V_macro_f1": 0.4617,
+      "V_exact": 53,
+      "V_predicted": {
+        "invalid_action_token": 20,
+        "out_of_bounds": 42,
+        "obstacle_collision": 20,
+        "valid": 18
+      },
+      "V_recall": {
+        "valid": [
+          5,
+          20
+        ],
+        "obstacle_collision": [
+          8,
+          20
+        ],
+        "out_of_bounds": [
+          20,
+          20
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          20
+        ]
+      },
+      "V_precision": {
+        "valid": [
+          5,
+          18
+        ],
+        "obstacle_collision": [
+          8,
+          20
+        ],
+        "out_of_bounds": [
+          20,
+          42
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          0
+        ]
+      },
+      "G_correct": 60,
+      "G_greedy_success_rate": 0.1,
+      "test": {
+        "test_id": {
+          "exact_out_of_200": 23,
+          "on_100_correct_paths": {
+            "out_of_bounds": 79,
+            "obstacle_collision": 13,
+            "valid": 8
+          },
+          "macro_f1": 0.3869455463397043,
+          "first_error_location_accuracy": 0.17
+        },
+        "test_ood": {
+          "exact_out_of_200": 42,
+          "on_100_correct_paths": {
+            "out_of_bounds": 79,
+            "obstacle_collision": 13,
+            "valid": 8
+          },
+          "macro_f1": 0.39884676726781987,
+          "first_error_location_accuracy": 0.38
+        }
+      }
+    },
+    {
+      "epoch": 3,
+      "V_macro_f1": 0.3911,
+      "V_exact": 47,
+      "V_predicted": {
+        "invalid_action_token": 20,
+        "out_of_bounds": 10,
+        "valid": 70
+      },
+      "V_recall": {
+        "valid": [
+          19,
+          20
+        ],
+        "obstacle_collision": [
+          0,
+          20
+        ],
+        "out_of_bounds": [
+          8,
+          20
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          20
+        ]
+      },
+      "V_precision": {
+        "valid": [
+          19,
+          70
+        ],
+        "obstacle_collision": [
+          0,
+          0
+        ],
+        "out_of_bounds": [
+          8,
+          10
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          0
+        ]
+      },
+      "G_correct": 72,
+      "G_greedy_success_rate": 0.52,
+      "test": {
+        "test_id": {
+          "exact_out_of_200": 91,
+          "on_100_correct_paths": {
+            "valid": 68,
+            "out_of_bounds": 32
+          },
+          "macro_f1": 0.5191815856777494,
+          "first_error_location_accuracy": 0.24
+        },
+        "test_ood": {
+          "exact_out_of_200": 113,
+          "on_100_correct_paths": {
+            "valid": 68,
+            "out_of_bounds": 32
+          },
+          "macro_f1": 0.6496847162446202,
+          "first_error_location_accuracy": 0.46
+        }
+      }
+    },
+    {
+      "epoch": 4,
+      "V_macro_f1": 0.4891,
+      "V_exact": 55,
+      "V_predicted": {
+        "invalid_action_token": 20,
+        "out_of_bounds": 33,
+        "obstacle_collision": 27,
+        "valid": 19,
+        "goal_not_reached": 1
+      },
+      "V_recall": {
+        "valid": [
+          6,
+          20
+        ],
+        "obstacle_collision": [
+          9,
+          20
+        ],
+        "out_of_bounds": [
+          20,
+          20
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          20
+        ]
+      },
+      "V_precision": {
+        "valid": [
+          6,
+          19
+        ],
+        "obstacle_collision": [
+          9,
+          27
+        ],
+        "out_of_bounds": [
+          20,
+          33
+        ],
+        "invalid_action_token": [
+          20,
+          20
+        ],
+        "goal_not_reached": [
+          0,
+          1
+        ]
+      },
+      "G_correct": 73,
+      "G_greedy_success_rate": 0.17,
+      "test": {
+        "test_id": {
+          "exact_out_of_200": 22,
+          "on_100_correct_paths": {
+            "out_of_bounds": 61,
+            "valid": 8,
+            "obstacle_collision": 31
+          },
+          "macro_f1": 0.39588100686498856,
+          "first_error_location_accuracy": 0.16
+        },
+        "test_ood": {
+          "exact_out_of_200": 40,
+          "on_100_correct_paths": {
+            "out_of_bounds": 61,
+            "valid": 8,
+            "obstacle_collision": 31
+          },
+          "macro_f1": 0.40476190476190477,
+          "first_error_location_accuracy": 0.34
+        }
+      }
+    }
+  ]
+}
