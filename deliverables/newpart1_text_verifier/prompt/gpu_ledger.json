@@ -1,0 +1,136 @@
+{
+  "runs": [
+    {
+      "operation": "phase1:pilot:flan_t5_small",
+      "seconds": 8.309043718036264,
+      "status": "completed",
+      "started_unix": 1794883065.1870298
+    },
+    {
+      "operation": "phase1:train:flan_t5_small",
+      "seconds": 73.9742802940309,
+      "status": "completed",
+      "started_unix": 1794883077.4986973
+    },
+    {
+      "operation": "phase1:pilot:flan_t5_base",
+      "seconds": 6.703288941178471,
+      "status": "completed",
+      "started_unix": 1794883156.0927157
+    },
+    {
+      "operation": "phase1:train:flan_t5_base",
+      "seconds": 585.3667046502233,
+      "status": "completed",
+      "started_unix": 1794883166.4334197
+    },
+    {
+      "operation": "phase1:pilot:bart_base",
+      "seconds": 4.375125980935991,
+      "status": "completed",
+      "started_unix": 1794883756.4870992
+    },
+    {
+      "operation": "phase1:train:bart_base",
+      "seconds": 42.950876449700445,
+      "status": "completed",
+      "started_unix": 1794883764.557253
+    },
+    {
+      "operation": "phase1:test_id:flan_t5_small",
+      "seconds": 5.9437202592380345,
+      "status": "completed",
+      "started_unix": 1794883812.2129188
+    },
+    {
+      "operation": "phase1:test_id:flan_t5_base",
+      "seconds": 8.269142478238791,
+      "status": "completed",
+      "started_unix": 1794883822.0025518
+    },
+    {
+      "operation": "phase1:test_id:bart_base",
+      "seconds": 4.7016936130821705,
+      "status": "completed",
+      "started_unix": 1794883833.3263965
+    },
+    {
+      "operation": "phase1:test_ood:flan_t5_small",
+      "seconds": 3.71656793076545,
+      "status": "completed",
+      "started_unix": 1794883841.0880773
+    },
+    {
+      "operation": "phase1:test_ood:bart_base:verification",
+      "seconds": 3.546328448690474,
+      "status": "completed",
+      "started_unix": 1794883848.0719604
+    },
+    {
+      "operation": "phase1:train:flan_t5_base",
+      "seconds": 677.0167291909456,
+      "status": "completed",
+      "started_unix": 1794936962.5416887
+    },
+    {
+      "operation": "NewPart1 matched raw V and R transfer",
+      "seconds": 245.1987234367989,
+      "status": "completed",
+      "started_unix": 1794937652.9990888
+    },
+    {
+      "operation": "NewPart1 split-loss LoRA control and mixed",
+      "seconds": 58.62884991103783,
+      "status": "completed",
+      "started_unix": 1794938224.6347618
+    },
+    {
+      "operation": "Part3 dedicated loop verifier",
+      "seconds": 95.52196582499892,
+      "status": "completed",
+      "started_unix": 1794999111.517168
+    },
+    {
+      "operation": "Part3 same trigger anchor controls",
+      "seconds": 23.26591071486473,
+      "status": "completed",
+      "started_unix": 1795000174.413882
+    },
+    {
+      "operation": "Part3 dedicated loop verifier",
+      "seconds": 82.80604813341051,
+      "status": "completed",
+      "started_unix": 1795000356.3542266
+    },
+    {
+      "operation": "Part3 same trigger anchor controls",
+      "seconds": 19.80300751514733,
+      "status": "completed",
+      "started_unix": 1795000444.9810784
+    },
+    {
+      "operation": "StepVerification v3 balanced STOP and transitions",
+      "seconds": 58.55990092409775,
+      "status": "completed",
+      "started_unix": 1795019024.8473728
+    },
+    {
+      "operation": "StepVerification fixed enhanced R",
+      "seconds": 43.105170799884945,
+      "status": "completed",
+      "started_unix": 1795019381.736589
+    },
+    {
+      "operation": "Prompt study initial unbatched inference",
+      "status": "terminated_for_batching",
+      "seconds": 311,
+      "started_unix": 1795059148.571967
+    },
+    {
+      "operation": "Prompt-only controlled v1 adaptation",
+      "seconds": 293.2672280357219,
+      "status": "completed",
+      "started_unix": 1795059510.853623
+    }
+  ]
+}

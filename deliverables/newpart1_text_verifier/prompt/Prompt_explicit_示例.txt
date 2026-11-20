@@ -1,0 +1,17 @@
+Verify exactly one action using zero-based [row,column].
+up=[-1,0]; down=[1,0]; left=[0,-1]; right=[0,1]. null means stop.
+Grid: 6x6
+Position: [4,3]
+Goal: [4,4]
+Obstacles: [[1,3],[3,0],[3,5],[4,5]]
+Action: "right"
+Check in order: unknown action; next row/column outside grid; obstacle; arrival.
+Rows range from 0 to rows-1. Columns range from 0 to columns-1.
+Return exactly one line:
+valid
+invalid | step=1 | reason=invalid_action_token
+invalid | step=1 | reason=out_of_bounds
+invalid | step=1 | reason=obstacle_collision
+If legal but not at goal: invalid | step=2 | reason=goal_not_reached
+If null and not at goal: invalid | step=1 | reason=goal_not_reached
+valid applies only to legal arrival or null at goal.

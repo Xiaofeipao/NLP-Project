@@ -1,5 +1,7 @@
 # PPNL：自然语言网格路径规划
 
+本分支增加 NewPart1 的文本 V 扩展，包含 Prompt 标准化、标签分布、语义反事实和类别均衡实验，附同预算训练、单错／双错修复结果及 CPU 复算证据。[扩展说明与复现](experiments/newpart1_text_verifier/README.md) · [Prompt 对照](docs/newpart1_prompt_study.md) · [数据与捷径检查](docs/newpart1_shortcut_study.md)
+
 本分支收录 Flan-T5-base 的逐步验证 v1 和双标签 v2。[实验记录](docs/step_verification_v1_v2.md) · [输入输出与错误案例](docs/step_verification_cases.md) · [复现入口](state_baselines/README.md)
 
 NewPart1 在 FirstPart 选定的 Flan-T5-base 上采用拆分验证损失。实验记录包含开发结果、单错与双错验证、规则修复对照和错误案例。[实验记录](docs/state_policy_experiment_log.md) · [复现入口](state_baselines/README.md)

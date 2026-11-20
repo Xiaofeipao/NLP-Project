@@ -27,3 +27,6 @@ ppnl/modeling.py text eol=crlf
 ppnl/optimization.py text eol=crlf
 ppnl/policy.py text eol=crlf
 ppnl/prompts.py text eol=crlf
+# Preserve the published experiment source and evidence hashes.
+experiments/newpart1_text_verifier/** -text whitespace=cr-at-eol
+deliverables/newpart1_text_verifier/** -text whitespace=cr-at-eol

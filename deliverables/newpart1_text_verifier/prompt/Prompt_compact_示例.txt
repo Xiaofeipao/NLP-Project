@@ -1,0 +1,10 @@
+Verify one action. Zero-based [row,column]; up decreases row, right increases column.
+Grid: 6x6
+Position: [4,3]
+Goal: [4,4]
+Obstacles: [[1,3],[3,0],[3,5],[4,5]]
+Action: "right"
+null means stop. Reply valid only for legal arrival or stopping at goal.
+Otherwise reply invalid | step=N | reason=R.
+R: invalid_action_token (unknown), out_of_bounds (outside), obstacle_collision (blocked), goal_not_reached (legal but unfinished).
+N=1 for illegal action or null; N=2 for legal unfinished move.

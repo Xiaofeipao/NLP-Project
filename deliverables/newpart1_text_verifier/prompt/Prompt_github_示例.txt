@@ -1,0 +1,4 @@
+Verify one step in a 6 by 6 grid. Coordinates are zero-based (row, column). Up decreases row; right increases column.
+Current position: (4, 3). Goal: (4, 4). Obstacles: [(1, 3), (3, 0), (3, 5), (4, 5)].
+Candidate action: "right". A null action means stop without moving.
+Return valid if the action is legal and ends at the goal (or stop at the goal). For an illegal action, return invalid | step=1 | reason=<error_type>, where the type is invalid_action_token, out_of_bounds, or obstacle_collision. If the action is legal but the goal has not been reached, return invalid | step=2 | reason=goal_not_reached. Use step=1 if stopping without moving.

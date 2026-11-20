@@ -1,0 +1,4348 @@
+{
+  "reference_commit": "9eeb494fe1f775ad033ce2f668e22517cd194aee",
+  "checkpoint": "c28ae2c1b6e4b94c16030a9d42c5278134c808c292596c97af9d42938804aae0",
+  "source": "b81cca677e461acb1058700b53a55b164e16be812ff266626d4cc3ddcc126b3f",
+  "training_rows": 2000,
+  "epochs": 2,
+  "data": "GitHub v1 exact V rows; targets unchanged",
+  "loss": "0.5 first-token CE plus 0.5 mean remaining-token CE",
+  "inference_batch_size": 64,
+  "notes": "No geometry, no added STOP; same official scanner and local R",
+  "arms": {
+    "frozen_github": {
+      "metrics": {
+        "dev": {
+          "n": 100,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.8,
+          "failure_type_accuracy": 0.8,
+          "joint_error_accuracy": 0.8,
+          "invalid": 50,
+          "valid": 50,
+          "false_accept": 0,
+          "false_reject": 50,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 30
+            },
+            "invalid_action_token": {
+              "n": 10,
+              "joint": 10
+            },
+            "obstacle_collision": {
+              "n": 4,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 6,
+              "joint": 0
+            }
+          },
+          "fixed": 33,
+          "broken": 0,
+          "planning": {
+            "n": 100,
+            "success_rate": 0.83,
+            "feasibility": 0.87,
+            "optimality": 0.48,
+            "path_efficiency_on_success": 0.8558997896347292
+          },
+          "unique_queries": 468
+        },
+        "dev_generated": {
+          "n": 191,
+          "macro_f1": 0.10747663551401869,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 23,
+          "valid": 168,
+          "false_accept": 0,
+          "false_reject": 168,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 23,
+              "joint": 23
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 5,
+          "broken": 0,
+          "planning": {
+            "n": 191,
+            "success_rate": 0.9057591623036649,
+            "feasibility": 1.0,
+            "optimality": 0.8743455497382199,
+            "path_efficiency_on_success": 0.9746189989573014
+          },
+          "unique_queries": 836
+        },
+        "test_id": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 58,
+              "joint": 58
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 8,
+              "joint": 0
+            }
+          },
+          "fixed": 66,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.83,
+            "feasibility": 0.84,
+            "optimality": 0.455,
+            "path_efficiency_on_success": 0.8420443679479819
+          },
+          "unique_queries": 926
+        },
+        "test_ood": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.75,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 30
+            },
+            "invalid_action_token": {
+              "n": 45,
+              "joint": 45
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 11,
+              "joint": 0
+            }
+          },
+          "fixed": 54,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.77,
+            "feasibility": 0.78,
+            "optimality": 0.435,
+            "path_efficiency_on_success": 0.8426242948970218
+          },
+          "unique_queries": 951
+        },
+        "g_peer_old": {
+          "n": 200,
+          "macro_f1": 0.1341991341991342,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 31,
+          "valid": 169,
+          "false_accept": 0,
+          "false_reject": 169,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 31,
+              "joint": 31
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 11,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.9,
+            "feasibility": 1.0,
+            "optimality": 0.84,
+            "path_efficiency_on_success": 0.9459314240015996
+          },
+          "unique_queries": 856
+        },
+        "g_peer_new": {
+          "n": 200,
+          "macro_f1": 0.09502262443438914,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 21,
+          "valid": 179,
+          "false_accept": 0,
+          "false_reject": 179,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 21,
+              "joint": 21
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 5,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.92,
+            "feasibility": 1.0,
+            "optimality": 0.87,
+            "path_efficiency_on_success": 0.9710285503334702
+          },
+          "unique_queries": 884
+        },
+        "g_old": {
+          "n": 200,
+          "macro_f1": 0.13043478260869565,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 30,
+          "valid": 170,
+          "false_accept": 0,
+          "false_reject": 170,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 30
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 11,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.905,
+            "feasibility": 1.0,
+            "optimality": 0.845,
+            "path_efficiency_on_success": 0.9462301454159554
+          },
+          "unique_queries": 859
+        },
+        "g_new": {
+          "n": 200,
+          "macro_f1": 0.12663755458515283,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 29,
+          "valid": 171,
+          "false_accept": 0,
+          "false_reject": 171,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 29,
+              "joint": 29
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 12,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.915,
+            "feasibility": 1.0,
+            "optimality": 0.85,
+            "path_efficiency_on_success": 0.9420538876966834
+          },
+          "unique_queries": 865
+        },
+        "7x7_single": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.88,
+          "failure_type_accuracy": 0.88,
+          "joint_error_accuracy": 0.88,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 68,
+              "joint": 68
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 9,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 3,
+              "joint": 0
+            }
+          },
+          "fixed": 77,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.885,
+            "feasibility": 0.915,
+            "optimality": 0.475,
+            "path_efficiency_on_success": 0.8512239800375391
+          },
+          "unique_queries": 1055
+        },
+        "7x7_double": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.67,
+          "failure_type_accuracy": 0.67,
+          "joint_error_accuracy": 0.67,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 34,
+              "joint": 34
+            },
+            "invalid_action_token": {
+              "n": 33,
+              "joint": 33
+            },
+            "obstacle_collision": {
+              "n": 23,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 53,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.765,
+            "feasibility": 0.765,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.8238664385723208
+          },
+          "unique_queries": 1086
+        },
+        "dense_6x6_single": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.61,
+          "failure_type_accuracy": 0.61,
+          "joint_error_accuracy": 0.61,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 41,
+              "joint": 41
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 29,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 47,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.735,
+            "feasibility": 0.78,
+            "optimality": 0.425,
+            "path_efficiency_on_success": 0.8654903675311836
+          },
+          "unique_queries": 966
+        },
+        "dense_6x6_double": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.56,
+          "failure_type_accuracy": 0.56,
+          "joint_error_accuracy": 0.56,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 15,
+              "joint": 15
+            },
+            "invalid_action_token": {
+              "n": 41,
+              "joint": 41
+            },
+            "obstacle_collision": {
+              "n": 32,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 12,
+              "joint": 0
+            }
+          },
+          "fixed": 36,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.68,
+            "feasibility": 0.68,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.8502930484548128
+          },
+          "unique_queries": 998
+        }
+      },
+      "seconds": 13.864690405782312
+    },
+    "frozen_compact": {
+      "metrics": {
+        "dev": {
+          "n": 100,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.6,
+          "failure_type_accuracy": 0.6,
+          "joint_error_accuracy": 0.6,
+          "invalid": 50,
+          "valid": 50,
+          "false_accept": 0,
+          "false_reject": 50,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 30
+            },
+            "invalid_action_token": {
+              "n": 10,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 4,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 6,
+              "joint": 0
+            }
+          },
+          "fixed": 26,
+          "broken": 0,
+          "planning": {
+            "n": 100,
+            "success_rate": 0.76,
+            "feasibility": 0.8,
+            "optimality": 0.41,
+            "path_efficiency_on_success": 0.8426274018379284
+          },
+          "unique_queries": 468
+        },
+        "dev_generated": {
+          "n": 191,
+          "macro_f1": 0.10747663551401869,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 23,
+          "valid": 168,
+          "false_accept": 0,
+          "false_reject": 168,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 23,
+              "joint": 23
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 5,
+          "broken": 0,
+          "planning": {
+            "n": 191,
+            "success_rate": 0.9057591623036649,
+            "feasibility": 1.0,
+            "optimality": 0.8743455497382199,
+            "path_efficiency_on_success": 0.9746189989573014
+          },
+          "unique_queries": 836
+        },
+        "test_id": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.58,
+          "failure_type_accuracy": 0.58,
+          "joint_error_accuracy": 0.58,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 58,
+              "joint": 58
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 8,
+              "joint": 0
+            }
+          },
+          "fixed": 56,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.78,
+            "feasibility": 0.79,
+            "optimality": 0.405,
+            "path_efficiency_on_success": 0.8319190069190068
+          },
+          "unique_queries": 926
+        },
+        "test_ood": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.3,
+          "failure_type_accuracy": 0.3,
+          "joint_error_accuracy": 0.3,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 30
+            },
+            "invalid_action_token": {
+              "n": 45,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 11,
+              "joint": 0
+            }
+          },
+          "fixed": 28,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.64,
+            "feasibility": 0.65,
+            "optimality": 0.315,
+            "path_efficiency_on_success": 0.8176886047979797
+          },
+          "unique_queries": 951
+        },
+        "g_peer_old": {
+          "n": 200,
+          "macro_f1": 0.1341991341991342,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 31,
+          "valid": 169,
+          "false_accept": 0,
+          "false_reject": 169,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 31,
+              "joint": 31
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 11,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.9,
+            "feasibility": 1.0,
+            "optimality": 0.84,
+            "path_efficiency_on_success": 0.9459314240015996
+          },
+          "unique_queries": 856
+        },
+        "g_peer_new": {
+          "n": 200,
+          "macro_f1": 0.09502262443438914,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 21,
+          "valid": 179,
+          "false_accept": 0,
+          "false_reject": 179,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 21,
+              "joint": 21
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 5,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.92,
+            "feasibility": 1.0,
+            "optimality": 0.87,
+            "path_efficiency_on_success": 0.9710285503334702
+          },
+          "unique_queries": 884
+        },
+        "g_old": {
+          "n": 200,
+          "macro_f1": 0.13043478260869565,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 30,
+          "valid": 170,
+          "false_accept": 0,
+          "false_reject": 170,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 30
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 11,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.905,
+            "feasibility": 1.0,
+            "optimality": 0.845,
+            "path_efficiency_on_success": 0.9462301454159554
+          },
+          "unique_queries": 859
+        },
+        "g_new": {
+          "n": 200,
+          "macro_f1": 0.12663755458515283,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 29,
+          "valid": 171,
+          "false_accept": 0,
+          "false_reject": 171,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 29,
+              "joint": 29
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 12,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.915,
+            "feasibility": 1.0,
+            "optimality": 0.85,
+            "path_efficiency_on_success": 0.9420538876966834
+          },
+          "unique_queries": 865
+        },
+        "7x7_single": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.68,
+          "failure_type_accuracy": 0.68,
+          "joint_error_accuracy": 0.68,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 68,
+              "joint": 68
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 9,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 3,
+              "joint": 0
+            }
+          },
+          "fixed": 62,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.81,
+            "feasibility": 0.84,
+            "optimality": 0.4,
+            "path_efficiency_on_success": 0.8374484226336075
+          },
+          "unique_queries": 1055
+        },
+        "7x7_double": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.34,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.34,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 34,
+              "joint": 34
+            },
+            "invalid_action_token": {
+              "n": 33,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 23,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 34,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.67,
+            "feasibility": 0.67,
+            "optimality": 0.285,
+            "path_efficiency_on_success": 0.8028901446811892
+          },
+          "unique_queries": 1086
+        },
+        "dense_6x6_single": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.41,
+          "failure_type_accuracy": 0.41,
+          "joint_error_accuracy": 0.41,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 41,
+              "joint": 41
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 29,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 32,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.66,
+            "feasibility": 0.705,
+            "optimality": 0.35,
+            "path_efficiency_on_success": 0.8502051820233637
+          },
+          "unique_queries": 966
+        },
+        "dense_6x6_double": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.15,
+          "failure_type_accuracy": 0.15,
+          "joint_error_accuracy": 0.15,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 15,
+              "joint": 15
+            },
+            "invalid_action_token": {
+              "n": 41,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 32,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 12,
+              "joint": 0
+            }
+          },
+          "fixed": 15,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.575,
+            "feasibility": 0.575,
+            "optimality": 0.28,
+            "path_efficiency_on_success": 0.8332658163092942
+          },
+          "unique_queries": 998
+        }
+      },
+      "seconds": 12.68385878810659
+    },
+    "frozen_explicit": {
+      "metrics": {
+        "dev": {
+          "n": 100,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.8,
+          "failure_type_accuracy": 0.8,
+          "joint_error_accuracy": 0.8,
+          "invalid": 50,
+          "valid": 50,
+          "false_accept": 0,
+          "false_reject": 50,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 30
+            },
+            "invalid_action_token": {
+              "n": 10,
+              "joint": 10
+            },
+            "obstacle_collision": {
+              "n": 4,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 6,
+              "joint": 0
+            }
+          },
+          "fixed": 33,
+          "broken": 0,
+          "planning": {
+            "n": 100,
+            "success_rate": 0.83,
+            "feasibility": 0.87,
+            "optimality": 0.48,
+            "path_efficiency_on_success": 0.8558997896347292
+          },
+          "unique_queries": 468
+        },
+        "dev_generated": {
+          "n": 191,
+          "macro_f1": 0.10747663551401869,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 23,
+          "valid": 168,
+          "false_accept": 0,
+          "false_reject": 168,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 23,
+              "joint": 23
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 5,
+          "broken": 0,
+          "planning": {
+            "n": 191,
+            "success_rate": 0.9057591623036649,
+            "feasibility": 1.0,
+            "optimality": 0.8743455497382199,
+            "path_efficiency_on_success": 0.9746189989573014
+          },
+          "unique_queries": 836
+        },
+        "test_id": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.78,
+          "failure_type_accuracy": 0.78,
+          "joint_error_accuracy": 0.78,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 58,
+              "joint": 58
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 8,
+              "joint": 0
+            }
+          },
+          "fixed": 66,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.83,
+            "feasibility": 0.84,
+            "optimality": 0.455,
+            "path_efficiency_on_success": 0.8420443679479819
+          },
+          "unique_queries": 926
+        },
+        "test_ood": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.75,
+          "failure_type_accuracy": 0.75,
+          "joint_error_accuracy": 0.75,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 30
+            },
+            "invalid_action_token": {
+              "n": 45,
+              "joint": 45
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 11,
+              "joint": 0
+            }
+          },
+          "fixed": 54,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.77,
+            "feasibility": 0.78,
+            "optimality": 0.435,
+            "path_efficiency_on_success": 0.8426242948970218
+          },
+          "unique_queries": 951
+        },
+        "g_peer_old": {
+          "n": 200,
+          "macro_f1": 0.1341991341991342,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 31,
+          "valid": 169,
+          "false_accept": 0,
+          "false_reject": 169,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 31,
+              "joint": 31
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 11,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.9,
+            "feasibility": 1.0,
+            "optimality": 0.84,
+            "path_efficiency_on_success": 0.9459314240015996
+          },
+          "unique_queries": 856
+        },
+        "g_peer_new": {
+          "n": 200,
+          "macro_f1": 0.09502262443438914,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 21,
+          "valid": 179,
+          "false_accept": 0,
+          "false_reject": 179,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 21,
+              "joint": 21
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 5,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.92,
+            "feasibility": 1.0,
+            "optimality": 0.87,
+            "path_efficiency_on_success": 0.9710285503334702
+          },
+          "unique_queries": 884
+        },
+        "g_old": {
+          "n": 200,
+          "macro_f1": 0.13043478260869565,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 30,
+          "valid": 170,
+          "false_accept": 0,
+          "false_reject": 170,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 30
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 11,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.905,
+            "feasibility": 1.0,
+            "optimality": 0.845,
+            "path_efficiency_on_success": 0.9462301454159554
+          },
+          "unique_queries": 859
+        },
+        "g_new": {
+          "n": 200,
+          "macro_f1": 0.12663755458515283,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 1.0,
+          "failure_type_accuracy": 1.0,
+          "joint_error_accuracy": 1.0,
+          "invalid": 29,
+          "valid": 171,
+          "false_accept": 0,
+          "false_reject": 171,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 29,
+              "joint": 29
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 12,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.915,
+            "feasibility": 1.0,
+            "optimality": 0.85,
+            "path_efficiency_on_success": 0.9420538876966834
+          },
+          "unique_queries": 865
+        },
+        "7x7_single": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.88,
+          "failure_type_accuracy": 0.88,
+          "joint_error_accuracy": 0.88,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 68,
+              "joint": 68
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 9,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 3,
+              "joint": 0
+            }
+          },
+          "fixed": 77,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.885,
+            "feasibility": 0.915,
+            "optimality": 0.475,
+            "path_efficiency_on_success": 0.8512239800375391
+          },
+          "unique_queries": 1055
+        },
+        "7x7_double": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.67,
+          "failure_type_accuracy": 0.67,
+          "joint_error_accuracy": 0.67,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 34,
+              "joint": 34
+            },
+            "invalid_action_token": {
+              "n": 33,
+              "joint": 33
+            },
+            "obstacle_collision": {
+              "n": 23,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 53,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.765,
+            "feasibility": 0.765,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.8238664385723208
+          },
+          "unique_queries": 1086
+        },
+        "dense_6x6_single": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.6,
+          "failure_type_accuracy": 0.6,
+          "joint_error_accuracy": 0.6,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 41,
+              "joint": 41
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 19
+            },
+            "obstacle_collision": {
+              "n": 29,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 46,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.73,
+            "feasibility": 0.775,
+            "optimality": 0.42,
+            "path_efficiency_on_success": 0.8645690686786575
+          },
+          "unique_queries": 966
+        },
+        "dense_6x6_double": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.55,
+          "failure_type_accuracy": 0.55,
+          "joint_error_accuracy": 0.55,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 15,
+              "joint": 15
+            },
+            "invalid_action_token": {
+              "n": 41,
+              "joint": 40
+            },
+            "obstacle_collision": {
+              "n": 32,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 12,
+              "joint": 0
+            }
+          },
+          "fixed": 36,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.68,
+            "feasibility": 0.68,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.8502930484548128
+          },
+          "unique_queries": 998
+        }
+      },
+      "seconds": 14.131172426976264
+    },
+    "trained_github": {
+      "metrics": {
+        "dev": {
+          "n": 100,
+          "macro_f1": 0.5238095238095238,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.2,
+          "failure_type_accuracy": 0.2,
+          "joint_error_accuracy": 0.2,
+          "invalid": 50,
+          "valid": 50,
+          "false_accept": 40,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 10,
+              "joint": 10
+            },
+            "obstacle_collision": {
+              "n": 4,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 6,
+              "joint": 0
+            }
+          },
+          "fixed": 7,
+          "broken": 0,
+          "planning": {
+            "n": 100,
+            "success_rate": 0.57,
+            "feasibility": 0.87,
+            "optimality": 0.32,
+            "path_efficiency_on_success": 0.8520885547201338
+          },
+          "unique_queries": 468
+        },
+        "dev_generated": {
+          "n": 191,
+          "macro_f1": 0.467966573816156,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 23,
+          "valid": 168,
+          "false_accept": 23,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 23,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 191,
+            "success_rate": 0.8795811518324608,
+            "feasibility": 1.0,
+            "optimality": 0.8743455497382199,
+            "path_efficiency_on_success": 0.9986772486772486
+          },
+          "unique_queries": 836
+        },
+        "test_id": {
+          "n": 200,
+          "macro_f1": 0.5238095238095238,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.2,
+          "failure_type_accuracy": 0.2,
+          "joint_error_accuracy": 0.2,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 80,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 58,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 8,
+              "joint": 0
+            }
+          },
+          "fixed": 10,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.55,
+            "feasibility": 0.84,
+            "optimality": 0.3,
+            "path_efficiency_on_success": 0.8439610389610387
+          },
+          "unique_queries": 926
+        },
+        "test_ood": {
+          "n": 200,
+          "macro_f1": 0.7333333333333334,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.45,
+          "failure_type_accuracy": 0.45,
+          "joint_error_accuracy": 0.45,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 50,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 45,
+              "joint": 45
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 11,
+              "joint": 0
+            }
+          },
+          "fixed": 26,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.63,
+            "feasibility": 0.78,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.8566326530612242
+          },
+          "unique_queries": 951
+        },
+        "g_peer_old": {
+          "n": 200,
+          "macro_f1": 0.45799457994579945,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 31,
+          "valid": 169,
+          "false_accept": 31,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 31,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.845,
+            "feasibility": 1.0,
+            "optimality": 0.84,
+            "path_efficiency_on_success": 0.9986850756081525
+          },
+          "unique_queries": 856
+        },
+        "g_peer_new": {
+          "n": 200,
+          "macro_f1": 0.47229551451187335,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 21,
+          "valid": 179,
+          "false_accept": 21,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 21,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.895,
+            "feasibility": 1.0,
+            "optimality": 0.87,
+            "path_efficiency_on_success": 0.9933271260086902
+          },
+          "unique_queries": 884
+        },
+        "g_old": {
+          "n": 200,
+          "macro_f1": 0.4594594594594595,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 30,
+          "valid": 170,
+          "false_accept": 30,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.85,
+            "feasibility": 1.0,
+            "optimality": 0.845,
+            "path_efficiency_on_success": 0.9986928104575163
+          },
+          "unique_queries": 859
+        },
+        "g_new": {
+          "n": 200,
+          "macro_f1": 0.4609164420485175,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 29,
+          "valid": 171,
+          "false_accept": 29,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 29,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.855,
+            "feasibility": 1.0,
+            "optimality": 0.85,
+            "path_efficiency_on_success": 0.9987004548408057
+          },
+          "unique_queries": 865
+        },
+        "7x7_single": {
+          "n": 200,
+          "macro_f1": 0.5238095238095238,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.2,
+          "failure_type_accuracy": 0.2,
+          "joint_error_accuracy": 0.2,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 80,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 68,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 9,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 3,
+              "joint": 0
+            }
+          },
+          "fixed": 15,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.575,
+            "feasibility": 0.915,
+            "optimality": 0.325,
+            "path_efficiency_on_success": 0.8619666806623325
+          },
+          "unique_queries": 1055
+        },
+        "7x7_double": {
+          "n": 200,
+          "macro_f1": 0.6703296703296704,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.33,
+          "failure_type_accuracy": 0.33,
+          "joint_error_accuracy": 0.33,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 60,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 34,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 33,
+              "joint": 33
+            },
+            "obstacle_collision": {
+              "n": 23,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 19,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.595,
+            "feasibility": 0.765,
+            "optimality": 0.335,
+            "path_efficiency_on_success": 0.8621046553819661
+          },
+          "unique_queries": 1086
+        },
+        "dense_6x6_single": {
+          "n": 200,
+          "macro_f1": 0.5319766580763649,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.21,
+          "failure_type_accuracy": 0.21,
+          "joint_error_accuracy": 0.21,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 79,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 41,
+              "joint": 1
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 29,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 15,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.575,
+            "feasibility": 0.78,
+            "optimality": 0.325,
+            "path_efficiency_on_success": 0.8651705782140561
+          },
+          "unique_queries": 966
+        },
+        "dense_6x6_double": {
+          "n": 200,
+          "macro_f1": 0.7149848081525101,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.41,
+          "failure_type_accuracy": 0.41,
+          "joint_error_accuracy": 0.41,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 53,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 15,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 41,
+              "joint": 41
+            },
+            "obstacle_collision": {
+              "n": 32,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 12,
+              "joint": 0
+            }
+          },
+          "fixed": 21,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.605,
+            "feasibility": 0.68,
+            "optimality": 0.34,
+            "path_efficiency_on_success": 0.8620570430487783
+          },
+          "unique_queries": 998
+        }
+      },
+      "seconds": 13.154457875993103,
+      "selection": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.38221738627552987,
+          "development": {
+            "dev": {
+              "n": 100,
+              "macro_f1": 0.5238095238095238,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.2,
+              "failure_type_accuracy": 0.2,
+              "joint_error_accuracy": 0.2,
+              "invalid": 50,
+              "valid": 50,
+              "false_accept": 40,
+              "false_reject": 0,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 30,
+                  "joint": 0
+                },
+                "invalid_action_token": {
+                  "n": 10,
+                  "joint": 10
+                },
+                "obstacle_collision": {
+                  "n": 4,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 6,
+                  "joint": 0
+                }
+              }
+            },
+            "dev_generated": {
+              "n": 191,
+              "macro_f1": 0.467966573816156,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0,
+              "invalid": 23,
+              "valid": 168,
+              "false_accept": 23,
+              "false_reject": 0,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 23,
+                  "joint": 0
+                },
+                "invalid_action_token": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "obstacle_collision": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 0,
+                  "joint": 0
+                }
+              }
+            }
+          },
+          "rank": [
+            0.9917760976256798,
+            0.2,
+            0
+          ]
+        },
+        {
+          "epoch": 2,
+          "loss": 0.33503538566827773,
+          "development": {
+            "dev": {
+              "n": 100,
+              "macro_f1": 0.6052232007288187,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.38,
+              "failure_type_accuracy": 0.36,
+              "joint_error_accuracy": 0.34,
+              "invalid": 50,
+              "valid": 50,
+              "false_accept": 14,
+              "false_reject": 25,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 30,
+                  "joint": 9
+                },
+                "invalid_action_token": {
+                  "n": 10,
+                  "joint": 8
+                },
+                "obstacle_collision": {
+                  "n": 4,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 6,
+                  "joint": 0
+                }
+              }
+            },
+            "dev_generated": {
+              "n": 191,
+              "macro_f1": 0.24356435643564356,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.43478260869565216,
+              "failure_type_accuracy": 0.43478260869565216,
+              "joint_error_accuracy": 0.43478260869565216,
+              "invalid": 23,
+              "valid": 168,
+              "false_accept": 5,
+              "false_reject": 139,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 23,
+                  "joint": 10
+                },
+                "invalid_action_token": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "obstacle_collision": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 0,
+                  "joint": 0
+                }
+              }
+            }
+          },
+          "rank": [
+            0.8487875571644623,
+            0.34,
+            -139
+          ]
+        }
+      ],
+      "updates": 250
+    },
+    "trained_github_inference_compact": {
+      "metrics": {
+        "dev": {
+          "n": 100,
+          "macro_f1": 0.5989304812834224,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.28,
+          "failure_type_accuracy": 0.28,
+          "joint_error_accuracy": 0.28,
+          "invalid": 50,
+          "valid": 50,
+          "false_accept": 34,
+          "false_reject": 2,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 4
+            },
+            "invalid_action_token": {
+              "n": 10,
+              "joint": 10
+            },
+            "obstacle_collision": {
+              "n": 4,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 6,
+              "joint": 0
+            }
+          },
+          "fixed": 11,
+          "broken": 0,
+          "planning": {
+            "n": 100,
+            "success_rate": 0.61,
+            "feasibility": 0.87,
+            "optimality": 0.34,
+            "path_efficiency_on_success": 0.8486729117876661
+          },
+          "unique_queries": 468
+        },
+        "dev_generated": {
+          "n": 191,
+          "macro_f1": 0.43823529411764706,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 23,
+          "valid": 168,
+          "false_accept": 23,
+          "false_reject": 19,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 23,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 191,
+            "success_rate": 0.8795811518324608,
+            "feasibility": 1.0,
+            "optimality": 0.8743455497382199,
+            "path_efficiency_on_success": 0.9986772486772486
+          },
+          "unique_queries": 836
+        },
+        "test_id": {
+          "n": 200,
+          "macro_f1": 0.5480419920478274,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.24,
+          "failure_type_accuracy": 0.24,
+          "joint_error_accuracy": 0.24,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 75,
+          "false_reject": 4,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 58,
+              "joint": 4
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 8,
+              "joint": 0
+            }
+          },
+          "fixed": 14,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.57,
+            "feasibility": 0.84,
+            "optimality": 0.315,
+            "path_efficiency_on_success": 0.8459273182957392
+          },
+          "unique_queries": 926
+        },
+        "test_ood": {
+          "n": 200,
+          "macro_f1": 0.7267759562841529,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.47,
+          "failure_type_accuracy": 0.47,
+          "joint_error_accuracy": 0.47,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 48,
+          "false_reject": 4,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 2
+            },
+            "invalid_action_token": {
+              "n": 45,
+              "joint": 45
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 11,
+              "joint": 0
+            }
+          },
+          "fixed": 28,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.64,
+            "feasibility": 0.78,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.8537946428571426
+          },
+          "unique_queries": 951
+        },
+        "g_peer_old": {
+          "n": 200,
+          "macro_f1": 0.4943536153716501,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0967741935483871,
+          "failure_type_accuracy": 0.0967741935483871,
+          "joint_error_accuracy": 0.0967741935483871,
+          "invalid": 31,
+          "valid": 169,
+          "false_accept": 28,
+          "false_reject": 17,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 31,
+              "joint": 3
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.845,
+            "feasibility": 1.0,
+            "optimality": 0.84,
+            "path_efficiency_on_success": 0.9986850756081525
+          },
+          "unique_queries": 856
+        },
+        "g_peer_new": {
+          "n": 200,
+          "macro_f1": 0.5312167057319412,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.14285714285714285,
+          "failure_type_accuracy": 0.14285714285714285,
+          "joint_error_accuracy": 0.14285714285714285,
+          "invalid": 21,
+          "valid": 179,
+          "false_accept": 18,
+          "false_reject": 15,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 21,
+              "joint": 3
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 1,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.9,
+            "feasibility": 1.0,
+            "optimality": 0.87,
+            "path_efficiency_on_success": 0.9889782326185834
+          },
+          "unique_queries": 884
+        },
+        "g_old": {
+          "n": 200,
+          "macro_f1": 0.49714285714285716,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.1,
+          "failure_type_accuracy": 0.1,
+          "joint_error_accuracy": 0.1,
+          "invalid": 30,
+          "valid": 170,
+          "false_accept": 27,
+          "false_reject": 17,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 3
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.85,
+            "feasibility": 1.0,
+            "optimality": 0.845,
+            "path_efficiency_on_success": 0.9986928104575163
+          },
+          "unique_queries": 859
+        },
+        "g_new": {
+          "n": 200,
+          "macro_f1": 0.49997092854235714,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.10344827586206896,
+          "failure_type_accuracy": 0.10344827586206896,
+          "joint_error_accuracy": 0.10344827586206896,
+          "invalid": 29,
+          "valid": 171,
+          "false_accept": 26,
+          "false_reject": 17,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 29,
+              "joint": 3
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.855,
+            "feasibility": 1.0,
+            "optimality": 0.85,
+            "path_efficiency_on_success": 0.9987004548408057
+          },
+          "unique_queries": 865
+        },
+        "7x7_single": {
+          "n": 200,
+          "macro_f1": 0.6001239052687899,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.3,
+          "failure_type_accuracy": 0.3,
+          "joint_error_accuracy": 0.3,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 69,
+          "false_reject": 2,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 68,
+              "joint": 10
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 9,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 3,
+              "joint": 0
+            }
+          },
+          "fixed": 23,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.615,
+            "feasibility": 0.915,
+            "optimality": 0.35,
+            "path_efficiency_on_success": 0.8632660474123887
+          },
+          "unique_queries": 1055
+        },
+        "7x7_double": {
+          "n": 200,
+          "macro_f1": 0.6934742276357183,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.35,
+          "failure_type_accuracy": 0.35,
+          "joint_error_accuracy": 0.35,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 55,
+          "false_reject": 2,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 34,
+              "joint": 2
+            },
+            "invalid_action_token": {
+              "n": 33,
+              "joint": 33
+            },
+            "obstacle_collision": {
+              "n": 23,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 21,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.605,
+            "feasibility": 0.765,
+            "optimality": 0.34,
+            "path_efficiency_on_success": 0.8620226421879312
+          },
+          "unique_queries": 1086
+        },
+        "dense_6x6_single": {
+          "n": 200,
+          "macro_f1": 0.5238095238095238,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.2,
+          "failure_type_accuracy": 0.2,
+          "joint_error_accuracy": 0.2,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 80,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 41,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 29,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 15,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.575,
+            "feasibility": 0.78,
+            "optimality": 0.325,
+            "path_efficiency_on_success": 0.8651705782140561
+          },
+          "unique_queries": 966
+        },
+        "dense_6x6_double": {
+          "n": 200,
+          "macro_f1": 0.7149848081525101,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.41,
+          "failure_type_accuracy": 0.41,
+          "joint_error_accuracy": 0.41,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 53,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 15,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 41,
+              "joint": 41
+            },
+            "obstacle_collision": {
+              "n": 32,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 12,
+              "joint": 0
+            }
+          },
+          "fixed": 21,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.605,
+            "feasibility": 0.68,
+            "optimality": 0.34,
+            "path_efficiency_on_success": 0.8620570430487783
+          },
+          "unique_queries": 998
+        }
+      },
+      "seconds": 15.488273116759956
+    },
+    "trained_compact": {
+      "metrics": {
+        "dev": {
+          "n": 100,
+          "macro_f1": 0.516452411841019,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.2,
+          "failure_type_accuracy": 0.2,
+          "joint_error_accuracy": 0.2,
+          "invalid": 50,
+          "valid": 50,
+          "false_accept": 40,
+          "false_reject": 1,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 10,
+              "joint": 10
+            },
+            "obstacle_collision": {
+              "n": 4,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 6,
+              "joint": 0
+            }
+          },
+          "fixed": 7,
+          "broken": 0,
+          "planning": {
+            "n": 100,
+            "success_rate": 0.57,
+            "feasibility": 0.87,
+            "optimality": 0.33,
+            "path_efficiency_on_success": 0.8591060985797828
+          },
+          "unique_queries": 468
+        },
+        "dev_generated": {
+          "n": 191,
+          "macro_f1": 0.467966573816156,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 23,
+          "valid": 168,
+          "false_accept": 23,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 23,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 191,
+            "success_rate": 0.8795811518324608,
+            "feasibility": 1.0,
+            "optimality": 0.8743455497382199,
+            "path_efficiency_on_success": 0.9986772486772486
+          },
+          "unique_queries": 836
+        },
+        "test_id": {
+          "n": 200,
+          "macro_f1": 0.5400400990682863,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.22,
+          "failure_type_accuracy": 0.2,
+          "joint_error_accuracy": 0.2,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 78,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 58,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 8,
+              "joint": 0
+            }
+          },
+          "fixed": 10,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.55,
+            "feasibility": 0.84,
+            "optimality": 0.3,
+            "path_efficiency_on_success": 0.8439610389610387
+          },
+          "unique_queries": 926
+        },
+        "test_ood": {
+          "n": 200,
+          "macro_f1": 0.7333333333333334,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.45,
+          "failure_type_accuracy": 0.45,
+          "joint_error_accuracy": 0.45,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 50,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 45,
+              "joint": 45
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 11,
+              "joint": 0
+            }
+          },
+          "fixed": 26,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.63,
+            "feasibility": 0.78,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.8566326530612242
+          },
+          "unique_queries": 951
+        },
+        "g_peer_old": {
+          "n": 200,
+          "macro_f1": 0.45799457994579945,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 31,
+          "valid": 169,
+          "false_accept": 31,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 31,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.845,
+            "feasibility": 1.0,
+            "optimality": 0.84,
+            "path_efficiency_on_success": 0.9986850756081525
+          },
+          "unique_queries": 856
+        },
+        "g_peer_new": {
+          "n": 200,
+          "macro_f1": 0.47229551451187335,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 21,
+          "valid": 179,
+          "false_accept": 21,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 21,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.895,
+            "feasibility": 1.0,
+            "optimality": 0.87,
+            "path_efficiency_on_success": 0.9933271260086902
+          },
+          "unique_queries": 884
+        },
+        "g_old": {
+          "n": 200,
+          "macro_f1": 0.4594594594594595,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 30,
+          "valid": 170,
+          "false_accept": 30,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.85,
+            "feasibility": 1.0,
+            "optimality": 0.845,
+            "path_efficiency_on_success": 0.9986928104575163
+          },
+          "unique_queries": 859
+        },
+        "g_new": {
+          "n": 200,
+          "macro_f1": 0.4609164420485175,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 29,
+          "valid": 171,
+          "false_accept": 29,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 29,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.855,
+            "feasibility": 1.0,
+            "optimality": 0.85,
+            "path_efficiency_on_success": 0.9987004548408057
+          },
+          "unique_queries": 865
+        },
+        "7x7_single": {
+          "n": 200,
+          "macro_f1": 0.548002700243609,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.23,
+          "failure_type_accuracy": 0.2,
+          "joint_error_accuracy": 0.2,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 77,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 68,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 9,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 3,
+              "joint": 0
+            }
+          },
+          "fixed": 15,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.575,
+            "feasibility": 0.915,
+            "optimality": 0.325,
+            "path_efficiency_on_success": 0.8619666806623325
+          },
+          "unique_queries": 1055
+        },
+        "7x7_double": {
+          "n": 200,
+          "macro_f1": 0.6833715471121302,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.34,
+          "failure_type_accuracy": 0.34,
+          "joint_error_accuracy": 0.34,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 58,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 34,
+              "joint": 1
+            },
+            "invalid_action_token": {
+              "n": 33,
+              "joint": 33
+            },
+            "obstacle_collision": {
+              "n": 23,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 20,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.6,
+            "feasibility": 0.765,
+            "optimality": 0.34,
+            "path_efficiency_on_success": 0.8632537832537831
+          },
+          "unique_queries": 1086
+        },
+        "dense_6x6_single": {
+          "n": 200,
+          "macro_f1": 0.5238095238095238,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.2,
+          "failure_type_accuracy": 0.2,
+          "joint_error_accuracy": 0.2,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 80,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 41,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 29,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 15,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.575,
+            "feasibility": 0.78,
+            "optimality": 0.325,
+            "path_efficiency_on_success": 0.8651705782140561
+          },
+          "unique_queries": 966
+        },
+        "dense_6x6_double": {
+          "n": 200,
+          "macro_f1": 0.7149848081525101,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.41,
+          "failure_type_accuracy": 0.41,
+          "joint_error_accuracy": 0.41,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 53,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 15,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 41,
+              "joint": 41
+            },
+            "obstacle_collision": {
+              "n": 32,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 12,
+              "joint": 0
+            }
+          },
+          "fixed": 21,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.605,
+            "feasibility": 0.68,
+            "optimality": 0.34,
+            "path_efficiency_on_success": 0.8620570430487783
+          },
+          "unique_queries": 998
+        }
+      },
+      "seconds": 12.629691610112786,
+      "selection": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.39302274376153945,
+          "development": {
+            "dev": {
+              "n": 100,
+              "macro_f1": 0.516452411841019,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.2,
+              "failure_type_accuracy": 0.2,
+              "joint_error_accuracy": 0.2,
+              "invalid": 50,
+              "valid": 50,
+              "false_accept": 40,
+              "false_reject": 1,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 30,
+                  "joint": 0
+                },
+                "invalid_action_token": {
+                  "n": 10,
+                  "joint": 10
+                },
+                "obstacle_collision": {
+                  "n": 4,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 6,
+                  "joint": 0
+                }
+              }
+            },
+            "dev_generated": {
+              "n": 191,
+              "macro_f1": 0.467966573816156,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0,
+              "invalid": 23,
+              "valid": 168,
+              "false_accept": 23,
+              "false_reject": 0,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 23,
+                  "joint": 0
+                },
+                "invalid_action_token": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "obstacle_collision": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 0,
+                  "joint": 0
+                }
+              }
+            }
+          },
+          "rank": [
+            0.984418985657175,
+            0.2,
+            0
+          ]
+        },
+        {
+          "epoch": 2,
+          "loss": 0.34386873011291025,
+          "development": {
+            "dev": {
+              "n": 100,
+              "macro_f1": 0.5670995670995671,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.38,
+              "failure_type_accuracy": 0.34,
+              "joint_error_accuracy": 0.34,
+              "invalid": 50,
+              "valid": 50,
+              "false_accept": 9,
+              "false_reject": 32,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 30,
+                  "joint": 10
+                },
+                "invalid_action_token": {
+                  "n": 10,
+                  "joint": 7
+                },
+                "obstacle_collision": {
+                  "n": 4,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 6,
+                  "joint": 0
+                }
+              }
+            },
+            "dev_generated": {
+              "n": 191,
+              "macro_f1": 0.23204450319453623,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.34782608695652173,
+              "failure_type_accuracy": 0.34782608695652173,
+              "joint_error_accuracy": 0.34782608695652173,
+              "invalid": 23,
+              "valid": 168,
+              "false_accept": 7,
+              "false_reject": 139,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 23,
+                  "joint": 8
+                },
+                "invalid_action_token": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "obstacle_collision": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 0,
+                  "joint": 0
+                }
+              }
+            }
+          },
+          "rank": [
+            0.7991440702941033,
+            0.34,
+            -139
+          ]
+        }
+      ],
+      "updates": 250
+    },
+    "trained_compact_inference_github": {
+      "metrics": {
+        "dev": {
+          "n": 100,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.74,
+          "failure_type_accuracy": 0.7,
+          "joint_error_accuracy": 0.7,
+          "invalid": 50,
+          "valid": 50,
+          "false_accept": 0,
+          "false_reject": 50,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 25
+            },
+            "invalid_action_token": {
+              "n": 10,
+              "joint": 9
+            },
+            "obstacle_collision": {
+              "n": 4,
+              "joint": 1
+            },
+            "out_of_bounds": {
+              "n": 6,
+              "joint": 0
+            }
+          },
+          "fixed": 32,
+          "broken": 0,
+          "planning": {
+            "n": 100,
+            "success_rate": 0.82,
+            "feasibility": 0.88,
+            "optimality": 0.51,
+            "path_efficiency_on_success": 0.874699961285327
+          },
+          "unique_queries": 468
+        },
+        "dev_generated": {
+          "n": 191,
+          "macro_f1": 0.10747663551401869,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.9130434782608695,
+          "failure_type_accuracy": 0.9130434782608695,
+          "joint_error_accuracy": 0.9130434782608695,
+          "invalid": 23,
+          "valid": 168,
+          "false_accept": 0,
+          "false_reject": 168,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 23,
+              "joint": 21
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 5,
+          "broken": 0,
+          "planning": {
+            "n": 191,
+            "success_rate": 0.9057591623036649,
+            "feasibility": 1.0,
+            "optimality": 0.8743455497382199,
+            "path_efficiency_on_success": 0.9746189989573014
+          },
+          "unique_queries": 836
+        },
+        "test_id": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.68,
+          "failure_type_accuracy": 0.7,
+          "joint_error_accuracy": 0.68,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 58,
+              "joint": 48
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 19
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 1
+            },
+            "out_of_bounds": {
+              "n": 8,
+              "joint": 0
+            }
+          },
+          "fixed": 59,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.795,
+            "feasibility": 0.84,
+            "optimality": 0.495,
+            "path_efficiency_on_success": 0.8707048018368769
+          },
+          "unique_queries": 926
+        },
+        "test_ood": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.71,
+          "failure_type_accuracy": 0.71,
+          "joint_error_accuracy": 0.7,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 25
+            },
+            "invalid_action_token": {
+              "n": 45,
+              "joint": 43
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 2
+            },
+            "out_of_bounds": {
+              "n": 11,
+              "joint": 0
+            }
+          },
+          "fixed": 51,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.755,
+            "feasibility": 0.775,
+            "optimality": 0.47,
+            "path_efficiency_on_success": 0.868616629874908
+          },
+          "unique_queries": 951
+        },
+        "g_peer_old": {
+          "n": 200,
+          "macro_f1": 0.1341991341991342,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.8709677419354839,
+          "failure_type_accuracy": 0.8709677419354839,
+          "joint_error_accuracy": 0.8709677419354839,
+          "invalid": 31,
+          "valid": 169,
+          "false_accept": 0,
+          "false_reject": 169,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 31,
+              "joint": 27
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 9,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.89,
+            "feasibility": 1.0,
+            "optimality": 0.84,
+            "path_efficiency_on_success": 0.9549525643552849
+          },
+          "unique_queries": 856
+        },
+        "g_peer_new": {
+          "n": 200,
+          "macro_f1": 0.09502262443438914,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.8095238095238095,
+          "failure_type_accuracy": 0.8095238095238095,
+          "joint_error_accuracy": 0.8095238095238095,
+          "invalid": 21,
+          "valid": 179,
+          "false_accept": 0,
+          "false_reject": 179,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 21,
+              "joint": 17
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 4,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.915,
+            "feasibility": 1.0,
+            "optimality": 0.87,
+            "path_efficiency_on_success": 0.9787412520371968
+          },
+          "unique_queries": 884
+        },
+        "g_old": {
+          "n": 200,
+          "macro_f1": 0.13043478260869565,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.8666666666666667,
+          "failure_type_accuracy": 0.8666666666666667,
+          "joint_error_accuracy": 0.8666666666666667,
+          "invalid": 30,
+          "valid": 170,
+          "false_accept": 0,
+          "false_reject": 170,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 26
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 9,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.895,
+            "feasibility": 1.0,
+            "optimality": 0.845,
+            "path_efficiency_on_success": 0.9552042260069313
+          },
+          "unique_queries": 859
+        },
+        "g_new": {
+          "n": 200,
+          "macro_f1": 0.12663755458515283,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.8620689655172413,
+          "failure_type_accuracy": 0.8620689655172413,
+          "joint_error_accuracy": 0.8620689655172413,
+          "invalid": 29,
+          "valid": 171,
+          "false_accept": 0,
+          "false_reject": 171,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 29,
+              "joint": 25
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 10,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.905,
+            "feasibility": 1.0,
+            "optimality": 0.85,
+            "path_efficiency_on_success": 0.9508826606820211
+          },
+          "unique_queries": 865
+        },
+        "7x7_single": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.66,
+          "failure_type_accuracy": 0.65,
+          "joint_error_accuracy": 0.63,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 68,
+              "joint": 48
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 15
+            },
+            "obstacle_collision": {
+              "n": 9,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 3,
+              "joint": 0
+            }
+          },
+          "fixed": 62,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.81,
+            "feasibility": 0.905,
+            "optimality": 0.485,
+            "path_efficiency_on_success": 0.8721290026845578
+          },
+          "unique_queries": 1055
+        },
+        "7x7_double": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.53,
+          "failure_type_accuracy": 0.54,
+          "joint_error_accuracy": 0.52,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 34,
+              "joint": 25
+            },
+            "invalid_action_token": {
+              "n": 33,
+              "joint": 26
+            },
+            "obstacle_collision": {
+              "n": 23,
+              "joint": 1
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 44,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.72,
+            "feasibility": 0.75,
+            "optimality": 0.375,
+            "path_efficiency_on_success": 0.8396052250218914
+          },
+          "unique_queries": 1086
+        },
+        "dense_6x6_single": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.58,
+          "failure_type_accuracy": 0.6,
+          "joint_error_accuracy": 0.57,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 41,
+              "joint": 39
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 18
+            },
+            "obstacle_collision": {
+              "n": 29,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 47,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.735,
+            "feasibility": 0.785,
+            "optimality": 0.44,
+            "path_efficiency_on_success": 0.8732001180980771
+          },
+          "unique_queries": 966
+        },
+        "dense_6x6_double": {
+          "n": 200,
+          "macro_f1": 0.3333333333333333,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.53,
+          "failure_type_accuracy": 0.56,
+          "joint_error_accuracy": 0.53,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 0,
+          "false_reject": 100,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 15,
+              "joint": 12
+            },
+            "invalid_action_token": {
+              "n": 41,
+              "joint": 39
+            },
+            "obstacle_collision": {
+              "n": 32,
+              "joint": 2
+            },
+            "out_of_bounds": {
+              "n": 12,
+              "joint": 0
+            }
+          },
+          "fixed": 33,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.665,
+            "feasibility": 0.675,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.8550794652298408
+          },
+          "unique_queries": 998
+        }
+      },
+      "seconds": 16.281788122840226
+    },
+    "trained_explicit": {
+      "metrics": {
+        "dev": {
+          "n": 100,
+          "macro_f1": 0.6011396011396011,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.28,
+          "failure_type_accuracy": 0.2,
+          "joint_error_accuracy": 0.2,
+          "invalid": 50,
+          "valid": 50,
+          "false_accept": 35,
+          "false_reject": 0,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 10,
+              "joint": 10
+            },
+            "obstacle_collision": {
+              "n": 4,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 6,
+              "joint": 0
+            }
+          },
+          "fixed": 7,
+          "broken": 0,
+          "planning": {
+            "n": 100,
+            "success_rate": 0.57,
+            "feasibility": 0.87,
+            "optimality": 0.32,
+            "path_efficiency_on_success": 0.8520885547201338
+          },
+          "unique_queries": 468
+        },
+        "dev_generated": {
+          "n": 191,
+          "macro_f1": 0.44476744186046513,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 23,
+          "valid": 168,
+          "false_accept": 23,
+          "false_reject": 15,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 23,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 191,
+            "success_rate": 0.8795811518324608,
+            "feasibility": 1.0,
+            "optimality": 0.8743455497382199,
+            "path_efficiency_on_success": 0.9986772486772486
+          },
+          "unique_queries": 836
+        },
+        "test_id": {
+          "n": 200,
+          "macro_f1": 0.5481404240528328,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.24,
+          "failure_type_accuracy": 0.2,
+          "joint_error_accuracy": 0.2,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 76,
+          "false_reject": 2,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 58,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 8,
+              "joint": 0
+            }
+          },
+          "fixed": 10,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.55,
+            "feasibility": 0.84,
+            "optimality": 0.3,
+            "path_efficiency_on_success": 0.8439610389610387
+          },
+          "unique_queries": 926
+        },
+        "test_ood": {
+          "n": 200,
+          "macro_f1": 0.7300944669365722,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.45,
+          "failure_type_accuracy": 0.45,
+          "joint_error_accuracy": 0.45,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 49,
+          "false_reject": 2,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 45,
+              "joint": 45
+            },
+            "obstacle_collision": {
+              "n": 14,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 11,
+              "joint": 0
+            }
+          },
+          "fixed": 26,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.63,
+            "feasibility": 0.78,
+            "optimality": 0.37,
+            "path_efficiency_on_success": 0.8566326530612242
+          },
+          "unique_queries": 951
+        },
+        "g_peer_old": {
+          "n": 200,
+          "macro_f1": 0.4444444444444444,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 31,
+          "valid": 169,
+          "false_accept": 31,
+          "false_reject": 9,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 31,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.845,
+            "feasibility": 1.0,
+            "optimality": 0.84,
+            "path_efficiency_on_success": 0.9986850756081525
+          },
+          "unique_queries": 856
+        },
+        "g_peer_new": {
+          "n": 200,
+          "macro_f1": 0.4980946184589646,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.047619047619047616,
+          "failure_type_accuracy": 0.047619047619047616,
+          "joint_error_accuracy": 0.047619047619047616,
+          "invalid": 21,
+          "valid": 179,
+          "false_accept": 20,
+          "false_reject": 7,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 21,
+              "joint": 1
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.895,
+            "feasibility": 1.0,
+            "optimality": 0.87,
+            "path_efficiency_on_success": 0.9933271260086902
+          },
+          "unique_queries": 884
+        },
+        "g_old": {
+          "n": 200,
+          "macro_f1": 0.44598337950138506,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 30,
+          "valid": 170,
+          "false_accept": 30,
+          "false_reject": 9,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 30,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.85,
+            "feasibility": 1.0,
+            "optimality": 0.845,
+            "path_efficiency_on_success": 0.9986928104575163
+          },
+          "unique_queries": 859
+        },
+        "g_new": {
+          "n": 200,
+          "macro_f1": 0.44751381215469616,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.0,
+          "failure_type_accuracy": 0.0,
+          "joint_error_accuracy": 0.0,
+          "invalid": 29,
+          "valid": 171,
+          "false_accept": 29,
+          "false_reject": 9,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 29,
+              "joint": 0
+            },
+            "invalid_action_token": {
+              "n": 0,
+              "joint": 0
+            },
+            "obstacle_collision": {
+              "n": 0,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 0,
+              "joint": 0
+            }
+          },
+          "fixed": 0,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.855,
+            "feasibility": 1.0,
+            "optimality": 0.85,
+            "path_efficiency_on_success": 0.9987004548408057
+          },
+          "unique_queries": 865
+        },
+        "7x7_single": {
+          "n": 200,
+          "macro_f1": 0.5783475783475784,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.28,
+          "failure_type_accuracy": 0.22,
+          "joint_error_accuracy": 0.22,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 72,
+          "false_reject": 2,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 68,
+              "joint": 2
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 9,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 3,
+              "joint": 0
+            }
+          },
+          "fixed": 17,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.585,
+            "feasibility": 0.915,
+            "optimality": 0.33,
+            "path_efficiency_on_success": 0.8600527203091303
+          },
+          "unique_queries": 1055
+        },
+        "7x7_double": {
+          "n": 200,
+          "macro_f1": 0.6871966346672419,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.36,
+          "failure_type_accuracy": 0.35,
+          "joint_error_accuracy": 0.35,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 56,
+          "false_reject": 2,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 34,
+              "joint": 2
+            },
+            "invalid_action_token": {
+              "n": 33,
+              "joint": 33
+            },
+            "obstacle_collision": {
+              "n": 23,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 21,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.605,
+            "feasibility": 0.765,
+            "optimality": 0.335,
+            "path_efficiency_on_success": 0.8555291356944248
+          },
+          "unique_queries": 1086
+        },
+        "dense_6x6_single": {
+          "n": 200,
+          "macro_f1": 0.5918478408750782,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.28,
+          "failure_type_accuracy": 0.23,
+          "joint_error_accuracy": 0.23,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 66,
+          "false_reject": 9,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 41,
+              "joint": 3
+            },
+            "invalid_action_token": {
+              "n": 20,
+              "joint": 20
+            },
+            "obstacle_collision": {
+              "n": 29,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 10,
+              "joint": 0
+            }
+          },
+          "fixed": 17,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.585,
+            "feasibility": 0.78,
+            "optimality": 0.33,
+            "path_efficiency_on_success": 0.8632018503813372
+          },
+          "unique_queries": 966
+        },
+        "dense_6x6_double": {
+          "n": 200,
+          "macro_f1": 0.692058769800882,
+          "format_accuracy": 1.0,
+          "first_error_localization_accuracy": 0.42,
+          "failure_type_accuracy": 0.42,
+          "joint_error_accuracy": 0.42,
+          "invalid": 100,
+          "valid": 100,
+          "false_accept": 50,
+          "false_reject": 9,
+          "by_reason": {
+            "goal_not_reached": {
+              "n": 15,
+              "joint": 1
+            },
+            "invalid_action_token": {
+              "n": 41,
+              "joint": 41
+            },
+            "obstacle_collision": {
+              "n": 32,
+              "joint": 0
+            },
+            "out_of_bounds": {
+              "n": 12,
+              "joint": 0
+            }
+          },
+          "fixed": 22,
+          "broken": 0,
+          "planning": {
+            "n": 200,
+            "success_rate": 0.61,
+            "feasibility": 0.68,
+            "optimality": 0.345,
+            "path_efficiency_on_success": 0.8631877230237882
+          },
+          "unique_queries": 998
+        }
+      },
+      "seconds": 16.3119241069071,
+      "selection": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.3779400391727686,
+          "development": {
+            "dev": {
+              "n": 100,
+              "macro_f1": 0.6011396011396011,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.28,
+              "failure_type_accuracy": 0.2,
+              "joint_error_accuracy": 0.2,
+              "invalid": 50,
+              "valid": 50,
+              "false_accept": 35,
+              "false_reject": 0,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 30,
+                  "joint": 0
+                },
+                "invalid_action_token": {
+                  "n": 10,
+                  "joint": 10
+                },
+                "obstacle_collision": {
+                  "n": 4,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 6,
+                  "joint": 0
+                }
+              }
+            },
+            "dev_generated": {
+              "n": 191,
+              "macro_f1": 0.44476744186046513,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.0,
+              "failure_type_accuracy": 0.0,
+              "joint_error_accuracy": 0.0,
+              "invalid": 23,
+              "valid": 168,
+              "false_accept": 23,
+              "false_reject": 15,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 23,
+                  "joint": 0
+                },
+                "invalid_action_token": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "obstacle_collision": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 0,
+                  "joint": 0
+                }
+              }
+            }
+          },
+          "rank": [
+            1.0459070430000663,
+            0.2,
+            -15
+          ]
+        },
+        {
+          "epoch": 2,
+          "loss": 0.33507669825851916,
+          "development": {
+            "dev": {
+              "n": 100,
+              "macro_f1": 0.609375,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.34,
+              "failure_type_accuracy": 0.34,
+              "joint_error_accuracy": 0.34,
+              "invalid": 50,
+              "valid": 50,
+              "false_accept": 32,
+              "false_reject": 4,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 30,
+                  "joint": 7
+                },
+                "invalid_action_token": {
+                  "n": 10,
+                  "joint": 10
+                },
+                "obstacle_collision": {
+                  "n": 4,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 6,
+                  "joint": 0
+                }
+              }
+            },
+            "dev_generated": {
+              "n": 191,
+              "macro_f1": 0.3791371158392435,
+              "format_accuracy": 1.0,
+              "first_error_localization_accuracy": 0.13043478260869565,
+              "failure_type_accuracy": 0.13043478260869565,
+              "joint_error_accuracy": 0.13043478260869565,
+              "invalid": 23,
+              "valid": 168,
+              "false_accept": 20,
+              "false_reject": 68,
+              "by_reason": {
+                "goal_not_reached": {
+                  "n": 23,
+                  "joint": 3
+                },
+                "invalid_action_token": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "obstacle_collision": {
+                  "n": 0,
+                  "joint": 0
+                },
+                "out_of_bounds": {
+                  "n": 0,
+                  "joint": 0
+                }
+              }
+            }
+          },
+          "rank": [
+            0.9885121158392435,
+            0.34,
+            -68
+          ]
+        }
+      ],
+      "updates": 250
+    }
+  },
+  "templates": {
+    "github": {
+      "example": "Verify one step in a 6 by 6 grid. Coordinates are zero-based (row, column). Up decreases row; right increases column.\nCurrent position: (4, 3). Goal: (4, 4). Obstacles: [(1, 3), (3, 0), (3, 5), (4, 5)].\nCandidate action: \"right\". A null action means stop without moving.\nReturn valid if the action is legal and ends at the goal (or stop at the goal). For an illegal action, return invalid | step=1 | reason=<error_type>, where the type is invalid_action_token, out_of_bounds, or obstacle_collision. If the action is legal but the goal has not been reached, return invalid | step=2 | reason=goal_not_reached. Use step=1 if stopping without moving.",
+      "train_mean_tokens": 190.7585,
+      "train_max_tokens": 201
+    },
+    "compact": {
+      "example": "Verify one action. Zero-based [row,column]; up decreases row, right increases column.\nGrid: 6x6\nPosition: [4,3]\nGoal: [4,4]\nObstacles: [[1,3],[3,0],[3,5],[4,5]]\nAction: \"right\"\nnull means stop. Reply valid only for legal arrival or stopping at goal.\nOtherwise reply invalid | step=N | reason=R.\nR: invalid_action_token (unknown), out_of_bounds (outside), obstacle_collision (blocked), goal_not_reached (legal but unfinished).\nN=1 for illegal action or null; N=2 for legal unfinished move.",
+      "train_mean_tokens": 160.4535,
+      "train_max_tokens": 171
+    },
+    "explicit": {
+      "example": "Verify exactly one action using zero-based [row,column].\nup=[-1,0]; down=[1,0]; left=[0,-1]; right=[0,1]. null means stop.\nGrid: 6x6\nPosition: [4,3]\nGoal: [4,4]\nObstacles: [[1,3],[3,0],[3,5],[4,5]]\nAction: \"right\"\nCheck in order: unknown action; next row/column outside grid; obstacle; arrival.\nRows range from 0 to rows-1. Columns range from 0 to columns-1.\nReturn exactly one line:\nvalid\ninvalid | step=1 | reason=invalid_action_token\ninvalid | step=1 | reason=out_of_bounds\ninvalid | step=1 | reason=obstacle_collision\nIf legal but not at goal: invalid | step=2 | reason=goal_not_reached\nIf null and not at goal: invalid | step=1 | reason=goal_not_reached\nvalid applies only to legal arrival or null at goal.",
+      "train_mean_tokens": 242.4535,
+      "train_max_tokens": 253
+    }
+  }
+}

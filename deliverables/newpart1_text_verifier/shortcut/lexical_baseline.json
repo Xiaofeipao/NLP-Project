@@ -1,0 +1,92 @@
+{
+  "v1": {
+    "label_counts": {
+      "valid": 1000,
+      "goal_not_reached": 589,
+      "invalid_action_token": 200,
+      "obstacle_collision": 139,
+      "out_of_bounds": 72
+    },
+    "action_rules": {
+      "right": "valid",
+      "left": "valid",
+      "down": "valid",
+      "jump": "invalid | step=1 | reason=invalid_action_token",
+      "up": "valid",
+      "None": "invalid | step=1 | reason=goal_not_reached"
+    },
+    "null_auxiliary_negative": 0,
+    "literal_id_in_input": 0,
+    "conflicting_input_targets": 0,
+    "candidate_metrics": {
+      "dev": {
+        "n": 100,
+        "macro_f1": 0.5863970588235294,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.28,
+        "failure_type_accuracy": 0.28,
+        "joint_error_accuracy": 0.28
+      },
+      "test_id": {
+        "n": 200,
+        "macro_f1": 0.5558672276764843,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.24,
+        "failure_type_accuracy": 0.24,
+        "joint_error_accuracy": 0.24
+      },
+      "test_ood": {
+        "n": 200,
+        "macro_f1": 0.7333333333333334,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.45,
+        "failure_type_accuracy": 0.45,
+        "joint_error_accuracy": 0.45
+      }
+    }
+  },
+  "v2": {
+    "label_counts": {
+      "valid": 1589,
+      "invalid_action_token": 200,
+      "obstacle_collision": 139,
+      "out_of_bounds": 72
+    },
+    "action_rules": {
+      "right": "valid",
+      "left": "valid",
+      "down": "valid",
+      "jump": "invalid | step=1 | reason=invalid_action_token",
+      "up": "valid"
+    },
+    "null_auxiliary_negative": 2000,
+    "literal_id_in_input": 0,
+    "conflicting_input_targets": 0,
+    "candidate_metrics": {
+      "dev": {
+        "n": 100,
+        "macro_f1": 0.5238095238095238,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.2,
+        "failure_type_accuracy": 0.2,
+        "joint_error_accuracy": 0.2
+      },
+      "test_id": {
+        "n": 200,
+        "macro_f1": 0.5238095238095238,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.2,
+        "failure_type_accuracy": 0.2,
+        "joint_error_accuracy": 0.2
+      },
+      "test_ood": {
+        "n": 200,
+        "macro_f1": 0.7333333333333334,
+        "format_accuracy": 1.0,
+        "first_error_localization_accuracy": 0.45,
+        "failure_type_accuracy": 0.45,
+        "joint_error_accuracy": 0.45
+      }
+    }
+  }
+}

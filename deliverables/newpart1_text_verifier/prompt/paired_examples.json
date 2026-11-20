@@ -1,0 +1,26 @@
+{
+  "test_id": {
+    "joint_gains": [],
+    "joint_losses": []
+  },
+  "test_ood": {
+    "joint_gains": [],
+    "joint_losses": []
+  },
+  "g_peer_old": {
+    "joint_gains": [],
+    "joint_losses": []
+  },
+  "g_peer_new": {
+    "joint_gains": [],
+    "joint_losses": []
+  },
+  "g_old": {
+    "joint_gains": [],
+    "joint_losses": []
+  },
+  "g_new": {
+    "joint_gains": [],
+    "joint_losses": []
+  }
+}
