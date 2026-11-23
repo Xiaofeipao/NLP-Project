@@ -1,0 +1,4097 @@
+[
+  {
+    "id": "train-control-0001",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-70035c794540e06ab57a7983-right",
+      "train-v-probe-70035c794540e06ab57a7983-up",
+      "train-v-probe-a72ce7c9fdecf357b8938d67-right",
+      "train-v-probe-a72ce7c9fdecf357b8938d67-up"
+    ],
+    "rows": [
+      "train-balanced-V-0202",
+      "train-balanced-V-0203",
+      "train-balanced-V-0204",
+      "train-balanced-V-0205"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0002",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-0ae71567c550eb57f2ff7155-up",
+      "train-v-probe-16a51d262f19ea4197709aef-left",
+      "train-v-probe-16a51d262f19ea4197709aef-up",
+      "train-v-probe-0ae71567c550eb57f2ff7155-left"
+    ],
+    "rows": [
+      "train-balanced-V-0206",
+      "train-balanced-V-0207",
+      "train-balanced-V-0208",
+      "train-balanced-V-0209"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0003",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-46903e17ee4ec9d24ea26f0f-right",
+      "train-v-probe-af1322016fb85f08e21f5e67-down",
+      "train-v-probe-af1322016fb85f08e21f5e67-right",
+      "train-v-probe-46903e17ee4ec9d24ea26f0f-down"
+    ],
+    "rows": [
+      "train-balanced-V-0210",
+      "train-balanced-V-0211",
+      "train-balanced-V-0212",
+      "train-balanced-V-0213"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0004",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-e18ebf6d378845ae896a8cb4-down",
+      "train-v-probe-3fba80e9ce27543a89100258-down",
+      "train-v-probe-3fba80e9ce27543a89100258-right",
+      "train-v-probe-e18ebf6d378845ae896a8cb4-right"
+    ],
+    "rows": [
+      "train-balanced-V-0214",
+      "train-balanced-V-0215",
+      "train-balanced-V-0216",
+      "train-balanced-V-0217"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0005",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-faeab0ee84948cc8afa286b2-up",
+      "train-v-probe-faeab0ee84948cc8afa286b2-right",
+      "train-v-probe-d66e69dc0ce3d47c8aaa37bb-up",
+      "train-v-probe-d66e69dc0ce3d47c8aaa37bb-right"
+    ],
+    "rows": [
+      "train-balanced-V-0218",
+      "train-balanced-V-0219",
+      "train-balanced-V-0220",
+      "train-balanced-V-0221"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0006",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-f4c958861caaf85d0d02b069-right",
+      "train-v-probe-f4c958861caaf85d0d02b069-down",
+      "train-v-probe-c48f4793b3e221a273bacab0-right",
+      "train-v-probe-c48f4793b3e221a273bacab0-down"
+    ],
+    "rows": [
+      "train-balanced-V-0222",
+      "train-balanced-V-0223",
+      "train-balanced-V-0224",
+      "train-balanced-V-0225"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0007",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-2ed7c8b6d8f25cb91f07ddb3-down",
+      "train-v-probe-6a1e7d5392542892aa2e5f1c-right",
+      "train-v-probe-6a1e7d5392542892aa2e5f1c-down",
+      "train-v-probe-2ed7c8b6d8f25cb91f07ddb3-right"
+    ],
+    "rows": [
+      "train-balanced-V-0226",
+      "train-balanced-V-0227",
+      "train-balanced-V-0228",
+      "train-balanced-V-0229"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0008",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-9a4cfc3b0f13a511bc35a270-up",
+      "train-v-probe-6600265379ae15ba9d8850a3-down",
+      "train-v-probe-9a4cfc3b0f13a511bc35a270-down",
+      "train-v-probe-6600265379ae15ba9d8850a3-up"
+    ],
+    "rows": [
+      "train-balanced-V-0230",
+      "train-balanced-V-0231",
+      "train-balanced-V-0232",
+      "train-balanced-V-0233"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0009",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-78f955bb4dd1ad7b6860ca6a-down",
+      "train-v-probe-78f955bb4dd1ad7b6860ca6a-left",
+      "train-v-probe-7f9bff362719026efed9df66-left",
+      "train-v-probe-7f9bff362719026efed9df66-down"
+    ],
+    "rows": [
+      "train-balanced-V-0234",
+      "train-balanced-V-0235",
+      "train-balanced-V-0236",
+      "train-balanced-V-0237"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0010",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-0343e7a072dfc7934fe0f017-left",
+      "train-v-probe-85e5352fca6b50fbcff010b4-down",
+      "train-v-probe-85e5352fca6b50fbcff010b4-left",
+      "train-v-probe-0343e7a072dfc7934fe0f017-down"
+    ],
+    "rows": [
+      "train-balanced-V-0238",
+      "train-balanced-V-0239",
+      "train-balanced-V-0240",
+      "train-balanced-V-0241"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0011",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-93e739361e4cc2c5e296977a-right",
+      "train-v-probe-c2c71f2c8067cf199264e7e3-up",
+      "train-v-probe-93e739361e4cc2c5e296977a-up",
+      "train-v-probe-c2c71f2c8067cf199264e7e3-right"
+    ],
+    "rows": [
+      "train-balanced-V-0242",
+      "train-balanced-V-0243",
+      "train-balanced-V-0244",
+      "train-balanced-V-0245"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0012",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-5dd92a3d1cc03693a4e6256d-up",
+      "train-v-probe-5dd92a3d1cc03693a4e6256d-right",
+      "train-v-probe-d70952f3aaf1ab17740f2293-up",
+      "train-v-probe-d70952f3aaf1ab17740f2293-right"
+    ],
+    "rows": [
+      "train-balanced-V-0246",
+      "train-balanced-V-0191",
+      "train-balanced-V-0247",
+      "train-balanced-V-0248"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0013",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-10388bd36ce65dbe3a11de37-down",
+      "train-v-probe-10388bd36ce65dbe3a11de37-up",
+      "train-v-probe-55e1901020ac7c0c0bf1862d-down",
+      "train-v-probe-55e1901020ac7c0c0bf1862d-up"
+    ],
+    "rows": [
+      "train-balanced-V-0249",
+      "train-balanced-V-0250",
+      "train-balanced-V-0251",
+      "train-balanced-V-0252"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0014",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-41dae16d4ce1d8787661eb56-right",
+      "train-v-probe-41dae16d4ce1d8787661eb56-left",
+      "train-v-probe-4b98b1389ec164a82258fb38-left",
+      "train-v-probe-4b98b1389ec164a82258fb38-right"
+    ],
+    "rows": [
+      "train-balanced-V-0253",
+      "train-balanced-V-0254",
+      "train-balanced-V-0255",
+      "train-balanced-V-0256"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0015",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-30360f305c0678f53925f887-up",
+      "train-v-probe-e9cb81912702198935382331-up",
+      "train-v-probe-e9cb81912702198935382331-left",
+      "train-v-probe-30360f305c0678f53925f887-left"
+    ],
+    "rows": [
+      "train-balanced-V-0257",
+      "train-balanced-V-0258",
+      "train-balanced-V-0259",
+      "train-balanced-V-0260"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0016",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-a7d417b82c31b0ae024062d0-down",
+      "train-v-probe-d7a4efa1084805ef79c63168-right",
+      "train-v-probe-a7d417b82c31b0ae024062d0-right",
+      "train-v-probe-d7a4efa1084805ef79c63168-down"
+    ],
+    "rows": [
+      "train-balanced-V-0261",
+      "train-balanced-V-0262",
+      "train-balanced-V-0263",
+      "train-balanced-V-0264"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0017",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-e73e7669390fbb768594c593-up",
+      "train-v-probe-52a64434e6d1a416f1eff7a0-up",
+      "train-v-probe-52a64434e6d1a416f1eff7a0-down",
+      "train-v-probe-e73e7669390fbb768594c593-down"
+    ],
+    "rows": [
+      "train-balanced-V-0265",
+      "train-balanced-V-0266",
+      "train-balanced-V-0267",
+      "train-balanced-V-0268"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0018",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-9eabb45d5ec8125a047c4da2-left",
+      "train-v-probe-8e613a0060c1a74b9cf32313-down",
+      "train-v-probe-8e613a0060c1a74b9cf32313-left",
+      "train-v-probe-9eabb45d5ec8125a047c4da2-down"
+    ],
+    "rows": [
+      "train-balanced-V-0269",
+      "train-balanced-V-0270",
+      "train-balanced-V-0271",
+      "train-balanced-V-0272"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0019",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-df589c0e25c3d5fdfb618c2b-down",
+      "train-v-probe-e5a631203cbca76950dde615-up",
+      "train-v-probe-df589c0e25c3d5fdfb618c2b-up",
+      "train-v-probe-e5a631203cbca76950dde615-down"
+    ],
+    "rows": [
+      "train-balanced-V-0273",
+      "train-balanced-V-0274",
+      "train-balanced-V-0275",
+      "train-balanced-V-0276"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0020",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-ca8d9d0bcbb916cd6dc40da5-down",
+      "train-v-probe-a1b0eeadc5ddc08db1abb125-right",
+      "train-v-probe-a1b0eeadc5ddc08db1abb125-down",
+      "train-v-probe-ca8d9d0bcbb916cd6dc40da5-right"
+    ],
+    "rows": [
+      "train-balanced-V-0277",
+      "train-balanced-V-0278",
+      "train-balanced-V-0279",
+      "train-balanced-V-0280"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0021",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-959a5f670e1407d5c20a1524-left",
+      "train-v-probe-d640b51d91253ce60def5a7e-up",
+      "train-v-probe-d640b51d91253ce60def5a7e-left",
+      "train-v-probe-959a5f670e1407d5c20a1524-up"
+    ],
+    "rows": [
+      "train-balanced-V-0281",
+      "train-balanced-V-0282",
+      "train-balanced-V-0283",
+      "train-balanced-V-0284"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0022",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-100cdd224b966c1761db0280-left",
+      "train-v-probe-33b7df6df7cdf645541ad30b-right",
+      "train-v-probe-100cdd224b966c1761db0280-right",
+      "train-v-probe-33b7df6df7cdf645541ad30b-left"
+    ],
+    "rows": [
+      "train-balanced-V-0285",
+      "train-balanced-V-0286",
+      "train-balanced-V-0287",
+      "train-balanced-V-0288"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0023",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-53d8ab530be046f87629476d-up",
+      "train-v-probe-1bebdfe35009c741e32dd21d-up",
+      "train-v-probe-1bebdfe35009c741e32dd21d-down",
+      "train-v-probe-53d8ab530be046f87629476d-down"
+    ],
+    "rows": [
+      "train-balanced-V-0289",
+      "train-balanced-V-0290",
+      "train-balanced-V-0291",
+      "train-balanced-V-0292"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0024",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-5ff481ec9993d57f046b5644-up",
+      "train-v-probe-17c2d919b80557e300cde7e7-left",
+      "train-v-probe-5ff481ec9993d57f046b5644-left",
+      "train-v-probe-17c2d919b80557e300cde7e7-up"
+    ],
+    "rows": [
+      "train-balanced-V-0293",
+      "train-balanced-V-0294",
+      "train-balanced-V-0295",
+      "train-balanced-V-0296"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0025",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-ee1b8c30388aee830bee7143-up",
+      "train-v-probe-ee1b8c30388aee830bee7143-down",
+      "train-v-probe-8002044167700f0eaeb78a6a-down",
+      "train-v-probe-8002044167700f0eaeb78a6a-up"
+    ],
+    "rows": [
+      "train-balanced-V-0297",
+      "train-balanced-V-0298",
+      "train-balanced-V-0299",
+      "train-balanced-V-0300"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0026",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-9ef7859e7a02349316f3651c-right",
+      "train-v-probe-58df80ca301a42499bdd6e16-left",
+      "train-v-probe-9ef7859e7a02349316f3651c-left",
+      "train-v-probe-58df80ca301a42499bdd6e16-right"
+    ],
+    "rows": [
+      "train-balanced-V-0301",
+      "train-balanced-V-0302",
+      "train-balanced-V-0303",
+      "train-balanced-V-0304"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0027",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-a827703225ca7a0639ee9a7c-up",
+      "train-v-probe-4ad530befb3988cd8fbcf2b8-up",
+      "train-v-probe-4ad530befb3988cd8fbcf2b8-right",
+      "train-v-probe-a827703225ca7a0639ee9a7c-right"
+    ],
+    "rows": [
+      "train-balanced-V-0305",
+      "train-balanced-V-0306",
+      "train-balanced-V-0307",
+      "train-balanced-V-0308"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0028",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-dc065c0796b3ba12dddbfaa5-down",
+      "train-v-probe-1289a2d9fa262e2473c798d7-right",
+      "train-v-probe-1289a2d9fa262e2473c798d7-down",
+      "train-v-probe-dc065c0796b3ba12dddbfaa5-right"
+    ],
+    "rows": [
+      "train-balanced-V-0309",
+      "train-balanced-V-0310",
+      "train-balanced-V-0311",
+      "train-balanced-V-0312"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0029",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-5885be29f0667d657bbce48d-right",
+      "train-v-probe-05e2134b27fda5436a877af4-left",
+      "train-v-probe-05e2134b27fda5436a877af4-right",
+      "train-v-probe-5885be29f0667d657bbce48d-left"
+    ],
+    "rows": [
+      "train-balanced-V-0313",
+      "train-balanced-V-0314",
+      "train-balanced-V-0315",
+      "train-balanced-V-0316"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0030",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-d7910b66dae533362cc5d0d2-right",
+      "train-v-probe-2c28847dc103fdc0f1849f16-right",
+      "train-v-probe-d7910b66dae533362cc5d0d2-down",
+      "train-v-probe-2c28847dc103fdc0f1849f16-down"
+    ],
+    "rows": [
+      "train-balanced-V-0317",
+      "train-balanced-V-0318",
+      "train-balanced-V-0319",
+      "train-balanced-V-0320"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0031",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-9fd35071bd7f866f02cf0464-down",
+      "train-v-probe-9fd35071bd7f866f02cf0464-right",
+      "train-v-probe-e8bbf870e0d31d59005321d3-down",
+      "train-v-probe-e8bbf870e0d31d59005321d3-right"
+    ],
+    "rows": [
+      "train-balanced-V-0321",
+      "train-balanced-V-0322",
+      "train-balanced-V-0323",
+      "train-balanced-V-0324"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0032",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-b5419ca256902cc2b1220817-up",
+      "train-v-probe-b5419ca256902cc2b1220817-down",
+      "train-v-probe-a572a5af4bcd7bec063b3b25-down",
+      "train-v-probe-a572a5af4bcd7bec063b3b25-up"
+    ],
+    "rows": [
+      "train-balanced-V-0325",
+      "train-balanced-V-0326",
+      "train-balanced-V-0327",
+      "train-balanced-V-0328"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0033",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-3bc68603390fc3d7178b37fe-left",
+      "train-v-probe-3bc68603390fc3d7178b37fe-up",
+      "train-v-probe-c2065b59bfe3da571b1f65cc-up",
+      "train-v-probe-c2065b59bfe3da571b1f65cc-left"
+    ],
+    "rows": [
+      "train-balanced-V-0329",
+      "train-balanced-V-0330",
+      "train-balanced-V-0331",
+      "train-balanced-V-0332"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0034",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-ff8bd960a0a6e418538e2c31-up",
+      "train-v-probe-4022c749b509c21b6bb25c61-up",
+      "train-v-probe-ff8bd960a0a6e418538e2c31-right",
+      "train-v-probe-4022c749b509c21b6bb25c61-right"
+    ],
+    "rows": [
+      "train-balanced-V-0333",
+      "train-balanced-V-0334",
+      "train-balanced-V-0335",
+      "train-balanced-V-0336"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0035",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-54d1a39514643076cf4c0d50-left",
+      "train-v-probe-54d1a39514643076cf4c0d50-right",
+      "train-v-probe-95d137dd2edc6f89cfa078bf-right",
+      "train-v-probe-95d137dd2edc6f89cfa078bf-left"
+    ],
+    "rows": [
+      "train-balanced-V-0337",
+      "train-balanced-V-0338",
+      "train-balanced-V-0339",
+      "train-balanced-V-0340"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0036",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-49a19c9d8fc520100c878220-down",
+      "train-v-probe-49a19c9d8fc520100c878220-right",
+      "train-v-probe-0fbd3912bb019f1cf2e2668d-down",
+      "train-v-probe-0fbd3912bb019f1cf2e2668d-right"
+    ],
+    "rows": [
+      "train-balanced-V-0341",
+      "train-balanced-V-0342",
+      "train-balanced-V-0343",
+      "train-balanced-V-0344"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0037",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-3e490719d32fd96f1f46e7a4-up",
+      "train-v-probe-6e4218385b0c0d73838de806-down",
+      "train-v-probe-6e4218385b0c0d73838de806-up",
+      "train-v-probe-3e490719d32fd96f1f46e7a4-down"
+    ],
+    "rows": [
+      "train-balanced-V-0345",
+      "train-balanced-V-0346",
+      "train-balanced-V-0347",
+      "train-balanced-V-0348"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0038",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-45792276a5d7277e60ea2589-right",
+      "train-v-probe-1701a9f69b065ee742488238-up",
+      "train-v-probe-1701a9f69b065ee742488238-right",
+      "train-v-probe-45792276a5d7277e60ea2589-up"
+    ],
+    "rows": [
+      "train-balanced-V-0349",
+      "train-balanced-V-0350",
+      "train-balanced-V-0351",
+      "train-balanced-V-0352"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0039",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-0316830f8dc388637931cc06-left",
+      "train-v-probe-07f9036f106e61fff4ea36d1-up",
+      "train-v-probe-0316830f8dc388637931cc06-up",
+      "train-v-probe-07f9036f106e61fff4ea36d1-left"
+    ],
+    "rows": [
+      "train-balanced-V-0198",
+      "train-balanced-V-0353",
+      "train-balanced-V-0354",
+      "train-balanced-V-0355"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0040",
+    "kind": "swap_walls",
+    "probe_ids": [
+      "train-v-probe-bbf5ec246495d27415c96490-left",
+      "train-v-probe-717dbf1ddea6efa0e8db66ed-left",
+      "train-v-probe-bbf5ec246495d27415c96490-right",
+      "train-v-probe-717dbf1ddea6efa0e8db66ed-right"
+    ],
+    "rows": [
+      "train-balanced-V-0356",
+      "train-balanced-V-0357",
+      "train-balanced-V-0358",
+      "train-balanced-V-0359"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0041",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-e83dcfedeccb62b0b7e7985f-down",
+      "train-v-probe-3a677927cdaf34148c045a40-down"
+    ],
+    "rows": [
+      "train-balanced-V-0360",
+      "train-balanced-V-0103"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0042",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-1522e5211e59fbb571b7e296-right",
+      "train-v-probe-133f609e1cdf98a25794bd35-right"
+    ],
+    "rows": [
+      "train-balanced-V-0361",
+      "train-balanced-V-0362"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0043",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-759fc737dafe022044b1d0a8-left",
+      "train-v-probe-1fb599f34a87bd8c20eac5fa-left"
+    ],
+    "rows": [
+      "train-balanced-V-0363",
+      "train-balanced-V-0160"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0044",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-3e94db4d229638b6a2f33561-left",
+      "train-v-probe-829a00df35b25b3efcaf17a0-left"
+    ],
+    "rows": [
+      "train-balanced-V-0364",
+      "train-balanced-V-0365"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0045",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-76ad3eddfaaf3dafdfd73db4-down",
+      "train-v-probe-ca38d41bedeeab45b7ec8b5e-down"
+    ],
+    "rows": [
+      "train-balanced-V-0366",
+      "train-balanced-V-0367"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0046",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-522390163fe4aa69417e8831-up",
+      "train-v-probe-11a357887ef25e4a88163753-up"
+    ],
+    "rows": [
+      "train-balanced-V-0368",
+      "train-balanced-V-0369"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0047",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-67ed3dc14ecbf4b2c646e470-left",
+      "train-v-probe-e969eecf0bab9fddbdb0a3ec-left"
+    ],
+    "rows": [
+      "train-balanced-V-0187",
+      "train-balanced-V-0370"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0048",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-f9283bdc697cad6bfd11b365-down",
+      "train-v-probe-e7fe3d30fdc5d1ab356e7c07-down"
+    ],
+    "rows": [
+      "train-balanced-V-0371",
+      "train-balanced-V-0372"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0049",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-4ce25c60e9cdaf0113054f27-left",
+      "train-v-probe-15f47836449354a0318b574e-left"
+    ],
+    "rows": [
+      "train-balanced-V-0373",
+      "train-balanced-V-0374"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0050",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-e33a658df1bf7334ae177ca7-left",
+      "train-v-probe-a4fd0c26c675301b13e5a586-left"
+    ],
+    "rows": [
+      "train-balanced-V-0114",
+      "train-balanced-V-0375"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0051",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-762626ad47260c70862aef91-up",
+      "train-v-probe-b39bbf2e89f8394318e331c3-up"
+    ],
+    "rows": [
+      "train-balanced-V-0376",
+      "train-balanced-V-0377"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0052",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-db23206a297276e427957e09-left",
+      "train-v-probe-90b11b3a8be591e0a71688da-left"
+    ],
+    "rows": [
+      "train-balanced-V-0378",
+      "train-balanced-V-0379"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0053",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-7e48e39ed2cbb20490f96950-down",
+      "train-v-probe-170785d8aa2858712465fd4d-down"
+    ],
+    "rows": [
+      "train-balanced-V-0380",
+      "train-balanced-V-0381"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0054",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-8eed0b6252b5e533e5358f6e-left",
+      "train-v-probe-b1029238387186584cd84618-left"
+    ],
+    "rows": [
+      "train-balanced-V-0382",
+      "train-balanced-V-0383"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0055",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-ed89eb7719db77424b5a8361-right",
+      "train-v-probe-840103bf19bfd937004179c9-right"
+    ],
+    "rows": [
+      "train-balanced-V-0384",
+      "train-balanced-V-0385"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0056",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-8d6aa0b6f2fc01c84f653e90-down",
+      "train-v-probe-b5231d0d08e01e129ee005df-down"
+    ],
+    "rows": [
+      "train-balanced-V-0035",
+      "train-balanced-V-0386"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0057",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-1b8ca168591a7c840678df01-up",
+      "train-v-probe-9d50a8d3fb4ce4e2ddab88f9-up"
+    ],
+    "rows": [
+      "train-balanced-V-0387",
+      "train-balanced-V-0388"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0058",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-0810ef5978a791a13e3b2d05-up",
+      "train-v-probe-9709b8020934522df85b4705-up"
+    ],
+    "rows": [
+      "train-balanced-V-0389",
+      "train-balanced-V-0390"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0059",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-6ebca4ea946e9588c1cbda4c-left",
+      "train-v-probe-aab3559949f6de2d68002267-left"
+    ],
+    "rows": [
+      "train-balanced-V-0391",
+      "train-balanced-V-0392"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0060",
+    "kind": "change_goal",
+    "probe_ids": [
+      "train-v-probe-b2ef2ca410ad2677921e84e9-left",
+      "train-v-probe-fb5804e78a4638186976f3d6-left"
+    ],
+    "rows": [
+      "train-balanced-V-0393",
+      "train-balanced-V-0394"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0061",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-9faa5b4b971378a4fb5e1a9f-right",
+      "train-v-probe-14cd2d51b673561314a0f0d6-right"
+    ],
+    "rows": [
+      "train-balanced-V-0395",
+      "train-balanced-V-0396"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0062",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-9908bb124fcf86718beb517c-left",
+      "train-v-probe-16382bc60af14bf065714ee3-left"
+    ],
+    "rows": [
+      "train-balanced-V-0397",
+      "train-balanced-V-0398"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0063",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-48a4f3bcefb4ab51485fb377-left",
+      "train-v-probe-929535e6f267033c5f16a265-left"
+    ],
+    "rows": [
+      "train-balanced-V-0399",
+      "train-balanced-V-0400"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0064",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-591d8c8643345b835fba761d-right",
+      "train-v-probe-ca93bf4fe7e2f3416068189a-right"
+    ],
+    "rows": [
+      "train-balanced-V-0401",
+      "train-balanced-V-0402"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0065",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-d4a25fbf9ca6ac4f43d4a602-down",
+      "train-v-probe-3b9c5a74123846dea6bb584a-down"
+    ],
+    "rows": [
+      "train-balanced-V-0403",
+      "train-balanced-V-0404"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0066",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-871b1ddf903451923cec22cc-up",
+      "train-v-probe-9825957727a9a7f3db74b993-up"
+    ],
+    "rows": [
+      "train-balanced-V-0405",
+      "train-balanced-V-0406"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0067",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-043d6b2832f53ae2e9ffe946-right",
+      "train-v-probe-cfda0ad176bd98ca7dd13bfe-right"
+    ],
+    "rows": [
+      "train-balanced-V-0407",
+      "train-balanced-V-0408"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0068",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-f663473caeb7d4e2af0617b4-left",
+      "train-v-probe-38417948b90dc7595f37824c-left"
+    ],
+    "rows": [
+      "train-balanced-V-0409",
+      "train-balanced-V-0410"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0069",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-53efb34c242b0c51eab0af00-down",
+      "train-v-probe-70aaefc99d11a8f1fd646b76-down"
+    ],
+    "rows": [
+      "train-balanced-V-0411",
+      "train-balanced-V-0412"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0070",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-df08e17d8dabb12f01f43723-left",
+      "train-v-probe-48b7126158705c66cb3aac07-left"
+    ],
+    "rows": [
+      "train-balanced-V-0413",
+      "train-balanced-V-0414"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0071",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-14735a3b998662d613fba0c9-left",
+      "train-v-probe-eaef6bc5087b16fc1ac1bbf7-left"
+    ],
+    "rows": [
+      "train-balanced-V-0415",
+      "train-balanced-V-0416"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0072",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-f9d4a90d8ceadd873a8967db-right",
+      "train-v-probe-858da28a4ad28d7b5ae727c3-right"
+    ],
+    "rows": [
+      "train-balanced-V-0417",
+      "train-balanced-V-0418"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0073",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-06479a07661f41f55007ea9c-down",
+      "train-v-probe-03f12bc9d14c26ab0edc72ac-down"
+    ],
+    "rows": [
+      "train-balanced-V-0419",
+      "train-balanced-V-0420"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0074",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-190585504216f53175608e3a-down",
+      "train-v-probe-bb6d68b67bd582c88ddf1b52-down"
+    ],
+    "rows": [
+      "train-balanced-V-0421",
+      "train-balanced-V-0422"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0075",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-c6f827d30374e88d053a7bb1-left",
+      "train-v-probe-848d5854b8f0e9a34a09507e-left"
+    ],
+    "rows": [
+      "train-balanced-V-0423",
+      "train-balanced-V-0424"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0076",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-5d1536048544eee12aef6cf0-up",
+      "train-v-probe-7b103e798d356dfefda8ad6a-up"
+    ],
+    "rows": [
+      "train-balanced-V-0425",
+      "train-balanced-V-0426"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0077",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-171c52ac70ee0303c1cae068-left",
+      "train-v-probe-4f964bb658b601740c368cf0-left"
+    ],
+    "rows": [
+      "train-balanced-V-0427",
+      "train-balanced-V-0428"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0078",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-ee992cd372f5f6a65bad4db2-right",
+      "train-v-probe-d3c16009a8eb5b295630f2ea-right"
+    ],
+    "rows": [
+      "train-balanced-V-0429",
+      "train-balanced-V-0430"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0079",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-7dc4808181b9d8393f72a9df-left",
+      "train-v-probe-b67221928ec771aa804fc287-left"
+    ],
+    "rows": [
+      "train-balanced-V-0431",
+      "train-balanced-V-0432"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0080",
+    "kind": "change_wall",
+    "probe_ids": [
+      "train-v-probe-d2434cd18fce3315f2585c1a-down",
+      "train-v-probe-59bdb75fe63d897a8c2c4e63-down"
+    ],
+    "rows": [
+      "train-balanced-V-0433",
+      "train-balanced-V-0434"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0081",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-e33ef0ec810dde22c79f8175-right",
+      "train-v-probe-cf1a754905ede35922480ec8-right"
+    ],
+    "rows": [
+      "train-balanced-V-0199",
+      "train-balanced-V-0435"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0082",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-dee44b8122e8f697888ceb8a-down",
+      "train-v-probe-ccaeaaee1485c808c6b060b3-down"
+    ],
+    "rows": [
+      "train-balanced-V-0436",
+      "train-balanced-V-0437"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0083",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-4395b1b91c2c3587a8a377c8-right",
+      "train-v-probe-e76df80aad984ba55362ce09-right"
+    ],
+    "rows": [
+      "train-balanced-V-0438",
+      "train-balanced-V-0439"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0084",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-7402db2526de50e4e3162c1a-left",
+      "train-v-probe-5cf643bda70694977f31679d-left"
+    ],
+    "rows": [
+      "train-balanced-V-0440",
+      "train-balanced-V-0441"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0085",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-ad62558f4fe8aef5438062c6-down",
+      "train-v-probe-dc073e38b14aec120fe5ca98-down"
+    ],
+    "rows": [
+      "train-balanced-V-0442",
+      "train-balanced-V-0443"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0086",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-e7702985a7e2041678857d28-left",
+      "train-v-probe-0e08d2687fa84d8e7f1e83e7-left"
+    ],
+    "rows": [
+      "train-balanced-V-0444",
+      "train-balanced-V-0445"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0087",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-1d608200c5dfe7af3ec088a8-right",
+      "train-v-probe-3c26a7ee918a331c7baf52c0-right"
+    ],
+    "rows": [
+      "train-balanced-V-0446",
+      "train-balanced-V-0447"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0088",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-5b7d2a69e16187f9d530f317-up",
+      "train-v-probe-989a18f6073350420efaeeb7-up"
+    ],
+    "rows": [
+      "train-balanced-V-0448",
+      "train-balanced-V-0449"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0089",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-a12cd153f60f294d1f4f931d-left",
+      "train-v-probe-97f5c854cf7f2cfe0f719da8-left"
+    ],
+    "rows": [
+      "train-balanced-V-0450",
+      "train-balanced-V-0451"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0090",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-6fd2bab2744cbd616f6d3964-up",
+      "train-v-probe-483bcb38715762065f4d1ba7-up"
+    ],
+    "rows": [
+      "train-balanced-V-0452",
+      "train-balanced-V-0453"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0091",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-a87c91b60653dd036f67dc25-left",
+      "train-v-probe-f84dea9711fa5f7994475087-left"
+    ],
+    "rows": [
+      "train-balanced-V-0454",
+      "train-balanced-V-0455"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0092",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-ac5c4dd2949d87a4374264f3-down",
+      "train-v-probe-f730bb24d23ba25340657106-down"
+    ],
+    "rows": [
+      "train-balanced-V-0456",
+      "train-balanced-V-0457"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0093",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-691239bcaba6097e568ea81d-left",
+      "train-v-probe-c103649954606017e224ad43-left"
+    ],
+    "rows": [
+      "train-balanced-V-0458",
+      "train-balanced-V-0459"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0094",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-d8f2925c778e180f264b8024-left",
+      "train-v-probe-bb59f6c12c5b2bef28ac800a-left"
+    ],
+    "rows": [
+      "train-balanced-V-0460",
+      "train-balanced-V-0461"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0095",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-40fb26e15cf2afcc61c7c42c-up",
+      "train-v-probe-fd1f6e051818d2f798c6b17e-up"
+    ],
+    "rows": [
+      "train-balanced-V-0462",
+      "train-balanced-V-0463"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0096",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-c069459bd9976953f6b8f735-up",
+      "train-v-probe-ced763ca228375ab0c893d3e-up"
+    ],
+    "rows": [
+      "train-balanced-V-0464",
+      "train-balanced-V-0465"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0097",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-b7b7efbf9d388d5e0f0d515e-right",
+      "train-v-probe-9a039e8152b44067a4d71ef5-right"
+    ],
+    "rows": [
+      "train-balanced-V-0466",
+      "train-balanced-V-0467"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0098",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-524fc4f4da0b1b55e556d5af-up",
+      "train-v-probe-ede41ffd87fa4d24f6707e67-up"
+    ],
+    "rows": [
+      "train-balanced-V-0468",
+      "train-balanced-V-0469"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0099",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-c4160423fadcbba42d75b452-up",
+      "train-v-probe-6b449ced7f0db3ff375e73c1-up"
+    ],
+    "rows": [
+      "train-balanced-V-0470",
+      "train-balanced-V-0471"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0100",
+    "kind": "change_edge",
+    "probe_ids": [
+      "train-v-probe-d01a33ba91ed6cc4d8f8f4a0-left",
+      "train-v-probe-1b8c8e1841a6f165d909786d-left"
+    ],
+    "rows": [
+      "train-balanced-V-0472",
+      "train-balanced-V-0473"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0101",
+    "kind": "four_open",
+    "probe_ids": [
+      "train-v-probe-5cf643bda70694977f31679d-up",
+      "train-v-probe-5cf643bda70694977f31679d-down",
+      "train-v-probe-5cf643bda70694977f31679d-left",
+      "train-v-probe-5cf643bda70694977f31679d-right"
+    ],
+    "rows": [
+      "train-balanced-V-0484",
+      "train-balanced-V-0485",
+      "train-balanced-V-0441",
+      "train-balanced-V-0486"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0102",
+    "kind": "four_open",
+    "probe_ids": [
+      "train-v-probe-591d8c8643345b835fba761d-up",
+      "train-v-probe-591d8c8643345b835fba761d-down",
+      "train-v-probe-591d8c8643345b835fba761d-left",
+      "train-v-probe-591d8c8643345b835fba761d-right"
+    ],
+    "rows": [
+      "train-balanced-V-0487",
+      "train-balanced-V-0488",
+      "train-balanced-V-0489",
+      "train-balanced-V-0401"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0103",
+    "kind": "four_open",
+    "probe_ids": [
+      "train-v-probe-ed89eb7719db77424b5a8361-up",
+      "train-v-probe-ed89eb7719db77424b5a8361-down",
+      "train-v-probe-ed89eb7719db77424b5a8361-left",
+      "train-v-probe-ed89eb7719db77424b5a8361-right"
+    ],
+    "rows": [
+      "train-balanced-V-0490",
+      "train-balanced-V-0491",
+      "train-balanced-V-0492",
+      "train-balanced-V-0384"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0104",
+    "kind": "four_open",
+    "probe_ids": [
+      "train-v-probe-1d608200c5dfe7af3ec088a8-up",
+      "train-v-probe-1d608200c5dfe7af3ec088a8-down",
+      "train-v-probe-1d608200c5dfe7af3ec088a8-left",
+      "train-v-probe-1d608200c5dfe7af3ec088a8-right"
+    ],
+    "rows": [
+      "train-balanced-V-0493",
+      "train-balanced-V-0494",
+      "train-balanced-V-0495",
+      "train-balanced-V-0446"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0105",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-a04a5377141c6b71b0597522-up",
+      "train-v-probe-a04a5377141c6b71b0597522-down",
+      "train-v-probe-a04a5377141c6b71b0597522-left",
+      "train-v-probe-a04a5377141c6b71b0597522-right"
+    ],
+    "rows": [
+      "train-balanced-V-0496",
+      "train-balanced-V-0497",
+      "train-balanced-V-0498",
+      "train-balanced-V-0095"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0106",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-77ca596ef7f69fbea4eb9f88-up",
+      "train-v-probe-77ca596ef7f69fbea4eb9f88-down",
+      "train-v-probe-77ca596ef7f69fbea4eb9f88-left",
+      "train-v-probe-77ca596ef7f69fbea4eb9f88-right"
+    ],
+    "rows": [
+      "train-balanced-V-0499",
+      "train-balanced-V-0500",
+      "train-balanced-V-0175",
+      "train-balanced-V-0501"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0107",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-574b1eddff30cad08721adda-up",
+      "train-v-probe-574b1eddff30cad08721adda-down",
+      "train-v-probe-574b1eddff30cad08721adda-left",
+      "train-v-probe-574b1eddff30cad08721adda-right"
+    ],
+    "rows": [
+      "train-balanced-V-0502",
+      "train-balanced-V-0503",
+      "train-balanced-V-0504",
+      "train-balanced-V-0174"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0108",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-1b1aa46d65534b2ef23b2c21-up",
+      "train-v-probe-1b1aa46d65534b2ef23b2c21-down",
+      "train-v-probe-1b1aa46d65534b2ef23b2c21-left",
+      "train-v-probe-1b1aa46d65534b2ef23b2c21-right"
+    ],
+    "rows": [
+      "train-balanced-V-0505",
+      "train-balanced-V-0063",
+      "train-balanced-V-0506",
+      "train-balanced-V-0507"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0109",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-bd200bc9d36f6ebe159d465d-up",
+      "train-v-probe-bd200bc9d36f6ebe159d465d-down",
+      "train-v-probe-bd200bc9d36f6ebe159d465d-left",
+      "train-v-probe-bd200bc9d36f6ebe159d465d-right"
+    ],
+    "rows": [
+      "train-balanced-V-0508",
+      "train-balanced-V-0509",
+      "train-balanced-V-0014",
+      "train-balanced-V-0510"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0110",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-e403b245ef5c1785405d3494-up",
+      "train-v-probe-e403b245ef5c1785405d3494-down",
+      "train-v-probe-e403b245ef5c1785405d3494-left",
+      "train-v-probe-e403b245ef5c1785405d3494-right"
+    ],
+    "rows": [
+      "train-balanced-V-0140",
+      "train-balanced-V-0511",
+      "train-balanced-V-0512",
+      "train-balanced-V-0513"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0111",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-7fd4f4b8df72f433acc3a341-up",
+      "train-v-probe-7fd4f4b8df72f433acc3a341-down",
+      "train-v-probe-7fd4f4b8df72f433acc3a341-left",
+      "train-v-probe-7fd4f4b8df72f433acc3a341-right"
+    ],
+    "rows": [
+      "train-balanced-V-0514",
+      "train-balanced-V-0515",
+      "train-balanced-V-0155",
+      "train-balanced-V-0516"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0112",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-ad771da6cb154e5b20d9ca8e-up",
+      "train-v-probe-ad771da6cb154e5b20d9ca8e-down",
+      "train-v-probe-ad771da6cb154e5b20d9ca8e-left",
+      "train-v-probe-ad771da6cb154e5b20d9ca8e-right"
+    ],
+    "rows": [
+      "train-balanced-V-0517",
+      "train-balanced-V-0518",
+      "train-balanced-V-0519",
+      "train-balanced-V-0045"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0113",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-8e613a0060c1a74b9cf32313-up",
+      "train-v-probe-8e613a0060c1a74b9cf32313-down",
+      "train-v-probe-8e613a0060c1a74b9cf32313-left",
+      "train-v-probe-8e613a0060c1a74b9cf32313-right"
+    ],
+    "rows": [
+      "train-balanced-V-0520",
+      "train-balanced-V-0270",
+      "train-balanced-V-0271",
+      "train-balanced-V-0132"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0114",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-1477acf264ea002b91baaa8c-up",
+      "train-v-probe-1477acf264ea002b91baaa8c-down",
+      "train-v-probe-1477acf264ea002b91baaa8c-left",
+      "train-v-probe-1477acf264ea002b91baaa8c-right"
+    ],
+    "rows": [
+      "train-balanced-V-0521",
+      "train-balanced-V-0050",
+      "train-balanced-V-0522",
+      "train-balanced-V-0523"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0115",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-7c27bb9b2f17da733d71daff-up",
+      "train-v-probe-7c27bb9b2f17da733d71daff-down",
+      "train-v-probe-7c27bb9b2f17da733d71daff-left",
+      "train-v-probe-7c27bb9b2f17da733d71daff-right"
+    ],
+    "rows": [
+      "train-balanced-V-0524",
+      "train-balanced-V-0055",
+      "train-balanced-V-0525",
+      "train-balanced-V-0526"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0116",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-a2d8bc4e2981adce6e1d0da7-up",
+      "train-v-probe-a2d8bc4e2981adce6e1d0da7-down",
+      "train-v-probe-a2d8bc4e2981adce6e1d0da7-left",
+      "train-v-probe-a2d8bc4e2981adce6e1d0da7-right"
+    ],
+    "rows": [
+      "train-balanced-V-0527",
+      "train-balanced-V-0528",
+      "train-balanced-V-0178",
+      "train-balanced-V-0529"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0117",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-c48f4793b3e221a273bacab0-up",
+      "train-v-probe-c48f4793b3e221a273bacab0-down",
+      "train-v-probe-c48f4793b3e221a273bacab0-left",
+      "train-v-probe-c48f4793b3e221a273bacab0-right"
+    ],
+    "rows": [
+      "train-balanced-V-0530",
+      "train-balanced-V-0225",
+      "train-balanced-V-0531",
+      "train-balanced-V-0224"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0118",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-6600265379ae15ba9d8850a3-up",
+      "train-v-probe-6600265379ae15ba9d8850a3-down",
+      "train-v-probe-6600265379ae15ba9d8850a3-left",
+      "train-v-probe-6600265379ae15ba9d8850a3-right"
+    ],
+    "rows": [
+      "train-balanced-V-0233",
+      "train-balanced-V-0231",
+      "train-balanced-V-0532",
+      "train-balanced-V-0533"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0119",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-e5a631203cbca76950dde615-up",
+      "train-v-probe-e5a631203cbca76950dde615-down",
+      "train-v-probe-e5a631203cbca76950dde615-left",
+      "train-v-probe-e5a631203cbca76950dde615-right"
+    ],
+    "rows": [
+      "train-balanced-V-0274",
+      "train-balanced-V-0276",
+      "train-balanced-V-0534",
+      "train-balanced-V-0535"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0120",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-9ef7859e7a02349316f3651c-up",
+      "train-v-probe-9ef7859e7a02349316f3651c-down",
+      "train-v-probe-9ef7859e7a02349316f3651c-left",
+      "train-v-probe-9ef7859e7a02349316f3651c-right"
+    ],
+    "rows": [
+      "train-balanced-V-0536",
+      "train-balanced-V-0537",
+      "train-balanced-V-0303",
+      "train-balanced-V-0301"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0121",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-17c2d919b80557e300cde7e7-up",
+      "train-v-probe-17c2d919b80557e300cde7e7-down",
+      "train-v-probe-17c2d919b80557e300cde7e7-left",
+      "train-v-probe-17c2d919b80557e300cde7e7-right"
+    ],
+    "rows": [
+      "train-balanced-V-0296",
+      "train-balanced-V-0538",
+      "train-balanced-V-0294",
+      "train-balanced-V-0539"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0122",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-8002044167700f0eaeb78a6a-up",
+      "train-v-probe-8002044167700f0eaeb78a6a-down",
+      "train-v-probe-8002044167700f0eaeb78a6a-left",
+      "train-v-probe-8002044167700f0eaeb78a6a-right"
+    ],
+    "rows": [
+      "train-balanced-V-0300",
+      "train-balanced-V-0299",
+      "train-balanced-V-0540",
+      "train-balanced-V-0541"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0123",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-1e8a1ee5537ccccff07c244d-up",
+      "train-v-probe-1e8a1ee5537ccccff07c244d-down",
+      "train-v-probe-1e8a1ee5537ccccff07c244d-left",
+      "train-v-probe-1e8a1ee5537ccccff07c244d-right"
+    ],
+    "rows": [
+      "train-balanced-V-0542",
+      "train-balanced-V-0543",
+      "train-balanced-V-0544",
+      "train-balanced-V-0545"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0124",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-d13d53b205cff63782af5992-up",
+      "train-v-probe-d13d53b205cff63782af5992-down",
+      "train-v-probe-d13d53b205cff63782af5992-left",
+      "train-v-probe-d13d53b205cff63782af5992-right"
+    ],
+    "rows": [
+      "train-balanced-V-0546",
+      "train-balanced-V-0547",
+      "train-balanced-V-0548",
+      "train-balanced-V-0549"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0125",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-7db955f8d117e575979b8dd9-up",
+      "train-v-probe-7db955f8d117e575979b8dd9-down",
+      "train-v-probe-7db955f8d117e575979b8dd9-left",
+      "train-v-probe-7db955f8d117e575979b8dd9-right"
+    ],
+    "rows": [
+      "train-balanced-V-0550",
+      "train-balanced-V-0551",
+      "train-balanced-V-0552",
+      "train-balanced-V-0553"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0126",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-e1e5b6ea2ea4776d2f7db88a-up",
+      "train-v-probe-e1e5b6ea2ea4776d2f7db88a-down",
+      "train-v-probe-e1e5b6ea2ea4776d2f7db88a-left",
+      "train-v-probe-e1e5b6ea2ea4776d2f7db88a-right"
+    ],
+    "rows": [
+      "train-balanced-V-0554",
+      "train-balanced-V-0555",
+      "train-balanced-V-0556",
+      "train-balanced-V-0557"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0127",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-22c5f7d1b9b8fc09c3386347-up",
+      "train-v-probe-22c5f7d1b9b8fc09c3386347-down",
+      "train-v-probe-22c5f7d1b9b8fc09c3386347-left",
+      "train-v-probe-22c5f7d1b9b8fc09c3386347-right"
+    ],
+    "rows": [
+      "train-balanced-V-0558",
+      "train-balanced-V-0559",
+      "train-balanced-V-0560",
+      "train-balanced-V-0561"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0128",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-ef14df4760ef10c9babfbd51-up",
+      "train-v-probe-ef14df4760ef10c9babfbd51-down",
+      "train-v-probe-ef14df4760ef10c9babfbd51-left",
+      "train-v-probe-ef14df4760ef10c9babfbd51-right"
+    ],
+    "rows": [
+      "train-balanced-V-0562",
+      "train-balanced-V-0563",
+      "train-balanced-V-0564",
+      "train-balanced-V-0565"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0129",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-a7d417b82c31b0ae024062d0-up",
+      "train-v-probe-a7d417b82c31b0ae024062d0-down",
+      "train-v-probe-a7d417b82c31b0ae024062d0-left",
+      "train-v-probe-a7d417b82c31b0ae024062d0-right"
+    ],
+    "rows": [
+      "train-balanced-V-0566",
+      "train-balanced-V-0261",
+      "train-balanced-V-0567",
+      "train-balanced-V-0263"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0130",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-59bdb75fe63d897a8c2c4e63-up",
+      "train-v-probe-59bdb75fe63d897a8c2c4e63-down",
+      "train-v-probe-59bdb75fe63d897a8c2c4e63-left",
+      "train-v-probe-59bdb75fe63d897a8c2c4e63-right"
+    ],
+    "rows": [
+      "train-balanced-V-0568",
+      "train-balanced-V-0434",
+      "train-balanced-V-0569",
+      "train-balanced-V-0570"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0131",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-100cdd224b966c1761db0280-up",
+      "train-v-probe-100cdd224b966c1761db0280-down",
+      "train-v-probe-100cdd224b966c1761db0280-left",
+      "train-v-probe-100cdd224b966c1761db0280-right"
+    ],
+    "rows": [
+      "train-balanced-V-0571",
+      "train-balanced-V-0572",
+      "train-balanced-V-0285",
+      "train-balanced-V-0287"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0132",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-7dc4808181b9d8393f72a9df-up",
+      "train-v-probe-7dc4808181b9d8393f72a9df-down",
+      "train-v-probe-7dc4808181b9d8393f72a9df-left",
+      "train-v-probe-7dc4808181b9d8393f72a9df-right"
+    ],
+    "rows": [
+      "train-balanced-V-0573",
+      "train-balanced-V-0574",
+      "train-balanced-V-0431",
+      "train-balanced-V-0575"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0133",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-043d6b2832f53ae2e9ffe946-up",
+      "train-v-probe-043d6b2832f53ae2e9ffe946-down",
+      "train-v-probe-043d6b2832f53ae2e9ffe946-left",
+      "train-v-probe-043d6b2832f53ae2e9ffe946-right"
+    ],
+    "rows": [
+      "train-balanced-V-0576",
+      "train-balanced-V-0577",
+      "train-balanced-V-0578",
+      "train-balanced-V-0407"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0134",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-55e1901020ac7c0c0bf1862d-up",
+      "train-v-probe-55e1901020ac7c0c0bf1862d-down",
+      "train-v-probe-55e1901020ac7c0c0bf1862d-left",
+      "train-v-probe-55e1901020ac7c0c0bf1862d-right"
+    ],
+    "rows": [
+      "train-balanced-V-0252",
+      "train-balanced-V-0251",
+      "train-balanced-V-0579",
+      "train-balanced-V-0580"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0135",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-e73e7669390fbb768594c593-up",
+      "train-v-probe-e73e7669390fbb768594c593-down",
+      "train-v-probe-e73e7669390fbb768594c593-left",
+      "train-v-probe-e73e7669390fbb768594c593-right"
+    ],
+    "rows": [
+      "train-balanced-V-0265",
+      "train-balanced-V-0268",
+      "train-balanced-V-0581",
+      "train-balanced-V-0582"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0136",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-45792276a5d7277e60ea2589-up",
+      "train-v-probe-45792276a5d7277e60ea2589-down",
+      "train-v-probe-45792276a5d7277e60ea2589-left",
+      "train-v-probe-45792276a5d7277e60ea2589-right"
+    ],
+    "rows": [
+      "train-balanced-V-0352",
+      "train-balanced-V-0583",
+      "train-balanced-V-0584",
+      "train-balanced-V-0349"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0137",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-4b98b1389ec164a82258fb38-up",
+      "train-v-probe-4b98b1389ec164a82258fb38-down",
+      "train-v-probe-4b98b1389ec164a82258fb38-left",
+      "train-v-probe-4b98b1389ec164a82258fb38-right"
+    ],
+    "rows": [
+      "train-balanced-V-0585",
+      "train-balanced-V-0586",
+      "train-balanced-V-0255",
+      "train-balanced-V-0256"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0138",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-03f12bc9d14c26ab0edc72ac-up",
+      "train-v-probe-03f12bc9d14c26ab0edc72ac-down",
+      "train-v-probe-03f12bc9d14c26ab0edc72ac-left",
+      "train-v-probe-03f12bc9d14c26ab0edc72ac-right"
+    ],
+    "rows": [
+      "train-balanced-V-0587",
+      "train-balanced-V-0420",
+      "train-balanced-V-0588",
+      "train-balanced-V-0589"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0139",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-ad62558f4fe8aef5438062c6-up",
+      "train-v-probe-ad62558f4fe8aef5438062c6-down",
+      "train-v-probe-ad62558f4fe8aef5438062c6-left",
+      "train-v-probe-ad62558f4fe8aef5438062c6-right"
+    ],
+    "rows": [
+      "train-balanced-V-0590",
+      "train-balanced-V-0442",
+      "train-balanced-V-0591",
+      "train-balanced-V-0592"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0140",
+    "kind": "four_tie",
+    "probe_ids": [
+      "train-v-probe-170785d8aa2858712465fd4d-up",
+      "train-v-probe-170785d8aa2858712465fd4d-down",
+      "train-v-probe-170785d8aa2858712465fd4d-left",
+      "train-v-probe-170785d8aa2858712465fd4d-right"
+    ],
+    "rows": [
+      "train-balanced-V-0593",
+      "train-balanced-V-0381",
+      "train-balanced-V-0594",
+      "train-balanced-V-0595"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0141",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-30360f305c0678f53925f887-up",
+      "train-v-probe-30360f305c0678f53925f887-down",
+      "train-v-probe-30360f305c0678f53925f887-left",
+      "train-v-probe-30360f305c0678f53925f887-right"
+    ],
+    "rows": [
+      "train-balanced-V-0257",
+      "train-balanced-V-0596",
+      "train-balanced-V-0260",
+      "train-balanced-V-0597"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0142",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-1b8ca168591a7c840678df01-up",
+      "train-v-probe-1b8ca168591a7c840678df01-down",
+      "train-v-probe-1b8ca168591a7c840678df01-left",
+      "train-v-probe-1b8ca168591a7c840678df01-right"
+    ],
+    "rows": [
+      "train-balanced-V-0387",
+      "train-balanced-V-0598",
+      "train-balanced-V-0599",
+      "train-balanced-V-0600"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0143",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-faeab0ee84948cc8afa286b2-up",
+      "train-v-probe-faeab0ee84948cc8afa286b2-down",
+      "train-v-probe-faeab0ee84948cc8afa286b2-left",
+      "train-v-probe-faeab0ee84948cc8afa286b2-right"
+    ],
+    "rows": [
+      "train-balanced-V-0218",
+      "train-balanced-V-0601",
+      "train-balanced-V-0602",
+      "train-balanced-V-0219"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0144",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-07f9036f106e61fff4ea36d1-up",
+      "train-v-probe-07f9036f106e61fff4ea36d1-down",
+      "train-v-probe-07f9036f106e61fff4ea36d1-left",
+      "train-v-probe-07f9036f106e61fff4ea36d1-right"
+    ],
+    "rows": [
+      "train-balanced-V-0353",
+      "train-balanced-V-0603",
+      "train-balanced-V-0355",
+      "train-balanced-V-0604"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0145",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-dce5153e45040172723f6433-up",
+      "train-v-probe-dce5153e45040172723f6433-down",
+      "train-v-probe-dce5153e45040172723f6433-left",
+      "train-v-probe-dce5153e45040172723f6433-right"
+    ],
+    "rows": [
+      "train-balanced-V-0605",
+      "train-balanced-V-0606",
+      "train-balanced-V-0607",
+      "train-balanced-V-0608"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0146",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-c7c6c51b2d96c1eed5bf37dd-up",
+      "train-v-probe-c7c6c51b2d96c1eed5bf37dd-down",
+      "train-v-probe-c7c6c51b2d96c1eed5bf37dd-left",
+      "train-v-probe-c7c6c51b2d96c1eed5bf37dd-right"
+    ],
+    "rows": [
+      "train-balanced-V-0609",
+      "train-balanced-V-0610",
+      "train-balanced-V-0611",
+      "train-balanced-V-0612"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0147",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-e5bce951c883bdfd371117d8-up",
+      "train-v-probe-e5bce951c883bdfd371117d8-down",
+      "train-v-probe-e5bce951c883bdfd371117d8-left",
+      "train-v-probe-e5bce951c883bdfd371117d8-right"
+    ],
+    "rows": [
+      "train-balanced-V-0613",
+      "train-balanced-V-0614",
+      "train-balanced-V-0615",
+      "train-balanced-V-0616"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0148",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-70a62a1bddbe71cf1f53d688-up",
+      "train-v-probe-70a62a1bddbe71cf1f53d688-down",
+      "train-v-probe-70a62a1bddbe71cf1f53d688-left",
+      "train-v-probe-70a62a1bddbe71cf1f53d688-right"
+    ],
+    "rows": [
+      "train-balanced-V-0617",
+      "train-balanced-V-0618",
+      "train-balanced-V-0619",
+      "train-balanced-V-0620"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0149",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-260cbe1bb9d50b511d0af721-up",
+      "train-v-probe-260cbe1bb9d50b511d0af721-down",
+      "train-v-probe-260cbe1bb9d50b511d0af721-left",
+      "train-v-probe-260cbe1bb9d50b511d0af721-right"
+    ],
+    "rows": [
+      "train-balanced-V-0621",
+      "train-balanced-V-0622",
+      "train-balanced-V-0623",
+      "train-balanced-V-0624"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0150",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-09921b81de8459526b63af6f-up",
+      "train-v-probe-09921b81de8459526b63af6f-down",
+      "train-v-probe-09921b81de8459526b63af6f-left",
+      "train-v-probe-09921b81de8459526b63af6f-right"
+    ],
+    "rows": [
+      "train-balanced-V-0625",
+      "train-balanced-V-0626",
+      "train-balanced-V-0627",
+      "train-balanced-V-0628"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0151",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-0313549a4ba6607e4579210e-up",
+      "train-v-probe-0313549a4ba6607e4579210e-down",
+      "train-v-probe-0313549a4ba6607e4579210e-left",
+      "train-v-probe-0313549a4ba6607e4579210e-right"
+    ],
+    "rows": [
+      "train-balanced-V-0629",
+      "train-balanced-V-0630",
+      "train-balanced-V-0631",
+      "train-balanced-V-0632"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0152",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-466d9155a391fdb8926e9bd2-up",
+      "train-v-probe-466d9155a391fdb8926e9bd2-down",
+      "train-v-probe-466d9155a391fdb8926e9bd2-left",
+      "train-v-probe-466d9155a391fdb8926e9bd2-right"
+    ],
+    "rows": [
+      "train-balanced-V-0633",
+      "train-balanced-V-0634",
+      "train-balanced-V-0635",
+      "train-balanced-V-0636"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0153",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-dce3214667e2fc375caf17d5-up",
+      "train-v-probe-dce3214667e2fc375caf17d5-down",
+      "train-v-probe-dce3214667e2fc375caf17d5-left",
+      "train-v-probe-dce3214667e2fc375caf17d5-right"
+    ],
+    "rows": [
+      "train-balanced-V-0007",
+      "train-balanced-V-0637",
+      "train-balanced-V-0638",
+      "train-balanced-V-0639"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0154",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-650efc01f1d3d7421793751f-up",
+      "train-v-probe-650efc01f1d3d7421793751f-down",
+      "train-v-probe-650efc01f1d3d7421793751f-left",
+      "train-v-probe-650efc01f1d3d7421793751f-right"
+    ],
+    "rows": [
+      "train-balanced-V-0640",
+      "train-balanced-V-0641",
+      "train-balanced-V-0129",
+      "train-balanced-V-0642"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0155",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-f3a169ac382814b7c897c6b1-up",
+      "train-v-probe-f3a169ac382814b7c897c6b1-down",
+      "train-v-probe-f3a169ac382814b7c897c6b1-left",
+      "train-v-probe-f3a169ac382814b7c897c6b1-right"
+    ],
+    "rows": [
+      "train-balanced-V-0643",
+      "train-balanced-V-0179",
+      "train-balanced-V-0644",
+      "train-balanced-V-0645"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0156",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-a68f2470a5897152756461a9-up",
+      "train-v-probe-a68f2470a5897152756461a9-down",
+      "train-v-probe-a68f2470a5897152756461a9-left",
+      "train-v-probe-a68f2470a5897152756461a9-right"
+    ],
+    "rows": [
+      "train-balanced-V-0646",
+      "train-balanced-V-0157",
+      "train-balanced-V-0647",
+      "train-balanced-V-0648"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0157",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-2983100bbd373d66f971e7b3-up",
+      "train-v-probe-2983100bbd373d66f971e7b3-down",
+      "train-v-probe-2983100bbd373d66f971e7b3-left",
+      "train-v-probe-2983100bbd373d66f971e7b3-right"
+    ],
+    "rows": [
+      "train-balanced-V-0649",
+      "train-balanced-V-0650",
+      "train-balanced-V-0062",
+      "train-balanced-V-0651"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0158",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-9390c063f5c1d59e17db78e5-up",
+      "train-v-probe-9390c063f5c1d59e17db78e5-down",
+      "train-v-probe-9390c063f5c1d59e17db78e5-left",
+      "train-v-probe-9390c063f5c1d59e17db78e5-right"
+    ],
+    "rows": [
+      "train-balanced-V-0652",
+      "train-balanced-V-0653",
+      "train-balanced-V-0654",
+      "train-balanced-V-0164"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0159",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-484c1b4aacedb010ad0a96fb-up",
+      "train-v-probe-484c1b4aacedb010ad0a96fb-down",
+      "train-v-probe-484c1b4aacedb010ad0a96fb-left",
+      "train-v-probe-484c1b4aacedb010ad0a96fb-right"
+    ],
+    "rows": [
+      "train-balanced-V-0655",
+      "train-balanced-V-0135",
+      "train-balanced-V-0656",
+      "train-balanced-V-0657"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0160",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-b31e5c54a014aded1bb4873c-up",
+      "train-v-probe-b31e5c54a014aded1bb4873c-down",
+      "train-v-probe-b31e5c54a014aded1bb4873c-left",
+      "train-v-probe-b31e5c54a014aded1bb4873c-right"
+    ],
+    "rows": [
+      "train-balanced-V-0658",
+      "train-balanced-V-0659",
+      "train-balanced-V-0660",
+      "train-balanced-V-0009"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0161",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-b230d1af34c0dbed16d238a0-up",
+      "train-v-probe-b230d1af34c0dbed16d238a0-down",
+      "train-v-probe-b230d1af34c0dbed16d238a0-left",
+      "train-v-probe-b230d1af34c0dbed16d238a0-right"
+    ],
+    "rows": [
+      "train-balanced-V-0661",
+      "train-balanced-V-0662",
+      "train-balanced-V-0663",
+      "train-balanced-V-0026"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0162",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-74a32ee507a2be7434cd2c72-up",
+      "train-v-probe-74a32ee507a2be7434cd2c72-down",
+      "train-v-probe-74a32ee507a2be7434cd2c72-left",
+      "train-v-probe-74a32ee507a2be7434cd2c72-right"
+    ],
+    "rows": [
+      "train-balanced-V-0664",
+      "train-balanced-V-0665",
+      "train-balanced-V-0666",
+      "train-balanced-V-0188"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0163",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-0fab39a206f20ea1df03035d-up",
+      "train-v-probe-0fab39a206f20ea1df03035d-down",
+      "train-v-probe-0fab39a206f20ea1df03035d-left",
+      "train-v-probe-0fab39a206f20ea1df03035d-right"
+    ],
+    "rows": [
+      "train-balanced-V-0667",
+      "train-balanced-V-0668",
+      "train-balanced-V-0005",
+      "train-balanced-V-0669"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0164",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-979072d568d097a701bca0df-up",
+      "train-v-probe-979072d568d097a701bca0df-down",
+      "train-v-probe-979072d568d097a701bca0df-left",
+      "train-v-probe-979072d568d097a701bca0df-right"
+    ],
+    "rows": [
+      "train-balanced-V-0670",
+      "train-balanced-V-0023",
+      "train-balanced-V-0671",
+      "train-balanced-V-0672"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0165",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-2397521aa90c4ef9fd1314c6-up",
+      "train-v-probe-2397521aa90c4ef9fd1314c6-down",
+      "train-v-probe-2397521aa90c4ef9fd1314c6-left",
+      "train-v-probe-2397521aa90c4ef9fd1314c6-right"
+    ],
+    "rows": [
+      "train-balanced-V-0673",
+      "train-balanced-V-0139",
+      "train-balanced-V-0674",
+      "train-balanced-V-0675"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0166",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-f9d8ba03d1c8e65436bf4f72-up",
+      "train-v-probe-f9d8ba03d1c8e65436bf4f72-down",
+      "train-v-probe-f9d8ba03d1c8e65436bf4f72-left",
+      "train-v-probe-f9d8ba03d1c8e65436bf4f72-right"
+    ],
+    "rows": [
+      "train-balanced-V-0676",
+      "train-balanced-V-0677",
+      "train-balanced-V-0678",
+      "train-balanced-V-0101"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0167",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-6bd0e9486a498b162768c652-up",
+      "train-v-probe-6bd0e9486a498b162768c652-down",
+      "train-v-probe-6bd0e9486a498b162768c652-left",
+      "train-v-probe-6bd0e9486a498b162768c652-right"
+    ],
+    "rows": [
+      "train-balanced-V-0679",
+      "train-balanced-V-0680",
+      "train-balanced-V-0056",
+      "train-balanced-V-0681"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0168",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-551c9bae91e09c33340ed4b9-up",
+      "train-v-probe-551c9bae91e09c33340ed4b9-down",
+      "train-v-probe-551c9bae91e09c33340ed4b9-left",
+      "train-v-probe-551c9bae91e09c33340ed4b9-right"
+    ],
+    "rows": [
+      "train-balanced-V-0682",
+      "train-balanced-V-0076",
+      "train-balanced-V-0683",
+      "train-balanced-V-0684"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0169",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-b04bd962131f8e6282359831-up",
+      "train-v-probe-b04bd962131f8e6282359831-down",
+      "train-v-probe-b04bd962131f8e6282359831-left",
+      "train-v-probe-b04bd962131f8e6282359831-right"
+    ],
+    "rows": [
+      "train-balanced-V-0685",
+      "train-balanced-V-0034",
+      "train-balanced-V-0686",
+      "train-balanced-V-0687"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0170",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-a70489c0e8022dc497f38502-up",
+      "train-v-probe-a70489c0e8022dc497f38502-down",
+      "train-v-probe-a70489c0e8022dc497f38502-left",
+      "train-v-probe-a70489c0e8022dc497f38502-right"
+    ],
+    "rows": [
+      "train-balanced-V-0020",
+      "train-balanced-V-0688",
+      "train-balanced-V-0689",
+      "train-balanced-V-0690"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0171",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-9286e82388f7077606b86c48-up",
+      "train-v-probe-9286e82388f7077606b86c48-down",
+      "train-v-probe-9286e82388f7077606b86c48-left",
+      "train-v-probe-9286e82388f7077606b86c48-right"
+    ],
+    "rows": [
+      "train-balanced-V-0691",
+      "train-balanced-V-0692",
+      "train-balanced-V-0693",
+      "train-balanced-V-0130"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0172",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-736dce7ad1f55bbbccf08886-up",
+      "train-v-probe-736dce7ad1f55bbbccf08886-down",
+      "train-v-probe-736dce7ad1f55bbbccf08886-left",
+      "train-v-probe-736dce7ad1f55bbbccf08886-right"
+    ],
+    "rows": [
+      "train-balanced-V-0102",
+      "train-balanced-V-0694",
+      "train-balanced-V-0695",
+      "train-balanced-V-0696"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0173",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-47c2483d8fb33e162b4a96a1-up",
+      "train-v-probe-47c2483d8fb33e162b4a96a1-down",
+      "train-v-probe-47c2483d8fb33e162b4a96a1-left",
+      "train-v-probe-47c2483d8fb33e162b4a96a1-right"
+    ],
+    "rows": [
+      "train-balanced-V-0697",
+      "train-balanced-V-0698",
+      "train-balanced-V-0699",
+      "train-balanced-V-0170"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0174",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-b18ee29a2da70a6bf43a9c72-up",
+      "train-v-probe-b18ee29a2da70a6bf43a9c72-down",
+      "train-v-probe-b18ee29a2da70a6bf43a9c72-left",
+      "train-v-probe-b18ee29a2da70a6bf43a9c72-right"
+    ],
+    "rows": [
+      "train-balanced-V-0700",
+      "train-balanced-V-0701",
+      "train-balanced-V-0702",
+      "train-balanced-V-0703"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0175",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-637958c68622d2cbfa36ffe1-up",
+      "train-v-probe-637958c68622d2cbfa36ffe1-down",
+      "train-v-probe-637958c68622d2cbfa36ffe1-left",
+      "train-v-probe-637958c68622d2cbfa36ffe1-right"
+    ],
+    "rows": [
+      "train-balanced-V-0704",
+      "train-balanced-V-0705",
+      "train-balanced-V-0706",
+      "train-balanced-V-0707"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0176",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-dd541f177ce3f7079970d8ca-up",
+      "train-v-probe-dd541f177ce3f7079970d8ca-down",
+      "train-v-probe-dd541f177ce3f7079970d8ca-left",
+      "train-v-probe-dd541f177ce3f7079970d8ca-right"
+    ],
+    "rows": [
+      "train-balanced-V-0708",
+      "train-balanced-V-0709",
+      "train-balanced-V-0710",
+      "train-balanced-V-0711"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0177",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-3267cdf6e0907d58a3087476-up",
+      "train-v-probe-3267cdf6e0907d58a3087476-down",
+      "train-v-probe-3267cdf6e0907d58a3087476-left",
+      "train-v-probe-3267cdf6e0907d58a3087476-right"
+    ],
+    "rows": [
+      "train-balanced-V-0712",
+      "train-balanced-V-0003",
+      "train-balanced-V-0713",
+      "train-balanced-V-0714"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0178",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-c6ddc3b6bc726d1e94cca3b3-up",
+      "train-v-probe-c6ddc3b6bc726d1e94cca3b3-down",
+      "train-v-probe-c6ddc3b6bc726d1e94cca3b3-left",
+      "train-v-probe-c6ddc3b6bc726d1e94cca3b3-right"
+    ],
+    "rows": [
+      "train-balanced-V-0715",
+      "train-balanced-V-0716",
+      "train-balanced-V-0717",
+      "train-balanced-V-0718"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0179",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-54ee3099f76928c1eac53400-up",
+      "train-v-probe-54ee3099f76928c1eac53400-down",
+      "train-v-probe-54ee3099f76928c1eac53400-left",
+      "train-v-probe-54ee3099f76928c1eac53400-right"
+    ],
+    "rows": [
+      "train-balanced-V-0719",
+      "train-balanced-V-0720",
+      "train-balanced-V-0721",
+      "train-balanced-V-0722"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0180",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-0de37d61eb3f393c6318df7a-up",
+      "train-v-probe-0de37d61eb3f393c6318df7a-down",
+      "train-v-probe-0de37d61eb3f393c6318df7a-left",
+      "train-v-probe-0de37d61eb3f393c6318df7a-right"
+    ],
+    "rows": [
+      "train-balanced-V-0723",
+      "train-balanced-V-0724",
+      "train-balanced-V-0725",
+      "train-balanced-V-0726"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0181",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-44cd4a673d9f76aa12bf816f-up",
+      "train-v-probe-44cd4a673d9f76aa12bf816f-down",
+      "train-v-probe-44cd4a673d9f76aa12bf816f-left",
+      "train-v-probe-44cd4a673d9f76aa12bf816f-right"
+    ],
+    "rows": [
+      "train-balanced-V-0727",
+      "train-balanced-V-0728",
+      "train-balanced-V-0729",
+      "train-balanced-V-0730"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0182",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-a975fe39dbe302c0a3313186-up",
+      "train-v-probe-a975fe39dbe302c0a3313186-down",
+      "train-v-probe-a975fe39dbe302c0a3313186-left",
+      "train-v-probe-a975fe39dbe302c0a3313186-right"
+    ],
+    "rows": [
+      "train-balanced-V-0731",
+      "train-balanced-V-0732",
+      "train-balanced-V-0733",
+      "train-balanced-V-0734"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0183",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-ac438c0ef0df5801a09fb7ea-up",
+      "train-v-probe-ac438c0ef0df5801a09fb7ea-down",
+      "train-v-probe-ac438c0ef0df5801a09fb7ea-left",
+      "train-v-probe-ac438c0ef0df5801a09fb7ea-right"
+    ],
+    "rows": [
+      "train-balanced-V-0735",
+      "train-balanced-V-0736",
+      "train-balanced-V-0737",
+      "train-balanced-V-0738"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0184",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-8ec11e22a3d95f1dfa120ee4-up",
+      "train-v-probe-8ec11e22a3d95f1dfa120ee4-down",
+      "train-v-probe-8ec11e22a3d95f1dfa120ee4-left",
+      "train-v-probe-8ec11e22a3d95f1dfa120ee4-right"
+    ],
+    "rows": [
+      "train-balanced-V-0739",
+      "train-balanced-V-0740",
+      "train-balanced-V-0147",
+      "train-balanced-V-0741"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0185",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-df0708a9b6a2a20dd32db05c-up",
+      "train-v-probe-df0708a9b6a2a20dd32db05c-down",
+      "train-v-probe-df0708a9b6a2a20dd32db05c-left",
+      "train-v-probe-df0708a9b6a2a20dd32db05c-right"
+    ],
+    "rows": [
+      "train-balanced-V-0742",
+      "train-balanced-V-0743",
+      "train-balanced-V-0744",
+      "train-balanced-V-0745"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0186",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-5113070c43492f3a5530b704-up",
+      "train-v-probe-5113070c43492f3a5530b704-down",
+      "train-v-probe-5113070c43492f3a5530b704-left",
+      "train-v-probe-5113070c43492f3a5530b704-right"
+    ],
+    "rows": [
+      "train-balanced-V-0746",
+      "train-balanced-V-0747",
+      "train-balanced-V-0748",
+      "train-balanced-V-0749"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0187",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-48973e447b4f20b181f6820d-up",
+      "train-v-probe-48973e447b4f20b181f6820d-down",
+      "train-v-probe-48973e447b4f20b181f6820d-left",
+      "train-v-probe-48973e447b4f20b181f6820d-right"
+    ],
+    "rows": [
+      "train-balanced-V-0750",
+      "train-balanced-V-0751",
+      "train-balanced-V-0752",
+      "train-balanced-V-0753"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0188",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-7a2b87484de0d6a9ae1255bd-up",
+      "train-v-probe-7a2b87484de0d6a9ae1255bd-down",
+      "train-v-probe-7a2b87484de0d6a9ae1255bd-left",
+      "train-v-probe-7a2b87484de0d6a9ae1255bd-right"
+    ],
+    "rows": [
+      "train-balanced-V-0754",
+      "train-balanced-V-0755",
+      "train-balanced-V-0756",
+      "train-balanced-V-0757"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0189",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-22c050ca6dfd278cbda74d15-up",
+      "train-v-probe-22c050ca6dfd278cbda74d15-down",
+      "train-v-probe-22c050ca6dfd278cbda74d15-left",
+      "train-v-probe-22c050ca6dfd278cbda74d15-right"
+    ],
+    "rows": [
+      "train-balanced-V-0758",
+      "train-balanced-V-0759",
+      "train-balanced-V-0760",
+      "train-balanced-V-0761"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0190",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-be3b24670872d3e86e95b047-up",
+      "train-v-probe-be3b24670872d3e86e95b047-down",
+      "train-v-probe-be3b24670872d3e86e95b047-left",
+      "train-v-probe-be3b24670872d3e86e95b047-right"
+    ],
+    "rows": [
+      "train-balanced-V-0762",
+      "train-balanced-V-0763",
+      "train-balanced-V-0764",
+      "train-balanced-V-0765"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0191",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-26529a251d9201ddfb977d7e-up",
+      "train-v-probe-26529a251d9201ddfb977d7e-down",
+      "train-v-probe-26529a251d9201ddfb977d7e-left",
+      "train-v-probe-26529a251d9201ddfb977d7e-right"
+    ],
+    "rows": [
+      "train-balanced-V-0766",
+      "train-balanced-V-0767",
+      "train-balanced-V-0152",
+      "train-balanced-V-0768"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0192",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-1ac99881c089124d51f72daa-up",
+      "train-v-probe-1ac99881c089124d51f72daa-down",
+      "train-v-probe-1ac99881c089124d51f72daa-left",
+      "train-v-probe-1ac99881c089124d51f72daa-right"
+    ],
+    "rows": [
+      "train-balanced-V-0119",
+      "train-balanced-V-0769",
+      "train-balanced-V-0770",
+      "train-balanced-V-0771"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0193",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-07c6e0e128c6dc2e38cfc33d-up",
+      "train-v-probe-07c6e0e128c6dc2e38cfc33d-down",
+      "train-v-probe-07c6e0e128c6dc2e38cfc33d-left",
+      "train-v-probe-07c6e0e128c6dc2e38cfc33d-right"
+    ],
+    "rows": [
+      "train-balanced-V-0772",
+      "train-balanced-V-0773",
+      "train-balanced-V-0774",
+      "train-balanced-V-0775"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0194",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-9a5f9f320f70d362185c357b-up",
+      "train-v-probe-9a5f9f320f70d362185c357b-down",
+      "train-v-probe-9a5f9f320f70d362185c357b-left",
+      "train-v-probe-9a5f9f320f70d362185c357b-right"
+    ],
+    "rows": [
+      "train-balanced-V-0776",
+      "train-balanced-V-0777",
+      "train-balanced-V-0778",
+      "train-balanced-V-0779"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0195",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-1be9112febb10a96738e9cfc-up",
+      "train-v-probe-1be9112febb10a96738e9cfc-down",
+      "train-v-probe-1be9112febb10a96738e9cfc-left",
+      "train-v-probe-1be9112febb10a96738e9cfc-right"
+    ],
+    "rows": [
+      "train-balanced-V-0780",
+      "train-balanced-V-0781",
+      "train-balanced-V-0782",
+      "train-balanced-V-0783"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0196",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-dc1e13232605fcc1698acbed-up",
+      "train-v-probe-dc1e13232605fcc1698acbed-down",
+      "train-v-probe-dc1e13232605fcc1698acbed-left",
+      "train-v-probe-dc1e13232605fcc1698acbed-right"
+    ],
+    "rows": [
+      "train-balanced-V-0072",
+      "train-balanced-V-0784",
+      "train-balanced-V-0785",
+      "train-balanced-V-0786"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0197",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-2fddf3f99c42a68e92455c40-up",
+      "train-v-probe-2fddf3f99c42a68e92455c40-down",
+      "train-v-probe-2fddf3f99c42a68e92455c40-left",
+      "train-v-probe-2fddf3f99c42a68e92455c40-right"
+    ],
+    "rows": [
+      "train-balanced-V-0787",
+      "train-balanced-V-0788",
+      "train-balanced-V-0789",
+      "train-balanced-V-0790"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0198",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-965e5701910e84d53942c7dd-up",
+      "train-v-probe-965e5701910e84d53942c7dd-down",
+      "train-v-probe-965e5701910e84d53942c7dd-left",
+      "train-v-probe-965e5701910e84d53942c7dd-right"
+    ],
+    "rows": [
+      "train-balanced-V-0791",
+      "train-balanced-V-0792",
+      "train-balanced-V-0793",
+      "train-balanced-V-0794"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0199",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-448fcc877169350d58c58cbc-up",
+      "train-v-probe-448fcc877169350d58c58cbc-down",
+      "train-v-probe-448fcc877169350d58c58cbc-left",
+      "train-v-probe-448fcc877169350d58c58cbc-right"
+    ],
+    "rows": [
+      "train-balanced-V-0795",
+      "train-balanced-V-0796",
+      "train-balanced-V-0797",
+      "train-balanced-V-0798"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0200",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-8528a60554c212238cd027c2-up",
+      "train-v-probe-8528a60554c212238cd027c2-down",
+      "train-v-probe-8528a60554c212238cd027c2-left",
+      "train-v-probe-8528a60554c212238cd027c2-right"
+    ],
+    "rows": [
+      "train-balanced-V-0799",
+      "train-balanced-V-0800",
+      "train-balanced-V-0801",
+      "train-balanced-V-0802"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0201",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-73f7dbec08d7cd020b68ec96-up",
+      "train-v-probe-73f7dbec08d7cd020b68ec96-down",
+      "train-v-probe-73f7dbec08d7cd020b68ec96-left",
+      "train-v-probe-73f7dbec08d7cd020b68ec96-right"
+    ],
+    "rows": [
+      "train-balanced-V-0803",
+      "train-balanced-V-0804",
+      "train-balanced-V-0805",
+      "train-balanced-V-0806"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0202",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-6b3fdd9ae4be7d28d5728e5f-up",
+      "train-v-probe-6b3fdd9ae4be7d28d5728e5f-down",
+      "train-v-probe-6b3fdd9ae4be7d28d5728e5f-left",
+      "train-v-probe-6b3fdd9ae4be7d28d5728e5f-right"
+    ],
+    "rows": [
+      "train-balanced-V-0807",
+      "train-balanced-V-0808",
+      "train-balanced-V-0809",
+      "train-balanced-V-0810"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0203",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-3dcf6a2598f753b610a01410-up",
+      "train-v-probe-3dcf6a2598f753b610a01410-down",
+      "train-v-probe-3dcf6a2598f753b610a01410-left",
+      "train-v-probe-3dcf6a2598f753b610a01410-right"
+    ],
+    "rows": [
+      "train-balanced-V-0811",
+      "train-balanced-V-0812",
+      "train-balanced-V-0813",
+      "train-balanced-V-0814"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0204",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-46f32fee0324f88accacfa1c-up",
+      "train-v-probe-46f32fee0324f88accacfa1c-down",
+      "train-v-probe-46f32fee0324f88accacfa1c-left",
+      "train-v-probe-46f32fee0324f88accacfa1c-right"
+    ],
+    "rows": [
+      "train-balanced-V-0815",
+      "train-balanced-V-0816",
+      "train-balanced-V-0817",
+      "train-balanced-V-0818"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0205",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-1f470153b298ffd9a51fbd96-up",
+      "train-v-probe-1f470153b298ffd9a51fbd96-down",
+      "train-v-probe-1f470153b298ffd9a51fbd96-left",
+      "train-v-probe-1f470153b298ffd9a51fbd96-right"
+    ],
+    "rows": [
+      "train-balanced-V-0109",
+      "train-balanced-V-0819",
+      "train-balanced-V-0820",
+      "train-balanced-V-0821"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0206",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-801d68c7d6ef0171ddbcdc57-up",
+      "train-v-probe-801d68c7d6ef0171ddbcdc57-down",
+      "train-v-probe-801d68c7d6ef0171ddbcdc57-left",
+      "train-v-probe-801d68c7d6ef0171ddbcdc57-right"
+    ],
+    "rows": [
+      "train-balanced-V-0822",
+      "train-balanced-V-0823",
+      "train-balanced-V-0824",
+      "train-balanced-V-0825"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0207",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-1e05261497bb82cb8bdd49db-up",
+      "train-v-probe-1e05261497bb82cb8bdd49db-down",
+      "train-v-probe-1e05261497bb82cb8bdd49db-left",
+      "train-v-probe-1e05261497bb82cb8bdd49db-right"
+    ],
+    "rows": [
+      "train-balanced-V-0826",
+      "train-balanced-V-0827",
+      "train-balanced-V-0828",
+      "train-balanced-V-0829"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0208",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-352d16fbde7641559adb354b-up",
+      "train-v-probe-352d16fbde7641559adb354b-down",
+      "train-v-probe-352d16fbde7641559adb354b-left",
+      "train-v-probe-352d16fbde7641559adb354b-right"
+    ],
+    "rows": [
+      "train-balanced-V-0830",
+      "train-balanced-V-0831",
+      "train-balanced-V-0832",
+      "train-balanced-V-0833"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0209",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-6d936388891acc31182c45b2-up",
+      "train-v-probe-6d936388891acc31182c45b2-down",
+      "train-v-probe-6d936388891acc31182c45b2-left",
+      "train-v-probe-6d936388891acc31182c45b2-right"
+    ],
+    "rows": [
+      "train-balanced-V-0834",
+      "train-balanced-V-0835",
+      "train-balanced-V-0836",
+      "train-balanced-V-0837"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0210",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-2f14a10a0bbd87d7fbfb6626-up",
+      "train-v-probe-2f14a10a0bbd87d7fbfb6626-down",
+      "train-v-probe-2f14a10a0bbd87d7fbfb6626-left",
+      "train-v-probe-2f14a10a0bbd87d7fbfb6626-right"
+    ],
+    "rows": [
+      "train-balanced-V-0131",
+      "train-balanced-V-0838",
+      "train-balanced-V-0839",
+      "train-balanced-V-0840"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0211",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-5b1dbcce8048419b496a0016-up",
+      "train-v-probe-5b1dbcce8048419b496a0016-down",
+      "train-v-probe-5b1dbcce8048419b496a0016-left",
+      "train-v-probe-5b1dbcce8048419b496a0016-right"
+    ],
+    "rows": [
+      "train-balanced-V-0841",
+      "train-balanced-V-0842",
+      "train-balanced-V-0843",
+      "train-balanced-V-0844"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0212",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-8d3c38fffd2573615769a395-up",
+      "train-v-probe-8d3c38fffd2573615769a395-down",
+      "train-v-probe-8d3c38fffd2573615769a395-left",
+      "train-v-probe-8d3c38fffd2573615769a395-right"
+    ],
+    "rows": [
+      "train-balanced-V-0845",
+      "train-balanced-V-0846",
+      "train-balanced-V-0847",
+      "train-balanced-V-0848"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0213",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-c2bba8fa2ab6e096a8d214c5-up",
+      "train-v-probe-c2bba8fa2ab6e096a8d214c5-down",
+      "train-v-probe-c2bba8fa2ab6e096a8d214c5-left",
+      "train-v-probe-c2bba8fa2ab6e096a8d214c5-right"
+    ],
+    "rows": [
+      "train-balanced-V-0849",
+      "train-balanced-V-0850",
+      "train-balanced-V-0851",
+      "train-balanced-V-0169"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0214",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-dae3c5e296abc92f03b9f0aa-up",
+      "train-v-probe-dae3c5e296abc92f03b9f0aa-down",
+      "train-v-probe-dae3c5e296abc92f03b9f0aa-left",
+      "train-v-probe-dae3c5e296abc92f03b9f0aa-right"
+    ],
+    "rows": [
+      "train-balanced-V-0852",
+      "train-balanced-V-0853",
+      "train-balanced-V-0854",
+      "train-balanced-V-0855"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0215",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-ec204ccb124b672968ce82ba-up",
+      "train-v-probe-ec204ccb124b672968ce82ba-down",
+      "train-v-probe-ec204ccb124b672968ce82ba-left",
+      "train-v-probe-ec204ccb124b672968ce82ba-right"
+    ],
+    "rows": [
+      "train-balanced-V-0856",
+      "train-balanced-V-0857",
+      "train-balanced-V-0858",
+      "train-balanced-V-0859"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0216",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-d53a09e9ad96525533e0ed18-up",
+      "train-v-probe-d53a09e9ad96525533e0ed18-down",
+      "train-v-probe-d53a09e9ad96525533e0ed18-left",
+      "train-v-probe-d53a09e9ad96525533e0ed18-right"
+    ],
+    "rows": [
+      "train-balanced-V-0860",
+      "train-balanced-V-0861",
+      "train-balanced-V-0862",
+      "train-balanced-V-0863"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0217",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-c0787d105eac2d7637102a68-up",
+      "train-v-probe-c0787d105eac2d7637102a68-down",
+      "train-v-probe-c0787d105eac2d7637102a68-left",
+      "train-v-probe-c0787d105eac2d7637102a68-right"
+    ],
+    "rows": [
+      "train-balanced-V-0864",
+      "train-balanced-V-0100",
+      "train-balanced-V-0865",
+      "train-balanced-V-0866"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0218",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-de970581f948415a64d1ca8b-up",
+      "train-v-probe-de970581f948415a64d1ca8b-down",
+      "train-v-probe-de970581f948415a64d1ca8b-left",
+      "train-v-probe-de970581f948415a64d1ca8b-right"
+    ],
+    "rows": [
+      "train-balanced-V-0867",
+      "train-balanced-V-0868",
+      "train-balanced-V-0869",
+      "train-balanced-V-0870"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0219",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-176a3ddd5d011de50de99e57-up",
+      "train-v-probe-176a3ddd5d011de50de99e57-down",
+      "train-v-probe-176a3ddd5d011de50de99e57-left",
+      "train-v-probe-176a3ddd5d011de50de99e57-right"
+    ],
+    "rows": [
+      "train-balanced-V-0871",
+      "train-balanced-V-0872",
+      "train-balanced-V-0873",
+      "train-balanced-V-0874"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0220",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-67bf16eb77ea7a597420f347-up",
+      "train-v-probe-67bf16eb77ea7a597420f347-down",
+      "train-v-probe-67bf16eb77ea7a597420f347-left",
+      "train-v-probe-67bf16eb77ea7a597420f347-right"
+    ],
+    "rows": [
+      "train-balanced-V-0875",
+      "train-balanced-V-0876",
+      "train-balanced-V-0877",
+      "train-balanced-V-0878"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0221",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-629af765204332dca575ba88-up",
+      "train-v-probe-629af765204332dca575ba88-down",
+      "train-v-probe-629af765204332dca575ba88-left",
+      "train-v-probe-629af765204332dca575ba88-right"
+    ],
+    "rows": [
+      "train-balanced-V-0879",
+      "train-balanced-V-0028",
+      "train-balanced-V-0880",
+      "train-balanced-V-0881"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0222",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-852659ffcdcf2d430200ac87-up",
+      "train-v-probe-852659ffcdcf2d430200ac87-down",
+      "train-v-probe-852659ffcdcf2d430200ac87-left",
+      "train-v-probe-852659ffcdcf2d430200ac87-right"
+    ],
+    "rows": [
+      "train-balanced-V-0882",
+      "train-balanced-V-0883",
+      "train-balanced-V-0884",
+      "train-balanced-V-0885"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0223",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-59f7cc5d2b74cc9781638272-up",
+      "train-v-probe-59f7cc5d2b74cc9781638272-down",
+      "train-v-probe-59f7cc5d2b74cc9781638272-left",
+      "train-v-probe-59f7cc5d2b74cc9781638272-right"
+    ],
+    "rows": [
+      "train-balanced-V-0886",
+      "train-balanced-V-0887",
+      "train-balanced-V-0888",
+      "train-balanced-V-0889"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0224",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-76ec28f34cafe44c49068c4f-up",
+      "train-v-probe-76ec28f34cafe44c49068c4f-down",
+      "train-v-probe-76ec28f34cafe44c49068c4f-left",
+      "train-v-probe-76ec28f34cafe44c49068c4f-right"
+    ],
+    "rows": [
+      "train-balanced-V-0890",
+      "train-balanced-V-0891",
+      "train-balanced-V-0892",
+      "train-balanced-V-0893"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0225",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-f9d4a90d8ceadd873a8967db-up",
+      "train-v-probe-f9d4a90d8ceadd873a8967db-down",
+      "train-v-probe-f9d4a90d8ceadd873a8967db-left",
+      "train-v-probe-f9d4a90d8ceadd873a8967db-right"
+    ],
+    "rows": [
+      "train-balanced-V-0894",
+      "train-balanced-V-0895",
+      "train-balanced-V-0896",
+      "train-balanced-V-0417"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0226",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-9440adc70f2cb85088f04125-up",
+      "train-v-probe-9440adc70f2cb85088f04125-down",
+      "train-v-probe-9440adc70f2cb85088f04125-left",
+      "train-v-probe-9440adc70f2cb85088f04125-right"
+    ],
+    "rows": [
+      "train-balanced-V-0897",
+      "train-balanced-V-0898",
+      "train-balanced-V-0899",
+      "train-balanced-V-0900"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0227",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-e47e829be55b46834a17815c-up",
+      "train-v-probe-e47e829be55b46834a17815c-down",
+      "train-v-probe-e47e829be55b46834a17815c-left",
+      "train-v-probe-e47e829be55b46834a17815c-right"
+    ],
+    "rows": [
+      "train-balanced-V-0901",
+      "train-balanced-V-0902",
+      "train-balanced-V-0065",
+      "train-balanced-V-0903"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0228",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-612def665a31b402763d9bf3-up",
+      "train-v-probe-612def665a31b402763d9bf3-down",
+      "train-v-probe-612def665a31b402763d9bf3-left",
+      "train-v-probe-612def665a31b402763d9bf3-right"
+    ],
+    "rows": [
+      "train-balanced-V-0904",
+      "train-balanced-V-0905",
+      "train-balanced-V-0906",
+      "train-balanced-V-0907"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0229",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-f7c19752aee31b1e655f9fd8-up",
+      "train-v-probe-f7c19752aee31b1e655f9fd8-down",
+      "train-v-probe-f7c19752aee31b1e655f9fd8-left",
+      "train-v-probe-f7c19752aee31b1e655f9fd8-right"
+    ],
+    "rows": [
+      "train-balanced-V-0908",
+      "train-balanced-V-0168",
+      "train-balanced-V-0909",
+      "train-balanced-V-0910"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0230",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-da15c603504c47e30c236207-up",
+      "train-v-probe-da15c603504c47e30c236207-down",
+      "train-v-probe-da15c603504c47e30c236207-left",
+      "train-v-probe-da15c603504c47e30c236207-right"
+    ],
+    "rows": [
+      "train-balanced-V-0911",
+      "train-balanced-V-0912",
+      "train-balanced-V-0913",
+      "train-balanced-V-0914"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0231",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-f8c495f26b54358183fd8a27-up",
+      "train-v-probe-f8c495f26b54358183fd8a27-down",
+      "train-v-probe-f8c495f26b54358183fd8a27-left",
+      "train-v-probe-f8c495f26b54358183fd8a27-right"
+    ],
+    "rows": [
+      "train-balanced-V-0915",
+      "train-balanced-V-0916",
+      "train-balanced-V-0917",
+      "train-balanced-V-0918"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0232",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-86328ed52a2eca391ab1b6d4-up",
+      "train-v-probe-86328ed52a2eca391ab1b6d4-down",
+      "train-v-probe-86328ed52a2eca391ab1b6d4-left",
+      "train-v-probe-86328ed52a2eca391ab1b6d4-right"
+    ],
+    "rows": [
+      "train-balanced-V-0919",
+      "train-balanced-V-0090",
+      "train-balanced-V-0920",
+      "train-balanced-V-0921"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0233",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-6b035f546ed4ebd1a9002614-up",
+      "train-v-probe-6b035f546ed4ebd1a9002614-down",
+      "train-v-probe-6b035f546ed4ebd1a9002614-left",
+      "train-v-probe-6b035f546ed4ebd1a9002614-right"
+    ],
+    "rows": [
+      "train-balanced-V-0922",
+      "train-balanced-V-0923",
+      "train-balanced-V-0924",
+      "train-balanced-V-0925"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0234",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-2c9a7141bb72d6398a2d410e-up",
+      "train-v-probe-2c9a7141bb72d6398a2d410e-down",
+      "train-v-probe-2c9a7141bb72d6398a2d410e-left",
+      "train-v-probe-2c9a7141bb72d6398a2d410e-right"
+    ],
+    "rows": [
+      "train-balanced-V-0926",
+      "train-balanced-V-0927",
+      "train-balanced-V-0928",
+      "train-balanced-V-0110"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0235",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-c0c71b7223d8d05ea771700b-up",
+      "train-v-probe-c0c71b7223d8d05ea771700b-down",
+      "train-v-probe-c0c71b7223d8d05ea771700b-left",
+      "train-v-probe-c0c71b7223d8d05ea771700b-right"
+    ],
+    "rows": [
+      "train-balanced-V-0929",
+      "train-balanced-V-0930",
+      "train-balanced-V-0931",
+      "train-balanced-V-0932"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0236",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-a96b405543eb2801146e1f8f-up",
+      "train-v-probe-a96b405543eb2801146e1f8f-down",
+      "train-v-probe-a96b405543eb2801146e1f8f-left",
+      "train-v-probe-a96b405543eb2801146e1f8f-right"
+    ],
+    "rows": [
+      "train-balanced-V-0933",
+      "train-balanced-V-0061",
+      "train-balanced-V-0934",
+      "train-balanced-V-0935"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0237",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-41468ae2a017c82ac6a2d8b6-up",
+      "train-v-probe-41468ae2a017c82ac6a2d8b6-down",
+      "train-v-probe-41468ae2a017c82ac6a2d8b6-left",
+      "train-v-probe-41468ae2a017c82ac6a2d8b6-right"
+    ],
+    "rows": [
+      "train-balanced-V-0936",
+      "train-balanced-V-0015",
+      "train-balanced-V-0937",
+      "train-balanced-V-0938"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0238",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-04e516204043c1405cdc5107-up",
+      "train-v-probe-04e516204043c1405cdc5107-down",
+      "train-v-probe-04e516204043c1405cdc5107-left",
+      "train-v-probe-04e516204043c1405cdc5107-right"
+    ],
+    "rows": [
+      "train-balanced-V-0939",
+      "train-balanced-V-0940",
+      "train-balanced-V-0941",
+      "train-balanced-V-0942"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0239",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-1b6da0be32bcbb4bb16fb21b-up",
+      "train-v-probe-1b6da0be32bcbb4bb16fb21b-down",
+      "train-v-probe-1b6da0be32bcbb4bb16fb21b-left",
+      "train-v-probe-1b6da0be32bcbb4bb16fb21b-right"
+    ],
+    "rows": [
+      "train-balanced-V-0943",
+      "train-balanced-V-0944",
+      "train-balanced-V-0945",
+      "train-balanced-V-0946"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0240",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-e491ef865c9c8610c1e1d453-up",
+      "train-v-probe-e491ef865c9c8610c1e1d453-down",
+      "train-v-probe-e491ef865c9c8610c1e1d453-left",
+      "train-v-probe-e491ef865c9c8610c1e1d453-right"
+    ],
+    "rows": [
+      "train-balanced-V-0947",
+      "train-balanced-V-0948",
+      "train-balanced-V-0949",
+      "train-balanced-V-0950"
+    ],
+    "supervised_members": 0
+  },
+  {
+    "id": "train-control-0241",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-9d22789e7aaba758a6f77fbe-up",
+      "train-v-probe-9d22789e7aaba758a6f77fbe-down",
+      "train-v-probe-9d22789e7aaba758a6f77fbe-left",
+      "train-v-probe-9d22789e7aaba758a6f77fbe-right"
+    ],
+    "rows": [
+      "train-balanced-V-0951",
+      "train-balanced-V-0952",
+      "train-balanced-V-0084",
+      "train-balanced-V-0953"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0242",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-a5bc82953f6d05e189aabb4c-up",
+      "train-v-probe-a5bc82953f6d05e189aabb4c-down",
+      "train-v-probe-a5bc82953f6d05e189aabb4c-left",
+      "train-v-probe-a5bc82953f6d05e189aabb4c-right"
+    ],
+    "rows": [
+      "train-balanced-V-0954",
+      "train-balanced-V-0955",
+      "train-balanced-V-0956",
+      "train-balanced-V-0957"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0243",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-bc0702d3ae48864c5ac50c49-up",
+      "train-v-probe-bc0702d3ae48864c5ac50c49-down",
+      "train-v-probe-bc0702d3ae48864c5ac50c49-left",
+      "train-v-probe-bc0702d3ae48864c5ac50c49-right"
+    ],
+    "rows": [
+      "train-balanced-V-0958",
+      "train-balanced-V-0959",
+      "train-balanced-V-0960",
+      "train-balanced-V-0961"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0244",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-e70539f1fd4501a3015c9066-up",
+      "train-v-probe-e70539f1fd4501a3015c9066-down",
+      "train-v-probe-e70539f1fd4501a3015c9066-left",
+      "train-v-probe-e70539f1fd4501a3015c9066-right"
+    ],
+    "rows": [
+      "train-balanced-V-0962",
+      "train-balanced-V-0963",
+      "train-balanced-V-0070",
+      "train-balanced-V-0964"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0245",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-94ccee1b4ed951c0186dc451-up",
+      "train-v-probe-94ccee1b4ed951c0186dc451-down",
+      "train-v-probe-94ccee1b4ed951c0186dc451-left",
+      "train-v-probe-94ccee1b4ed951c0186dc451-right"
+    ],
+    "rows": [
+      "train-balanced-V-0965",
+      "train-balanced-V-0966",
+      "train-balanced-V-0967",
+      "train-balanced-V-0968"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0246",
+    "kind": "four_adjacent",
+    "probe_ids": [
+      "train-v-probe-cd2669ecaaf567d5f05c244d-up",
+      "train-v-probe-cd2669ecaaf567d5f05c244d-down",
+      "train-v-probe-cd2669ecaaf567d5f05c244d-left",
+      "train-v-probe-cd2669ecaaf567d5f05c244d-right"
+    ],
+    "rows": [
+      "train-balanced-V-0969",
+      "train-balanced-V-0970",
+      "train-balanced-V-0060",
+      "train-balanced-V-0971"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0247",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-66c72d1635d1c40f9007ab58-up",
+      "train-v-probe-66c72d1635d1c40f9007ab58-down",
+      "train-v-probe-66c72d1635d1c40f9007ab58-left",
+      "train-v-probe-66c72d1635d1c40f9007ab58-right"
+    ],
+    "rows": [
+      "train-balanced-V-0972",
+      "train-balanced-V-0973",
+      "train-balanced-V-0974",
+      "train-balanced-V-0975"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0248",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-6d26d22cd17b9a341a7847e2-up",
+      "train-v-probe-6d26d22cd17b9a341a7847e2-down",
+      "train-v-probe-6d26d22cd17b9a341a7847e2-left",
+      "train-v-probe-6d26d22cd17b9a341a7847e2-right"
+    ],
+    "rows": [
+      "train-balanced-V-0976",
+      "train-balanced-V-0977",
+      "train-balanced-V-0978",
+      "train-balanced-V-0979"
+    ],
+    "supervised_members": 1
+  },
+  {
+    "id": "train-control-0249",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-f41f31ed4724a65d4b3593fb-up",
+      "train-v-probe-f41f31ed4724a65d4b3593fb-down",
+      "train-v-probe-f41f31ed4724a65d4b3593fb-left",
+      "train-v-probe-f41f31ed4724a65d4b3593fb-right"
+    ],
+    "rows": [
+      "train-balanced-V-0980",
+      "train-balanced-V-0981",
+      "train-balanced-V-0982",
+      "train-balanced-V-0983"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0250",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-d70952f3aaf1ab17740f2293-up",
+      "train-v-probe-d70952f3aaf1ab17740f2293-down",
+      "train-v-probe-d70952f3aaf1ab17740f2293-left",
+      "train-v-probe-d70952f3aaf1ab17740f2293-right"
+    ],
+    "rows": [
+      "train-balanced-V-0247",
+      "train-balanced-V-0984",
+      "train-balanced-V-0985",
+      "train-balanced-V-0248"
+    ],
+    "supervised_members": 3
+  },
+  {
+    "id": "train-control-0251",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-b90871b4725b9dea042c43da-up",
+      "train-v-probe-b90871b4725b9dea042c43da-down",
+      "train-v-probe-b90871b4725b9dea042c43da-left",
+      "train-v-probe-b90871b4725b9dea042c43da-right"
+    ],
+    "rows": [
+      "train-balanced-V-0986",
+      "train-balanced-V-0987",
+      "train-balanced-V-0988",
+      "train-balanced-V-0989"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0252",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-d457de650215cfd2dc4ad3d6-up",
+      "train-v-probe-d457de650215cfd2dc4ad3d6-down",
+      "train-v-probe-d457de650215cfd2dc4ad3d6-left",
+      "train-v-probe-d457de650215cfd2dc4ad3d6-right"
+    ],
+    "rows": [
+      "train-balanced-V-0990",
+      "train-balanced-V-0991",
+      "train-balanced-V-0992",
+      "train-balanced-V-0993"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0253",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-2e6d4362b7f6b32f5232e3ff-up",
+      "train-v-probe-2e6d4362b7f6b32f5232e3ff-down",
+      "train-v-probe-2e6d4362b7f6b32f5232e3ff-left",
+      "train-v-probe-2e6d4362b7f6b32f5232e3ff-right"
+    ],
+    "rows": [
+      "train-balanced-V-0994",
+      "train-balanced-V-0995",
+      "train-balanced-V-0996",
+      "train-balanced-V-0997"
+    ],
+    "supervised_members": 4
+  },
+  {
+    "id": "train-control-0254",
+    "kind": "four_ordinary",
+    "probe_ids": [
+      "train-v-probe-fd1f6e051818d2f798c6b17e-up",
+      "train-v-probe-fd1f6e051818d2f798c6b17e-down",
+      "train-v-probe-fd1f6e051818d2f798c6b17e-left",
+      "train-v-probe-fd1f6e051818d2f798c6b17e-right"
+    ],
+    "rows": [
+      "train-balanced-V-0463",
+      "train-balanced-V-0998",
+      "train-balanced-V-0999",
+      "train-balanced-V-1000"
+    ],
+    "supervised_members": 2
+  },
+  {
+    "id": "train-control-0255",
+    "kind": "four_detour",
+    "probe_ids": [
+      "train-v-probe-25b6eb3a364a32ccd9f36dc4-up",
+      "train-v-probe-25b6eb3a364a32ccd9f36dc4-down",
+      "train-v-probe-25b6eb3a364a32ccd9f36dc4-left",
+      "train-v-probe-25b6eb3a364a32ccd9f36dc4-right"
+    ],
+    "rows": [
+      "train-balanced-V-1001",
+      "train-balanced-V-1002",
+      "train-balanced-V-1003",
+      "train-balanced-V-1004"
+    ],
+    "supervised_members": 4
+  }
+]

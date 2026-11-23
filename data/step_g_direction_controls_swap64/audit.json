@@ -1,0 +1,562 @@
+{
+  "approved_swap_validation": {
+    "G_rows": 2000,
+    "V_rows": 2000,
+    "after": {
+      "classes": {
+        "goal_not_reached": 400,
+        "invalid_action_token": 400,
+        "obstacle_collision": 400,
+        "out_of_bounds": 400,
+        "valid": 400
+      },
+      "directions": {
+        "goal_not_reached": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "obstacle_collision": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "out_of_bounds": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "valid": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        }
+      },
+      "paired_states": {
+        "all_three": 77,
+        "away_bounds": 122,
+        "away_wall": 163,
+        "wall_bounds": 114
+      },
+      "shared": 1107,
+      "unique_V_states": 1371
+    },
+    "approved_swaps_sha256": "676272e8acc69a8a1bb50df4e19ae9e8c200f497e9d4ce1b9cdb963753d3a429",
+    "before": {
+      "classes": {
+        "goal_not_reached": 400,
+        "invalid_action_token": 400,
+        "obstacle_collision": 400,
+        "out_of_bounds": 400,
+        "valid": 400
+      },
+      "directions": {
+        "goal_not_reached": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "obstacle_collision": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "out_of_bounds": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "valid": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        }
+      },
+      "paired_states": {
+        "all_three": 70,
+        "away_bounds": 106,
+        "away_wall": 147,
+        "wall_bounds": 98
+      },
+      "shared": 1117,
+      "unique_V_states": 1381
+    },
+    "g_anchor_updates": 22,
+    "leakage": {
+      "dev": {
+        "distinct_state_actions": 100,
+        "layout_overlap": 0,
+        "observed_moves": 100,
+        "state_action_overlap": 0,
+        "symmetric_layout_classes_in_common": 20,
+        "symmetric_state_action_classes_in_common": 0
+      },
+      "test_id": {
+        "distinct_state_actions": 842,
+        "layout_overlap": 0,
+        "observed_moves": 877,
+        "state_action_overlap": 0,
+        "symmetric_layout_classes_in_common": 20,
+        "symmetric_state_action_classes_in_common": 0
+      },
+      "test_ood": {
+        "distinct_state_actions": 798,
+        "layout_overlap": 0,
+        "observed_moves": 829,
+        "state_action_overlap": 0,
+        "symmetric_layout_classes_in_common": 20,
+        "symmetric_state_action_classes_in_common": 0
+      }
+    },
+    "new_wall_or_bounds_per_direction": 8,
+    "original_manifest_sha256": "bdd2f5b4e99366ef32cb6f2a06dab89c2485617e4b6f0008d38ed0300ff1f94b",
+    "parent_train_sha256": "08797da9a50ea1cb0d3ad0d169245dad06feee11c2b632417854946b61cd53c2",
+    "swaps": 64,
+    "unchanged_train_state_union": 2264
+  },
+  "supervised": {
+    "dev": {
+      "G_optimal_action_memberships": {
+        "down": 37,
+        "left": 39,
+        "right": 41,
+        "up": 34
+      },
+      "G_optimal_set_sizes": {
+        "1": 51,
+        "2": 47,
+        "3": 2
+      },
+      "G_representative_actions": {
+        "down": 21,
+        "left": 22,
+        "right": 33,
+        "up": 24
+      },
+      "V_origins": {
+        "G_direction": 34,
+        "G_word": 17,
+        "previous_V": 41,
+        "source_shortest_arrival": 8
+      },
+      "conflicting_identical_inputs": 0,
+      "control_groups": {
+        "change_edge": 1,
+        "change_goal": 1,
+        "change_wall": 1,
+        "four_adjacent": 1,
+        "four_detour": 2,
+        "four_open": 1,
+        "four_ordinary": 1,
+        "four_tie": 1,
+        "swap_walls": 2
+      },
+      "coverage": {
+        "G_forced_to_increase_Manhattan": 28,
+        "G_reference_rollouts_shortest_and_cycle_free": 100,
+        "V_moves_from_goal": 1,
+        "V_real_nonempty_single_moves": 100,
+        "V_shared_G": 80
+      },
+      "duplicate_inputs": 0,
+      "generation": 100,
+      "invalid_words": {
+        "climb": 2,
+        "forwards": 2,
+        "jump": 2,
+        "north": 2,
+        "pivot": 2,
+        "rght": 2,
+        "spin": 2,
+        "turn": 2,
+        "wait": 2,
+        "west": 2
+      },
+      "labels": {
+        "goal_not_reached": 20,
+        "invalid_action_token": 20,
+        "obstacle_collision": 20,
+        "out_of_bounds": 20,
+        "valid": 20
+      },
+      "layouts": 76,
+      "malformed_prompts": 0,
+      "paired_controls_without_walls": {
+        "change_edge": {
+          "correct_without_walls": 2,
+          "total": 2
+        },
+        "change_goal": {
+          "correct_without_walls": 2,
+          "total": 2
+        },
+        "change_wall": {
+          "correct_without_walls": 1,
+          "total": 2
+        },
+        "four_adjacent": {
+          "correct_without_walls": 2,
+          "total": 4
+        },
+        "four_detour": {
+          "correct_without_walls": 5,
+          "total": 8
+        },
+        "four_open": {
+          "correct_without_walls": 4,
+          "total": 4
+        },
+        "four_ordinary": {
+          "correct_without_walls": 1,
+          "total": 4
+        },
+        "four_tie": {
+          "correct_without_walls": 3,
+          "total": 4
+        },
+        "swap_walls": {
+          "correct_without_walls": 4,
+          "total": 8
+        }
+      },
+      "per_direction": {
+        "goal_not_reached": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        },
+        "obstacle_collision": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        },
+        "out_of_bounds": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        },
+        "valid": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        }
+      },
+      "previous_shortest_arrival_axes": {
+        "directions": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        },
+        "dual_axis_directions": {
+          "left": 5,
+          "right": 2,
+          "up": 1
+        },
+        "dual_axis_original_grids_observed_on_both_axes": 0,
+        "eligibility": {
+          "both_axes_horizontal": 7,
+          "both_axes_vertical": 1,
+          "different_goal": 6,
+          "one_axis_horizontal": 2,
+          "one_axis_vertical": 4
+        }
+      },
+      "shortest_arrival_axes": {
+        "directions": {
+          "down": 5,
+          "left": 5,
+          "right": 5,
+          "up": 5
+        },
+        "dual_axis_directions": {
+          "down": 2,
+          "left": 4,
+          "right": 1,
+          "up": 3
+        },
+        "dual_axis_original_grids_observed_on_both_axes": 3,
+        "eligibility": {
+          "both_axes_horizontal": 5,
+          "both_axes_vertical": 5,
+          "different_goal": 8,
+          "one_axis_horizontal": 1,
+          "one_axis_vertical": 1
+        }
+      },
+      "unique_inputs": 200,
+      "verification": 100,
+      "wrong_oracle_targets": 0
+    },
+    "train": {
+      "G_optimal_action_memberships": {
+        "down": 744,
+        "left": 790,
+        "right": 763,
+        "up": 802
+      },
+      "G_optimal_set_sizes": {
+        "1": 911,
+        "2": 1079,
+        "3": 10
+      },
+      "G_representative_actions": {
+        "down": 479,
+        "left": 510,
+        "right": 511,
+        "up": 500
+      },
+      "V_origins": {
+        "G_direction": 649,
+        "G_word": 322,
+        "V_direction": 88,
+        "previous_V": 790,
+        "source_shortest_arrival": 151
+      },
+      "conflicting_identical_inputs": 0,
+      "control_groups": {
+        "change_edge": 6,
+        "change_goal": 6,
+        "change_wall": 6,
+        "four_actions": 8,
+        "four_adjacent": 41,
+        "four_detour": 17,
+        "four_open": 1,
+        "four_ordinary": 5,
+        "four_v_state": 14,
+        "same_state_arrival": 220,
+        "swap_walls": 12
+      },
+      "coverage": {
+        "G_forced_to_increase_Manhattan": 531,
+        "G_reference_rollouts_shortest_and_cycle_free": 2000,
+        "V_moves_from_goal": 13,
+        "V_real_nonempty_single_moves": 2000,
+        "V_shared_G": 1640
+      },
+      "duplicate_inputs": 0,
+      "generation": 2000,
+      "invalid_words": {
+        "DOWN": 20,
+        "back": 20,
+        "backward": 20,
+        "dash": 20,
+        "east": 20,
+        "hop": 20,
+        "idle": 20,
+        "jump": 20,
+        "leap": 20,
+        "leftwards": 20,
+        "north": 20,
+        "rigt": 20,
+        "sidestep": 20,
+        "slide": 20,
+        "spin": 20,
+        "stay": 20,
+        "turn": 20,
+        "upward": 20,
+        "wait": 20,
+        "walk": 20
+      },
+      "labels": {
+        "goal_not_reached": 400,
+        "invalid_action_token": 400,
+        "obstacle_collision": 400,
+        "out_of_bounds": 400,
+        "valid": 400
+      },
+      "layouts": 652,
+      "malformed_prompts": 0,
+      "paired_controls_without_walls": {
+        "change_edge": {
+          "correct_without_walls": 12,
+          "total": 12
+        },
+        "change_goal": {
+          "correct_without_walls": 12,
+          "total": 12
+        },
+        "change_wall": {
+          "correct_without_walls": 6,
+          "total": 12
+        },
+        "four_actions": {
+          "correct_without_walls": 15,
+          "total": 32
+        },
+        "four_adjacent": {
+          "correct_without_walls": 131,
+          "total": 164
+        },
+        "four_detour": {
+          "correct_without_walls": 41,
+          "total": 68
+        },
+        "four_open": {
+          "correct_without_walls": 4,
+          "total": 4
+        },
+        "four_ordinary": {
+          "correct_without_walls": 14,
+          "total": 20
+        },
+        "four_v_state": {
+          "correct_without_walls": 41,
+          "total": 56
+        },
+        "same_state_arrival": {
+          "correct_without_walls": 440,
+          "total": 440
+        },
+        "swap_walls": {
+          "correct_without_walls": 24,
+          "total": 48
+        }
+      },
+      "per_direction": {
+        "goal_not_reached": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "obstacle_collision": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "out_of_bounds": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "valid": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        }
+      },
+      "shortest_arrival_axes": {
+        "directions": {
+          "down": 100,
+          "left": 100,
+          "right": 100,
+          "up": 100
+        },
+        "dual_axis_directions": {
+          "down": 50,
+          "left": 50,
+          "right": 50,
+          "up": 50
+        },
+        "dual_axis_original_grids_observed_on_both_axes": 99,
+        "eligibility": {
+          "both_axes_horizontal": 100,
+          "both_axes_vertical": 100,
+          "different_goal": 125,
+          "one_axis_horizontal": 23,
+          "one_axis_vertical": 31,
+          "outside_donor_shortest_approaches": 21
+        }
+      },
+      "unique_inputs": 4000,
+      "verification": 2000,
+      "wrong_oracle_targets": 0
+    }
+  },
+  "tokenization": {
+    "all_targets_roundtrip": true,
+    "files": {
+      "dev.jsonl": {
+        "max_input_tokens": 114,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 86.39,
+        "rows": 200
+      },
+      "diagnostics/g_dev_balanced.jsonl": {
+        "max_input_tokens": 114,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 108.02,
+        "rows": 50
+      },
+      "diagnostics/g_dev_four.jsonl": {
+        "max_input_tokens": 111,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.69,
+        "rows": 400
+      },
+      "diagnostics/g_train_balanced.jsonl": {
+        "max_input_tokens": 113,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.82,
+        "rows": 940
+      },
+      "diagnostics/g_train_four.jsonl": {
+        "max_input_tokens": 111,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.65,
+        "rows": 8000
+      },
+      "diagnostics/test_id_local.jsonl": {
+        "max_input_tokens": 112,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.55,
+        "rows": 196
+      },
+      "diagnostics/test_ood_local.jsonl": {
+        "max_input_tokens": 112,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.72,
+        "rows": 200
+      },
+      "diagnostics/v_dev_four.jsonl": {
+        "max_input_tokens": 111,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.65,
+        "rows": 300
+      },
+      "diagnostics/v_train_four.jsonl": {
+        "max_input_tokens": 111,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 107.47,
+        "rows": 5872
+      },
+      "train.jsonl": {
+        "max_input_tokens": 113,
+        "max_target_tokens": 7,
+        "mean_input_tokens": 86.2,
+        "rows": 4000
+      }
+    },
+    "input_unknown_tokens": 0,
+    "mean_train_prompt_tokens_same_states": {
+      "g_next": {
+        "current": 64.65,
+        "previous_single": 64.65,
+        "v2": 166.92
+      },
+      "v_step": {
+        "current": 107.75,
+        "previous_single": 99.75,
+        "v2": 191.0
+      }
+    },
+    "tokenizer_sha256": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a",
+    "truncated_rows": 0
+  }
+}

@@ -1,0 +1,714 @@
+{
+  "base": "google/flan-t5-base",
+  "revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+  "base_weights_sha256": "1dfb70afdcedceb9f9fae2f9b68e004ad934361fb35b9b2bd50b45ea90790fc8",
+  "training": {
+    "seed": 42,
+    "epochs": [
+      1,
+      2,
+      3
+    ],
+    "sampling": "row_shuffle",
+    "loss": "first_token_five_class_cross_entropy",
+    "precision": "bfloat16",
+    "microbatch": 4,
+    "effective_batch": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "expected_class_order": [
+      "valid",
+      "obstacle_collision",
+      "out_of_bounds",
+      "invalid_action_token",
+      "goal_not_reached"
+    ],
+    "expected_verdict_ids": [
+      3982,
+      22820,
+      91,
+      17070,
+      1288
+    ],
+    "order_sha256": [
+      "f8ce6af7082fb31108329456ad7561344cbe54e3481538ab18e1b0144cc6b69a",
+      "702c5ba904fd07db1b91d4958cfab3769e5b5898fb384de402b0805d2d38644e",
+      "be6976b4331205b0fe718d6e9fd396a8117d39b7468a99b0dc09658c659913ca"
+    ],
+    "eval_wrapper_sha256": "6ea8ee4e7c82ecc731ed8742882c21f06a412b9e87ae60e5476c6b3743db27fc",
+    "trainer_sha256": "de3b91a71f8ff6427674e3f99fa822fa739697368165230914f4d847ca333d60",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.20.0",
+      "safetensors": "0.8.0"
+    }
+  },
+  "dev_selection": [
+    "binary_macro_f1",
+    "first_error_localization",
+    "joint_error"
+  ],
+  "dev_source_sha256": "6b60713aa88053bacbe2a009c68baf69d51a1f3121390d0aea1c7f256a92bb3a",
+  "models": {
+    "A": {
+      "model_dir": "models/A-epoch1",
+      "model_file": "model.safetensors",
+      "bytes": 990345064,
+      "sha256": "81325c48296046eabdb354e57619fcc84847024b46e5b4a160a47c124acb486e",
+      "epoch": 1,
+      "dataset": "../../data/step_g_direction_controls",
+      "dataset_manifest_sha256": "bdd2f5b4e99366ef32cb6f2a06dab89c2485617e4b6f0008d38ed0300ff1f94b",
+      "development": {
+        "n": 100,
+        "gold_valid": 50,
+        "gold_invalid": 50,
+        "valid_accepted": 50,
+        "invalid_accepted": 1,
+        "macro_f1": 0.9899989998999901,
+        "first_error_step_correct": 40,
+        "first_error_reason_correct": 40,
+        "first_error_joint_correct": 40,
+        "exact": 90
+      },
+      "development_by_epoch": [
+        {
+          "epoch": 0.5,
+          "updates": 63,
+          "G_optimal_first_step": {
+            "correct": 39,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 2,
+            "legal": 2,
+            "shortest": 2,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 20,
+            "total": 100,
+            "macro_f1": 0.0667,
+            "recall_correct_and_total": {
+              "valid": [
+                0,
+                20
+              ],
+              "obstacle_collision": [
+                0,
+                20
+              ],
+              "out_of_bounds": [
+                0,
+                20
+              ],
+              "invalid_action_token": [
+                20,
+                20
+              ],
+              "goal_not_reached": [
+                0,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.3333333333333333,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 0,
+            "invalid_accepted": 0,
+            "first_error_step_correct": 5
+          }
+        },
+        {
+          "epoch": 1,
+          "updates": 125,
+          "G_optimal_first_step": {
+            "correct": 46,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 6,
+            "legal": 56,
+            "shortest": 6,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 58,
+            "total": 100,
+            "macro_f1": 0.487,
+            "recall_correct_and_total": {
+              "valid": [
+                18,
+                20
+              ],
+              "obstacle_collision": [
+                0,
+                20
+              ],
+              "out_of_bounds": [
+                0,
+                20
+              ],
+              "invalid_action_token": [
+                20,
+                20
+              ],
+              "goal_not_reached": [
+                20,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.9899989998999901,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 50,
+            "invalid_accepted": 1,
+            "first_error_step_correct": 40
+          }
+        },
+        {
+          "epoch": 1.5,
+          "updates": 188,
+          "G_optimal_first_step": {
+            "correct": 49,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 4,
+            "legal": 49,
+            "shortest": 2,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 57,
+            "total": 100,
+            "macro_f1": 0.5381,
+            "recall_correct_and_total": {
+              "valid": [
+                10,
+                20
+              ],
+              "obstacle_collision": [
+                18,
+                20
+              ],
+              "out_of_bounds": [
+                9,
+                20
+              ],
+              "invalid_action_token": [
+                20,
+                20
+              ],
+              "goal_not_reached": [
+                0,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.3333333333333333,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 0,
+            "invalid_accepted": 0,
+            "first_error_step_correct": 5
+          }
+        },
+        {
+          "epoch": 2,
+          "updates": 250,
+          "G_optimal_first_step": {
+            "correct": 54,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 3,
+            "legal": 71,
+            "shortest": 3,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 73,
+            "total": 100,
+            "macro_f1": 0.6703,
+            "recall_correct_and_total": {
+              "valid": [
+                20,
+                20
+              ],
+              "obstacle_collision": [
+                17,
+                20
+              ],
+              "out_of_bounds": [
+                17,
+                20
+              ],
+              "invalid_action_token": [
+                19,
+                20
+              ],
+              "goal_not_reached": [
+                0,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.3333333333333333,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 0,
+            "invalid_accepted": 0,
+            "first_error_step_correct": 5
+          }
+        },
+        {
+          "epoch": 2.5,
+          "updates": 313,
+          "G_optimal_first_step": {
+            "correct": 61,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 8,
+            "legal": 61,
+            "shortest": 8,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 60,
+            "total": 100,
+            "macro_f1": 0.5439,
+            "recall_correct_and_total": {
+              "valid": [
+                3,
+                20
+              ],
+              "obstacle_collision": [
+                2,
+                20
+              ],
+              "out_of_bounds": [
+                20,
+                20
+              ],
+              "invalid_action_token": [
+                20,
+                20
+              ],
+              "goal_not_reached": [
+                15,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.37629937629937626,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 2,
+            "invalid_accepted": 0,
+            "first_error_step_correct": 13
+          }
+        },
+        {
+          "epoch": 3,
+          "updates": 375,
+          "G_optimal_first_step": {
+            "correct": 64,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 23,
+            "legal": 61,
+            "shortest": 22,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 75,
+            "total": 100,
+            "macro_f1": 0.6879,
+            "recall_correct_and_total": {
+              "valid": [
+                17,
+                20
+              ],
+              "obstacle_collision": [
+                0,
+                20
+              ],
+              "out_of_bounds": [
+                20,
+                20
+              ],
+              "invalid_action_token": [
+                20,
+                20
+              ],
+              "goal_not_reached": [
+                18,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.6656239887822242,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 21,
+            "invalid_accepted": 2,
+            "first_error_step_correct": 31
+          }
+        }
+      ]
+    },
+    "B": {
+      "model_dir": "models/B-epoch3",
+      "model_file": "model.safetensors",
+      "bytes": 990345064,
+      "sha256": "ff9f3b518a4baee89dabf7948b5107b141b8f4c8713a8d854e363679629d745f",
+      "epoch": 3,
+      "dataset": "../../data/step_g_direction_controls_swap64",
+      "dataset_manifest_sha256": "a7d5aaa4dcec4e4e71bf78ec8cc1c7aeb40898625c1d07ed370f9a65f9f6e12a",
+      "development": {
+        "n": 100,
+        "gold_valid": 50,
+        "gold_invalid": 50,
+        "valid_accepted": 17,
+        "invalid_accepted": 2,
+        "macro_f1": 0.612789025334661,
+        "first_error_step_correct": 27,
+        "first_error_reason_correct": 30,
+        "first_error_joint_correct": 27,
+        "exact": 44
+      },
+      "held_out_same_state_action_scored_once": {
+        "test_id": {
+          "n": 200,
+          "gold_valid": 100,
+          "gold_invalid": 100,
+          "valid_accepted": 41,
+          "invalid_accepted": 0,
+          "macro_f1": 0.6768805279443577,
+          "first_error_step_correct": 59,
+          "first_error_reason_correct": 59,
+          "first_error_joint_correct": 58,
+          "exact": 99
+        },
+        "test_ood": {
+          "n": 200,
+          "gold_valid": 100,
+          "gold_invalid": 100,
+          "valid_accepted": 41,
+          "invalid_accepted": 0,
+          "macro_f1": 0.6768805279443577,
+          "first_error_step_correct": 63,
+          "first_error_reason_correct": 66,
+          "first_error_joint_correct": 61,
+          "exact": 102
+        }
+      },
+      "development_by_epoch": [
+        {
+          "epoch": 0.5,
+          "updates": 63,
+          "G_optimal_first_step": {
+            "correct": 39,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 2,
+            "legal": 2,
+            "shortest": 2,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 20,
+            "total": 100,
+            "macro_f1": 0.0667,
+            "recall_correct_and_total": {
+              "valid": [
+                0,
+                20
+              ],
+              "obstacle_collision": [
+                0,
+                20
+              ],
+              "out_of_bounds": [
+                0,
+                20
+              ],
+              "invalid_action_token": [
+                20,
+                20
+              ],
+              "goal_not_reached": [
+                0,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.3333333333333333,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 0,
+            "invalid_accepted": 0,
+            "first_error_step_correct": 5
+          }
+        },
+        {
+          "epoch": 1,
+          "updates": 125,
+          "G_optimal_first_step": {
+            "correct": 41,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 3,
+            "legal": 64,
+            "shortest": 3,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 62,
+            "total": 100,
+            "macro_f1": 0.5758,
+            "recall_correct_and_total": {
+              "valid": [
+                20,
+                20
+              ],
+              "obstacle_collision": [
+                12,
+                20
+              ],
+              "out_of_bounds": [
+                0,
+                20
+              ],
+              "invalid_action_token": [
+                20,
+                20
+              ],
+              "goal_not_reached": [
+                10,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.37629937629937626,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 2,
+            "invalid_accepted": 0,
+            "first_error_step_correct": 10
+          }
+        },
+        {
+          "epoch": 1.5,
+          "updates": 188,
+          "G_optimal_first_step": {
+            "correct": 44,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 2,
+            "legal": 24,
+            "shortest": 2,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 55,
+            "total": 100,
+            "macro_f1": 0.4779,
+            "recall_correct_and_total": {
+              "valid": [
+                14,
+                20
+              ],
+              "obstacle_collision": [
+                1,
+                20
+              ],
+              "out_of_bounds": [
+                20,
+                20
+              ],
+              "invalid_action_token": [
+                20,
+                20
+              ],
+              "goal_not_reached": [
+                0,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.3333333333333333,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 0,
+            "invalid_accepted": 0,
+            "first_error_step_correct": 5
+          }
+        },
+        {
+          "epoch": 2,
+          "updates": 250,
+          "G_optimal_first_step": {
+            "correct": 54,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 3,
+            "legal": 65,
+            "shortest": 3,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 71,
+            "total": 100,
+            "macro_f1": 0.6532,
+            "recall_correct_and_total": {
+              "valid": [
+                19,
+                20
+              ],
+              "obstacle_collision": [
+                20,
+                20
+              ],
+              "out_of_bounds": [
+                12,
+                20
+              ],
+              "invalid_action_token": [
+                20,
+                20
+              ],
+              "goal_not_reached": [
+                0,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.3333333333333333,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 0,
+            "invalid_accepted": 0,
+            "first_error_step_correct": 5
+          }
+        },
+        {
+          "epoch": 2.5,
+          "updates": 313,
+          "G_optimal_first_step": {
+            "correct": 61,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 8,
+            "legal": 55,
+            "shortest": 8,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 60,
+            "total": 100,
+            "macro_f1": 0.5845,
+            "recall_correct_and_total": {
+              "valid": [
+                4,
+                20
+              ],
+              "obstacle_collision": [
+                10,
+                20
+              ],
+              "out_of_bounds": [
+                17,
+                20
+              ],
+              "invalid_action_token": [
+                20,
+                20
+              ],
+              "goal_not_reached": [
+                9,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.3710691823899371,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 2,
+            "invalid_accepted": 1,
+            "first_error_step_correct": 11
+          }
+        },
+        {
+          "epoch": 3,
+          "updates": 375,
+          "G_optimal_first_step": {
+            "correct": 66,
+            "total": 100
+          },
+          "G_greedy_path": {
+            "reached_goal": 32,
+            "legal": 58,
+            "shortest": 31,
+            "total": 100
+          },
+          "V_single_step": {
+            "correct": 73,
+            "total": 100,
+            "macro_f1": 0.6767,
+            "recall_correct_and_total": {
+              "valid": [
+                14,
+                20
+              ],
+              "obstacle_collision": [
+                1,
+                20
+              ],
+              "out_of_bounds": [
+                20,
+                20
+              ],
+              "invalid_action_token": [
+                20,
+                20
+              ],
+              "goal_not_reached": [
+                18,
+                20
+              ]
+            }
+          },
+          "V_fixed_paths": {
+            "macro_f1": 0.612789025334661,
+            "gold_valid": 50,
+            "gold_invalid": 50,
+            "valid_accepted": 17,
+            "invalid_accepted": 2,
+            "first_error_step_correct": 27
+          }
+        }
+      ]
+    }
+  }
+}

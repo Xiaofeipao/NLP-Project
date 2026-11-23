@@ -32,3 +32,8 @@ ppnl/prompts.py text eol=crlf
 artifacts/step_verification/** -text -whitespace
 step_data_v3/** -text whitespace=cr-at-eol
 data/step_*/** whitespace=cr-at-eol
+
+# Preserve the published checkpoint bytes and frozen evaluation records.
+artifacts/flan_swap64_ab/models/*/*.json -text whitespace=cr-at-eol
+artifacts/flan_swap64_ab/evaluation/*.jsonl -text whitespace=cr-at-eol
+artifacts/flan_swap64_ab/models/*/model.safetensors filter=lfs diff=lfs merge=lfs -text

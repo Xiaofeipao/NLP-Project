@@ -1,0 +1,100 @@
+{"id": "dev-verification-16", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-37", "target": "invalid | step=5 | reason=goal_not_reached", "A_epoch1": "invalid | step=5 | reason=goal_not_reached", "B_epoch3": "invalid | step=5 | reason=goal_not_reached"}
+{"id": "dev-verification-66", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=2 | reason=out_of_bounds"}
+{"id": "dev-verification-75", "target": "invalid | step=8 | reason=out_of_bounds", "A_epoch1": "invalid | step=9 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-25", "target": "invalid | step=8 | reason=out_of_bounds", "A_epoch1": "invalid | step=9 | reason=goal_not_reached", "B_epoch3": "invalid | step=6 | reason=out_of_bounds"}
+{"id": "dev-verification-83", "target": "invalid | step=3 | reason=goal_not_reached", "A_epoch1": "invalid | step=3 | reason=goal_not_reached", "B_epoch3": "invalid | step=3 | reason=goal_not_reached"}
+{"id": "dev-verification-86", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-41", "target": "invalid | step=6 | reason=obstacle_collision", "A_epoch1": "invalid | step=8 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-68", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=4 | reason=out_of_bounds"}
+{"id": "dev-verification-46", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=2 | reason=out_of_bounds"}
+{"id": "dev-verification-97", "target": "invalid | step=6 | reason=goal_not_reached", "A_epoch1": "invalid | step=6 | reason=goal_not_reached", "B_epoch3": "invalid | step=6 | reason=goal_not_reached"}
+{"id": "dev-verification-91", "target": "invalid | step=4 | reason=goal_not_reached", "A_epoch1": "invalid | step=4 | reason=goal_not_reached", "B_epoch3": "invalid | step=4 | reason=goal_not_reached"}
+{"id": "dev-verification-70", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-22", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=6 | reason=out_of_bounds"}
+{"id": "dev-verification-55", "target": "invalid | step=5 | reason=goal_not_reached", "A_epoch1": "invalid | step=5 | reason=goal_not_reached", "B_epoch3": "invalid | step=4 | reason=out_of_bounds"}
+{"id": "dev-verification-18", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-96", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-29", "target": "invalid | step=5 | reason=invalid_action_token", "A_epoch1": "invalid | step=5 | reason=invalid_action_token", "B_epoch3": "invalid | step=4 | reason=out_of_bounds"}
+{"id": "dev-verification-6", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-45", "target": "invalid | step=3 | reason=obstacle_collision", "A_epoch1": "invalid | step=6 | reason=goal_not_reached", "B_epoch3": "valid"}
+{"id": "dev-verification-10", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-5", "target": "invalid | step=6 | reason=out_of_bounds", "A_epoch1": "invalid | step=7 | reason=goal_not_reached", "B_epoch3": "invalid | step=6 | reason=out_of_bounds"}
+{"id": "dev-verification-48", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-74", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-26", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=2 | reason=obstacle_collision"}
+{"id": "dev-verification-90", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-20", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=4 | reason=out_of_bounds"}
+{"id": "dev-verification-42", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=4 | reason=out_of_bounds"}
+{"id": "dev-verification-35", "target": "invalid | step=5 | reason=goal_not_reached", "A_epoch1": "invalid | step=5 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-14", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-40", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-60", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=2 | reason=obstacle_collision"}
+{"id": "dev-verification-31", "target": "invalid | step=3 | reason=out_of_bounds", "A_epoch1": "invalid | step=4 | reason=goal_not_reached", "B_epoch3": "invalid | step=3 | reason=out_of_bounds"}
+{"id": "dev-verification-94", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-54", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=2 | reason=out_of_bounds"}
+{"id": "dev-verification-28", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=7 | reason=out_of_bounds"}
+{"id": "dev-verification-93", "target": "invalid | step=6 | reason=goal_not_reached", "A_epoch1": "invalid | step=6 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-85", "target": "invalid | step=9 | reason=goal_not_reached", "A_epoch1": "invalid | step=9 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=obstacle_collision"}
+{"id": "dev-verification-67", "target": "invalid | step=4 | reason=goal_not_reached", "A_epoch1": "invalid | step=4 | reason=goal_not_reached", "B_epoch3": "invalid | step=4 | reason=goal_not_reached"}
+{"id": "dev-verification-15", "target": "invalid | step=5 | reason=out_of_bounds", "A_epoch1": "invalid | step=6 | reason=goal_not_reached", "B_epoch3": "invalid | step=5 | reason=out_of_bounds"}
+{"id": "dev-verification-89", "target": "invalid | step=5 | reason=invalid_action_token", "A_epoch1": "invalid | step=5 | reason=invalid_action_token", "B_epoch3": "invalid | step=5 | reason=invalid_action_token"}
+{"id": "dev-verification-65", "target": "invalid | step=4 | reason=obstacle_collision", "A_epoch1": "invalid | step=5 | reason=goal_not_reached", "B_epoch3": "invalid | step=5 | reason=goal_not_reached"}
+{"id": "dev-verification-58", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-78", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-61", "target": "invalid | step=6 | reason=goal_not_reached", "A_epoch1": "invalid | step=6 | reason=goal_not_reached", "B_epoch3": "invalid | step=6 | reason=goal_not_reached"}
+{"id": "dev-verification-82", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-4", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=2 | reason=obstacle_collision"}
+{"id": "dev-verification-84", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-77", "target": "invalid | step=1 | reason=goal_not_reached", "A_epoch1": "invalid | step=1 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=goal_not_reached"}
+{"id": "dev-verification-49", "target": "invalid | step=3 | reason=invalid_action_token", "A_epoch1": "invalid | step=3 | reason=invalid_action_token", "B_epoch3": "invalid | step=3 | reason=invalid_action_token"}
+{"id": "dev-verification-38", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-32", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-63", "target": "invalid | step=5 | reason=goal_not_reached", "A_epoch1": "invalid | step=5 | reason=goal_not_reached", "B_epoch3": "invalid | step=4 | reason=out_of_bounds"}
+{"id": "dev-verification-23", "target": "invalid | step=4 | reason=goal_not_reached", "A_epoch1": "invalid | step=4 | reason=goal_not_reached", "B_epoch3": "invalid | step=4 | reason=goal_not_reached"}
+{"id": "dev-verification-76", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-79", "target": "invalid | step=4 | reason=invalid_action_token", "A_epoch1": "invalid | step=4 | reason=invalid_action_token", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-53", "target": "invalid | step=4 | reason=goal_not_reached", "A_epoch1": "invalid | step=4 | reason=goal_not_reached", "B_epoch3": "invalid | step=2 | reason=out_of_bounds"}
+{"id": "dev-verification-30", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-57", "target": "invalid | step=1 | reason=goal_not_reached", "A_epoch1": "invalid | step=1 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=goal_not_reached"}
+{"id": "dev-verification-73", "target": "invalid | step=4 | reason=goal_not_reached", "A_epoch1": "invalid | step=4 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=obstacle_collision"}
+{"id": "dev-verification-2", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-3", "target": "invalid | step=6 | reason=goal_not_reached", "A_epoch1": "invalid | step=6 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-43", "target": "invalid | step=2 | reason=goal_not_reached", "A_epoch1": "invalid | step=2 | reason=goal_not_reached", "B_epoch3": "invalid | step=2 | reason=goal_not_reached"}
+{"id": "dev-verification-27", "target": "invalid | step=1 | reason=goal_not_reached", "A_epoch1": "invalid | step=1 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=goal_not_reached"}
+{"id": "dev-verification-80", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-62", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-39", "target": "invalid | step=3 | reason=invalid_action_token", "A_epoch1": "invalid | step=3 | reason=invalid_action_token", "B_epoch3": "invalid | step=3 | reason=invalid_action_token"}
+{"id": "dev-verification-21", "target": "invalid | step=3 | reason=goal_not_reached", "A_epoch1": "invalid | step=3 | reason=goal_not_reached", "B_epoch3": "invalid | step=3 | reason=goal_not_reached"}
+{"id": "dev-verification-33", "target": "invalid | step=6 | reason=goal_not_reached", "A_epoch1": "invalid | step=6 | reason=goal_not_reached", "B_epoch3": "invalid | step=6 | reason=goal_not_reached"}
+{"id": "dev-verification-0", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-59", "target": "invalid | step=3 | reason=invalid_action_token", "A_epoch1": "invalid | step=3 | reason=invalid_action_token", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-24", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=2 | reason=out_of_bounds"}
+{"id": "dev-verification-34", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-17", "target": "invalid | step=1 | reason=goal_not_reached", "A_epoch1": "invalid | step=1 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=goal_not_reached"}
+{"id": "dev-verification-44", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-98", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-19", "target": "invalid | step=2 | reason=invalid_action_token", "A_epoch1": "invalid | step=2 | reason=invalid_action_token", "B_epoch3": "invalid | step=2 | reason=invalid_action_token"}
+{"id": "dev-verification-36", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-92", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-56", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-69", "target": "invalid | step=2 | reason=invalid_action_token", "A_epoch1": "invalid | step=2 | reason=invalid_action_token", "B_epoch3": "invalid | step=1 | reason=obstacle_collision"}
+{"id": "dev-verification-72", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-51", "target": "invalid | step=5 | reason=out_of_bounds", "A_epoch1": "invalid | step=7 | reason=goal_not_reached", "B_epoch3": "invalid | step=4 | reason=out_of_bounds"}
+{"id": "dev-verification-50", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-88", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=6 | reason=goal_not_reached"}
+{"id": "dev-verification-81", "target": "invalid | step=6 | reason=goal_not_reached", "A_epoch1": "invalid | step=6 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-13", "target": "invalid | step=7 | reason=goal_not_reached", "A_epoch1": "invalid | step=7 | reason=goal_not_reached", "B_epoch3": "invalid | step=7 | reason=goal_not_reached"}
+{"id": "dev-verification-8", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=6 | reason=goal_not_reached"}
+{"id": "dev-verification-87", "target": "invalid | step=2 | reason=goal_not_reached", "A_epoch1": "invalid | step=2 | reason=goal_not_reached", "B_epoch3": "invalid | step=2 | reason=goal_not_reached"}
+{"id": "dev-verification-7", "target": "invalid | step=5 | reason=goal_not_reached", "A_epoch1": "invalid | step=5 | reason=goal_not_reached", "B_epoch3": "invalid | step=5 | reason=goal_not_reached"}
+{"id": "dev-verification-47", "target": "invalid | step=4 | reason=goal_not_reached", "A_epoch1": "invalid | step=4 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-99", "target": "invalid | step=2 | reason=invalid_action_token", "A_epoch1": "invalid | step=2 | reason=invalid_action_token", "B_epoch3": "invalid | step=2 | reason=invalid_action_token"}
+{"id": "dev-verification-64", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-52", "target": "valid", "A_epoch1": "valid", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-12", "target": "valid", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-9", "target": "invalid | step=4 | reason=invalid_action_token", "A_epoch1": "invalid | step=4 | reason=invalid_action_token", "B_epoch3": "invalid | step=1 | reason=out_of_bounds"}
+{"id": "dev-verification-95", "target": "invalid | step=1 | reason=obstacle_collision", "A_epoch1": "valid", "B_epoch3": "valid"}
+{"id": "dev-verification-71", "target": "invalid | step=6 | reason=goal_not_reached", "A_epoch1": "invalid | step=6 | reason=goal_not_reached", "B_epoch3": "invalid | step=6 | reason=goal_not_reached"}
+{"id": "dev-verification-1", "target": "invalid | step=7 | reason=goal_not_reached", "A_epoch1": "invalid | step=7 | reason=goal_not_reached", "B_epoch3": "invalid | step=7 | reason=goal_not_reached"}
+{"id": "dev-verification-11", "target": "invalid | step=3 | reason=goal_not_reached", "A_epoch1": "invalid | step=3 | reason=goal_not_reached", "B_epoch3": "invalid | step=1 | reason=obstacle_collision"}

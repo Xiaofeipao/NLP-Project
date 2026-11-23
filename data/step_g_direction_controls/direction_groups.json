@@ -1,0 +1,1964 @@
+{
+  "adjacent": [
+    {
+      "arrive": "train-balanced-V-1023",
+      "other_legal": [
+        "train-direction-V-0001"
+      ],
+      "state_id": "002204a65e253854ed3a19d7"
+    },
+    {
+      "arrive": "train-balanced-V-0089",
+      "other_legal": [
+        "train-paired-V-0001"
+      ],
+      "state_id": "020f2acd9c339a161bff8fd2"
+    },
+    {
+      "arrive": "train-balanced-V-1065",
+      "other_legal": [
+        "train-paired-V-0007"
+      ],
+      "state_id": "063ad1b16939e19ca08c5b18"
+    },
+    {
+      "arrive": "train-balanced-V-0029",
+      "other_legal": [
+        "train-paired-V-0010"
+      ],
+      "state_id": "075df7bc4336670cf4a0b4b7"
+    },
+    {
+      "arrive": "train-balanced-V-0039",
+      "other_legal": [
+        "train-paired-V-0011"
+      ],
+      "state_id": "09dce24074ad7b89b8c459be"
+    },
+    {
+      "arrive": "train-balanced-V-1085",
+      "other_legal": [
+        "train-paired-V-0013"
+      ],
+      "state_id": "0be222799bec0ff86d859313"
+    },
+    {
+      "arrive": "train-balanced-V-0127",
+      "other_legal": [
+        "train-paired-V-0015"
+      ],
+      "state_id": "0bfa9d6d4804060623bef34a"
+    },
+    {
+      "arrive": "train-balanced-V-0068",
+      "other_legal": [
+        "train-paired-V-0016"
+      ],
+      "state_id": "0cad9f6f17a218fe18d525d2"
+    },
+    {
+      "arrive": "train-balanced-V-0043",
+      "other_legal": [
+        "train-paired-V-0017"
+      ],
+      "state_id": "0cbb0840df84803aa88d4450"
+    },
+    {
+      "arrive": "train-balanced-V-0019",
+      "other_legal": [
+        "train-paired-V-0020"
+      ],
+      "state_id": "0d07e7c0875ce5d65427bef1"
+    },
+    {
+      "arrive": "train-balanced-V-0134",
+      "other_legal": [
+        "train-paired-V-0021"
+      ],
+      "state_id": "0ea60ab72451a326fc2b601a"
+    },
+    {
+      "arrive": "train-balanced-V-0005",
+      "other_legal": [
+        "train-balanced-V-0667"
+      ],
+      "state_id": "0fab39a206f20ea1df03035d"
+    },
+    {
+      "arrive": "train-balanced-V-1136",
+      "other_legal": [
+        "train-paired-V-0023"
+      ],
+      "state_id": "10c3fd33de92bfe8e4158ea3"
+    },
+    {
+      "arrive": "train-balanced-V-0136",
+      "other_legal": [
+        "train-paired-V-0027"
+      ],
+      "state_id": "10d870db503c5d62010746dd"
+    },
+    {
+      "arrive": "train-balanced-V-0186",
+      "other_legal": [
+        "train-paired-V-0028"
+      ],
+      "state_id": "1166adab1686fecf127e6485"
+    },
+    {
+      "arrive": "train-balanced-V-0369",
+      "other_legal": [
+        "train-direction-V-0008"
+      ],
+      "state_id": "11a357887ef25e4a88163753"
+    },
+    {
+      "arrive": "train-balanced-V-1037",
+      "other_legal": [
+        "train-paired-V-0031"
+      ],
+      "state_id": "11d81b0acf25594a20055972"
+    },
+    {
+      "arrive": "train-balanced-V-0098",
+      "other_legal": [
+        "train-paired-V-0032"
+      ],
+      "state_id": "120ca41babd769fd2ce3a1a7"
+    },
+    {
+      "arrive": "train-balanced-V-0050",
+      "other_legal": [
+        "train-balanced-V-0522"
+      ],
+      "state_id": "1477acf264ea002b91baaa8c"
+    },
+    {
+      "arrive": "train-balanced-V-0151",
+      "other_legal": [
+        "train-paired-V-0033"
+      ],
+      "state_id": "14bacf564b73d5ca91e539a7"
+    },
+    {
+      "arrive": "train-balanced-V-0111",
+      "other_legal": [
+        "train-paired-V-0034"
+      ],
+      "state_id": "15b927353f6505941d349102"
+    },
+    {
+      "arrive": "train-balanced-V-0173",
+      "other_legal": [
+        "train-paired-V-0038"
+      ],
+      "state_id": "193bcdd5558bd10f0e5fb30c"
+    },
+    {
+      "arrive": "train-balanced-V-0119",
+      "other_legal": [
+        "train-balanced-V-0770"
+      ],
+      "state_id": "1ac99881c089124d51f72daa"
+    },
+    {
+      "arrive": "train-balanced-V-0063",
+      "other_legal": [
+        "train-balanced-V-0507"
+      ],
+      "state_id": "1b1aa46d65534b2ef23b2c21"
+    },
+    {
+      "arrive": "train-balanced-V-0120",
+      "other_legal": [
+        "train-paired-V-0040"
+      ],
+      "state_id": "1cb3d19031e086f914e85be8"
+    },
+    {
+      "arrive": "train-balanced-V-0126",
+      "other_legal": [
+        "train-paired-V-0041"
+      ],
+      "state_id": "1df4ccda06806d8e82e27853"
+    },
+    {
+      "arrive": "train-balanced-V-0167",
+      "other_legal": [
+        "train-paired-V-0042"
+      ],
+      "state_id": "1ec5c90c3269c998c08b1ca2"
+    },
+    {
+      "arrive": "train-balanced-V-0172",
+      "other_legal": [
+        "train-paired-V-0045"
+      ],
+      "state_id": "1eeb5c8d80ae3760531106e7"
+    },
+    {
+      "arrive": "train-balanced-V-0109",
+      "other_legal": [
+        "train-balanced-V-0821"
+      ],
+      "state_id": "1f470153b298ffd9a51fbd96"
+    },
+    {
+      "arrive": "train-balanced-V-0160",
+      "other_legal": [
+        "train-paired-V-0046"
+      ],
+      "state_id": "1fb599f34a87bd8c20eac5fa"
+    },
+    {
+      "arrive": "train-balanced-V-0122",
+      "other_legal": [
+        "train-paired-V-0047"
+      ],
+      "state_id": "20eb2db0e1455887d7310e98"
+    },
+    {
+      "arrive": "train-balanced-V-0158",
+      "other_legal": [
+        "train-paired-V-0048"
+      ],
+      "state_id": "21d4dcb9af7bc9a1f68078c8"
+    },
+    {
+      "arrive": "train-balanced-V-0139",
+      "other_legal": [
+        "train-balanced-V-0674"
+      ],
+      "state_id": "2397521aa90c4ef9fd1314c6"
+    },
+    {
+      "arrive": "train-balanced-V-0165",
+      "other_legal": [
+        "train-paired-V-0049"
+      ],
+      "state_id": "23c1c4302db7b8f7ceb585fa"
+    },
+    {
+      "arrive": "train-balanced-V-0036",
+      "other_legal": [
+        "train-paired-V-0050"
+      ],
+      "state_id": "2406bedf6ee3c9ad48a8efce"
+    },
+    {
+      "arrive": "train-balanced-V-0013",
+      "other_legal": [
+        "train-paired-V-0051"
+      ],
+      "state_id": "24226f542b75e13c7b682e6c"
+    },
+    {
+      "arrive": "train-balanced-V-0152",
+      "other_legal": [
+        "train-balanced-V-0767"
+      ],
+      "state_id": "26529a251d9201ddfb977d7e"
+    },
+    {
+      "arrive": "train-balanced-V-1109",
+      "other_legal": [
+        "train-direction-V-0012"
+      ],
+      "state_id": "281f90bca89192c55504bdb6"
+    },
+    {
+      "arrive": "train-balanced-V-0030",
+      "other_legal": [
+        "train-paired-V-0056"
+      ],
+      "state_id": "29592d9794924d7fb4dc08df"
+    },
+    {
+      "arrive": "train-balanced-V-0062",
+      "other_legal": [
+        "train-balanced-V-0650"
+      ],
+      "state_id": "2983100bbd373d66f971e7b3"
+    },
+    {
+      "arrive": "train-balanced-V-0033",
+      "other_legal": [
+        "train-paired-V-0057"
+      ],
+      "state_id": "2a1e8e9c471344434ad4a010"
+    },
+    {
+      "arrive": "train-balanced-V-0017",
+      "other_legal": [
+        "train-paired-V-0058"
+      ],
+      "state_id": "2c43840eec1e1e0e29addd30"
+    },
+    {
+      "arrive": "train-balanced-V-0110",
+      "other_legal": [
+        "train-balanced-V-0926"
+      ],
+      "state_id": "2c9a7141bb72d6398a2d410e"
+    },
+    {
+      "arrive": "train-balanced-V-0024",
+      "other_legal": [
+        "train-paired-V-0059"
+      ],
+      "state_id": "2cef7c5acf648065b44effef"
+    },
+    {
+      "arrive": "train-balanced-V-0184",
+      "other_legal": [
+        "train-paired-V-0060"
+      ],
+      "state_id": "2cf3eaf6f85fad45417c752e"
+    },
+    {
+      "arrive": "train-balanced-V-0027",
+      "other_legal": [
+        "train-paired-V-0061"
+      ],
+      "state_id": "2daa4e0e46ba56c31d757fb6"
+    },
+    {
+      "arrive": "train-balanced-V-0125",
+      "other_legal": [
+        "train-paired-V-0062"
+      ],
+      "state_id": "2df2254382aa53952bf1c4b3"
+    },
+    {
+      "arrive": "train-balanced-V-0066",
+      "other_legal": [
+        "train-paired-V-0063"
+      ],
+      "state_id": "2ec8e49475f323b07366da04"
+    },
+    {
+      "arrive": "train-balanced-V-0131",
+      "other_legal": [
+        "train-balanced-V-0840"
+      ],
+      "state_id": "2f14a10a0bbd87d7fbfb6626"
+    },
+    {
+      "arrive": "train-balanced-V-0082",
+      "other_legal": [
+        "train-paired-V-0064"
+      ],
+      "state_id": "301667b217fd122d9ca82a1a"
+    },
+    {
+      "arrive": "train-balanced-V-0153",
+      "other_legal": [
+        "train-paired-V-0065"
+      ],
+      "state_id": "303d378bf0acd4643ce81a17"
+    },
+    {
+      "arrive": "train-balanced-V-0177",
+      "other_legal": [
+        "train-paired-V-0067"
+      ],
+      "state_id": "31cb584bb3d1b10885feb0e0"
+    },
+    {
+      "arrive": "train-balanced-V-0071",
+      "other_legal": [
+        "train-paired-V-0071"
+      ],
+      "state_id": "324b51a3138748c3580922bc"
+    },
+    {
+      "arrive": "train-balanced-V-0003",
+      "other_legal": [
+        "train-balanced-V-0712",
+        "train-balanced-V-0714"
+      ],
+      "state_id": "3267cdf6e0907d58a3087476"
+    },
+    {
+      "arrive": "train-balanced-V-0048",
+      "other_legal": [
+        "train-paired-V-0072"
+      ],
+      "state_id": "3531a241664b02c21af9d46e"
+    },
+    {
+      "arrive": "train-balanced-V-0146",
+      "other_legal": [
+        "train-paired-V-0073"
+      ],
+      "state_id": "397410a2a44778c99b442484"
+    },
+    {
+      "arrive": "train-balanced-V-0103",
+      "other_legal": [
+        "train-paired-V-0074"
+      ],
+      "state_id": "3a677927cdaf34148c045a40"
+    },
+    {
+      "arrive": "train-balanced-V-0010",
+      "other_legal": [
+        "train-paired-V-0077"
+      ],
+      "state_id": "3a72ffeadb883d4b0fe9ea1a"
+    },
+    {
+      "arrive": "train-balanced-V-0042",
+      "other_legal": [
+        "train-paired-V-0081"
+      ],
+      "state_id": "3b0ae5edd2b7ec476bf5f812"
+    },
+    {
+      "arrive": "train-balanced-V-0051",
+      "other_legal": [
+        "train-paired-V-0082"
+      ],
+      "state_id": "3f5daaf5b6d19779a76aa6c2"
+    },
+    {
+      "arrive": "train-balanced-V-0015",
+      "other_legal": [
+        "train-balanced-V-0937",
+        "train-balanced-V-0938"
+      ],
+      "state_id": "41468ae2a017c82ac6a2d8b6"
+    },
+    {
+      "arrive": "train-balanced-V-0040",
+      "other_legal": [
+        "train-paired-V-0083"
+      ],
+      "state_id": "41cf8ca1ced7051cc3563e93"
+    },
+    {
+      "arrive": "train-balanced-V-1172",
+      "other_legal": [
+        "train-direction-V-0021"
+      ],
+      "state_id": "44f60031f42c0715396b6831"
+    },
+    {
+      "arrive": "train-balanced-V-0170",
+      "other_legal": [
+        "train-balanced-V-0698"
+      ],
+      "state_id": "47c2483d8fb33e162b4a96a1"
+    },
+    {
+      "arrive": "train-balanced-V-0135",
+      "other_legal": [
+        "train-balanced-V-0657"
+      ],
+      "state_id": "484c1b4aacedb010ad0a96fb"
+    },
+    {
+      "arrive": "train-balanced-V-0083",
+      "other_legal": [
+        "train-paired-V-0085"
+      ],
+      "state_id": "48a4f3bcefb4ab51485fb377"
+    },
+    {
+      "arrive": "train-balanced-V-1050",
+      "other_legal": [
+        "train-direction-V-0024"
+      ],
+      "state_id": "48b9688921986296862aa6e4"
+    },
+    {
+      "arrive": "train-balanced-V-0075",
+      "other_legal": [
+        "train-paired-V-0088"
+      ],
+      "state_id": "4b1447d8ecebbdd57ec21c9b"
+    },
+    {
+      "arrive": "train-balanced-V-1009",
+      "other_legal": [
+        "train-direction-V-0028"
+      ],
+      "state_id": "4c281b4e9879f6830880a4db"
+    },
+    {
+      "arrive": "train-balanced-V-0097",
+      "other_legal": [
+        "train-paired-V-0089"
+      ],
+      "state_id": "4cf5c31b3b7ee9ef15ef21a7"
+    },
+    {
+      "arrive": "train-balanced-V-0049",
+      "other_legal": [
+        "train-paired-V-0090"
+      ],
+      "state_id": "4d2a1028fd8ea2461aa3dbc7"
+    },
+    {
+      "arrive": "train-balanced-V-0148",
+      "other_legal": [
+        "train-paired-V-0093"
+      ],
+      "state_id": "4e1a4bd90d337e9df3478349"
+    },
+    {
+      "arrive": "train-balanced-V-0001",
+      "other_legal": [
+        "train-paired-V-0094"
+      ],
+      "state_id": "4ee444f000bb8c7e52f1a1b8"
+    },
+    {
+      "arrive": "train-balanced-V-1118",
+      "other_legal": [
+        "train-direction-V-0029"
+      ],
+      "state_id": "52b68395cce1cd39c821d4a3"
+    },
+    {
+      "arrive": "train-balanced-V-0044",
+      "other_legal": [
+        "train-paired-V-0099"
+      ],
+      "state_id": "53c4dc8d5cc0e204595dd1a0"
+    },
+    {
+      "arrive": "train-balanced-V-0076",
+      "other_legal": [
+        "train-balanced-V-0682"
+      ],
+      "state_id": "551c9bae91e09c33340ed4b9"
+    },
+    {
+      "arrive": "train-balanced-V-1144",
+      "other_legal": [
+        "train-direction-V-0031"
+      ],
+      "state_id": "553cfbd5b2cdc8cc24f31eb1"
+    },
+    {
+      "arrive": "train-balanced-V-0174",
+      "other_legal": [
+        "train-balanced-V-0503"
+      ],
+      "state_id": "574b1eddff30cad08721adda"
+    },
+    {
+      "arrive": "train-balanced-V-0006",
+      "other_legal": [
+        "train-paired-V-0104"
+      ],
+      "state_id": "582ce693ce274446669a6b55"
+    },
+    {
+      "arrive": "train-balanced-V-0142",
+      "other_legal": [
+        "train-paired-V-0105"
+      ],
+      "state_id": "58b5931bc467e13298faff6a"
+    },
+    {
+      "arrive": "train-balanced-V-1073",
+      "other_legal": [
+        "train-direction-V-0034"
+      ],
+      "state_id": "58ca4c569652bf984569c8de"
+    },
+    {
+      "arrive": "train-balanced-V-0093",
+      "other_legal": [
+        "train-paired-V-0106"
+      ],
+      "state_id": "5deb3b003762648140559436"
+    },
+    {
+      "arrive": "train-balanced-V-0069",
+      "other_legal": [
+        "train-paired-V-0107"
+      ],
+      "state_id": "5e39cfd3cf6ce9d206b797b7"
+    },
+    {
+      "arrive": "train-balanced-V-0141",
+      "other_legal": [
+        "train-paired-V-0108"
+      ],
+      "state_id": "5fb188bba00334f7edd4a813"
+    },
+    {
+      "arrive": "train-balanced-V-0031",
+      "other_legal": [
+        "train-paired-V-0111"
+      ],
+      "state_id": "60650c021dbdc810be40d9e0"
+    },
+    {
+      "arrive": "train-balanced-V-0011",
+      "other_legal": [
+        "train-paired-V-0112"
+      ],
+      "state_id": "60b26308514fd5bae1c0c922"
+    },
+    {
+      "arrive": "train-balanced-V-0052",
+      "other_legal": [
+        "train-paired-V-0113"
+      ],
+      "state_id": "60f4ff01e50807c3c29295f5"
+    },
+    {
+      "arrive": "train-balanced-V-1119",
+      "other_legal": [
+        "train-paired-V-0115"
+      ],
+      "state_id": "61577573123e1307f39632d1"
+    },
+    {
+      "arrive": "train-balanced-V-0092",
+      "other_legal": [
+        "train-paired-V-0117"
+      ],
+      "state_id": "6284f4cbd43904d18818792b"
+    },
+    {
+      "arrive": "train-balanced-V-0077",
+      "other_legal": [
+        "train-paired-V-0118"
+      ],
+      "state_id": "62905e0cf53021b827f704cd"
+    },
+    {
+      "arrive": "train-balanced-V-0028",
+      "other_legal": [
+        "train-balanced-V-0881"
+      ],
+      "state_id": "629af765204332dca575ba88"
+    },
+    {
+      "arrive": "train-balanced-V-1165",
+      "other_legal": [
+        "train-direction-V-0039"
+      ],
+      "state_id": "6417b56e56f2340944e4c4f3"
+    },
+    {
+      "arrive": "train-balanced-V-0129",
+      "other_legal": [
+        "train-balanced-V-0642"
+      ],
+      "state_id": "650efc01f1d3d7421793751f"
+    },
+    {
+      "arrive": "train-balanced-V-0176",
+      "other_legal": [
+        "train-paired-V-0119"
+      ],
+      "state_id": "662f4405c56c154dfbbe3582"
+    },
+    {
+      "arrive": "train-balanced-V-0187",
+      "other_legal": [
+        "train-paired-V-0122"
+      ],
+      "state_id": "67ed3dc14ecbf4b2c646e470"
+    },
+    {
+      "arrive": "train-balanced-V-0159",
+      "other_legal": [
+        "train-paired-V-0123"
+      ],
+      "state_id": "68f110e0f3677fc94e569478"
+    },
+    {
+      "arrive": "train-balanced-V-0064",
+      "other_legal": [
+        "train-paired-V-0126"
+      ],
+      "state_id": "690ac70774fa4e5b0c0b1fff"
+    },
+    {
+      "arrive": "train-balanced-V-1159",
+      "other_legal": [
+        "train-paired-V-0127"
+      ],
+      "state_id": "693a996f94ae03b9f91f08c0"
+    },
+    {
+      "arrive": "train-balanced-V-0025",
+      "other_legal": [
+        "train-paired-V-0130"
+      ],
+      "state_id": "699b95ae50b32b8ab54dc517"
+    },
+    {
+      "arrive": "train-balanced-V-0105",
+      "other_legal": [
+        "train-paired-V-0131"
+      ],
+      "state_id": "6ae34a8ea352ecae98440183"
+    },
+    {
+      "arrive": "train-balanced-V-0056",
+      "other_legal": [
+        "train-balanced-V-0679"
+      ],
+      "state_id": "6bd0e9486a498b162768c652"
+    },
+    {
+      "arrive": "train-balanced-V-0047",
+      "other_legal": [
+        "train-paired-V-0135"
+      ],
+      "state_id": "6d3a864593d8e5fc26c09080"
+    },
+    {
+      "arrive": "train-balanced-V-1126",
+      "other_legal": [
+        "train-paired-V-0138"
+      ],
+      "state_id": "6d80dccb023023208eb5b634"
+    },
+    {
+      "arrive": "train-balanced-V-0185",
+      "other_legal": [
+        "train-paired-V-0139"
+      ],
+      "state_id": "6e20d72902056397c2ea750c"
+    },
+    {
+      "arrive": "train-balanced-V-0102",
+      "other_legal": [
+        "train-balanced-V-0696"
+      ],
+      "state_id": "736dce7ad1f55bbbccf08886"
+    },
+    {
+      "arrive": "train-balanced-V-0188",
+      "other_legal": [
+        "train-balanced-V-0665"
+      ],
+      "state_id": "74a32ee507a2be7434cd2c72"
+    },
+    {
+      "arrive": "train-balanced-V-0022",
+      "other_legal": [
+        "train-paired-V-0147"
+      ],
+      "state_id": "75b2398ac14852f1d245d23f"
+    },
+    {
+      "arrive": "train-balanced-V-0088",
+      "other_legal": [
+        "train-paired-V-0148"
+      ],
+      "state_id": "7677a052de54d55f8ebaebcf"
+    },
+    {
+      "arrive": "train-balanced-V-1063",
+      "other_legal": [
+        "train-direction-V-0048"
+      ],
+      "state_id": "770d85f1188754ed0d731e50"
+    },
+    {
+      "arrive": "train-balanced-V-0057",
+      "other_legal": [
+        "train-paired-V-0149"
+      ],
+      "state_id": "7763a3cb0093a9852da3e285"
+    },
+    {
+      "arrive": "train-balanced-V-0175",
+      "other_legal": [
+        "train-balanced-V-0500"
+      ],
+      "state_id": "77ca596ef7f69fbea4eb9f88"
+    },
+    {
+      "arrive": "train-balanced-V-0150",
+      "other_legal": [
+        "train-paired-V-0150"
+      ],
+      "state_id": "792cc44bd29fb749cb835d89"
+    },
+    {
+      "arrive": "train-balanced-V-0037",
+      "other_legal": [
+        "train-paired-V-0151"
+      ],
+      "state_id": "7a0964bc1def6e3a9f5cfdb0"
+    },
+    {
+      "arrive": "train-balanced-V-0055",
+      "other_legal": [
+        "train-balanced-V-0525"
+      ],
+      "state_id": "7c27bb9b2f17da733d71daff"
+    },
+    {
+      "arrive": "train-balanced-V-0116",
+      "other_legal": [
+        "train-paired-V-0156"
+      ],
+      "state_id": "7da8691938c9c15fa557d70c"
+    },
+    {
+      "arrive": "train-balanced-V-0112",
+      "other_legal": [
+        "train-paired-V-0157"
+      ],
+      "state_id": "7e57022ed53824bbffe6f8d6"
+    },
+    {
+      "arrive": "train-balanced-V-0181",
+      "other_legal": [
+        "train-paired-V-0158"
+      ],
+      "state_id": "7f458565890fd94f819af628"
+    },
+    {
+      "arrive": "train-balanced-V-0156",
+      "other_legal": [
+        "train-paired-V-0160"
+      ],
+      "state_id": "7f603381eb32ac0ac54c657f"
+    },
+    {
+      "arrive": "train-balanced-V-0155",
+      "other_legal": [
+        "train-balanced-V-0516"
+      ],
+      "state_id": "7fd4f4b8df72f433acc3a341"
+    },
+    {
+      "arrive": "train-balanced-V-0099",
+      "other_legal": [
+        "train-paired-V-0163"
+      ],
+      "state_id": "8112484ac77d4b0fe22d85d1"
+    },
+    {
+      "arrive": "train-balanced-V-0021",
+      "other_legal": [
+        "train-paired-V-0166",
+        "train-paired-V-0167"
+      ],
+      "state_id": "84a7652c65686f5892ee84e5"
+    },
+    {
+      "arrive": "train-balanced-V-0087",
+      "other_legal": [
+        "train-paired-V-0168"
+      ],
+      "state_id": "84d3cb38f5347f2bffb77a6b"
+    },
+    {
+      "arrive": "train-balanced-V-0090",
+      "other_legal": [
+        "train-balanced-V-0919",
+        "train-balanced-V-0920"
+      ],
+      "state_id": "86328ed52a2eca391ab1b6d4"
+    },
+    {
+      "arrive": "train-balanced-V-0133",
+      "other_legal": [
+        "train-paired-V-0169"
+      ],
+      "state_id": "8a99acbdbfd4428f3824667c"
+    },
+    {
+      "arrive": "train-balanced-V-0183",
+      "other_legal": [
+        "train-paired-V-0170"
+      ],
+      "state_id": "8b8bf9e8857531711248c358"
+    },
+    {
+      "arrive": "train-balanced-V-0118",
+      "other_legal": [
+        "train-paired-V-0174"
+      ],
+      "state_id": "8ca34fea5a2492b8b63121e8"
+    },
+    {
+      "arrive": "train-balanced-V-0035",
+      "other_legal": [
+        "train-paired-V-0175"
+      ],
+      "state_id": "8d6aa0b6f2fc01c84f653e90"
+    },
+    {
+      "arrive": "train-balanced-V-0132",
+      "other_legal": [
+        "train-balanced-V-0271",
+        "train-balanced-V-0520"
+      ],
+      "state_id": "8e613a0060c1a74b9cf32313"
+    },
+    {
+      "arrive": "train-balanced-V-0128",
+      "other_legal": [
+        "train-paired-V-0176"
+      ],
+      "state_id": "8eb157ecb1fd9310cc347566"
+    },
+    {
+      "arrive": "train-balanced-V-0147",
+      "other_legal": [
+        "train-balanced-V-0740"
+      ],
+      "state_id": "8ec11e22a3d95f1dfa120ee4"
+    },
+    {
+      "arrive": "train-balanced-V-0382",
+      "other_legal": [
+        "train-paired-V-0180"
+      ],
+      "state_id": "8eed0b6252b5e533e5358f6e"
+    },
+    {
+      "arrive": "train-balanced-V-0081",
+      "other_legal": [
+        "train-paired-V-0183"
+      ],
+      "state_id": "917ab703016586bf4bebb360"
+    },
+    {
+      "arrive": "train-balanced-V-0163",
+      "other_legal": [
+        "train-paired-V-0184"
+      ],
+      "state_id": "9209e30adf16255911571a53"
+    },
+    {
+      "arrive": "train-balanced-V-0130",
+      "other_legal": [
+        "train-balanced-V-0691"
+      ],
+      "state_id": "9286e82388f7077606b86c48"
+    },
+    {
+      "arrive": "train-balanced-V-0171",
+      "other_legal": [
+        "train-balanced-V-0400"
+      ],
+      "state_id": "929535e6f267033c5f16a265"
+    },
+    {
+      "arrive": "train-balanced-V-0164",
+      "other_legal": [
+        "train-balanced-V-0654"
+      ],
+      "state_id": "9390c063f5c1d59e17db78e5"
+    },
+    {
+      "arrive": "train-balanced-V-0023",
+      "other_legal": [
+        "train-balanced-V-0672"
+      ],
+      "state_id": "979072d568d097a701bca0df"
+    },
+    {
+      "arrive": "train-balanced-V-0073",
+      "other_legal": [
+        "train-paired-V-0190"
+      ],
+      "state_id": "9bb1d28be6e7726a49ed5b80"
+    },
+    {
+      "arrive": "train-balanced-V-0078",
+      "other_legal": [
+        "train-paired-V-0191"
+      ],
+      "state_id": "9c0b7b7f2460b902f8553004"
+    },
+    {
+      "arrive": "train-balanced-V-0084",
+      "other_legal": [
+        "train-balanced-V-0953"
+      ],
+      "state_id": "9d22789e7aaba758a6f77fbe"
+    },
+    {
+      "arrive": "train-balanced-V-0388",
+      "other_legal": [
+        "train-paired-V-0192"
+      ],
+      "state_id": "9d50a8d3fb4ce4e2ddab88f9"
+    },
+    {
+      "arrive": "train-balanced-V-0054",
+      "other_legal": [
+        "train-paired-V-0195"
+      ],
+      "state_id": "9e291f759eb742d68d6c45c7"
+    },
+    {
+      "arrive": "train-balanced-V-0113",
+      "other_legal": [
+        "train-paired-V-0198"
+      ],
+      "state_id": "9e9faf7847a927bca46ab5eb"
+    },
+    {
+      "arrive": "train-balanced-V-0095",
+      "other_legal": [
+        "train-balanced-V-0498"
+      ],
+      "state_id": "a04a5377141c6b71b0597522"
+    },
+    {
+      "arrive": "train-balanced-V-0178",
+      "other_legal": [
+        "train-balanced-V-0527"
+      ],
+      "state_id": "a2d8bc4e2981adce6e1d0da7"
+    },
+    {
+      "arrive": "train-balanced-V-0157",
+      "other_legal": [
+        "train-balanced-V-0646"
+      ],
+      "state_id": "a68f2470a5897152756461a9"
+    },
+    {
+      "arrive": "train-balanced-V-0020",
+      "other_legal": [
+        "train-balanced-V-0689"
+      ],
+      "state_id": "a70489c0e8022dc497f38502"
+    },
+    {
+      "arrive": "train-balanced-V-0061",
+      "other_legal": [
+        "train-balanced-V-0933"
+      ],
+      "state_id": "a96b405543eb2801146e1f8f"
+    },
+    {
+      "arrive": "train-balanced-V-0104",
+      "other_legal": [
+        "train-paired-V-0202"
+      ],
+      "state_id": "aa188898e4181db89743085a"
+    },
+    {
+      "arrive": "train-balanced-V-0045",
+      "other_legal": [
+        "train-balanced-V-0517"
+      ],
+      "state_id": "ad771da6cb154e5b20d9ca8e"
+    },
+    {
+      "arrive": "train-balanced-V-0086",
+      "other_legal": [
+        "train-paired-V-0205"
+      ],
+      "state_id": "af53174cfa224e8c99d24948"
+    },
+    {
+      "arrive": "train-balanced-V-0034",
+      "other_legal": [
+        "train-balanced-V-0687"
+      ],
+      "state_id": "b04bd962131f8e6282359831"
+    },
+    {
+      "arrive": "train-balanced-V-1122",
+      "other_legal": [
+        "train-direction-V-0061"
+      ],
+      "state_id": "b0f3c34bceda90f8f11c3791"
+    },
+    {
+      "arrive": "train-balanced-V-0026",
+      "other_legal": [
+        "train-balanced-V-0662"
+      ],
+      "state_id": "b230d1af34c0dbed16d238a0"
+    },
+    {
+      "arrive": "train-balanced-V-0009",
+      "other_legal": [
+        "train-balanced-V-0659"
+      ],
+      "state_id": "b31e5c54a014aded1bb4873c"
+    },
+    {
+      "arrive": "train-balanced-V-1095",
+      "other_legal": [
+        "train-paired-V-0207"
+      ],
+      "state_id": "b33b6713b1232972a03a3b14"
+    },
+    {
+      "arrive": "train-balanced-V-0014",
+      "other_legal": [
+        "train-balanced-V-0509"
+      ],
+      "state_id": "bd200bc9d36f6ebe159d465d"
+    },
+    {
+      "arrive": "train-balanced-V-0094",
+      "other_legal": [
+        "train-paired-V-0213",
+        "train-paired-V-0214"
+      ],
+      "state_id": "bd52b4636498665fea9f0580"
+    },
+    {
+      "arrive": "train-balanced-V-0032",
+      "other_legal": [
+        "train-paired-V-0216"
+      ],
+      "state_id": "bf299144b5c000a03957266a"
+    },
+    {
+      "arrive": "train-balanced-V-0002",
+      "other_legal": [
+        "train-paired-V-0217",
+        "train-paired-V-0218"
+      ],
+      "state_id": "bff57e390a33efe3ceb17830"
+    },
+    {
+      "arrive": "train-balanced-V-0100",
+      "other_legal": [
+        "train-balanced-V-0864"
+      ],
+      "state_id": "c0787d105eac2d7637102a68"
+    },
+    {
+      "arrive": "train-balanced-V-0004",
+      "other_legal": [
+        "train-paired-V-0224"
+      ],
+      "state_id": "c27d7735e76c4be4d55851c5"
+    },
+    {
+      "arrive": "train-balanced-V-0169",
+      "other_legal": [
+        "train-balanced-V-0849",
+        "train-balanced-V-0851"
+      ],
+      "state_id": "c2bba8fa2ab6e096a8d214c5"
+    },
+    {
+      "arrive": "train-balanced-V-0091",
+      "other_legal": [
+        "train-paired-V-0225"
+      ],
+      "state_id": "c49166806fd1a8d76acd432d"
+    },
+    {
+      "arrive": "train-balanced-V-0079",
+      "other_legal": [
+        "train-paired-V-0229"
+      ],
+      "state_id": "c524a9b6c7fe60c635e1f474"
+    },
+    {
+      "arrive": "train-balanced-V-0018",
+      "other_legal": [
+        "train-paired-V-0230"
+      ],
+      "state_id": "c6da9f2db8d38f20294d8646"
+    },
+    {
+      "arrive": "train-balanced-V-0012",
+      "other_legal": [
+        "train-paired-V-0233"
+      ],
+      "state_id": "c9320296919cbf9283c64ada"
+    },
+    {
+      "arrive": "train-balanced-V-0053",
+      "other_legal": [
+        "train-paired-V-0234"
+      ],
+      "state_id": "cae3824f52a6ca8745852ddd"
+    },
+    {
+      "arrive": "train-balanced-V-0080",
+      "other_legal": [
+        "train-paired-V-0235"
+      ],
+      "state_id": "cbe40927c74dad6ead259021"
+    },
+    {
+      "arrive": "train-balanced-V-1022",
+      "other_legal": [
+        "train-direction-V-0071"
+      ],
+      "state_id": "cc381eb76eae2a7dcd397834"
+    },
+    {
+      "arrive": "train-balanced-V-0060",
+      "other_legal": [
+        "train-balanced-V-0971"
+      ],
+      "state_id": "cd2669ecaaf567d5f05c244d"
+    },
+    {
+      "arrive": "train-balanced-V-0074",
+      "other_legal": [
+        "train-paired-V-0236"
+      ],
+      "state_id": "cd44bcdb8667e40f486e5dfa"
+    },
+    {
+      "arrive": "train-balanced-V-0016",
+      "other_legal": [
+        "train-paired-V-0237"
+      ],
+      "state_id": "ce9e973a1549559f1c2d1016"
+    },
+    {
+      "arrive": "train-balanced-V-0138",
+      "other_legal": [
+        "train-paired-V-0238"
+      ],
+      "state_id": "ceb500f99ae1746bcf801173"
+    },
+    {
+      "arrive": "train-balanced-V-0166",
+      "other_legal": [
+        "train-paired-V-0241"
+      ],
+      "state_id": "cf0c8072815bd70de54fa4cb"
+    },
+    {
+      "arrive": "train-balanced-V-0107",
+      "other_legal": [
+        "train-paired-V-0243",
+        "train-paired-V-0244"
+      ],
+      "state_id": "cf1d8dc3af0afb88ba3468c4"
+    },
+    {
+      "arrive": "train-balanced-V-1038",
+      "other_legal": [
+        "train-paired-V-0245"
+      ],
+      "state_id": "d0182dea11400b2b7b01d14d"
+    },
+    {
+      "arrive": "train-balanced-V-0145",
+      "other_legal": [
+        "train-paired-V-0248"
+      ],
+      "state_id": "d1bb748c3d2c85dde585227a"
+    },
+    {
+      "arrive": "train-balanced-V-1108",
+      "other_legal": [
+        "train-direction-V-0078"
+      ],
+      "state_id": "d444cfbff7403ec6d40b1b51"
+    },
+    {
+      "arrive": "train-balanced-V-0149",
+      "other_legal": [
+        "train-paired-V-0249"
+      ],
+      "state_id": "d47563250f17069800ff4269"
+    },
+    {
+      "arrive": "train-balanced-V-0008",
+      "other_legal": [
+        "train-paired-V-0251"
+      ],
+      "state_id": "d4a25fbf9ca6ac4f43d4a602"
+    },
+    {
+      "arrive": "train-balanced-V-0058",
+      "other_legal": [
+        "train-paired-V-0252"
+      ],
+      "state_id": "d4aeb98e42c6122b4f5c7870"
+    },
+    {
+      "arrive": "train-balanced-V-1137",
+      "other_legal": [
+        "train-paired-V-0255"
+      ],
+      "state_id": "d557e884f7cf61808b7261ad"
+    },
+    {
+      "arrive": "train-balanced-V-0041",
+      "other_legal": [
+        "train-paired-V-0261"
+      ],
+      "state_id": "d848a3b89e3354c44ecdb117"
+    },
+    {
+      "arrive": "train-balanced-V-1067",
+      "other_legal": [
+        "train-direction-V-0083"
+      ],
+      "state_id": "da216867e5f39ede5cbc9650"
+    },
+    {
+      "arrive": "train-balanced-V-0123",
+      "other_legal": [
+        "train-paired-V-0262"
+      ],
+      "state_id": "dafb8aaf5be1eaf3b4a80e33"
+    },
+    {
+      "arrive": "train-balanced-V-0378",
+      "other_legal": [
+        "train-direction-V-0084"
+      ],
+      "state_id": "db23206a297276e427957e09"
+    },
+    {
+      "arrive": "train-balanced-V-0072",
+      "other_legal": [
+        "train-balanced-V-0785"
+      ],
+      "state_id": "dc1e13232605fcc1698acbed"
+    },
+    {
+      "arrive": "train-balanced-V-0007",
+      "other_legal": [
+        "train-balanced-V-0637"
+      ],
+      "state_id": "dce3214667e2fc375caf17d5"
+    },
+    {
+      "arrive": "train-balanced-V-0162",
+      "other_legal": [
+        "train-paired-V-0263"
+      ],
+      "state_id": "dda491cc36b4c602707f67b3"
+    },
+    {
+      "arrive": "train-balanced-V-0096",
+      "other_legal": [
+        "train-paired-V-0266"
+      ],
+      "state_id": "e0ccbcd1349438a87bee7893"
+    },
+    {
+      "arrive": "train-balanced-V-1096",
+      "other_legal": [
+        "train-direction-V-0088"
+      ],
+      "state_id": "e205a080a37adb1a342ce95a"
+    },
+    {
+      "arrive": "train-balanced-V-0108",
+      "other_legal": [
+        "train-paired-V-0267"
+      ],
+      "state_id": "e30df5a182592f68d0ee1982"
+    },
+    {
+      "arrive": "train-balanced-V-0114",
+      "other_legal": [
+        "train-paired-V-0268"
+      ],
+      "state_id": "e33a658df1bf7334ae177ca7"
+    },
+    {
+      "arrive": "train-balanced-V-0124",
+      "other_legal": [
+        "train-paired-V-0269"
+      ],
+      "state_id": "e35ac218c930df0315d265f6"
+    },
+    {
+      "arrive": "train-balanced-V-0154",
+      "other_legal": [
+        "train-paired-V-0270"
+      ],
+      "state_id": "e41a81fea60345c5d814cdb6"
+    },
+    {
+      "arrive": "train-balanced-V-0065",
+      "other_legal": [
+        "train-balanced-V-0902"
+      ],
+      "state_id": "e47e829be55b46834a17815c"
+    },
+    {
+      "arrive": "train-balanced-V-0106",
+      "other_legal": [
+        "train-paired-V-0271"
+      ],
+      "state_id": "e6bddb1ddb8f6c760ae92ee3"
+    },
+    {
+      "arrive": "train-balanced-V-0070",
+      "other_legal": [
+        "train-balanced-V-0962",
+        "train-balanced-V-0964"
+      ],
+      "state_id": "e70539f1fd4501a3015c9066"
+    },
+    {
+      "arrive": "train-balanced-V-0121",
+      "other_legal": [
+        "train-paired-V-0272",
+        "train-paired-V-0273"
+      ],
+      "state_id": "e7702985a7e2041678857d28"
+    },
+    {
+      "arrive": "train-balanced-V-1012",
+      "other_legal": [
+        "train-direction-V-0090"
+      ],
+      "state_id": "e82712fba8638a41171b995c"
+    },
+    {
+      "arrive": "train-balanced-V-0180",
+      "other_legal": [
+        "train-paired-V-0274"
+      ],
+      "state_id": "ea8fbaa706fbf56c82f75815"
+    },
+    {
+      "arrive": "train-balanced-V-0182",
+      "other_legal": [
+        "train-paired-V-0275"
+      ],
+      "state_id": "eaad05e9e9339ca9ae593270"
+    },
+    {
+      "arrive": "train-balanced-V-0059",
+      "other_legal": [
+        "train-paired-V-0276"
+      ],
+      "state_id": "ecc93a90e58b56e44e7f3f2c"
+    },
+    {
+      "arrive": "train-balanced-V-0067",
+      "other_legal": [
+        "train-paired-V-0283"
+      ],
+      "state_id": "edecb688ee06e14df64df998"
+    },
+    {
+      "arrive": "train-balanced-V-0144",
+      "other_legal": [
+        "train-paired-V-0286"
+      ],
+      "state_id": "ee577a20a8e85bc26644065b"
+    },
+    {
+      "arrive": "train-balanced-V-0038",
+      "other_legal": [
+        "train-paired-V-0287"
+      ],
+      "state_id": "eef23839f8e4db074c475222"
+    },
+    {
+      "arrive": "train-balanced-V-0161",
+      "other_legal": [
+        "train-paired-V-0290"
+      ],
+      "state_id": "effd2dabc89bf49c20f3a541"
+    },
+    {
+      "arrive": "train-balanced-V-0143",
+      "other_legal": [
+        "train-paired-V-0291"
+      ],
+      "state_id": "f3379515682d0843a613e7f2"
+    },
+    {
+      "arrive": "train-balanced-V-0046",
+      "other_legal": [
+        "train-paired-V-0292"
+      ],
+      "state_id": "f399678358c5ae62cc7a6a12"
+    },
+    {
+      "arrive": "train-balanced-V-0179",
+      "other_legal": [
+        "train-balanced-V-0643"
+      ],
+      "state_id": "f3a169ac382814b7c897c6b1"
+    },
+    {
+      "arrive": "train-balanced-V-0168",
+      "other_legal": [
+        "train-balanced-V-0908",
+        "train-balanced-V-0910"
+      ],
+      "state_id": "f7c19752aee31b1e655f9fd8"
+    },
+    {
+      "arrive": "train-balanced-V-1055",
+      "other_legal": [
+        "train-paired-V-0295"
+      ],
+      "state_id": "f9ac6bcfb9dcbbcca75b27cb"
+    },
+    {
+      "arrive": "train-balanced-V-0101",
+      "other_legal": [
+        "train-balanced-V-0676"
+      ],
+      "state_id": "f9d8ba03d1c8e65436bf4f72"
+    },
+    {
+      "arrive": "train-balanced-V-0085",
+      "other_legal": [
+        "train-paired-V-0296"
+      ],
+      "state_id": "fa6819317f5df7b7c5813e45"
+    },
+    {
+      "arrive": "train-balanced-V-0115",
+      "other_legal": [
+        "train-paired-V-0297"
+      ],
+      "state_id": "fa97fe3617dc5f09e28f9e82"
+    },
+    {
+      "arrive": "train-balanced-V-0117",
+      "other_legal": [
+        "train-paired-V-0298"
+      ],
+      "state_id": "fb4bac0a5e946363dc3586b4"
+    },
+    {
+      "arrive": "train-balanced-V-1161",
+      "other_legal": [
+        "train-direction-V-0099"
+      ],
+      "state_id": "fb777c9ee8f2548844eff6f4"
+    },
+    {
+      "arrive": "train-balanced-V-0137",
+      "other_legal": [
+        "train-paired-V-0299"
+      ],
+      "state_id": "fc16e7e0cf87d7cc99874d30"
+    },
+    {
+      "arrive": "train-balanced-V-1131",
+      "other_legal": [
+        "train-direction-V-0101"
+      ],
+      "state_id": "fce152bbb84fb911e7e62bd3"
+    }
+  ],
+  "inward": [
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-1341"
+      ],
+      "state_id": "0b34e51481257a65fb2c7fd3",
+      "toward_but_unfinished": [
+        "train-direction-V-0004"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-0344"
+      ],
+      "state_id": "0fbd3912bb019f1cf2e2668d",
+      "toward_but_unfinished": [
+        "train-direction-V-0005"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1309"
+      ],
+      "state_id": "13797f0a790f3a8682b97dd3",
+      "toward_but_unfinished": [
+        "train-direction-V-0009"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0396"
+      ],
+      "state_id": "14cd2d51b673561314a0f0d6",
+      "toward_but_unfinished": [
+        "train-direction-V-0010"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0446",
+        "train-balanced-V-0494"
+      ],
+      "state_id": "1d608200c5dfe7af3ec088a8",
+      "toward_but_unfinished": [
+        "train-balanced-V-0493",
+        "train-balanced-V-0495"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1278"
+      ],
+      "state_id": "1e6b43b027b3e16b535dcec2",
+      "toward_but_unfinished": [
+        "train-direction-V-0011"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1252"
+      ],
+      "state_id": "291b817a4d0113cf1a6f1802",
+      "toward_but_unfinished": [
+        "train-direction-V-0013"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-1339"
+      ],
+      "state_id": "3667075fc0627b41707dd3cd",
+      "toward_but_unfinished": [
+        "train-direction-V-0016"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-1223"
+      ],
+      "state_id": "3f5ff0def35b569c5e97d52d",
+      "toward_but_unfinished": [
+        "train-direction-V-0017"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0216"
+      ],
+      "state_id": "3fba80e9ce27543a89100258",
+      "toward_but_unfinished": [
+        "train-direction-V-0018"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1279"
+      ],
+      "state_id": "409b28ef5307b334dcd6d7d7",
+      "toward_but_unfinished": [
+        "train-direction-V-0020"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-0414"
+      ],
+      "state_id": "48b7126158705c66cb3aac07",
+      "toward_but_unfinished": [
+        "train-direction-V-0023"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1331"
+      ],
+      "state_id": "49f09e4838a874fc630a75c1",
+      "toward_but_unfinished": [
+        "train-direction-V-0026"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1323"
+      ],
+      "state_id": "552ae2bb3ad8d45877a50ed2",
+      "toward_but_unfinished": [
+        "train-direction-V-0030"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-0448"
+      ],
+      "state_id": "5b7d2a69e16187f9d530f317",
+      "toward_but_unfinished": [
+        "train-direction-V-0037"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-1261"
+      ],
+      "state_id": "642d0863706b5bdbfa511a7d",
+      "toward_but_unfinished": [
+        "train-direction-V-0040"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-1292",
+        "train-paired-V-0133",
+        "train-paired-V-0134"
+      ],
+      "state_id": "6b45926adff0486c5a0a6ac8",
+      "toward_but_unfinished": [
+        "train-paired-V-0132"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0202"
+      ],
+      "state_id": "70035c794540e06ab57a7983",
+      "toward_but_unfinished": [
+        "train-direction-V-0041"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1254"
+      ],
+      "state_id": "7008e426dea9479f4b71d788",
+      "toward_but_unfinished": [
+        "train-direction-V-0042"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0412"
+      ],
+      "state_id": "70aaefc99d11a8f1fd646b76",
+      "toward_but_unfinished": [
+        "train-direction-V-0043"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0357"
+      ],
+      "state_id": "717dbf1ddea6efa0e8db66ed",
+      "toward_but_unfinished": [
+        "train-direction-V-0045"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0800",
+        "train-balanced-V-0801",
+        "train-balanced-V-0802"
+      ],
+      "state_id": "8528a60554c212238cd027c2",
+      "toward_but_unfinished": [
+        "train-balanced-V-0799"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-1363"
+      ],
+      "state_id": "99d80ed5a5ec9a3e84d4d7e9",
+      "toward_but_unfinished": [
+        "train-direction-V-0052"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-1264"
+      ],
+      "state_id": "9ce66983bb2b0d9db27696e8",
+      "toward_but_unfinished": [
+        "train-direction-V-0053"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0395"
+      ],
+      "state_id": "9faa5b4b971378a4fb5e1a9f",
+      "toward_but_unfinished": [
+        "train-direction-V-0054"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-1362"
+      ],
+      "state_id": "b2f17bc79364f8dba569a685",
+      "toward_but_unfinished": [
+        "train-direction-V-0062"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0422"
+      ],
+      "state_id": "bb6d68b67bd582c88ddf1b52",
+      "toward_but_unfinished": [
+        "train-direction-V-0065"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0358"
+      ],
+      "state_id": "bbf5ec246495d27415c96490",
+      "toward_but_unfinished": [
+        "train-direction-V-0066"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1203"
+      ],
+      "state_id": "c6c16b32caf861a679a25b68",
+      "toward_but_unfinished": [
+        "train-direction-V-0068"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-1263"
+      ],
+      "state_id": "cccecf6050bae9f2f9742f27",
+      "toward_but_unfinished": [
+        "train-direction-V-0072"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1353"
+      ],
+      "state_id": "ceb71bc907ef4f610be46a22",
+      "toward_but_unfinished": [
+        "train-direction-V-0074"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0430"
+      ],
+      "state_id": "d3c16009a8eb5b295630f2ea",
+      "toward_but_unfinished": [
+        "train-direction-V-0077"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1304"
+      ],
+      "state_id": "d54bab2a039a83347592937e",
+      "toward_but_unfinished": [
+        "train-direction-V-0080"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-0317"
+      ],
+      "state_id": "d7910b66dae533362cc5d0d2",
+      "toward_but_unfinished": [
+        "train-direction-V-0081"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-0312"
+      ],
+      "state_id": "dc065c0796b3ba12dddbfaa5",
+      "toward_but_unfinished": [
+        "train-direction-V-0085"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-0214"
+      ],
+      "state_id": "e18ebf6d378845ae896a8cb4",
+      "toward_but_unfinished": [
+        "train-direction-V-0087"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1229"
+      ],
+      "state_id": "e3abd641241dc7d6a95b0863",
+      "toward_but_unfinished": [
+        "train-direction-V-0089"
+      ]
+    },
+    {
+      "distance_before": 3,
+      "other_direction": [
+        "train-balanced-V-1225"
+      ],
+      "state_id": "f92535a0eb81303fa1da9937",
+      "toward_but_unfinished": [
+        "train-direction-V-0097"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-1342"
+      ],
+      "state_id": "fc92f18bba215c8892894077",
+      "toward_but_unfinished": [
+        "train-direction-V-0100"
+      ]
+    },
+    {
+      "distance_before": 2,
+      "other_direction": [
+        "train-balanced-V-1324"
+      ],
+      "state_id": "ff401b9ba1148724e8cbf66b",
+      "toward_but_unfinished": [
+        "train-direction-V-0103"
+      ]
+    }
+  ]
+}

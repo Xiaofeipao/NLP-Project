@@ -1,6 +1,8 @@
 # PPNL：自然语言网格路径规划
 
-本分支现阶段以共享状态上的单步 G/V 为主。G 预测最短路的下一方向，V 只检查当前一个候选动作。程序负责路径拆步、推进状态、首错定位和回撤重选。 [任务定位与复现](docs/step_verification_gv.md) · [最终数据](data/step_g_paired_actions/) · [两组各三轮的结果](artifacts/step_verification/step_g_paired_actions/retrain_3ep/三轮对照结果.md)
+本分支发布 **Flan-T5-base 的 64 条验证样本等额替换实验**。B 组为替换版第 3 轮，A 组为原数据重训第 1 轮。两份完整模型均可通过 Git LFS 下载。[数据说明、评测与加载示例](artifacts/flan_swap64_ab/README.md) · [B 组权重](artifacts/flan_swap64_ab/models/B-epoch3/) · [A 组权重](artifacts/flan_swap64_ab/models/A-epoch1/)
+
+前期实验采用共享状态上的单步 G/V。G 预测最短路的下一方向，V 只检查当前一个候选动作。程序负责路径拆步、推进状态、首错定位和回撤重选。 [任务定位与复现](docs/step_verification_gv.md) · [前期配对数据](data/step_g_paired_actions/) · [两组各三轮的结果](artifacts/step_verification/step_g_paired_actions/retrain_3ep/三轮对照结果.md)
 
 本分支收录 Flan-T5-base 的逐步验证 v1 和双标签 v2。[实验记录](docs/step_verification_v1_v2.md) · [输入输出与错误案例](docs/step_verification_cases.md) · [复现入口](state_baselines/README.md)
 
