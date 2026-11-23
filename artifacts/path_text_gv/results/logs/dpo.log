@@ -1,0 +1,56 @@
+{"time": "2026-11-24 00:14:40 +0800", "stage": "loading", "epochs": [2, 3]}
+W1124 00:14:40.281000 3096 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/282 [00:00<?, ?it/s]Loading weights:  12%|¨€¨‡        | 34/282 [00:00<00:00, 295.61it/s]Loading weights:  26%|¨€¨€¨„       | 74/282 [00:00<00:00, 343.88it/s]Loading weights:  39%|¨€¨€¨€¨‚      | 109/282 [00:00<00:00, 310.69it/s]Loading weights:  50%|¨€¨€¨€¨€¨€     | 141/282 [00:00<00:00, 267.57it/s]Loading weights:  60%|¨€¨€¨€¨€¨€¨    | 169/282 [00:00<00:00, 195.22it/s]Loading weights: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 282/282 [00:00<00:00, 382.06it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+{"time": "2026-11-24 00:14:42 +0800", "stage": "frozen_reference", "processed": 12, "total": 16400}
+{"time": "2026-11-24 00:14:55 +0800", "stage": "frozen_reference", "processed": 1212, "total": 16400}
+{"time": "2026-11-24 00:15:09 +0800", "stage": "frozen_reference", "processed": 2412, "total": 16400}
+{"time": "2026-11-24 00:15:22 +0800", "stage": "frozen_reference", "processed": 3612, "total": 16400}
+{"time": "2026-11-24 00:15:36 +0800", "stage": "frozen_reference", "processed": 4812, "total": 16400}
+{"time": "2026-11-24 00:15:50 +0800", "stage": "frozen_reference", "processed": 6012, "total": 16400}
+{"time": "2026-11-24 00:16:03 +0800", "stage": "frozen_reference", "processed": 7212, "total": 16400}
+{"time": "2026-11-24 00:16:17 +0800", "stage": "frozen_reference", "processed": 8412, "total": 16400}
+{"time": "2026-11-24 00:16:31 +0800", "stage": "frozen_reference", "processed": 9612, "total": 16400}
+{"time": "2026-11-24 00:16:44 +0800", "stage": "frozen_reference", "processed": 10812, "total": 16400}
+{"time": "2026-11-24 00:16:58 +0800", "stage": "frozen_reference", "processed": 12012, "total": 16400}
+{"time": "2026-11-24 00:17:12 +0800", "stage": "frozen_reference", "processed": 13212, "total": 16400}
+{"time": "2026-11-24 00:17:25 +0800", "stage": "frozen_reference", "processed": 14412, "total": 16400}
+{"time": "2026-11-24 00:17:39 +0800", "stage": "frozen_reference", "processed": 15612, "total": 16400}
+{"time": "2026-11-24 00:17:48 +0800", "stage": "training", "epoch": 2, "update": 0, "total_updates": 125}
+{"time": "2026-11-24 00:17:59 +0800", "stage": "training", "epoch": 2, "update": 1, "total_updates": 125, "mean_loss": 0.919058620929718, "grad_norm": 2.137190818786621, "peak_mib": 3827}
+{"time": "2026-11-24 00:18:09 +0800", "stage": "training", "epoch": 2, "update": 2, "total_updates": 125, "mean_loss": 0.8853507339954376, "grad_norm": 2.366183042526245, "peak_mib": 4461}
+{"time": "2026-11-24 00:19:34 +0800", "stage": "training", "epoch": 2, "update": 10, "total_updates": 125, "mean_loss": 0.869912999868393, "grad_norm": 2.4823901653289795, "peak_mib": 4471}
+{"time": "2026-11-24 00:21:24 +0800", "stage": "training", "epoch": 2, "update": 20, "total_updates": 125, "mean_loss": 0.8532820463180542, "grad_norm": 2.9193549156188965, "peak_mib": 4480}
+{"time": "2026-11-24 00:23:12 +0800", "stage": "training", "epoch": 2, "update": 30, "total_updates": 125, "mean_loss": 0.8429387152194977, "grad_norm": 1.9344429969787598, "peak_mib": 4480}
+{"time": "2026-11-24 00:24:58 +0800", "stage": "training", "epoch": 2, "update": 40, "total_updates": 125, "mean_loss": 0.8299093380570411, "grad_norm": 2.301849842071533, "peak_mib": 4480}
+{"time": "2026-11-24 00:26:48 +0800", "stage": "training", "epoch": 2, "update": 50, "total_updates": 125, "mean_loss": 0.8192320132255554, "grad_norm": 2.5185506343841553, "peak_mib": 4480}
+{"time": "2026-11-24 00:28:37 +0800", "stage": "training", "epoch": 2, "update": 60, "total_updates": 125, "mean_loss": 0.8170296907424927, "grad_norm": 1.9726250171661377, "peak_mib": 4480}
+{"time": "2026-11-24 00:30:23 +0800", "stage": "training", "epoch": 2, "update": 70, "total_updates": 125, "mean_loss": 0.8149642203535352, "grad_norm": 2.470004081726074, "peak_mib": 4480}
+{"time": "2026-11-24 00:32:12 +0800", "stage": "training", "epoch": 2, "update": 80, "total_updates": 125, "mean_loss": 0.8073325023055077, "grad_norm": 1.5900914669036865, "peak_mib": 4480}
+{"time": "2026-11-24 00:33:59 +0800", "stage": "training", "epoch": 2, "update": 90, "total_updates": 125, "mean_loss": 0.798648347126113, "grad_norm": 1.726019263267517, "peak_mib": 4485}
+{"time": "2026-11-24 00:35:48 +0800", "stage": "training", "epoch": 2, "update": 100, "total_updates": 125, "mean_loss": 0.7932092717289925, "grad_norm": 1.6460847854614258, "peak_mib": 4485}
+{"time": "2026-11-24 00:37:36 +0800", "stage": "training", "epoch": 2, "update": 110, "total_updates": 125, "mean_loss": 0.7844087625091726, "grad_norm": 4.411374092102051, "peak_mib": 4485}
+{"time": "2026-11-24 00:39:25 +0800", "stage": "training", "epoch": 2, "update": 120, "total_updates": 125, "mean_loss": 0.779602245738109, "grad_norm": 5.295125961303711, "peak_mib": 4485}
+{"time": "2026-11-24 00:40:20 +0800", "stage": "training", "epoch": 2, "update": 125, "total_updates": 125, "mean_loss": 0.7784868333339691, "grad_norm": 2.1617047786712646, "peak_mib": 4485}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:07<00:00,  7.88s/it]Writing model shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:07<00:00,  7.88s/it]
+{"time": "2026-11-24 00:40:42 +0800", "stage": "development", "epoch": 2}
+{"time": "2026-11-24 00:41:33 +0800", "stage": "epoch_finished", "epoch": 2, "V_macro_exact": 0.13543906510851417}
+{"time": "2026-11-24 00:41:33 +0800", "stage": "training", "epoch": 3, "update": 0, "total_updates": 125}
+{"time": "2026-11-24 00:41:44 +0800", "stage": "training", "epoch": 3, "update": 1, "total_updates": 125, "mean_loss": 0.8495249152183533, "grad_norm": 2.5979394912719727, "peak_mib": 4485}
+{"time": "2026-11-24 00:41:55 +0800", "stage": "training", "epoch": 3, "update": 2, "total_updates": 125, "mean_loss": 0.7433939874172211, "grad_norm": 2.5139753818511963, "peak_mib": 4485}
+{"time": "2026-11-24 00:43:20 +0800", "stage": "training", "epoch": 3, "update": 10, "total_updates": 125, "mean_loss": 0.7435525298118592, "grad_norm": 1.5741013288497925, "peak_mib": 4485}
+{"time": "2026-11-24 00:45:10 +0800", "stage": "training", "epoch": 3, "update": 20, "total_updates": 125, "mean_loss": 0.7219480186700821, "grad_norm": 1.8670463562011719, "peak_mib": 4485}
+{"time": "2026-11-24 00:46:58 +0800", "stage": "training", "epoch": 3, "update": 30, "total_updates": 125, "mean_loss": 0.7259648879369099, "grad_norm": 2.0071167945861816, "peak_mib": 4485}
+{"time": "2026-11-24 00:48:46 +0800", "stage": "training", "epoch": 3, "update": 40, "total_updates": 125, "mean_loss": 0.7299981161952018, "grad_norm": 5.073505401611328, "peak_mib": 4485}
+{"time": "2026-11-24 00:50:35 +0800", "stage": "training", "epoch": 3, "update": 50, "total_updates": 125, "mean_loss": 0.7246802973747254, "grad_norm": 1.3919389247894287, "peak_mib": 4485}
+{"time": "2026-11-24 00:52:24 +0800", "stage": "training", "epoch": 3, "update": 60, "total_updates": 125, "mean_loss": 0.7273968458175659, "grad_norm": 2.0350584983825684, "peak_mib": 4485}
+{"time": "2026-11-24 00:54:13 +0800", "stage": "training", "epoch": 3, "update": 70, "total_updates": 125, "mean_loss": 0.7213456673281533, "grad_norm": 1.845752239227295, "peak_mib": 4485}
+{"time": "2026-11-24 00:56:03 +0800", "stage": "training", "epoch": 3, "update": 80, "total_updates": 125, "mean_loss": 0.7167992688715458, "grad_norm": 1.8176262378692627, "peak_mib": 4485}
+{"time": "2026-11-24 00:57:52 +0800", "stage": "training", "epoch": 3, "update": 90, "total_updates": 125, "mean_loss": 0.711508572101593, "grad_norm": 2.360818862915039, "peak_mib": 4485}
+{"time": "2026-11-24 00:59:40 +0800", "stage": "training", "epoch": 3, "update": 100, "total_updates": 125, "mean_loss": 0.7029353362321854, "grad_norm": 1.6662224531173706, "peak_mib": 4485}
+{"time": "2026-11-24 01:01:26 +0800", "stage": "training", "epoch": 3, "update": 110, "total_updates": 125, "mean_loss": 0.6942722046917135, "grad_norm": 2.0512945652008057, "peak_mib": 4485}
+{"time": "2026-11-24 01:03:16 +0800", "stage": "training", "epoch": 3, "update": 120, "total_updates": 125, "mean_loss": 0.6841167477269967, "grad_norm": 2.9132914543151855, "peak_mib": 4485}
+{"time": "2026-11-24 01:04:11 +0800", "stage": "training", "epoch": 3, "update": 125, "total_updates": 125, "mean_loss": 0.6800689032077789, "grad_norm": 3.0605201721191406, "peak_mib": 4485}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:07<00:00,  7.54s/it]Writing model shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:07<00:00,  7.54s/it]
+{"time": "2026-11-24 01:04:34 +0800", "stage": "development", "epoch": 3}
+{"time": "2026-11-24 01:05:24 +0800", "stage": "epoch_finished", "epoch": 3, "V_macro_exact": 0.0998544886639022}

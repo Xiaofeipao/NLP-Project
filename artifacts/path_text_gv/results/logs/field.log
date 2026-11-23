@@ -1,0 +1,42 @@
+{"time": "2026-11-23 23:25:39 +0800", "stage": "loading", "epochs": [2, 3]}
+W1123 23:25:39.471000 19356 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/282 [00:00<?, ?it/s]Loading weights:  11%|¨€¨‡        | 32/282 [00:00<00:00, 318.35it/s]Loading weights:  29%|¨€¨€¨‚       | 81/282 [00:00<00:00, 410.64it/s]Loading weights:  43%|¨€¨€¨€¨€¨†     | 122/282 [00:00<00:00, 300.04it/s]Loading weights:  56%|¨€¨€¨€¨€¨€¨ƒ    | 159/282 [00:00<00:00, 307.64it/s]Loading weights:  68%|¨€¨€¨€¨€¨€¨€¨‚   | 192/282 [00:00<00:00, 265.07it/s]Loading weights: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 282/282 [00:00<00:00, 425.11it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+{"time": "2026-11-23 23:25:40 +0800", "stage": "training", "epoch": 2, "update": 0, "total_updates": 125}
+{"time": "2026-11-23 23:25:53 +0800", "stage": "training", "epoch": 2, "update": 1, "total_updates": 125, "mean_loss": 0.9686527252197266, "grad_norm": 1.6010271310806274, "peak_mib": 3817}
+{"time": "2026-11-23 23:26:04 +0800", "stage": "training", "epoch": 2, "update": 2, "total_updates": 125, "mean_loss": 0.937944769859314, "grad_norm": 1.9148073196411133, "peak_mib": 4427}
+{"time": "2026-11-23 23:27:33 +0800", "stage": "training", "epoch": 2, "update": 10, "total_updates": 125, "mean_loss": 0.9403575479984283, "grad_norm": 2.4140965938568115, "peak_mib": 4443}
+{"time": "2026-11-23 23:29:23 +0800", "stage": "training", "epoch": 2, "update": 20, "total_updates": 125, "mean_loss": 0.9399259656667709, "grad_norm": 4.5963945388793945, "peak_mib": 4443}
+{"time": "2026-11-23 23:31:11 +0800", "stage": "training", "epoch": 2, "update": 30, "total_updates": 125, "mean_loss": 0.9336871186892192, "grad_norm": 2.1231253147125244, "peak_mib": 4444}
+{"time": "2026-11-23 23:33:04 +0800", "stage": "training", "epoch": 2, "update": 40, "total_updates": 125, "mean_loss": 0.9161712363362312, "grad_norm": 3.2281038761138916, "peak_mib": 4446}
+{"time": "2026-11-23 23:34:55 +0800", "stage": "training", "epoch": 2, "update": 50, "total_updates": 125, "mean_loss": 0.9077227532863616, "grad_norm": 2.3186843395233154, "peak_mib": 4446}
+{"time": "2026-11-23 23:36:45 +0800", "stage": "training", "epoch": 2, "update": 60, "total_updates": 125, "mean_loss": 0.9001985321442286, "grad_norm": 2.0077645778656006, "peak_mib": 4447}
+{"time": "2026-11-23 23:38:36 +0800", "stage": "training", "epoch": 2, "update": 70, "total_updates": 125, "mean_loss": 0.8957438349723816, "grad_norm": 3.0442943572998047, "peak_mib": 4447}
+{"time": "2026-11-23 23:40:29 +0800", "stage": "training", "epoch": 2, "update": 80, "total_updates": 125, "mean_loss": 0.8921178065240383, "grad_norm": 1.6326714754104614, "peak_mib": 4447}
+{"time": "2026-11-23 23:42:17 +0800", "stage": "training", "epoch": 2, "update": 90, "total_updates": 125, "mean_loss": 0.8859034399191539, "grad_norm": 2.6538586616516113, "peak_mib": 4447}
+{"time": "2026-11-23 23:44:08 +0800", "stage": "training", "epoch": 2, "update": 100, "total_updates": 125, "mean_loss": 0.8773855030536651, "grad_norm": 1.7046579122543335, "peak_mib": 4447}
+{"time": "2026-11-23 23:46:01 +0800", "stage": "training", "epoch": 2, "update": 110, "total_updates": 125, "mean_loss": 0.8683858015320518, "grad_norm": 3.000387191772461, "peak_mib": 4447}
+{"time": "2026-11-23 23:47:52 +0800", "stage": "training", "epoch": 2, "update": 120, "total_updates": 125, "mean_loss": 0.8625411440928777, "grad_norm": 2.136906385421753, "peak_mib": 4447}
+{"time": "2026-11-23 23:48:46 +0800", "stage": "training", "epoch": 2, "update": 125, "total_updates": 125, "mean_loss": 0.8594730248451233, "grad_norm": 1.996120810508728, "peak_mib": 4447}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:08<00:00,  8.09s/it]Writing model shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:08<00:00,  8.09s/it]
+{"time": "2026-11-23 23:49:07 +0800", "stage": "development", "epoch": 2}
+{"time": "2026-11-23 23:50:00 +0800", "stage": "epoch_finished", "epoch": 2, "V_macro_exact": 0.38265508684863525}
+{"time": "2026-11-23 23:50:00 +0800", "stage": "training", "epoch": 3, "update": 0, "total_updates": 125}
+{"time": "2026-11-23 23:50:12 +0800", "stage": "training", "epoch": 3, "update": 1, "total_updates": 125, "mean_loss": 0.9223381876945496, "grad_norm": 2.2823948860168457, "peak_mib": 4447}
+{"time": "2026-11-23 23:50:23 +0800", "stage": "training", "epoch": 3, "update": 2, "total_updates": 125, "mean_loss": 0.8156283497810364, "grad_norm": 1.7715688943862915, "peak_mib": 4447}
+{"time": "2026-11-23 23:51:52 +0800", "stage": "training", "epoch": 3, "update": 10, "total_updates": 125, "mean_loss": 0.7752264559268951, "grad_norm": 2.432647466659546, "peak_mib": 4447}
+{"time": "2026-11-23 23:53:43 +0800", "stage": "training", "epoch": 3, "update": 20, "total_updates": 125, "mean_loss": 0.7629061996936798, "grad_norm": 3.120025634765625, "peak_mib": 4447}
+{"time": "2026-11-23 23:55:32 +0800", "stage": "training", "epoch": 3, "update": 30, "total_updates": 125, "mean_loss": 0.7760665059089661, "grad_norm": 1.781559705734253, "peak_mib": 4447}
+{"time": "2026-11-23 23:57:26 +0800", "stage": "training", "epoch": 3, "update": 40, "total_updates": 125, "mean_loss": 0.7750057980418206, "grad_norm": 3.2088706493377686, "peak_mib": 4447}
+{"time": "2026-11-23 23:59:19 +0800", "stage": "training", "epoch": 3, "update": 50, "total_updates": 125, "mean_loss": 0.7671047043800354, "grad_norm": 1.5683505535125732, "peak_mib": 4447}
+{"time": "2026-11-24 00:01:08 +0800", "stage": "training", "epoch": 3, "update": 60, "total_updates": 125, "mean_loss": 0.7708738108476003, "grad_norm": 1.7947338819503784, "peak_mib": 4449}
+{"time": "2026-11-24 00:03:00 +0800", "stage": "training", "epoch": 3, "update": 70, "total_updates": 125, "mean_loss": 0.763852516242436, "grad_norm": 1.6778455972671509, "peak_mib": 4449}
+{"time": "2026-11-24 00:04:51 +0800", "stage": "training", "epoch": 3, "update": 80, "total_updates": 125, "mean_loss": 0.7573854878544808, "grad_norm": 1.7694321870803833, "peak_mib": 4449}
+{"time": "2026-11-24 00:06:41 +0800", "stage": "training", "epoch": 3, "update": 90, "total_updates": 125, "mean_loss": 0.7546796255641514, "grad_norm": 2.3065428733825684, "peak_mib": 4449}
+{"time": "2026-11-24 00:08:33 +0800", "stage": "training", "epoch": 3, "update": 100, "total_updates": 125, "mean_loss": 0.7462058937549592, "grad_norm": 1.7253490686416626, "peak_mib": 4449}
+{"time": "2026-11-24 00:10:24 +0800", "stage": "training", "epoch": 3, "update": 110, "total_updates": 125, "mean_loss": 0.7407527365467765, "grad_norm": 1.4496362209320068, "peak_mib": 4449}
+{"time": "2026-11-24 00:12:13 +0800", "stage": "training", "epoch": 3, "update": 120, "total_updates": 125, "mean_loss": 0.7330958897868792, "grad_norm": 2.72532057762146, "peak_mib": 4449}
+{"time": "2026-11-24 00:13:08 +0800", "stage": "training", "epoch": 3, "update": 125, "total_updates": 125, "mean_loss": 0.7307874689102173, "grad_norm": 1.892785668373108, "peak_mib": 4449}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:06<00:00,  6.94s/it]Writing model shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:06<00:00,  6.94s/it]
+{"time": "2026-11-24 00:13:28 +0800", "stage": "development", "epoch": 3}
+{"time": "2026-11-24 00:14:20 +0800", "stage": "epoch_finished", "epoch": 3, "V_macro_exact": 0.3661287643729348}

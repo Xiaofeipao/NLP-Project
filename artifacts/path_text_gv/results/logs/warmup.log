@@ -1,0 +1,23 @@
+{"time": "2026-11-23 23:01:15 +0800", "stage": "loading", "epochs": [1]}
+W1123 23:01:15.098000 20496 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/282 [00:00<?, ?it/s]Loading weights:   7%|¨ƒ         | 20/282 [00:00<00:01, 198.97it/s]Loading weights:  21%|¨€¨€        | 59/282 [00:00<00:00, 307.47it/s]Loading weights:  38%|¨€¨€¨€¨‚      | 106/282 [00:00<00:00, 373.82it/s]Loading weights:  51%|¨€¨€¨€¨€¨€     | 144/282 [00:00<00:00, 360.12it/s]Loading weights:  64%|¨€¨€¨€¨€¨€¨€¨…   | 180/282 [00:00<00:00, 277.32it/s]Loading weights: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 282/282 [00:00<00:00, 464.66it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+{"time": "2026-11-23 23:01:16 +0800", "stage": "training", "epoch": 1, "update": 0, "total_updates": 125}
+{"time": "2026-11-23 23:01:28 +0800", "stage": "training", "epoch": 1, "update": 1, "total_updates": 125, "mean_loss": 5.532975196838379, "grad_norm": 55.956298828125, "peak_mib": 3813}
+{"time": "2026-11-23 23:01:40 +0800", "stage": "training", "epoch": 1, "update": 2, "total_updates": 125, "mean_loss": 4.110998630523682, "grad_norm": 14.072375297546387, "peak_mib": 4438}
+{"time": "2026-11-23 23:03:10 +0800", "stage": "training", "epoch": 1, "update": 10, "total_updates": 125, "mean_loss": 2.0975600719451903, "grad_norm": 4.199735164642334, "peak_mib": 4440}
+{"time": "2026-11-23 23:05:00 +0800", "stage": "training", "epoch": 1, "update": 20, "total_updates": 125, "mean_loss": 1.6817905187606812, "grad_norm": 3.9801025390625, "peak_mib": 4443}
+{"time": "2026-11-23 23:06:49 +0800", "stage": "training", "epoch": 1, "update": 30, "total_updates": 125, "mean_loss": 1.4783978144327798, "grad_norm": 3.9545321464538574, "peak_mib": 4444}
+{"time": "2026-11-23 23:08:40 +0800", "stage": "training", "epoch": 1, "update": 40, "total_updates": 125, "mean_loss": 1.373874481022358, "grad_norm": 3.8825299739837646, "peak_mib": 4447}
+{"time": "2026-11-23 23:10:33 +0800", "stage": "training", "epoch": 1, "update": 50, "total_updates": 125, "mean_loss": 1.3098222422599792, "grad_norm": 2.193784713745117, "peak_mib": 4449}
+{"time": "2026-11-23 23:12:21 +0800", "stage": "training", "epoch": 1, "update": 60, "total_updates": 125, "mean_loss": 1.266862972577413, "grad_norm": 3.543038845062256, "peak_mib": 4449}
+{"time": "2026-11-23 23:14:12 +0800", "stage": "training", "epoch": 1, "update": 70, "total_updates": 125, "mean_loss": 1.22628635934421, "grad_norm": 1.989389181137085, "peak_mib": 4449}
+{"time": "2026-11-23 23:16:04 +0800", "stage": "training", "epoch": 1, "update": 80, "total_updates": 125, "mean_loss": 1.2013810023665428, "grad_norm": 3.5556726455688477, "peak_mib": 4449}
+{"time": "2026-11-23 23:17:54 +0800", "stage": "training", "epoch": 1, "update": 90, "total_updates": 125, "mean_loss": 1.175397225883272, "grad_norm": 2.3342106342315674, "peak_mib": 4449}
+{"time": "2026-11-23 23:19:43 +0800", "stage": "training", "epoch": 1, "update": 100, "total_updates": 125, "mean_loss": 1.1558547669649124, "grad_norm": 2.273458242416382, "peak_mib": 4449}
+{"time": "2026-11-23 23:21:35 +0800", "stage": "training", "epoch": 1, "update": 110, "total_updates": 125, "mean_loss": 1.1359941878102042, "grad_norm": 5.516064167022705, "peak_mib": 4449}
+{"time": "2026-11-23 23:23:26 +0800", "stage": "training", "epoch": 1, "update": 120, "total_updates": 125, "mean_loss": 1.1213229407866796, "grad_norm": 2.0372672080993652, "peak_mib": 4452}
+{"time": "2026-11-23 23:24:19 +0800", "stage": "training", "epoch": 1, "update": 125, "total_updates": 125, "mean_loss": 1.111654242515564, "grad_norm": 2.1790733337402344, "peak_mib": 4452}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:07<00:00,  7.51s/it]Writing model shards: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 1/1 [00:07<00:00,  7.51s/it]
+{"time": "2026-11-23 23:24:39 +0800", "stage": "development", "epoch": 1}
+{"time": "2026-11-23 23:25:28 +0800", "stage": "epoch_finished", "epoch": 1, "V_macro_exact": 0.09470450751252087}
