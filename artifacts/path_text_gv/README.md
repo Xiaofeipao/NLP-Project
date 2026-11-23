@@ -22,23 +22,19 @@
 
 末步测试以金标截取合法前缀及待判末步。整路测试要求模型在一次生成中自己报出首错。固定地图、路径长度及末动作，仅改变历史时，七个正式检查点中最高成绩为字段加权第 3 轮的 2/171 对两条均答对。三组在 40 条 G/V 联合开发题上各得 0/40。G 提议下一步，V 报合法未到就继续，报到达、撞墙、越界或给出错误格式则停止。每题最多生成 24 步。这次没有回撤或重试。原始训练与测试日志见 [results/logs/](results/logs/)。
 
-## 下载完整权重
+## 原始运行结果
 
-权重正在上传至 Git LFS。当前提交包含检查点目录、运行配置、分词器和 SHA-256 记录。
+87 个运行文件已逐个与台式机上的原件做 SHA-256 核对。[核对清单](results/desktop_results_sha256.json)
 
-模型目录包含 Hugging Face 配置、分词器、完整 `model.safetensors` 和对应的 SHA-256。分支保存 [共同第 1 轮](results/warmup/epoch1/model/)、字段加权 [第 2 轮](results/field/epoch2/model/) 和 [第 3 轮](results/field/epoch3/model/)、DPO [第 2 轮](results/dpo/epoch2/model/) 和 [第 3 轮](results/dpo/epoch3/model/)、MRT [第 2 轮](results/mrt/epoch2/model/) 和 [第 3 轮](results/mrt/epoch3/model/)，以及 [烟雾测试](results/smoke/weights/) 权重。每个权重 990,345,064 字节。发布的是推理检查点，优化器中间状态留在训练机。
+- [字段加权](results/field/) · [DPO](results/dpo/) · [MRT](results/mrt/) 保存每轮的指标、混淆矩阵、历史对照和模型原始答复。
+- [正式测试](results/final_eval/) 保存三组的单错、双错和联合生成逐题结果，以及测试前选模记录。
+- [训练日志](results/logs/) · [DPO 参考分数](results/dpo/dpo_reference.json) · [MRT 第 2 轮候选](results/mrt/mrt_proposals_epoch2.jsonl) · [MRT 第 3 轮候选](results/mrt/mrt_proposals_epoch3.jsonl) · [烟雾测试](results/smoke/) 保存运行过程明细。
+- 检查点目录保留配置、分词器和权重 SHA-256。模型权重和优化器状态留在台式机上。
 
-安装 Git LFS 后，可以只下载选中的权重。例如在 PowerShell 中下载字段加权第 2 轮。
+## 复现实验
 
-```powershell
-$env:GIT_LFS_SKIP_SMUDGE='1'
-git clone --branch Luck --single-branch https://github.com/Xiaofeipao/NLP-Project.git
-Set-Location NLP-Project
-git lfs pull --include="artifacts/path_text_gv/results/field/epoch2/model/model.safetensors"
-```
-
-使用 `AutoModelForSeq2SeqLM.from_pretrained` 和 `AutoTokenizer.from_pretrained` 读取该模型目录。本次训练使用 Python 3.12.10、PyTorch 2.11.0+cu128、Transformers 5.20.0、Tokenizers 0.23.3 和 Safetensors 0.8.0。若从基座复跑，可在支持 CUDA BF16 的 Windows 环境下，用冻结的 Flan-T5-base 原模型目录运行以下命令。基座 revision 是 `7bcac572ce56db69c1ea7c8af255c5d7c9672fc2`，使用 `settings.json` 和 `manifest.json` 核对模型与 tokenizer 哈希。
+本次训练使用 Python 3.12.10、PyTorch 2.11.0+cu128、Transformers 5.20.0、Tokenizers 0.23.3 和 Safetensors 0.8.0。若从基座复跑，可在支持 CUDA BF16 的 Windows 环境下，用冻结的 Flan-T5-base 原模型目录运行以下命令。基座 revision 是 `7bcac572ce56db69c1ea7c8af255c5d7c9672fc2`，使用 `settings.json` 和 `manifest.json` 核对模型与 tokenizer 哈希。
 
 ```powershell
-python artifacts/path_text_gv/code/run_serial.py --root artifacts/path_text_gv --base <Flan-T5-base本地目录>
+python artifacts/path_text_gv/code/run_serial.py --root artifacts/path_text_gv --base "D:/models/flan-t5-base"
 ```

@@ -42,6 +42,5 @@ artifacts/flan_swap64_ab/models/shared4000-epoch3/model-00027-of-00028.safetenso
 artifacts/flan_swap64_ab/models/shared4000-epoch3/model-00028-of-00028.safetensors -filter binary
 data/random_errors_20261123/** whitespace=cr-at-eol
 
-# Preserve frozen experiment files and store complete model checkpoints in Git LFS.
+# Preserve frozen experiment files.
 artifacts/path_text_gv/** -text whitespace=cr-at-eol
-artifacts/path_text_gv/results/**/model.safetensors filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,11 @@
+{
+  "stamp": "smoke-v1",
+  "gaps": {
+    "train-a9630413f51fcf1152a1cf41-V-right": 26.245363235473633,
+    "train-4d222b7cf61f2a71d630c4e6-V-up": -6.098026275634766,
+    "train-7bdb903c714f09c5059aea12-V-up": 1.822641372680664,
+    "train-37bea282382c10b1c190ce6f-V-backward": -2.1878738403320312,
+    "train-7bdb903c714f09c5059aea12-V-down": 0.05275535583496094,
+    "train-82f614ea8f4d5f1a84fec1d2-V-down": 7.508672714233398
+  }
+}
