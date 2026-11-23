@@ -37,3 +37,7 @@ data/step_*/** whitespace=cr-at-eol
 artifacts/flan_swap64_ab/models/*/*.json -text whitespace=cr-at-eol
 artifacts/flan_swap64_ab/evaluation/*.jsonl -text whitespace=cr-at-eol
 artifacts/flan_swap64_ab/models/*/model.safetensors filter=lfs diff=lfs merge=lfs -text
+artifacts/flan_swap64_ab/models/shared4000-epoch3/model-*.safetensors filter=lfs diff=lfs merge=lfs -text
+artifacts/flan_swap64_ab/models/shared4000-epoch3/model-00027-of-00028.safetensors -filter binary
+artifacts/flan_swap64_ab/models/shared4000-epoch3/model-00028-of-00028.safetensors -filter binary
+data/random_errors_20261123/** whitespace=cr-at-eol

@@ -1,0 +1,95 @@
+{
+  "single_error_200": {
+    "rows": 200,
+    "independent_event_audits_passed": 200,
+    "strict_project_and_official_adapter_passed": 200,
+    "first_error_counts": {
+      "out_of_bounds": 50,
+      "invalid_action_token": 50,
+      "obstacle_collision": 50,
+      "goal_not_reached": 50
+    },
+    "candidate_lengths": {
+      "1": 20,
+      "2": 15,
+      "3": 3,
+      "4": 53,
+      "5": 21,
+      "6": 21,
+      "7": 16,
+      "8": 10,
+      "9": 9,
+      "10": 6,
+      "11": 3,
+      "12": 5,
+      "13": 3,
+      "14": 7,
+      "15": 4,
+      "17": 1,
+      "18": 2,
+      "20": 1
+    },
+    "first_error_steps": {
+      "1": 25,
+      "2": 44,
+      "3": 39,
+      "4": 26,
+      "5": 16,
+      "6": 16,
+      "7": 8,
+      "8": 3,
+      "9": 6,
+      "10": 6,
+      "11": 3,
+      "13": 3,
+      "14": 1,
+      "15": 2,
+      "17": 2
+    }
+  },
+  "double_error_200": {
+    "rows": 200,
+    "independent_event_audits_passed": 200,
+    "strict_project_and_official_adapter_passed": 200,
+    "first_error_counts": {
+      "out_of_bounds": 65,
+      "invalid_action_token": 67,
+      "obstacle_collision": 68
+    },
+    "candidate_lengths": {
+      "3": 39,
+      "4": 10,
+      "5": 38,
+      "6": 29,
+      "7": 22,
+      "8": 19,
+      "9": 7,
+      "10": 9,
+      "11": 5,
+      "12": 3,
+      "13": 6,
+      "14": 3,
+      "15": 4,
+      "16": 2,
+      "19": 1,
+      "21": 3
+    },
+    "first_error_steps": {
+      "1": 77,
+      "2": 49,
+      "3": 34,
+      "4": 12,
+      "5": 11,
+      "6": 7,
+      "7": 4,
+      "8": 2,
+      "9": 1,
+      "10": 2,
+      "11": 1
+    }
+  },
+  "unique_layouts": 400,
+  "latest_paired_layout_overlap": 0,
+  "latest_paired_states_sha256": "af5c5d8834e88a8d186ddeb1b7d7a2bb6baff49b8d0fdb6a56a3f80ad9a78cd0",
+  "unknown_token_note": "Strict project extension; upstream executor ignores unknown tokens, so unknown-token labels come from project semantics."
+}

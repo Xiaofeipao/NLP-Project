@@ -1,0 +1,88 @@
+{
+  "checkpoint": "sha256:ec0a32e70a724f6a7fd572235f8a64c7ff5b803eefa5c6461db5e2e870ce2a66",
+  "development_predictions_replayed": 100,
+  "evaluator_sha256": "535cf74e52a8f9594c0d1f5dcd57e4766f67fe52a793f1b79cc67f4419f64680",
+  "goal_check": true,
+  "input_lengths": {
+    "evaluation_limit": 133,
+    "max_test_tokens": 133,
+    "training_limit": 128,
+    "truncated": 0,
+    "unique_inputs_above_training_limit": 58
+  },
+  "partitions": {
+    "double": {
+      "G_reaches_goal": 43,
+      "G_shortest_first": 119,
+      "confusion": {
+        "invalid_action_token": {
+          "invalid_action_token": 42,
+          "obstacle_collision": 9,
+          "out_of_bounds": 15,
+          "valid": 1
+        },
+        "obstacle_collision": {
+          "goal_not_reached": 10,
+          "invalid_action_token": 1,
+          "obstacle_collision": 31,
+          "out_of_bounds": 20,
+          "valid": 6
+        },
+        "out_of_bounds": {
+          "obstacle_collision": 13,
+          "out_of_bounds": 52
+        }
+      },
+      "detected_invalid": 193,
+      "first_position": 104,
+      "first_type": 125,
+      "first_type_and_position": 95,
+      "format_ok": 200,
+      "rows": 200
+    },
+    "single": {
+      "G_reaches_goal": 67,
+      "G_shortest_first": 147,
+      "confusion": {
+        "goal_not_reached": {
+          "goal_not_reached": 26,
+          "obstacle_collision": 9,
+          "out_of_bounds": 15
+        },
+        "invalid_action_token": {
+          "goal_not_reached": 1,
+          "invalid_action_token": 22,
+          "obstacle_collision": 12,
+          "out_of_bounds": 15
+        },
+        "obstacle_collision": {
+          "goal_not_reached": 2,
+          "obstacle_collision": 15,
+          "out_of_bounds": 22,
+          "valid": 11
+        },
+        "out_of_bounds": {
+          "obstacle_collision": 12,
+          "out_of_bounds": 38
+        }
+      },
+      "detected_invalid": 189,
+      "first_position": 79,
+      "first_type": 101,
+      "first_type_and_position": 76,
+      "format_ok": 200,
+      "rows": 200
+    }
+  },
+  "precision": "bfloat16",
+  "test_commit": "123bf5a1db4da2a676d4a83cf80974a888cd11db",
+  "unique_verifier_inputs": 2563,
+  "verdict_token_ids": [
+    3982,
+    22820,
+    91,
+    17070,
+    1288
+  ],
+  "weights_sha256": "ec0a32e70a724f6a7fd572235f8a64c7ff5b803eefa5c6461db5e2e870ce2a66"
+}

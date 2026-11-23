@@ -1,0 +1,418 @@
+{
+  "audit": "Output and source row IDs, target fields, other actions, BFS masks, example origin and split are excluded from rendered text. The five label names occur in the same output instruction in each V prompt. Shortcut counts from lookup on train, applied to frozen dev without fitting.",
+  "data_manifest": "fdd9a59e2463f1b2d16318932de1b49b4d6a70a3833145b222077dfcef840865",
+  "lookup_baselines": {
+    "dev": {
+      "action_and_wall_count": {
+        "correct": 30,
+        "macro_f1": 0.2061,
+        "n": 100,
+        "precision_counts": {
+          "goal_not_reached": [
+            20,
+            90
+          ],
+          "invalid_action_token": [
+            10,
+            10
+          ],
+          "obstacle_collision": [
+            0,
+            0
+          ],
+          "out_of_bounds": [
+            0,
+            0
+          ],
+          "valid": [
+            0,
+            0
+          ]
+        },
+        "recall_counts": {
+          "goal_not_reached": [
+            20,
+            20
+          ],
+          "invalid_action_token": [
+            10,
+            20
+          ],
+          "obstacle_collision": [
+            0,
+            20
+          ],
+          "out_of_bounds": [
+            0,
+            20
+          ],
+          "valid": [
+            0,
+            20
+          ]
+        }
+      },
+      "action_only": {
+        "correct": 30,
+        "macro_f1": 0.2061,
+        "n": 100,
+        "precision_counts": {
+          "goal_not_reached": [
+            20,
+            90
+          ],
+          "invalid_action_token": [
+            10,
+            10
+          ],
+          "obstacle_collision": [
+            0,
+            0
+          ],
+          "out_of_bounds": [
+            0,
+            0
+          ],
+          "valid": [
+            0,
+            0
+          ]
+        },
+        "recall_counts": {
+          "goal_not_reached": [
+            20,
+            20
+          ],
+          "invalid_action_token": [
+            10,
+            20
+          ],
+          "obstacle_collision": [
+            0,
+            20
+          ],
+          "out_of_bounds": [
+            0,
+            20
+          ],
+          "valid": [
+            0,
+            20
+          ]
+        }
+      },
+      "constant_template": {
+        "correct": 20,
+        "macro_f1": 0.0667,
+        "n": 100,
+        "precision_counts": {
+          "goal_not_reached": [
+            20,
+            100
+          ],
+          "invalid_action_token": [
+            0,
+            0
+          ],
+          "obstacle_collision": [
+            0,
+            0
+          ],
+          "out_of_bounds": [
+            0,
+            0
+          ],
+          "valid": [
+            0,
+            0
+          ]
+        },
+        "recall_counts": {
+          "goal_not_reached": [
+            20,
+            20
+          ],
+          "invalid_action_token": [
+            0,
+            20
+          ],
+          "obstacle_collision": [
+            0,
+            20
+          ],
+          "out_of_bounds": [
+            0,
+            20
+          ],
+          "valid": [
+            0,
+            20
+          ]
+        }
+      },
+      "format_only": {
+        "correct": 22,
+        "macro_f1": 0.1042,
+        "n": 100,
+        "precision_counts": {
+          "goal_not_reached": [
+            20,
+            98
+          ],
+          "invalid_action_token": [
+            2,
+            2
+          ],
+          "obstacle_collision": [
+            0,
+            0
+          ],
+          "out_of_bounds": [
+            0,
+            0
+          ],
+          "valid": [
+            0,
+            0
+          ]
+        },
+        "recall_counts": {
+          "goal_not_reached": [
+            20,
+            20
+          ],
+          "invalid_action_token": [
+            2,
+            20
+          ],
+          "obstacle_collision": [
+            0,
+            20
+          ],
+          "out_of_bounds": [
+            0,
+            20
+          ],
+          "valid": [
+            0,
+            20
+          ]
+        }
+      }
+    },
+    "train": {
+      "action_and_wall_count": {
+        "correct": 9971,
+        "macro_f1": 0.3497,
+        "n": 16400,
+        "precision_counts": {
+          "goal_not_reached": [
+            9571,
+            16000
+          ],
+          "invalid_action_token": [
+            400,
+            400
+          ],
+          "obstacle_collision": [
+            0,
+            0
+          ],
+          "out_of_bounds": [
+            0,
+            0
+          ],
+          "valid": [
+            0,
+            0
+          ]
+        },
+        "recall_counts": {
+          "goal_not_reached": [
+            9571,
+            9571
+          ],
+          "invalid_action_token": [
+            400,
+            400
+          ],
+          "obstacle_collision": [
+            0,
+            2323
+          ],
+          "out_of_bounds": [
+            0,
+            2767
+          ],
+          "valid": [
+            0,
+            1339
+          ]
+        }
+      },
+      "action_only": {
+        "correct": 9971,
+        "macro_f1": 0.3497,
+        "n": 16400,
+        "precision_counts": {
+          "goal_not_reached": [
+            9571,
+            16000
+          ],
+          "invalid_action_token": [
+            400,
+            400
+          ],
+          "obstacle_collision": [
+            0,
+            0
+          ],
+          "out_of_bounds": [
+            0,
+            0
+          ],
+          "valid": [
+            0,
+            0
+          ]
+        },
+        "recall_counts": {
+          "goal_not_reached": [
+            9571,
+            9571
+          ],
+          "invalid_action_token": [
+            400,
+            400
+          ],
+          "obstacle_collision": [
+            0,
+            2323
+          ],
+          "out_of_bounds": [
+            0,
+            2767
+          ],
+          "valid": [
+            0,
+            1339
+          ]
+        }
+      },
+      "constant_template": {
+        "correct": 9571,
+        "macro_f1": 0.1474,
+        "n": 16400,
+        "precision_counts": {
+          "goal_not_reached": [
+            9571,
+            16400
+          ],
+          "invalid_action_token": [
+            0,
+            0
+          ],
+          "obstacle_collision": [
+            0,
+            0
+          ],
+          "out_of_bounds": [
+            0,
+            0
+          ],
+          "valid": [
+            0,
+            0
+          ]
+        },
+        "recall_counts": {
+          "goal_not_reached": [
+            9571,
+            9571
+          ],
+          "invalid_action_token": [
+            0,
+            400
+          ],
+          "obstacle_collision": [
+            0,
+            2323
+          ],
+          "out_of_bounds": [
+            0,
+            2767
+          ],
+          "valid": [
+            0,
+            1339
+          ]
+        }
+      },
+      "format_only": {
+        "correct": 9671,
+        "macro_f1": 0.228,
+        "n": 16400,
+        "precision_counts": {
+          "goal_not_reached": [
+            9571,
+            16300
+          ],
+          "invalid_action_token": [
+            100,
+            100
+          ],
+          "obstacle_collision": [
+            0,
+            0
+          ],
+          "out_of_bounds": [
+            0,
+            0
+          ],
+          "valid": [
+            0,
+            0
+          ]
+        },
+        "recall_counts": {
+          "goal_not_reached": [
+            9571,
+            9571
+          ],
+          "invalid_action_token": [
+            100,
+            400
+          ],
+          "obstacle_collision": [
+            0,
+            2323
+          ],
+          "out_of_bounds": [
+            0,
+            2767
+          ],
+          "valid": [
+            0,
+            1339
+          ]
+        }
+      }
+    }
+  },
+  "one_v_renderer": true,
+  "ordered_four_direction_patterns": 123,
+  "real_candidates_per_state": 4,
+  "regular_action_splits_unfinished": {
+    "legal_nonshortest": 5647,
+    "shortest": 3924
+  },
+  "same_state_distinct_physical_outcomes": {
+    "1": 353,
+    "2": 1786,
+    "3": 1744,
+    "4": 117
+  },
+  "states_identical_G_V_context": 4000,
+  "unique_G_prompts": 4000,
+  "unique_V_prompts": 16400
+}

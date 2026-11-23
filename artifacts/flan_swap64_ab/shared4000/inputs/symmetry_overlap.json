@@ -1,0 +1,26 @@
+{
+  "double": {
+    "new": {
+      "exact_state_action_overlap": 0,
+      "symmetric_layout_classes_shared": 1,
+      "symmetric_state_action_classes_shared": 0
+    },
+    "original": {
+      "exact_state_action_overlap": 0,
+      "symmetric_layout_classes_shared": 1,
+      "symmetric_state_action_classes_shared": 0
+    }
+  },
+  "single": {
+    "new": {
+      "exact_state_action_overlap": 0,
+      "symmetric_layout_classes_shared": 2,
+      "symmetric_state_action_classes_shared": 0
+    },
+    "original": {
+      "exact_state_action_overlap": 0,
+      "symmetric_layout_classes_shared": 2,
+      "symmetric_state_action_classes_shared": 0
+    }
+  }
+}

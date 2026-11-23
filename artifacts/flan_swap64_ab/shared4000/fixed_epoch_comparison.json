@@ -1,0 +1,138 @@
+{
+  "new": {
+    "relative_scores": "new/scores.json",
+    "partitions": {
+      "double": {
+        "G_reaches_goal": 113,
+        "G_shortest_first": 155,
+        "confusion": {
+          "invalid_action_token": {
+            "invalid_action_token": 35,
+            "obstacle_collision": 31,
+            "out_of_bounds": 1
+          },
+          "obstacle_collision": {
+            "goal_not_reached": 1,
+            "invalid_action_token": 1,
+            "obstacle_collision": 64,
+            "out_of_bounds": 2
+          },
+          "out_of_bounds": {
+            "obstacle_collision": 26,
+            "out_of_bounds": 39
+          }
+        },
+        "detected_invalid": 200,
+        "first_position": 98,
+        "first_type": 138,
+        "first_type_and_position": 95,
+        "format_ok": 200,
+        "rows": 200
+      },
+      "single": {
+        "G_reaches_goal": 115,
+        "G_shortest_first": 155,
+        "confusion": {
+          "goal_not_reached": {
+            "goal_not_reached": 14,
+            "obstacle_collision": 34,
+            "out_of_bounds": 2
+          },
+          "invalid_action_token": {
+            "goal_not_reached": 1,
+            "invalid_action_token": 22,
+            "obstacle_collision": 26,
+            "out_of_bounds": 1
+          },
+          "obstacle_collision": {
+            "goal_not_reached": 1,
+            "obstacle_collision": 47,
+            "out_of_bounds": 1,
+            "valid": 1
+          },
+          "out_of_bounds": {
+            "obstacle_collision": 29,
+            "out_of_bounds": 21
+          }
+        },
+        "detected_invalid": 199,
+        "first_position": 64,
+        "first_type": 104,
+        "first_type_and_position": 63,
+        "format_ok": 200,
+        "rows": 200
+      }
+    },
+    "checkpoint": "artifacts/flan_swap64_ab/models/shared4000-epoch3",
+    "sha256": "7aa340c4de21616a2cc506ebd4e6dbe49153ac74d656224ed6ae38ac467740df"
+  },
+  "original": {
+    "relative_scores": "original_epoch3/scores.json",
+    "partitions": {
+      "double": {
+        "G_reaches_goal": 43,
+        "G_shortest_first": 119,
+        "confusion": {
+          "invalid_action_token": {
+            "invalid_action_token": 42,
+            "obstacle_collision": 9,
+            "out_of_bounds": 15,
+            "valid": 1
+          },
+          "obstacle_collision": {
+            "goal_not_reached": 10,
+            "invalid_action_token": 1,
+            "obstacle_collision": 31,
+            "out_of_bounds": 20,
+            "valid": 6
+          },
+          "out_of_bounds": {
+            "obstacle_collision": 13,
+            "out_of_bounds": 52
+          }
+        },
+        "detected_invalid": 193,
+        "first_position": 104,
+        "first_type": 125,
+        "first_type_and_position": 95,
+        "format_ok": 200,
+        "rows": 200
+      },
+      "single": {
+        "G_reaches_goal": 67,
+        "G_shortest_first": 147,
+        "confusion": {
+          "goal_not_reached": {
+            "goal_not_reached": 26,
+            "obstacle_collision": 9,
+            "out_of_bounds": 15
+          },
+          "invalid_action_token": {
+            "goal_not_reached": 1,
+            "invalid_action_token": 22,
+            "obstacle_collision": 12,
+            "out_of_bounds": 15
+          },
+          "obstacle_collision": {
+            "goal_not_reached": 2,
+            "obstacle_collision": 15,
+            "out_of_bounds": 22,
+            "valid": 11
+          },
+          "out_of_bounds": {
+            "obstacle_collision": 12,
+            "out_of_bounds": 38
+          }
+        },
+        "detected_invalid": 189,
+        "first_position": 79,
+        "first_type": 101,
+        "first_type_and_position": 76,
+        "format_ok": 200,
+        "rows": 200
+      }
+    },
+    "checkpoint": "sha256:ec0a32e70a724f6a7fd572235f8a64c7ff5b803eefa5c6461db5e2e870ce2a66",
+    "sha256": "ec0a32e70a724f6a7fd572235f8a64c7ff5b803eefa5c6461db5e2e870ce2a66"
+  }
+}

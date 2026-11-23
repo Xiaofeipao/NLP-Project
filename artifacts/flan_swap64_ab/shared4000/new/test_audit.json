@@ -1,0 +1,41 @@
+{
+  "commit": "123bf5a1db4da2a676d4a83cf80974a888cd11db",
+  "distinct_layouts": 400,
+  "executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+  "partitions": {
+    "double": {
+      "file_sha256": "68340c517e9a4d3d20d74ba9bccd78b175bc06d2a2adad75330d5200237c563d",
+      "first_reasons": {
+        "invalid_action_token": 67,
+        "obstacle_collision": 68,
+        "out_of_bounds": 65
+      },
+      "pairs": {
+        "goal_not_reached+invalid_action_token": 22,
+        "goal_not_reached+obstacle_collision": 22,
+        "goal_not_reached+out_of_bounds": 23,
+        "invalid_action_token+invalid_action_token": 22,
+        "invalid_action_token+obstacle_collision": 22,
+        "invalid_action_token+out_of_bounds": 22,
+        "obstacle_collision+obstacle_collision": 23,
+        "obstacle_collision+out_of_bounds": 22,
+        "out_of_bounds+out_of_bounds": 22
+      },
+      "rows": 200,
+      "valid_controls": 0
+    },
+    "single": {
+      "file_sha256": "18020e883bb5eb0e91d2039393f741816b73b378ff245cb36d8a1449e02a347d",
+      "first_reasons": {
+        "goal_not_reached": 50,
+        "invalid_action_token": 50,
+        "obstacle_collision": 50,
+        "out_of_bounds": 50
+      },
+      "pairs": {},
+      "rows": 200,
+      "valid_controls": 0
+    }
+  },
+  "train_dev_layout_overlap": 0
+}

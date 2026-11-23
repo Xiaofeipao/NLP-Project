@@ -1,0 +1,10 @@
+{
+  "epoch": 3,
+  "rank": [
+    "dev_binary_macro_f1",
+    "dev_first_error_position",
+    "dev_joint_type_and_position",
+    "earlier_epoch"
+  ],
+  "selected": "checkpoint-epoch-3"
+}

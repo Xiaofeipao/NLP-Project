@@ -1,0 +1,102 @@
+{
+  "additional_logged_state_pool": 6673,
+  "all_V": 16400,
+  "all_task_views": 20400,
+  "compass_verification": 16000,
+  "direction_by_label": {
+    "goal_not_reached": {
+      "down": 2474,
+      "left": 2347,
+      "right": 2327,
+      "up": 2423
+    },
+    "obstacle_collision": {
+      "down": 570,
+      "left": 573,
+      "right": 595,
+      "up": 585
+    },
+    "out_of_bounds": {
+      "down": 712,
+      "left": 646,
+      "right": 659,
+      "up": 750
+    },
+    "valid": {
+      "down": 244,
+      "left": 434,
+      "right": 419,
+      "up": 242
+    }
+  },
+  "direction_counts": {
+    "down": 4000,
+    "left": 4000,
+    "right": 4000,
+    "up": 4000
+  },
+  "from_logged_train_paths": 1746,
+  "from_original_formal_states": 2254,
+  "g_optimal_count": {
+    "1": 2747,
+    "2": 1243,
+    "3": 10
+  },
+  "generation": 4000,
+  "layout_overlap": {
+    "dev": 0,
+    "test_id": 0,
+    "test_ood": 0
+  },
+  "layouts": 652,
+  "lexical_by_word": {
+    "DOWN": 20,
+    "back": 20,
+    "backward": 20,
+    "dash": 20,
+    "east": 20,
+    "hop": 20,
+    "idle": 20,
+    "jump": 20,
+    "leap": 20,
+    "leftwards": 20,
+    "north": 20,
+    "rigt": 20,
+    "sidestep": 20,
+    "slide": 20,
+    "spin": 20,
+    "stay": 20,
+    "turn": 20,
+    "upward": 20,
+    "wait": 20,
+    "walk": 20
+  },
+  "lexical_verification": 400,
+  "max_input_tokens": 113,
+  "max_target_tokens": 7,
+  "observed_ordered_patterns": 123,
+  "same_state_label_pairs": {
+    "goal_not_reached+obstacle_collision": 1960,
+    "goal_not_reached+out_of_bounds": 2325,
+    "goal_not_reached+valid": 1338,
+    "obstacle_collision+out_of_bounds": 1014,
+    "obstacle_collision+valid": 450,
+    "out_of_bounds+valid": 633
+  },
+  "state_cases": 4000,
+  "v_label_counts": {
+    "goal_not_reached": 9571,
+    "invalid_action_token": 400,
+    "obstacle_collision": 2323,
+    "out_of_bounds": 2767,
+    "valid": 1339
+  },
+  "v_prompt_structures": 1,
+  "verifier_first_tokens": {
+    "goal_not_reached": 1288,
+    "invalid_action_token": 17070,
+    "obstacle_collision": 22820,
+    "out_of_bounds": 91,
+    "valid": 3982
+  }
+}

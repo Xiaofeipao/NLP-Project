@@ -1,0 +1,58 @@
+{
+  "all_four_correct": {
+    "double": 22,
+    "single": 31
+  },
+  "by_label": {
+    "goal_not_reached": {
+      "correct": 989,
+      "total": 990
+    },
+    "obstacle_collision": {
+      "correct": 1,
+      "total": 285
+    },
+    "out_of_bounds": {
+      "correct": 0,
+      "total": 275
+    },
+    "valid": {
+      "correct": 49,
+      "total": 50
+    }
+  },
+  "directions": 1600,
+  "pair_definition": "Within the same initial state, each unordered pair of distinct directions contributes once; both labels must be correct.",
+  "pairs": {
+    "double": {
+      "obstacle_collision": {
+        "correct": 1,
+        "total": 279
+      },
+      "out_of_bounds": {
+        "correct": 0,
+        "total": 314
+      },
+      "valid": {
+        "correct": 53,
+        "total": 53
+      }
+    },
+    "single": {
+      "obstacle_collision": {
+        "correct": 0,
+        "total": 281
+      },
+      "out_of_bounds": {
+        "correct": 0,
+        "total": 257
+      },
+      "valid": {
+        "correct": 47,
+        "total": 48
+      }
+    }
+  },
+  "states": 400,
+  "test_commit": "123bf5a1db4da2a676d4a83cf80974a888cd11db"
+}

@@ -1,0 +1,3 @@
+*.json -text whitespace=cr-at-eol
+*.jsonl -text whitespace=cr-at-eol
+original_safetensors_header.json -diff -text

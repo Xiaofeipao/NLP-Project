@@ -1,0 +1,28 @@
+{
+  "test_commit": "123bf5a1db4da2a676d4a83cf80974a888cd11db",
+  "original_checkpoint": {
+    "selected": "checkpoint-epoch-1",
+    "epoch": 1,
+    "rank": [
+      "binary_macro_f1",
+      "first_error_localization",
+      "joint_error"
+    ]
+  },
+  "original_training_manifest": "bdd2f5b4e99366ef32cb6f2a06dab89c2485617e4b6f0008d38ed0300ff1f94b",
+  "new_training_manifest": "fdd9a59e2463f1b2d16318932de1b49b4d6a70a3833145b222077dfcef840865",
+  "original_checkpoint_selection": "original A run, selected by development paths before test release",
+  "new_checkpoint_selection": "development binary macro F1, first-error position, joint accuracy, earlier epoch",
+  "base_weights": "1dfb70afdcedceb9f9fae2f9b68e004ad934361fb35b9b2bd50b45ea90790fc8",
+  "seed": 42,
+  "lr": 0.0001,
+  "effective_batch_states": 32,
+  "microbatch_views": 4,
+  "epochs": 3,
+  "goal_check": true,
+  "test_order": [
+    "new",
+    "original"
+  ],
+  "task_order": "all cases visit G and all four V actions"
+}

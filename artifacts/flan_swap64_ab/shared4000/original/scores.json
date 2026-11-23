@@ -1,0 +1,89 @@
+{
+  "checkpoint": "artifacts/flan_swap64_ab/models/A-epoch1",
+  "development_predictions_replayed": 100,
+  "evaluator_sha256": "535cf74e52a8f9594c0d1f5dcd57e4766f67fe52a793f1b79cc67f4419f64680",
+  "goal_check": true,
+  "input_lengths": {
+    "evaluation_limit": 133,
+    "max_test_tokens": 133,
+    "training_limit": 128,
+    "truncated": 0,
+    "unique_inputs_above_training_limit": 58
+  },
+  "partitions": {
+    "double": {
+      "G_reaches_goal": 16,
+      "G_shortest_first": 98,
+      "confusion": {
+        "invalid_action_token": {
+          "goal_not_reached": 1,
+          "invalid_action_token": 54,
+          "obstacle_collision": 9,
+          "out_of_bounds": 1,
+          "valid": 2
+        },
+        "obstacle_collision": {
+          "goal_not_reached": 34,
+          "invalid_action_token": 10,
+          "obstacle_collision": 1,
+          "out_of_bounds": 1,
+          "valid": 22
+        },
+        "out_of_bounds": {
+          "goal_not_reached": 34,
+          "invalid_action_token": 4,
+          "obstacle_collision": 3,
+          "valid": 24
+        }
+      },
+      "detected_invalid": 152,
+      "first_position": 62,
+      "first_type": 55,
+      "first_type_and_position": 51,
+      "format_ok": 200,
+      "rows": 200
+    },
+    "single": {
+      "G_reaches_goal": 10,
+      "G_shortest_first": 69,
+      "confusion": {
+        "goal_not_reached": {
+          "goal_not_reached": 50
+        },
+        "invalid_action_token": {
+          "goal_not_reached": 2,
+          "invalid_action_token": 33,
+          "obstacle_collision": 8,
+          "out_of_bounds": 2,
+          "valid": 5
+        },
+        "obstacle_collision": {
+          "goal_not_reached": 10,
+          "valid": 40
+        },
+        "out_of_bounds": {
+          "goal_not_reached": 13,
+          "out_of_bounds": 1,
+          "valid": 36
+        }
+      },
+      "detected_invalid": 119,
+      "first_position": 92,
+      "first_type": 84,
+      "first_type_and_position": 83,
+      "format_ok": 200,
+      "rows": 200
+    }
+  },
+  "precision": "bfloat16",
+  "test_commit": "123bf5a1db4da2a676d4a83cf80974a888cd11db",
+  "unique_verifier_inputs": 2563,
+  "verdict_token_ids": [
+    3982,
+    22820,
+    91,
+    17070,
+    1288
+  ],
+  "weights_sha256": "81325c48296046eabdb354e57619fcc84847024b46e5b4a160a47c124acb486e"
+}

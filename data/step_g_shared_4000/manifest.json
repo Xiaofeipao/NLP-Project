@@ -1,0 +1,18 @@
+{
+  "data_revision": "shared-4000-states-four-directions-v1",
+  "executor_sha256": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+  "parent_manifest_sha256": "bdd2f5b4e99366ef32cb6f2a06dab89c2485617e4b6f0008d38ed0300ff1f94b",
+  "schema": "ppnl-g-state-balanced-v1",
+  "seed": 42,
+  "sha256": {
+    "audit.json": "9639d3158e4844d634a56602262e9bd63c71b62959dc3ef597c8e6b20be5186e",
+    "dev.jsonl": "46331218bdab0c512d22bc2630c3b6b306fc2b1eb07356298babb4710380aa5e",
+    "diagnostics/g_dev_four.jsonl": "f1ea9071467c61923185566d25b0c95ee5862afc09d32205c13093c58d169a18",
+    "states.jsonl": "cda6af5146b8131a80c842ab2e54722b7a3209dc719272747460984a0fa0c78d",
+    "train.jsonl": "8251f891cc508e8a3490e3d4b0e53262a43ce27754bfdef7c34744a0782b3954"
+  },
+  "source_train_sha256": "d1212c424d5e1dcdc7d99fd0520ce9d28ab7ef292c7c5121a3dd4cc54d5842a2",
+  "state_cases": 4000,
+  "template_sha256": "62ae5ab00b02924b03981e80d031d542d3566f226f61588e1889858d884aa70a",
+  "tokenizer_sha256": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a"
+}
