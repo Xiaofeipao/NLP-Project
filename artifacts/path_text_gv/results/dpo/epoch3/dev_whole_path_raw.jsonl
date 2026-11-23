@@ -1,0 +1,100 @@
+{"id":"dev-verification-16","raw":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-37","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-66","raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-verification-75","raw":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-25","raw":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-83","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-86","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-41","raw":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-68","raw":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-46","raw":"right"}
+{"id":"dev-verification-97","raw":"right"}
+{"id":"dev-verification-91","raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-verification-70","raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-verification-22","raw":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-55","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-18","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-96","raw":"right"}
+{"id":"dev-verification-29","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-6","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-45","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-10","raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-verification-5","raw":"right"}
+{"id":"dev-verification-48","raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-verification-74","raw":"right"}
+{"id":"dev-verification-26","raw":"right"}
+{"id":"dev-verification-90","raw":"right"}
+{"id":"dev-verification-20","raw":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-42","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-35","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-14","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-40","raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-verification-60","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-31","raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-verification-94","raw":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-54","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-28","raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-verification-93","raw":"right"}
+{"id":"dev-verification-85","raw":"right"}
+{"id":"dev-verification-67","raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-verification-15","raw":"right"}
+{"id":"dev-verification-89","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-65","raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-verification-58","raw":"right"}
+{"id":"dev-verification-78","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-61","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-82","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-4","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-84","raw":"right"}
+{"id":"dev-verification-77","raw":"invalid | step=2 | reason=goal_not_reached"}
+{"id":"dev-verification-49","raw":"right"}
+{"id":"dev-verification-38","raw":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-32","raw":"right"}
+{"id":"dev-verification-63","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-23","raw":"right"}
+{"id":"dev-verification-76","raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-verification-79","raw":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-53","raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-verification-30","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-57","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-73","raw":"right"}
+{"id":"dev-verification-2","raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-verification-3","raw":"right"}
+{"id":"dev-verification-43","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-27","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-80","raw":"right"}
+{"id":"dev-verification-62","raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-verification-39","raw":"right"}
+{"id":"dev-verification-21","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-33","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-0","raw":"right"}
+{"id":"dev-verification-59","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-24","raw":"right"}
+{"id":"dev-verification-34","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-17","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-44","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-98","raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-verification-19","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-36","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-92","raw":"up"}
+{"id":"dev-verification-56","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-69","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-72","raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-verification-51","raw":"right"}
+{"id":"dev-verification-50","raw":"right"}
+{"id":"dev-verification-88","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-81","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-13","raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-verification-8","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-87","raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-verification-7","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-47","raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-verification-99","raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-verification-64","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-52","raw":"right"}
+{"id":"dev-verification-12","raw":"right"}
+{"id":"dev-verification-9","raw":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-verification-95","raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-71","raw":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-1","raw":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-11","raw":"invalid | step=2 | reason=out_of_bounds"}

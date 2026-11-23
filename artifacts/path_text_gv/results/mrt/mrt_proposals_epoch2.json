@@ -1,0 +1,12 @@
+{
+  "stamp": "18f5c5056983d18c724aa2ebac836806b05b7cfa7a84736b4908d030dbb3c35f5434dfa08625a48203a8b3265ad39c052c8b4f0b4356e90b91c372c734a4f5b6",
+  "sha256": "719df784256e8803d501fb03d11185668ce59a0f7809044ae06853238b1646a3",
+  "draws": 3,
+  "unique_candidates": {
+    "4": 11612,
+    "3": 4343,
+    "2": 434,
+    "1": 11
+  },
+  "zero_risk_only": 11
+}

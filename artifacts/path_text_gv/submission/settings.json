@@ -1,0 +1,29 @@
+{
+  "seed": 42,
+  "epochs_including_common": 3,
+  "update_cases": 32,
+  "microbatch": 4,
+  "lr": 0.0001,
+  "beta": 0.1,
+  "alpha": 0.1,
+  "draws": 3,
+  "proposals_batch": 8,
+  "gradient_clip": 1.0,
+  "weight_decay": 0.01,
+  "stage": "warmup",
+  "mode": "field",
+  "manifest_sha256": "5434dfa08625a48203a8b3265ad39c052c8b4f0b4356e90b91c372c734a4f5b6",
+  "device": "NVIDIA GeForce RTX 3050",
+  "effective_loss_mass": {
+    "G": 0.4999999999999588,
+    "out_of_bounds": 0.10000000000000128,
+    "goal_not_reached": 0.0999999999999969,
+    "valid": 0.09999999999999991,
+    "invalid_action_token": 0.10000000000000007,
+    "obstacle_collision": 0.10000000000000102
+  },
+  "common_epoch1": false,
+  "base_revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+  "base_model_sha256": "1dfb70afdcedceb9f9fae2f9b68e004ad934361fb35b9b2bd50b45ea90790fc8",
+  "initial_weights_sha256": "1dfb70afdcedceb9f9fae2f9b68e004ad934361fb35b9b2bd50b45ea90790fc8"
+}

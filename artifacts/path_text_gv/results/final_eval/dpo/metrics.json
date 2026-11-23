@@ -1,0 +1,500 @@
+{
+  "single": {
+    "whole_path": {
+      "n": 200,
+      "format": 0.99,
+      "exact": 0.09,
+      "binary_accuracy": 0.99,
+      "binary_f1_by_observed_class": {
+        "invalid": 0.9949748743718593
+      },
+      "binary_macro_f1": 0.9949748743718593,
+      "macro_exact": 0.09,
+      "class_macro_f1": 0.08403361344537816,
+      "invalid_n": 200,
+      "invalid_step": 0.165,
+      "invalid_reason": 0.2,
+      "invalid_step_reason": 0.09,
+      "classes": {
+        "out_of_bounds": {
+          "n": 50,
+          "exact": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "invalid_action_token": {
+          "n": 50,
+          "exact": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "obstacle_collision": {
+          "n": 50,
+          "exact": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "goal_not_reached": {
+          "n": 50,
+          "exact": 0.36,
+          "precision": 0.2127659574468085,
+          "recall": 0.8,
+          "f1": 0.33613445378151263
+        }
+      },
+      "confusion": {
+        "out_of_bounds": {
+          "goal_not_reached": 50
+        },
+        "invalid_action_token": {
+          "goal_not_reached": 49,
+          "malformed": 1
+        },
+        "obstacle_collision": {
+          "goal_not_reached": 49,
+          "malformed": 1
+        },
+        "goal_not_reached": {
+          "out_of_bounds": 10,
+          "goal_not_reached": 40
+        }
+      },
+      "exact_by_observed_input_actions": {
+        "1": {
+          "count": 20,
+          "exact": 0.0
+        },
+        "2": {
+          "count": 15,
+          "exact": 0.9333333333333333
+        },
+        "3": {
+          "count": 3,
+          "exact": 0.0
+        },
+        "4": {
+          "count": 53,
+          "exact": 0.05660377358490566
+        },
+        "5": {
+          "count": 21,
+          "exact": 0.047619047619047616
+        },
+        "6": {
+          "count": 21,
+          "exact": 0.0
+        },
+        "7": {
+          "count": 16,
+          "exact": 0.0
+        },
+        "8": {
+          "count": 10,
+          "exact": 0.0
+        },
+        "9": {
+          "count": 9,
+          "exact": 0.0
+        },
+        "10": {
+          "count": 6,
+          "exact": 0.0
+        },
+        "11": {
+          "count": 3,
+          "exact": 0.0
+        },
+        "12": {
+          "count": 5,
+          "exact": 0.0
+        },
+        "13": {
+          "count": 3,
+          "exact": 0.0
+        },
+        "14": {
+          "count": 7,
+          "exact": 0.0
+        },
+        "15": {
+          "count": 4,
+          "exact": 0.0
+        },
+        "17": {
+          "count": 1,
+          "exact": 0.0
+        },
+        "18": {
+          "count": 2,
+          "exact": 0.0
+        },
+        "20": {
+          "count": 1,
+          "exact": 0.0
+        }
+      }
+    },
+    "annotated_prefix": {
+      "n": 200,
+      "format": 0.99,
+      "exact": 0.105,
+      "binary_accuracy": 0.99,
+      "binary_f1_by_observed_class": {
+        "invalid": 0.9949748743718593
+      },
+      "binary_macro_f1": 0.9949748743718593,
+      "macro_exact": 0.10500000000000001,
+      "class_macro_f1": 0.09430946291560102,
+      "invalid_n": 200,
+      "invalid_step": 0.245,
+      "invalid_reason": 0.205,
+      "invalid_step_reason": 0.105,
+      "classes": {
+        "out_of_bounds": {
+          "n": 50,
+          "exact": 0.02,
+          "precision": 0.05555555555555555,
+          "recall": 0.02,
+          "f1": 0.029411764705882353
+        },
+        "invalid_action_token": {
+          "n": 50,
+          "exact": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "obstacle_collision": {
+          "n": 50,
+          "exact": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "goal_not_reached": {
+          "n": 50,
+          "exact": 0.4,
+          "precision": 0.2222222222222222,
+          "recall": 0.8,
+          "f1": 0.34782608695652173
+        }
+      },
+      "confusion": {
+        "out_of_bounds": {
+          "goal_not_reached": 48,
+          "malformed": 1,
+          "out_of_bounds": 1
+        },
+        "invalid_action_token": {
+          "out_of_bounds": 6,
+          "goal_not_reached": 44
+        },
+        "obstacle_collision": {
+          "goal_not_reached": 48,
+          "out_of_bounds": 1,
+          "malformed": 1
+        },
+        "goal_not_reached": {
+          "out_of_bounds": 10,
+          "goal_not_reached": 40
+        }
+      },
+      "exact_by_observed_input_actions": {
+        "1": {
+          "count": 45,
+          "exact": 0.022222222222222223
+        },
+        "2": {
+          "count": 39,
+          "exact": 0.358974358974359
+        },
+        "3": {
+          "count": 27,
+          "exact": 0.037037037037037035
+        },
+        "4": {
+          "count": 30,
+          "exact": 0.13333333333333333
+        },
+        "5": {
+          "count": 10,
+          "exact": 0.1
+        },
+        "6": {
+          "count": 17,
+          "exact": 0.0
+        },
+        "7": {
+          "count": 6,
+          "exact": 0.0
+        },
+        "8": {
+          "count": 4,
+          "exact": 0.0
+        },
+        "9": {
+          "count": 5,
+          "exact": 0.0
+        },
+        "10": {
+          "count": 7,
+          "exact": 0.0
+        },
+        "11": {
+          "count": 2,
+          "exact": 0.0
+        },
+        "13": {
+          "count": 3,
+          "exact": 0.0
+        },
+        "14": {
+          "count": 1,
+          "exact": 0.0
+        },
+        "15": {
+          "count": 2,
+          "exact": 0.0
+        },
+        "17": {
+          "count": 2,
+          "exact": 0.0
+        }
+      }
+    }
+  },
+  "double": {
+    "whole_path": {
+      "n": 200,
+      "format": 0.985,
+      "exact": 0.0,
+      "binary_accuracy": 0.985,
+      "binary_f1_by_observed_class": {
+        "invalid": 0.9924433249370277
+      },
+      "binary_macro_f1": 0.9924433249370277,
+      "macro_exact": 0.0,
+      "class_macro_f1": 0.0,
+      "invalid_n": 200,
+      "invalid_step": 0.055,
+      "invalid_reason": 0.0,
+      "invalid_step_reason": 0.0,
+      "classes": {
+        "out_of_bounds": {
+          "n": 65,
+          "exact": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "invalid_action_token": {
+          "n": 67,
+          "exact": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "obstacle_collision": {
+          "n": 68,
+          "exact": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "confusion": {
+        "out_of_bounds": {
+          "goal_not_reached": 63,
+          "malformed": 2
+        },
+        "invalid_action_token": {
+          "goal_not_reached": 67
+        },
+        "obstacle_collision": {
+          "goal_not_reached": 67,
+          "malformed": 1
+        }
+      },
+      "exact_by_observed_input_actions": {
+        "3": {
+          "count": 39,
+          "exact": 0.0
+        },
+        "4": {
+          "count": 10,
+          "exact": 0.0
+        },
+        "5": {
+          "count": 38,
+          "exact": 0.0
+        },
+        "6": {
+          "count": 29,
+          "exact": 0.0
+        },
+        "7": {
+          "count": 22,
+          "exact": 0.0
+        },
+        "8": {
+          "count": 19,
+          "exact": 0.0
+        },
+        "9": {
+          "count": 7,
+          "exact": 0.0
+        },
+        "10": {
+          "count": 9,
+          "exact": 0.0
+        },
+        "11": {
+          "count": 5,
+          "exact": 0.0
+        },
+        "12": {
+          "count": 3,
+          "exact": 0.0
+        },
+        "13": {
+          "count": 6,
+          "exact": 0.0
+        },
+        "14": {
+          "count": 3,
+          "exact": 0.0
+        },
+        "15": {
+          "count": 4,
+          "exact": 0.0
+        },
+        "16": {
+          "count": 2,
+          "exact": 0.0
+        },
+        "19": {
+          "count": 1,
+          "exact": 0.0
+        },
+        "21": {
+          "count": 3,
+          "exact": 0.0
+        }
+      }
+    },
+    "annotated_prefix": {
+      "n": 200,
+      "format": 0.99,
+      "exact": 0.07,
+      "binary_accuracy": 0.99,
+      "binary_f1_by_observed_class": {
+        "invalid": 0.9949748743718593
+      },
+      "binary_macro_f1": 0.9949748743718593,
+      "macro_exact": 0.0717948717948718,
+      "class_macro_f1": 0.09333333333333334,
+      "invalid_n": 200,
+      "invalid_step": 0.285,
+      "invalid_reason": 0.07,
+      "invalid_step_reason": 0.07,
+      "classes": {
+        "out_of_bounds": {
+          "n": 65,
+          "exact": 0.2153846153846154,
+          "precision": 0.4,
+          "recall": 0.2153846153846154,
+          "f1": 0.28
+        },
+        "invalid_action_token": {
+          "n": 67,
+          "exact": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "obstacle_collision": {
+          "n": 68,
+          "exact": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "confusion": {
+        "out_of_bounds": {
+          "goal_not_reached": 50,
+          "out_of_bounds": 14,
+          "malformed": 1
+        },
+        "invalid_action_token": {
+          "goal_not_reached": 59,
+          "out_of_bounds": 8
+        },
+        "obstacle_collision": {
+          "goal_not_reached": 54,
+          "out_of_bounds": 13,
+          "malformed": 1
+        }
+      },
+      "exact_by_observed_input_actions": {
+        "1": {
+          "count": 77,
+          "exact": 0.18181818181818182
+        },
+        "2": {
+          "count": 49,
+          "exact": 0.0
+        },
+        "3": {
+          "count": 34,
+          "exact": 0.0
+        },
+        "4": {
+          "count": 12,
+          "exact": 0.0
+        },
+        "5": {
+          "count": 11,
+          "exact": 0.0
+        },
+        "6": {
+          "count": 7,
+          "exact": 0.0
+        },
+        "7": {
+          "count": 4,
+          "exact": 0.0
+        },
+        "8": {
+          "count": 2,
+          "exact": 0.0
+        },
+        "9": {
+          "count": 1,
+          "exact": 0.0
+        },
+        "10": {
+          "count": 2,
+          "exact": 0.0
+        },
+        "11": {
+          "count": 1,
+          "exact": 0.0
+        }
+      }
+    }
+  },
+  "rollout_dev": {
+    "n": 40,
+    "cap": 24,
+    "stop": {
+      "out_of_bounds": 39,
+      "cap": 1
+    },
+    "generated_valid_and_whole_path_shortest": 0,
+    "shortest_success": 0.0
+  }
+}

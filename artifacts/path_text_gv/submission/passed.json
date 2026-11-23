@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "field": {
+      "V_gradient_norm": 67.98084259033203
+    },
+    "dpo": {
+      "V_gradient_norm": 2.7449045181274414
+    },
+    "mrt": {
+      "V_gradient_norm": 2.5867342948913574
+    },
+    "G_tie_grad": 69.27944946289062
+  },
+  "device": "NVIDIA GeForce RTX 3050",
+  "free_decode_reload_identical": true,
+  "full_sequence_logp_reload_bitwise_equal": true,
+  "dpo_preferences": {
+    "reason": 4986,
+    "status": 6461,
+    "step": 4953
+  },
+  "samples": 7,
+  "max_gpu_allocated_mib": 3216.9365234375
+}

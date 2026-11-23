@@ -1,0 +1,290 @@
+{
+  "G": {
+    "n": 200,
+    "optimal_next": 0.595
+  },
+  "V": {
+    "n": 820,
+    "format": 1.0,
+    "exact": 0.12560975609756098,
+    "binary_accuracy": 0.8158536585365853,
+    "binary_f1_by_observed_class": {
+      "valid": 0.2634146341463415,
+      "invalid": 0.894773519163763
+    },
+    "binary_macro_f1": 0.5790940766550523,
+    "macro_exact": 0.38265508684863525,
+    "class_macro_f1": 0.28290444985388447,
+    "invalid_n": 781,
+    "invalid_step": 0.2791293213828425,
+    "invalid_reason": 0.1267605633802817,
+    "invalid_step_reason": 0.0973111395646607,
+    "classes": {
+      "goal_not_reached": {
+        "n": 599,
+        "exact": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "valid": {
+        "n": 39,
+        "exact": 0.6923076923076923,
+        "precision": 0.16265060240963855,
+        "recall": 0.6923076923076923,
+        "f1": 0.2634146341463415
+      },
+      "out_of_bounds": {
+        "n": 100,
+        "exact": 0.45,
+        "precision": 0.1903114186851211,
+        "recall": 0.55,
+        "f1": 0.2827763496143959
+      },
+      "obstacle_collision": {
+        "n": 62,
+        "exact": 0.3709677419354839,
+        "precision": 0.09322033898305085,
+        "recall": 0.532258064516129,
+        "f1": 0.15865384615384615
+      },
+      "invalid_action_token": {
+        "n": 20,
+        "exact": 0.4,
+        "precision": 1.0,
+        "recall": 0.55,
+        "f1": 0.7096774193548387
+      }
+    },
+    "confusion": {
+      "goal_not_reached": {
+        "out_of_bounds": 209,
+        "obstacle_collision": 278,
+        "valid": 112
+      },
+      "valid": {
+        "obstacle_collision": 10,
+        "valid": 27,
+        "out_of_bounds": 2
+      },
+      "out_of_bounds": {
+        "valid": 19,
+        "out_of_bounds": 55,
+        "obstacle_collision": 26
+      },
+      "obstacle_collision": {
+        "obstacle_collision": 33,
+        "out_of_bounds": 21,
+        "valid": 8
+      },
+      "invalid_action_token": {
+        "obstacle_collision": 7,
+        "invalid_action_token": 11,
+        "out_of_bounds": 2
+      }
+    }
+  },
+  "changed_direction": {
+    "goal_not_reached/valid": {
+      "n": 87,
+      "both_exact": 0.0
+    },
+    "goal_not_reached/out_of_bounds": {
+      "n": 248,
+      "both_exact": 0.0
+    },
+    "obstacle_collision/valid": {
+      "n": 12,
+      "both_exact": 0.4166666666666667
+    },
+    "goal_not_reached/obstacle_collision": {
+      "n": 144,
+      "both_exact": 0.0
+    },
+    "out_of_bounds/valid": {
+      "n": 18,
+      "both_exact": 0.05555555555555555
+    },
+    "obstacle_collision/out_of_bounds": {
+      "n": 14,
+      "both_exact": 0.07142857142857142
+    }
+  },
+  "changed_history": {
+    "n": 3,
+    "both_exact": 0.0
+  },
+  "exact_by_path_length": {
+    "2": {
+      "n": 129,
+      "accuracy": 0.06976744186046512
+    },
+    "5": {
+      "n": 90,
+      "accuracy": 0.12222222222222222
+    },
+    "3": {
+      "n": 170,
+      "accuracy": 0.09411764705882353
+    },
+    "6": {
+      "n": 57,
+      "accuracy": 0.17543859649122806
+    },
+    "1": {
+      "n": 207,
+      "accuracy": 0.17391304347826086
+    },
+    "4": {
+      "n": 90,
+      "accuracy": 0.12222222222222222
+    },
+    "9": {
+      "n": 13,
+      "accuracy": 0.46153846153846156
+    },
+    "7": {
+      "n": 42,
+      "accuracy": 0.023809523809523808
+    },
+    "8": {
+      "n": 17,
+      "accuracy": 0.11764705882352941
+    },
+    "10": {
+      "n": 5,
+      "accuracy": 0.2
+    }
+  },
+  "dev_history_contrast": {
+    "n": 171,
+    "unique_prompts": 342,
+    "both_exact": 0.005847953216374269,
+    "generated_class_changes": 0.40350877192982454
+  },
+  "full_path": {
+    "n": 100,
+    "format": 1.0,
+    "exact": 0.33,
+    "binary_accuracy": 0.55,
+    "binary_f1_by_observed_class": {
+      "valid": 0.5544554455445545,
+      "invalid": 0.5454545454545454
+    },
+    "binary_macro_f1": 0.54995499549955,
+    "macro_exact": 0.272,
+    "class_macro_f1": 0.24803394625176806,
+    "invalid_n": 50,
+    "invalid_step": 0.26,
+    "invalid_reason": 0.12,
+    "invalid_step_reason": 0.1,
+    "classes": {
+      "valid": {
+        "n": 50,
+        "exact": 0.56,
+        "precision": 0.5490196078431373,
+        "recall": 0.56,
+        "f1": 0.5544554455445545
+      },
+      "goal_not_reached": {
+        "n": 30,
+        "exact": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "out_of_bounds": {
+        "n": 6,
+        "exact": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "obstacle_collision": {
+        "n": 4,
+        "exact": 0.5,
+        "precision": 0.06451612903225806,
+        "recall": 0.5,
+        "f1": 0.11428571428571428
+      },
+      "invalid_action_token": {
+        "n": 10,
+        "exact": 0.3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      }
+    },
+    "confusion": {
+      "valid": {
+        "valid": 28,
+        "out_of_bounds": 10,
+        "obstacle_collision": 12
+      },
+      "goal_not_reached": {
+        "obstacle_collision": 15,
+        "valid": 12,
+        "out_of_bounds": 3
+      },
+      "out_of_bounds": {
+        "valid": 6
+      },
+      "obstacle_collision": {
+        "obstacle_collision": 2,
+        "valid": 2
+      },
+      "invalid_action_token": {
+        "invalid_action_token": 4,
+        "valid": 3,
+        "out_of_bounds": 1,
+        "obstacle_collision": 2
+      }
+    },
+    "exact_by_observed_input_actions": {
+      "0": {
+        "count": 4,
+        "exact": 0.0
+      },
+      "1": {
+        "count": 2,
+        "exact": 0.0
+      },
+      "2": {
+        "count": 8,
+        "exact": 0.0
+      },
+      "3": {
+        "count": 12,
+        "exact": 0.25
+      },
+      "4": {
+        "count": 18,
+        "exact": 0.3333333333333333
+      },
+      "5": {
+        "count": 21,
+        "exact": 0.3333333333333333
+      },
+      "6": {
+        "count": 11,
+        "exact": 0.36363636363636365
+      },
+      "7": {
+        "count": 11,
+        "exact": 0.7272727272727273
+      },
+      "8": {
+        "count": 4,
+        "exact": 0.25
+      },
+      "9": {
+        "count": 7,
+        "exact": 0.42857142857142855
+      },
+      "10": {
+        "count": 2,
+        "exact": 0.5
+      }
+    }
+  }
+}

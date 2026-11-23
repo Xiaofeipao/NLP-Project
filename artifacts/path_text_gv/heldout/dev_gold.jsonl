@@ -1,0 +1,100 @@
+{"id":"dev-verification-16","gold":"valid"}
+{"id":"dev-verification-37","gold":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-66","gold":"valid"}
+{"id":"dev-verification-75","gold":"invalid | step=8 | reason=out_of_bounds"}
+{"id":"dev-verification-25","gold":"invalid | step=8 | reason=out_of_bounds"}
+{"id":"dev-verification-83","gold":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-verification-86","gold":"valid"}
+{"id":"dev-verification-41","gold":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-verification-68","gold":"valid"}
+{"id":"dev-verification-46","gold":"valid"}
+{"id":"dev-verification-97","gold":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-91","gold":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-70","gold":"valid"}
+{"id":"dev-verification-22","gold":"valid"}
+{"id":"dev-verification-55","gold":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-18","gold":"valid"}
+{"id":"dev-verification-96","gold":"valid"}
+{"id":"dev-verification-29","gold":"invalid | step=5 | reason=invalid_action_token"}
+{"id":"dev-verification-6","gold":"valid"}
+{"id":"dev-verification-45","gold":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-verification-10","gold":"valid"}
+{"id":"dev-verification-5","gold":"invalid | step=6 | reason=out_of_bounds"}
+{"id":"dev-verification-48","gold":"valid"}
+{"id":"dev-verification-74","gold":"valid"}
+{"id":"dev-verification-26","gold":"valid"}
+{"id":"dev-verification-90","gold":"valid"}
+{"id":"dev-verification-20","gold":"valid"}
+{"id":"dev-verification-42","gold":"valid"}
+{"id":"dev-verification-35","gold":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-14","gold":"valid"}
+{"id":"dev-verification-40","gold":"valid"}
+{"id":"dev-verification-60","gold":"valid"}
+{"id":"dev-verification-31","gold":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-verification-94","gold":"valid"}
+{"id":"dev-verification-54","gold":"valid"}
+{"id":"dev-verification-28","gold":"valid"}
+{"id":"dev-verification-93","gold":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-85","gold":"invalid | step=9 | reason=goal_not_reached"}
+{"id":"dev-verification-67","gold":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-15","gold":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-verification-89","gold":"invalid | step=5 | reason=invalid_action_token"}
+{"id":"dev-verification-65","gold":"invalid | step=4 | reason=obstacle_collision"}
+{"id":"dev-verification-58","gold":"valid"}
+{"id":"dev-verification-78","gold":"valid"}
+{"id":"dev-verification-61","gold":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-82","gold":"valid"}
+{"id":"dev-verification-4","gold":"valid"}
+{"id":"dev-verification-84","gold":"valid"}
+{"id":"dev-verification-77","gold":"invalid | step=1 | reason=goal_not_reached"}
+{"id":"dev-verification-49","gold":"invalid | step=3 | reason=invalid_action_token"}
+{"id":"dev-verification-38","gold":"valid"}
+{"id":"dev-verification-32","gold":"valid"}
+{"id":"dev-verification-63","gold":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-23","gold":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-76","gold":"valid"}
+{"id":"dev-verification-79","gold":"invalid | step=4 | reason=invalid_action_token"}
+{"id":"dev-verification-53","gold":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-30","gold":"valid"}
+{"id":"dev-verification-57","gold":"invalid | step=1 | reason=goal_not_reached"}
+{"id":"dev-verification-73","gold":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-2","gold":"valid"}
+{"id":"dev-verification-3","gold":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-43","gold":"invalid | step=2 | reason=goal_not_reached"}
+{"id":"dev-verification-27","gold":"invalid | step=1 | reason=goal_not_reached"}
+{"id":"dev-verification-80","gold":"valid"}
+{"id":"dev-verification-62","gold":"valid"}
+{"id":"dev-verification-39","gold":"invalid | step=3 | reason=invalid_action_token"}
+{"id":"dev-verification-21","gold":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-verification-33","gold":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-0","gold":"valid"}
+{"id":"dev-verification-59","gold":"invalid | step=3 | reason=invalid_action_token"}
+{"id":"dev-verification-24","gold":"valid"}
+{"id":"dev-verification-34","gold":"valid"}
+{"id":"dev-verification-17","gold":"invalid | step=1 | reason=goal_not_reached"}
+{"id":"dev-verification-44","gold":"valid"}
+{"id":"dev-verification-98","gold":"valid"}
+{"id":"dev-verification-19","gold":"invalid | step=2 | reason=invalid_action_token"}
+{"id":"dev-verification-36","gold":"valid"}
+{"id":"dev-verification-92","gold":"valid"}
+{"id":"dev-verification-56","gold":"valid"}
+{"id":"dev-verification-69","gold":"invalid | step=2 | reason=invalid_action_token"}
+{"id":"dev-verification-72","gold":"valid"}
+{"id":"dev-verification-51","gold":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-verification-50","gold":"valid"}
+{"id":"dev-verification-88","gold":"valid"}
+{"id":"dev-verification-81","gold":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-13","gold":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-verification-8","gold":"valid"}
+{"id":"dev-verification-87","gold":"invalid | step=2 | reason=goal_not_reached"}
+{"id":"dev-verification-7","gold":"invalid | step=5 | reason=goal_not_reached"}
+{"id":"dev-verification-47","gold":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-verification-99","gold":"invalid | step=2 | reason=invalid_action_token"}
+{"id":"dev-verification-64","gold":"valid"}
+{"id":"dev-verification-52","gold":"valid"}
+{"id":"dev-verification-12","gold":"valid"}
+{"id":"dev-verification-9","gold":"invalid | step=4 | reason=invalid_action_token"}
+{"id":"dev-verification-95","gold":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-verification-71","gold":"invalid | step=6 | reason=goal_not_reached"}
+{"id":"dev-verification-1","gold":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-verification-11","gold":"invalid | step=3 | reason=goal_not_reached"}

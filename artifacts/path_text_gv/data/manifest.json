@@ -1,0 +1,18 @@
+{
+  "version": "full-path-text-v1",
+  "files": {
+    "audit.json": "c4bb9c3571789db4a724fe37127efbe227194520c5e52f38041d9f70e9786e71",
+    "dev.jsonl": "fc025b0837325a73a78ef1a50dddabf0556aa57175220f410e7dd38627a56771",
+    "dev_provenance.jsonl": "20d9c35612786701e17fa84b13f547f726c1eea9678ce4fe44063a5b4dec2a63",
+    "train.jsonl": "3d4eff246c32dc625a704a26cc6a074ffaade3b54e9e5d3808899177f9cfc981",
+    "train_provenance.jsonl": "90c3d5f7ef809a4baf3ac111adab46908367f9684c7d53673b24333b469c357c"
+  },
+  "source": {
+    "train": "d1212c424d5e1dcdc7d99fd0520ce9d28ab7ef292c7c5121a3dd4cc54d5842a2",
+    "dev": "6b60713aa88053bacbe2a009c68baf69d51a1f3121390d0aea1c7f256a92bb3a"
+  },
+  "seed": 42,
+  "tokenizer": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a",
+  "oracle_source": "375462625e1c133d5b469037c03a18cbc33160a31b2ba88a0da89a127364a6e4",
+  "prompt_module": "8d64e8b608df612fff55646e8860f1ddc3a0e5084fb840b9abe1bb18b605940c"
+}

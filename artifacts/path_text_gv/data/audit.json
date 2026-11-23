@@ -1,0 +1,459 @@
+{
+  "train": {
+    "cases": 4000,
+    "G": 4000,
+    "V": 16400,
+    "rule_verified_V": 16400,
+    "V_labels": {
+      "out_of_bounds": 2292,
+      "goal_not_reached": 10294,
+      "valid": 1491,
+      "invalid_action_token": 400,
+      "obstacle_collision": 1923
+    },
+    "direction_by_class": {
+      "up": {
+        "out_of_bounds": 647,
+        "goal_not_reached": 2624,
+        "obstacle_collision": 499,
+        "valid": 230
+      },
+      "down": {
+        "goal_not_reached": 2733,
+        "out_of_bounds": 591,
+        "obstacle_collision": 466,
+        "valid": 210
+      },
+      "left": {
+        "goal_not_reached": 2481,
+        "valid": 536,
+        "obstacle_collision": 476,
+        "out_of_bounds": 507
+      },
+      "right": {
+        "goal_not_reached": 2456,
+        "valid": 515,
+        "obstacle_collision": 482,
+        "out_of_bounds": 547
+      }
+    },
+    "lexical_counts": {
+      "backward": 20,
+      "slide": 20,
+      "DOWN": 20,
+      "idle": 20,
+      "walk": 20,
+      "sidestep": 20,
+      "spin": 20,
+      "leftwards": 20,
+      "stay": 20,
+      "leap": 20,
+      "wait": 20,
+      "dash": 20,
+      "jump": 20,
+      "east": 20,
+      "back": 20,
+      "upward": 20,
+      "rigt": 20,
+      "hop": 20,
+      "north": 20,
+      "turn": 20
+    },
+    "history_lengths": {
+      "0": 874,
+      "3": 565,
+      "4": 480,
+      "6": 176,
+      "1": 688,
+      "2": 696,
+      "5": 359,
+      "7": 78,
+      "8": 52,
+      "9": 19,
+      "11": 2,
+      "10": 9,
+      "13": 1,
+      "12": 1
+    },
+    "G_optimal_set_sizes": {
+      "2": 893,
+      "1": 3102,
+      "3": 5
+    },
+    "source_path_fields": {
+      "target_plan": 2770,
+      "target": 681,
+      "candidate": 549
+    },
+    "layouts": 636,
+    "four_direction_patterns": 116,
+    "preserved_old_states": 2436,
+    "alternative_observed_state_capacity": 5074,
+    "unique_inputs": 20400,
+    "max_encoder_tokens": 195,
+    "encoder_above_128": 16400,
+    "max_target_tokens": 16,
+    "unknown_input_tokens": 0,
+    "unique_tokenized_inputs": 20400,
+    "class_by_path_length": {
+      "1": {
+        "out_of_bounds": 803,
+        "goal_not_reached": 2244,
+        "obstacle_collision": 449,
+        "invalid_action_token": 92
+      },
+      "4": {
+        "goal_not_reached": 1479,
+        "valid": 264,
+        "out_of_bounds": 228,
+        "obstacle_collision": 289,
+        "invalid_action_token": 58
+      },
+      "5": {
+        "goal_not_reached": 1237,
+        "invalid_action_token": 44,
+        "obstacle_collision": 233,
+        "valid": 264,
+        "out_of_bounds": 186
+      },
+      "7": {
+        "goal_not_reached": 439,
+        "out_of_bounds": 81,
+        "valid": 121,
+        "obstacle_collision": 63,
+        "invalid_action_token": 16
+      },
+      "2": {
+        "goal_not_reached": 1834,
+        "obstacle_collision": 297,
+        "valid": 211,
+        "out_of_bounds": 410,
+        "invalid_action_token": 68
+      },
+      "3": {
+        "obstacle_collision": 384,
+        "goal_not_reached": 1811,
+        "out_of_bounds": 314,
+        "valid": 275,
+        "invalid_action_token": 67
+      },
+      "6": {
+        "goal_not_reached": 881,
+        "out_of_bounds": 162,
+        "valid": 234,
+        "invalid_action_token": 44,
+        "obstacle_collision": 159
+      },
+      "8": {
+        "goal_not_reached": 181,
+        "valid": 61,
+        "out_of_bounds": 49,
+        "obstacle_collision": 21,
+        "invalid_action_token": 4
+      },
+      "9": {
+        "out_of_bounds": 36,
+        "goal_not_reached": 118,
+        "valid": 36,
+        "obstacle_collision": 18,
+        "invalid_action_token": 5
+      },
+      "10": {
+        "out_of_bounds": 11,
+        "obstacle_collision": 9,
+        "valid": 15,
+        "goal_not_reached": 41,
+        "invalid_action_token": 1
+      },
+      "12": {
+        "out_of_bounds": 2,
+        "goal_not_reached": 5,
+        "valid": 1,
+        "invalid_action_token": 1
+      },
+      "11": {
+        "valid": 8,
+        "goal_not_reached": 19,
+        "out_of_bounds": 8,
+        "obstacle_collision": 1
+      },
+      "14": {
+        "out_of_bounds": 1,
+        "goal_not_reached": 2,
+        "valid": 1
+      },
+      "13": {
+        "out_of_bounds": 1,
+        "goal_not_reached": 3
+      }
+    },
+    "input_token_ranges": {
+      "G": [
+        65,
+        103
+      ],
+      "V": [
+        156,
+        195
+      ]
+    },
+    "path_lengths_read_from_prompt": {
+      "G": {
+        "0": 874,
+        "3": 565,
+        "4": 480,
+        "6": 176,
+        "1": 688,
+        "2": 696,
+        "5": 359,
+        "7": 78,
+        "8": 52,
+        "9": 19,
+        "11": 2,
+        "10": 9,
+        "13": 1,
+        "12": 1
+      },
+      "V": {
+        "1": 3588,
+        "4": 2318,
+        "5": 1964,
+        "7": 720,
+        "2": 2820,
+        "3": 2851,
+        "6": 1480,
+        "8": 316,
+        "9": 213,
+        "10": 77,
+        "12": 9,
+        "11": 36,
+        "14": 4,
+        "13": 4
+      }
+    },
+    "lexical_by_v_input_length": {
+      "5": 44,
+      "1": 92,
+      "4": 58,
+      "2": 68,
+      "6": 44,
+      "3": 67,
+      "7": 16,
+      "10": 1,
+      "8": 4,
+      "9": 5,
+      "12": 1
+    },
+    "available_max_nonterminal_history": 13,
+    "selected_longer_witness": 45,
+    "same_map_start_goal_length_final_action_different_history_label_pairs": 330
+  },
+  "dev": {
+    "cases": 200,
+    "G": 200,
+    "V": 820,
+    "rule_verified_V": 820,
+    "V_labels": {
+      "goal_not_reached": 599,
+      "valid": 39,
+      "out_of_bounds": 100,
+      "obstacle_collision": 62,
+      "invalid_action_token": 20
+    },
+    "direction_by_class": {
+      "up": {
+        "goal_not_reached": 147,
+        "valid": 6,
+        "out_of_bounds": 32,
+        "obstacle_collision": 15
+      },
+      "down": {
+        "goal_not_reached": 158,
+        "out_of_bounds": 23,
+        "obstacle_collision": 15,
+        "valid": 4
+      },
+      "left": {
+        "goal_not_reached": 149,
+        "out_of_bounds": 25,
+        "obstacle_collision": 14,
+        "valid": 12
+      },
+      "right": {
+        "goal_not_reached": 145,
+        "obstacle_collision": 18,
+        "valid": 17,
+        "out_of_bounds": 20
+      }
+    },
+    "lexical_counts": {
+      "rigth": 2,
+      "stop": 2,
+      "jumping": 2,
+      "westward": 2,
+      "drop": 2,
+      "forward": 2,
+      "pause": 2,
+      "climb": 2,
+      "Left": 2,
+      "turn_left": 2
+    },
+    "history_lengths": {
+      "1": 32,
+      "4": 22,
+      "2": 41,
+      "5": 14,
+      "0": 51,
+      "3": 22,
+      "8": 3,
+      "6": 10,
+      "7": 4,
+      "9": 1
+    },
+    "G_optimal_set_sizes": {
+      "1": 124,
+      "2": 75,
+      "3": 1
+    },
+    "source_path_fields": {
+      "target_plan": 146,
+      "target": 27,
+      "candidate": 27
+    },
+    "layouts": 68,
+    "four_direction_patterns": 43,
+    "preserved_old_states": 0,
+    "alternative_observed_state_capacity": 943,
+    "unique_inputs": 1020,
+    "max_encoder_tokens": 190,
+    "encoder_above_128": 820,
+    "max_target_tokens": 16,
+    "unknown_input_tokens": 0,
+    "unique_tokenized_inputs": 1020,
+    "class_by_path_length": {
+      "2": {
+        "goal_not_reached": 101,
+        "out_of_bounds": 20,
+        "obstacle_collision": 5,
+        "invalid_action_token": 1,
+        "valid": 2
+      },
+      "5": {
+        "goal_not_reached": 64,
+        "obstacle_collision": 7,
+        "out_of_bounds": 9,
+        "valid": 8,
+        "invalid_action_token": 2
+      },
+      "3": {
+        "valid": 9,
+        "goal_not_reached": 133,
+        "obstacle_collision": 14,
+        "out_of_bounds": 8,
+        "invalid_action_token": 6
+      },
+      "6": {
+        "goal_not_reached": 43,
+        "out_of_bounds": 6,
+        "valid": 4,
+        "obstacle_collision": 3,
+        "invalid_action_token": 1
+      },
+      "1": {
+        "goal_not_reached": 149,
+        "out_of_bounds": 36,
+        "obstacle_collision": 19,
+        "invalid_action_token": 3
+      },
+      "4": {
+        "obstacle_collision": 10,
+        "goal_not_reached": 63,
+        "out_of_bounds": 9,
+        "valid": 6,
+        "invalid_action_token": 2
+      },
+      "9": {
+        "goal_not_reached": 6,
+        "obstacle_collision": 2,
+        "valid": 3,
+        "invalid_action_token": 1,
+        "out_of_bounds": 1
+      },
+      "7": {
+        "goal_not_reached": 27,
+        "out_of_bounds": 8,
+        "invalid_action_token": 2,
+        "valid": 4,
+        "obstacle_collision": 1
+      },
+      "8": {
+        "goal_not_reached": 11,
+        "invalid_action_token": 1,
+        "out_of_bounds": 2,
+        "valid": 2,
+        "obstacle_collision": 1
+      },
+      "10": {
+        "out_of_bounds": 1,
+        "goal_not_reached": 2,
+        "valid": 1,
+        "invalid_action_token": 1
+      }
+    },
+    "input_token_ranges": {
+      "G": [
+        65,
+        97
+      ],
+      "V": [
+        156,
+        190
+      ]
+    },
+    "path_lengths_read_from_prompt": {
+      "G": {
+        "1": 32,
+        "4": 22,
+        "2": 41,
+        "5": 14,
+        "0": 51,
+        "3": 22,
+        "8": 3,
+        "6": 10,
+        "7": 4,
+        "9": 1
+      },
+      "V": {
+        "2": 129,
+        "5": 90,
+        "3": 170,
+        "6": 57,
+        "1": 207,
+        "4": 90,
+        "9": 13,
+        "7": 42,
+        "8": 17,
+        "10": 5
+      }
+    },
+    "lexical_by_v_input_length": {
+      "1": 3,
+      "5": 2,
+      "2": 1,
+      "3": 6,
+      "7": 2,
+      "9": 1,
+      "6": 1,
+      "4": 2,
+      "8": 1,
+      "10": 1
+    },
+    "available_max_nonterminal_history": 9,
+    "selected_longer_witness": 1,
+    "same_map_start_goal_length_final_action_different_history_label_pairs": 3
+  },
+  "layout_overlap_train_dev": 0,
+  "layout_overlap_train_or_dev_with_new_tests": 0,
+  "frozen_test_layouts": 400,
+  "label_provenance": "offline BFS optimal sets and strict project verdict with official executor cross-check; existing logged train/dev paths"
+}

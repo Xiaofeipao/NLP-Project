@@ -1,0 +1,41 @@
+{
+  "source": {
+    "dev": "6b60713aa88053bacbe2a009c68baf69d51a1f3121390d0aea1c7f256a92bb3a",
+    "single": "18020e883bb5eb0e91d2039393f741816b73b378ff245cb36d8a1449e02a347d",
+    "double": "68340c517e9a4d3d20d74ba9bccd78b175bc06d2a2adad75330d5200237c563d"
+  },
+  "counts": {
+    "dev": {
+      "valid": 50,
+      "goal_not_reached": 30,
+      "out_of_bounds": 6,
+      "obstacle_collision": 4,
+      "invalid_action_token": 10
+    },
+    "single": {
+      "out_of_bounds": 50,
+      "invalid_action_token": 50,
+      "obstacle_collision": 50,
+      "goal_not_reached": 50
+    },
+    "double": {
+      "out_of_bounds": 65,
+      "invalid_action_token": 67,
+      "obstacle_collision": 68
+    }
+  },
+  "rollout_maps": 40,
+  "files": {
+    "contrast_gold.jsonl": "1ef3b9e6baf6883707089376c63c02c03361d5a24e144c6a4710c8f6176dd583",
+    "contrast_inputs.jsonl": "0c2c57c07c00c8b227dcc50b7aebce8c24c9021f862ea15dfd8c083ff93d04dd",
+    "dev_gold.jsonl": "4ec652e318b7ea3bf572db69bc42ba45b68dbdf88246093c4a564c196a99aefc",
+    "dev_inputs.jsonl": "a2418529edc3e284a4222e47f320d0eb201c101cbd9e569e8ea3c4510b4299dd",
+    "double_gold.jsonl": "1bc2fad24aac9a2cac51aedaadf05348549631a60350eebed75771c9cc3c079b",
+    "double_inputs.jsonl": "e8e24d0df3333cb995ad2ec2a392a74a2e05e4716d6fa69e811d63a4f3a641b6",
+    "rollout_gold.jsonl": "52c6ff0f7a0352a799a547d0a0f8b221b86d258eaf97ef17c51bb05a5fcaad2f",
+    "rollout_inputs.jsonl": "9e7fc1d8c279580f67008ffde9819a327b00a21b5e0ed061997b8740fe799f19",
+    "single_gold.jsonl": "39a170d9d312e31e28af133d461438d55b627a1d82c3a179214764f7c8793445",
+    "single_inputs.jsonl": "762606e2f62862a05eefaeaa91573438fb354ee7f353630ccffea743fa236f63"
+  },
+  "development_history_pairs": 171
+}

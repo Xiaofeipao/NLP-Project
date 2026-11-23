@@ -1,0 +1,538 @@
+{
+  "train": {
+    "G": {
+      "total": 4000,
+      "count": {
+        "0": 874,
+        "1": 688,
+        "2": 696,
+        "3": 565,
+        "4": 480,
+        "5": 359,
+        "6": 176,
+        "7": 78,
+        "8": 52,
+        "9": 19,
+        "10": 9,
+        "11": 2,
+        "12": 1,
+        "13": 1
+      },
+      "minimum": 0,
+      "maximum": 13,
+      "missing_in_range": []
+    },
+    "V": {
+      "total": 16400,
+      "count": {
+        "1": 3588,
+        "2": 2820,
+        "3": 2851,
+        "4": 2318,
+        "5": 1964,
+        "6": 1480,
+        "7": 720,
+        "8": 316,
+        "9": 213,
+        "10": 77,
+        "11": 36,
+        "12": 9,
+        "13": 4,
+        "14": 4
+      },
+      "minimum": 1,
+      "maximum": 14,
+      "missing_in_range": []
+    },
+    "gold_invalid_step": {
+      "total": 14909,
+      "count": {
+        "1": 1344,
+        "2": 3019,
+        "3": 2599,
+        "4": 2386,
+        "5": 1942,
+        "6": 1602,
+        "7": 1041,
+        "8": 513,
+        "9": 240,
+        "10": 139,
+        "11": 50,
+        "12": 22,
+        "13": 6,
+        "14": 4,
+        "15": 2
+      },
+      "minimum": 1,
+      "maximum": 15,
+      "missing_in_range": []
+    },
+    "V_labels_by_action_count": {
+      "1": {
+        "out_of_bounds": 803,
+        "goal_not_reached": 2244,
+        "obstacle_collision": 449,
+        "invalid_action_token": 92
+      },
+      "4": {
+        "goal_not_reached": 1479,
+        "valid": 264,
+        "out_of_bounds": 228,
+        "obstacle_collision": 289,
+        "invalid_action_token": 58
+      },
+      "5": {
+        "goal_not_reached": 1237,
+        "invalid_action_token": 44,
+        "obstacle_collision": 233,
+        "valid": 264,
+        "out_of_bounds": 186
+      },
+      "7": {
+        "goal_not_reached": 439,
+        "out_of_bounds": 81,
+        "valid": 121,
+        "obstacle_collision": 63,
+        "invalid_action_token": 16
+      },
+      "2": {
+        "goal_not_reached": 1834,
+        "obstacle_collision": 297,
+        "valid": 211,
+        "out_of_bounds": 410,
+        "invalid_action_token": 68
+      },
+      "3": {
+        "obstacle_collision": 384,
+        "goal_not_reached": 1811,
+        "out_of_bounds": 314,
+        "valid": 275,
+        "invalid_action_token": 67
+      },
+      "6": {
+        "goal_not_reached": 881,
+        "out_of_bounds": 162,
+        "valid": 234,
+        "invalid_action_token": 44,
+        "obstacle_collision": 159
+      },
+      "8": {
+        "goal_not_reached": 181,
+        "valid": 61,
+        "out_of_bounds": 49,
+        "obstacle_collision": 21,
+        "invalid_action_token": 4
+      },
+      "9": {
+        "out_of_bounds": 36,
+        "goal_not_reached": 118,
+        "valid": 36,
+        "obstacle_collision": 18,
+        "invalid_action_token": 5
+      },
+      "10": {
+        "out_of_bounds": 11,
+        "obstacle_collision": 9,
+        "valid": 15,
+        "goal_not_reached": 41,
+        "invalid_action_token": 1
+      },
+      "12": {
+        "out_of_bounds": 2,
+        "goal_not_reached": 5,
+        "valid": 1,
+        "invalid_action_token": 1
+      },
+      "11": {
+        "valid": 8,
+        "goal_not_reached": 19,
+        "out_of_bounds": 8,
+        "obstacle_collision": 1
+      },
+      "14": {
+        "out_of_bounds": 1,
+        "goal_not_reached": 2,
+        "valid": 1
+      },
+      "13": {
+        "out_of_bounds": 1,
+        "goal_not_reached": 3
+      }
+    },
+    "lexical_by_V_action_count": {
+      "5": 44,
+      "1": 92,
+      "4": 58,
+      "2": 68,
+      "6": 44,
+      "3": 67,
+      "7": 16,
+      "10": 1,
+      "8": 4,
+      "9": 5,
+      "12": 1
+    },
+    "unique_cases": 4000,
+    "independently_verified_G": 4000,
+    "independently_verified_V": 16400
+  },
+  "dev": {
+    "G": {
+      "total": 200,
+      "count": {
+        "0": 51,
+        "1": 32,
+        "2": 41,
+        "3": 22,
+        "4": 22,
+        "5": 14,
+        "6": 10,
+        "7": 4,
+        "8": 3,
+        "9": 1
+      },
+      "minimum": 0,
+      "maximum": 9,
+      "missing_in_range": []
+    },
+    "V": {
+      "total": 820,
+      "count": {
+        "1": 207,
+        "2": 129,
+        "3": 170,
+        "4": 90,
+        "5": 90,
+        "6": 57,
+        "7": 42,
+        "8": 17,
+        "9": 13,
+        "10": 5
+      },
+      "minimum": 1,
+      "maximum": 10,
+      "missing_in_range": []
+    },
+    "gold_invalid_step": {
+      "total": 781,
+      "count": {
+        "1": 58,
+        "2": 175,
+        "3": 129,
+        "4": 154,
+        "5": 81,
+        "6": 74,
+        "7": 54,
+        "8": 31,
+        "9": 15,
+        "10": 8,
+        "11": 2
+      },
+      "minimum": 1,
+      "maximum": 11,
+      "missing_in_range": []
+    },
+    "V_labels_by_action_count": {
+      "2": {
+        "goal_not_reached": 101,
+        "out_of_bounds": 20,
+        "obstacle_collision": 5,
+        "invalid_action_token": 1,
+        "valid": 2
+      },
+      "5": {
+        "goal_not_reached": 64,
+        "obstacle_collision": 7,
+        "out_of_bounds": 9,
+        "valid": 8,
+        "invalid_action_token": 2
+      },
+      "3": {
+        "valid": 9,
+        "goal_not_reached": 133,
+        "obstacle_collision": 14,
+        "out_of_bounds": 8,
+        "invalid_action_token": 6
+      },
+      "6": {
+        "goal_not_reached": 43,
+        "out_of_bounds": 6,
+        "valid": 4,
+        "obstacle_collision": 3,
+        "invalid_action_token": 1
+      },
+      "1": {
+        "goal_not_reached": 149,
+        "out_of_bounds": 36,
+        "obstacle_collision": 19,
+        "invalid_action_token": 3
+      },
+      "4": {
+        "obstacle_collision": 10,
+        "goal_not_reached": 63,
+        "out_of_bounds": 9,
+        "valid": 6,
+        "invalid_action_token": 2
+      },
+      "9": {
+        "goal_not_reached": 6,
+        "obstacle_collision": 2,
+        "valid": 3,
+        "invalid_action_token": 1,
+        "out_of_bounds": 1
+      },
+      "7": {
+        "goal_not_reached": 27,
+        "out_of_bounds": 8,
+        "invalid_action_token": 2,
+        "valid": 4,
+        "obstacle_collision": 1
+      },
+      "8": {
+        "goal_not_reached": 11,
+        "invalid_action_token": 1,
+        "out_of_bounds": 2,
+        "valid": 2,
+        "obstacle_collision": 1
+      },
+      "10": {
+        "out_of_bounds": 1,
+        "goal_not_reached": 2,
+        "valid": 1,
+        "invalid_action_token": 1
+      }
+    },
+    "lexical_by_V_action_count": {
+      "1": 3,
+      "5": 2,
+      "2": 1,
+      "3": 6,
+      "7": 2,
+      "9": 1,
+      "6": 1,
+      "4": 2,
+      "8": 1,
+      "10": 1
+    },
+    "unique_cases": 200,
+    "independently_verified_G": 200,
+    "independently_verified_V": 820
+  },
+  "encoded_distinct_train_plus_dev": 21420,
+  "max_V_train_input_actions": 14,
+  "dev_plans": {
+    "whole_path": {
+      "total": 100,
+      "count": {
+        "0": 4,
+        "1": 2,
+        "2": 8,
+        "3": 12,
+        "4": 18,
+        "5": 21,
+        "6": 11,
+        "7": 11,
+        "8": 4,
+        "9": 7,
+        "10": 2
+      },
+      "minimum": 0,
+      "maximum": 10,
+      "missing_in_range": [],
+      "above_train_max": 0,
+      "above_train_max_by_label": {},
+      "inapplicable": 0
+    },
+    "annotated_prefix": {
+      "total": 96,
+      "count": {
+        "1": 3,
+        "2": 11,
+        "3": 14,
+        "4": 17,
+        "5": 19,
+        "6": 10,
+        "7": 9,
+        "8": 4,
+        "9": 7,
+        "10": 2
+      },
+      "minimum": 1,
+      "maximum": 10,
+      "missing_in_range": [],
+      "above_train_max": 0,
+      "above_train_max_by_label": {},
+      "inapplicable": 4
+    }
+  },
+  "single_plans": {
+    "whole_path": {
+      "total": 200,
+      "count": {
+        "1": 20,
+        "2": 15,
+        "3": 3,
+        "4": 53,
+        "5": 21,
+        "6": 21,
+        "7": 16,
+        "8": 10,
+        "9": 9,
+        "10": 6,
+        "11": 3,
+        "12": 5,
+        "13": 3,
+        "14": 7,
+        "15": 4,
+        "17": 1,
+        "18": 2,
+        "20": 1
+      },
+      "minimum": 1,
+      "maximum": 20,
+      "missing_in_range": [
+        16,
+        19
+      ],
+      "above_train_max": 8,
+      "above_train_max_by_label": {
+        "out_of_bounds": 4,
+        "invalid_action_token": 2,
+        "obstacle_collision": 2
+      },
+      "inapplicable": 0
+    },
+    "annotated_prefix": {
+      "total": 200,
+      "count": {
+        "1": 45,
+        "2": 39,
+        "3": 27,
+        "4": 30,
+        "5": 10,
+        "6": 17,
+        "7": 6,
+        "8": 4,
+        "9": 5,
+        "10": 7,
+        "11": 2,
+        "13": 3,
+        "14": 1,
+        "15": 2,
+        "17": 2
+      },
+      "minimum": 1,
+      "maximum": 17,
+      "missing_in_range": [
+        12,
+        16
+      ],
+      "above_train_max": 4,
+      "above_train_max_by_label": {
+        "out_of_bounds": 3,
+        "obstacle_collision": 1
+      },
+      "inapplicable": 0
+    }
+  },
+  "double_plans": {
+    "whole_path": {
+      "total": 200,
+      "count": {
+        "3": 39,
+        "4": 10,
+        "5": 38,
+        "6": 29,
+        "7": 22,
+        "8": 19,
+        "9": 7,
+        "10": 9,
+        "11": 5,
+        "12": 3,
+        "13": 6,
+        "14": 3,
+        "15": 4,
+        "16": 2,
+        "19": 1,
+        "21": 3
+      },
+      "minimum": 3,
+      "maximum": 21,
+      "missing_in_range": [
+        17,
+        18,
+        20
+      ],
+      "above_train_max": 10,
+      "above_train_max_by_label": {
+        "obstacle_collision": 4,
+        "invalid_action_token": 3,
+        "out_of_bounds": 3
+      },
+      "inapplicable": 0
+    },
+    "annotated_prefix": {
+      "total": 200,
+      "count": {
+        "1": 77,
+        "2": 49,
+        "3": 34,
+        "4": 12,
+        "5": 11,
+        "6": 7,
+        "7": 4,
+        "8": 2,
+        "9": 1,
+        "10": 2,
+        "11": 1
+      },
+      "minimum": 1,
+      "maximum": 11,
+      "missing_in_range": [],
+      "above_train_max": 0,
+      "above_train_max_by_label": {},
+      "inapplicable": 0
+    }
+  },
+  "fork_manifest": "5434dfa08625a48203a8b3265ad39c052c8b4f0b4356e90b91c372c734a4f5b6",
+  "complete_observed_ranges": true,
+  "train_longest_history_sources": [
+    {
+      "case": "train-10a70977f1771a7075629a11",
+      "source": "train-verification-1472",
+      "history": [
+        "down",
+        "up",
+        "down",
+        "right",
+        "right",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "left",
+        "left",
+        "left"
+      ]
+    },
+    {
+      "case": "train-74d38b3f451c5020d81962d2",
+      "source": "train-verification-1472",
+      "history": [
+        "down",
+        "up",
+        "down",
+        "right",
+        "right",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "left",
+        "left"
+      ]
+    }
+  ]
+}

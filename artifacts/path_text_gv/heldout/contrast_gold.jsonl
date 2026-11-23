@@ -1,0 +1,171 @@
+{"ids":["d908a19bb2ce7efbaff635e5","0e7a50793c256519297bfdcc"],"golds":["invalid | step=4 | reason=goal_not_reached","invalid | step=3 | reason=obstacle_collision"]}
+{"ids":["bea94c06956a20b04804e313","717b3841beeadec62f400009"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["6c467cdcbc06795a49f0ad16","bed652b65f4a8d723c61ad22"],"golds":["invalid | step=2 | reason=obstacle_collision","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["5da668a23d5613acc9ac7e43","cb954d87101919fcba3cb56f"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=out_of_bounds"]}
+{"ids":["6a9a451e81593b618f8467af","b1bb024f157bdee231e8e987"],"golds":["invalid | step=4 | reason=obstacle_collision","invalid | step=4 | reason=out_of_bounds"]}
+{"ids":["2b058bc79bd5ff00c9e29ea4","436047e77317807fad3bc98f"],"golds":["invalid | step=5 | reason=goal_not_reached","invalid | step=4 | reason=obstacle_collision"]}
+{"ids":["a5bfbf1feb41107c32f578d3","a84136b811f6f55db977ad89"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=obstacle_collision"]}
+{"ids":["f01ee09a783eaf11538e1a42","f3a9614338a24c440ea5716f"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=out_of_bounds"]}
+{"ids":["58de7dbf28e59b45079c38a8","555e499620e1402a89199984"],"golds":["invalid | step=5 | reason=obstacle_collision","valid"]}
+{"ids":["87770c7b697bf9b95098a1d6","bf65760498138e262338c3be"],"golds":["invalid | step=8 | reason=goal_not_reached","valid"]}
+{"ids":["5e6e82eb0befe0db6e0496f6","c325fc46a534ad8c3b2b1420"],"golds":["valid","invalid | step=7 | reason=out_of_bounds"]}
+{"ids":["cdff855f755df7bb92932a8a","28c45b23cb59fe38f3e95aac"],"golds":["invalid | step=7 | reason=obstacle_collision","invalid | step=8 | reason=goal_not_reached"]}
+{"ids":["f6e529cfdd9710418a949a1c","ea11b007f86210e71a46c15d"],"golds":["invalid | step=2 | reason=obstacle_collision","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["9616f48ff72c6fb546217021","ec7b3b651bfe928bdc33d2c1"],"golds":["invalid | step=2 | reason=obstacle_collision","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["624d1dc5f8a920da6088f8b9","e9924604f9379ca4512005cd"],"golds":["invalid | step=4 | reason=goal_not_reached","valid"]}
+{"ids":["9ac72e40b1239e7637b63ac6","7957326c92b373602b586514"],"golds":["valid","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["c61802db9f8e06fd9749c64c","fde432cb2ce2bab298e929d9"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=out_of_bounds"]}
+{"ids":["6fc91520ee171539f422a086","92cb2b1f59ed68ed48ecc8a8"],"golds":["invalid | step=7 | reason=goal_not_reached","invalid | step=6 | reason=obstacle_collision"]}
+{"ids":["b18cbd72b4e40c7ca5c7aba8","1a31a4b8e808899332c2ef54"],"golds":["invalid | step=7 | reason=goal_not_reached","invalid | step=6 | reason=obstacle_collision"]}
+{"ids":["059ed401ada7c7c1870ebf18","3e668b33ea7ad04e3bdfa31a"],"golds":["invalid | step=6 | reason=obstacle_collision","invalid | step=6 | reason=out_of_bounds"]}
+{"ids":["ee254e5a73485d99464d1acd","64bdae9f4b73a18d71fa8f8f"],"golds":["invalid | step=4 | reason=goal_not_reached","invalid | step=3 | reason=obstacle_collision"]}
+{"ids":["c521f4b2ace48776604fcded","2e66869dd378fbdaf492fb16"],"golds":["invalid | step=4 | reason=goal_not_reached","invalid | step=3 | reason=out_of_bounds"]}
+{"ids":["750006cd9307281706be7d92","ecb75b701be81b373a26acb3"],"golds":["invalid | step=3 | reason=obstacle_collision","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["239366028085f6085d54d9b8","fc21c1dd8c5ef985f956cbef"],"golds":["invalid | step=2 | reason=out_of_bounds","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["1f107e138750f7100f43fdc6","d20aa2128255bd71a7c3e2f8"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=obstacle_collision"]}
+{"ids":["1cb334077c12953be0032e53","fa49ee5db305c48fcb63824c"],"golds":["invalid | step=5 | reason=out_of_bounds","invalid | step=6 | reason=goal_not_reached"]}
+{"ids":["1e65ace1bc6e72bcb5c9fa00","c5bf3982b0c97b3184c78013"],"golds":["invalid | step=6 | reason=goal_not_reached","valid"]}
+{"ids":["ea22090658b8f3f1815e1fab","e21992510630ac73ad8bb9ff"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=obstacle_collision"]}
+{"ids":["881e42683771bade8381b4b1","058921930ed66561662c0cd7"],"golds":["invalid | step=4 | reason=goal_not_reached","valid"]}
+{"ids":["cbf346c77bd4fe146d9a9c75","86ae6e54c56fabafedb78339"],"golds":["valid","invalid | step=3 | reason=out_of_bounds"]}
+{"ids":["b235f432937de62a9fda8352","2f46e4c23f6268b67d76069f"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["ad2131941975278f35b490ac","03905d13e73aaf621f30d031"],"golds":["invalid | step=5 | reason=goal_not_reached","invalid | step=4 | reason=obstacle_collision"]}
+{"ids":["d4cb293ed403080e863b355e","0758c47e8e2f212e4c208a2b"],"golds":["invalid | step=4 | reason=obstacle_collision","valid"]}
+{"ids":["3835ba98e62ae2d68d9b3d6a","adae3bfdc657da0c6172bc64"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["9adab1f1e55d23ecdbb86b1d","fa21492abecb12b171a93e90"],"golds":["valid","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["a892902961c68304a1ea249a","12b24ed1e0ab4881bad91eab"],"golds":["invalid | step=2 | reason=obstacle_collision","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["d1bf5beb5c744521ae02382f","23b2270ef3e3dd6880a3e6a2"],"golds":["invalid | step=2 | reason=out_of_bounds","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["67546fd92b7c57173f5f374d","6489006b530ca2ee46ab0392"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=out_of_bounds"]}
+{"ids":["d72f1ecff837016886d2898c","46b022d6118692829fdf2f6e"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=obstacle_collision"]}
+{"ids":["9a81b456962dc21027bc6186","4c7320bfa795f89cddc4a20c"],"golds":["invalid | step=4 | reason=obstacle_collision","invalid | step=5 | reason=goal_not_reached"]}
+{"ids":["258f6d87deb7548a41710a9c","83828bb57e3042c7437976d7"],"golds":["invalid | step=5 | reason=obstacle_collision","valid"]}
+{"ids":["2a9082d31072748e19bbc543","16314c5b470ca50ef6a38169"],"golds":["invalid | step=5 | reason=out_of_bounds","invalid | step=6 | reason=goal_not_reached"]}
+{"ids":["2d6a2a4c3cb3565b87639f36","0c0da2b8253f6aa5d75fac0a"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=obstacle_collision"]}
+{"ids":["ed77355a79d2b4c7776f23b4","22ed1e0b9a83fea389ff5e10"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=obstacle_collision"]}
+{"ids":["118a99de15e82826ac931c96","5df0bccece5dee8612e03b7b"],"golds":["invalid | step=2 | reason=out_of_bounds","valid"]}
+{"ids":["dad708c63d05df309958b65a","31fed58619b23d56e251ab9d"],"golds":["valid","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["8fbce54881accb0da875a9f7","d05384e9d247baf4bd089cfc"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["739e9e9fb9ac563b4d968523","ffc50aa3ad543d219cf44339"],"golds":["invalid | step=4 | reason=goal_not_reached","valid"]}
+{"ids":["9d29e288d0191c98c2cee2d5","ca490c1624ada98d6db9d4ae"],"golds":["invalid | step=4 | reason=goal_not_reached","invalid | step=3 | reason=obstacle_collision"]}
+{"ids":["5ed82f0c9285389de3632867","621d1d893fc28a3172b9317e"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["bfded494aa1de73de0a29185","fd96d01ee8cf1876de2ea105"],"golds":["invalid | step=5 | reason=goal_not_reached","invalid | step=4 | reason=obstacle_collision"]}
+{"ids":["523c2ac81c784a2ee0faa9dd","71a621a0818d9db75165ca55"],"golds":["invalid | step=5 | reason=obstacle_collision","invalid | step=6 | reason=goal_not_reached"]}
+{"ids":["99da908a17bbef6d9e1ee19c","a751c0adc0d54603c167e23f"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=obstacle_collision"]}
+{"ids":["b892ef9e35b90fdc67cb93a4","430b1d1fa9bf7a1dddbc93df"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=obstacle_collision"]}
+{"ids":["5d4f76725914b6f84e4d965b","272e4bcbda8c2b9c0273d407"],"golds":["invalid | step=6 | reason=obstacle_collision","invalid | step=7 | reason=goal_not_reached"]}
+{"ids":["fab386cfa8339fe5733f87d3","ceef82c7b6c81c054fecb9ac"],"golds":["invalid | step=8 | reason=goal_not_reached","invalid | step=7 | reason=obstacle_collision"]}
+{"ids":["dd021a08f88bcf474dcf0e84","716e97a87f77935588c2aaaa"],"golds":["invalid | step=8 | reason=goal_not_reached","invalid | step=7 | reason=obstacle_collision"]}
+{"ids":["c27b29e46f5a1f3df12b31dd","b6c607c18f4e2c999121b02e"],"golds":["invalid | step=7 | reason=obstacle_collision","valid"]}
+{"ids":["e35077a72b89ce8bc85c10ba","7acc1b516e2ab0d6114a7d88"],"golds":["invalid | step=7 | reason=obstacle_collision","invalid | step=8 | reason=goal_not_reached"]}
+{"ids":["0cdd142d90e15cbfef2172b4","2f81bfa2a00912d1e9ec150b"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=out_of_bounds"]}
+{"ids":["d4be420e01296e6e00c5ce27","f84ea21401a266baa93095b1"],"golds":["valid","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["6350f51383cbc6460ba4b72e","973863c0c4918b420ac2a1ba"],"golds":["invalid | step=4 | reason=goal_not_reached","invalid | step=3 | reason=out_of_bounds"]}
+{"ids":["74c6ec6d81aff89657cdd510","63150646d878edd4d7d6643d"],"golds":["invalid | step=4 | reason=goal_not_reached","valid"]}
+{"ids":["06b5c97d8f2d57018132cf7c","9e3c930c9ccd79bb60fa1248"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=out_of_bounds"]}
+{"ids":["b4713485af05d91dbd03e1b4","26d29043e92ff68c90745694"],"golds":["invalid | step=3 | reason=goal_not_reached","valid"]}
+{"ids":["8f41c7120a84fd24fb878a83","39470f6bbf5b4ec667c1cdc3"],"golds":["valid","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["8b71b549d8eba36fb82c19f4","2eda14cc25035416fcf09266"],"golds":["invalid | step=3 | reason=obstacle_collision","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["8a3001b2613bcd9c6cc42cfb","d9a5c0c7730f292d52831963"],"golds":["invalid | step=4 | reason=goal_not_reached","invalid | step=3 | reason=obstacle_collision"]}
+{"ids":["ec86050d8d6593c46aae7ad7","c8d7123bd3a5e5495f8ad53a"],"golds":["invalid | step=4 | reason=goal_not_reached","invalid | step=3 | reason=obstacle_collision"]}
+{"ids":["a1dc115221ccc656721b2c86","12a2a53be4e19a80bb609eae"],"golds":["invalid | step=5 | reason=goal_not_reached","invalid | step=4 | reason=obstacle_collision"]}
+{"ids":["2ed6e985d26ec7f43a5caa2f","7c9a298f8bd2836170448e0d"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=out_of_bounds"]}
+{"ids":["3249ad115ae28857082285e4","dbc898f7e51e0d078768b4d5"],"golds":["invalid | step=5 | reason=obstacle_collision","invalid | step=6 | reason=goal_not_reached"]}
+{"ids":["27d0a13bdbc511efe95840fb","e5d2ba5312ec2119ac906cbf"],"golds":["invalid | step=5 | reason=obstacle_collision","invalid | step=6 | reason=goal_not_reached"]}
+{"ids":["27cf84617232f519a055318b","08a0b6cc041bb5accb82e781"],"golds":["invalid | step=7 | reason=goal_not_reached","invalid | step=6 | reason=out_of_bounds"]}
+{"ids":["32bdd1ed76956dcf0318dcf4","6e149742310de5551fed6294"],"golds":["invalid | step=7 | reason=goal_not_reached","valid"]}
+{"ids":["3e5058bce6cc67017cf96fac","d0af590691e1ff087afd4b77"],"golds":["invalid | step=6 | reason=obstacle_collision","invalid | step=7 | reason=goal_not_reached"]}
+{"ids":["67529bef7e3e94be2176e21b","2b23ca22c3e68e6d5c9677ec"],"golds":["invalid | step=7 | reason=goal_not_reached","invalid | step=6 | reason=out_of_bounds"]}
+{"ids":["6b9d771634bf414d1c5dd815","4bbd7c1ac6052b90c8c971d1"],"golds":["invalid | step=8 | reason=goal_not_reached","invalid | step=7 | reason=out_of_bounds"]}
+{"ids":["b549ccbf16bee1cec5755f63","81feaf8aae1f809fa93daf85"],"golds":["invalid | step=7 | reason=out_of_bounds","invalid | step=8 | reason=goal_not_reached"]}
+{"ids":["14377f8db44cb295c2276910","0f7dd384e3b78b3335190658"],"golds":["invalid | step=8 | reason=goal_not_reached","valid"]}
+{"ids":["7b0dbd9f3bdb34e3afa6beac","39a5853da46989dde3f2de39"],"golds":["invalid | step=2 | reason=out_of_bounds","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["cbce4c63eb8a86a0eb2e5c35","2f54ba3b664a8c2a7512f6c1"],"golds":["invalid | step=2 | reason=out_of_bounds","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["f74f5b19b40a9db4321b2638","6e7053f2f3df857d08029ae0"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=obstacle_collision"]}
+{"ids":["e9661c88062085d956964b00","924a9a05e1ea23d75c3989da"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=out_of_bounds"]}
+{"ids":["ddee1eb8222ed7a972e91cbf","de9e1a70aaf49e810744d7e9"],"golds":["valid","invalid | step=6 | reason=goal_not_reached"]}
+{"ids":["51ae74563f78bb1584388fa3","e191f461112e22375dc1813e"],"golds":["invalid | step=2 | reason=out_of_bounds","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["d60ae8495c8edfc8fa7a927d","881bdf87791bccfb6a95ea92"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["4f97af6a9a89e0610934cf57","8f947c88dca7fb7a32d7c8e9"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["e32beb605d3fc9ca200da284","f34cd670794dec2b8505501e"],"golds":["invalid | step=4 | reason=out_of_bounds","invalid | step=5 | reason=goal_not_reached"]}
+{"ids":["b996cca0c016b048423f8f39","0d5e83162fc1b49aab6f89c7"],"golds":["invalid | step=5 | reason=out_of_bounds","valid"]}
+{"ids":["360d9f8d24bcff4d2e52eeb5","e0e871bbf0ec8f2bf3918d49"],"golds":["valid","invalid | step=6 | reason=goal_not_reached"]}
+{"ids":["1fee1b891af7953055d36225","4aed09dd651189d59aa3699b"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=out_of_bounds"]}
+{"ids":["ade86c73c38893206dec9a7e","a2689e25ad65b5638582bb3e"],"golds":["valid","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["fb6b35343e5f6c968a7b67bd","2720ae9311b2d2d0020c2ae6"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=out_of_bounds"]}
+{"ids":["66654619763a205a180a8d82","e31510a124db96019340200e"],"golds":["valid","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["43baa04b28a3e80a3584d693","cec5d6cca52c884c4498722a"],"golds":["invalid | step=5 | reason=goal_not_reached","invalid | step=4 | reason=obstacle_collision"]}
+{"ids":["f8cea6aa1140853d5245ffda","b57e348d74cdde987b8034ec"],"golds":["invalid | step=4 | reason=obstacle_collision","invalid | step=5 | reason=goal_not_reached"]}
+{"ids":["fc93469f7be1d948b70fad0d","3e53da7bfb5468a725a40b29"],"golds":["invalid | step=4 | reason=obstacle_collision","invalid | step=5 | reason=goal_not_reached"]}
+{"ids":["d92a65cf1ec2008f250aaa25","6ee44e216141232e50332fc3"],"golds":["invalid | step=6 | reason=goal_not_reached","valid"]}
+{"ids":["7f27dcbf84ad947f5b7d1124","d15a632ec59d29068fb2bb65"],"golds":["invalid | step=3 | reason=obstacle_collision","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["2c39c1a328a1ab3142558657","7768bc25acbd58ee4786c9ca"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["69e54700ab02e6d411bcba12","a3c0f937cc50327ac3d93160"],"golds":["invalid | step=4 | reason=out_of_bounds","invalid | step=5 | reason=goal_not_reached"]}
+{"ids":["7eb770321553847d5ba782fa","bd93576f6a2a82a706418c40"],"golds":["invalid | step=5 | reason=obstacle_collision","invalid | step=6 | reason=goal_not_reached"]}
+{"ids":["6f0810fbb101de4303875f70","549784d541a7b9b0c2df5fc7"],"golds":["invalid | step=8 | reason=goal_not_reached","invalid | step=7 | reason=out_of_bounds"]}
+{"ids":["80bcc686a150073b072f7ee8","7d6436a91b4c74213b161dce"],"golds":["invalid | step=8 | reason=goal_not_reached","valid"]}
+{"ids":["3ce59bec41fe70f272b05a2f","234284cfce4051985e171313"],"golds":["invalid | step=4 | reason=goal_not_reached","invalid | step=3 | reason=out_of_bounds"]}
+{"ids":["d03bfb6cca9607bac2622e6d","73bd2a6eb37259f88330d64f"],"golds":["invalid | step=4 | reason=goal_not_reached","valid"]}
+{"ids":["3af14bc2ab23bb7193c473a2","370e697dba404ab53cebf77a"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=obstacle_collision"]}
+{"ids":["659d535476c698e9903e1f50","40e5ba3e6afe80196f5833a8"],"golds":["invalid | step=4 | reason=goal_not_reached","valid"]}
+{"ids":["de03ff218bbfc77f4439b0bd","6a1d36acf0aec13e2ec903bd"],"golds":["valid","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["f995035e48fc2b67566d483c","88ef0f98699805f5c1106bc8"],"golds":["invalid | step=4 | reason=obstacle_collision","invalid | step=5 | reason=goal_not_reached"]}
+{"ids":["6cccbbb61bf6f39a8bcff10d","c3b95132b0735c093d26c67a"],"golds":["invalid | step=5 | reason=goal_not_reached","valid"]}
+{"ids":["3f0bba72017dd8b6d5ee12f2","2734d13495850353575e28b2"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=out_of_bounds"]}
+{"ids":["78ea7faa0524275aa4e46588","99c843fe45617994d3197c17"],"golds":["invalid | step=3 | reason=goal_not_reached","valid"]}
+{"ids":["8cd76c71763dc665eb8a9be7","10d33218ce68e65f41e1ffcc"],"golds":["valid","invalid | step=2 | reason=out_of_bounds"]}
+{"ids":["75e3bd2fccf064c59fe858c5","b89dcf8de827a41b95c5fdfd"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["ba2650f3b061773d4ae117fd","039bac2816c709f1e04a0bab"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=obstacle_collision"]}
+{"ids":["8e559dbcb2ab38d42dab9f3c","adf2d2fb4656d607f53e3440"],"golds":["invalid | step=7 | reason=goal_not_reached","invalid | step=6 | reason=obstacle_collision"]}
+{"ids":["b2ea2bf02389800a7f43a2da","bdc43e561ec19765e8e09cf1"],"golds":["invalid | step=7 | reason=obstacle_collision","invalid | step=8 | reason=goal_not_reached"]}
+{"ids":["41c2f6258f10bc97f64a7a55","8ed0c561d11a561a3b6cc4f1"],"golds":["invalid | step=8 | reason=goal_not_reached","invalid | step=7 | reason=obstacle_collision"]}
+{"ids":["5ce8b01d37b6261d881c3c54","939bd62a885261839cde72be"],"golds":["invalid | step=8 | reason=goal_not_reached","valid"]}
+{"ids":["afb5907b6bd6f3c3c5cae0dd","9db8177b6b9df06461dc81da"],"golds":["invalid | step=5 | reason=goal_not_reached","invalid | step=4 | reason=obstacle_collision"]}
+{"ids":["486ea27a0ba25e40c1c61911","5b9bbce3556d91c5c6b2a3db"],"golds":["invalid | step=4 | reason=out_of_bounds","invalid | step=5 | reason=goal_not_reached"]}
+{"ids":["0109c4cd3be25d87ad7b14dc","9cddf2c10fbd4f63ecf88db7"],"golds":["invalid | step=4 | reason=obstacle_collision","invalid | step=5 | reason=goal_not_reached"]}
+{"ids":["a3fb1bdbdf5c042e0536d444","e0a7b526d363bdbe6eb5e990"],"golds":["invalid | step=5 | reason=out_of_bounds","invalid | step=6 | reason=goal_not_reached"]}
+{"ids":["f19b675c7b40c799ab0e6543","cdfae415539d100a4c225cd2"],"golds":["invalid | step=6 | reason=out_of_bounds","valid"]}
+{"ids":["568b89c1a4635283dc9d2003","235dd789123613d84f636892"],"golds":["valid","invalid | step=6 | reason=out_of_bounds"]}
+{"ids":["5ad823880207c518b7a50c34","107092caa638111840b23016"],"golds":["invalid | step=4 | reason=goal_not_reached","invalid | step=3 | reason=out_of_bounds"]}
+{"ids":["bc9b3bfc05e8a210f0c65000","d7eadb16b4dc957f942ecbb6"],"golds":["invalid | step=3 | reason=obstacle_collision","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["22a58a88da5130866cdd1a9b","87d47330727976b84a042237"],"golds":["invalid | step=5 | reason=goal_not_reached","invalid | step=4 | reason=out_of_bounds"]}
+{"ids":["3cac2f9dfbaff113da70ace3","97ea10ffbfbae3b40b2450d0"],"golds":["invalid | step=4 | reason=out_of_bounds","invalid | step=5 | reason=goal_not_reached"]}
+{"ids":["e2ae4379438c4b1c2e84c850","2b53caecc93272f56644e1f2"],"golds":["invalid | step=5 | reason=out_of_bounds","invalid | step=6 | reason=goal_not_reached"]}
+{"ids":["5df0574c28fc54d322272467","4046b37ce2315b35fbbca8a9"],"golds":["invalid | step=8 | reason=goal_not_reached","valid"]}
+{"ids":["33363e0bb672865f4107f246","9e80f3ee43bd47786a796c5d"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["dbdb9fd593f5351cb5795d4e","3bc803d7909eda17ef55a951"],"golds":["invalid | step=7 | reason=goal_not_reached","invalid | step=6 | reason=obstacle_collision"]}
+{"ids":["be3a6c3c3d9d0084c3000057","8227160b925b97d90d15b950"],"golds":["invalid | step=6 | reason=out_of_bounds","invalid | step=7 | reason=goal_not_reached"]}
+{"ids":["e9a822b897cfb4787a8950c7","628115302cb0a9035435163f"],"golds":["invalid | step=7 | reason=out_of_bounds","invalid | step=8 | reason=goal_not_reached"]}
+{"ids":["1069b98f8693acad6aaecfaf","3589902b61e50faf5f127403"],"golds":["invalid | step=8 | reason=obstacle_collision","invalid | step=8 | reason=out_of_bounds"]}
+{"ids":["87ee0a0153f5f593316b8868","1aafc5cf933bdf1f37764ece"],"golds":["invalid | step=9 | reason=goal_not_reached","invalid | step=8 | reason=obstacle_collision"]}
+{"ids":["26b10d48afc26c072de92cbc","539e93a51ac48cfb00845100"],"golds":["invalid | step=9 | reason=goal_not_reached","valid"]}
+{"ids":["47c1e3eae0d6491910b123f2","3cabc6f7a10bd8f39f72e2b1"],"golds":["invalid | step=4 | reason=goal_not_reached","valid"]}
+{"ids":["551f4a3575f0d4a023626732","adc4b6344db0c5945b4e3465"],"golds":["invalid | step=4 | reason=goal_not_reached","valid"]}
+{"ids":["d660fb8a4d1e49f1430834ff","626c05e81570bfb27308ad1d"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["652b8a9b4f2dd442dca544df","075db2e5d720f1d8ad3bf185"],"golds":["invalid | step=2 | reason=obstacle_collision","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["aa57cdb4819102f2032e4f48","f025cb17ceaa4f3be08627cb"],"golds":["invalid | step=7 | reason=out_of_bounds","valid"]}
+{"ids":["506eeaaaf37e6579015edc3d","8842afe501afbb7f7cdce154"],"golds":["valid","invalid | step=8 | reason=goal_not_reached"]}
+{"ids":["e9c6be9acf53f11c4ee126a2","64a8ef4496cd84dfd3b2ed56"],"golds":["invalid | step=3 | reason=goal_not_reached","invalid | step=2 | reason=obstacle_collision"]}
+{"ids":["ab0c4350d1333d227d92b1a1","81ee71d04ecb163c66fb1c52"],"golds":["valid","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["cca21b6718b96348132ea331","06f92701f4880d0ab4a364f8"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["f939f21eb61ad33e5906e436","3df480c11ef59460965b62f3"],"golds":["invalid | step=4 | reason=out_of_bounds","invalid | step=5 | reason=goal_not_reached"]}
+{"ids":["725c5d640e14307cba257818","2a55e1cc8ac73ddfbde657f4"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=obstacle_collision"]}
+{"ids":["70973ce71b095e65c1da5564","3f1634fcdd49d687c03f5532"],"golds":["invalid | step=7 | reason=obstacle_collision","valid"]}
+{"ids":["f71b20ce6b9f0a5c359e080a","70a91a050eafe112f12847b2"],"golds":["invalid | step=8 | reason=goal_not_reached","invalid | step=7 | reason=obstacle_collision"]}
+{"ids":["d08d840cd01c4d937830adef","f25a05309507abe31636bd71"],"golds":["invalid | step=8 | reason=goal_not_reached","invalid | step=7 | reason=obstacle_collision"]}
+{"ids":["cc085acf3ce6ec897b0ea1a8","b476a7f439b28dff4b22bc8e"],"golds":["invalid | step=3 | reason=out_of_bounds","valid"]}
+{"ids":["61591caea862c2d3ab10b455","81bf1240174937ec30cee8fa"],"golds":["valid","invalid | step=3 | reason=out_of_bounds"]}
+{"ids":["dd116d484c7602d9a07aaa39","aa42415a5203ba6d7447de63"],"golds":["invalid | step=4 | reason=goal_not_reached","invalid | step=3 | reason=out_of_bounds"]}
+{"ids":["97e1803f9582f495a3b5719c","049898c7d700fb06d5a3bcc8"],"golds":["invalid | step=4 | reason=goal_not_reached","valid"]}
+{"ids":["400917474f7d840fbdfe85a4","6b0b59af351c91deac9f02af"],"golds":["invalid | step=9 | reason=obstacle_collision","invalid | step=10 | reason=goal_not_reached"]}
+{"ids":["f54cccccfad2b2313805c1b8","823d90137182339984043039"],"golds":["valid","invalid | step=9 | reason=obstacle_collision"]}
+{"ids":["ea48b520908850ea6e1800d3","6d826052604c11b323599451"],"golds":["valid","invalid | step=3 | reason=goal_not_reached"]}
+{"ids":["c1d5e932e6678f4641517b1f","944326ceff7e2935f15d9795"],"golds":["invalid | step=3 | reason=out_of_bounds","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["6ab5647ee3f556fa595f07a4","d1d7b81287b9f07bd67c58c5"],"golds":["invalid | step=6 | reason=goal_not_reached","invalid | step=5 | reason=obstacle_collision"]}
+{"ids":["1aa0ddae4bcf6708a2c1c06e","14a5421c60a46582073baad3"],"golds":["invalid | step=8 | reason=goal_not_reached","invalid | step=7 | reason=obstacle_collision"]}
+{"ids":["5911bc34c9e14fe8ddfedc8f","cb36f9c5e6f880965526fb34"],"golds":["invalid | step=7 | reason=obstacle_collision","invalid | step=8 | reason=goal_not_reached"]}
+{"ids":["96507f5339ba072f1fa87dd3","dabebbd99414aa68efe04228"],"golds":["invalid | step=8 | reason=goal_not_reached","valid"]}
+{"ids":["33830b28e27001fefeb94678","2116e492116da40e43292392"],"golds":["invalid | step=3 | reason=obstacle_collision","invalid | step=4 | reason=goal_not_reached"]}
+{"ids":["1602db1d737e821ed2de8dbe","58f5bbc518abbcf0e4ae4214"],"golds":["invalid | step=6 | reason=goal_not_reached","valid"]}
+{"ids":["687d367dc0f46352bdf8f619","0da1c2689ae1e2dbffc4d491"],"golds":["invalid | step=4 | reason=goal_not_reached","valid"]}
+{"ids":["9c506dadd642f0a98994afdf","5a5d33120a7fa61f23cabd96"],"golds":["invalid | step=5 | reason=goal_not_reached","invalid | step=4 | reason=obstacle_collision"]}
+{"ids":["78eba50218159d375ce74aa9","98954c338b584e85da28b9da"],"golds":["valid","invalid | step=7 | reason=goal_not_reached"]}

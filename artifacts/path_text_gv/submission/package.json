@@ -1,0 +1,24 @@
+{
+  "sha256": {
+    "code/texts.py": "8d64e8b608df612fff55646e8860f1ddc3a0e5084fb840b9abe1bb18b605940c",
+    "code/objectives.py": "cb21c13e927390466b87d600acd2616f3241cfcfc4e3b458f4888ed856ff5982",
+    "code/evaluation.py": "ef1c90ff304be628690b86e6ff7763ea317ebb50cf893dda2c8aeaadb433c26a",
+    "code/train.py": "5f5934e846957fd975030f0989f91ebd59311b3700130f96c4b9b0b1d66b1c3b",
+    "code/run_serial.py": "04647b4e8a790627bffd991a1811f90df34670070574eba34d9ed44e3b1255df",
+    "data/manifest.json": "5434dfa08625a48203a8b3265ad39c052c8b4f0b4356e90b91c372c734a4f5b6",
+    "data/audit.json": "c4bb9c3571789db4a724fe37127efbe227194520c5e52f38041d9f70e9786e71",
+    "data/train.jsonl": "3d4eff246c32dc625a704a26cc6a074ffaade3b54e9e5d3808899177f9cfc981",
+    "data/dev.jsonl": "fc025b0837325a73a78ef1a50dddabf0556aa57175220f410e7dd38627a56771",
+    "heldout/contrast_gold.jsonl": "1ef3b9e6baf6883707089376c63c02c03361d5a24e144c6a4710c8f6176dd583",
+    "heldout/contrast_inputs.jsonl": "0c2c57c07c00c8b227dcc50b7aebce8c24c9021f862ea15dfd8c083ff93d04dd",
+    "heldout/dev_gold.jsonl": "4ec652e318b7ea3bf572db69bc42ba45b68dbdf88246093c4a564c196a99aefc",
+    "heldout/dev_inputs.jsonl": "a2418529edc3e284a4222e47f320d0eb201c101cbd9e569e8ea3c4510b4299dd",
+    "heldout/double_gold.jsonl": "1bc2fad24aac9a2cac51aedaadf05348549631a60350eebed75771c9cc3c079b",
+    "heldout/double_inputs.jsonl": "e8e24d0df3333cb995ad2ec2a392a74a2e05e4716d6fa69e811d63a4f3a641b6",
+    "heldout/manifest.json": "0fc6ee0e245c20c6bfb03aeee8f4fe8ebb81395476174e3ede657b2d580e6372",
+    "heldout/rollout_gold.jsonl": "52c6ff0f7a0352a799a547d0a0f8b221b86d258eaf97ef17c51bb05a5fcaad2f",
+    "heldout/rollout_inputs.jsonl": "9e7fc1d8c279580f67008ffde9819a327b00a21b5e0ed061997b8740fe799f19",
+    "heldout/single_gold.jsonl": "39a170d9d312e31e28af133d461438d55b627a1d82c3a179214764f7c8793445",
+    "heldout/single_inputs.jsonl": "762606e2f62862a05eefaeaa91573438fb354ee7f353630ccffea743fa236f63"
+  }
+}

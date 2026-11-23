@@ -1,0 +1,35 @@
+{
+  "field": {
+    "epoch_directory": "E:\\YanbingChen\\gv_path_text_20261123\\lengths_0_13\\runs\\field\\epoch2",
+    "development_rank": [
+      0.38265508684863525,
+      0.54995499549955,
+      0.595
+    ],
+    "weights": {
+      "model_sha256": "0861d01d084eb54c47cb33d0d31f38c501f79fb16a00a532ebd48b259641861d"
+    }
+  },
+  "dpo": {
+    "epoch_directory": "E:\\YanbingChen\\gv_path_text_20261123\\lengths_0_13\\runs\\dpo\\epoch2",
+    "development_rank": [
+      0.13543906510851417,
+      0.32653061224489793,
+      0.635
+    ],
+    "weights": {
+      "model_sha256": "46ee036722cca8673e9f38d096b94ff36b08289c55d6509472703eb2aa745f71"
+    }
+  },
+  "mrt": {
+    "epoch_directory": "E:\\YanbingChen\\gv_path_text_20261123\\lengths_0_13\\runs\\mrt\\epoch2",
+    "development_rank": [
+      0.1,
+      0.3333333333333333,
+      0.57
+    ],
+    "weights": {
+      "model_sha256": "ef7c12b2ff8d87b179ec5d89cad4e9d5f0474020c789041faca1733f162be71a"
+    }
+  }
+}

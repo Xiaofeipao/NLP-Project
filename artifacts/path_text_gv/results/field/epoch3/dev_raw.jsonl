@@ -1,0 +1,1020 @@
+{"id":"dev-9d7c65c98636d81fe66f83ed-G","task":"G","gold":["right"],"raw":"up"}
+{"id":"dev-9d7c65c98636d81fe66f83ed-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-9d7c65c98636d81fe66f83ed-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-9d7c65c98636d81fe66f83ed-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-9d7c65c98636d81fe66f83ed-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-480e9acd45103cc6b874ef5d-G","task":"G","gold":["down","right"],"raw":"right"}
+{"id":"dev-480e9acd45103cc6b874ef5d-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-480e9acd45103cc6b874ef5d-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-480e9acd45103cc6b874ef5d-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-480e9acd45103cc6b874ef5d-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-e2e720e659733eabe9217e00-G","task":"G","gold":["down","right"],"raw":"right"}
+{"id":"dev-e2e720e659733eabe9217e00-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-e2e720e659733eabe9217e00-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-e2e720e659733eabe9217e00-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-e2e720e659733eabe9217e00-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-51e78e69656c5e4a5a95394d-G","task":"G","gold":["up"],"raw":"left"}
+{"id":"dev-51e78e69656c5e4a5a95394d-V-up","task":"V","gold":["valid"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-51e78e69656c5e4a5a95394d-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-51e78e69656c5e4a5a95394d-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-51e78e69656c5e4a5a95394d-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-8d17b4586fc8cb9f340071ab-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-8d17b4586fc8cb9f340071ab-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-8d17b4586fc8cb9f340071ab-V-down","task":"V","gold":["invalid | step=6 | reason=out_of_bounds"],"raw":"invalid | step=7 | reason=out_of_bounds"}
+{"id":"dev-8d17b4586fc8cb9f340071ab-V-left","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-8d17b4586fc8cb9f340071ab-V-right","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-8ce6882485735a36d099fa01-G","task":"G","gold":["up"],"raw":"up"}
+{"id":"dev-8ce6882485735a36d099fa01-V-up","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-8ce6882485735a36d099fa01-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-8ce6882485735a36d099fa01-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-8ce6882485735a36d099fa01-V-right","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-e3de1780dd151c3cebe92379-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-e3de1780dd151c3cebe92379-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-e3de1780dd151c3cebe92379-V-down","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-e3de1780dd151c3cebe92379-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=obstacle_collision"}
+{"id":"dev-e3de1780dd151c3cebe92379-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-f812398b4faa7cbfc43e1dd8-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-f812398b4faa7cbfc43e1dd8-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f812398b4faa7cbfc43e1dd8-V-down","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f812398b4faa7cbfc43e1dd8-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f812398b4faa7cbfc43e1dd8-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-3e4d18dc516f07aa85ce9192-G","task":"G","gold":["down","right"],"raw":"left"}
+{"id":"dev-3e4d18dc516f07aa85ce9192-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-3e4d18dc516f07aa85ce9192-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-3e4d18dc516f07aa85ce9192-V-left","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-3e4d18dc516f07aa85ce9192-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-9ac8801c83bff49b02873b9e-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-9ac8801c83bff49b02873b9e-V-up","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-9ac8801c83bff49b02873b9e-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-9ac8801c83bff49b02873b9e-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-9ac8801c83bff49b02873b9e-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-6498d85083b0af9bc289ac6b-G","task":"G","gold":["up","right"],"raw":"up"}
+{"id":"dev-6498d85083b0af9bc289ac6b-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6498d85083b0af9bc289ac6b-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6498d85083b0af9bc289ac6b-V-left","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6498d85083b0af9bc289ac6b-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-bd4f9d55c60d4cd3503a457d-G","task":"G","gold":["up","right"],"raw":"right"}
+{"id":"dev-bd4f9d55c60d4cd3503a457d-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-bd4f9d55c60d4cd3503a457d-V-down","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-bd4f9d55c60d4cd3503a457d-V-left","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-bd4f9d55c60d4cd3503a457d-V-right","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-1cf13abe1435d41e1c5d4981-G","task":"G","gold":["up","right"],"raw":"up"}
+{"id":"dev-1cf13abe1435d41e1c5d4981-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1cf13abe1435d41e1c5d4981-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1cf13abe1435d41e1c5d4981-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1cf13abe1435d41e1c5d4981-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-82e6f8f96b1f0b6df7bd0f88-G","task":"G","gold":["down","right"],"raw":"left"}
+{"id":"dev-82e6f8f96b1f0b6df7bd0f88-V-up","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-82e6f8f96b1f0b6df7bd0f88-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-82e6f8f96b1f0b6df7bd0f88-V-left","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-82e6f8f96b1f0b6df7bd0f88-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-5dd88758fb48ccfc3800eda8-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-5dd88758fb48ccfc3800eda8-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-5dd88758fb48ccfc3800eda8-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-5dd88758fb48ccfc3800eda8-V-left","task":"V","gold":["invalid | step=5 | reason=obstacle_collision"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-5dd88758fb48ccfc3800eda8-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-b1400cd0ff984c093f97f748-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-b1400cd0ff984c093f97f748-V-up","task":"V","gold":["invalid | step=5 | reason=out_of_bounds"],"raw":"invalid | step=6 | reason=out_of_bounds"}
+{"id":"dev-b1400cd0ff984c093f97f748-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-b1400cd0ff984c093f97f748-V-left","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-b1400cd0ff984c093f97f748-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-9fffbd88fb7c50bb9bccaa47-G","task":"G","gold":["down","right"],"raw":"down"}
+{"id":"dev-9fffbd88fb7c50bb9bccaa47-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-9fffbd88fb7c50bb9bccaa47-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-9fffbd88fb7c50bb9bccaa47-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-9fffbd88fb7c50bb9bccaa47-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-f43516e8bb0e4909bb2006be-G","task":"G","gold":["right"],"raw":"left"}
+{"id":"dev-f43516e8bb0e4909bb2006be-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-f43516e8bb0e4909bb2006be-V-down","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-f43516e8bb0e4909bb2006be-V-left","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-f43516e8bb0e4909bb2006be-V-right","task":"V","gold":["valid"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-10ec06fda206c32160eafcac-G","task":"G","gold":["right"],"raw":"left"}
+{"id":"dev-10ec06fda206c32160eafcac-V-up","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-10ec06fda206c32160eafcac-V-down","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-10ec06fda206c32160eafcac-V-left","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-10ec06fda206c32160eafcac-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-daaf07567ff618053ba7d8dd-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-daaf07567ff618053ba7d8dd-V-up","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-daaf07567ff618053ba7d8dd-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-daaf07567ff618053ba7d8dd-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-daaf07567ff618053ba7d8dd-V-right","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-5ed8f15a3cfb4d91153e46a0-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-5ed8f15a3cfb4d91153e46a0-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-5ed8f15a3cfb4d91153e46a0-V-down","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-5ed8f15a3cfb4d91153e46a0-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-5ed8f15a3cfb4d91153e46a0-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-defe46985a1fe4a7fe01494d-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-defe46985a1fe4a7fe01494d-V-up","task":"V","gold":["invalid | step=4 | reason=obstacle_collision"],"raw":"valid"}
+{"id":"dev-defe46985a1fe4a7fe01494d-V-down","task":"V","gold":["invalid | step=4 | reason=obstacle_collision"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-defe46985a1fe4a7fe01494d-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-defe46985a1fe4a7fe01494d-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-463331ba981da7e5f729a5d1-G","task":"G","gold":["down","right"],"raw":"down"}
+{"id":"dev-463331ba981da7e5f729a5d1-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-463331ba981da7e5f729a5d1-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-463331ba981da7e5f729a5d1-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-463331ba981da7e5f729a5d1-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-731b6899a9cb88bae55633ce-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-731b6899a9cb88bae55633ce-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-731b6899a9cb88bae55633ce-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-731b6899a9cb88bae55633ce-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-731b6899a9cb88bae55633ce-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-d4ba82cee60f3fb157da78b1-G","task":"G","gold":["up"],"raw":"left"}
+{"id":"dev-d4ba82cee60f3fb157da78b1-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-d4ba82cee60f3fb157da78b1-V-down","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=out_of_bounds"}
+{"id":"dev-d4ba82cee60f3fb157da78b1-V-left","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=out_of_bounds"}
+{"id":"dev-d4ba82cee60f3fb157da78b1-V-right","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-f752cc2036dc9fd87b4c62b8-G","task":"G","gold":["down","left"],"raw":"up"}
+{"id":"dev-f752cc2036dc9fd87b4c62b8-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-f752cc2036dc9fd87b4c62b8-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-f752cc2036dc9fd87b4c62b8-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-f752cc2036dc9fd87b4c62b8-V-right","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-d7e2286a2d1897e6fec2affb-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-d7e2286a2d1897e6fec2affb-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-d7e2286a2d1897e6fec2affb-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-d7e2286a2d1897e6fec2affb-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-d7e2286a2d1897e6fec2affb-V-right","task":"V","gold":["invalid | step=3 | reason=out_of_bounds"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-baf822b55e4103ee6d918854-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-baf822b55e4103ee6d918854-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-baf822b55e4103ee6d918854-V-down","task":"V","gold":["invalid | step=6 | reason=out_of_bounds"],"raw":"invalid | step=7 | reason=out_of_bounds"}
+{"id":"dev-baf822b55e4103ee6d918854-V-left","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-baf822b55e4103ee6d918854-V-right","task":"V","gold":["invalid | step=6 | reason=obstacle_collision"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-8532d7ac773f53dc3ebb2914-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-8532d7ac773f53dc3ebb2914-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-8532d7ac773f53dc3ebb2914-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-8532d7ac773f53dc3ebb2914-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-8532d7ac773f53dc3ebb2914-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-7b5c327ef9066606bdfd1e92-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-7b5c327ef9066606bdfd1e92-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-7b5c327ef9066606bdfd1e92-V-down","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-7b5c327ef9066606bdfd1e92-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-7b5c327ef9066606bdfd1e92-V-right","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-5cf4c267a7e1d31d661b7113-G","task":"G","gold":["right"],"raw":"up"}
+{"id":"dev-5cf4c267a7e1d31d661b7113-V-up","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-5cf4c267a7e1d31d661b7113-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-5cf4c267a7e1d31d661b7113-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-5cf4c267a7e1d31d661b7113-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-ed8cdace5314f4f2f2a9e263-G","task":"G","gold":["down","right"],"raw":"left"}
+{"id":"dev-ed8cdace5314f4f2f2a9e263-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-ed8cdace5314f4f2f2a9e263-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-ed8cdace5314f4f2f2a9e263-V-left","task":"V","gold":["invalid | step=3 | reason=out_of_bounds"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-ed8cdace5314f4f2f2a9e263-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-eb9d300a8abe41a26ea98a18-G","task":"G","gold":["down"],"raw":"left"}
+{"id":"dev-eb9d300a8abe41a26ea98a18-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-eb9d300a8abe41a26ea98a18-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-eb9d300a8abe41a26ea98a18-V-left","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-eb9d300a8abe41a26ea98a18-V-right","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-87336f9b9dc88ab3694e375e-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-87336f9b9dc88ab3694e375e-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-87336f9b9dc88ab3694e375e-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-87336f9b9dc88ab3694e375e-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-87336f9b9dc88ab3694e375e-V-right","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-34cd582feb6b85833ffe26e5-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-34cd582feb6b85833ffe26e5-V-up","task":"V","gold":["invalid | step=5 | reason=obstacle_collision"],"raw":"invalid | step=6 | reason=out_of_bounds"}
+{"id":"dev-34cd582feb6b85833ffe26e5-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-34cd582feb6b85833ffe26e5-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-34cd582feb6b85833ffe26e5-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-322a2d4f567382e145c39b77-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-322a2d4f567382e145c39b77-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-322a2d4f567382e145c39b77-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-322a2d4f567382e145c39b77-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-322a2d4f567382e145c39b77-V-right","task":"V","gold":["invalid | step=2 | reason=obstacle_collision"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-fc82121fede0df3332747e2b-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-fc82121fede0df3332747e2b-V-up","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"valid"}
+{"id":"dev-fc82121fede0df3332747e2b-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-fc82121fede0df3332747e2b-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=obstacle_collision"}
+{"id":"dev-fc82121fede0df3332747e2b-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-594c0a65d02416d746da8d62-G","task":"G","gold":["up","right"],"raw":"up"}
+{"id":"dev-594c0a65d02416d746da8d62-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-594c0a65d02416d746da8d62-V-down","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-594c0a65d02416d746da8d62-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-594c0a65d02416d746da8d62-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-a422fa793dade76273c169c0-G","task":"G","gold":["down","right"],"raw":"down"}
+{"id":"dev-a422fa793dade76273c169c0-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-a422fa793dade76273c169c0-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-a422fa793dade76273c169c0-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-a422fa793dade76273c169c0-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-30cf60b822e6879ca8c3804d-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-30cf60b822e6879ca8c3804d-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-30cf60b822e6879ca8c3804d-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-30cf60b822e6879ca8c3804d-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-30cf60b822e6879ca8c3804d-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-6739a4238f8ed2cff5dcb865-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-6739a4238f8ed2cff5dcb865-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6739a4238f8ed2cff5dcb865-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6739a4238f8ed2cff5dcb865-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6739a4238f8ed2cff5dcb865-V-right","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-297747bf053089021054be8f-G","task":"G","gold":["down","right"],"raw":"up"}
+{"id":"dev-297747bf053089021054be8f-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-297747bf053089021054be8f-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-297747bf053089021054be8f-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-297747bf053089021054be8f-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f9aaee75f1224ee242f56a71-G","task":"G","gold":["up","right"],"raw":"up"}
+{"id":"dev-f9aaee75f1224ee242f56a71-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f9aaee75f1224ee242f56a71-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f9aaee75f1224ee242f56a71-V-left","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f9aaee75f1224ee242f56a71-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f9aaee75f1224ee242f56a71-V-rigth","task":"V","gold":["invalid | step=1 | reason=invalid_action_token"],"raw":"invalid | step=1 | reason=invalid_action_token"}
+{"id":"dev-8350e4a999f9465d036190ec-G","task":"G","gold":["right"],"raw":"up"}
+{"id":"dev-8350e4a999f9465d036190ec-V-up","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-8350e4a999f9465d036190ec-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-8350e4a999f9465d036190ec-V-left","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-8350e4a999f9465d036190ec-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-4ca03bfb48ec5aa7baf46a3f-G","task":"G","gold":["right"],"raw":"down"}
+{"id":"dev-4ca03bfb48ec5aa7baf46a3f-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-4ca03bfb48ec5aa7baf46a3f-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-4ca03bfb48ec5aa7baf46a3f-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-4ca03bfb48ec5aa7baf46a3f-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-240ec9c68e92c35d8abee7c1-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-240ec9c68e92c35d8abee7c1-V-up","task":"V","gold":["invalid | step=4 | reason=obstacle_collision"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-240ec9c68e92c35d8abee7c1-V-down","task":"V","gold":["invalid | step=4 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-240ec9c68e92c35d8abee7c1-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-240ec9c68e92c35d8abee7c1-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-bc12cda2db7c3aabaae85de8-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-bc12cda2db7c3aabaae85de8-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-bc12cda2db7c3aabaae85de8-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-bc12cda2db7c3aabaae85de8-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-bc12cda2db7c3aabaae85de8-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-a31c9deef8db1d863f6433be-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-a31c9deef8db1d863f6433be-V-up","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-a31c9deef8db1d863f6433be-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-a31c9deef8db1d863f6433be-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-a31c9deef8db1d863f6433be-V-right","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-799130854282c2a243cf0c49-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-799130854282c2a243cf0c49-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-799130854282c2a243cf0c49-V-down","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-799130854282c2a243cf0c49-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-799130854282c2a243cf0c49-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-07bedbf817c04fecb748e031-G","task":"G","gold":["up","right"],"raw":"up"}
+{"id":"dev-07bedbf817c04fecb748e031-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-07bedbf817c04fecb748e031-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-07bedbf817c04fecb748e031-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-07bedbf817c04fecb748e031-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-3f8b3e25f4b42d9e83dcc11f-G","task":"G","gold":["up"],"raw":"left"}
+{"id":"dev-3f8b3e25f4b42d9e83dcc11f-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=out_of_bounds"}
+{"id":"dev-3f8b3e25f4b42d9e83dcc11f-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-3f8b3e25f4b42d9e83dcc11f-V-left","task":"V","gold":["invalid | step=5 | reason=obstacle_collision"],"raw":"invalid | step=6 | reason=out_of_bounds"}
+{"id":"dev-3f8b3e25f4b42d9e83dcc11f-V-right","task":"V","gold":["invalid | step=5 | reason=obstacle_collision"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-ad28ec4ba8e3e58c55353183-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-ad28ec4ba8e3e58c55353183-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-ad28ec4ba8e3e58c55353183-V-down","task":"V","gold":["invalid | step=6 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-ad28ec4ba8e3e58c55353183-V-left","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-ad28ec4ba8e3e58c55353183-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-774672bd8f46dacd4b10588a-G","task":"G","gold":["right"],"raw":"up"}
+{"id":"dev-774672bd8f46dacd4b10588a-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-774672bd8f46dacd4b10588a-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-774672bd8f46dacd4b10588a-V-left","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-774672bd8f46dacd4b10588a-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-5612fe8ed35cc53ab2f476d5-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-5612fe8ed35cc53ab2f476d5-V-up","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-5612fe8ed35cc53ab2f476d5-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-5612fe8ed35cc53ab2f476d5-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-5612fe8ed35cc53ab2f476d5-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f92c4c9b19b9685715b00804-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-f92c4c9b19b9685715b00804-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=out_of_bounds"}
+{"id":"dev-f92c4c9b19b9685715b00804-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-f92c4c9b19b9685715b00804-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-f92c4c9b19b9685715b00804-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-f92c4c9b19b9685715b00804-V-stop","task":"V","gold":["invalid | step=5 | reason=invalid_action_token"],"raw":"invalid | step=6 | reason=invalid_action_token"}
+{"id":"dev-addd62e7f13ea1b359917150-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-addd62e7f13ea1b359917150-V-up","task":"V","gold":["invalid | step=10 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-addd62e7f13ea1b359917150-V-down","task":"V","gold":["invalid | step=9 | reason=obstacle_collision"],"raw":"valid"}
+{"id":"dev-addd62e7f13ea1b359917150-V-left","task":"V","gold":["invalid | step=10 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-addd62e7f13ea1b359917150-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-2e2a3b0b0c0faf104c87a186-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-2e2a3b0b0c0faf104c87a186-V-up","task":"V","gold":["invalid | step=4 | reason=obstacle_collision"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-2e2a3b0b0c0faf104c87a186-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-2e2a3b0b0c0faf104c87a186-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-2e2a3b0b0c0faf104c87a186-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-92aaf27890d72b36515faeb6-G","task":"G","gold":["right"],"raw":"up"}
+{"id":"dev-92aaf27890d72b36515faeb6-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-92aaf27890d72b36515faeb6-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-92aaf27890d72b36515faeb6-V-left","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-92aaf27890d72b36515faeb6-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-2a98a582738a62b5f4cd1a4e-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-2a98a582738a62b5f4cd1a4e-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=out_of_bounds"}
+{"id":"dev-2a98a582738a62b5f4cd1a4e-V-down","task":"V","gold":["invalid | step=6 | reason=obstacle_collision"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-2a98a582738a62b5f4cd1a4e-V-left","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-2a98a582738a62b5f4cd1a4e-V-right","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-58d8ae58117a355d8d1f9827-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-58d8ae58117a355d8d1f9827-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-58d8ae58117a355d8d1f9827-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-58d8ae58117a355d8d1f9827-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-58d8ae58117a355d8d1f9827-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-815e9b5cd094871de9584ac2-G","task":"G","gold":["down","left"],"raw":"down"}
+{"id":"dev-815e9b5cd094871de9584ac2-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-815e9b5cd094871de9584ac2-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-815e9b5cd094871de9584ac2-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-815e9b5cd094871de9584ac2-V-right","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-22785c29403f5b8f657c56d8-G","task":"G","gold":["down"],"raw":"right"}
+{"id":"dev-22785c29403f5b8f657c56d8-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-22785c29403f5b8f657c56d8-V-down","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-22785c29403f5b8f657c56d8-V-left","task":"V","gold":["invalid | step=5 | reason=obstacle_collision"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-22785c29403f5b8f657c56d8-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-6f049c2ad1ff35569aa81342-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-6f049c2ad1ff35569aa81342-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6f049c2ad1ff35569aa81342-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6f049c2ad1ff35569aa81342-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6f049c2ad1ff35569aa81342-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-fa2014e8ca4726f615acf58a-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-fa2014e8ca4726f615acf58a-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-fa2014e8ca4726f615acf58a-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-fa2014e8ca4726f615acf58a-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-fa2014e8ca4726f615acf58a-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-0ccb2583ce1176e382a76cbd-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-0ccb2583ce1176e382a76cbd-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-0ccb2583ce1176e382a76cbd-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-0ccb2583ce1176e382a76cbd-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-0ccb2583ce1176e382a76cbd-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-ac118068585418ec97c3dea6-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-ac118068585418ec97c3dea6-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-ac118068585418ec97c3dea6-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-ac118068585418ec97c3dea6-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-ac118068585418ec97c3dea6-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-97153e0f9aeb131ffa6fcc76-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-97153e0f9aeb131ffa6fcc76-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=obstacle_collision"}
+{"id":"dev-97153e0f9aeb131ffa6fcc76-V-down","task":"V","gold":["invalid | step=3 | reason=out_of_bounds"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-97153e0f9aeb131ffa6fcc76-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-97153e0f9aeb131ffa6fcc76-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-6844686df53a351afdaa77f8-G","task":"G","gold":["down"],"raw":"right"}
+{"id":"dev-6844686df53a351afdaa77f8-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-6844686df53a351afdaa77f8-V-down","task":"V","gold":["valid"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-6844686df53a351afdaa77f8-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-6844686df53a351afdaa77f8-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-2866e2e1bc06df659e95eb0e-G","task":"G","gold":["right"],"raw":"left"}
+{"id":"dev-2866e2e1bc06df659e95eb0e-V-up","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-2866e2e1bc06df659e95eb0e-V-down","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-2866e2e1bc06df659e95eb0e-V-left","task":"V","gold":["invalid | step=7 | reason=out_of_bounds"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-2866e2e1bc06df659e95eb0e-V-right","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-a9bfc107c4c76fc9b633cf15-G","task":"G","gold":["down","right"],"raw":"down"}
+{"id":"dev-a9bfc107c4c76fc9b633cf15-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-a9bfc107c4c76fc9b633cf15-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-a9bfc107c4c76fc9b633cf15-V-left","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-a9bfc107c4c76fc9b633cf15-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-7fd6c1b6dd44a09786148bf5-G","task":"G","gold":["up","right"],"raw":"right"}
+{"id":"dev-7fd6c1b6dd44a09786148bf5-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-7fd6c1b6dd44a09786148bf5-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-7fd6c1b6dd44a09786148bf5-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-7fd6c1b6dd44a09786148bf5-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-9d2d3ee951b3126a2408bf7b-G","task":"G","gold":["down"],"raw":"left"}
+{"id":"dev-9d2d3ee951b3126a2408bf7b-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-9d2d3ee951b3126a2408bf7b-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-9d2d3ee951b3126a2408bf7b-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-9d2d3ee951b3126a2408bf7b-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-9d2d3ee951b3126a2408bf7b-V-jumping","task":"V","gold":["invalid | step=2 | reason=invalid_action_token"],"raw":"invalid | step=2 | reason=invalid_action_token"}
+{"id":"dev-1e8b95ee0813e8adcc210a4c-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-1e8b95ee0813e8adcc210a4c-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1e8b95ee0813e8adcc210a4c-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1e8b95ee0813e8adcc210a4c-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1e8b95ee0813e8adcc210a4c-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-70626d1be8b4651dcd4f05a0-G","task":"G","gold":["down"],"raw":"left"}
+{"id":"dev-70626d1be8b4651dcd4f05a0-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-70626d1be8b4651dcd4f05a0-V-down","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-70626d1be8b4651dcd4f05a0-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-70626d1be8b4651dcd4f05a0-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-421150b0a9a5ef4755f0f1bb-G","task":"G","gold":["down","right"],"raw":"right"}
+{"id":"dev-421150b0a9a5ef4755f0f1bb-V-up","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-421150b0a9a5ef4755f0f1bb-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-421150b0a9a5ef4755f0f1bb-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-421150b0a9a5ef4755f0f1bb-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-e730b08e0f2450e79e0575d8-G","task":"G","gold":["down"],"raw":"left"}
+{"id":"dev-e730b08e0f2450e79e0575d8-V-up","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-e730b08e0f2450e79e0575d8-V-down","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-e730b08e0f2450e79e0575d8-V-left","task":"V","gold":["invalid | step=7 | reason=out_of_bounds"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-e730b08e0f2450e79e0575d8-V-right","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-e0ed2c2e9b687f0470d7dcc7-G","task":"G","gold":["right"],"raw":"down"}
+{"id":"dev-e0ed2c2e9b687f0470d7dcc7-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-e0ed2c2e9b687f0470d7dcc7-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-e0ed2c2e9b687f0470d7dcc7-V-left","task":"V","gold":["invalid | step=3 | reason=out_of_bounds"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-e0ed2c2e9b687f0470d7dcc7-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-e0ed2c2e9b687f0470d7dcc7-V-westward","task":"V","gold":["invalid | step=3 | reason=invalid_action_token"],"raw":"invalid | step=3 | reason=invalid_action_token"}
+{"id":"dev-02da518ec41f70305e3df90f-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-02da518ec41f70305e3df90f-V-up","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-02da518ec41f70305e3df90f-V-down","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-02da518ec41f70305e3df90f-V-left","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-02da518ec41f70305e3df90f-V-right","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-749ebcd49a0287189d6e354c-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-749ebcd49a0287189d6e354c-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-749ebcd49a0287189d6e354c-V-down","task":"V","gold":["invalid | step=5 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-749ebcd49a0287189d6e354c-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-749ebcd49a0287189d6e354c-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-749ebcd49a0287189d6e354c-V-drop","task":"V","gold":["invalid | step=5 | reason=invalid_action_token"],"raw":"invalid | step=6 | reason=invalid_action_token"}
+{"id":"dev-0b2acab413f1752a214a66bf-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-0b2acab413f1752a214a66bf-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-0b2acab413f1752a214a66bf-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-0b2acab413f1752a214a66bf-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-0b2acab413f1752a214a66bf-V-right","task":"V","gold":["invalid | step=4 | reason=obstacle_collision"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-9db8874646299c9aab1e498f-G","task":"G","gold":["up","left"],"raw":"up"}
+{"id":"dev-9db8874646299c9aab1e498f-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-9db8874646299c9aab1e498f-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-9db8874646299c9aab1e498f-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-9db8874646299c9aab1e498f-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-9db8874646299c9aab1e498f-V-stop","task":"V","gold":["invalid | step=3 | reason=invalid_action_token"],"raw":"invalid | step=3 | reason=invalid_action_token"}
+{"id":"dev-9537481974eec5d8779e3767-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-9537481974eec5d8779e3767-V-up","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-9537481974eec5d8779e3767-V-down","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-9537481974eec5d8779e3767-V-left","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-9537481974eec5d8779e3767-V-right","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-4ee1bada34924d678d0cf9b6-G","task":"G","gold":["down","right"],"raw":"up"}
+{"id":"dev-4ee1bada34924d678d0cf9b6-V-up","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-4ee1bada34924d678d0cf9b6-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-4ee1bada34924d678d0cf9b6-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-4ee1bada34924d678d0cf9b6-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-3d29b499f62bf4e739672e94-G","task":"G","gold":["up"],"raw":"left"}
+{"id":"dev-3d29b499f62bf4e739672e94-V-up","task":"V","gold":["valid"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-3d29b499f62bf4e739672e94-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-3d29b499f62bf4e739672e94-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-3d29b499f62bf4e739672e94-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-4176742bb527cf335aa6c4dd-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-4176742bb527cf335aa6c4dd-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-4176742bb527cf335aa6c4dd-V-down","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-4176742bb527cf335aa6c4dd-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-4176742bb527cf335aa6c4dd-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-2dffd0a381be3576e9294bad-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-2dffd0a381be3576e9294bad-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-2dffd0a381be3576e9294bad-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-2dffd0a381be3576e9294bad-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-2dffd0a381be3576e9294bad-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-60f0786d26ba0e1f60f32954-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-60f0786d26ba0e1f60f32954-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-60f0786d26ba0e1f60f32954-V-down","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-60f0786d26ba0e1f60f32954-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-60f0786d26ba0e1f60f32954-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f97b155f09396ecc192ad267-G","task":"G","gold":["up"],"raw":"left"}
+{"id":"dev-f97b155f09396ecc192ad267-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-f97b155f09396ecc192ad267-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-f97b155f09396ecc192ad267-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-f97b155f09396ecc192ad267-V-right","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-30ffb24535978e18fbdf8f8b-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-30ffb24535978e18fbdf8f8b-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-30ffb24535978e18fbdf8f8b-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-30ffb24535978e18fbdf8f8b-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-30ffb24535978e18fbdf8f8b-V-right","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-392b29558593bbbaf2eb0488-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-392b29558593bbbaf2eb0488-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-392b29558593bbbaf2eb0488-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-392b29558593bbbaf2eb0488-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-392b29558593bbbaf2eb0488-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-b314df0b94d6c3707a60c07f-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-b314df0b94d6c3707a60c07f-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-b314df0b94d6c3707a60c07f-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-b314df0b94d6c3707a60c07f-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-b314df0b94d6c3707a60c07f-V-right","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f1b7e4b566c7380af5a3d0e7-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-f1b7e4b566c7380af5a3d0e7-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-f1b7e4b566c7380af5a3d0e7-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-f1b7e4b566c7380af5a3d0e7-V-left","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-f1b7e4b566c7380af5a3d0e7-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-fb206401c8d8851d5799d185-G","task":"G","gold":["right"],"raw":"left"}
+{"id":"dev-fb206401c8d8851d5799d185-V-up","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-fb206401c8d8851d5799d185-V-down","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-fb206401c8d8851d5799d185-V-left","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-fb206401c8d8851d5799d185-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-0b165fca6312f2ea4142dffd-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-0b165fca6312f2ea4142dffd-V-up","task":"V","gold":["invalid | step=5 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-0b165fca6312f2ea4142dffd-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-0b165fca6312f2ea4142dffd-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-0b165fca6312f2ea4142dffd-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-021a10f76dbd6f15406b5432-G","task":"G","gold":["up","right"],"raw":"left"}
+{"id":"dev-021a10f76dbd6f15406b5432-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-021a10f76dbd6f15406b5432-V-down","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-021a10f76dbd6f15406b5432-V-left","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-021a10f76dbd6f15406b5432-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-032c47fca343ac08c2b5bb00-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-032c47fca343ac08c2b5bb00-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-032c47fca343ac08c2b5bb00-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-032c47fca343ac08c2b5bb00-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-032c47fca343ac08c2b5bb00-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-a83787f3abdc0f18aa1f0943-G","task":"G","gold":["up"],"raw":"left"}
+{"id":"dev-a83787f3abdc0f18aa1f0943-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-a83787f3abdc0f18aa1f0943-V-down","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-a83787f3abdc0f18aa1f0943-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-a83787f3abdc0f18aa1f0943-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-4027d0a453e761c9f2cd9e3b-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-4027d0a453e761c9f2cd9e3b-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-4027d0a453e761c9f2cd9e3b-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-4027d0a453e761c9f2cd9e3b-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-4027d0a453e761c9f2cd9e3b-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-a42ca5deb8b47b7ea76385e8-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-a42ca5deb8b47b7ea76385e8-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-a42ca5deb8b47b7ea76385e8-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-a42ca5deb8b47b7ea76385e8-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-a42ca5deb8b47b7ea76385e8-V-right","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-52fe2a68ef6db62d417e082f-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-52fe2a68ef6db62d417e082f-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=out_of_bounds"}
+{"id":"dev-52fe2a68ef6db62d417e082f-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-52fe2a68ef6db62d417e082f-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-52fe2a68ef6db62d417e082f-V-right","task":"V","gold":["invalid | step=5 | reason=out_of_bounds"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-2900778fcefcd53852533d9c-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-2900778fcefcd53852533d9c-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-2900778fcefcd53852533d9c-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-2900778fcefcd53852533d9c-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-2900778fcefcd53852533d9c-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-f9a5b2498e634d04d58c3aec-G","task":"G","gold":["down"],"raw":"left"}
+{"id":"dev-f9a5b2498e634d04d58c3aec-V-up","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-f9a5b2498e634d04d58c3aec-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-f9a5b2498e634d04d58c3aec-V-left","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-f9a5b2498e634d04d58c3aec-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-63feaa967040cd419abf0eb2-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-63feaa967040cd419abf0eb2-V-up","task":"V","gold":["invalid | step=4 | reason=obstacle_collision"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-63feaa967040cd419abf0eb2-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-63feaa967040cd419abf0eb2-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-63feaa967040cd419abf0eb2-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-bd3828e5081aa58749a1d960-G","task":"G","gold":["right"],"raw":"up"}
+{"id":"dev-bd3828e5081aa58749a1d960-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-bd3828e5081aa58749a1d960-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-bd3828e5081aa58749a1d960-V-left","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-bd3828e5081aa58749a1d960-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-2a89fa50796089cbc5ce0145-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-2a89fa50796089cbc5ce0145-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-2a89fa50796089cbc5ce0145-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-2a89fa50796089cbc5ce0145-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-2a89fa50796089cbc5ce0145-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-7f986c276a97847291931f83-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-7f986c276a97847291931f83-V-up","task":"V","gold":["invalid | step=6 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-7f986c276a97847291931f83-V-down","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-7f986c276a97847291931f83-V-left","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-7f986c276a97847291931f83-V-right","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-8c2e77c2d7616ee6944c09b8-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-8c2e77c2d7616ee6944c09b8-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-8c2e77c2d7616ee6944c09b8-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-8c2e77c2d7616ee6944c09b8-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-8c2e77c2d7616ee6944c09b8-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-1f854d6407dd97d17eceac5f-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-1f854d6407dd97d17eceac5f-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-1f854d6407dd97d17eceac5f-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=out_of_bounds"}
+{"id":"dev-1f854d6407dd97d17eceac5f-V-left","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-1f854d6407dd97d17eceac5f-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-41ca6e86bf30d01fa40ce0ac-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-41ca6e86bf30d01fa40ce0ac-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-41ca6e86bf30d01fa40ce0ac-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-41ca6e86bf30d01fa40ce0ac-V-left","task":"V","gold":["valid"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-41ca6e86bf30d01fa40ce0ac-V-right","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-0d1c2e88b622addbd3698daf-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-0d1c2e88b622addbd3698daf-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-0d1c2e88b622addbd3698daf-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=out_of_bounds"}
+{"id":"dev-0d1c2e88b622addbd3698daf-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-0d1c2e88b622addbd3698daf-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-11eaf4d798d54788ec1759ce-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-11eaf4d798d54788ec1759ce-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-11eaf4d798d54788ec1759ce-V-down","task":"V","gold":["invalid | step=5 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-11eaf4d798d54788ec1759ce-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-11eaf4d798d54788ec1759ce-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-6b02bb32e660961cf5f245a3-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-6b02bb32e660961cf5f245a3-V-up","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-6b02bb32e660961cf5f245a3-V-down","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-6b02bb32e660961cf5f245a3-V-left","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-6b02bb32e660961cf5f245a3-V-right","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-6b02bb32e660961cf5f245a3-V-forward","task":"V","gold":["invalid | step=7 | reason=invalid_action_token"],"raw":"invalid | step=7 | reason=invalid_action_token"}
+{"id":"dev-44cdf1b69cc26bdc1b055be3-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-44cdf1b69cc26bdc1b055be3-V-up","task":"V","gold":["invalid | step=4 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-44cdf1b69cc26bdc1b055be3-V-down","task":"V","gold":["invalid | step=4 | reason=obstacle_collision"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-44cdf1b69cc26bdc1b055be3-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-44cdf1b69cc26bdc1b055be3-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-3da7983e500db3099e296d33-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-3da7983e500db3099e296d33-V-up","task":"V","gold":["invalid | step=10 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-3da7983e500db3099e296d33-V-down","task":"V","gold":["invalid | step=10 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-3da7983e500db3099e296d33-V-left","task":"V","gold":["invalid | step=9 | reason=obstacle_collision"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-3da7983e500db3099e296d33-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-3da7983e500db3099e296d33-V-pause","task":"V","gold":["invalid | step=9 | reason=invalid_action_token"],"raw":"invalid | step=9 | reason=invalid_action_token"}
+{"id":"dev-ef72e05f8f386cf87989f1df-G","task":"G","gold":["up","right"],"raw":"left"}
+{"id":"dev-ef72e05f8f386cf87989f1df-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-ef72e05f8f386cf87989f1df-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-ef72e05f8f386cf87989f1df-V-left","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-ef72e05f8f386cf87989f1df-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-ee738528dd612ca53ae2ec9a-G","task":"G","gold":["right"],"raw":"down"}
+{"id":"dev-ee738528dd612ca53ae2ec9a-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-ee738528dd612ca53ae2ec9a-V-down","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-ee738528dd612ca53ae2ec9a-V-left","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-ee738528dd612ca53ae2ec9a-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-1b7aeacc4e02e9121762df04-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-1b7aeacc4e02e9121762df04-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-1b7aeacc4e02e9121762df04-V-down","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-1b7aeacc4e02e9121762df04-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-1b7aeacc4e02e9121762df04-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-03bbb6d49936f62abdf57496-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-03bbb6d49936f62abdf57496-V-up","task":"V","gold":["invalid | step=5 | reason=obstacle_collision"],"raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-03bbb6d49936f62abdf57496-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-03bbb6d49936f62abdf57496-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-03bbb6d49936f62abdf57496-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-d2f5ab921dffa608198ca46a-G","task":"G","gold":["up","right"],"raw":"up"}
+{"id":"dev-d2f5ab921dffa608198ca46a-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-d2f5ab921dffa608198ca46a-V-down","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-d2f5ab921dffa608198ca46a-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-d2f5ab921dffa608198ca46a-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-d2f5ab921dffa608198ca46a-V-climb","task":"V","gold":["invalid | step=1 | reason=invalid_action_token"],"raw":"invalid | step=1 | reason=invalid_action_token"}
+{"id":"dev-706d653d037389b6295948ed-G","task":"G","gold":["up"],"raw":"left"}
+{"id":"dev-706d653d037389b6295948ed-V-up","task":"V","gold":["valid"],"raw":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-706d653d037389b6295948ed-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-706d653d037389b6295948ed-V-left","task":"V","gold":["invalid | step=4 | reason=obstacle_collision"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-706d653d037389b6295948ed-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-b77528c611c1b237bd7d87fb-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-b77528c611c1b237bd7d87fb-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-b77528c611c1b237bd7d87fb-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-b77528c611c1b237bd7d87fb-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-b77528c611c1b237bd7d87fb-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-ea1814216763a40834bec308-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-ea1814216763a40834bec308-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-ea1814216763a40834bec308-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-ea1814216763a40834bec308-V-left","task":"V","gold":["valid"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-ea1814216763a40834bec308-V-right","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-ea1814216763a40834bec308-V-climb","task":"V","gold":["invalid | step=3 | reason=invalid_action_token"],"raw":"invalid | step=3 | reason=invalid_action_token"}
+{"id":"dev-d696da4c7c22108e3836e02e-G","task":"G","gold":["down","right"],"raw":"left"}
+{"id":"dev-d696da4c7c22108e3836e02e-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-d696da4c7c22108e3836e02e-V-down","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=out_of_bounds"}
+{"id":"dev-d696da4c7c22108e3836e02e-V-left","task":"V","gold":["invalid | step=6 | reason=out_of_bounds"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-d696da4c7c22108e3836e02e-V-right","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-920dc802f40c40f195d0ab0b-G","task":"G","gold":["down"],"raw":"left"}
+{"id":"dev-920dc802f40c40f195d0ab0b-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-920dc802f40c40f195d0ab0b-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-920dc802f40c40f195d0ab0b-V-left","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-920dc802f40c40f195d0ab0b-V-right","task":"V","gold":["invalid | step=3 | reason=out_of_bounds"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-8506cbf4259592c66c364a4f-G","task":"G","gold":["up"],"raw":"up"}
+{"id":"dev-8506cbf4259592c66c364a4f-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-8506cbf4259592c66c364a4f-V-down","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-8506cbf4259592c66c364a4f-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-8506cbf4259592c66c364a4f-V-right","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-2878f3441120e3482478497b-G","task":"G","gold":["up"],"raw":"up"}
+{"id":"dev-2878f3441120e3482478497b-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-2878f3441120e3482478497b-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-2878f3441120e3482478497b-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-2878f3441120e3482478497b-V-right","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-b8eeed68b7bde084f16d21a6-G","task":"G","gold":["down"],"raw":"left"}
+{"id":"dev-b8eeed68b7bde084f16d21a6-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-b8eeed68b7bde084f16d21a6-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-b8eeed68b7bde084f16d21a6-V-left","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"valid"}
+{"id":"dev-b8eeed68b7bde084f16d21a6-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-e8bc5a3d369041a56b15d2cd-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-e8bc5a3d369041a56b15d2cd-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-e8bc5a3d369041a56b15d2cd-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-e8bc5a3d369041a56b15d2cd-V-left","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-e8bc5a3d369041a56b15d2cd-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-7b1583122748da3a432b1bdf-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-7b1583122748da3a432b1bdf-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-7b1583122748da3a432b1bdf-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-7b1583122748da3a432b1bdf-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-7b1583122748da3a432b1bdf-V-right","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-4e766f129a8ba6fb2c582d77-G","task":"G","gold":["down","right"],"raw":"left"}
+{"id":"dev-4e766f129a8ba6fb2c582d77-V-up","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-4e766f129a8ba6fb2c582d77-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-4e766f129a8ba6fb2c582d77-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-4e766f129a8ba6fb2c582d77-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-dc708d35043e2bbe6f519d66-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-dc708d35043e2bbe6f519d66-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-dc708d35043e2bbe6f519d66-V-down","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=out_of_bounds"}
+{"id":"dev-dc708d35043e2bbe6f519d66-V-left","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-dc708d35043e2bbe6f519d66-V-right","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-7ed39e5151e658baf6ccd272-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-7ed39e5151e658baf6ccd272-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-7ed39e5151e658baf6ccd272-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-7ed39e5151e658baf6ccd272-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-7ed39e5151e658baf6ccd272-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-38be83475257307c23a585fb-G","task":"G","gold":["down"],"raw":"up"}
+{"id":"dev-38be83475257307c23a585fb-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-38be83475257307c23a585fb-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-38be83475257307c23a585fb-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-38be83475257307c23a585fb-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-0f7b6d026622ab3dfc9bbb35-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-0f7b6d026622ab3dfc9bbb35-V-up","task":"V","gold":["invalid | step=4 | reason=out_of_bounds"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-0f7b6d026622ab3dfc9bbb35-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-0f7b6d026622ab3dfc9bbb35-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-0f7b6d026622ab3dfc9bbb35-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-b9059f05ac98baa094115373-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-b9059f05ac98baa094115373-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=out_of_bounds"}
+{"id":"dev-b9059f05ac98baa094115373-V-down","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-b9059f05ac98baa094115373-V-left","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-b9059f05ac98baa094115373-V-right","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-e4848691975b952f05adf1d4-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-e4848691975b952f05adf1d4-V-up","task":"V","gold":["invalid | step=2 | reason=obstacle_collision"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-e4848691975b952f05adf1d4-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-e4848691975b952f05adf1d4-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-e4848691975b952f05adf1d4-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-04fde658f15c0ad746f42ca9-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-04fde658f15c0ad746f42ca9-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=out_of_bounds"}
+{"id":"dev-04fde658f15c0ad746f42ca9-V-down","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-04fde658f15c0ad746f42ca9-V-left","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-04fde658f15c0ad746f42ca9-V-right","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-04fde658f15c0ad746f42ca9-V-forward","task":"V","gold":["invalid | step=6 | reason=invalid_action_token"],"raw":"invalid | step=6 | reason=invalid_action_token"}
+{"id":"dev-6910711b95433300439eb8e8-G","task":"G","gold":["down"],"raw":"left"}
+{"id":"dev-6910711b95433300439eb8e8-V-up","task":"V","gold":["invalid | step=4 | reason=out_of_bounds"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-6910711b95433300439eb8e8-V-down","task":"V","gold":["valid"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-6910711b95433300439eb8e8-V-left","task":"V","gold":["invalid | step=4 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-6910711b95433300439eb8e8-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-f17ecb832927c63fb3257696-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-f17ecb832927c63fb3257696-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-f17ecb832927c63fb3257696-V-down","task":"V","gold":["invalid | step=4 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-f17ecb832927c63fb3257696-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-f17ecb832927c63fb3257696-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-f17ecb832927c63fb3257696-V-pause","task":"V","gold":["invalid | step=4 | reason=invalid_action_token"],"raw":"invalid | step=5 | reason=invalid_action_token"}
+{"id":"dev-f98faae640105c923a6c6988-G","task":"G","gold":["right"],"raw":"left"}
+{"id":"dev-f98faae640105c923a6c6988-V-up","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f98faae640105c923a6c6988-V-down","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f98faae640105c923a6c6988-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-f98faae640105c923a6c6988-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-c472979d40a2974316e3119f-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-c472979d40a2974316e3119f-V-up","task":"V","gold":["invalid | step=5 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-c472979d40a2974316e3119f-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-c472979d40a2974316e3119f-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-c472979d40a2974316e3119f-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-b4eda0b9e1af9c304e7797ba-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-b4eda0b9e1af9c304e7797ba-V-up","task":"V","gold":["invalid | step=5 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-b4eda0b9e1af9c304e7797ba-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-b4eda0b9e1af9c304e7797ba-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-b4eda0b9e1af9c304e7797ba-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-6d843805ece07506d81b55a7-G","task":"G","gold":["down"],"raw":"left"}
+{"id":"dev-6d843805ece07506d81b55a7-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6d843805ece07506d81b55a7-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6d843805ece07506d81b55a7-V-left","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-6d843805ece07506d81b55a7-V-right","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-40da71f087b73cc5aa5d96ef-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-40da71f087b73cc5aa5d96ef-V-up","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-40da71f087b73cc5aa5d96ef-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-40da71f087b73cc5aa5d96ef-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-40da71f087b73cc5aa5d96ef-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-0c3c3d4f16393b822cb8cd8f-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-0c3c3d4f16393b822cb8cd8f-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-0c3c3d4f16393b822cb8cd8f-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-0c3c3d4f16393b822cb8cd8f-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-0c3c3d4f16393b822cb8cd8f-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-0c3c3d4f16393b822cb8cd8f-V-drop","task":"V","gold":["invalid | step=1 | reason=invalid_action_token"],"raw":"invalid | step=1 | reason=invalid_action_token"}
+{"id":"dev-ace3f0e7d0b26febb3d3511b-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-ace3f0e7d0b26febb3d3511b-V-up","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-ace3f0e7d0b26febb3d3511b-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-ace3f0e7d0b26febb3d3511b-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-ace3f0e7d0b26febb3d3511b-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-78829994976cee4707b07a29-G","task":"G","gold":["down","right"],"raw":"left"}
+{"id":"dev-78829994976cee4707b07a29-V-up","task":"V","gold":["invalid | step=9 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-78829994976cee4707b07a29-V-down","task":"V","gold":["invalid | step=9 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-78829994976cee4707b07a29-V-left","task":"V","gold":["invalid | step=9 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-78829994976cee4707b07a29-V-right","task":"V","gold":["invalid | step=9 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-78829994976cee4707b07a29-V-Left","task":"V","gold":["invalid | step=8 | reason=invalid_action_token"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-53e95c1c1dc988394e8f783d-G","task":"G","gold":["up","right"],"raw":"right"}
+{"id":"dev-53e95c1c1dc988394e8f783d-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-53e95c1c1dc988394e8f783d-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-53e95c1c1dc988394e8f783d-V-left","task":"V","gold":["invalid | step=4 | reason=out_of_bounds"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-53e95c1c1dc988394e8f783d-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-cedab1b6efeedf947797a57f-G","task":"G","gold":["down"],"raw":"right"}
+{"id":"dev-cedab1b6efeedf947797a57f-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-cedab1b6efeedf947797a57f-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-cedab1b6efeedf947797a57f-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-cedab1b6efeedf947797a57f-V-right","task":"V","gold":["invalid | step=4 | reason=obstacle_collision"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-45b431e119e1b3292d598898-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-45b431e119e1b3292d598898-V-up","task":"V","gold":["invalid | step=8 | reason=out_of_bounds"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-45b431e119e1b3292d598898-V-down","task":"V","gold":["invalid | step=9 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-45b431e119e1b3292d598898-V-left","task":"V","gold":["valid"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-45b431e119e1b3292d598898-V-right","task":"V","gold":["invalid | step=9 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-219af2d09f5767560cc52dca-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-219af2d09f5767560cc52dca-V-up","task":"V","gold":["invalid | step=2 | reason=obstacle_collision"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-219af2d09f5767560cc52dca-V-down","task":"V","gold":["invalid | step=2 | reason=obstacle_collision"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-219af2d09f5767560cc52dca-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-219af2d09f5767560cc52dca-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-ae3142b8a64c1dfc3791904a-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-ae3142b8a64c1dfc3791904a-V-up","task":"V","gold":["invalid | step=10 | reason=out_of_bounds"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-ae3142b8a64c1dfc3791904a-V-down","task":"V","gold":["invalid | step=11 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-ae3142b8a64c1dfc3791904a-V-left","task":"V","gold":["invalid | step=11 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-ae3142b8a64c1dfc3791904a-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-ae3142b8a64c1dfc3791904a-V-westward","task":"V","gold":["invalid | step=10 | reason=invalid_action_token"],"raw":"invalid | step=9 | reason=invalid_action_token"}
+{"id":"dev-747a4093f0b7684f09fdcf6c-G","task":"G","gold":["right"],"raw":"left"}
+{"id":"dev-747a4093f0b7684f09fdcf6c-V-up","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-747a4093f0b7684f09fdcf6c-V-down","task":"V","gold":["invalid | step=7 | reason=out_of_bounds"],"raw":"invalid | step=7 | reason=out_of_bounds"}
+{"id":"dev-747a4093f0b7684f09fdcf6c-V-left","task":"V","gold":["invalid | step=7 | reason=out_of_bounds"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-747a4093f0b7684f09fdcf6c-V-right","task":"V","gold":["valid"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-1438da051b49eaa5dada650d-G","task":"G","gold":["right"],"raw":"up"}
+{"id":"dev-1438da051b49eaa5dada650d-V-up","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1438da051b49eaa5dada650d-V-down","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1438da051b49eaa5dada650d-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1438da051b49eaa5dada650d-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-04eb77805e4eefd7e4987db6-G","task":"G","gold":["up","right"],"raw":"up"}
+{"id":"dev-04eb77805e4eefd7e4987db6-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-04eb77805e4eefd7e4987db6-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-04eb77805e4eefd7e4987db6-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-04eb77805e4eefd7e4987db6-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-cd2ef3fee6ec228e98555aa1-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-cd2ef3fee6ec228e98555aa1-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-cd2ef3fee6ec228e98555aa1-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-cd2ef3fee6ec228e98555aa1-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-cd2ef3fee6ec228e98555aa1-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-98a445b8ec41e81f97aabe85-G","task":"G","gold":["down"],"raw":"left"}
+{"id":"dev-98a445b8ec41e81f97aabe85-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=obstacle_collision"}
+{"id":"dev-98a445b8ec41e81f97aabe85-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-98a445b8ec41e81f97aabe85-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-98a445b8ec41e81f97aabe85-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-3bf1c144d441d7bc4761d543-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-3bf1c144d441d7bc4761d543-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-3bf1c144d441d7bc4761d543-V-down","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-3bf1c144d441d7bc4761d543-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-3bf1c144d441d7bc4761d543-V-right","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-7c3f1d7577be8da00b56d3b4-G","task":"G","gold":["down","right"],"raw":"down"}
+{"id":"dev-7c3f1d7577be8da00b56d3b4-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-7c3f1d7577be8da00b56d3b4-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-7c3f1d7577be8da00b56d3b4-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-7c3f1d7577be8da00b56d3b4-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-7c3f1d7577be8da00b56d3b4-V-turn_left","task":"V","gold":["invalid | step=3 | reason=invalid_action_token"],"raw":"invalid | step=3 | reason=invalid_action_token"}
+{"id":"dev-ba8c9a46f9dda582eafec066-G","task":"G","gold":["up","down","left"],"raw":"left"}
+{"id":"dev-ba8c9a46f9dda582eafec066-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-ba8c9a46f9dda582eafec066-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-ba8c9a46f9dda582eafec066-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-ba8c9a46f9dda582eafec066-V-right","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-1d917dcab3cc53894d847e2a-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-1d917dcab3cc53894d847e2a-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-1d917dcab3cc53894d847e2a-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-1d917dcab3cc53894d847e2a-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-1d917dcab3cc53894d847e2a-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-725558ebaa70b636188413e2-G","task":"G","gold":["up"],"raw":"up"}
+{"id":"dev-725558ebaa70b636188413e2-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-725558ebaa70b636188413e2-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-725558ebaa70b636188413e2-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-725558ebaa70b636188413e2-V-right","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-d9e5a046141ba4314ca437ac-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-d9e5a046141ba4314ca437ac-V-up","task":"V","gold":["invalid | step=7 | reason=out_of_bounds"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-d9e5a046141ba4314ca437ac-V-down","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-d9e5a046141ba4314ca437ac-V-left","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-d9e5a046141ba4314ca437ac-V-right","task":"V","gold":["invalid | step=7 | reason=obstacle_collision"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-d2256923682093b53f680a8d-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-d2256923682093b53f680a8d-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-d2256923682093b53f680a8d-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-d2256923682093b53f680a8d-V-left","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-d2256923682093b53f680a8d-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-eb76a21ed4d60da38fb88836-G","task":"G","gold":["down","right"],"raw":"left"}
+{"id":"dev-eb76a21ed4d60da38fb88836-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=obstacle_collision"}
+{"id":"dev-eb76a21ed4d60da38fb88836-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-eb76a21ed4d60da38fb88836-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-eb76a21ed4d60da38fb88836-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-a2d52325ae2eeaf14ff23984-G","task":"G","gold":["up","right"],"raw":"up"}
+{"id":"dev-a2d52325ae2eeaf14ff23984-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-a2d52325ae2eeaf14ff23984-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-a2d52325ae2eeaf14ff23984-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-a2d52325ae2eeaf14ff23984-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-b4ad4b803a4bb21faf47434d-G","task":"G","gold":["down","right"],"raw":"left"}
+{"id":"dev-b4ad4b803a4bb21faf47434d-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-b4ad4b803a4bb21faf47434d-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-b4ad4b803a4bb21faf47434d-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-b4ad4b803a4bb21faf47434d-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-a7ac20058bbbe85496f4e872-G","task":"G","gold":["up"],"raw":"left"}
+{"id":"dev-a7ac20058bbbe85496f4e872-V-up","task":"V","gold":["valid"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-a7ac20058bbbe85496f4e872-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-a7ac20058bbbe85496f4e872-V-left","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"valid"}
+{"id":"dev-a7ac20058bbbe85496f4e872-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-9ae7b645759583f20a0a0c84-G","task":"G","gold":["up"],"raw":"right"}
+{"id":"dev-9ae7b645759583f20a0a0c84-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-9ae7b645759583f20a0a0c84-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-9ae7b645759583f20a0a0c84-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=obstacle_collision"}
+{"id":"dev-9ae7b645759583f20a0a0c84-V-right","task":"V","gold":["invalid | step=3 | reason=out_of_bounds"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-8859b3c77397e2f5fd0f4be8-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-8859b3c77397e2f5fd0f4be8-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-8859b3c77397e2f5fd0f4be8-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-8859b3c77397e2f5fd0f4be8-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-8859b3c77397e2f5fd0f4be8-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-515d6912565ef34eee54107d-G","task":"G","gold":["right"],"raw":"up"}
+{"id":"dev-515d6912565ef34eee54107d-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-515d6912565ef34eee54107d-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-515d6912565ef34eee54107d-V-left","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-515d6912565ef34eee54107d-V-right","task":"V","gold":["valid"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-74e069dbeb9177db0cc44b0d-G","task":"G","gold":["up","right"],"raw":"right"}
+{"id":"dev-74e069dbeb9177db0cc44b0d-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-74e069dbeb9177db0cc44b0d-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-74e069dbeb9177db0cc44b0d-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-74e069dbeb9177db0cc44b0d-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-86d2cb5c7cc30a7ab27340c0-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-86d2cb5c7cc30a7ab27340c0-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-86d2cb5c7cc30a7ab27340c0-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-86d2cb5c7cc30a7ab27340c0-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-86d2cb5c7cc30a7ab27340c0-V-right","task":"V","gold":["invalid | step=2 | reason=obstacle_collision"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-b70176d66881d3948921de64-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-b70176d66881d3948921de64-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-b70176d66881d3948921de64-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-b70176d66881d3948921de64-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-b70176d66881d3948921de64-V-right","task":"V","gold":["invalid | step=3 | reason=out_of_bounds"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-d264d96b742000c6e575c69c-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-d264d96b742000c6e575c69c-V-up","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-d264d96b742000c6e575c69c-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-d264d96b742000c6e575c69c-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-d264d96b742000c6e575c69c-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-cce4ccbbf8d1d504108d61de-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-cce4ccbbf8d1d504108d61de-V-up","task":"V","gold":["invalid | step=3 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-cce4ccbbf8d1d504108d61de-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-cce4ccbbf8d1d504108d61de-V-left","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-cce4ccbbf8d1d504108d61de-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-63155cad616fd13b139e2e6a-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-63155cad616fd13b139e2e6a-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-63155cad616fd13b139e2e6a-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-63155cad616fd13b139e2e6a-V-left","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=goal_not_reached"}
+{"id":"dev-63155cad616fd13b139e2e6a-V-right","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-6943c62abae9f87b82d0de02-G","task":"G","gold":["right"],"raw":"left"}
+{"id":"dev-6943c62abae9f87b82d0de02-V-up","task":"V","gold":["invalid | step=7 | reason=out_of_bounds"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-6943c62abae9f87b82d0de02-V-down","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-6943c62abae9f87b82d0de02-V-left","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-6943c62abae9f87b82d0de02-V-right","task":"V","gold":["valid"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-fba8bd59581f954aec8800f8-G","task":"G","gold":["down","left"],"raw":"left"}
+{"id":"dev-fba8bd59581f954aec8800f8-V-up","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-fba8bd59581f954aec8800f8-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-fba8bd59581f954aec8800f8-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-fba8bd59581f954aec8800f8-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-9b3df37b5b80413cf1def08b-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-9b3df37b5b80413cf1def08b-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-9b3df37b5b80413cf1def08b-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-9b3df37b5b80413cf1def08b-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-9b3df37b5b80413cf1def08b-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-0dced47a099aa66fd7212329-G","task":"G","gold":["right"],"raw":"up"}
+{"id":"dev-0dced47a099aa66fd7212329-V-up","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-0dced47a099aa66fd7212329-V-down","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-0dced47a099aa66fd7212329-V-left","task":"V","gold":["invalid | step=2 | reason=out_of_bounds"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-0dced47a099aa66fd7212329-V-right","task":"V","gold":["invalid | step=3 | reason=goal_not_reached"],"raw":"invalid | step=2 | reason=obstacle_collision"}
+{"id":"dev-c0abed58f70d7489be3a4eb3-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-c0abed58f70d7489be3a4eb3-V-up","task":"V","gold":["invalid | step=9 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-c0abed58f70d7489be3a4eb3-V-down","task":"V","gold":["invalid | step=9 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-c0abed58f70d7489be3a4eb3-V-left","task":"V","gold":["invalid | step=9 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-c0abed58f70d7489be3a4eb3-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-238742c78fb0fbf76c20ee99-G","task":"G","gold":["up"],"raw":"right"}
+{"id":"dev-238742c78fb0fbf76c20ee99-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-238742c78fb0fbf76c20ee99-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-238742c78fb0fbf76c20ee99-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-238742c78fb0fbf76c20ee99-V-right","task":"V","gold":["invalid | step=4 | reason=obstacle_collision"],"raw":"valid"}
+{"id":"dev-238742c78fb0fbf76c20ee99-V-jumping","task":"V","gold":["invalid | step=4 | reason=invalid_action_token"],"raw":"invalid | step=5 | reason=invalid_action_token"}
+{"id":"dev-3f0f110a33a2a39e667d859a-G","task":"G","gold":["down","right"],"raw":"left"}
+{"id":"dev-3f0f110a33a2a39e667d859a-V-up","task":"V","gold":["invalid | step=1 | reason=obstacle_collision"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-3f0f110a33a2a39e667d859a-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-3f0f110a33a2a39e667d859a-V-left","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-3f0f110a33a2a39e667d859a-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-a254f1a69634e9ae1e1aae03-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-a254f1a69634e9ae1e1aae03-V-up","task":"V","gold":["invalid | step=6 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-a254f1a69634e9ae1e1aae03-V-down","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-a254f1a69634e9ae1e1aae03-V-left","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-a254f1a69634e9ae1e1aae03-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-f7de11c654ce7fecd9e9e4e7-G","task":"G","gold":["down","right"],"raw":"left"}
+{"id":"dev-f7de11c654ce7fecd9e9e4e7-V-up","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-f7de11c654ce7fecd9e9e4e7-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-f7de11c654ce7fecd9e9e4e7-V-left","task":"V","gold":["invalid | step=4 | reason=out_of_bounds"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-f7de11c654ce7fecd9e9e4e7-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-aed896f4ca3614222330fced-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-aed896f4ca3614222330fced-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-aed896f4ca3614222330fced-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-aed896f4ca3614222330fced-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-aed896f4ca3614222330fced-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-aed896f4ca3614222330fced-V-Left","task":"V","gold":["invalid | step=3 | reason=invalid_action_token"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-e0906477d9ab91b1fb39f5ac-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-e0906477d9ab91b1fb39f5ac-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-e0906477d9ab91b1fb39f5ac-V-down","task":"V","gold":["invalid | step=5 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-e0906477d9ab91b1fb39f5ac-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=goal_not_reached"}
+{"id":"dev-e0906477d9ab91b1fb39f5ac-V-right","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-34eb92879d9c8767c751c3a1-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-34eb92879d9c8767c751c3a1-V-up","task":"V","gold":["invalid | step=8 | reason=out_of_bounds"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-34eb92879d9c8767c751c3a1-V-down","task":"V","gold":["invalid | step=9 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-34eb92879d9c8767c751c3a1-V-left","task":"V","gold":["invalid | step=9 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-34eb92879d9c8767c751c3a1-V-right","task":"V","gold":["invalid | step=8 | reason=obstacle_collision"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-40760df6e7afaea690320d77-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-40760df6e7afaea690320d77-V-up","task":"V","gold":["invalid | step=10 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-40760df6e7afaea690320d77-V-down","task":"V","gold":["invalid | step=9 | reason=out_of_bounds"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-40760df6e7afaea690320d77-V-left","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-40760df6e7afaea690320d77-V-right","task":"V","gold":["invalid | step=10 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-1837f36aa3ed6c7fda3dc221-G","task":"G","gold":["down","left"],"raw":"up"}
+{"id":"dev-1837f36aa3ed6c7fda3dc221-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1837f36aa3ed6c7fda3dc221-V-down","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1837f36aa3ed6c7fda3dc221-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-1837f36aa3ed6c7fda3dc221-V-right","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-7643a6afc67df2a9854352e4-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-7643a6afc67df2a9854352e4-V-up","task":"V","gold":["invalid | step=7 | reason=out_of_bounds"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-7643a6afc67df2a9854352e4-V-down","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-7643a6afc67df2a9854352e4-V-left","task":"V","gold":["valid"],"raw":"valid"}
+{"id":"dev-7643a6afc67df2a9854352e4-V-right","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-7643a6afc67df2a9854352e4-V-rigth","task":"V","gold":["invalid | step=7 | reason=invalid_action_token"],"raw":"invalid | step=9 | reason=invalid_action_token"}
+{"id":"dev-9c7734acad84ebdc6554a467-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-9c7734acad84ebdc6554a467-V-up","task":"V","gold":["invalid | step=4 | reason=out_of_bounds"],"raw":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-9c7734acad84ebdc6554a467-V-down","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=out_of_bounds"}
+{"id":"dev-9c7734acad84ebdc6554a467-V-left","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-9c7734acad84ebdc6554a467-V-right","task":"V","gold":["invalid | step=5 | reason=goal_not_reached"],"raw":"invalid | step=5 | reason=obstacle_collision"}
+{"id":"dev-55bfadc2fdf371c13b6d5349-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-55bfadc2fdf371c13b6d5349-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=obstacle_collision"}
+{"id":"dev-55bfadc2fdf371c13b6d5349-V-down","task":"V","gold":["invalid | step=3 | reason=obstacle_collision"],"raw":"invalid | step=3 | reason=out_of_bounds"}
+{"id":"dev-55bfadc2fdf371c13b6d5349-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-55bfadc2fdf371c13b6d5349-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-8d9ab1b0e7664cbbf387b062-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-8d9ab1b0e7664cbbf387b062-V-up","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-8d9ab1b0e7664cbbf387b062-V-down","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=4 | reason=goal_not_reached"}
+{"id":"dev-8d9ab1b0e7664cbbf387b062-V-left","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-8d9ab1b0e7664cbbf387b062-V-right","task":"V","gold":["invalid | step=4 | reason=goal_not_reached"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-8d9ab1b0e7664cbbf387b062-V-turn_left","task":"V","gold":["invalid | step=3 | reason=invalid_action_token"],"raw":"invalid | step=3 | reason=obstacle_collision"}
+{"id":"dev-9feb985247cfe1752ae87d83-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-9feb985247cfe1752ae87d83-V-up","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-9feb985247cfe1752ae87d83-V-down","task":"V","gold":["invalid | step=5 | reason=out_of_bounds"],"raw":"invalid | step=6 | reason=out_of_bounds"}
+{"id":"dev-9feb985247cfe1752ae87d83-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-9feb985247cfe1752ae87d83-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-5ef924205e5a0b7303e35835-G","task":"G","gold":["up"],"raw":"left"}
+{"id":"dev-5ef924205e5a0b7303e35835-V-up","task":"V","gold":["valid"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-5ef924205e5a0b7303e35835-V-down","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=out_of_bounds"}
+{"id":"dev-5ef924205e5a0b7303e35835-V-left","task":"V","gold":["invalid | step=7 | reason=out_of_bounds"],"raw":"valid"}
+{"id":"dev-5ef924205e5a0b7303e35835-V-right","task":"V","gold":["invalid | step=8 | reason=goal_not_reached"],"raw":"invalid | step=9 | reason=obstacle_collision"}
+{"id":"dev-547c37f1ce727df95ae38551-G","task":"G","gold":["up","left"],"raw":"left"}
+{"id":"dev-547c37f1ce727df95ae38551-V-up","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-547c37f1ce727df95ae38551-V-down","task":"V","gold":["invalid | step=1 | reason=out_of_bounds"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-547c37f1ce727df95ae38551-V-left","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-547c37f1ce727df95ae38551-V-right","task":"V","gold":["invalid | step=2 | reason=goal_not_reached"],"raw":"invalid | step=1 | reason=obstacle_collision"}
+{"id":"dev-740ef757c6aaaea8f9a0efdc-G","task":"G","gold":["left"],"raw":"left"}
+{"id":"dev-740ef757c6aaaea8f9a0efdc-V-up","task":"V","gold":["invalid | step=5 | reason=obstacle_collision"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-740ef757c6aaaea8f9a0efdc-V-down","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=out_of_bounds"}
+{"id":"dev-740ef757c6aaaea8f9a0efdc-V-left","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-740ef757c6aaaea8f9a0efdc-V-right","task":"V","gold":["invalid | step=6 | reason=goal_not_reached"],"raw":"invalid | step=6 | reason=obstacle_collision"}
+{"id":"dev-840ccc88ef1252b9bef310a8-G","task":"G","gold":["right"],"raw":"right"}
+{"id":"dev-840ccc88ef1252b9bef310a8-V-up","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-840ccc88ef1252b9bef310a8-V-down","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}
+{"id":"dev-840ccc88ef1252b9bef310a8-V-left","task":"V","gold":["invalid | step=6 | reason=obstacle_collision"],"raw":"invalid | step=7 | reason=obstacle_collision"}
+{"id":"dev-840ccc88ef1252b9bef310a8-V-right","task":"V","gold":["invalid | step=7 | reason=goal_not_reached"],"raw":"valid"}

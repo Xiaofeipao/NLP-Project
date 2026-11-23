@@ -1,0 +1,3376 @@
+{
+  "finished_singapore": "2026-11-24T02:22:53+08:00",
+  "elapsed_seconds": 12128.586255073547,
+  "dataset_sha256": "5434dfa08625a48203a8b3265ad39c052c8b4f0b4356e90b91c372c734a4f5b6",
+  "epochs": {
+    "dpo/epoch2": {
+      "G_correct": 127,
+      "G_n": 200,
+      "V": {
+        "counts": {
+          "exact": 226,
+          "format": 810,
+          "n": 820,
+          "binary": 775,
+          "invalid_n": 781,
+          "step": 274,
+          "reason": 483
+        },
+        "macro_exact": 0.13543906510851417,
+        "classes": {
+          "goal_not_reached": {
+            "n": 599,
+            "reason_match": 447,
+            "exact": 190
+          },
+          "valid": {
+            "n": 39,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "out_of_bounds": {
+            "n": 100,
+            "reason_match": 36,
+            "exact": 36
+          },
+          "obstacle_collision": {
+            "n": 62,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "invalid_action_token": {
+            "n": 20,
+            "reason_match": 0,
+            "exact": 0
+          }
+        },
+        "confusion": {
+          "goal_not_reached": {
+            "goal_not_reached": 447,
+            "malformed": 6,
+            "out_of_bounds": 146
+          },
+          "valid": {
+            "goal_not_reached": 35,
+            "malformed": 4
+          },
+          "out_of_bounds": {
+            "goal_not_reached": 64,
+            "out_of_bounds": 36
+          },
+          "obstacle_collision": {
+            "goal_not_reached": 44,
+            "out_of_bounds": 18
+          },
+          "invalid_action_token": {
+            "out_of_bounds": 3,
+            "goal_not_reached": 17
+          }
+        },
+        "predicted": {
+          "goal_not_reached": 607,
+          "malformed": 10,
+          "out_of_bounds": 203
+        },
+        "index_relation": {
+          "correct": 274,
+          "early": 287,
+          "late": 214,
+          "missing": 6
+        },
+        "by_path_length": {
+          "1": {
+            "n": 207,
+            "exact": 37
+          },
+          "2": {
+            "n": 129,
+            "exact": 75
+          },
+          "3": {
+            "n": 170,
+            "exact": 17
+          },
+          "4": {
+            "n": 90,
+            "exact": 33
+          },
+          "5": {
+            "n": 90,
+            "exact": 64
+          },
+          "6": {
+            "n": 57,
+            "exact": 0
+          },
+          "7": {
+            "n": 42,
+            "exact": 0
+          },
+          "8": {
+            "n": 17,
+            "exact": 0
+          },
+          "9": {
+            "n": 13,
+            "exact": 0
+          },
+          "10": {
+            "n": 5,
+            "exact": 0
+          }
+        },
+        "top_raw": [
+          [
+            "invalid | step=6 | reason=goal_not_reached",
+            262
+          ],
+          [
+            "invalid | step=1 | reason=out_of_bounds",
+            203
+          ],
+          [
+            "invalid | step=5 | reason=goal_not_reached",
+            178
+          ],
+          [
+            "invalid | step=3 | reason=goal_not_reached",
+            105
+          ]
+        ]
+      },
+      "contrast_both": 0,
+      "contrast_n": 171,
+      "V_full": {
+        "counts": {
+          "exact": 12,
+          "format": 97,
+          "n": 100,
+          "binary": 48,
+          "invalid_n": 50,
+          "step": 20,
+          "reason": 23
+        },
+        "macro_exact": 0.08,
+        "classes": {
+          "valid": {
+            "n": 50,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "goal_not_reached": {
+            "n": 30,
+            "reason_match": 23,
+            "exact": 12
+          },
+          "out_of_bounds": {
+            "n": 6,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "obstacle_collision": {
+            "n": 4,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "invalid_action_token": {
+            "n": 10,
+            "reason_match": 0,
+            "exact": 0
+          }
+        },
+        "confusion": {
+          "valid": {
+            "goal_not_reached": 49,
+            "malformed": 1
+          },
+          "goal_not_reached": {
+            "goal_not_reached": 23,
+            "out_of_bounds": 6,
+            "malformed": 1
+          },
+          "out_of_bounds": {
+            "goal_not_reached": 5,
+            "malformed": 1
+          },
+          "obstacle_collision": {
+            "goal_not_reached": 4
+          },
+          "invalid_action_token": {
+            "goal_not_reached": 10
+          }
+        },
+        "predicted": {
+          "goal_not_reached": 91,
+          "malformed": 3,
+          "out_of_bounds": 6
+        },
+        "index_relation": {
+          "correct": 20,
+          "early": 7,
+          "late": 21,
+          "missing": 2
+        },
+        "by_path_length": {},
+        "top_raw": [
+          [
+            "invalid | step=6 | reason=goal_not_reached",
+            61
+          ],
+          [
+            "invalid | step=5 | reason=goal_not_reached",
+            19
+          ],
+          [
+            "invalid | step=3 | reason=goal_not_reached",
+            9
+          ],
+          [
+            "invalid | step=1 | reason=out_of_bounds",
+            6
+          ]
+        ]
+      }
+    },
+    "dpo/epoch3": {
+      "G_correct": 159,
+      "G_n": 200,
+      "V": {
+        "counts": {
+          "exact": 99,
+          "format": 711,
+          "n": 820,
+          "binary": 686,
+          "invalid_n": 781,
+          "step": 237,
+          "reason": 274
+        },
+        "macro_exact": 0.0998544886639022,
+        "classes": {
+          "goal_not_reached": {
+            "n": 599,
+            "reason_match": 215,
+            "exact": 67
+          },
+          "valid": {
+            "n": 39,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "out_of_bounds": {
+            "n": 100,
+            "reason_match": 47,
+            "exact": 21
+          },
+          "obstacle_collision": {
+            "n": 62,
+            "reason_match": 12,
+            "exact": 11
+          },
+          "invalid_action_token": {
+            "n": 20,
+            "reason_match": 0,
+            "exact": 0
+          }
+        },
+        "confusion": {
+          "goal_not_reached": {
+            "malformed": 76,
+            "out_of_bounds": 211,
+            "goal_not_reached": 215,
+            "obstacle_collision": 97
+          },
+          "valid": {
+            "obstacle_collision": 9,
+            "out_of_bounds": 4,
+            "goal_not_reached": 12,
+            "malformed": 14
+          },
+          "out_of_bounds": {
+            "goal_not_reached": 28,
+            "out_of_bounds": 47,
+            "obstacle_collision": 10,
+            "malformed": 15
+          },
+          "obstacle_collision": {
+            "obstacle_collision": 12,
+            "goal_not_reached": 31,
+            "out_of_bounds": 15,
+            "malformed": 4
+          },
+          "invalid_action_token": {
+            "goal_not_reached": 11,
+            "out_of_bounds": 7,
+            "obstacle_collision": 2
+          }
+        },
+        "predicted": {
+          "malformed": 109,
+          "out_of_bounds": 284,
+          "goal_not_reached": 297,
+          "obstacle_collision": 130
+        },
+        "index_relation": {
+          "missing": 95,
+          "early": 389,
+          "correct": 237,
+          "late": 60
+        },
+        "by_path_length": {
+          "1": {
+            "n": 207,
+            "exact": 55
+          },
+          "2": {
+            "n": 129,
+            "exact": 19
+          },
+          "3": {
+            "n": 170,
+            "exact": 17
+          },
+          "4": {
+            "n": 90,
+            "exact": 7
+          },
+          "5": {
+            "n": 90,
+            "exact": 1
+          },
+          "6": {
+            "n": 57,
+            "exact": 0
+          },
+          "7": {
+            "n": 42,
+            "exact": 0
+          },
+          "8": {
+            "n": 17,
+            "exact": 0
+          },
+          "9": {
+            "n": 13,
+            "exact": 0
+          },
+          "10": {
+            "n": 5,
+            "exact": 0
+          }
+        },
+        "top_raw": [
+          [
+            "invalid | step=2 | reason=out_of_bounds",
+            259
+          ],
+          [
+            "invalid | step=3 | reason=obstacle_collision",
+            104
+          ],
+          [
+            "invalid | step=2 | reason=goal_not_reached",
+            79
+          ],
+          [
+            "right",
+            75
+          ]
+        ]
+      },
+      "contrast_both": 0,
+      "contrast_n": 171,
+      "V_full": {
+        "counts": {
+          "exact": 0,
+          "format": 74,
+          "n": 100,
+          "binary": 39,
+          "invalid_n": 50,
+          "step": 6,
+          "reason": 12
+        },
+        "macro_exact": 0.0,
+        "classes": {
+          "valid": {
+            "n": 50,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "goal_not_reached": {
+            "n": 30,
+            "reason_match": 11,
+            "exact": 0
+          },
+          "out_of_bounds": {
+            "n": 6,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "obstacle_collision": {
+            "n": 4,
+            "reason_match": 1,
+            "exact": 0
+          },
+          "invalid_action_token": {
+            "n": 10,
+            "reason_match": 0,
+            "exact": 0
+          }
+        },
+        "confusion": {
+          "valid": {
+            "goal_not_reached": 20,
+            "obstacle_collision": 8,
+            "out_of_bounds": 7,
+            "malformed": 15
+          },
+          "goal_not_reached": {
+            "goal_not_reached": 11,
+            "out_of_bounds": 12,
+            "malformed": 6,
+            "obstacle_collision": 1
+          },
+          "out_of_bounds": {
+            "goal_not_reached": 2,
+            "malformed": 3,
+            "obstacle_collision": 1
+          },
+          "obstacle_collision": {
+            "goal_not_reached": 3,
+            "obstacle_collision": 1
+          },
+          "invalid_action_token": {
+            "goal_not_reached": 5,
+            "malformed": 2,
+            "out_of_bounds": 2,
+            "obstacle_collision": 1
+          }
+        },
+        "predicted": {
+          "goal_not_reached": 41,
+          "obstacle_collision": 12,
+          "out_of_bounds": 21,
+          "malformed": 26
+        },
+        "index_relation": {
+          "early": 24,
+          "correct": 6,
+          "missing": 11,
+          "late": 9
+        },
+        "by_path_length": {},
+        "top_raw": [
+          [
+            "right",
+            25
+          ],
+          [
+            "invalid | step=2 | reason=out_of_bounds",
+            15
+          ],
+          [
+            "invalid | step=4 | reason=goal_not_reached",
+            14
+          ],
+          [
+            "invalid | step=5 | reason=goal_not_reached",
+            13
+          ]
+        ]
+      }
+    },
+    "field/epoch2": {
+      "G_correct": 119,
+      "G_n": 200,
+      "V": {
+        "counts": {
+          "exact": 103,
+          "format": 820,
+          "n": 820,
+          "binary": 669,
+          "invalid_n": 781,
+          "step": 218,
+          "reason": 99
+        },
+        "macro_exact": 0.38265508684863525,
+        "classes": {
+          "goal_not_reached": {
+            "n": 599,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "valid": {
+            "n": 39,
+            "reason_match": 27,
+            "exact": 27
+          },
+          "out_of_bounds": {
+            "n": 100,
+            "reason_match": 55,
+            "exact": 45
+          },
+          "obstacle_collision": {
+            "n": 62,
+            "reason_match": 33,
+            "exact": 23
+          },
+          "invalid_action_token": {
+            "n": 20,
+            "reason_match": 11,
+            "exact": 8
+          }
+        },
+        "confusion": {
+          "goal_not_reached": {
+            "out_of_bounds": 209,
+            "obstacle_collision": 278,
+            "valid": 112
+          },
+          "valid": {
+            "obstacle_collision": 10,
+            "valid": 27,
+            "out_of_bounds": 2
+          },
+          "out_of_bounds": {
+            "valid": 19,
+            "out_of_bounds": 55,
+            "obstacle_collision": 26
+          },
+          "obstacle_collision": {
+            "obstacle_collision": 33,
+            "out_of_bounds": 21,
+            "valid": 8
+          },
+          "invalid_action_token": {
+            "obstacle_collision": 7,
+            "invalid_action_token": 11,
+            "out_of_bounds": 2
+          }
+        },
+        "predicted": {
+          "out_of_bounds": 289,
+          "obstacle_collision": 354,
+          "valid": 166,
+          "invalid_action_token": 11
+        },
+        "index_relation": {
+          "early": 398,
+          "missing": 139,
+          "correct": 218,
+          "late": 26
+        },
+        "by_path_length": {
+          "1": {
+            "n": 207,
+            "exact": 36
+          },
+          "2": {
+            "n": 129,
+            "exact": 9
+          },
+          "3": {
+            "n": 170,
+            "exact": 16
+          },
+          "4": {
+            "n": 90,
+            "exact": 11
+          },
+          "5": {
+            "n": 90,
+            "exact": 11
+          },
+          "6": {
+            "n": 57,
+            "exact": 10
+          },
+          "7": {
+            "n": 42,
+            "exact": 1
+          },
+          "8": {
+            "n": 17,
+            "exact": 2
+          },
+          "9": {
+            "n": 13,
+            "exact": 6
+          },
+          "10": {
+            "n": 5,
+            "exact": 1
+          }
+        },
+        "top_raw": [
+          [
+            "invalid | step=1 | reason=out_of_bounds",
+            205
+          ],
+          [
+            "valid",
+            166
+          ],
+          [
+            "invalid | step=2 | reason=obstacle_collision",
+            97
+          ],
+          [
+            "invalid | step=3 | reason=obstacle_collision",
+            84
+          ]
+        ]
+      },
+      "contrast_both": 1,
+      "contrast_n": 171,
+      "V_full": {
+        "counts": {
+          "exact": 33,
+          "format": 100,
+          "n": 100,
+          "binary": 55,
+          "invalid_n": 50,
+          "step": 13,
+          "reason": 6
+        },
+        "macro_exact": 0.272,
+        "classes": {
+          "valid": {
+            "n": 50,
+            "reason_match": 28,
+            "exact": 28
+          },
+          "goal_not_reached": {
+            "n": 30,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "out_of_bounds": {
+            "n": 6,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "obstacle_collision": {
+            "n": 4,
+            "reason_match": 2,
+            "exact": 2
+          },
+          "invalid_action_token": {
+            "n": 10,
+            "reason_match": 4,
+            "exact": 3
+          }
+        },
+        "confusion": {
+          "valid": {
+            "valid": 28,
+            "out_of_bounds": 10,
+            "obstacle_collision": 12
+          },
+          "goal_not_reached": {
+            "obstacle_collision": 15,
+            "valid": 12,
+            "out_of_bounds": 3
+          },
+          "out_of_bounds": {
+            "valid": 6
+          },
+          "obstacle_collision": {
+            "obstacle_collision": 2,
+            "valid": 2
+          },
+          "invalid_action_token": {
+            "invalid_action_token": 4,
+            "valid": 3,
+            "out_of_bounds": 1,
+            "obstacle_collision": 2
+          }
+        },
+        "predicted": {
+          "valid": 51,
+          "obstacle_collision": 31,
+          "out_of_bounds": 14,
+          "invalid_action_token": 4
+        },
+        "index_relation": {
+          "early": 11,
+          "missing": 23,
+          "correct": 13,
+          "late": 3
+        },
+        "by_path_length": {},
+        "top_raw": [
+          [
+            "valid",
+            51
+          ],
+          [
+            "invalid | step=4 | reason=obstacle_collision",
+            11
+          ],
+          [
+            "invalid | step=2 | reason=obstacle_collision",
+            8
+          ],
+          [
+            "invalid | step=9 | reason=out_of_bounds",
+            7
+          ]
+        ]
+      }
+    },
+    "field/epoch3": {
+      "G_correct": 140,
+      "G_n": 200,
+      "V": {
+        "counts": {
+          "exact": 127,
+          "format": 820,
+          "n": 820,
+          "binary": 667,
+          "invalid_n": 781,
+          "step": 319,
+          "reason": 145
+        },
+        "macro_exact": 0.3661287643729348,
+        "classes": {
+          "goal_not_reached": {
+            "n": 599,
+            "reason_match": 64,
+            "exact": 56
+          },
+          "valid": {
+            "n": 39,
+            "reason_match": 25,
+            "exact": 25
+          },
+          "out_of_bounds": {
+            "n": 100,
+            "reason_match": 15,
+            "exact": 3
+          },
+          "obstacle_collision": {
+            "n": 62,
+            "reason_match": 49,
+            "exact": 32
+          },
+          "invalid_action_token": {
+            "n": 20,
+            "reason_match": 17,
+            "exact": 11
+          }
+        },
+        "confusion": {
+          "goal_not_reached": {
+            "valid": 115,
+            "obstacle_collision": 367,
+            "goal_not_reached": 64,
+            "out_of_bounds": 53
+          },
+          "valid": {
+            "obstacle_collision": 11,
+            "valid": 25,
+            "out_of_bounds": 3
+          },
+          "out_of_bounds": {
+            "out_of_bounds": 15,
+            "obstacle_collision": 67,
+            "valid": 18
+          },
+          "obstacle_collision": {
+            "obstacle_collision": 49,
+            "goal_not_reached": 3,
+            "valid": 6,
+            "out_of_bounds": 4
+          },
+          "invalid_action_token": {
+            "invalid_action_token": 17,
+            "obstacle_collision": 2,
+            "out_of_bounds": 1
+          }
+        },
+        "predicted": {
+          "valid": 164,
+          "obstacle_collision": 496,
+          "goal_not_reached": 67,
+          "out_of_bounds": 76,
+          "invalid_action_token": 17
+        },
+        "index_relation": {
+          "missing": 139,
+          "correct": 319,
+          "early": 244,
+          "late": 79
+        },
+        "by_path_length": {
+          "1": {
+            "n": 207,
+            "exact": 22
+          },
+          "2": {
+            "n": 129,
+            "exact": 17
+          },
+          "3": {
+            "n": 170,
+            "exact": 60
+          },
+          "4": {
+            "n": 90,
+            "exact": 3
+          },
+          "5": {
+            "n": 90,
+            "exact": 8
+          },
+          "6": {
+            "n": 57,
+            "exact": 6
+          },
+          "7": {
+            "n": 42,
+            "exact": 3
+          },
+          "8": {
+            "n": 17,
+            "exact": 1
+          },
+          "9": {
+            "n": 13,
+            "exact": 6
+          },
+          "10": {
+            "n": 5,
+            "exact": 1
+          }
+        },
+        "top_raw": [
+          [
+            "invalid | step=1 | reason=obstacle_collision",
+            204
+          ],
+          [
+            "valid",
+            164
+          ],
+          [
+            "invalid | step=3 | reason=obstacle_collision",
+            84
+          ],
+          [
+            "invalid | step=2 | reason=obstacle_collision",
+            59
+          ]
+        ]
+      },
+      "contrast_both": 2,
+      "contrast_n": 171,
+      "V_full": {
+        "counts": {
+          "exact": 33,
+          "format": 100,
+          "n": 100,
+          "binary": 56,
+          "invalid_n": 50,
+          "step": 14,
+          "reason": 8
+        },
+        "macro_exact": 0.15066666666666667,
+        "classes": {
+          "valid": {
+            "n": 50,
+            "reason_match": 31,
+            "exact": 31
+          },
+          "goal_not_reached": {
+            "n": 30,
+            "reason_match": 1,
+            "exact": 1
+          },
+          "out_of_bounds": {
+            "n": 6,
+            "reason_match": 1,
+            "exact": 0
+          },
+          "obstacle_collision": {
+            "n": 4,
+            "reason_match": 2,
+            "exact": 0
+          },
+          "invalid_action_token": {
+            "n": 10,
+            "reason_match": 4,
+            "exact": 1
+          }
+        },
+        "confusion": {
+          "valid": {
+            "valid": 31,
+            "out_of_bounds": 9,
+            "obstacle_collision": 10
+          },
+          "goal_not_reached": {
+            "obstacle_collision": 11,
+            "valid": 14,
+            "goal_not_reached": 1,
+            "invalid_action_token": 4
+          },
+          "out_of_bounds": {
+            "out_of_bounds": 1,
+            "valid": 5
+          },
+          "obstacle_collision": {
+            "obstacle_collision": 2,
+            "valid": 2
+          },
+          "invalid_action_token": {
+            "invalid_action_token": 4,
+            "valid": 4,
+            "obstacle_collision": 2
+          }
+        },
+        "predicted": {
+          "valid": 56,
+          "obstacle_collision": 25,
+          "out_of_bounds": 10,
+          "invalid_action_token": 8,
+          "goal_not_reached": 1
+        },
+        "index_relation": {
+          "correct": 14,
+          "late": 8,
+          "missing": 25,
+          "early": 3
+        },
+        "by_path_length": {},
+        "top_raw": [
+          [
+            "valid",
+            56
+          ],
+          [
+            "invalid | step=5 | reason=obstacle_collision",
+            11
+          ],
+          [
+            "invalid | step=9 | reason=out_of_bounds",
+            8
+          ],
+          [
+            "invalid | step=2 | reason=obstacle_collision",
+            4
+          ]
+        ]
+      }
+    },
+    "mrt/epoch2": {
+      "G_correct": 114,
+      "G_n": 200,
+      "V": {
+        "counts": {
+          "exact": 10,
+          "format": 820,
+          "n": 820,
+          "binary": 781,
+          "invalid_n": 781,
+          "step": 211,
+          "reason": 20
+        },
+        "macro_exact": 0.1,
+        "classes": {
+          "goal_not_reached": {
+            "n": 599,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "valid": {
+            "n": 39,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "out_of_bounds": {
+            "n": 100,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "obstacle_collision": {
+            "n": 62,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "invalid_action_token": {
+            "n": 20,
+            "reason_match": 20,
+            "exact": 10
+          }
+        },
+        "confusion": {
+          "goal_not_reached": {
+            "invalid_action_token": 599
+          },
+          "valid": {
+            "invalid_action_token": 39
+          },
+          "out_of_bounds": {
+            "invalid_action_token": 100
+          },
+          "obstacle_collision": {
+            "invalid_action_token": 62
+          },
+          "invalid_action_token": {
+            "invalid_action_token": 20
+          }
+        },
+        "predicted": {
+          "invalid_action_token": 820
+        },
+        "index_relation": {
+          "correct": 211,
+          "early": 441,
+          "late": 129
+        },
+        "by_path_length": {
+          "1": {
+            "n": 207,
+            "exact": 3
+          },
+          "2": {
+            "n": 129,
+            "exact": 1
+          },
+          "3": {
+            "n": 170,
+            "exact": 6
+          },
+          "4": {
+            "n": 90,
+            "exact": 0
+          },
+          "5": {
+            "n": 90,
+            "exact": 0
+          },
+          "6": {
+            "n": 57,
+            "exact": 0
+          },
+          "7": {
+            "n": 42,
+            "exact": 0
+          },
+          "8": {
+            "n": 17,
+            "exact": 0
+          },
+          "9": {
+            "n": 13,
+            "exact": 0
+          },
+          "10": {
+            "n": 5,
+            "exact": 0
+          }
+        },
+        "top_raw": [
+          [
+            "invalid | step=3 | reason=invalid_action_token",
+            657
+          ],
+          [
+            "invalid | step=2 | reason=invalid_action_token",
+            160
+          ],
+          [
+            "invalid | step=1 | reason=invalid_action_token",
+            3
+          ]
+        ]
+      },
+      "contrast_both": 0,
+      "contrast_n": 171,
+      "V_full": {
+        "counts": {
+          "exact": 3,
+          "format": 100,
+          "n": 100,
+          "binary": 50,
+          "invalid_n": 50,
+          "step": 12,
+          "reason": 10
+        },
+        "macro_exact": 0.06,
+        "classes": {
+          "valid": {
+            "n": 50,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "goal_not_reached": {
+            "n": 30,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "out_of_bounds": {
+            "n": 6,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "obstacle_collision": {
+            "n": 4,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "invalid_action_token": {
+            "n": 10,
+            "reason_match": 10,
+            "exact": 3
+          }
+        },
+        "confusion": {
+          "valid": {
+            "invalid_action_token": 50
+          },
+          "goal_not_reached": {
+            "invalid_action_token": 30
+          },
+          "out_of_bounds": {
+            "invalid_action_token": 6
+          },
+          "obstacle_collision": {
+            "invalid_action_token": 4
+          },
+          "invalid_action_token": {
+            "invalid_action_token": 10
+          }
+        },
+        "predicted": {
+          "invalid_action_token": 100
+        },
+        "index_relation": {
+          "early": 33,
+          "correct": 12,
+          "late": 5
+        },
+        "by_path_length": {},
+        "top_raw": [
+          [
+            "invalid | step=3 | reason=invalid_action_token",
+            94
+          ],
+          [
+            "invalid | step=1 | reason=invalid_action_token",
+            4
+          ],
+          [
+            "invalid | step=2 | reason=invalid_action_token",
+            2
+          ]
+        ]
+      }
+    },
+    "mrt/epoch3": {
+      "G_correct": 163,
+      "G_n": 200,
+      "V": {
+        "counts": {
+          "exact": 18,
+          "format": 317,
+          "n": 820,
+          "binary": 18,
+          "invalid_n": 781,
+          "step": 0,
+          "reason": 0
+        },
+        "macro_exact": 0.09230769230769231,
+        "classes": {
+          "goal_not_reached": {
+            "n": 599,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "valid": {
+            "n": 39,
+            "reason_match": 18,
+            "exact": 18
+          },
+          "out_of_bounds": {
+            "n": 100,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "obstacle_collision": {
+            "n": 62,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "invalid_action_token": {
+            "n": 20,
+            "reason_match": 0,
+            "exact": 0
+          }
+        },
+        "confusion": {
+          "goal_not_reached": {
+            "valid": 223,
+            "malformed": 376
+          },
+          "valid": {
+            "malformed": 21,
+            "valid": 18
+          },
+          "out_of_bounds": {
+            "malformed": 60,
+            "valid": 40
+          },
+          "obstacle_collision": {
+            "malformed": 34,
+            "valid": 28
+          },
+          "invalid_action_token": {
+            "valid": 8,
+            "malformed": 12
+          }
+        },
+        "predicted": {
+          "valid": 317,
+          "malformed": 503
+        },
+        "index_relation": {
+          "missing": 781
+        },
+        "by_path_length": {
+          "1": {
+            "n": 207,
+            "exact": 0
+          },
+          "2": {
+            "n": 129,
+            "exact": 1
+          },
+          "3": {
+            "n": 170,
+            "exact": 1
+          },
+          "4": {
+            "n": 90,
+            "exact": 4
+          },
+          "5": {
+            "n": 90,
+            "exact": 5
+          },
+          "6": {
+            "n": 57,
+            "exact": 3
+          },
+          "7": {
+            "n": 42,
+            "exact": 0
+          },
+          "8": {
+            "n": 17,
+            "exact": 1
+          },
+          "9": {
+            "n": 13,
+            "exact": 2
+          },
+          "10": {
+            "n": 5,
+            "exact": 1
+          }
+        },
+        "top_raw": [
+          [
+            "left",
+            414
+          ],
+          [
+            "valid",
+            317
+          ],
+          [
+            "right",
+            55
+          ],
+          [
+            "up",
+            8
+          ]
+        ]
+      },
+      "contrast_both": 0,
+      "contrast_n": 171,
+      "V_full": {
+        "counts": {
+          "exact": 21,
+          "format": 40,
+          "n": 100,
+          "binary": 21,
+          "invalid_n": 50,
+          "step": 0,
+          "reason": 0
+        },
+        "macro_exact": 0.08399999999999999,
+        "classes": {
+          "valid": {
+            "n": 50,
+            "reason_match": 21,
+            "exact": 21
+          },
+          "goal_not_reached": {
+            "n": 30,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "out_of_bounds": {
+            "n": 6,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "obstacle_collision": {
+            "n": 4,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "invalid_action_token": {
+            "n": 10,
+            "reason_match": 0,
+            "exact": 0
+          }
+        },
+        "confusion": {
+          "valid": {
+            "malformed": 29,
+            "valid": 21
+          },
+          "goal_not_reached": {
+            "malformed": 19,
+            "valid": 11
+          },
+          "out_of_bounds": {
+            "malformed": 3,
+            "valid": 3
+          },
+          "obstacle_collision": {
+            "malformed": 3,
+            "valid": 1
+          },
+          "invalid_action_token": {
+            "malformed": 6,
+            "valid": 4
+          }
+        },
+        "predicted": {
+          "malformed": 60,
+          "valid": 40
+        },
+        "index_relation": {
+          "missing": 50
+        },
+        "by_path_length": {},
+        "top_raw": [
+          [
+            "left",
+            45
+          ],
+          [
+            "valid",
+            40
+          ],
+          [
+            "right",
+            4
+          ],
+          [
+            "invalid | step=out",
+            3
+          ]
+        ]
+      }
+    },
+    "warmup/epoch1": {
+      "G_correct": 120,
+      "G_n": 200,
+      "V": {
+        "counts": {
+          "exact": 104,
+          "format": 820,
+          "n": 820,
+          "binary": 781,
+          "invalid_n": 781,
+          "step": 137,
+          "reason": 330
+        },
+        "macro_exact": 0.09470450751252087,
+        "classes": {
+          "goal_not_reached": {
+            "n": 599,
+            "reason_match": 272,
+            "exact": 68
+          },
+          "valid": {
+            "n": 39,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "out_of_bounds": {
+            "n": 100,
+            "reason_match": 58,
+            "exact": 36
+          },
+          "obstacle_collision": {
+            "n": 62,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "invalid_action_token": {
+            "n": 20,
+            "reason_match": 0,
+            "exact": 0
+          }
+        },
+        "confusion": {
+          "goal_not_reached": {
+            "out_of_bounds": 327,
+            "goal_not_reached": 272
+          },
+          "valid": {
+            "out_of_bounds": 8,
+            "goal_not_reached": 31
+          },
+          "out_of_bounds": {
+            "goal_not_reached": 42,
+            "out_of_bounds": 58
+          },
+          "obstacle_collision": {
+            "out_of_bounds": 30,
+            "goal_not_reached": 32
+          },
+          "invalid_action_token": {
+            "out_of_bounds": 8,
+            "goal_not_reached": 11,
+            "obstacle_collision": 1
+          }
+        },
+        "predicted": {
+          "out_of_bounds": 431,
+          "goal_not_reached": 388,
+          "obstacle_collision": 1
+        },
+        "index_relation": {
+          "early": 478,
+          "correct": 137,
+          "late": 166
+        },
+        "by_path_length": {
+          "1": {
+            "n": 207,
+            "exact": 36
+          },
+          "2": {
+            "n": 129,
+            "exact": 0
+          },
+          "3": {
+            "n": 170,
+            "exact": 2
+          },
+          "4": {
+            "n": 90,
+            "exact": 3
+          },
+          "5": {
+            "n": 90,
+            "exact": 63
+          },
+          "6": {
+            "n": 57,
+            "exact": 0
+          },
+          "7": {
+            "n": 42,
+            "exact": 0
+          },
+          "8": {
+            "n": 17,
+            "exact": 0
+          },
+          "9": {
+            "n": 13,
+            "exact": 0
+          },
+          "10": {
+            "n": 5,
+            "exact": 0
+          }
+        },
+        "top_raw": [
+          [
+            "invalid | step=1 | reason=out_of_bounds",
+            431
+          ],
+          [
+            "invalid | step=6 | reason=goal_not_reached",
+            374
+          ],
+          [
+            "invalid | step=4 | reason=goal_not_reached",
+            7
+          ],
+          [
+            "invalid | step=5 | reason=goal_not_reached",
+            7
+          ]
+        ]
+      },
+      "contrast_both": 0,
+      "contrast_n": 171,
+      "V_full": {
+        "counts": {
+          "exact": 7,
+          "format": 100,
+          "n": 100,
+          "binary": 50,
+          "invalid_n": 50,
+          "step": 13,
+          "reason": 18
+        },
+        "macro_exact": 0.04666666666666667,
+        "classes": {
+          "valid": {
+            "n": 50,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "goal_not_reached": {
+            "n": 30,
+            "reason_match": 17,
+            "exact": 7
+          },
+          "out_of_bounds": {
+            "n": 6,
+            "reason_match": 1,
+            "exact": 0
+          },
+          "obstacle_collision": {
+            "n": 4,
+            "reason_match": 0,
+            "exact": 0
+          },
+          "invalid_action_token": {
+            "n": 10,
+            "reason_match": 0,
+            "exact": 0
+          }
+        },
+        "confusion": {
+          "valid": {
+            "goal_not_reached": 43,
+            "out_of_bounds": 7
+          },
+          "goal_not_reached": {
+            "goal_not_reached": 17,
+            "out_of_bounds": 13
+          },
+          "out_of_bounds": {
+            "goal_not_reached": 5,
+            "out_of_bounds": 1
+          },
+          "obstacle_collision": {
+            "goal_not_reached": 3,
+            "out_of_bounds": 1
+          },
+          "invalid_action_token": {
+            "goal_not_reached": 4,
+            "out_of_bounds": 6
+          }
+        },
+        "predicted": {
+          "goal_not_reached": 72,
+          "out_of_bounds": 28
+        },
+        "index_relation": {
+          "late": 15,
+          "early": 22,
+          "correct": 13
+        },
+        "by_path_length": {},
+        "top_raw": [
+          [
+            "invalid | step=6 | reason=goal_not_reached",
+            72
+          ],
+          [
+            "invalid | step=1 | reason=out_of_bounds",
+            28
+          ]
+        ]
+      }
+    }
+  },
+  "selected": {
+    "field": {
+      "selected": "field/epoch2",
+      "weight": "0861d01d084eb54c47cb33d0d31f38c501f79fb16a00a532ebd48b259641861d",
+      "test": {
+        "single": {
+          "whole_path": {
+            "counts": {
+              "exact": 9,
+              "format": 200,
+              "n": 200,
+              "binary": 161,
+              "invalid_n": 200,
+              "step": 16,
+              "reason": 35
+            },
+            "macro_exact": 0.045,
+            "classes": {
+              "out_of_bounds": {
+                "n": 50,
+                "reason_match": 14,
+                "exact": 1
+              },
+              "invalid_action_token": {
+                "n": 50,
+                "reason_match": 7,
+                "exact": 6
+              },
+              "obstacle_collision": {
+                "n": 50,
+                "reason_match": 14,
+                "exact": 2
+              },
+              "goal_not_reached": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "obstacle_collision": 21,
+                "out_of_bounds": 14,
+                "valid": 15
+              },
+              "invalid_action_token": {
+                "obstacle_collision": 23,
+                "invalid_action_token": 7,
+                "out_of_bounds": 15,
+                "valid": 5
+              },
+              "obstacle_collision": {
+                "obstacle_collision": 14,
+                "out_of_bounds": 21,
+                "valid": 15
+              },
+              "goal_not_reached": {
+                "obstacle_collision": 28,
+                "valid": 4,
+                "out_of_bounds": 18
+              }
+            },
+            "predicted": {
+              "obstacle_collision": 86,
+              "out_of_bounds": 68,
+              "invalid_action_token": 7,
+              "valid": 39
+            },
+            "index_relation": {
+              "late": 83,
+              "early": 62,
+              "correct": 16,
+              "missing": 39
+            },
+            "by_path_length": {
+              "1": {
+                "n": 20,
+                "exact": 0
+              },
+              "2": {
+                "n": 15,
+                "exact": 0
+              },
+              "3": {
+                "n": 3,
+                "exact": 0
+              },
+              "4": {
+                "n": 53,
+                "exact": 4
+              },
+              "5": {
+                "n": 21,
+                "exact": 0
+              },
+              "6": {
+                "n": 21,
+                "exact": 4
+              },
+              "7": {
+                "n": 16,
+                "exact": 0
+              },
+              "8": {
+                "n": 10,
+                "exact": 0
+              },
+              "9": {
+                "n": 9,
+                "exact": 1
+              },
+              "10": {
+                "n": 6,
+                "exact": 0
+              },
+              "11": {
+                "n": 3,
+                "exact": 0
+              },
+              "12": {
+                "n": 5,
+                "exact": 0
+              },
+              "13": {
+                "n": 3,
+                "exact": 0
+              },
+              "14": {
+                "n": 7,
+                "exact": 0
+              },
+              "15": {
+                "n": 4,
+                "exact": 0
+              },
+              "17": {
+                "n": 1,
+                "exact": 0
+              },
+              "18": {
+                "n": 2,
+                "exact": 0
+              },
+              "20": {
+                "n": 1,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "valid",
+                39
+              ],
+              [
+                "invalid | step=9 | reason=out_of_bounds",
+                36
+              ],
+              [
+                "invalid | step=4 | reason=obstacle_collision",
+                27
+              ],
+              [
+                "invalid | step=6 | reason=obstacle_collision",
+                17
+              ]
+            ],
+            "beyond_14": {
+              "n": 8,
+              "exact": 0
+            }
+          },
+          "annotated_prefix": {
+            "counts": {
+              "exact": 39,
+              "format": 200,
+              "n": 200,
+              "binary": 156,
+              "invalid_n": 200,
+              "step": 81,
+              "reason": 61
+            },
+            "macro_exact": 0.195,
+            "classes": {
+              "out_of_bounds": {
+                "n": 50,
+                "reason_match": 19,
+                "exact": 13
+              },
+              "invalid_action_token": {
+                "n": 50,
+                "reason_match": 21,
+                "exact": 14
+              },
+              "obstacle_collision": {
+                "n": 50,
+                "reason_match": 20,
+                "exact": 11
+              },
+              "goal_not_reached": {
+                "n": 50,
+                "reason_match": 1,
+                "exact": 1
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "valid": 18,
+                "out_of_bounds": 19,
+                "obstacle_collision": 13
+              },
+              "invalid_action_token": {
+                "obstacle_collision": 21,
+                "out_of_bounds": 8,
+                "invalid_action_token": 21
+              },
+              "obstacle_collision": {
+                "valid": 19,
+                "obstacle_collision": 20,
+                "out_of_bounds": 11
+              },
+              "goal_not_reached": {
+                "out_of_bounds": 25,
+                "valid": 7,
+                "obstacle_collision": 17,
+                "goal_not_reached": 1
+              }
+            },
+            "predicted": {
+              "valid": 44,
+              "obstacle_collision": 71,
+              "out_of_bounds": 63,
+              "invalid_action_token": 21,
+              "goal_not_reached": 1
+            },
+            "index_relation": {
+              "missing": 44,
+              "correct": 81,
+              "early": 60,
+              "late": 15
+            },
+            "by_path_length": {
+              "1": {
+                "n": 45,
+                "exact": 10
+              },
+              "2": {
+                "n": 39,
+                "exact": 11
+              },
+              "3": {
+                "n": 27,
+                "exact": 3
+              },
+              "4": {
+                "n": 30,
+                "exact": 4
+              },
+              "5": {
+                "n": 10,
+                "exact": 2
+              },
+              "6": {
+                "n": 17,
+                "exact": 7
+              },
+              "7": {
+                "n": 6,
+                "exact": 0
+              },
+              "8": {
+                "n": 4,
+                "exact": 0
+              },
+              "9": {
+                "n": 5,
+                "exact": 2
+              },
+              "10": {
+                "n": 7,
+                "exact": 0
+              },
+              "11": {
+                "n": 2,
+                "exact": 0
+              },
+              "13": {
+                "n": 3,
+                "exact": 0
+              },
+              "14": {
+                "n": 1,
+                "exact": 0
+              },
+              "15": {
+                "n": 2,
+                "exact": 0
+              },
+              "17": {
+                "n": 2,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "valid",
+                44
+              ],
+              [
+                "invalid | step=1 | reason=out_of_bounds",
+                39
+              ],
+              [
+                "invalid | step=2 | reason=obstacle_collision",
+                29
+              ],
+              [
+                "invalid | step=4 | reason=obstacle_collision",
+                13
+              ]
+            ],
+            "beyond_14": {
+              "n": 4,
+              "exact": 0
+            }
+          }
+        },
+        "double": {
+          "whole_path": {
+            "counts": {
+              "exact": 7,
+              "format": 200,
+              "n": 200,
+              "binary": 150,
+              "invalid_n": 200,
+              "step": 10,
+              "reason": 55
+            },
+            "macro_exact": 0.03475946061547466,
+            "classes": {
+              "out_of_bounds": {
+                "n": 65,
+                "reason_match": 21,
+                "exact": 1
+              },
+              "invalid_action_token": {
+                "n": 67,
+                "reason_match": 11,
+                "exact": 3
+              },
+              "obstacle_collision": {
+                "n": 68,
+                "reason_match": 23,
+                "exact": 3
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "out_of_bounds": 21,
+                "obstacle_collision": 26,
+                "valid": 18
+              },
+              "invalid_action_token": {
+                "obstacle_collision": 32,
+                "valid": 11,
+                "out_of_bounds": 13,
+                "invalid_action_token": 11
+              },
+              "obstacle_collision": {
+                "out_of_bounds": 20,
+                "obstacle_collision": 23,
+                "valid": 21,
+                "invalid_action_token": 4
+              }
+            },
+            "predicted": {
+              "out_of_bounds": 54,
+              "obstacle_collision": 81,
+              "valid": 50,
+              "invalid_action_token": 15
+            },
+            "index_relation": {
+              "late": 137,
+              "missing": 50,
+              "correct": 10,
+              "early": 3
+            },
+            "by_path_length": {
+              "3": {
+                "n": 39,
+                "exact": 5
+              },
+              "4": {
+                "n": 10,
+                "exact": 1
+              },
+              "5": {
+                "n": 38,
+                "exact": 0
+              },
+              "6": {
+                "n": 29,
+                "exact": 1
+              },
+              "7": {
+                "n": 22,
+                "exact": 0
+              },
+              "8": {
+                "n": 19,
+                "exact": 0
+              },
+              "9": {
+                "n": 7,
+                "exact": 0
+              },
+              "10": {
+                "n": 9,
+                "exact": 0
+              },
+              "11": {
+                "n": 5,
+                "exact": 0
+              },
+              "12": {
+                "n": 3,
+                "exact": 0
+              },
+              "13": {
+                "n": 6,
+                "exact": 0
+              },
+              "14": {
+                "n": 3,
+                "exact": 0
+              },
+              "15": {
+                "n": 4,
+                "exact": 0
+              },
+              "16": {
+                "n": 2,
+                "exact": 0
+              },
+              "19": {
+                "n": 1,
+                "exact": 0
+              },
+              "21": {
+                "n": 3,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "valid",
+                50
+              ],
+              [
+                "invalid | step=9 | reason=out_of_bounds",
+                37
+              ],
+              [
+                "invalid | step=6 | reason=obstacle_collision",
+                28
+              ],
+              [
+                "invalid | step=3 | reason=obstacle_collision",
+                23
+              ]
+            ],
+            "beyond_14": {
+              "n": 10,
+              "exact": 0
+            }
+          },
+          "annotated_prefix": {
+            "counts": {
+              "exact": 70,
+              "format": 200,
+              "n": 200,
+              "binary": 172,
+              "invalid_n": 200,
+              "step": 154,
+              "reason": 80
+            },
+            "macro_exact": 0.3517739357511087,
+            "classes": {
+              "out_of_bounds": {
+                "n": 65,
+                "reason_match": 35,
+                "exact": 33
+              },
+              "invalid_action_token": {
+                "n": 67,
+                "reason_match": 21,
+                "exact": 16
+              },
+              "obstacle_collision": {
+                "n": 68,
+                "reason_match": 24,
+                "exact": 21
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "valid": 15,
+                "out_of_bounds": 35,
+                "obstacle_collision": 14,
+                "goal_not_reached": 1
+              },
+              "invalid_action_token": {
+                "obstacle_collision": 26,
+                "out_of_bounds": 20,
+                "invalid_action_token": 21
+              },
+              "obstacle_collision": {
+                "valid": 13,
+                "obstacle_collision": 24,
+                "out_of_bounds": 30,
+                "goal_not_reached": 1
+              }
+            },
+            "predicted": {
+              "valid": 28,
+              "obstacle_collision": 64,
+              "out_of_bounds": 85,
+              "invalid_action_token": 21,
+              "goal_not_reached": 2
+            },
+            "index_relation": {
+              "missing": 28,
+              "correct": 154,
+              "early": 5,
+              "late": 13
+            },
+            "by_path_length": {
+              "1": {
+                "n": 77,
+                "exact": 32
+              },
+              "2": {
+                "n": 49,
+                "exact": 21
+              },
+              "3": {
+                "n": 34,
+                "exact": 8
+              },
+              "4": {
+                "n": 12,
+                "exact": 4
+              },
+              "5": {
+                "n": 11,
+                "exact": 1
+              },
+              "6": {
+                "n": 7,
+                "exact": 4
+              },
+              "7": {
+                "n": 4,
+                "exact": 0
+              },
+              "8": {
+                "n": 2,
+                "exact": 0
+              },
+              "9": {
+                "n": 1,
+                "exact": 0
+              },
+              "10": {
+                "n": 2,
+                "exact": 0
+              },
+              "11": {
+                "n": 1,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "invalid | step=1 | reason=out_of_bounds",
+                65
+              ],
+              [
+                "invalid | step=2 | reason=obstacle_collision",
+                30
+              ],
+              [
+                "valid",
+                28
+              ],
+              [
+                "invalid | step=3 | reason=obstacle_collision",
+                15
+              ]
+            ],
+            "beyond_14": {
+              "n": 0,
+              "exact": 0
+            }
+          }
+        }
+      },
+      "rollout": {
+        "n": 40,
+        "counts": {
+          "first_is_optimal": 17,
+          "declared_arrived": 0,
+          "reports_physical_error_on_known_shortest_prefix": 17,
+          "model_stopped_and_shortest": 0,
+          "stopped_after_first": 40
+        },
+        "termination": {
+          "out_of_bounds": 40
+        },
+        "lengths": {
+          "1": 40
+        }
+      }
+    },
+    "dpo": {
+      "selected": "dpo/epoch2",
+      "weight": "46ee036722cca8673e9f38d096b94ff36b08289c55d6509472703eb2aa745f71",
+      "test": {
+        "single": {
+          "whole_path": {
+            "counts": {
+              "exact": 18,
+              "format": 198,
+              "n": 200,
+              "binary": 198,
+              "invalid_n": 200,
+              "step": 33,
+              "reason": 40
+            },
+            "macro_exact": 0.09,
+            "classes": {
+              "out_of_bounds": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "invalid_action_token": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "obstacle_collision": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "goal_not_reached": {
+                "n": 50,
+                "reason_match": 40,
+                "exact": 18
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "goal_not_reached": 50
+              },
+              "invalid_action_token": {
+                "goal_not_reached": 49,
+                "malformed": 1
+              },
+              "obstacle_collision": {
+                "goal_not_reached": 49,
+                "malformed": 1
+              },
+              "goal_not_reached": {
+                "out_of_bounds": 10,
+                "goal_not_reached": 40
+              }
+            },
+            "predicted": {
+              "goal_not_reached": 188,
+              "out_of_bounds": 10,
+              "malformed": 2
+            },
+            "index_relation": {
+              "correct": 33,
+              "late": 121,
+              "early": 44,
+              "missing": 2
+            },
+            "by_path_length": {
+              "1": {
+                "n": 20,
+                "exact": 0
+              },
+              "2": {
+                "n": 15,
+                "exact": 14
+              },
+              "3": {
+                "n": 3,
+                "exact": 0
+              },
+              "4": {
+                "n": 53,
+                "exact": 3
+              },
+              "5": {
+                "n": 21,
+                "exact": 1
+              },
+              "6": {
+                "n": 21,
+                "exact": 0
+              },
+              "7": {
+                "n": 16,
+                "exact": 0
+              },
+              "8": {
+                "n": 10,
+                "exact": 0
+              },
+              "9": {
+                "n": 9,
+                "exact": 0
+              },
+              "10": {
+                "n": 6,
+                "exact": 0
+              },
+              "11": {
+                "n": 3,
+                "exact": 0
+              },
+              "12": {
+                "n": 5,
+                "exact": 0
+              },
+              "13": {
+                "n": 3,
+                "exact": 0
+              },
+              "14": {
+                "n": 7,
+                "exact": 0
+              },
+              "15": {
+                "n": 4,
+                "exact": 0
+              },
+              "17": {
+                "n": 1,
+                "exact": 0
+              },
+              "18": {
+                "n": 2,
+                "exact": 0
+              },
+              "20": {
+                "n": 1,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "invalid | step=6 | reason=goal_not_reached",
+                114
+              ],
+              [
+                "invalid | step=5 | reason=goal_not_reached",
+                49
+              ],
+              [
+                "invalid | step=3 | reason=goal_not_reached",
+                24
+              ],
+              [
+                "invalid | step=1 | reason=out_of_bounds",
+                10
+              ]
+            ],
+            "beyond_14": {
+              "n": 8,
+              "exact": 0
+            }
+          },
+          "annotated_prefix": {
+            "counts": {
+              "exact": 21,
+              "format": 198,
+              "n": 200,
+              "binary": 198,
+              "invalid_n": 200,
+              "step": 49,
+              "reason": 41
+            },
+            "macro_exact": 0.10500000000000001,
+            "classes": {
+              "out_of_bounds": {
+                "n": 50,
+                "reason_match": 1,
+                "exact": 1
+              },
+              "invalid_action_token": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "obstacle_collision": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "goal_not_reached": {
+                "n": 50,
+                "reason_match": 40,
+                "exact": 20
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "goal_not_reached": 48,
+                "malformed": 1,
+                "out_of_bounds": 1
+              },
+              "invalid_action_token": {
+                "out_of_bounds": 6,
+                "goal_not_reached": 44
+              },
+              "obstacle_collision": {
+                "goal_not_reached": 48,
+                "out_of_bounds": 1,
+                "malformed": 1
+              },
+              "goal_not_reached": {
+                "out_of_bounds": 10,
+                "goal_not_reached": 40
+              }
+            },
+            "predicted": {
+              "goal_not_reached": 180,
+              "out_of_bounds": 18,
+              "malformed": 2
+            },
+            "index_relation": {
+              "correct": 49,
+              "late": 105,
+              "early": 44,
+              "missing": 2
+            },
+            "by_path_length": {
+              "1": {
+                "n": 45,
+                "exact": 1
+              },
+              "2": {
+                "n": 39,
+                "exact": 14
+              },
+              "3": {
+                "n": 27,
+                "exact": 1
+              },
+              "4": {
+                "n": 30,
+                "exact": 4
+              },
+              "5": {
+                "n": 10,
+                "exact": 1
+              },
+              "6": {
+                "n": 17,
+                "exact": 0
+              },
+              "7": {
+                "n": 6,
+                "exact": 0
+              },
+              "8": {
+                "n": 4,
+                "exact": 0
+              },
+              "9": {
+                "n": 5,
+                "exact": 0
+              },
+              "10": {
+                "n": 7,
+                "exact": 0
+              },
+              "11": {
+                "n": 2,
+                "exact": 0
+              },
+              "13": {
+                "n": 3,
+                "exact": 0
+              },
+              "14": {
+                "n": 1,
+                "exact": 0
+              },
+              "15": {
+                "n": 2,
+                "exact": 0
+              },
+              "17": {
+                "n": 2,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "invalid | step=3 | reason=goal_not_reached",
+                64
+              ],
+              [
+                "invalid | step=6 | reason=goal_not_reached",
+                63
+              ],
+              [
+                "invalid | step=5 | reason=goal_not_reached",
+                44
+              ],
+              [
+                "invalid | step=1 | reason=out_of_bounds",
+                18
+              ]
+            ],
+            "beyond_14": {
+              "n": 4,
+              "exact": 0
+            }
+          }
+        },
+        "double": {
+          "whole_path": {
+            "counts": {
+              "exact": 0,
+              "format": 197,
+              "n": 200,
+              "binary": 197,
+              "invalid_n": 200,
+              "step": 11,
+              "reason": 0
+            },
+            "macro_exact": 0.0,
+            "classes": {
+              "out_of_bounds": {
+                "n": 65,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "invalid_action_token": {
+                "n": 67,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "obstacle_collision": {
+                "n": 68,
+                "reason_match": 0,
+                "exact": 0
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "goal_not_reached": 63,
+                "malformed": 2
+              },
+              "invalid_action_token": {
+                "goal_not_reached": 67
+              },
+              "obstacle_collision": {
+                "goal_not_reached": 67,
+                "malformed": 1
+              }
+            },
+            "predicted": {
+              "goal_not_reached": 197,
+              "malformed": 3
+            },
+            "index_relation": {
+              "late": 176,
+              "correct": 11,
+              "early": 10,
+              "missing": 3
+            },
+            "by_path_length": {
+              "3": {
+                "n": 39,
+                "exact": 0
+              },
+              "4": {
+                "n": 10,
+                "exact": 0
+              },
+              "5": {
+                "n": 38,
+                "exact": 0
+              },
+              "6": {
+                "n": 29,
+                "exact": 0
+              },
+              "7": {
+                "n": 22,
+                "exact": 0
+              },
+              "8": {
+                "n": 19,
+                "exact": 0
+              },
+              "9": {
+                "n": 7,
+                "exact": 0
+              },
+              "10": {
+                "n": 9,
+                "exact": 0
+              },
+              "11": {
+                "n": 5,
+                "exact": 0
+              },
+              "12": {
+                "n": 3,
+                "exact": 0
+              },
+              "13": {
+                "n": 6,
+                "exact": 0
+              },
+              "14": {
+                "n": 3,
+                "exact": 0
+              },
+              "15": {
+                "n": 4,
+                "exact": 0
+              },
+              "16": {
+                "n": 2,
+                "exact": 0
+              },
+              "19": {
+                "n": 1,
+                "exact": 0
+              },
+              "21": {
+                "n": 3,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "invalid | step=6 | reason=goal_not_reached",
+                141
+              ],
+              [
+                "invalid | step=5 | reason=goal_not_reached",
+                45
+              ],
+              [
+                "invalid | step=3 | reason=goal_not_reached",
+                7
+              ],
+              [
+                "invalid | step=4 | reason=goal_not_reached",
+                4
+              ]
+            ],
+            "beyond_14": {
+              "n": 10,
+              "exact": 0
+            }
+          },
+          "annotated_prefix": {
+            "counts": {
+              "exact": 14,
+              "format": 198,
+              "n": 200,
+              "binary": 198,
+              "invalid_n": 200,
+              "step": 57,
+              "reason": 14
+            },
+            "macro_exact": 0.0717948717948718,
+            "classes": {
+              "out_of_bounds": {
+                "n": 65,
+                "reason_match": 14,
+                "exact": 14
+              },
+              "invalid_action_token": {
+                "n": 67,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "obstacle_collision": {
+                "n": 68,
+                "reason_match": 0,
+                "exact": 0
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "goal_not_reached": 50,
+                "out_of_bounds": 14,
+                "malformed": 1
+              },
+              "invalid_action_token": {
+                "goal_not_reached": 59,
+                "out_of_bounds": 8
+              },
+              "obstacle_collision": {
+                "goal_not_reached": 54,
+                "out_of_bounds": 13,
+                "malformed": 1
+              }
+            },
+            "predicted": {
+              "goal_not_reached": 163,
+              "out_of_bounds": 35,
+              "malformed": 2
+            },
+            "index_relation": {
+              "late": 130,
+              "correct": 57,
+              "early": 11,
+              "missing": 2
+            },
+            "by_path_length": {
+              "1": {
+                "n": 77,
+                "exact": 14
+              },
+              "2": {
+                "n": 49,
+                "exact": 0
+              },
+              "3": {
+                "n": 34,
+                "exact": 0
+              },
+              "4": {
+                "n": 12,
+                "exact": 0
+              },
+              "5": {
+                "n": 11,
+                "exact": 0
+              },
+              "6": {
+                "n": 7,
+                "exact": 0
+              },
+              "7": {
+                "n": 4,
+                "exact": 0
+              },
+              "8": {
+                "n": 2,
+                "exact": 0
+              },
+              "9": {
+                "n": 1,
+                "exact": 0
+              },
+              "10": {
+                "n": 2,
+                "exact": 0
+              },
+              "11": {
+                "n": 1,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "invalid | step=3 | reason=goal_not_reached",
+                96
+              ],
+              [
+                "invalid | step=1 | reason=out_of_bounds",
+                35
+              ],
+              [
+                "invalid | step=6 | reason=goal_not_reached",
+                30
+              ],
+              [
+                "invalid | step=5 | reason=goal_not_reached",
+                30
+              ]
+            ],
+            "beyond_14": {
+              "n": 0,
+              "exact": 0
+            }
+          }
+        }
+      },
+      "rollout": {
+        "n": 40,
+        "counts": {
+          "first_is_optimal": 17,
+          "declared_arrived": 0,
+          "reports_physical_error_on_known_shortest_prefix": 16,
+          "model_stopped_and_shortest": 0,
+          "stopped_after_first": 39
+        },
+        "termination": {
+          "out_of_bounds": 39,
+          "cap": 1
+        },
+        "lengths": {
+          "1": 39,
+          "24": 1
+        }
+      }
+    },
+    "mrt": {
+      "selected": "mrt/epoch2",
+      "weight": "ef7c12b2ff8d87b179ec5d89cad4e9d5f0474020c789041faca1733f162be71a",
+      "test": {
+        "single": {
+          "whole_path": {
+            "counts": {
+              "exact": 7,
+              "format": 200,
+              "n": 200,
+              "binary": 200,
+              "invalid_n": 200,
+              "step": 47,
+              "reason": 50
+            },
+            "macro_exact": 0.035,
+            "classes": {
+              "out_of_bounds": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "invalid_action_token": {
+                "n": 50,
+                "reason_match": 50,
+                "exact": 7
+              },
+              "obstacle_collision": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "goal_not_reached": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "invalid_action_token": 50
+              },
+              "invalid_action_token": {
+                "invalid_action_token": 50
+              },
+              "obstacle_collision": {
+                "invalid_action_token": 50
+              },
+              "goal_not_reached": {
+                "invalid_action_token": 50
+              }
+            },
+            "predicted": {
+              "invalid_action_token": 200
+            },
+            "index_relation": {
+              "early": 98,
+              "late": 55,
+              "correct": 47
+            },
+            "by_path_length": {
+              "1": {
+                "n": 20,
+                "exact": 0
+              },
+              "2": {
+                "n": 15,
+                "exact": 0
+              },
+              "3": {
+                "n": 3,
+                "exact": 0
+              },
+              "4": {
+                "n": 53,
+                "exact": 3
+              },
+              "5": {
+                "n": 21,
+                "exact": 3
+              },
+              "6": {
+                "n": 21,
+                "exact": 0
+              },
+              "7": {
+                "n": 16,
+                "exact": 1
+              },
+              "8": {
+                "n": 10,
+                "exact": 0
+              },
+              "9": {
+                "n": 9,
+                "exact": 0
+              },
+              "10": {
+                "n": 6,
+                "exact": 0
+              },
+              "11": {
+                "n": 3,
+                "exact": 0
+              },
+              "12": {
+                "n": 5,
+                "exact": 0
+              },
+              "13": {
+                "n": 3,
+                "exact": 0
+              },
+              "14": {
+                "n": 7,
+                "exact": 0
+              },
+              "15": {
+                "n": 4,
+                "exact": 0
+              },
+              "17": {
+                "n": 1,
+                "exact": 0
+              },
+              "18": {
+                "n": 2,
+                "exact": 0
+              },
+              "20": {
+                "n": 1,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "invalid | step=3 | reason=invalid_action_token",
+                180
+              ],
+              [
+                "invalid | step=2 | reason=invalid_action_token",
+                20
+              ]
+            ],
+            "beyond_14": {
+              "n": 8,
+              "exact": 0
+            }
+          },
+          "annotated_prefix": {
+            "counts": {
+              "exact": 10,
+              "format": 200,
+              "n": 200,
+              "binary": 200,
+              "invalid_n": 200,
+              "step": 50,
+              "reason": 50
+            },
+            "macro_exact": 0.05,
+            "classes": {
+              "out_of_bounds": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "invalid_action_token": {
+                "n": 50,
+                "reason_match": 50,
+                "exact": 10
+              },
+              "obstacle_collision": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "goal_not_reached": {
+                "n": 50,
+                "reason_match": 0,
+                "exact": 0
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "invalid_action_token": 50
+              },
+              "invalid_action_token": {
+                "invalid_action_token": 50
+              },
+              "obstacle_collision": {
+                "invalid_action_token": 50
+              },
+              "goal_not_reached": {
+                "invalid_action_token": 50
+              }
+            },
+            "predicted": {
+              "invalid_action_token": 200
+            },
+            "index_relation": {
+              "early": 98,
+              "late": 52,
+              "correct": 50
+            },
+            "by_path_length": {
+              "1": {
+                "n": 45,
+                "exact": 1
+              },
+              "2": {
+                "n": 39,
+                "exact": 2
+              },
+              "3": {
+                "n": 27,
+                "exact": 7
+              },
+              "4": {
+                "n": 30,
+                "exact": 0
+              },
+              "5": {
+                "n": 10,
+                "exact": 0
+              },
+              "6": {
+                "n": 17,
+                "exact": 0
+              },
+              "7": {
+                "n": 6,
+                "exact": 0
+              },
+              "8": {
+                "n": 4,
+                "exact": 0
+              },
+              "9": {
+                "n": 5,
+                "exact": 0
+              },
+              "10": {
+                "n": 7,
+                "exact": 0
+              },
+              "11": {
+                "n": 2,
+                "exact": 0
+              },
+              "13": {
+                "n": 3,
+                "exact": 0
+              },
+              "14": {
+                "n": 1,
+                "exact": 0
+              },
+              "15": {
+                "n": 2,
+                "exact": 0
+              },
+              "17": {
+                "n": 2,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "invalid | step=3 | reason=invalid_action_token",
+                164
+              ],
+              [
+                "invalid | step=2 | reason=invalid_action_token",
+                35
+              ],
+              [
+                "invalid | step=1 | reason=invalid_action_token",
+                1
+              ]
+            ],
+            "beyond_14": {
+              "n": 4,
+              "exact": 0
+            }
+          }
+        },
+        "double": {
+          "whole_path": {
+            "counts": {
+              "exact": 10,
+              "format": 200,
+              "n": 200,
+              "binary": 200,
+              "invalid_n": 200,
+              "step": 34,
+              "reason": 67
+            },
+            "macro_exact": 0.04975124378109452,
+            "classes": {
+              "out_of_bounds": {
+                "n": 65,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "invalid_action_token": {
+                "n": 67,
+                "reason_match": 67,
+                "exact": 10
+              },
+              "obstacle_collision": {
+                "n": 68,
+                "reason_match": 0,
+                "exact": 0
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "invalid_action_token": 65
+              },
+              "invalid_action_token": {
+                "invalid_action_token": 67
+              },
+              "obstacle_collision": {
+                "invalid_action_token": 68
+              }
+            },
+            "predicted": {
+              "invalid_action_token": 200
+            },
+            "index_relation": {
+              "early": 40,
+              "late": 126,
+              "correct": 34
+            },
+            "by_path_length": {
+              "3": {
+                "n": 39,
+                "exact": 2
+              },
+              "4": {
+                "n": 10,
+                "exact": 0
+              },
+              "5": {
+                "n": 38,
+                "exact": 2
+              },
+              "6": {
+                "n": 29,
+                "exact": 2
+              },
+              "7": {
+                "n": 22,
+                "exact": 3
+              },
+              "8": {
+                "n": 19,
+                "exact": 0
+              },
+              "9": {
+                "n": 7,
+                "exact": 0
+              },
+              "10": {
+                "n": 9,
+                "exact": 0
+              },
+              "11": {
+                "n": 5,
+                "exact": 0
+              },
+              "12": {
+                "n": 3,
+                "exact": 0
+              },
+              "13": {
+                "n": 6,
+                "exact": 0
+              },
+              "14": {
+                "n": 3,
+                "exact": 1
+              },
+              "15": {
+                "n": 4,
+                "exact": 0
+              },
+              "16": {
+                "n": 2,
+                "exact": 0
+              },
+              "19": {
+                "n": 1,
+                "exact": 0
+              },
+              "21": {
+                "n": 3,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "invalid | step=3 | reason=invalid_action_token",
+                200
+              ]
+            ],
+            "beyond_14": {
+              "n": 10,
+              "exact": 0
+            }
+          },
+          "annotated_prefix": {
+            "counts": {
+              "exact": 21,
+              "format": 200,
+              "n": 200,
+              "binary": 200,
+              "invalid_n": 200,
+              "step": 53,
+              "reason": 67
+            },
+            "macro_exact": 0.10447761194029852,
+            "classes": {
+              "out_of_bounds": {
+                "n": 65,
+                "reason_match": 0,
+                "exact": 0
+              },
+              "invalid_action_token": {
+                "n": 67,
+                "reason_match": 67,
+                "exact": 21
+              },
+              "obstacle_collision": {
+                "n": 68,
+                "reason_match": 0,
+                "exact": 0
+              }
+            },
+            "confusion": {
+              "out_of_bounds": {
+                "invalid_action_token": 65
+              },
+              "invalid_action_token": {
+                "invalid_action_token": 67
+              },
+              "obstacle_collision": {
+                "invalid_action_token": 68
+              }
+            },
+            "predicted": {
+              "invalid_action_token": 200
+            },
+            "index_relation": {
+              "early": 41,
+              "late": 106,
+              "correct": 53
+            },
+            "by_path_length": {
+              "1": {
+                "n": 77,
+                "exact": 7
+              },
+              "2": {
+                "n": 49,
+                "exact": 5
+              },
+              "3": {
+                "n": 34,
+                "exact": 9
+              },
+              "4": {
+                "n": 12,
+                "exact": 0
+              },
+              "5": {
+                "n": 11,
+                "exact": 0
+              },
+              "6": {
+                "n": 7,
+                "exact": 0
+              },
+              "7": {
+                "n": 4,
+                "exact": 0
+              },
+              "8": {
+                "n": 2,
+                "exact": 0
+              },
+              "9": {
+                "n": 1,
+                "exact": 0
+              },
+              "10": {
+                "n": 2,
+                "exact": 0
+              },
+              "11": {
+                "n": 1,
+                "exact": 0
+              }
+            },
+            "top_raw": [
+              [
+                "invalid | step=3 | reason=invalid_action_token",
+                128
+              ],
+              [
+                "invalid | step=2 | reason=invalid_action_token",
+                65
+              ],
+              [
+                "invalid | step=1 | reason=invalid_action_token",
+                7
+              ]
+            ],
+            "beyond_14": {
+              "n": 0,
+              "exact": 0
+            }
+          }
+        }
+      },
+      "rollout": {
+        "n": 40,
+        "counts": {
+          "first_is_optimal": 13,
+          "declared_arrived": 0,
+          "reports_physical_error_on_known_shortest_prefix": 13,
+          "model_stopped_and_shortest": 0,
+          "stopped_after_first": 40
+        },
+        "termination": {
+          "invalid_action_token": 40
+        },
+        "lengths": {
+          "1": 40
+        }
+      }
+    }
+  }
+}

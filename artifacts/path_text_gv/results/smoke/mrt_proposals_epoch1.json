@@ -1,0 +1,9 @@
+{
+  "stamp": "smoke-v1",
+  "sha256": "63cba3a912119237a3e22d1c9d5bc91857721460613defd9fe2ded95e443ded9",
+  "draws": 3,
+  "unique_candidates": {
+    "4": 6
+  },
+  "zero_risk_only": 0
+}

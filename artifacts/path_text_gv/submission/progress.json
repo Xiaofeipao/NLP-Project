@@ -1,0 +1,10 @@
+{
+  "time": "2026-11-23 23:05:00 +0800",
+  "stage": "training",
+  "epoch": 1,
+  "update": 20,
+  "total_updates": 125,
+  "mean_loss": 1.6817905187606812,
+  "grad_norm": 3.9801025390625,
+  "peak_mib": 4443
+}

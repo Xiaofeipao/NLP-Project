@@ -1,0 +1,21 @@
+{
+  "queue": [
+    "smoke",
+    "warmup",
+    "field",
+    "dpo",
+    "mrt",
+    "test"
+  ],
+  "pid": 12040,
+  "started": 1795446044.731594,
+  "finished": [
+    "smoke"
+  ],
+  "package": "bdd47cba9712e5a1cdcf54c2cd2d742d5fbef7f60c4293c0cd8f7936a28bf11f",
+  "dataset_manifest": "5434dfa08625a48203a8b3265ad39c052c8b4f0b4356e90b91c372c734a4f5b6",
+  "status": "running",
+  "updated": 1795446068.5668814,
+  "stage": "warmup",
+  "child_pid": 21320
+}
