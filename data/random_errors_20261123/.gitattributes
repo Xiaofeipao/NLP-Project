@@ -1,0 +1,2 @@
+# Preserve frozen evidence bytes and SHA-256 values across Windows/Linux checkouts.
+* -text

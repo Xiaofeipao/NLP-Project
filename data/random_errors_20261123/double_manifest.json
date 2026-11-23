@@ -1,0 +1,43 @@
+{
+  "seed": 74368814973479268323204410869573710575,
+  "seed_source": "OS entropy via secrets",
+  "counts": {
+    "out_of_bounds+out_of_bounds": 22,
+    "invalid_action_token+goal_not_reached": 22,
+    "out_of_bounds+goal_not_reached": 23,
+    "obstacle_collision+invalid_action_token": 22,
+    "obstacle_collision+goal_not_reached": 22,
+    "obstacle_collision+obstacle_collision": 23,
+    "out_of_bounds+invalid_action_token": 22,
+    "invalid_action_token+invalid_action_token": 22,
+    "obstacle_collision+out_of_bounds": 22
+  },
+  "excluded_pair": [
+    "goal_not_reached",
+    "goal_not_reached"
+  ],
+  "allocation": "22 per pair plus two randomly selected pairs each receive one extra",
+  "first_error_counts": {
+    "out_of_bounds": 65,
+    "invalid_action_token": 67,
+    "obstacle_collision": 68
+  },
+  "valid_controls": 0,
+  "unique_layouts": 200,
+  "cross_single_overlap": 0,
+  "old_layout_overlap": 0,
+  "attempts": {
+    "obstacle_collision+obstacle_collision": 37,
+    "obstacle_collision+out_of_bounds": 33,
+    "obstacle_collision+invalid_action_token": 25,
+    "obstacle_collision+goal_not_reached": 35,
+    "out_of_bounds+out_of_bounds": 40,
+    "out_of_bounds+invalid_action_token": 29,
+    "out_of_bounds+goal_not_reached": 37,
+    "invalid_action_token+invalid_action_token": 25,
+    "invalid_action_token+goal_not_reached": 26
+  },
+  "generator_sha256": "480787f972937c3ebecd5601168bff23ab2eebc90729edebb4d1a7341509d3f9",
+  "data_sha256": "68340c517e9a4d3d20d74ba9bccd78b175bc06d2a2adad75330d5200237c563d",
+  "semantics": "Original project execute stops at first error, unchanged. audit_events uses rejected illegal moves as no-op and continues, then evaluates EOS once. Exactly two distinct event steps; physical errors at different base indices. Reference route reaches goal. No hidden second terminal label."
+}

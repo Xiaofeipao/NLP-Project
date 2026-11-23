@@ -1,0 +1,50 @@
+{
+  "seed": 209540629391093677439821636522565323715,
+  "seed_source": "OS entropy via secrets",
+  "grid": "6x6",
+  "counts": {
+    "out_of_bounds": 50,
+    "invalid_action_token": 50,
+    "obstacle_collision": 50,
+    "goal_not_reached": 50
+  },
+  "valid_controls": 0,
+  "randomized": [
+    "Bernoulli obstacle grid with random density",
+    "start",
+    "self-avoiding route and endpoint",
+    "error location",
+    "illegal word",
+    "final row order"
+  ],
+  "route_generator": "random walk; BFS only checks reachability/shortest length, not constructing fixed reference routes",
+  "exclusion_files": {
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-stepverify-1119\\data\\policy_v3\\dev.jsonl": "13f69147dc984909a86badfc9ecbc36ad900ef80585334b208ef30eccd711242",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-stepverify-1119\\data\\policy_v3\\test_id.jsonl": "26b5f561b9fd7b3bd5e963b0186abdf0b42cb7da726f20833b229969900220c1",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-stepverify-1119\\data\\policy_v3\\test_ood.jsonl": "c3e5b77f488931c15708ffdd32e88f725cda710f6eb3df517767fe1e390ba80c",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-stepverify-1119\\data\\policy_v3\\train.jsonl": "650cec9a8148d33a86c8b8dcdfd990dacf43f86f5c907f98404b321656d75bc1",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\derived\\dev.jsonl": "6b60713aa88053bacbe2a009c68baf69d51a1f3121390d0aea1c7f256a92bb3a",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\derived\\test_id.jsonl": "26b5f561b9fd7b3bd5e963b0186abdf0b42cb7da726f20833b229969900220c1",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\derived\\test_ood.jsonl": "c3e5b77f488931c15708ffdd32e88f725cda710f6eb3df517767fe1e390ba80c",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\derived\\train.jsonl": "d1212c424d5e1dcdc7d99fd0520ce9d28ab7ef292c7c5121a3dd4cc54d5842a2",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\policy_v2\\dev.jsonl": "d6059f34013f182557a9a74a71de13845290b7267a4e9b418bd4082939d4f7ee",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\policy_v2\\test_id.jsonl": "26b5f561b9fd7b3bd5e963b0186abdf0b42cb7da726f20833b229969900220c1",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\policy_v2\\test_ood.jsonl": "c3e5b77f488931c15708ffdd32e88f725cda710f6eb3df517767fe1e390ba80c",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\policy_v2\\train.jsonl": "95dfab60200f31a1cbb9456884f2039d25263baf113f6500f97924c1c999ecd6",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\policy_v3\\dev.jsonl": "13f69147dc984909a86badfc9ecbc36ad900ef80585334b208ef30eccd711242",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\policy_v3\\test_id.jsonl": "26b5f561b9fd7b3bd5e963b0186abdf0b42cb7da726f20833b229969900220c1",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\policy_v3\\test_ood.jsonl": "c3e5b77f488931c15708ffdd32e88f725cda710f6eb3df517767fe1e390ba80c",
+    "C:\\Users\\apple\\Documents\\ChatGPT\\NLP\\tmp\\nlp-newpart1-update\\part23\\data\\policy_v3\\train.jsonl": "650cec9a8148d33a86c8b8dcdfd990dacf43f86f5c907f98404b321656d75bc1"
+  },
+  "excluded_layouts": 807,
+  "attempts": {
+    "obstacle_collision": 67,
+    "out_of_bounds": 67,
+    "invalid_action_token": 55,
+    "goal_not_reached": 55
+  },
+  "generator_sha256": "c6caa390bfbf046ed477d6569d729c54f5855e6a742aa7067fd698d6ce6b6f45",
+  "data_sha256": "18020e883bb5eb0e91d2039393f741816b73b378ff245cb36d8a1449e02a347d",
+  "double_status": "Complete: 200 records, nine supported pairs; see double_manifest.json",
+  "audit_semantics": "Standard executor labels first error. Separate rejected-move no-op scan audits exact number of error events; no change to project executor."
+}
