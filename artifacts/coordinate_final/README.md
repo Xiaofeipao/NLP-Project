@@ -44,3 +44,7 @@ git lfs pull --include="artifacts/coordinate_final/models/**"
 ## B 提示重训
 
 从原始 Flan 权重发起三轮计划，随后按指示暂停。第 1 轮最后记录为 60/125 次更新，当时还未生成检查点。[训练包与暂停记录](runs/two_shot_retrain_paused/)
+
+## B · 2-shot重训完成
+
+[三轮检查点、单错与双错结果](runs/two_shot_retrain/README.md)

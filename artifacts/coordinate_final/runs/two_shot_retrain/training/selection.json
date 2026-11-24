@@ -1,0 +1,9 @@
+{
+  "epoch": 3,
+  "rank": [
+    "dev_step_macro_f1",
+    "dev_step_correct",
+    "earlier_epoch"
+  ],
+  "selected": "checkpoint-epoch-3"
+}

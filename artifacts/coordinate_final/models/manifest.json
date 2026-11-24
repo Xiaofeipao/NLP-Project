@@ -66,6 +66,72 @@
         "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19",
         "size": 2493
       }
+    },
+    "two_shot_retrain-epoch-1": {
+      "config.json": {
+        "sha256": "19c5f0383fd988fb9a4a83495147cb273117babf0eabdbbf903d8c5fe0eb877a",
+        "size": 2059
+      },
+      "generation_config.json": {
+        "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307",
+        "size": 229
+      },
+      "model.safetensors": {
+        "sha256": "3fc3f1a8b17564f487909320628564bc90c5bf07e4ce3ba10dfc00dfc6384589",
+        "size": 990345064
+      },
+      "tokenizer.json": {
+        "sha256": "422313e620b8888d251769794affbd278faf06c129df653708bc82d053673a1d",
+        "size": 2424224
+      },
+      "tokenizer_config.json": {
+        "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19",
+        "size": 2493
+      }
+    },
+    "two_shot_retrain-epoch-2": {
+      "config.json": {
+        "sha256": "19c5f0383fd988fb9a4a83495147cb273117babf0eabdbbf903d8c5fe0eb877a",
+        "size": 2059
+      },
+      "generation_config.json": {
+        "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307",
+        "size": 229
+      },
+      "model.safetensors": {
+        "sha256": "e4d5504beab24bdcfa604389e25bd581eee056c08284237b85267359a65e60ef",
+        "size": 990345064
+      },
+      "tokenizer.json": {
+        "sha256": "422313e620b8888d251769794affbd278faf06c129df653708bc82d053673a1d",
+        "size": 2424224
+      },
+      "tokenizer_config.json": {
+        "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19",
+        "size": 2493
+      }
+    },
+    "two_shot_retrain-epoch-3": {
+      "config.json": {
+        "sha256": "19c5f0383fd988fb9a4a83495147cb273117babf0eabdbbf903d8c5fe0eb877a",
+        "size": 2059
+      },
+      "generation_config.json": {
+        "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307",
+        "size": 229
+      },
+      "model.safetensors": {
+        "sha256": "c1542e3b8781138aa6c040d0810836aa45b92f89a316b2647cd73d84472b4b1a",
+        "size": 990345064
+      },
+      "tokenizer.json": {
+        "sha256": "422313e620b8888d251769794affbd278faf06c129df653708bc82d053673a1d",
+        "size": 2424224
+      },
+      "tokenizer_config.json": {
+        "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19",
+        "size": 2493
+      }
     }
   }
 }

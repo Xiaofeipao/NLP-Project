@@ -1,0 +1,86 @@
+{
+  "source_commit": "74b9e41a6ffe4f51a84763a67764d80ac9703b75",
+  "test_commit": "123bf5a1db4da2a676d4a83cf80974a888cd11db",
+  "run_directory": "gv_coordinate_fields4_worked_3epoch_20261124",
+  "V_fields": [
+    "Current",
+    "Goal",
+    "Walls",
+    "Action"
+  ],
+  "V_evaluation": "five-class macro F1 and accuracy on each real candidate action",
+  "source_manifest_sha256": "fdd9a59e2463f1b2d16318932de1b49b4d6a70a3833145b222077dfcef840865",
+  "training_manifest_sha256": "05740cb92060c709c7cb33f8cf0d361829bdaa2cacaa837232fd67989e91b744",
+  "prompt_sha256": "9f9f57a315e4e9af19990fcf976f69419515ce3d746c65945661c4ff075e31b6",
+  "checkpoint_prompt_sha256": "cf67d26dd0aab8a9083562835f78c8808fe25895fc5c506a2e91bd02d0341dd1",
+  "base_sha256": "1dfb70afdcedceb9f9fae2f9b68e004ad934361fb35b9b2bd50b45ea90790fc8",
+  "tokenizer_sha256": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a",
+  "base_revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+  "base_directory": "phase1_pretrained/flan_t5_base",
+  "previous_directory": "gv_shared4000_random_20261123/new_model",
+  "original_weights": {
+    "old_epoch2": "85f39c32f0a0c402f5c39b4235202f08ecb8bea6d6b3ebdf4678549585acc71a",
+    "old_epoch3": "7aa340c4de21616a2cc506ebd4e6dbe49153ac74d656224ed6ae38ac467740df"
+  },
+  "seed": 42,
+  "epochs": 3,
+  "fixed_test_epoch": 3,
+  "effective_batch_states": 32,
+  "microbatch_views": 4,
+  "learning_rate": 0.0001,
+  "input_limit": 512,
+  "training_states": 4000,
+  "G": 4000,
+  "V": {
+    "goal_not_reached": 9571,
+    "invalid_action_token": 400,
+    "obstacle_collision": 2323,
+    "valid": 1339,
+    "out_of_bounds": 2767
+  },
+  "coordinate_checks": {
+    "single": {
+      "candidate_steps": 1198,
+      "same_pre_move_coordinate": 1198,
+      "same_rendered_prompt": 1198,
+      "paths": 200,
+      "source_sha256": "18020e883bb5eb0e91d2039393f741816b73b378ff245cb36d8a1449e02a347d",
+      "blind_sha256": "0ec9f2f02f275403ae6286e50683f58ba2df971a662c64de93b83b1c9eea5cff"
+    },
+    "double": {
+      "candidate_steps": 1365,
+      "same_pre_move_coordinate": 1365,
+      "same_rendered_prompt": 1365,
+      "paths": 200,
+      "source_sha256": "68340c517e9a4d3d20d74ba9bccd78b175bc06d2a2adad75330d5200237c563d",
+      "blind_sha256": "d3322e0e0639808ba6e77143150852326102c412369ac7bace57cbc7b327e144"
+    }
+  },
+  "optimizer_restarts": 0,
+  "prompt_audit": {
+    "train_V": {
+      "items": 16400,
+      "max_input_tokens": 171
+    },
+    "train_G": {
+      "items": 4000,
+      "max_input_tokens": 68
+    },
+    "dev.jsonl": {
+      "items": 100,
+      "max_input_tokens": 172
+    },
+    "diagnostics/g_dev_four.jsonl": {
+      "items": 400,
+      "max_input_tokens": 170
+    },
+    "single": {
+      "items": 1198,
+      "max_input_tokens": 212
+    },
+    "double": {
+      "items": 1365,
+      "max_input_tokens": 214
+    }
+  }
+}
