@@ -33,15 +33,16 @@
 
 ## 正式评测权重
 
-以下 2 个第 2 轮检查点与测试前选模记录对应。每份权重为 990,345,064 字节，并通过 Git LFS 提供。
+以下 3 个第 2 轮检查点与测试前选模记录对应。每份权重为 990,345,064 字节，并通过 Git LFS 提供。
 
 - [字段加权第 2 轮](results/field/epoch2/model/)
 - [DPO第 2 轮](results/dpo/epoch2/model/)
+- [MRT第 2 轮](results/mrt/epoch2/model/)
 
 在 Luck 分支的工作目录中运行以下命令下载这些权重。
 
 ~~~powershell
-git lfs pull --include="artifacts/path_text_gv/results/field/epoch2/model/model.safetensors,artifacts/path_text_gv/results/dpo/epoch2/model/model.safetensors"
+git lfs pull --include="artifacts/path_text_gv/results/field/epoch2/model/model.safetensors,artifacts/path_text_gv/results/dpo/epoch2/model/model.safetensors,artifacts/path_text_gv/results/mrt/epoch2/model/model.safetensors"
 ~~~
 
 ## 复现实验
