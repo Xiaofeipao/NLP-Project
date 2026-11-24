@@ -1,0 +1,41 @@
+{
+  "checkpoint_directory": "gv_coordinate_fields4_epoch3_20261124",
+  "weights_sha256": "d8bdc803677584e6161d8aaad6b0f2a22e748e699eb9c4bf6c6d8ec45bbf8e28",
+  "checkpoint_prompt_sha256": "42a03cbaba1e9a1e74d2dba36e2c789aa56c2252b7e0739af0513ad75c3c98da",
+  "test_commit": "123bf5a1db4da2a676d4a83cf80974a888cd11db",
+  "demo_state_ids": [
+    "2a70015db452ac41f3d7d1a9",
+    "1459c50260c25ef57f1ec5c9"
+  ],
+  "coordinate_checks": {
+    "single": {
+      "candidate_steps": 1198,
+      "same_pre_move_coordinate": 1198,
+      "same_rendered_prompt": 1198,
+      "paths": 200,
+      "source_sha256": "18020e883bb5eb0e91d2039393f741816b73b378ff245cb36d8a1449e02a347d",
+      "blind_sha256": "0ec9f2f02f275403ae6286e50683f58ba2df971a662c64de93b83b1c9eea5cff"
+    },
+    "double": {
+      "candidate_steps": 1365,
+      "same_pre_move_coordinate": 1365,
+      "same_rendered_prompt": 1365,
+      "paths": 200,
+      "source_sha256": "68340c517e9a4d3d20d74ba9bccd78b175bc06d2a2adad75330d5200237c563d",
+      "blind_sha256": "d3322e0e0639808ba6e77143150852326102c412369ac7bace57cbc7b327e144"
+    }
+  },
+  "original_weights": {
+    "old_epoch2": "85f39c32f0a0c402f5c39b4235202f08ecb8bea6d6b3ebdf4678549585acc71a",
+    "old_epoch3": "7aa340c4de21616a2cc506ebd4e6dbe49153ac74d656224ed6ae38ac467740df"
+  },
+  "prefixes": {
+    "two_shot": "9f9f57a315e4e9af19990fcf976f69419515ce3d746c65945661c4ff075e31b6",
+    "five_shot": "8fc83348d6045d6ff420277692d204dfc4c5258414394b0dfb4b83644402392f"
+  },
+  "inference_device": "cuda",
+  "precision": "bfloat16",
+  "threads": 2,
+  "batch_size": 4,
+  "primary": "raw"
+}

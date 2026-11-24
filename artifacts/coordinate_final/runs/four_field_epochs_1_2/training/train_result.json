@@ -1,0 +1,212 @@
+{
+  "checkpoint": "checkpoint-epoch-2",
+  "dev": [
+    {
+      "G_greedy": {
+        "feasibility": 0.02,
+        "n": 100,
+        "optimality": 0.02,
+        "path_efficiency_on_success": 1.0,
+        "success_rate": 0.02
+      },
+      "G_one_step_correct": 39,
+      "G_one_step_total": 100,
+      "V": {
+        "correct": 57,
+        "macro_f1": 0.5575,
+        "malformed": 0,
+        "n": 100,
+        "precision_counts": {
+          "goal_not_reached": [
+            12,
+            28
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "obstacle_collision": [
+            5,
+            13
+          ],
+          "out_of_bounds": [
+            14,
+            23
+          ],
+          "valid": [
+            6,
+            16
+          ]
+        },
+        "recall_counts": {
+          "goal_not_reached": [
+            12,
+            20
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "obstacle_collision": [
+            5,
+            20
+          ],
+          "out_of_bounds": [
+            14,
+            20
+          ],
+          "valid": [
+            6,
+            20
+          ]
+        }
+      },
+      "directions": {
+        "cases": 400,
+        "correct": 177,
+        "false_valid": {
+          "adjacent": 11,
+          "nonadjacent": 58,
+          "strict_inward": 8
+        },
+        "false_valid_opportunities": {
+          "adjacent": 30,
+          "nonadjacent": 360,
+          "strict_inward": 36
+        },
+        "only_arriving_direction_called_valid": [
+          0,
+          10
+        ]
+      },
+      "epoch": 1,
+      "state_order_sha256": "764d718d589b195ced371058cb8c46d4a39a2c59d5fe0155d9b137504dd69d7f",
+      "states": 4000,
+      "train_mean_loss": 1.2913210029602051,
+      "updates": 125,
+      "views": 20400
+    },
+    {
+      "G_greedy": {
+        "feasibility": 0.66,
+        "n": 100,
+        "optimality": 0.35,
+        "path_efficiency_on_success": 0.9861111111111112,
+        "success_rate": 0.36
+      },
+      "G_one_step_correct": 71,
+      "G_one_step_total": 100,
+      "V": {
+        "correct": 79,
+        "macro_f1": 0.7657,
+        "malformed": 0,
+        "n": 100,
+        "precision_counts": {
+          "goal_not_reached": [
+            5,
+            7
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "obstacle_collision": [
+            15,
+            25
+          ],
+          "out_of_bounds": [
+            20,
+            20
+          ],
+          "valid": [
+            19,
+            28
+          ]
+        },
+        "recall_counts": {
+          "goal_not_reached": [
+            5,
+            20
+          ],
+          "invalid_action_token": [
+            20,
+            20
+          ],
+          "obstacle_collision": [
+            15,
+            20
+          ],
+          "out_of_bounds": [
+            20,
+            20
+          ],
+          "valid": [
+            19,
+            20
+          ]
+        }
+      },
+      "directions": {
+        "cases": 400,
+        "correct": 183,
+        "false_valid": {
+          "adjacent": 19,
+          "nonadjacent": 40,
+          "strict_inward": 7
+        },
+        "false_valid_opportunities": {
+          "adjacent": 30,
+          "nonadjacent": 360,
+          "strict_inward": 36
+        },
+        "only_arriving_direction_called_valid": [
+          0,
+          10
+        ]
+      },
+      "epoch": 2,
+      "state_order_sha256": "e8524f29ac7cf18f36d200ffb5ba09868701abeea41ca5d57b017e00a8006add",
+      "states": 4000,
+      "train_mean_loss": 0.8750098857879639,
+      "updates": 250,
+      "views": 20400
+    }
+  ],
+  "experiment": {
+    "G_views": 4000,
+    "base_revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+    "compass_V": 16000,
+    "data_manifest": "de4385ab683aec721049e4eaa7c24624e2d079a01c07898483a02748310089c4",
+    "device": "NVIDIA GeForce RTX 3050",
+    "effective_batch_states": 32,
+    "endpoint_check": false,
+    "epochs": 2,
+    "formal_state_cases": 4000,
+    "g_v_total_epoch_weight": {
+      "G": 2000.0,
+      "goal_not_reached": 400.0000000000419,
+      "invalid_action_token": 400.0,
+      "obstacle_collision": 400.00000000000597,
+      "out_of_bounds": 400.0000000000019,
+      "valid": 399.9999999999959
+    },
+    "learning_rate": 0.0001,
+    "microbatch_views": 4,
+    "objective": "0.5 mean G optimal-set NLL + 0.5 mean across five V label losses, balanced by action within label",
+    "other_V": 400,
+    "precision": "bfloat16",
+    "sampling": "seeded shuffle of all states and of all task inputs within each update",
+    "seed": 42,
+    "total_views": 20400,
+    "verdict_ids": {
+      "goal_not_reached": 1288,
+      "invalid_action_token": 17070,
+      "obstacle_collision": 22820,
+      "out_of_bounds": 91,
+      "valid": 3982
+    },
+    "weight_decay": 0.01
+  },
+  "seconds": 3750.249999999971,
+  "updates": 250
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "paused_by_user",
+  "time": "2026-11-25T00:04:14.398490+08:00",
+  "progress": {
+    "elapsed_seconds": 937.719000000041,
+    "epoch": 1,
+    "states_seen": 1920,
+    "updates": 60,
+    "views_seen": 9796,
+    "weighted_mean_loss": 1.3277835110823313
+  },
+  "saved_checkpoints": 0
+}

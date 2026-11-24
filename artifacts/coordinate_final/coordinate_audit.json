@@ -1,0 +1,18 @@
+{
+  "single": {
+    "candidate_steps": 1198,
+    "same_pre_move_coordinate": 1198,
+    "same_rendered_prompt": 1198,
+    "paths": 200,
+    "source_sha256": "18020e883bb5eb0e91d2039393f741816b73b378ff245cb36d8a1449e02a347d",
+    "blind_sha256": "0ec9f2f02f275403ae6286e50683f58ba2df971a662c64de93b83b1c9eea5cff"
+  },
+  "double": {
+    "candidate_steps": 1365,
+    "same_pre_move_coordinate": 1365,
+    "same_rendered_prompt": 1365,
+    "paths": 200,
+    "source_sha256": "68340c517e9a4d3d20d74ba9bccd78b175bc06d2a2adad75330d5200237c563d",
+    "blind_sha256": "d3322e0e0639808ba6e77143150852326102c412369ac7bace57cbc7b327e144"
+  }
+}

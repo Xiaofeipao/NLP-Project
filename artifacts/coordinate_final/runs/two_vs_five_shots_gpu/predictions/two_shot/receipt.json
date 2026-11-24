@@ -1,0 +1,14 @@
+{
+  "template_sha256": "42a03cbaba1e9a1e74d2dba36e2c789aa56c2252b7e0739af0513ad75c3c98da",
+  "model_sha256": "d8bdc803677584e6161d8aaad6b0f2a22e748e699eb9c4bf6c6d8ec45bbf8e28",
+  "max_input_tokens": 214,
+  "unique_step_inputs": 2563,
+  "source_prompt": false,
+  "single_forward_pass_per_unique_input": true,
+  "official_executor_calls": 0,
+  "unit": "one candidate move",
+  "case_verdicts": false,
+  "device": "cuda",
+  "precision": "bfloat16",
+  "prompt_prefix_sha256": "9f9f57a315e4e9af19990fcf976f69419515ce3d746c65945661c4ff075e31b6"
+}

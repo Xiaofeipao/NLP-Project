@@ -1,0 +1,15 @@
+Example 1
+Current: (2,4)
+Goal: (2,5)
+Walls: [(1,4)]
+Action: up
+Answer: obstacle_collision
+
+Example 2
+Current: (2,4)
+Goal: (2,5)
+Walls: [(2,3)]
+Action: up
+Answer: goal_not_reached
+
+Classify the candidate action below. Output one label.

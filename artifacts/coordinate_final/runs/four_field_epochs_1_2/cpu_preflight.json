@@ -1,0 +1,24 @@
+{
+  "cpu_preflight": true,
+  "training_states": 4000,
+  "training_views": 20400,
+  "five_token_ids": [
+    3982,
+    22820,
+    91,
+    17070,
+    1288
+  ],
+  "G_weight": 2000.0,
+  "each_V_class_weight": 400,
+  "base_sha256": "1dfb70afdcedceb9f9fae2f9b68e004ad934361fb35b9b2bd50b45ea90790fc8",
+  "checked_template": "42a03cbaba1e9a1e74d2dba36e2c789aa56c2252b7e0739af0513ad75c3c98da",
+  "V_fields": [
+    "Current",
+    "Goal",
+    "Walls",
+    "Action"
+  ],
+  "verified_V_training_inputs": 16400,
+  "coordinate_boundary_and_guard_smoke": true
+}

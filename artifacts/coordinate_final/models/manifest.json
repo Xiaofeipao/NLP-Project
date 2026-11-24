@@ -1,0 +1,71 @@
+{
+  "base_model": "google/flan-t5-base",
+  "checkpoints": {
+    "checkpoint-epoch-1": {
+      "config.json": {
+        "sha256": "4f2b95ac94138003000d9c699893d686136d157b6cd88bb1495d532efeb5c6e4",
+        "size": 2059
+      },
+      "generation_config.json": {
+        "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307",
+        "size": 229
+      },
+      "model.safetensors": {
+        "sha256": "0b68c4b0113f790eef1bf401233242a4e33cd5af7069ff3b3eb03195094f9a07",
+        "size": 990345064
+      },
+      "tokenizer.json": {
+        "sha256": "422313e620b8888d251769794affbd278faf06c129df653708bc82d053673a1d",
+        "size": 2424224
+      },
+      "tokenizer_config.json": {
+        "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19",
+        "size": 2493
+      }
+    },
+    "checkpoint-epoch-2": {
+      "config.json": {
+        "sha256": "4f2b95ac94138003000d9c699893d686136d157b6cd88bb1495d532efeb5c6e4",
+        "size": 2059
+      },
+      "generation_config.json": {
+        "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307",
+        "size": 229
+      },
+      "model.safetensors": {
+        "sha256": "6811405fbb901fb1f46971f8fb875a9629e3ea623751a81004d08e2e038ed739",
+        "size": 990345064
+      },
+      "tokenizer.json": {
+        "sha256": "422313e620b8888d251769794affbd278faf06c129df653708bc82d053673a1d",
+        "size": 2424224
+      },
+      "tokenizer_config.json": {
+        "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19",
+        "size": 2493
+      }
+    },
+    "checkpoint-epoch-3": {
+      "config.json": {
+        "sha256": "4f2b95ac94138003000d9c699893d686136d157b6cd88bb1495d532efeb5c6e4",
+        "size": 2059
+      },
+      "generation_config.json": {
+        "sha256": "575b45561dd2372d613d9b442bb0e7181bd2c10cd4555bda0c8329b3a28cd307",
+        "size": 229
+      },
+      "model.safetensors": {
+        "sha256": "d8bdc803677584e6161d8aaad6b0f2a22e748e699eb9c4bf6c6d8ec45bbf8e28",
+        "size": 990345064
+      },
+      "tokenizer.json": {
+        "sha256": "422313e620b8888d251769794affbd278faf06c129df653708bc82d053673a1d",
+        "size": 2424224
+      },
+      "tokenizer_config.json": {
+        "sha256": "d82aefa593b213be6a498b14c6ce0d3f775ab4f38741482ceca5673812a1ed19",
+        "size": 2493
+      }
+    }
+  }
+}

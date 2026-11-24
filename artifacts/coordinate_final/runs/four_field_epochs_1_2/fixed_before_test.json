@@ -1,0 +1,12 @@
+{
+  "primary": "new_epoch2",
+  "base": "1dfb70afdcedceb9f9fae2f9b68e004ad934361fb35b9b2bd50b45ea90790fc8",
+  "new_epoch1": "0b68c4b0113f790eef1bf401233242a4e33cd5af7069ff3b3eb03195094f9a07",
+  "evaluated": {
+    "new_epoch2": "6811405fbb901fb1f46971f8fb875a9629e3ea623751a81004d08e2e038ed739",
+    "old_epoch2": "85f39c32f0a0c402f5c39b4235202f08ecb8bea6d6b3ebdf4678549585acc71a",
+    "old_epoch3": "7aa340c4de21616a2cc506ebd4e6dbe49153ac74d656224ed6ae38ac467740df"
+  },
+  "dev_selected": "checkpoint-epoch-2",
+  "test_commit": "123bf5a1db4da2a676d4a83cf80974a888cd11db"
+}
