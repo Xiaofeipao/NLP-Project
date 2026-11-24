@@ -44,3 +44,4 @@ data/random_errors_20261123/** whitespace=cr-at-eol
 
 # Preserve frozen experiment files.
 artifacts/path_text_gv/** -text whitespace=cr-at-eol
+artifacts/path_text_gv/results/*/epoch2/model/model.safetensors filter=lfs diff=lfs merge=lfs -text

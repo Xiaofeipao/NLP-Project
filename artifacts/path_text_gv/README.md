@@ -29,7 +29,19 @@
 - [字段加权](results/field/) · [DPO](results/dpo/) · [MRT](results/mrt/) 保存每轮的指标、混淆矩阵、历史对照和模型原始答复。
 - [正式测试](results/final_eval/) 保存三组的单错、双错和联合生成逐题结果，以及测试前选模记录。
 - [训练日志](results/logs/) · [DPO 参考分数](results/dpo/dpo_reference.json) · [MRT 第 2 轮候选](results/mrt/mrt_proposals_epoch2.jsonl) · [MRT 第 3 轮候选](results/mrt/mrt_proposals_epoch3.jsonl) · [烟雾测试](results/smoke/) 保存运行过程明细。
-- 检查点目录保留配置、分词器和权重 SHA-256。模型权重和优化器状态留在台式机上。
+- 检查点目录保留配置、分词器和权重 SHA-256。优化器状态留在台式机上。
+
+## 正式评测权重
+
+以下 1 个第 2 轮检查点与测试前选模记录对应。每份权重为 990,345,064 字节，并通过 Git LFS 提供。
+
+- [字段加权第 2 轮](results/field/epoch2/model/)
+
+在 Luck 分支的工作目录中运行以下命令下载这些权重。
+
+~~~powershell
+git lfs pull --include="artifacts/path_text_gv/results/field/epoch2/model/model.safetensors"
+~~~
 
 ## 复现实验
 
