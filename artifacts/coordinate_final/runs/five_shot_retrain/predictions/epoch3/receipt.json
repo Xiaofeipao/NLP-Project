@@ -1,0 +1,11 @@
+{
+  "template_sha256": "aa90c7f9a6d67525fe1ff46685401a56c579c25f746301e5c6cdc071cf735ead",
+  "model_sha256": "c3f4f252ff99b73768431d2e05875e109e11752bd61ef09f78fd57ef6e14585c",
+  "max_input_tokens": 397,
+  "unique_step_inputs": 2563,
+  "source_prompt": false,
+  "single_forward_pass_per_unique_input": true,
+  "official_executor_calls": 0,
+  "unit": "one candidate move",
+  "case_verdicts": false
+}
