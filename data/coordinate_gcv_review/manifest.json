@@ -1,0 +1,24 @@
+{
+  "version": "coordinate-gcv-review-v1",
+  "prompt_status": "awaiting_review",
+  "sources": {
+    "data/step_g_shared_4000/states.jsonl": "cda6af5146b8131a80c842ab2e54722b7a3209dc719272747460984a0fa0c78d",
+    "data/coordinate_gv_action_cell/train.jsonl": "22a8b546bbc3d5b7ccd532c461fc2ff11a29483fb3aac9bdca17a521b71ca203",
+    "data/coordinate_gv_action_cell/dev.jsonl": "5dcc87aededb398d3d32d811951a1dd2bdeff58ebac6f026219aed49cbbc4e33",
+    "data/random_errors_20261123/single_error_200.jsonl": "18020e883bb5eb0e91d2039393f741816b73b378ff245cb36d8a1449e02a347d",
+    "data/random_errors_20261123/double_error_200.jsonl": "68340c517e9a4d3d20d74ba9bccd78b175bc06d2a2adad75330d5200237c563d"
+  },
+  "tokenizer_sha256": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a",
+  "prompts_sha256": {
+    "G": "6938c35a2f20f71ddaa786089ffa805c32f09840bb37aaf652e762b0b3e31517",
+    "C": "dc7054c17db1b4fd06147d4d5fb656c18ab1737eb8432398fc3f112458b6909d",
+    "V": "824057bfd8cf760f3eb27ad53ed17ab0d904c4711be7c9767359337277211a35"
+  },
+  "files": {
+    "audit.json": "9f5cb0a0382d02d4477510dd2a402b5e63bde17a54fea9c82672de3cd26c62e3",
+    "dev.jsonl": "e2079f6f3b97a5dff5b9452d1bc815263e9ea33cc5b1f72080d7ba07412b93dd",
+    "double_inputs.jsonl": "c1cc9d09f15452725d52b7cb1d4df07a093e030a40a0ca59c7eee346867ace6d",
+    "single_inputs.jsonl": "c7e39ef9aae3e1ea958de7d68cc5a6898b4db8b8a668e3bccdde979da432f7c7",
+    "train.jsonl": "1a582bb9ac5ed58ab503f9f8ad44b0fe0e0f6d7f6a2dac9ea1d21c76745e9ef2"
+  }
+}

@@ -1,5 +1,7 @@
 # Preserve dataset bytes and provenance hashes across platforms.
 data/** -text
+data/coordinate_gcv_review/** whitespace=cr-at-eol
+experiments/path_text_gv/prompts/coordinate_gcv/*.txt -text
 # Frozen evidence preserves original bytes, including original line endings.
 artifacts/gvr/** -text -whitespace
 artifacts/gvr/models/**/*.safetensors filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,40 @@
+{
+  "arm": "uniform",
+  "base_revision": "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+  "base_sha256": "1dfb70afdcedceb9f9fae2f9b68e004ad934361fb35b9b2bd50b45ea90790fc8",
+  "data_sha256": "a2591d9d82c26688cd226c07134e4733af8d4af73aed890e32a7b4fec72b0eb2",
+  "package_sha256": "0c2d90c6847d57b412c33010fdd4f8cfc86b709a2d7d743046236d8470cdeb9b",
+  "seed": 42,
+  "lr": 0.0001,
+  "weight_decay": 0.01,
+  "microbatch": 4,
+  "cases_per_update": 32,
+  "updates_per_epoch": 125,
+  "updates": 375,
+  "trainable_parameters": 247577856,
+  "all_parameters_trainable": true,
+  "V_first_ids": {
+    "valid": 3982,
+    "obstacle_collision": 22820,
+    "out_of_bounds": 91,
+    "invalid_action_token": 17070,
+    "goal_not_reached": 1288
+  },
+  "views": {
+    "C": 16400,
+    "GV": 40800
+  },
+  "loss_mass_per_pass": {
+    "G": 0.4999999999999588,
+    "C": 0.9999999999995456,
+    "goal_not_reached": 0.0999999999999999,
+    "invalid_action_token": 0.10000000000000007,
+    "obstacle_collision": 0.0999999999999976,
+    "valid": 0.09999999999999909,
+    "out_of_bounds": 0.09999999999999888
+  },
+  "batch_order_sha256": {
+    "C": "72141521acc1c07e54bc35c33d99f665a57b3afe68073988f009c042df9c2274",
+    "GV": "8f9a9fb27de032a2a8dd75eee8ff7499e320c123bc90d3af4e5319ebd9d38fe8"
+  }
+}

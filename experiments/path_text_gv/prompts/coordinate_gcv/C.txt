@@ -1,0 +1,8 @@
+Current: {current}
+Action: {action}
+Grid: 6x6. Inside the grid, rows and columns range from 0 to 5.
+Move deltas (row,col): up=(-1,0), down=(1,0), left=(0,-1), right=(0,1).
+Task: If Action exactly matches one of the four move words, add its delta to Current.
+Output the resulting (row,col) with no spaces, even if it is outside the grid.
+For any other Action, output no_coordinate.
+Answer:

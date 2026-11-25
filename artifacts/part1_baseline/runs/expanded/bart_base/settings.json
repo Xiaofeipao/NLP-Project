@@ -1,0 +1,37 @@
+{
+  "family": "bart_base",
+  "tier": "expanded",
+  "seed": 42,
+  "lr": 0.0001,
+  "weight_decay": 0.01,
+  "clip": 1.0,
+  "microbatch": 4,
+  "denominator": 32.0,
+  "updates": 375,
+  "pretrained_sha256": "1bd3ac8e5b3ac71c77cf18fbcd8b113e0bfceced94c5cfbbb9a2b4bb4781190b",
+  "revision": "aadd2ab0ae0c8268c7c9693540e9904811f36177",
+  "tokenizer_sha256": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+  "training_sha256": "1a582bb9ac5ed58ab503f9f8ad44b0fe0e0f6d7f6a2dac9ea1d21c76745e9ef2",
+  "order_sha256": "e0210475deb38b387f3fdf38c93c4167fd227343be3b0e2a731c65d1da23a472",
+  "parameters": 139420416,
+  "rows": 36800,
+  "presentations": {
+    "C": 16400,
+    "V": 32800,
+    "G": 8000
+  },
+  "V_first_ids": {
+    "valid": 42679,
+    "obstacle_collision": 2413,
+    "out_of_bounds": 995,
+    "invalid_action_token": 179,
+    "goal_not_reached": 12697
+  },
+  "decoder_prefix": [
+    2,
+    0
+  ],
+  "longest_input": 157,
+  "device": "NVIDIA GeForce RTX 3050",
+  "torch": "2.11.0+cu128"
+}

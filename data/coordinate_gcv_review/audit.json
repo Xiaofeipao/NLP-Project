@@ -1,0 +1,113 @@
+{
+  "train": {
+    "G": {
+      "rows": 4000,
+      "source_states": 4000,
+      "unique_inputs": 4000,
+      "unique_tokenized_inputs": 4000,
+      "max_input_tokens": 144,
+      "conflicting_targets": 0,
+      "number_of_accepted_moves": {
+        "1": 2747,
+        "2": 1243,
+        "3": 10
+      }
+    },
+    "C": {
+      "rows": 16400,
+      "source_states": 4000,
+      "unique_inputs": 450,
+      "unique_tokenized_inputs": 450,
+      "max_input_tokens": 121,
+      "conflicting_targets": 0,
+      "no_coordinate_rows": 400
+    },
+    "V": {
+      "rows": 16400,
+      "source_states": 4000,
+      "unique_inputs": 15078,
+      "unique_tokenized_inputs": 15078,
+      "max_input_tokens": 143,
+      "conflicting_targets": 0,
+      "labels": {
+        "goal_not_reached": 9571,
+        "invalid_action_token": 400,
+        "obstacle_collision": 2323,
+        "valid": 1339,
+        "out_of_bounds": 2767
+      },
+      "labels_after_exact_deduplication": {
+        "goal_not_reached": 8806,
+        "invalid_action_token": 384,
+        "obstacle_collision": 1954,
+        "valid": 1167,
+        "out_of_bounds": 2767
+      }
+    }
+  },
+  "dev": {
+    "G": {
+      "rows": 100,
+      "source_states": 100,
+      "unique_inputs": 100,
+      "unique_tokenized_inputs": 100,
+      "max_input_tokens": 143,
+      "conflicting_targets": 0,
+      "number_of_accepted_moves": {
+        "1": 51,
+        "2": 47,
+        "3": 2
+      }
+    },
+    "C": {
+      "rows": 100,
+      "source_states": 75,
+      "unique_inputs": 67,
+      "unique_tokenized_inputs": 67,
+      "max_input_tokens": 123,
+      "conflicting_targets": 0,
+      "no_coordinate_rows": 20
+    },
+    "V": {
+      "rows": 100,
+      "source_states": 75,
+      "unique_inputs": 95,
+      "unique_tokenized_inputs": 95,
+      "max_input_tokens": 142,
+      "conflicting_targets": 0,
+      "labels": {
+        "invalid_action_token": 20,
+        "goal_not_reached": 20,
+        "obstacle_collision": 20,
+        "out_of_bounds": 20,
+        "valid": 20
+      },
+      "labels_after_exact_deduplication": {
+        "invalid_action_token": 18,
+        "goal_not_reached": 20,
+        "obstacle_collision": 20,
+        "out_of_bounds": 20,
+        "valid": 17
+      }
+    }
+  },
+  "shared_layouts": {
+    "train_dev": 0,
+    "train_single": 0,
+    "train_double": 0,
+    "dev_single": 0,
+    "dev_double": 0,
+    "single_double": 0
+  },
+  "layout_counts": {
+    "train": 652,
+    "dev": 76,
+    "single": 200,
+    "double": 200
+  },
+  "train_dev_exact_prompt_overlap": {
+    "G": 0,
+    "C": 50,
+    "V": 0
+  }
+}

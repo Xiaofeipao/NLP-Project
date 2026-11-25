@@ -1,0 +1,12 @@
+Current: {current}
+Goal: {goal}
+Walls: {walls}
+Grid: 6x6. Inside the grid, rows and columns range from 0 to 5.
+Task: Classify Current using the first matching rule.
+1. Current is no_coordinate: invalid_action_token
+2. Either coordinate is below 0 or above 5: out_of_bounds
+3. Current is in Walls: obstacle_collision
+4. Current equals Goal: valid
+5. Any other in-bounds cell: goal_not_reached
+Output only one label.
+Answer:

@@ -1,0 +1,33 @@
+{
+  "training": "1a582bb9ac5ed58ab503f9f8ad44b0fe0e0f6d7f6a2dac9ea1d21c76745e9ef2",
+  "parents": "8251f891cc508e8a3490e3d4b0e53262a43ce27754bfdef7c34744a0782b3954",
+  "official_train": "d1212c424d5e1dcdc7d99fd0520ce9d28ab7ef292c7c5121a3dd4cc54d5842a2",
+  "records": {
+    "G": 4000,
+    "C": 16400,
+    "V": 16400
+  },
+  "distinct_text": {
+    "G": 4000,
+    "C": 450,
+    "V": 15078
+  },
+  "multi_answer_G": 1253,
+  "cases": 4000,
+  "distinct_original_training_rows": 1781,
+  "cases_by_original_source": {
+    "single_edit": 2255,
+    "valid_nonoptimal": 495,
+    "generation": 749,
+    "valid_optimal": 501
+  },
+  "single_edits": {
+    "substitution": 497,
+    "insertion": 498,
+    "deletion": 442,
+    "premature_stopping": 436,
+    "invalid_token": 382
+  },
+  "lineage": "c3c5aefe65325d9b9817ef730416f1c30cac65aa108d724d1c26f2adc14dea5a",
+  "cpu_wall_seconds": 0.37872159999096766
+}

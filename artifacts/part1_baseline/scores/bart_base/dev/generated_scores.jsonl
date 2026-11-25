@@ -1,0 +1,98 @@
+{"id":"dev-verification-16","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-37","direct":{"success":false,"feasible":false,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=3 | reason=obstacle_collision"}}
+{"id":"dev-verification-66","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-75","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-25","direct":{"success":false,"feasible":false,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=2 | reason=obstacle_collision"}}
+{"id":"dev-verification-83","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-86","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-41","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-68","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-46","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-97","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-91","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-70","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-22","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-55","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-18","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-96","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-29","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-6","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-45","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-10","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-5","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-48","direct":{"success":false,"feasible":false,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=5 | reason=obstacle_collision"}}
+{"id":"dev-verification-74","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-26","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-90","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-42","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-35","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-14","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-40","direct":{"success":true,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-60","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-94","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-54","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-28","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-93","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-85","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-67","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-15","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-89","direct":{"success":true,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-65","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-58","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-78","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-61","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-82","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-4","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-84","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-77","direct":{"success":false,"feasible":false,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=2 | reason=obstacle_collision"}}
+{"id":"dev-verification-49","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-38","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-32","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-63","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-23","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-76","direct":{"success":false,"feasible":false,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=1 | reason=obstacle_collision"}}
+{"id":"dev-verification-79","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-53","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-30","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-57","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-73","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-2","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-3","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-43","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-27","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-80","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-62","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-39","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-21","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-33","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-0","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-59","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-24","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-34","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-17","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-44","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-98","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-19","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-36","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-92","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-56","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-69","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-72","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-51","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-50","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-88","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-81","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-13","direct":{"success":false,"feasible":false,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=4 | reason=obstacle_collision"}}
+{"id":"dev-verification-8","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-87","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-7","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-47","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-99","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-64","direct":{"success":false,"feasible":true,"optimal":false,"delivered":true,"actual_verdict":"invalid | step=37 | reason=goal_not_reached"}}
+{"id":"dev-verification-52","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-12","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-9","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-95","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-71","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-1","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}
+{"id":"dev-verification-11","direct":{"success":true,"feasible":true,"optimal":true,"delivered":true,"actual_verdict":"valid"}}

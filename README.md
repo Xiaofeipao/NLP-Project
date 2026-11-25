@@ -1,6 +1,8 @@
 # PPNL：自然语言网格路径规划
 
-本分支发布 **Flan-T5-base 的 64 条验证样本等额替换实验**。B 组为替换版第 3 轮，A 组为原数据重训第 1 轮。两份完整模型均可通过 Git LFS 下载。[数据说明、评测与加载示例](artifacts/flan_swap64_ab/README.md) · [B 组权重](artifacts/flan_swap64_ab/models/B-epoch3/) · [A 组权重](artifacts/flan_swap64_ab/models/A-epoch1/)
+Hope 收录 Part 1 的 G/C/V 基线。Flan-T5-base 与 BART-base 在开发集比较，选出的 Flan 在原单错和双错集上的整行正确率分别为 91% 和 93%。权重通过 Git LFS 下载。[发布说明](artifacts/part1_baseline/README.md) · [项目指标](artifacts/part1_baseline/Part1_基线结果.md) · [第一组错误分析](artifacts/part1_baseline/第一组_错误分析.md)
+
+此前发布 **Flan-T5-base 的 64 条验证样本等额替换实验**。B 组为替换版第 3 轮，A 组为原数据重训第 1 轮。两份完整模型均可通过 Git LFS 下载。[数据说明、评测与加载示例](artifacts/flan_swap64_ab/README.md) · [B 组权重](artifacts/flan_swap64_ab/models/B-epoch3/) · [A 组权重](artifacts/flan_swap64_ab/models/A-epoch1/)
 
 前期实验采用共享状态上的单步 G/V。G 预测最短路的下一方向，V 只检查当前一个候选动作。程序负责路径拆步、推进状态、首错定位和回撤重选。 [任务定位与复现](docs/step_verification_gv.md) · [前期配对数据](data/step_g_paired_actions/) · [两组各三轮的结果](artifacts/step_verification/step_g_paired_actions/retrain_3ep/三轮对照结果.md)
 

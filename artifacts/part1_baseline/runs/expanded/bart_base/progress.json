@@ -1,0 +1,10 @@
+{
+  "epoch": 3,
+  "update": 375,
+  "stream": "GV",
+  "loss": 0.32949820160865784,
+  "grad_norm": 4.22215461730957,
+  "parameter_change": null,
+  "epoch_elapsed_s": 663.16,
+  "peak_cuda_gib": 2.447
+}

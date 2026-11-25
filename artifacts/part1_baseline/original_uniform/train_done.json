@@ -1,0 +1,10 @@
+{
+  "arm": "uniform",
+  "epoch": 3,
+  "updates": 375,
+  "completed_by_task": {
+    "C": 125,
+    "GV": 250
+  },
+  "model_sha256": "e862b3087a58d8e26be594a016571e51b3712589f54ed454ba72f57592e9c473"
+}

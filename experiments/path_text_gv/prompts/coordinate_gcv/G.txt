@@ -1,0 +1,9 @@
+Current: {current}
+Goal: {goal}
+Walls: {walls}
+Grid: 6x6. Inside the grid, rows and columns range from 0 to 5.
+Move deltas (row,col): up=(-1,0), down=(1,0), left=(0,-1), right=(0,1).
+Task: Choose one move on a shortest path from Current to Goal. Stay inside the grid and avoid Walls.
+If several moves qualify, choose any one.
+Output only one word: up, down, left, or right.
+Answer:

@@ -1,0 +1,48 @@
+{
+  "primary": "flan_t5_base",
+  "weights_verified": [
+    "flan_t5_base",
+    "bart_base"
+  ],
+  "scores_recalculated": {
+    "flan_t5_base/dev": {
+      "candidates": 100,
+      "environments": 98,
+      "exact": 96,
+      "supported_types": 5
+    },
+    "flan_t5_base/single_error": {
+      "candidates": 200,
+      "environments": 200,
+      "exact": 182,
+      "supported_types": 4
+    },
+    "flan_t5_base/double_error": {
+      "candidates": 200,
+      "environments": 200,
+      "exact": 186,
+      "supported_types": 3
+    },
+    "bart_base/dev": {
+      "candidates": 100,
+      "environments": 98,
+      "exact": 88,
+      "supported_types": 5
+    }
+  },
+  "identical_historical_records": {
+    "single_error": {
+      "identical": 200,
+      "total": 200,
+      "original_sha256": "068042e77e08f30482f834a1bc69e167b80e1a4ca31ab6901c2c06a04a051c20"
+    },
+    "double_error": {
+      "identical": 200,
+      "total": 200,
+      "original_sha256": "efaf458549f7a0928b150ee348809dfb081de03021957840455eb111d51d3f01"
+    }
+  },
+  "cpu_wall_seconds": 1.16915740002878,
+  "project_metrics_sha256": "9ff5f94962e4ae1fa0de4184d292b91edc4f708c74e3b61af32154be35f91280",
+  "independent_gpu_confirmation_sha256": "23db2e2b667ed281c8bb9221478406f4cc93f54eb1328d7d4a6fa1cc7fd1a974"
+}
