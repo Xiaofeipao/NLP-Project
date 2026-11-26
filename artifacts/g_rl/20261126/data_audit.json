@@ -1,0 +1,19 @@
+{
+  "states": 4000,
+  "rows": 36800,
+  "four_action_categories": {
+    "optimal": 5263,
+    "legal_detour": 5647,
+    "obstacle_collision": 2323,
+    "out_of_bounds": 2767
+  },
+  "train_layouts": 652,
+  "all_coordinate_and_verdict_labels_checked": true,
+  "all_optimal_sets_checked_with_bfs": true,
+  "dataset_commit": "d88f85b872560f9313ac4319cdd5fa86151c0780",
+  "source_hashes": {
+    "dev": "fd377e80f42180d107e47d5fb6cdd89ea78dfdd747402e40f652ade4f4dd5e0b",
+    "single_error": "c116721b9c80518012dafbc85fe7ff8666c25363be86ab0f833e283dff5752ff",
+    "double_error": "a50e542cc4c599848d40d78f93ea65425bce710394e8fd4053254820efd76029"
+  }
+}

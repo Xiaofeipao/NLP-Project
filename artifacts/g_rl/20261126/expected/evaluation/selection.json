@@ -1,0 +1,11 @@
+{
+  "protocol": "c47297c47ae7dd060a7899f75588eced7828e7c6b6f313973192a9a8039513f4",
+  "primary_model": "expected",
+  "scores": {
+    "expected": {
+      "weights": "302f01c524577ab9d8ce18aa09341ff8b40cbed939a275e6680f2e94d98fb4e1"
+    }
+  },
+  "fixed_checkpoint": true,
+  "note": "No checkpoint or reward selection uses double_error or single_error outcomes."
+}

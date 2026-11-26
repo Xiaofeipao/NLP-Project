@@ -1,0 +1,14 @@
+{
+  "arm": "supervised",
+  "update": 375,
+  "stream": "GV",
+  "supervised_loss": 0.24118000811904494,
+  "reward_loss": 0.0,
+  "grad_norm": 2.1416659355163574,
+  "elapsed_s": 922.6387080736458,
+  "mean_reward": -0.9838819202817977,
+  "unsafe_probability": 0.24295194052193983,
+  "varied_sampling_groups": 0,
+  "G_presentations": 8000,
+  "peak_cuda_gib": 4.467599391937256
+}

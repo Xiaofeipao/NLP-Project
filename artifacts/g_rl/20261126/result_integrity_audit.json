@@ -1,0 +1,43 @@
+{
+  "all_checks_passed": true,
+  "evaluations": {
+    "supervised/dev": {
+      "files_checked": 5,
+      "weights": "f5de19689a26782f1a83bc29171485e8ef6333dfdf704f2e52d1195dcc61fb5d"
+    },
+    "supervised/double_error": {
+      "files_checked": 5,
+      "weights": "f5de19689a26782f1a83bc29171485e8ef6333dfdf704f2e52d1195dcc61fb5d"
+    },
+    "supervised/single_error": {
+      "files_checked": 5,
+      "weights": "f5de19689a26782f1a83bc29171485e8ef6333dfdf704f2e52d1195dcc61fb5d"
+    },
+    "expected/dev": {
+      "files_checked": 5,
+      "weights": "302f01c524577ab9d8ce18aa09341ff8b40cbed939a275e6680f2e94d98fb4e1"
+    },
+    "expected/double_error": {
+      "files_checked": 5,
+      "weights": "302f01c524577ab9d8ce18aa09341ff8b40cbed939a275e6680f2e94d98fb4e1"
+    },
+    "expected/single_error": {
+      "files_checked": 5,
+      "weights": "302f01c524577ab9d8ce18aa09341ff8b40cbed939a275e6680f2e94d98fb4e1"
+    },
+    "rloo/dev": {
+      "files_checked": 5,
+      "weights": "2469d9381bfe63426ea0c57664dfd315027bedc5ba1c7baf6b655746591f8917"
+    },
+    "rloo/double_error": {
+      "files_checked": 5,
+      "weights": "2469d9381bfe63426ea0c57664dfd315027bedc5ba1c7baf6b655746591f8917"
+    },
+    "rloo/single_error": {
+      "files_checked": 5,
+      "weights": "2469d9381bfe63426ea0c57664dfd315027bedc5ba1c7baf6b655746591f8917"
+    }
+  },
+  "three_phases_per_arm_recounted": true,
+  "all_final_weights_hash_checked": true
+}

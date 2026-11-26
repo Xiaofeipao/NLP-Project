@@ -1,0 +1,58 @@
+Hope 共享 G/C/V 从预训练起点联合训练：单种子对照实验
+代码 Hope@9ebecebe54e94e3bd474a5522c23df86ad66852d
+数据 hope_dataset@d88f85b872560f9313ac4319cdd5fa86151c0780
+三个实验均从原始 Flan-T5-base 初始化；未冻结 C/V，未使用旧 Hope 微调权重作为起点。
+相同 4,000 个状态、36,800 条视图、375 次更新、微批16、有效32状态、seed42。
+C遍历一次；G/V各遍历两次。G奖惩强度0.2，最短+1、合法绕路-1、撞墙/越界-5。
+supervised：原监督对照；expected：精确四动作期望奖励；rloo：真实采样8动作的RLOO。
+所有组均执行同样的四动作额外前向；监督组该项梯度系数为0；额外随机数由fork_rng隔离。
+所有组固定第375次更新作为最终检查点；全部训练完成后才评估双错验证及单错测试。
+本次微批不同于发布基线，因此收益以本次同配置监督重训为对照。
+
+supervised
+单步开发：{"G": {"n": 100, "correct": 69, "accuracy": 0.69, "errors": {"obstacle_collision": 24, "legal_detour": 7}, "unique_directions": {"left": {"n": 9, "correct": 2}, "right": {"n": 17, "correct": 8}, "up": {"n": 12, "correct": 8}, "down": {"n": 13, "correct": 9}}}, "C": {"n": 100, "correct": 100, "accuracy": 1.0}, "V": {"n": 100, "correct": 100, "accuracy": 1.0, "macro_f1": 1.0, "classes": {"valid": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}, "obstacle_collision": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}, "out_of_bounds": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}, "invalid_action_token": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}, "goal_not_reached": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}}}}
+综合开发：{"verification_exact": 94, "verification_n": 100, "macro_f1": 0.8849401829697395, "repair_success": 0.8, "direct_success": 0.6326530612244898, "self_repair_success": null}
+双错验证：{"verification_exact": 196, "verification_n": 200, "macro_f1": 0.9802989130434782, "repair_success": 0.745, "direct_success": 0.62, "self_repair_success": 0.745}
+单错测试：{"verification_exact": 189, "verification_n": 200, "macro_f1": 0.946745443460403, "repair_success": 0.84, "direct_success": 0.605, "self_repair_success": 0.745}
+
+expected
+单步开发：{"G": {"n": 100, "correct": 75, "accuracy": 0.75, "errors": {"obstacle_collision": 18, "legal_detour": 7}, "unique_directions": {"left": {"n": 9, "correct": 4}, "right": {"n": 17, "correct": 10}, "up": {"n": 12, "correct": 8}, "down": {"n": 13, "correct": 9}}}, "C": {"n": 100, "correct": 100, "accuracy": 1.0}, "V": {"n": 100, "correct": 100, "accuracy": 1.0, "macro_f1": 1.0, "classes": {"valid": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}, "obstacle_collision": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}, "out_of_bounds": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}, "invalid_action_token": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}, "goal_not_reached": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}}}}
+综合开发：{"verification_exact": 97, "verification_n": 100, "macro_f1": 0.9259435028248587, "repair_success": 0.92, "direct_success": 0.8061224489795918, "self_repair_success": null}
+双错验证：{"verification_exact": 197, "verification_n": 200, "macro_f1": 0.9852505705501802, "repair_success": 0.805, "direct_success": 0.715, "self_repair_success": 0.795}
+单错测试：{"verification_exact": 187, "verification_n": 200, "macro_f1": 0.9413154097364624, "repair_success": 0.88, "direct_success": 0.735, "self_repair_success": 0.845}
+
+rloo
+单步开发：{"G": {"n": 100, "correct": 73, "accuracy": 0.73, "errors": {"obstacle_collision": 20, "legal_detour": 7}, "unique_directions": {"left": {"n": 9, "correct": 4}, "right": {"n": 17, "correct": 9}, "up": {"n": 12, "correct": 7}, "down": {"n": 13, "correct": 9}}}, "C": {"n": 100, "correct": 100, "accuracy": 1.0}, "V": {"n": 100, "correct": 99, "accuracy": 0.99, "macro_f1": 0.9899937460913071, "classes": {"valid": {"n": 20, "correct": 20, "predicted": 21, "false_positive": 1, "recall": 1.0, "f1": 0.975609756097561}, "obstacle_collision": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}, "out_of_bounds": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}, "invalid_action_token": {"n": 20, "correct": 20, "predicted": 20, "false_positive": 0, "recall": 1.0, "f1": 1.0}, "goal_not_reached": {"n": 20, "correct": 19, "predicted": 19, "false_positive": 0, "recall": 0.95, "f1": 0.9743589743589743}}}}
+综合开发：{"verification_exact": 94, "verification_n": 100, "macro_f1": 0.8779205883959292, "repair_success": 0.84, "direct_success": 0.7959183673469388, "self_repair_success": null}
+双错验证：{"verification_exact": 197, "verification_n": 200, "macro_f1": 0.9852505705501802, "repair_success": 0.79, "direct_success": 0.73, "self_repair_success": 0.84}
+单错测试：{"verification_exact": 187, "verification_n": 200, "macro_f1": 0.9436024211429219, "repair_success": 0.83, "direct_success": 0.72, "self_repair_success": 0.83}
+
+expected 相对 supervised 的逐题变化：
+G: 新增正确6，新增错误0，净变化6，分母100
+C: 新增正确0，新增错误0，净变化0，分母100
+V: 新增正确0，新增错误0，净变化0，分母100
+double_error/verification: 新增正确1，新增错误0，净变化1，分母200
+double_error/candidate_repair: 新增正确23，新增错误11，净变化12，分母200
+double_error/direct: 新增正确27，新增错误8，净变化19，分母200
+double_error/self_repair: 新增正确21，新增错误11，净变化10，分母200
+single_error/verification: 新增正确7，新增错误9，净变化-2，分母200
+single_error/candidate_repair: 新增正确19，新增错误11，净变化8，分母200
+single_error/direct: 新增正确33，新增错误7，净变化26，分母200
+single_error/self_repair: 新增正确31，新增错误11，净变化20，分母200
+
+rloo 相对 supervised 的逐题变化：
+G: 新增正确5，新增错误1，净变化4，分母100
+C: 新增正确0，新增错误0，净变化0，分母100
+V: 新增正确0，新增错误1，净变化-1，分母100
+double_error/verification: 新增正确1，新增错误0，净变化1，分母200
+double_error/candidate_repair: 新增正确27，新增错误18，净变化9，分母200
+double_error/direct: 新增正确27，新增错误5，净变化22，分母200
+double_error/self_repair: 新增正确27，新增错误8，净变化19，分母200
+single_error/verification: 新增正确8，新增错误10，净变化-2，分母200
+single_error/candidate_repair: 新增正确19，新增错误21，净变化-2，分母200
+single_error/direct: 新增正确32，新增错误9，净变化23，分母200
+single_error/self_repair: 新增正确28，新增错误11，净变化17，分母200
+
+边界：这是单种子固定预算试验，不能据此宣称训练稳定性或跨种子统计显著性。
+原71%等发布结果仅作历史参考；当前新版错误词和统一微批的分数均重新测量。
+完整逐题收益与退化见 paired_comparison.json；训练中三阶段分数见 learning_curve.json。

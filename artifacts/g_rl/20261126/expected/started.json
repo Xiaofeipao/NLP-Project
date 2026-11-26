@@ -1,0 +1,23 @@
+{
+  "arm": "expected",
+  "code_commit": "9ebecebe54e94e3bd474a5522c23df86ad66852d",
+  "dataset_commit": "d88f85b872560f9313ac4319cdd5fa86151c0780",
+  "seed": 42,
+  "pretrained": "1dfb70afdcedceb9f9fae2f9b68e004ad934361fb35b9b2bd50b45ea90790fc8",
+  "updates": 375,
+  "shared_all_parameters_trainable": true,
+  "parameters": 247577856,
+  "lr": 0.0001,
+  "microbatch": 16,
+  "script_sha256": "8c5fae055f2dd24b9477d9b7d655dfd3c3c48cfa654561b8d16cc910ab328701",
+  "reward_strength": 0.2,
+  "four_answer_extra_forward": "performed in every arm inside fork_rng; zero gradient coefficient in supervised arm",
+  "no_cv_freezing": true,
+  "four_action_order": [
+    "up",
+    "down",
+    "left",
+    "right"
+  ],
+  "batch_order_sha256": "e0210475deb38b387f3fdf38c93c4167fd227343be3b0e2a731c65d1da23a472"
+}

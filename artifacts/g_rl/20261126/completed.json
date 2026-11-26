@@ -1,0 +1,11 @@
+{
+  "code_commit": "9ebecebe54e94e3bd474a5522c23df86ad66852d",
+  "dataset_commit": "d88f85b872560f9313ac4319cdd5fa86151c0780",
+  "arms": [
+    "supervised",
+    "expected",
+    "rloo"
+  ],
+  "seed": 42,
+  "claim": "single-seed controlled pilot"
+}

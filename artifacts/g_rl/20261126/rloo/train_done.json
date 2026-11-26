@@ -1,0 +1,9 @@
+{
+  "arm": "rloo",
+  "updates": 375,
+  "weights": "2469d9381bfe63426ea0c57664dfd315027bedc5ba1c7baf6b655746591f8917",
+  "elapsed_s": 933.2914263894781,
+  "G_presentations": 8000,
+  "varied_sampling_groups": 6103,
+  "all_parameters_trained": true
+}

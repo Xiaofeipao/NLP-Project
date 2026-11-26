@@ -1,0 +1,24 @@
+{
+  "protocol": "c47297c47ae7dd060a7899f75588eced7828e7c6b6f313973192a9a8039513f4",
+  "selection": "26d5aace570605533d4368a1f339c5b4669df230efd6637adc514777d3ed9212",
+  "metric": "exact_line_by_gold_supported_type_v1",
+  "device": "cuda:0",
+  "started_unix": 1795667470.9678998,
+  "completed_unix": 1795667509.8479714,
+  "weights": "302f01c524577ab9d8ce18aa09341ff8b40cbed939a275e6680f2e94d98fb4e1",
+  "inputs": "ded052b90374f057bc4bcd5f599480cb8909329a78a4442512657fd49dca224b",
+  "full": true,
+  "inference_wall_s": 38.8424708340317,
+  "distinct_model_prompts": 2460,
+  "model_inputs_evaluated": 3301,
+  "executor_feedback_cpu_wall_s": 0.044930106960237026,
+  "executor_feedback_calls": 2001,
+  "grading_cpu_wall_s": 0.025661233812570572,
+  "files": {
+    "metrics.json": "d77edd5c1d97eb895d93ebffcc53f38e652bdfa23b291f2562172ae50aeca01d",
+    "candidate_predictions.jsonl": "7fd7ef2f4a59e63df6a2f914ae5427a8eeaa46600012ce3934dd40adc610d02d",
+    "generated_predictions.jsonl": "b813a544a6b9418af5c1a4ee7d079eebe34fa80b4ce898f8ca04f40c2a2d5323",
+    "candidate_scores.jsonl": "a70b30b03e4605b1641de0fee0ae3e076b2a09194f7cbe74140db5e9e4f73c17",
+    "generated_scores.jsonl": "078ed7360160befa175438ee122352fcd257d755a4ddfae93eac44a255b06758"
+  }
+}

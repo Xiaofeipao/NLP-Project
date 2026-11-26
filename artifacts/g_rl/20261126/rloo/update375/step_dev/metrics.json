@@ -1,0 +1,82 @@
+{
+  "G": {
+    "n": 100,
+    "correct": 73,
+    "accuracy": 0.73,
+    "errors": {
+      "obstacle_collision": 20,
+      "legal_detour": 7
+    },
+    "unique_directions": {
+      "left": {
+        "n": 9,
+        "correct": 4
+      },
+      "right": {
+        "n": 17,
+        "correct": 9
+      },
+      "up": {
+        "n": 12,
+        "correct": 7
+      },
+      "down": {
+        "n": 13,
+        "correct": 9
+      }
+    }
+  },
+  "C": {
+    "n": 100,
+    "correct": 100,
+    "accuracy": 1.0
+  },
+  "V": {
+    "n": 100,
+    "correct": 99,
+    "accuracy": 0.99,
+    "macro_f1": 0.9899937460913071,
+    "classes": {
+      "valid": {
+        "n": 20,
+        "correct": 20,
+        "predicted": 21,
+        "false_positive": 1,
+        "recall": 1.0,
+        "f1": 0.975609756097561
+      },
+      "obstacle_collision": {
+        "n": 20,
+        "correct": 20,
+        "predicted": 20,
+        "false_positive": 0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "out_of_bounds": {
+        "n": 20,
+        "correct": 20,
+        "predicted": 20,
+        "false_positive": 0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "invalid_action_token": {
+        "n": 20,
+        "correct": 20,
+        "predicted": 20,
+        "false_positive": 0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "goal_not_reached": {
+        "n": 20,
+        "correct": 19,
+        "predicted": 19,
+        "false_positive": 0,
+        "recall": 0.95,
+        "f1": 0.9743589743589743
+      }
+    }
+  }
+}

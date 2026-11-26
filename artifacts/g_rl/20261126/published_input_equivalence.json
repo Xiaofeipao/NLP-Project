@@ -1,0 +1,14 @@
+{
+  "github_commit": "2b070d0456d59a9fca7d85422b8a0c51a66037d5",
+  "dataset_commit": "d88f85b872560f9313ac4319cdd5fa86151c0780",
+  "compared_with": "Previous joint experiment blind inputs",
+  "single_error": {
+    "rows": 200,
+    "semantic_differences": 0
+  },
+  "double_error": {
+    "rows": 200,
+    "semantic_differences": 0
+  },
+  "note": "Parsed IDs, grids, candidate actions and ordering match exactly; byte-level serialization hashes differ."
+}

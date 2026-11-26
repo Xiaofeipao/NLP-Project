@@ -1,0 +1,9 @@
+{
+  "arm": "expected",
+  "updates": 375,
+  "weights": "302f01c524577ab9d8ce18aa09341ff8b40cbed939a275e6680f2e94d98fb4e1",
+  "elapsed_s": 918.1987625062466,
+  "G_presentations": 8000,
+  "varied_sampling_groups": 0,
+  "all_parameters_trained": true
+}

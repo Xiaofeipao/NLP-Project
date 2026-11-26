@@ -1,0 +1,638 @@
+{
+  "status": "fixed_primary_baseline_selected_by_user",
+  "selected_date": "2026-11-26",
+  "repository": "Xiaofeipao/NLP-Project",
+  "code_commit": "2b070d0456d59a9fca7d85422b8a0c51a66037d5",
+  "dataset_branch": "hope_dataset",
+  "dataset_commit": "d88f85b872560f9313ac4319cdd5fa86151c0780",
+  "weight_sha256": "e862b3087a58d8e26be594a016571e51b3712589f54ed454ba72f57592e9c473",
+  "source": "User screenshot and corresponding GitHub published metrics; do not substitute a fresh supervised retrain or hardware rerun.",
+  "step_development": {
+    "G": {
+      "correct": 71,
+      "n": 100
+    },
+    "C": {
+      "correct": 100,
+      "n": 100
+    },
+    "V": {
+      "correct": 100,
+      "n": 100
+    }
+  },
+  "split_roles": {
+    "single_error": "test",
+    "double_error": "validation"
+  },
+  "metrics": {
+    "double_error": {
+      "verification": {
+        "metric": "exact_line_by_gold_supported_type_v1",
+        "n": 200,
+        "exact": 194,
+        "exact_accuracy": 0.97,
+        "structured_macro_f1": 0.9729617295049217,
+        "supported_types": 3,
+        "false_valid": 0,
+        "malformed": 0,
+        "per_type": {
+          "valid": {
+            "gold": 0,
+            "predicted": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": null
+          },
+          "obstacle_collision": {
+            "gold": 68,
+            "predicted": 70,
+            "tp": 65,
+            "fp": 5,
+            "fn": 3,
+            "f1": 0.9420289855072463
+          },
+          "out_of_bounds": {
+            "gold": 65,
+            "predicted": 63,
+            "tp": 63,
+            "fp": 0,
+            "fn": 2,
+            "f1": 0.984375
+          },
+          "invalid_action_token": {
+            "gold": 67,
+            "predicted": 66,
+            "tp": 66,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.9924812030075187
+          },
+          "goal_not_reached": {
+            "gold": 0,
+            "predicted": 1,
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "f1": null
+          }
+        }
+      },
+      "candidate_repair": {
+        "n": 200,
+        "counts": {
+          "success": 141,
+          "feasible": 166,
+          "optimal": 94,
+          "delivered": 167
+        },
+        "success": 0.705,
+        "feasible": 0.83,
+        "optimal": 0.47,
+        "delivered": 0.835
+      },
+      "invalid_count": 200,
+      "step_correct": 194,
+      "reason_correct": 196,
+      "joint": 194,
+      "valid_count": 0,
+      "valid_correct": 0,
+      "repair_stops": {
+        "returned_plan": 163,
+        "attempt_limit": 32,
+        "directions_exhausted": 1,
+        "returned_prefix": 4
+      },
+      "by_reason": {
+        "invalid_action_token": {
+          "n": 67,
+          "prediction_counts": {
+            "invalid_action_token": 66,
+            "obstacle_collision": 1
+          },
+          "exact": 66,
+          "step_correct": 66,
+          "reason_correct": 66,
+          "joint": 66,
+          "repair": {
+            "n": 67,
+            "counts": {
+              "success": 47,
+              "feasible": 55,
+              "optimal": 29,
+              "delivered": 56
+            },
+            "success": 0.7014925373134329,
+            "feasible": 0.8208955223880597,
+            "optimal": 0.43283582089552236,
+            "delivered": 0.835820895522388
+          }
+        },
+        "obstacle_collision": {
+          "n": 68,
+          "prediction_counts": {
+            "obstacle_collision": 67,
+            "goal_not_reached": 1
+          },
+          "exact": 65,
+          "step_correct": 65,
+          "reason_correct": 67,
+          "joint": 65,
+          "repair": {
+            "n": 68,
+            "counts": {
+              "success": 45,
+              "feasible": 57,
+              "optimal": 31,
+              "delivered": 57
+            },
+            "success": 0.6617647058823529,
+            "feasible": 0.8382352941176471,
+            "optimal": 0.45588235294117646,
+            "delivered": 0.8382352941176471
+          }
+        },
+        "out_of_bounds": {
+          "n": 65,
+          "prediction_counts": {
+            "out_of_bounds": 63,
+            "obstacle_collision": 2
+          },
+          "exact": 63,
+          "step_correct": 63,
+          "reason_correct": 63,
+          "joint": 63,
+          "repair": {
+            "n": 65,
+            "counts": {
+              "success": 49,
+              "feasible": 54,
+              "optimal": 34,
+              "delivered": 54
+            },
+            "success": 0.7538461538461538,
+            "feasible": 0.8307692307692308,
+            "optimal": 0.5230769230769231,
+            "delivered": 0.8307692307692308
+          }
+        }
+      },
+      "pipeline": {
+        "direct": {
+          "n": 200,
+          "counts": {
+            "success": 127,
+            "feasible": 146,
+            "optimal": 125,
+            "delivered": 200
+          },
+          "success": 0.635,
+          "feasible": 0.73,
+          "optimal": 0.625,
+          "delivered": 1
+        },
+        "self_repair": {
+          "n": 200,
+          "counts": {
+            "success": 152,
+            "feasible": 157,
+            "optimal": 149,
+            "delivered": 158
+          },
+          "success": 0.76,
+          "feasible": 0.785,
+          "optimal": 0.745,
+          "delivered": 0.79
+        },
+        "executor_repair": {
+          "n": 200,
+          "counts": {
+            "success": 158,
+            "feasible": 158,
+            "optimal": 156,
+            "delivered": 158
+          },
+          "success": 0.79,
+          "feasible": 0.79,
+          "optimal": 0.78,
+          "delivered": 0.79
+        }
+      }
+    },
+    "single_error": {
+      "verification": {
+        "metric": "exact_line_by_gold_supported_type_v1",
+        "n": 200,
+        "exact": 188,
+        "exact_accuracy": 0.94,
+        "structured_macro_f1": 0.9458030149519512,
+        "supported_types": 4,
+        "false_valid": 2,
+        "malformed": 0,
+        "per_type": {
+          "valid": {
+            "gold": 0,
+            "predicted": 2,
+            "tp": 0,
+            "fp": 2,
+            "fn": 0,
+            "f1": null
+          },
+          "obstacle_collision": {
+            "gold": 50,
+            "predicted": 55,
+            "tp": 45,
+            "fp": 10,
+            "fn": 5,
+            "f1": 0.8571428571428571
+          },
+          "out_of_bounds": {
+            "gold": 50,
+            "predicted": 49,
+            "tp": 49,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.98989898989899
+          },
+          "invalid_action_token": {
+            "gold": 50,
+            "predicted": 50,
+            "tp": 50,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1
+          },
+          "goal_not_reached": {
+            "gold": 50,
+            "predicted": 44,
+            "tp": 44,
+            "fp": 0,
+            "fn": 6,
+            "f1": 0.9361702127659575
+          }
+        }
+      },
+      "candidate_repair": {
+        "n": 200,
+        "counts": {
+          "success": 165,
+          "feasible": 184,
+          "optimal": 82,
+          "delivered": 184
+        },
+        "success": 0.825,
+        "feasible": 0.92,
+        "optimal": 0.41,
+        "delivered": 0.92
+      },
+      "invalid_count": 200,
+      "step_correct": 188,
+      "reason_correct": 193,
+      "joint": 188,
+      "valid_count": 0,
+      "valid_correct": 0,
+      "repair_stops": {
+        "returned_plan": 150,
+        "attempt_limit": 16,
+        "returned_prefix": 32,
+        "unchanged": 2
+      },
+      "by_reason": {
+        "goal_not_reached": {
+          "n": 50,
+          "prediction_counts": {
+            "goal_not_reached": 44,
+            "obstacle_collision": 4,
+            "valid": 2
+          },
+          "exact": 44,
+          "step_correct": 44,
+          "reason_correct": 44,
+          "joint": 44,
+          "repair": {
+            "n": 50,
+            "counts": {
+              "success": 44,
+              "feasible": 47,
+              "optimal": 23,
+              "delivered": 47
+            },
+            "success": 0.88,
+            "feasible": 0.94,
+            "optimal": 0.46,
+            "delivered": 0.94
+          }
+        },
+        "invalid_action_token": {
+          "n": 50,
+          "prediction_counts": {
+            "invalid_action_token": 50
+          },
+          "exact": 50,
+          "step_correct": 50,
+          "reason_correct": 50,
+          "joint": 50,
+          "repair": {
+            "n": 50,
+            "counts": {
+              "success": 40,
+              "feasible": 47,
+              "optimal": 24,
+              "delivered": 47
+            },
+            "success": 0.8,
+            "feasible": 0.94,
+            "optimal": 0.48,
+            "delivered": 0.94
+          }
+        },
+        "obstacle_collision": {
+          "n": 50,
+          "prediction_counts": {
+            "obstacle_collision": 50
+          },
+          "exact": 45,
+          "step_correct": 45,
+          "reason_correct": 50,
+          "joint": 45,
+          "repair": {
+            "n": 50,
+            "counts": {
+              "success": 37,
+              "feasible": 44,
+              "optimal": 16,
+              "delivered": 44
+            },
+            "success": 0.74,
+            "feasible": 0.88,
+            "optimal": 0.32,
+            "delivered": 0.88
+          }
+        },
+        "out_of_bounds": {
+          "n": 50,
+          "prediction_counts": {
+            "out_of_bounds": 49,
+            "obstacle_collision": 1
+          },
+          "exact": 49,
+          "step_correct": 49,
+          "reason_correct": 49,
+          "joint": 49,
+          "repair": {
+            "n": 50,
+            "counts": {
+              "success": 44,
+              "feasible": 46,
+              "optimal": 19,
+              "delivered": 46
+            },
+            "success": 0.88,
+            "feasible": 0.92,
+            "optimal": 0.38,
+            "delivered": 0.92
+          }
+        }
+      },
+      "pipeline": {
+        "direct": {
+          "n": 200,
+          "counts": {
+            "success": 121,
+            "feasible": 135,
+            "optimal": 120,
+            "delivered": 200
+          },
+          "success": 0.605,
+          "feasible": 0.675,
+          "optimal": 0.6,
+          "delivered": 1
+        },
+        "self_repair": {
+          "n": 200,
+          "counts": {
+            "success": 159,
+            "feasible": 164,
+            "optimal": 158,
+            "delivered": 164
+          },
+          "success": 0.795,
+          "feasible": 0.82,
+          "optimal": 0.79,
+          "delivered": 0.82
+        },
+        "executor_repair": {
+          "n": 200,
+          "counts": {
+            "success": 166,
+            "feasible": 166,
+            "optimal": 165,
+            "delivered": 166
+          },
+          "success": 0.83,
+          "feasible": 0.83,
+          "optimal": 0.825,
+          "delivered": 0.83
+        }
+      }
+    },
+    "dev": {
+      "verification": {
+        "metric": "exact_line_by_gold_supported_type_v1",
+        "n": 100,
+        "exact": 96,
+        "exact_accuracy": 0.96,
+        "structured_macro_f1": 0.9336484414920797,
+        "supported_types": 5,
+        "false_valid": 3,
+        "malformed": 0,
+        "per_type": {
+          "valid": {
+            "gold": 50,
+            "predicted": 53,
+            "tp": 50,
+            "fp": 3,
+            "fn": 0,
+            "f1": 0.970873786407767
+          },
+          "obstacle_collision": {
+            "gold": 4,
+            "predicted": 4,
+            "tp": 3,
+            "fp": 1,
+            "fn": 1,
+            "f1": 0.75
+          },
+          "out_of_bounds": {
+            "gold": 6,
+            "predicted": 6,
+            "tp": 6,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1
+          },
+          "invalid_action_token": {
+            "gold": 10,
+            "predicted": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1
+          },
+          "goal_not_reached": {
+            "gold": 30,
+            "predicted": 27,
+            "tp": 27,
+            "fp": 0,
+            "fn": 3,
+            "f1": 0.9473684210526315
+          }
+        }
+      },
+      "candidate_repair": {
+        "n": 50,
+        "counts": {
+          "success": 42,
+          "feasible": 49,
+          "optimal": 30,
+          "delivered": 49
+        },
+        "success": 0.84,
+        "feasible": 0.98,
+        "optimal": 0.6,
+        "delivered": 0.98
+      },
+      "invalid_count": 50,
+      "step_correct": 46,
+      "reason_correct": 47,
+      "joint": 46,
+      "valid_count": 50,
+      "valid_correct": 50,
+      "repair_stops": {
+        "unchanged": 53,
+        "returned_plan": 42,
+        "returned_prefix": 4,
+        "attempt_limit": 1
+      },
+      "by_reason": {
+        "goal_not_reached": {
+          "n": 30,
+          "prediction_counts": {
+            "goal_not_reached": 27,
+            "valid": 3
+          },
+          "exact": 27,
+          "step_correct": 27,
+          "reason_correct": 27,
+          "joint": 27,
+          "repair": {
+            "n": 30,
+            "counts": {
+              "success": 23,
+              "feasible": 29,
+              "optimal": 13,
+              "delivered": 29
+            },
+            "success": 0.7666666666666667,
+            "feasible": 0.9666666666666667,
+            "optimal": 0.43333333333333335,
+            "delivered": 0.9666666666666667
+          }
+        },
+        "invalid_action_token": {
+          "n": 10,
+          "prediction_counts": {
+            "invalid_action_token": 10
+          },
+          "exact": 10,
+          "step_correct": 10,
+          "reason_correct": 10,
+          "joint": 10,
+          "repair": {
+            "n": 10,
+            "counts": {
+              "success": 10,
+              "feasible": 10,
+              "optimal": 10,
+              "delivered": 10
+            },
+            "success": 1,
+            "feasible": 1,
+            "optimal": 1,
+            "delivered": 1
+          }
+        },
+        "obstacle_collision": {
+          "n": 4,
+          "prediction_counts": {
+            "obstacle_collision": 4
+          },
+          "exact": 3,
+          "step_correct": 3,
+          "reason_correct": 4,
+          "joint": 3,
+          "repair": {
+            "n": 4,
+            "counts": {
+              "success": 4,
+              "feasible": 4,
+              "optimal": 2,
+              "delivered": 4
+            },
+            "success": 1,
+            "feasible": 1,
+            "optimal": 0.5,
+            "delivered": 1
+          }
+        },
+        "out_of_bounds": {
+          "n": 6,
+          "prediction_counts": {
+            "out_of_bounds": 6
+          },
+          "exact": 6,
+          "step_correct": 6,
+          "reason_correct": 6,
+          "joint": 6,
+          "repair": {
+            "n": 6,
+            "counts": {
+              "success": 5,
+              "feasible": 6,
+              "optimal": 5,
+              "delivered": 6
+            },
+            "success": 0.8333333333333334,
+            "feasible": 1,
+            "optimal": 0.8333333333333334,
+            "delivered": 1
+          }
+        },
+        "valid": {
+          "n": 50,
+          "prediction_counts": {
+            "valid": 50
+          },
+          "exact": 50
+        }
+      },
+      "pipeline": {
+        "direct": {
+          "n": 98,
+          "counts": {
+            "success": 65,
+            "feasible": 79,
+            "optimal": 65,
+            "delivered": 98
+          },
+          "success": 0.6632653061224489,
+          "feasible": 0.8061224489795918,
+          "optimal": 0.6632653061224489,
+          "delivered": 1
+        }
+      }
+    }
+  },
+  "supplementary_control": "The 69%-G, microbatch16 supervised retrain remains a supplementary experimental control, not the primary baseline."
+}

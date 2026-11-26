@@ -1,0 +1,10 @@
+{
+  "dataset_commit": "d88f85b872560f9313ac4319cdd5fa86151c0780",
+  "raw_training_path": "data/step_g_shared_4000/train.jsonl",
+  "dataset_training_blob": "d1203885aa3322b5648212728b45b8db3b88f865",
+  "raw_training_sha256": "8251f891cc508e8a3490e3d4b0e53262a43ce27754bfdef7c34744a0782b3954",
+  "gcv_view_sha256": "1a582bb9ac5ed58ab503f9f8ad44b0fe0e0f6d7f6a2dac9ea1d21c76745e9ef2",
+  "states_exactly_matching": 4000,
+  "action_labels_exactly_matching": 16400,
+  "note": "hope_dataset stores source states/action annotations; Hope adds coordinate G/C/V prompt views of the same data."
+}

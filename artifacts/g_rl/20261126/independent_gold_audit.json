@@ -1,0 +1,25 @@
+{
+  "single_error": {
+    "n": 200,
+    "classes": {
+      "out_of_bounds": 50,
+      "invalid_action_token": 50,
+      "obstacle_collision": 50,
+      "goal_not_reached": 50
+    },
+    "gold_sha256": "c116721b9c80518012dafbc85fe7ff8666c25363be86ab0f833e283dff5752ff",
+    "all_labels_match_official_executor": true,
+    "blind_inputs_contain_no_gold": true
+  },
+  "double_error": {
+    "n": 200,
+    "classes": {
+      "out_of_bounds": 65,
+      "invalid_action_token": 67,
+      "obstacle_collision": 68
+    },
+    "gold_sha256": "a50e542cc4c599848d40d78f93ea65425bce710394e8fd4053254820efd76029",
+    "all_labels_match_official_executor": true,
+    "blind_inputs_contain_no_gold": true
+  }
+}

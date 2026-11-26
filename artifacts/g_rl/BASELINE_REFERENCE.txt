@@ -1,0 +1,7 @@
+项目主基线（用户于2026-11-26指定）
+以后统一采用截图及其对应GitHub发布模型作为主基线；本轮监督重训69%仅作补充对照。
+基线：Hope@2b070d0456d59a9fca7d85422b8a0c51a66037d5；数据：hope_dataset@d88f85b872560f9313ac4319cdd5fa86151c0780。
+权重SHA256：e862b3087a58d8e26be594a016571e51b3712589f54ed454ba72f57592e9c473
+单错端到端成功79.5%，最优79%；双错端到端成功76%，最优74.5%。
+完整指标见BASELINE_REFERENCE.json。
+对比报告：output/hope-fixed-baseline-comparison-20261126/。

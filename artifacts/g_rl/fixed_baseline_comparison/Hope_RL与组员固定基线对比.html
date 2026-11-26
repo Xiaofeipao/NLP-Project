@@ -1,0 +1,56 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>Hope＋奖惩训练与固定基线对比</title>
+<style>body{font:16px/1.65 system-ui,"Microsoft YaHei",sans-serif;color:#18202a;background:#fff;margin:32px auto;padding:0 24px;max-width:1400px}h1{font-size:28px}h2{font-size:22px;margin-top:36px}table{border-collapse:collapse;width:100%;margin:16px 0 28px}th,td{border-bottom:1px solid #dce1e7;padding:11px 10px;text-align:right;vertical-align:top}th:first-child,td:first-child{text-align:left}th{background:#f2f5f8;font-weight:650}.note{background:#f4f7fb;padding:14px 18px;border-left:4px solid #4a6fa5}.up{color:#176a40}.down{color:#b12c34}.small{font-size:14px;color:#56616e}code{background:#eef1f4;padding:2px 5px}p{margin:12px 0}</style>
+<h1>Hope 加入奖惩训练，与组员发布基线的对比</h1>
+<p class="note">主基线固定为用户截图对应的组员发布结果。本轮监督重训结果不替代主基线。</p>
+<p>可行：每步合法；成功：每步合法并到达终点；最优：成功且长度等于最短路。主表最优率均以全部200题为分母。端到端由模型反馈验证与修复，执行器仅独立评分。</p>
+<h2>单错测试集（200题）</h2><table><thead><tr><th>指标</th><th>组员发布基线</th><th>Hope＋期望奖励</th><th>变化/百分点</th><th>Hope＋RLOO</th><th>变化/百分点</th></tr></thead><tbody>
+<tr><td class="">首错步号正确</td><td class="">188/200（94%）</td><td class="">187/200（93.5%）</td><td class="down">-0.5</td><td class="">187/200（93.5%）</td><td class="down">-0.5</td></tr>
+<tr><td class="">首错类型正确</td><td class="">193/200（96.5%）</td><td class="">193/200（96.5%）</td><td class="">0</td><td class="">193/200（96.5%）</td><td class="">0</td></tr>
+<tr><td class="">首错步号和类型均正确</td><td class="">188/200（94%）</td><td class="">187/200（93.5%）</td><td class="down">-0.5</td><td class="">187/200（93.5%）</td><td class="down">-0.5</td></tr>
+<tr><td class="">给定错误路径：修复成功率</td><td class="">165/200（82.5%）</td><td class="">176/200（88%）</td><td class="up">+5.5</td><td class="">166/200（83%）</td><td class="up">+0.5</td></tr>
+<tr><td class="">给定错误路径：修复后可行率</td><td class="">184/200（92%）</td><td class="">186/200（93%）</td><td class="up">+1.0</td><td class="">186/200（93%）</td><td class="up">+1.0</td></tr>
+<tr><td class="">给定错误路径：修复后最优率</td><td class="">82/200（41%）</td><td class="">86/200（43%）</td><td class="up">+2.0</td><td class="">81/200（40.5%）</td><td class="down">-0.5</td></tr>
+<tr><td class="">直接生成成功率（未修复）</td><td class="">121/200（60.5%）</td><td class="">147/200（73.5%）</td><td class="up">+13.0</td><td class="">144/200（72%）</td><td class="up">+11.5</td></tr>
+<tr><td class="">从空路径生成→验证→修复：端到端成功率</td><td class="">159/200（79.5%）</td><td class="">169/200（84.5%）</td><td class="up">+5.0</td><td class="">166/200（83%）</td><td class="up">+3.5</td></tr>
+<tr><td class="">从空路径生成→验证→修复：端到端最优率</td><td class="">158/200（79%）</td><td class="">166/200（83%）</td><td class="up">+4.0</td><td class="">164/200（82%）</td><td class="up">+3.0</td></tr>
+</tbody></table>
+<p class="small">只看修复成功的题，其中达到最短的比例：组员发布基线（截图）：82/165（49.7%）；从头训练 Hope＋期望奖励：86/176（48.9%）；从头训练 Hope＋RLOO：81/166（48.8%）。</p>
+<h2>双错验证集（200题）</h2><table><thead><tr><th>指标</th><th>组员发布基线</th><th>Hope＋期望奖励</th><th>变化/百分点</th><th>Hope＋RLOO</th><th>变化/百分点</th></tr></thead><tbody>
+<tr><td class="">首错步号正确</td><td class="">194/200（97%）</td><td class="">197/200（98.5%）</td><td class="up">+1.5</td><td class="">197/200（98.5%）</td><td class="up">+1.5</td></tr>
+<tr><td class="">首错类型正确</td><td class="">196/200（98%）</td><td class="">199/200（99.5%）</td><td class="up">+1.5</td><td class="">199/200（99.5%）</td><td class="up">+1.5</td></tr>
+<tr><td class="">首错步号和类型均正确</td><td class="">194/200（97%）</td><td class="">197/200（98.5%）</td><td class="up">+1.5</td><td class="">197/200（98.5%）</td><td class="up">+1.5</td></tr>
+<tr><td class="">给定错误路径：修复成功率</td><td class="">141/200（70.5%）</td><td class="">161/200（80.5%）</td><td class="up">+10.0</td><td class="">158/200（79%）</td><td class="up">+8.5</td></tr>
+<tr><td class="">给定错误路径：修复后可行率</td><td class="">166/200（83%）</td><td class="">178/200（89%）</td><td class="up">+6.0</td><td class="">182/200（91%）</td><td class="up">+8.0</td></tr>
+<tr><td class="">给定错误路径：修复后最优率</td><td class="">94/200（47%）</td><td class="">104/200（52%）</td><td class="up">+5.0</td><td class="">100/200（50%）</td><td class="up">+3.0</td></tr>
+<tr><td class="">直接生成成功率（未修复）</td><td class="">127/200（63.5%）</td><td class="">143/200（71.5%）</td><td class="up">+8.0</td><td class="">146/200（73%）</td><td class="up">+9.5</td></tr>
+<tr><td class="">从空路径生成→验证→修复：端到端成功率</td><td class="">152/200（76%）</td><td class="">159/200（79.5%）</td><td class="up">+3.5</td><td class="">168/200（84%）</td><td class="up">+8.0</td></tr>
+<tr><td class="">从空路径生成→验证→修复：端到端最优率</td><td class="">149/200（74.5%）</td><td class="">155/200（77.5%）</td><td class="up">+3.0</td><td class="">161/200（80.5%）</td><td class="up">+6.0</td></tr>
+</tbody></table>
+<p class="small">只看修复成功的题，其中达到最短的比例：组员发布基线（截图）：94/141（66.7%）；从头训练 Hope＋期望奖励：104/161（64.6%）；从头训练 Hope＋RLOO：100/158（63.3%）。</p>
+<h2>单错测试：按首错类型拆分</h2><table><tr><th>首错类型</th><th>题数</th><th>基线修复成功</th><th>期望奖励修复成功</th><th>RLOO修复成功</th><th>基线修复最优</th><th>期望奖励修复最优</th><th>RLOO修复最优</th></tr>
+<tr><td>撞墙</td><td>50</td><td>37/50（74%）</td><td>39/50（78%）</td><td>39/50（78%）</td><td>16/50（32%）</td><td>15/50（30%）</td><td>15/50（30%）</td></tr>
+<tr><td>越界</td><td>50</td><td>44/50（88%）</td><td>49/50（98%）</td><td>46/50（92%）</td><td>19/50（38%）</td><td>22/50（44%）</td><td>20/50（40%）</td></tr>
+<tr><td>非法动作词</td><td>50</td><td>40/50（80%）</td><td>43/50（86%）</td><td>37/50（74%）</td><td>24/50（48%）</td><td>26/50（52%）</td><td>23/50（46%）</td></tr>
+<tr><td>未到终点</td><td>50</td><td>44/50（88%）</td><td>45/50（90%）</td><td>44/50（88%）</td><td>23/50（46%）</td><td>23/50（46%）</td><td>23/50（46%）</td></tr>
+</table>
+<h2>双错验证：按首错类型拆分</h2><table><tr><th>首错类型</th><th>题数</th><th>基线修复成功</th><th>期望奖励修复成功</th><th>RLOO修复成功</th><th>基线修复最优</th><th>期望奖励修复最优</th><th>RLOO修复最优</th></tr>
+<tr><td>撞墙</td><td>68</td><td>45/68（66.1765%）</td><td>54/68（79.4118%）</td><td>52/68（76.4706%）</td><td>31/68（45.5882%）</td><td>35/68（51.4706%）</td><td>33/68（48.5294%）</td></tr>
+<tr><td>越界</td><td>65</td><td>49/65（75.3846%）</td><td>53/65（81.5385%）</td><td>57/65（87.6923%）</td><td>34/65（52.3077%）</td><td>38/65（58.4615%）</td><td>39/65（60%）</td></tr>
+<tr><td>非法动作词</td><td>67</td><td>47/67（70.1493%）</td><td>54/67（80.597%）</td><td>49/67（73.1343%）</td><td>29/67（43.2836%）</td><td>31/67（46.2687%）</td><td>28/67（41.791%）</td></tr>
+</table>
+<h2>单步开发题（每个任务100题）</h2><table><tr><th>任务</th><th>组员发布基线</th><th>期望奖励</th><th>RLOO</th></tr>
+<tr><td>G</td><td>71%</td><td>75%</td><td>73%</td></tr>
+<tr><td>C</td><td>100%</td><td>100%</td><td>100%</td></tr>
+<tr><td>V</td><td>100%</td><td>100%</td><td>99%</td></tr>
+</table><h2>为什么重训与组员原跑结果不同</h2>
+<p>以后统一采用截图及其对应GitHub发布模型作为主基线；本轮监督重训69%仅作补充对照。</p>
+<p>基线：Hope@2b070d0456d59a9fca7d85422b8a0c51a66037d5；数据：hope_dataset@d88f85b872560f9313ac4319cdd5fa86151c0780。</p>
+<p>两种奖励模型均从原始Flan-T5-base预训练权重开始训练三轮，共375次更新；不是在组员发布模型上继续训练。</p>
+<p>期望奖励组精确枚举四动作期望；RLOO组每状态真实采样8动作。两组均保留G/C/V监督损失，奖励强度0.2。</p>
+<p>奖励：最短方向+1，合法非最短-1，撞墙/越界-5。</p>
+<p>本轮微批16，原发布配方微批4；H100与组员RTX3050也不同。这些因素会改变随机训练及数值计算。</p>
+<p>即使seed42相同，微批变化仍可能改变dropout掩码与梯度累积。未做单因素消融，不能断言各因素分别造成多少差异。</p>
+<p>同一发布权重在H100上重跑G仍为71%，所以69%重训结果对应的是另一份训练所得参数，不能替换原基线。</p>
+<p>可以比较是否超过现有发布模型；不能把所有配置、重训差异的收益严格归因于奖励。</p>
+<h2>发布权重的独立复评附注</h2><p>独立H100复评：G=71%；单错首错整行188/200，端到端成功159/200、最优158/200；双错首错整行193/200、端到端成功151/200、最优149/200。组员发布双错对应194/200、152/200、149/200。该少量跨环境复评差异单独保留，不替换截图主基线；尚未完成其数值精度归因实验。</p>
+<p class="note">本轮仅一个训练种子。观察到了规划收益和部分验证退化，尚未证明跨种子稳定性。</p></html>

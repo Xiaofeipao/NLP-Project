@@ -1,0 +1,11 @@
+{
+  "protocol": "c47297c47ae7dd060a7899f75588eced7828e7c6b6f313973192a9a8039513f4",
+  "primary_model": "supervised",
+  "scores": {
+    "supervised": {
+      "weights": "f5de19689a26782f1a83bc29171485e8ef6333dfdf704f2e52d1195dcc61fb5d"
+    }
+  },
+  "fixed_checkpoint": true,
+  "note": "No checkpoint or reward selection uses double_error or single_error outcomes."
+}

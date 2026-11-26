@@ -1,0 +1,9 @@
+{
+  "arm": "supervised",
+  "updates": 375,
+  "weights": "f5de19689a26782f1a83bc29171485e8ef6333dfdf704f2e52d1195dcc61fb5d",
+  "elapsed_s": 925.460943300277,
+  "G_presentations": 8000,
+  "varied_sampling_groups": 0,
+  "all_parameters_trained": true
+}

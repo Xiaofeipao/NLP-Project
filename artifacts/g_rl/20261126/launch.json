@@ -1,0 +1,24 @@
+{
+  "pid": 484381,
+  "command": [
+    "/home/apulis-dev/runtime/luck-baseline312/bin/python",
+    "-u",
+    "/home/apulis-dev/experiments/hope-joint-gcv-inputs-20261126/run_hope_joint_gcv.py",
+    "--repo",
+    "/home/apulis-dev/experiments/hope-joint-gcv-inputs-20261126/source",
+    "--dataset",
+    "/home/apulis-dev/experiments/hope-joint-gcv-inputs-20261126/source/dataset_hope_dataset",
+    "--base",
+    "/home/apulis-dev/userdata/NLP-Project/pretrained/flan_t5_base/7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+    "--out",
+    "/home/apulis-dev/experiments/hope-joint-gcv-rl-20261126-mb16"
+  ],
+  "bundle_sha256": "9a910a8ed9fef39eb92c6f32c6592e7bf7908324b86866bd27f02cf15cbf79bb",
+  "code_commit": "9ebecebe54e94e3bd474a5522c23df86ad66852d",
+  "dataset_commit": "d88f85b872560f9313ac4319cdd5fa86151c0780",
+  "GPU": "NVIDIA H100 80GB HBM3",
+  "microbatch": 16,
+  "rloo_gradient_check": true,
+  "pretrained_hash_checked": true,
+  "input_blobs_checked": true
+}

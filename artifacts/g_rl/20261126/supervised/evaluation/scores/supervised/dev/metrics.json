@@ -1,0 +1,198 @@
+{
+  "verification": {
+    "metric": "exact_line_by_gold_supported_type_v1",
+    "n": 100,
+    "exact": 94,
+    "exact_accuracy": 0.94,
+    "structured_macro_f1": 0.8849401829697395,
+    "supported_types": 5,
+    "false_valid": 1,
+    "malformed": 0,
+    "per_type": {
+      "valid": {
+        "gold": 50,
+        "predicted": 48,
+        "tp": 47,
+        "fp": 1,
+        "fn": 3,
+        "f1": 0.9591836734693877
+      },
+      "obstacle_collision": {
+        "gold": 4,
+        "predicted": 8,
+        "tp": 3,
+        "fp": 5,
+        "fn": 1,
+        "f1": 0.5
+      },
+      "out_of_bounds": {
+        "gold": 6,
+        "predicted": 6,
+        "tp": 6,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0
+      },
+      "invalid_action_token": {
+        "gold": 10,
+        "predicted": 10,
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0
+      },
+      "goal_not_reached": {
+        "gold": 30,
+        "predicted": 28,
+        "tp": 28,
+        "fp": 0,
+        "fn": 2,
+        "f1": 0.9655172413793104
+      }
+    }
+  },
+  "candidate_repair": {
+    "n": 50,
+    "counts": {
+      "success": 40,
+      "feasible": 42,
+      "optimal": 29,
+      "delivered": 42
+    },
+    "success": 0.8,
+    "feasible": 0.84,
+    "optimal": 0.58,
+    "delivered": 0.84
+  },
+  "invalid_count": 50,
+  "step_correct": 47,
+  "reason_correct": 48,
+  "joint": 47,
+  "valid_count": 50,
+  "valid_correct": 47,
+  "repair_stops": {
+    "attempt_limit": 10,
+    "returned_plan": 38,
+    "unchanged": 48,
+    "returned_prefix": 4
+  },
+  "by_reason": {
+    "goal_not_reached": {
+      "n": 30,
+      "prediction_counts": {
+        "goal_not_reached": 28,
+        "obstacle_collision": 1,
+        "valid": 1
+      },
+      "exact": 28,
+      "step_correct": 28,
+      "reason_correct": 28,
+      "joint": 28,
+      "repair": {
+        "n": 30,
+        "counts": {
+          "success": 24,
+          "feasible": 25,
+          "optimal": 14,
+          "delivered": 25
+        },
+        "success": 0.8,
+        "feasible": 0.8333333333333334,
+        "optimal": 0.4666666666666667,
+        "delivered": 0.8333333333333334
+      }
+    },
+    "invalid_action_token": {
+      "n": 10,
+      "prediction_counts": {
+        "invalid_action_token": 10
+      },
+      "exact": 10,
+      "step_correct": 10,
+      "reason_correct": 10,
+      "joint": 10,
+      "repair": {
+        "n": 10,
+        "counts": {
+          "success": 7,
+          "feasible": 8,
+          "optimal": 7,
+          "delivered": 8
+        },
+        "success": 0.7,
+        "feasible": 0.8,
+        "optimal": 0.7,
+        "delivered": 0.8
+      }
+    },
+    "obstacle_collision": {
+      "n": 4,
+      "prediction_counts": {
+        "obstacle_collision": 4
+      },
+      "exact": 3,
+      "step_correct": 3,
+      "reason_correct": 4,
+      "joint": 3,
+      "repair": {
+        "n": 4,
+        "counts": {
+          "success": 3,
+          "feasible": 3,
+          "optimal": 2,
+          "delivered": 3
+        },
+        "success": 0.75,
+        "feasible": 0.75,
+        "optimal": 0.5,
+        "delivered": 0.75
+      }
+    },
+    "out_of_bounds": {
+      "n": 6,
+      "prediction_counts": {
+        "out_of_bounds": 6
+      },
+      "exact": 6,
+      "step_correct": 6,
+      "reason_correct": 6,
+      "joint": 6,
+      "repair": {
+        "n": 6,
+        "counts": {
+          "success": 6,
+          "feasible": 6,
+          "optimal": 6,
+          "delivered": 6
+        },
+        "success": 1.0,
+        "feasible": 1.0,
+        "optimal": 1.0,
+        "delivered": 1.0
+      }
+    },
+    "valid": {
+      "n": 50,
+      "prediction_counts": {
+        "obstacle_collision": 3,
+        "valid": 47
+      },
+      "exact": 47
+    }
+  },
+  "pipeline": {
+    "direct": {
+      "n": 98,
+      "counts": {
+        "success": 62,
+        "feasible": 86,
+        "optimal": 58,
+        "delivered": 98
+      },
+      "success": 0.6326530612244898,
+      "feasible": 0.8775510204081632,
+      "optimal": 0.5918367346938775,
+      "delivered": 1.0
+    }
+  }
+}

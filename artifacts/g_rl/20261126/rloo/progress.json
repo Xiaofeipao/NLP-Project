@@ -1,0 +1,14 @@
+{
+  "arm": "rloo",
+  "update": 375,
+  "stream": "GV",
+  "supervised_loss": 0.23992527180780598,
+  "reward_loss": -0.030193350303306943,
+  "grad_norm": 2.9030661582946777,
+  "elapsed_s": 930.6908916998655,
+  "mean_reward": -0.7661841293172911,
+  "unsafe_probability": 0.21390394534070728,
+  "varied_sampling_groups": 6103,
+  "G_presentations": 8000,
+  "peak_cuda_gib": 4.4676008224487305
+}
