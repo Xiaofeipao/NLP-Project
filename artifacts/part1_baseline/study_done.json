@@ -1,7 +1,7 @@
 {
-  "selection_sha256": "36e1d026ab83616836cb4b7edbad76ea2fcbceb129cb67264a04e76c375c4a9a",
-  "test_receipts": {
-    "single_error": "9b4c75b1c9e9cab8814f6a517cecc7bec9ff6fba4012a7ccbfc459eef0e5552c",
-    "double_error": "ea49e536894c5089e587d3aa4695d49fda67159147573701773bb40501d43437"
+  "selection_sha256": "4769caa4bdaa58164f1e7932a28c916bb692e55d53d40868c23a39212bd76b68",
+  "held_out_receipts": {
+    "single_error": "e658586887b9601714e7c9f206699aa5c79679ee69367bc7b3b1a49c3eb5ceeb",
+    "double_error": "8bd6844d7ce5df10b692d2730790d8b12cf2e64bb93869d003895cb3e675522f"
   }
 }

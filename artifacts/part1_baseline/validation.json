@@ -42,7 +42,7 @@
       "original_sha256": "efaf458549f7a0928b150ee348809dfb081de03021957840455eb111d51d3f01"
     }
   },
-  "cpu_wall_seconds": 1.16915740002878,
-  "project_metrics_sha256": "9ff5f94962e4ae1fa0de4184d292b91edc4f708c74e3b61af32154be35f91280",
-  "independent_gpu_confirmation_sha256": "23db2e2b667ed281c8bb9221478406f4cc93f54eb1328d7d4a6fa1cc7fd1a974"
+  "cpu_wall_seconds": 1.3347289999946952,
+  "project_metrics_sha256": "c068ba29b408f383ea170890ce9dcc1f03e9a5f72360a52aaeadf58af1c1c8d3",
+  "independent_gpu_confirmation_sha256": "8ea121d81fff6cd2f3b159bc4fe5b1ad032bccfe2caad5a78cf3ff0b6a5731d2"
 }

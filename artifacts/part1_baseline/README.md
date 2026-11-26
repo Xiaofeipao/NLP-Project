@@ -2,11 +2,13 @@
 
 | 交付内容 | 文件 |
 |---|---|
-| 完整指标 | [开发集选型、单错与双错、生成与修复](Part1_基线结果.md) |
+| 完整指标 | [开发集选型、单错测试、双错验证、生成与修复](Part1_基线结果.md) |
 | 第一组错误分析 | [G 方向偏差、首错与修复失败](第一组_错误分析.md) |
 | 逐题与复现 | [预测及评分](scores/) · [两次 GPU 重跑回执](rerun_confirmation.json) · [离线核对](validation.json) |
 | 权重 | [Flan-T5-base](models/expanded/flan_t5_base/) · [BART-base](models/expanded/bart_base/) |
-| 数据 | [4,000 个训练状态](data/state_ids.json) · [协议与哈希](data/protocol.json) · [原单错、双错](../../data/random_errors_20261123/) |
+| 数据 | [4,000 个训练状态](data/state_ids.json) · [协议与哈希](data/protocol.json) · [单错测试金标](../../data/random_errors_20261123/single_error_200.jsonl) · [双错验证金标](../../data/random_errors_20261123/double_error_200.jsonl) |
+
+Hope 按原题号、顺序与金标重新评估。单错 200 条作测试集，双错 200 条作验证集。Flan 与 BART 在原 100 条开发集上选型。划分用途、题数和哈希均写入[数据协议](data/protocol.json)。
 
 ## 下载与验证
 
@@ -17,6 +19,7 @@ git switch Hope
 git lfs pull --include="artifacts/part1_baseline/models/**" --exclude=""
 python scripts/fetch_official.py
 python -m experiments.part1_baseline.audit --results --work artifacts/part1_baseline
+python -m experiments.part1_baseline.diagnose
 python -m experiments.part1_baseline.predict --task verify --grid examples/grid.json --candidate "left up"
 ```
 

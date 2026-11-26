@@ -1,6 +1,6 @@
 # PPNL：自然语言网格路径规划
 
-Hope 收录 Part 1 的 G/C/V 基线。Flan-T5-base 与 BART-base 在开发集比较，选出的 Flan 在原单错和双错集上的整行正确率分别为 91% 和 93%。权重通过 Git LFS 下载。[发布说明](artifacts/part1_baseline/README.md) · [项目指标](artifacts/part1_baseline/Part1_基线结果.md) · [第一组错误分析](artifacts/part1_baseline/第一组_错误分析.md)
+Hope 收录 Part 1 的 G/C/V 基线。Flan-T5-base 与 BART-base 在开发集比较，选出的 Flan 在 Hope 单错测试集和双错验证集上的整行正确率分别为 91% 和 93%。权重通过 Git LFS 下载。[发布说明](artifacts/part1_baseline/README.md) · [项目指标](artifacts/part1_baseline/Part1_基线结果.md) · [第一组错误分析](artifacts/part1_baseline/第一组_错误分析.md)
 
 此前发布 **Flan-T5-base 的 64 条验证样本等额替换实验**。B 组为替换版第 3 轮，A 组为原数据重训第 1 轮。两份完整模型均可通过 Git LFS 下载。[数据说明、评测与加载示例](artifacts/flan_swap64_ab/README.md) · [B 组权重](artifacts/flan_swap64_ab/models/B-epoch3/) · [A 组权重](artifacts/flan_swap64_ab/models/A-epoch1/)
 

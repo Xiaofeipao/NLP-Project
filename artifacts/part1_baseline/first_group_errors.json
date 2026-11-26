@@ -35,6 +35,9 @@
   },
   "splits": {
     "single_error": {
+      "role": "test",
+      "n": 200,
+      "correct_first_errors": 182,
       "first_error_mismatches": {
         "late": 2,
         "wrong_type": 3,
@@ -79,6 +82,9 @@
         "upper": 9,
         "upper_exact": 3
       },
+      "no_coordinate_verdicts": {
+        "invalid_action_token": 44
+      },
       "repair_failures_after_correct_verification": {
         "returned_plan": 11,
         "attempt_limit": 11,
@@ -87,6 +93,44 @@
       "scored_path_errors": {
         "goal_not_reached": 25
       },
+      "returned_prefix_failures": [
+        {
+          "id": "random-2315f545a8efaf762197e5a4",
+          "path": "up up",
+          "cell": "(0,4)",
+          "goal": "(0,5)",
+          "offline_cell": "(0,4)",
+          "goal_distance_manhattan": 1,
+          "predicted_V": "valid",
+          "offline_verdict": "invalid | step=3 | reason=goal_not_reached",
+          "feasible": true,
+          "new_move_attempts": 0
+        },
+        {
+          "id": "random-5c7a5223143254887a61632e",
+          "path": "down down",
+          "cell": "(4,5)",
+          "goal": "(4,4)",
+          "offline_cell": "(4,5)",
+          "goal_distance_manhattan": 1,
+          "predicted_V": "valid",
+          "offline_verdict": "invalid | step=3 | reason=goal_not_reached",
+          "feasible": true,
+          "new_move_attempts": 0
+        },
+        {
+          "id": "random-520e9df7818eb3de1e0c8602",
+          "path": "left up",
+          "cell": "(0,3)",
+          "goal": "(0,4)",
+          "offline_cell": "(0,3)",
+          "goal_distance_manhattan": 1,
+          "predicted_V": "valid",
+          "offline_verdict": "invalid | step=3 | reason=goal_not_reached",
+          "feasible": true,
+          "new_move_attempts": 0
+        }
+      ],
       "cases": [
         {
           "id": "random-1f5247411ef42e521fb4ebef",
@@ -322,9 +366,14 @@
           "predicted_V": "obstacle_collision",
           "error_component": "C"
         }
-      ]
+      ],
+      "predictions_sha256": "068042e77e08f30482f834a1bc69e167b80e1a4ca31ab6901c2c06a04a051c20",
+      "scores_sha256": "5217b67570571865c33abd9da616f0d7b98d707e9f954afe26df1d662399627b"
     },
     "double_error": {
+      "role": "validation",
+      "n": 200,
+      "correct_first_errors": 186,
       "first_error_mismatches": {
         "wrong_type": 2,
         "late": 5,
@@ -368,6 +417,9 @@
         "upper": 11,
         "upper_exact": 2
       },
+      "no_coordinate_verdicts": {
+        "invalid_action_token": 60
+      },
       "repair_failures_after_correct_verification": {
         "returned_plan": 20,
         "attempt_limit": 29,
@@ -378,6 +430,56 @@
         "goal_not_reached": 53,
         "obstacle_collision": 1
       },
+      "returned_prefix_failures": [
+        {
+          "id": "random-64040e0cc67ad13c0e3a6150",
+          "path": "left up",
+          "cell": "(0,4)",
+          "goal": "(0,5)",
+          "offline_cell": "(0,4)",
+          "goal_distance_manhattan": 1,
+          "predicted_V": "valid",
+          "offline_verdict": "invalid | step=3 | reason=goal_not_reached",
+          "feasible": true,
+          "new_move_attempts": 0
+        },
+        {
+          "id": "random-0b97f351dc1b7ad5ad912a1d",
+          "path": "down down right up right down down",
+          "cell": "(4,4)",
+          "goal": "(4,5)",
+          "offline_cell": "(4,4)",
+          "goal_distance_manhattan": 1,
+          "predicted_V": "valid",
+          "offline_verdict": "invalid | step=8 | reason=goal_not_reached",
+          "feasible": true,
+          "new_move_attempts": 0
+        },
+        {
+          "id": "random-4612926c3122c9c70bad1da4",
+          "path": "right down",
+          "cell": "(1,4)",
+          "goal": "(1,5)",
+          "offline_cell": "(1,4)",
+          "goal_distance_manhattan": 1,
+          "predicted_V": "valid",
+          "offline_verdict": "invalid | step=3 | reason=goal_not_reached",
+          "feasible": true,
+          "new_move_attempts": 0
+        },
+        {
+          "id": "random-91466041a1784135d513a590",
+          "path": "up up",
+          "cell": "(0,3)",
+          "goal": "(0,4)",
+          "offline_cell": "(0,3)",
+          "goal_distance_manhattan": 1,
+          "predicted_V": "valid",
+          "offline_verdict": "invalid | step=3 | reason=goal_not_reached",
+          "feasible": true,
+          "new_move_attempts": 0
+        }
+      ],
       "cases": [
         {
           "id": "random-6d6e0007bfccdd82990122cd",
@@ -561,7 +663,9 @@
           "predicted_V": "valid",
           "error_component": "C"
         }
-      ]
+      ],
+      "predictions_sha256": "efaf458549f7a0928b150ee348809dfb081de03021957840455eb111d51d3f01",
+      "scores_sha256": "0266f271495a8df12710a31600a6fa42cbde996d1630fd5acb4afe959a30506b"
     }
   }
 }

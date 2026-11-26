@@ -1,5 +1,6 @@
 {
   "flan_t5_base/dev": {
+    "role": "model_selection",
     "candidates": 100,
     "gold_valid": 50,
     "gold_invalid": 50,
@@ -40,6 +41,7 @@
     }
   },
   "flan_t5_base/single_error": {
+    "role": "test",
     "candidates": 200,
     "gold_valid": 0,
     "gold_invalid": 200,
@@ -106,6 +108,7 @@
     }
   },
   "flan_t5_base/double_error": {
+    "role": "validation",
     "candidates": 200,
     "gold_valid": 0,
     "gold_invalid": 200,
@@ -172,6 +175,7 @@
     }
   },
   "bart_base/dev": {
+    "role": "model_selection",
     "candidates": 100,
     "gold_valid": 50,
     "gold_invalid": 50,

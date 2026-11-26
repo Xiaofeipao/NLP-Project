@@ -5,7 +5,19 @@ from pathlib import Path
 from time import perf_counter
 
 from ppnl.core import Grid, OfficialOracle
-from .protocol import ERROR_SETS, METRIC, MODELS, ROOT, SOURCES, digest, gold_rows, put, read, rows_at
+from .protocol import (
+    ERROR_SETS,
+    METRIC,
+    MODELS,
+    ROOT,
+    SOURCES,
+    SPLIT_ROLES,
+    digest,
+    gold_rows,
+    put,
+    read,
+    rows_at,
+)
 
 
 def audit(work):
@@ -89,7 +101,8 @@ def audit_results(work, history=None):
     assert completion["selection_sha256"] == digest(work / "selection.json")
     assert selection["protocol"] == digest(work / "data/protocol.json")
     assert selection["dev_inputs"] == protocol["inputs"]["dev"] and protocol["metric"] == METRIC
-    assert set(completion["test_receipts"]) == set(ERROR_SETS)
+    receipts = completion.get("held_out_receipts", completion.get("test_receipts"))
+    assert receipts is not None and set(receipts) == set(ERROR_SETS)
     oracle = OfficialOracle(ROOT / "vendor/ppnl/executor-point-sg.py")
     primary = selection["primary_model"]
     checked, replay, project_metrics = {}, {}, {}
@@ -128,6 +141,7 @@ def audit_results(work, history=None):
             verdicts = [z["prediction"] if canonical_verdict(z["prediction"]) else "malformed" for z in cases]
             binary = verification_metrics(gold, verdicts)
             project_metrics[f"{family}/{split}"] = dict(
+                role=protocol["held_out"][split].get("role", SPLIT_ROLES[split]),
                 candidates=len(cases),
                 gold_valid=metrics["valid_count"],
                 gold_invalid=metrics["invalid_count"],
@@ -150,7 +164,7 @@ def audit_results(work, history=None):
                 supported_types=verification["supported_types"],
             )
             if full:
-                assert completion["test_receipts"][split] == digest(output / "done.json")
+                assert receipts[split] == digest(output / "done.json")
                 if history is not None and wanted["weights"] == LEGACY_WEIGHTS:
                     old = history / (split.split("_")[0] + "_predictions.jsonl")
                     old_rows = rows_at(old)

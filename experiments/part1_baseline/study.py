@@ -159,12 +159,12 @@ def compare_and_test(work, models, frozen):
     put(path, decision)
     print(json.dumps(decision), flush=True)
     folder, weights = models[primary]
-    assess(work, folder, weights, primary, [(split, True) for split in ERROR_SETS])
+    assess(work, folder, weights, primary, [(split, True) for split in ("double_error", "single_error")])
     put(
         work / "study_done.json",
         dict(
             selection_sha256=digest(path),
-            test_receipts={
+            held_out_receipts={
                 split: digest(work / "scores" / primary / split / "done.json") for split in ERROR_SETS
             },
         ),

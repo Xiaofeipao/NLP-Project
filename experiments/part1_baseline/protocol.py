@@ -13,6 +13,7 @@ PROMPTS = ROOT / "experiments/path_text_gv/prompts/coordinate_gcv"
 LABELS = ("valid", "obstacle_collision", "out_of_bounds", "invalid_action_token", "goal_not_reached")
 MOVES = ("up", "down", "left", "right")
 ERROR_SETS = ("single_error", "double_error")
+SPLIT_ROLES = {"dev": "model_selection", "single_error": "test", "double_error": "validation"}
 SOURCES = {
     "dev": ROOT / "data/derived/dev.jsonl",
     **{s: ROOT / "data/random_errors_20261123" / (s + "_200.jsonl") for s in ERROR_SETS},
@@ -175,7 +176,7 @@ def prepare(out):
                 assert sorted(set(steps)) == steps
                 assert (steps[0], events[0]["reason"]) == (result.step, result.reason)
         kinds = Counter(r["reason"] or "valid" for r in examples)
-        profiles[part] = dict(n=len(examples), layouts=len(layouts), classes=dict(kinds))
+        profiles[part] = dict(role=SPLIT_ROLES[part], n=len(examples), layouts=len(layouts), classes=dict(kinds))
         put(out / (part + ".jsonl"), blind, True)
         if part in ERROR_SETS:
             assert digest(out / (part + ".jsonl")) == source["files"][original.name]

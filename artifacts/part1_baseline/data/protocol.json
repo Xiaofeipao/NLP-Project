@@ -63,6 +63,7 @@
   },
   "held_out": {
     "dev": {
+      "role": "model_selection",
       "n": 100,
       "layouts": 59,
       "classes": {
@@ -74,6 +75,7 @@
       }
     },
     "single_error": {
+      "role": "test",
       "n": 200,
       "layouts": 200,
       "classes": {
@@ -84,6 +86,7 @@
       }
     },
     "double_error": {
+      "role": "validation",
       "n": 200,
       "layouts": 200,
       "classes": {
