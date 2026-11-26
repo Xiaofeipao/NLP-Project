@@ -43,8 +43,16 @@
     "invalid_action_token": 55,
     "goal_not_reached": 55
   },
-  "generator_sha256": "c6caa390bfbf046ed477d6569d729c54f5855e6a742aa7067fd698d6ce6b6f45",
-  "data_sha256": "18020e883bb5eb0e91d2039393f741816b73b378ff245cb36d8a1449e02a347d",
+  "generator_sha256": "1cf7c15208380c62c5e47eee16a782768ca19746751955823e4cf04948000b7a",
+  "data_sha256": "c116721b9c80518012dafbc85fe7ff8666c25363be86ab0f833e283dff5752ff",
   "double_status": "Complete: 200 records, nine supported pairs; see double_manifest.json",
-  "audit_semantics": "Standard executor labels first error. Separate rejected-move no-op scan audits exact number of error events; no change to project executor."
+  "audit_semantics": "Standard executor labels first error. Separate rejected-move no-op scan audits exact number of error events; no change to project executor.",
+  "previous_data_sha256": "18020e883bb5eb0e91d2039393f741816b73b378ff245cb36d8a1449e02a347d",
+  "previous_generator_sha256": "c6caa390bfbf046ed477d6569d729c54f5855e6a742aa7067fd698d6ce6b6f45",
+  "post_generation_edit": {
+    "date": "2026-11-26",
+    "details": "illegal_word_replacement_20261126.json",
+    "uppercase_directions_replaced": true,
+    "labels_steps_lengths_error_counts_unchanged": true
+  }
 }

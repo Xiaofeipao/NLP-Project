@@ -91,5 +91,11 @@
   "unique_layouts": 400,
   "latest_paired_layout_overlap": 0,
   "latest_paired_states_sha256": "af5c5d8834e88a8d186ddeb1b7d7a2bb6baff49b8d0fdb6a56a3f80ad9a78cd0",
-  "unknown_token_note": "Strict project extension; upstream executor ignores unknown tokens, so unknown-token labels come from project semantics."
+  "unknown_token_note": "Strict project extension; upstream executor ignores unknown tokens, so unknown-token labels come from project semantics.",
+  "post_edit_replay": {
+    "date": "2026-11-26",
+    "passed_rows": 400,
+    "case_variant_directions_remaining": 0,
+    "details": "illegal_word_replacement_20261126.json"
+  }
 }

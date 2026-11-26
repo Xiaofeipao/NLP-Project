@@ -1,0 +1,221 @@
+{
+  "date": "2026-11-26",
+  "mapping": {
+    "UP": "jump",
+    "DOWN": "wait",
+    "LEFT": "teleport",
+    "RIGHT": "stay"
+  },
+  "also_handles_title_and_mixed_case": true,
+  "files": {
+    "single_error_200.jsonl": {
+      "rows": 200,
+      "changed_rows": 9,
+      "replaced_action_occurrences": 9,
+      "original_words": {
+        "DOWN": 4,
+        "UP": 1,
+        "LEFT": 2,
+        "RIGHT": 2
+      },
+      "before_sha256": "18020e883bb5eb0e91d2039393f741816b73b378ff245cb36d8a1449e02a347d",
+      "after_sha256": "c116721b9c80518012dafbc85fe7ff8666c25363be86ab0f833e283dff5752ff",
+      "changes": [
+        {
+          "id": "random-b74e0ff23bee13de73d264cf",
+          "step": 1,
+          "old": "DOWN",
+          "new": "wait"
+        },
+        {
+          "id": "random-1f5247411ef42e521fb4ebef",
+          "step": 1,
+          "old": "UP",
+          "new": "jump"
+        },
+        {
+          "id": "random-4b9ed57303e3d200d3f37547",
+          "step": 3,
+          "old": "LEFT",
+          "new": "teleport"
+        },
+        {
+          "id": "random-719b8a4fc427aa530764783b",
+          "step": 3,
+          "old": "RIGHT",
+          "new": "stay"
+        },
+        {
+          "id": "random-b1c94fc3af240be3e0aad39d",
+          "step": 1,
+          "old": "DOWN",
+          "new": "wait"
+        },
+        {
+          "id": "random-abe83d6d921e0af2566b4480",
+          "step": 7,
+          "old": "RIGHT",
+          "new": "stay"
+        },
+        {
+          "id": "random-fe8d8df63fd447967311f3b9",
+          "step": 6,
+          "old": "LEFT",
+          "new": "teleport"
+        },
+        {
+          "id": "random-7495301a0ca5d64015445ff5",
+          "step": 1,
+          "old": "DOWN",
+          "new": "wait"
+        },
+        {
+          "id": "random-e9940ecad89fb99ab2aa2312",
+          "step": 1,
+          "old": "DOWN",
+          "new": "wait"
+        }
+      ],
+      "all_labels_steps_maps_event_counts_unchanged": true,
+      "independent_replay_passed": 200
+    },
+    "double_error_200.jsonl": {
+      "rows": 200,
+      "changed_rows": 19,
+      "replaced_action_occurrences": 20,
+      "original_words": {
+        "UP": 5,
+        "DOWN": 5,
+        "RIGHT": 6,
+        "LEFT": 4
+      },
+      "before_sha256": "68340c517e9a4d3d20d74ba9bccd78b175bc06d2a2adad75330d5200237c563d",
+      "after_sha256": "a50e542cc4c599848d40d78f93ea65425bce710394e8fd4053254820efd76029",
+      "changes": [
+        {
+          "id": "random-6d6e0007bfccdd82990122cd",
+          "step": 4,
+          "old": "UP",
+          "new": "jump"
+        },
+        {
+          "id": "random-74416e19e6a3a5d3a8f29dd8",
+          "step": 1,
+          "old": "DOWN",
+          "new": "wait"
+        },
+        {
+          "id": "random-04433fedd1f141ec014366ec",
+          "step": 3,
+          "old": "RIGHT",
+          "new": "stay"
+        },
+        {
+          "id": "random-82c34dc27371338457ed98f0",
+          "step": 8,
+          "old": "UP",
+          "new": "jump"
+        },
+        {
+          "id": "random-ddf233755badbdcf73659e5e",
+          "step": 5,
+          "old": "LEFT",
+          "new": "teleport"
+        },
+        {
+          "id": "random-9ec8755720f9ba06e98eccd1",
+          "step": 2,
+          "old": "UP",
+          "new": "jump"
+        },
+        {
+          "id": "random-9ec8755720f9ba06e98eccd1",
+          "step": 10,
+          "old": "LEFT",
+          "new": "teleport"
+        },
+        {
+          "id": "random-a257b54f39fbf210090a485f",
+          "step": 4,
+          "old": "LEFT",
+          "new": "teleport"
+        },
+        {
+          "id": "random-606b1cf740bb4f05e301afad",
+          "step": 5,
+          "old": "RIGHT",
+          "new": "stay"
+        },
+        {
+          "id": "random-c025cddc788f9606511a8de7",
+          "step": 6,
+          "old": "UP",
+          "new": "jump"
+        },
+        {
+          "id": "random-89d61d734ff4e4847b5df121",
+          "step": 3,
+          "old": "DOWN",
+          "new": "wait"
+        },
+        {
+          "id": "random-a766d8256082d33e81fda521",
+          "step": 5,
+          "old": "RIGHT",
+          "new": "stay"
+        },
+        {
+          "id": "random-861b0d1549627663a904e72a",
+          "step": 2,
+          "old": "RIGHT",
+          "new": "stay"
+        },
+        {
+          "id": "random-09b735c329cd394a9405d56a",
+          "step": 2,
+          "old": "RIGHT",
+          "new": "stay"
+        },
+        {
+          "id": "random-e7030399282f5a3cfd76f8a4",
+          "step": 4,
+          "old": "DOWN",
+          "new": "wait"
+        },
+        {
+          "id": "random-c59f59b918cd9f2e42081b32",
+          "step": 7,
+          "old": "RIGHT",
+          "new": "stay"
+        },
+        {
+          "id": "random-9cfa7118a4fe9fa1720adede",
+          "step": 4,
+          "old": "UP",
+          "new": "jump"
+        },
+        {
+          "id": "random-13cc7cdea4613da89f41551e",
+          "step": 6,
+          "old": "LEFT",
+          "new": "teleport"
+        },
+        {
+          "id": "random-3b2904e2ee226c5dc4b4935f",
+          "step": 3,
+          "old": "DOWN",
+          "new": "wait"
+        },
+        {
+          "id": "random-0e55bdba8c1a1d0db4ce1650",
+          "step": 2,
+          "old": "DOWN",
+          "new": "wait"
+        }
+      ],
+      "all_labels_steps_maps_event_counts_unchanged": true,
+      "independent_replay_passed": 200
+    }
+  },
+  "historical_model_predictions_not_modified": true
+}
