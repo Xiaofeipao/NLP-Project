@@ -1,0 +1,27 @@
+{
+  "pairs": 804,
+  "confusion": {
+    "goal_not_reached": {
+      "goal_not_reached": 604,
+      "obstacle_collision": 10,
+      "valid": 11
+    },
+    "invalid_action_token": {
+      "invalid_action_token": 50
+    },
+    "obstacle_collision": {
+      "obstacle_collision": 50
+    },
+    "out_of_bounds": {
+      "out_of_bounds": 50
+    },
+    "valid": {
+      "valid": 29
+    }
+  },
+  "predictions_sha256": "281757dcc51e6260f61aada4bec15b603c8a27e1825ccfe7f30a194bd94917fa",
+  "prompt": "824057bfd8cf760f3eb27ad53ed17ab0d904c4711be7c9767359337277211a35",
+  "weights": "e862b3087a58d8e26be594a016571e51b3712589f54ed454ba72f57592e9c473",
+  "inputs": "7f826406a8b7b938f8b1c712d61a6f34cdb5f06625ea0f4c9a44b05a1307412e",
+  "device": "cuda:0"
+}

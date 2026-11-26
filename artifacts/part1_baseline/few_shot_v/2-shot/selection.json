@@ -1,0 +1,26 @@
+{
+  "protocol": "c965be0f91df8271134dd2561a5e75d46108a01b8d4752bfcd82fd2f6f9735da",
+  "dev_inputs": "28e297d30f18182ab956c76c41f96c051d763bd41c08ce8fdc764fa23163442d",
+  "train_states": 4000,
+  "train_rows": 36800,
+  "rule": "mean(direct environment success, structured exact-line macro-F1, self-repair success on gold-invalid candidates)",
+  "scores": {
+    "flan_t5_base": {
+      "score": 0.8123045825381762,
+      "structured_macro_f1": 0.9336484414920797,
+      "repair": 0.84,
+      "direct": 0.6632653061224489,
+      "weights": "e862b3087a58d8e26be594a016571e51b3712589f54ed454ba72f57592e9c473",
+      "metrics_sha256": "dc0af2197c9c3cfda55ebeb0f2efc0eda4873a826f586e869498fb112d58f1d8"
+    },
+    "bart_base": {
+      "score": 0.7275935179563815,
+      "structured_macro_f1": 0.8415560640732265,
+      "repair": 0.78,
+      "direct": 0.5612244897959183,
+      "weights": "a1250c25fa623d6ef9be173a4a3118dc2527cc85c9d3a03d1aeea4fad16de8d5",
+      "metrics_sha256": "f9f67789516700d2813be78e30e24d076223d554a6e32dde772a56f70eb114af"
+    }
+  },
+  "primary_model": "flan_t5_base"
+}

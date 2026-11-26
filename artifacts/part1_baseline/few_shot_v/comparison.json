@@ -1,0 +1,335 @@
+{
+  "dataset": {
+    "ref": "hope_dataset",
+    "commit": "d88f85b872560f9313ac4319cdd5fa86151c0780",
+    "replacement_manifest_sha256": "1de49a9449254f1531b376eca0e945037bea095654d07ece35c09fe8cf54a5c7"
+  },
+  "metrics": {
+    "single_error": {
+      "0-shot": {
+        "n": 200,
+        "structured_macro_f1": 0.9458030149519512,
+        "exact": 188,
+        "step_correct": 188,
+        "reason_correct": 193,
+        "verification_errors": {
+          "early": 10,
+          "valid": 2
+        },
+        "candidate_repair": {
+          "success": 165,
+          "feasible": 184,
+          "optimal": 82,
+          "delivered": 184
+        },
+        "end_to_end": {
+          "success": 159,
+          "feasible": 164,
+          "optimal": 158,
+          "delivered": 164
+        },
+        "direct": {
+          "success": 121,
+          "feasible": 135,
+          "optimal": 120,
+          "delivered": 200
+        },
+        "executor_feedback": {
+          "success": 166,
+          "feasible": 166,
+          "optimal": 165,
+          "delivered": 166
+        },
+        "matched_direct_traces": 200,
+        "matched_executor_feedback_traces": 200,
+        "candidate_false_goal_stops": 19,
+        "end_to_end_false_goal_stops": 5,
+        "fixed_probe": {
+          "pairs": 804,
+          "short_of_goal_count": 625,
+          "short_of_goal_as_wall": 10,
+          "true_wall_count": 50,
+          "true_wall_detected": 50,
+          "false_valid": 11,
+          "true_valid_count": 29,
+          "true_valid_detected": 29,
+          "true_oob_count": 50,
+          "true_oob_detected": 50,
+          "true_illegal_token_count": 50,
+          "true_illegal_token_detected": 50
+        }
+      },
+      "2-shot": {
+        "n": 200,
+        "structured_macro_f1": 0.7452712586091519,
+        "exact": 143,
+        "step_correct": 143,
+        "reason_correct": 157,
+        "verification_errors": {
+          "early": 41,
+          "late": 12,
+          "valid": 4
+        },
+        "candidate_repair": {
+          "success": 101,
+          "feasible": 120,
+          "optimal": 57,
+          "delivered": 134
+        },
+        "end_to_end": {
+          "success": 107,
+          "feasible": 118,
+          "optimal": 104,
+          "delivered": 124
+        },
+        "direct": {
+          "success": 121,
+          "feasible": 135,
+          "optimal": 120,
+          "delivered": 200
+        },
+        "executor_feedback": {
+          "success": 166,
+          "feasible": 166,
+          "optimal": 165,
+          "delivered": 166
+        },
+        "matched_direct_traces": 200,
+        "matched_executor_feedback_traces": 200,
+        "candidate_false_goal_stops": 22,
+        "end_to_end_false_goal_stops": 12,
+        "fixed_probe": {
+          "pairs": 804,
+          "short_of_goal_count": 625,
+          "short_of_goal_as_wall": 67,
+          "true_wall_count": 50,
+          "true_wall_detected": 39,
+          "false_valid": 30,
+          "true_valid_count": 29,
+          "true_valid_detected": 24,
+          "true_oob_count": 50,
+          "true_oob_detected": 43,
+          "true_illegal_token_count": 50,
+          "true_illegal_token_detected": 50
+        }
+      },
+      "3-shot": {
+        "n": 200,
+        "structured_macro_f1": 0.835382506058475,
+        "exact": 164,
+        "step_correct": 164,
+        "reason_correct": 174,
+        "verification_errors": {
+          "late": 12,
+          "valid": 6,
+          "early": 18
+        },
+        "candidate_repair": {
+          "success": 109,
+          "feasible": 125,
+          "optimal": 61,
+          "delivered": 144
+        },
+        "end_to_end": {
+          "success": 110,
+          "feasible": 121,
+          "optimal": 109,
+          "delivered": 129
+        },
+        "direct": {
+          "success": 121,
+          "feasible": 135,
+          "optimal": 120,
+          "delivered": 200
+        },
+        "executor_feedback": {
+          "success": 166,
+          "feasible": 166,
+          "optimal": 165,
+          "delivered": 166
+        },
+        "matched_direct_traces": 200,
+        "matched_executor_feedback_traces": 200,
+        "candidate_false_goal_stops": 24,
+        "end_to_end_false_goal_stops": 13,
+        "fixed_probe": {
+          "pairs": 804,
+          "short_of_goal_count": 625,
+          "short_of_goal_as_wall": 29,
+          "true_wall_count": 50,
+          "true_wall_detected": 34,
+          "false_valid": 39,
+          "true_valid_count": 29,
+          "true_valid_detected": 24,
+          "true_oob_count": 50,
+          "true_oob_detected": 48,
+          "true_illegal_token_count": 50,
+          "true_illegal_token_detected": 50
+        }
+      }
+    },
+    "double_error": {
+      "0-shot": {
+        "n": 200,
+        "structured_macro_f1": 0.9729617295049217,
+        "exact": 194,
+        "step_correct": 194,
+        "reason_correct": 196,
+        "verification_errors": {
+          "early": 5,
+          "late": 1
+        },
+        "candidate_repair": {
+          "success": 141,
+          "feasible": 166,
+          "optimal": 94,
+          "delivered": 167
+        },
+        "end_to_end": {
+          "success": 152,
+          "feasible": 157,
+          "optimal": 149,
+          "delivered": 158
+        },
+        "direct": {
+          "success": 127,
+          "feasible": 146,
+          "optimal": 125,
+          "delivered": 200
+        },
+        "executor_feedback": {
+          "success": 158,
+          "feasible": 158,
+          "optimal": 156,
+          "delivered": 158
+        },
+        "matched_direct_traces": 200,
+        "matched_executor_feedback_traces": 200,
+        "candidate_false_goal_stops": 25,
+        "end_to_end_false_goal_stops": 5,
+        "fixed_probe": {
+          "pairs": 506,
+          "short_of_goal_count": 306,
+          "short_of_goal_as_wall": 5,
+          "true_wall_count": 68,
+          "true_wall_detected": 67,
+          "false_valid": 4,
+          "true_valid_count": 0,
+          "true_valid_detected": 0,
+          "true_oob_count": 65,
+          "true_oob_detected": 65,
+          "true_illegal_token_count": 67,
+          "true_illegal_token_detected": 67
+        }
+      },
+      "2-shot": {
+        "n": 200,
+        "structured_macro_f1": 0.7830862958240261,
+        "exact": 151,
+        "step_correct": 151,
+        "reason_correct": 175,
+        "verification_errors": {
+          "late": 21,
+          "early": 26,
+          "valid": 2
+        },
+        "candidate_repair": {
+          "success": 92,
+          "feasible": 111,
+          "optimal": 63,
+          "delivered": 127
+        },
+        "end_to_end": {
+          "success": 110,
+          "feasible": 118,
+          "optimal": 106,
+          "delivered": 130
+        },
+        "direct": {
+          "success": 127,
+          "feasible": 146,
+          "optimal": 125,
+          "delivered": 200
+        },
+        "executor_feedback": {
+          "success": 158,
+          "feasible": 158,
+          "optimal": 156,
+          "delivered": 158
+        },
+        "matched_direct_traces": 200,
+        "matched_executor_feedback_traces": 200,
+        "candidate_false_goal_stops": 26,
+        "end_to_end_false_goal_stops": 15,
+        "fixed_probe": {
+          "pairs": 506,
+          "short_of_goal_count": 306,
+          "short_of_goal_as_wall": 34,
+          "true_wall_count": 68,
+          "true_wall_detected": 49,
+          "false_valid": 13,
+          "true_valid_count": 0,
+          "true_valid_detected": 0,
+          "true_oob_count": 65,
+          "true_oob_detected": 59,
+          "true_illegal_token_count": 67,
+          "true_illegal_token_detected": 67
+        }
+      },
+      "3-shot": {
+        "n": 200,
+        "structured_macro_f1": 0.801331995952796,
+        "exact": 155,
+        "step_correct": 155,
+        "reason_correct": 171,
+        "verification_errors": {
+          "late": 27,
+          "early": 16,
+          "valid": 2
+        },
+        "candidate_repair": {
+          "success": 92,
+          "feasible": 113,
+          "optimal": 63,
+          "delivered": 135
+        },
+        "end_to_end": {
+          "success": 115,
+          "feasible": 119,
+          "optimal": 111,
+          "delivered": 132
+        },
+        "direct": {
+          "success": 127,
+          "feasible": 146,
+          "optimal": 125,
+          "delivered": 200
+        },
+        "executor_feedback": {
+          "success": 158,
+          "feasible": 158,
+          "optimal": 156,
+          "delivered": 158
+        },
+        "matched_direct_traces": 200,
+        "matched_executor_feedback_traces": 200,
+        "candidate_false_goal_stops": 29,
+        "end_to_end_false_goal_stops": 9,
+        "fixed_probe": {
+          "pairs": 506,
+          "short_of_goal_count": 306,
+          "short_of_goal_as_wall": 20,
+          "true_wall_count": 68,
+          "true_wall_detected": 40,
+          "false_valid": 19,
+          "true_valid_count": 0,
+          "true_valid_detected": 0,
+          "true_oob_count": 65,
+          "true_oob_detected": 62,
+          "true_illegal_token_count": 67,
+          "true_illegal_token_detected": 67
+        }
+      }
+    }
+  }
+}
