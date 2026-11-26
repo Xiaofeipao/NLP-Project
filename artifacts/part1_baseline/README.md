@@ -4,7 +4,7 @@
 |---|---|
 | 完整指标 | [开发集选型、单错测试、双错验证、生成与修复](Part1_基线结果.md) |
 | 第一组错误分析 | [G 方向偏差、首错与修复失败](第一组_错误分析.md) |
-| 逐题与复现 | [预测及评分](scores/) · [两次 GPU 重跑回执](rerun_confirmation.json) · [离线核对](validation.json) |
+| 逐题与复现 | [预测及评分](scores/) · [指标明细](project_metrics.json) · [本次 GPU 重测](reporting_retest_20261126.json) · [初次重跑回执](rerun_confirmation.json) · [离线核对](validation.json) |
 | 权重 | [Flan-T5-base](models/expanded/flan_t5_base/) · [BART-base](models/expanded/bart_base/) |
 | 数据 | [4,000 个训练状态](data/state_ids.json) · [协议与哈希](data/protocol.json) · [单错测试金标](../../data/random_errors_20261123/single_error_200.jsonl) · [双错验证金标](../../data/random_errors_20261123/double_error_200.jsonl) |
 

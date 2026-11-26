@@ -1,0 +1,133 @@
+{
+  "identical": true,
+  "gpu": "NVIDIA GeForce RTX 3050",
+  "started_unix": 1795669297.7564478,
+  "completed_unix": 1795669437.9549084,
+  "selection": "472367479aecb3b8cfa41b7dbdad7558efb0f956c30436fe4eaed19642a2e6ad",
+  "runs": {
+    "bart_base/dev": {
+      "same_files": {
+        "metrics.json": true,
+        "candidate_predictions.jsonl": true,
+        "generated_predictions.jsonl": true,
+        "candidate_scores.jsonl": true,
+        "generated_scores.jsonl": true
+      },
+      "protocol": "b340f2051118d555a17271868b0b05c576967bad732357d46843cd909fee0eca",
+      "selection": null,
+      "metric": "exact_line_by_gold_supported_type_v1",
+      "device": "cuda:0",
+      "started_unix": 1795669321.0382333,
+      "completed_unix": 1795669328.9259722,
+      "weights": "a1250c25fa623d6ef9be173a4a3118dc2527cc85c9d3a03d1aeea4fad16de8d5",
+      "inputs": "28e297d30f18182ab956c76c41f96c051d763bd41c08ce8fdc764fa23163442d",
+      "full": false,
+      "inference_wall_s": 7.853889200021513,
+      "distinct_model_prompts": 1089,
+      "model_inputs_evaluated": 1089,
+      "executor_feedback_cpu_wall_s": 0.0,
+      "executor_feedback_calls": 0,
+      "grading_cpu_wall_s": 0.013134300010278821,
+      "files": {
+        "metrics.json": "f9f67789516700d2813be78e30e24d076223d554a6e32dde772a56f70eb114af",
+        "candidate_predictions.jsonl": "10cf2813b74f69730092321f0ae6f91524388450736cdb43a62bb29b1d8cd47f",
+        "generated_predictions.jsonl": "a6621b79d85ed6f36386db3478f2f4bb6450d4b642b8c920cbc2b367c31a5b04",
+        "candidate_scores.jsonl": "79569e2abd041eebffd6e5ea6cc744eedb81278242c5a995ca0c5701d9bdde3b",
+        "generated_scores.jsonl": "d9363d97c2a4a005ca43cbb3da9e0536518bbc15a8f299077d3fa2227852a6ec"
+      }
+    },
+    "flan_t5_base/dev": {
+      "same_files": {
+        "metrics.json": true,
+        "candidate_predictions.jsonl": true,
+        "generated_predictions.jsonl": true,
+        "candidate_scores.jsonl": true,
+        "generated_scores.jsonl": true
+      },
+      "protocol": "b340f2051118d555a17271868b0b05c576967bad732357d46843cd909fee0eca",
+      "selection": null,
+      "metric": "exact_line_by_gold_supported_type_v1",
+      "device": "cuda:0",
+      "started_unix": 1795669300.9014065,
+      "completed_unix": 1795669319.7788653,
+      "weights": "e862b3087a58d8e26be594a016571e51b3712589f54ed454ba72f57592e9c473",
+      "inputs": "28e297d30f18182ab956c76c41f96c051d763bd41c08ce8fdc764fa23163442d",
+      "full": false,
+      "inference_wall_s": 18.844040199997835,
+      "distinct_model_prompts": 1096,
+      "model_inputs_evaluated": 1096,
+      "executor_feedback_cpu_wall_s": 0.0,
+      "executor_feedback_calls": 0,
+      "grading_cpu_wall_s": 0.015512700018007308,
+      "files": {
+        "metrics.json": "dc0af2197c9c3cfda55ebeb0f2efc0eda4873a826f586e869498fb112d58f1d8",
+        "candidate_predictions.jsonl": "b695726dce5d96b5d6cb1320ed9fb6cc9c20d2716de95085b948aa648992dcbb",
+        "generated_predictions.jsonl": "009e834d0ef1f1d2c425fd11ade100ca10ffabc18b7a34ae1b78dca50cf7e229",
+        "candidate_scores.jsonl": "115fa128f69ecb89b6c00d0d855b9767cd3c389680c24e28bc8ac70d780431e1",
+        "generated_scores.jsonl": "7675c35d43e55bd384fbc0df59646f8453361146e64962ddc95d11af7fea8b50"
+      }
+    },
+    "flan_t5_base/double_error": {
+      "same_files": {
+        "metrics.json": true,
+        "candidate_predictions.jsonl": true,
+        "generated_predictions.jsonl": true,
+        "candidate_scores.jsonl": true,
+        "generated_scores.jsonl": true
+      },
+      "protocol": "b340f2051118d555a17271868b0b05c576967bad732357d46843cd909fee0eca",
+      "selection": "472367479aecb3b8cfa41b7dbdad7558efb0f956c30436fe4eaed19642a2e6ad",
+      "metric": "exact_line_by_gold_supported_type_v1",
+      "device": "cuda:0",
+      "started_unix": 1795669330.6312745,
+      "completed_unix": 1795669384.7529218,
+      "weights": "e862b3087a58d8e26be594a016571e51b3712589f54ed454ba72f57592e9c473",
+      "inputs": "2e5570557b5b00421cac5e9cabae4110d2449f383386388b18608effcb915049",
+      "full": true,
+      "inference_wall_s": 54.050430300005246,
+      "distinct_model_prompts": 2330,
+      "model_inputs_evaluated": 3435,
+      "executor_feedback_cpu_wall_s": 0.13130379997892305,
+      "executor_feedback_calls": 2785,
+      "grading_cpu_wall_s": 0.0486677999724634,
+      "files": {
+        "metrics.json": "320d7e297a97dca41698375e84d969ede3586f6dc9ad571ef6bab1264c18de81",
+        "candidate_predictions.jsonl": "0a353d33d4fe0b0b600244c0764980d1279c58ff71bcdc16fb189077c7044235",
+        "generated_predictions.jsonl": "425a3f429d05f4d510dd7ca4e08c9763ad9322f8cac0e74ffbf2d6144aeecb43",
+        "candidate_scores.jsonl": "c6ab5cc778e6faa26572375a972de1d99b3b943564f5536fc47e8cfb38e5d03d",
+        "generated_scores.jsonl": "97ad81624e86434e0a925ea5239b24f46f8b049df32a23e39cc541c04524a290"
+      }
+    },
+    "flan_t5_base/single_error": {
+      "same_files": {
+        "metrics.json": true,
+        "candidate_predictions.jsonl": true,
+        "generated_predictions.jsonl": true,
+        "candidate_scores.jsonl": true,
+        "generated_scores.jsonl": true
+      },
+      "protocol": "b340f2051118d555a17271868b0b05c576967bad732357d46843cd909fee0eca",
+      "selection": "472367479aecb3b8cfa41b7dbdad7558efb0f956c30436fe4eaed19642a2e6ad",
+      "metric": "exact_line_by_gold_supported_type_v1",
+      "device": "cuda:0",
+      "started_unix": 1795669384.7760336,
+      "completed_unix": 1795669437.7391818,
+      "weights": "e862b3087a58d8e26be594a016571e51b3712589f54ed454ba72f57592e9c473",
+      "inputs": "7f826406a8b7b938f8b1c712d61a6f34cdb5f06625ea0f4c9a44b05a1307412e",
+      "full": true,
+      "inference_wall_s": 52.890481899958104,
+      "distinct_model_prompts": 2553,
+      "model_inputs_evaluated": 3392,
+      "executor_feedback_cpu_wall_s": 0.110114699753467,
+      "executor_feedback_calls": 2364,
+      "grading_cpu_wall_s": 0.05042360001243651,
+      "files": {
+        "metrics.json": "7ce24677ab5ce4225f02d3af8c451158491148e03cb95409109c3f05e4a7abc6",
+        "candidate_predictions.jsonl": "6c0b7ad7d2bc05c890a888482febbe76a172e67bff0560a52469552e4df22850",
+        "generated_predictions.jsonl": "2f05431a8b41d8925c59b714562d4fea375672b7cb435e2a96cdb924ccc9bc41",
+        "candidate_scores.jsonl": "b71359886bde28e73433eccfe54168d117a33153561c07dfe457de74988935c2",
+        "generated_scores.jsonl": "1112f39e86fa81112891dec0e7607f6e7f6d7b1f6091571b7f1d0e7491b9c1dd"
+      }
+    }
+  }
+}
