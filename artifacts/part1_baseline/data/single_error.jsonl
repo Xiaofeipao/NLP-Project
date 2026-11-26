@@ -2,7 +2,7 @@
 {"id":"random-40c3350d62d9a948bd5c660c","grid":{"rows":6,"cols":6,"start":[2,3],"goal":[1,5],"obstacles":[[0,0],[1,2],[2,5],[3,1],[3,2],[4,3],[5,4]]},"candidate":"backward up up right right down"}
 {"id":"random-4c3cf106d238abdab658b897","grid":{"rows":6,"cols":6,"start":[2,2],"goal":[0,4],"obstacles":[[0,2],[0,5],[2,0],[3,1],[4,0]]},"candidate":"up right up leftward right"}
 {"id":"random-67d193783c72a316edc9b4a5","grid":{"rows":6,"cols":6,"start":[1,4],"goal":[4,2],"obstacles":[[0,0],[1,0],[2,0],[2,2],[2,4],[3,1],[3,2],[4,4],[5,1]]},"candidate":"left down left down right right down down left left left up"}
-{"id":"random-b74e0ff23bee13de73d264cf","grid":{"rows":6,"cols":6,"start":[2,4],"goal":[0,5],"obstacles":[[0,0],[0,4],[1,3],[2,5],[3,1],[3,3],[4,0],[5,1]]},"candidate":"DOWN up right up"}
+{"id":"random-b74e0ff23bee13de73d264cf","grid":{"rows":6,"cols":6,"start":[2,4],"goal":[0,5],"obstacles":[[0,0],[0,4],[1,3],[2,5],[3,1],[3,3],[4,0],[5,1]]},"candidate":"wait up right up"}
 {"id":"random-2042d76f034c513f06b211f4","grid":{"rows":6,"cols":6,"start":[2,5],"goal":[0,4],"obstacles":[[0,1],[0,3],[1,4],[2,4],[3,5],[4,0]]},"candidate":"up"}
 {"id":"random-64333fffa478ca08e6570e9f","grid":{"rows":6,"cols":6,"start":[2,5],"goal":[5,5],"obstacles":[[0,3],[1,1],[1,2],[1,4],[2,2],[5,0],[5,3]]},"candidate":"down down left down right down"}
 {"id":"random-5162ac5d488fe5b95b987a98","grid":{"rows":6,"cols":6,"start":[3,0],"goal":[3,5],"obstacles":[[0,3],[0,5],[1,3],[3,3],[3,4],[4,4]]},"candidate":"right right right up right right right down"}
@@ -12,10 +12,10 @@
 {"id":"random-5aa0461c24ce4b707b6a31ec","grid":{"rows":6,"cols":6,"start":[1,5],"goal":[0,4],"obstacles":[[0,0],[0,1],[0,5],[2,3],[3,0],[3,3],[3,5],[4,0]]},"candidate":"right left left up right"}
 {"id":"random-a15178dd94cbffcb4681652e","grid":{"rows":6,"cols":6,"start":[5,3],"goal":[0,2],"obstacles":[[0,1],[1,1],[3,2],[3,3],[4,3],[5,0]]},"candidate":"right right up left up up right up up up left left down left up"}
 {"id":"random-38a5421f4110ba0bfd614b29","grid":{"rows":6,"cols":6,"start":[1,3],"goal":[2,2],"obstacles":[[1,2],[2,1],[4,5],[5,1]]},"candidate":"down right right down left turn_right left left up"}
-{"id":"random-1f5247411ef42e521fb4ebef","grid":{"rows":6,"cols":6,"start":[2,4],"goal":[0,5],"obstacles":[[0,1],[0,2],[1,0],[2,3],[3,4],[4,0],[4,3],[5,0],[5,1],[5,3],[5,4]]},"candidate":"UP up right up"}
+{"id":"random-1f5247411ef42e521fb4ebef","grid":{"rows":6,"cols":6,"start":[2,4],"goal":[0,5],"obstacles":[[0,1],[0,2],[1,0],[2,3],[3,4],[4,0],[4,3],[5,0],[5,1],[5,3],[5,4]]},"candidate":"jump up right up"}
 {"id":"random-193a4da76b7cf69fece895e1","grid":{"rows":6,"cols":6,"start":[3,3],"goal":[5,4],"obstacles":[[1,0],[2,4],[3,1],[3,4],[4,1],[5,1]]},"candidate":"up up left left down right down down right right right down down left"}
 {"id":"random-4b2da439d20dbe3043ded94d","grid":{"rows":6,"cols":6,"start":[3,3],"goal":[5,2],"obstacles":[[0,1],[0,3],[1,1],[1,3],[2,1],[2,4],[4,0],[4,3],[5,3]]},"candidate":"left left down right down down"}
-{"id":"random-4b9ed57303e3d200d3f37547","grid":{"rows":6,"cols":6,"start":[2,4],"goal":[4,5],"obstacles":[[0,3],[1,0],[1,1],[1,5],[2,0],[3,3],[3,5],[4,0],[4,3],[5,2],[5,5]]},"candidate":"down down LEFT right"}
+{"id":"random-4b9ed57303e3d200d3f37547","grid":{"rows":6,"cols":6,"start":[2,4],"goal":[4,5],"obstacles":[[0,3],[1,0],[1,1],[1,5],[2,0],[3,3],[3,5],[4,0],[4,3],[5,2],[5,5]]},"candidate":"down down teleport right"}
 {"id":"random-380b5e36dae4bdc6df3ca9ec","grid":{"rows":6,"cols":6,"start":[3,0],"goal":[2,2],"obstacles":[[0,4],[0,5],[1,0],[2,3],[2,5],[3,1],[3,2],[3,3],[3,4],[3,5],[4,3],[5,1],[5,3],[5,4]]},"candidate":"up left right right"}
 {"id":"random-d55c96059a18a7a1f2b4521f","grid":{"rows":6,"cols":6,"start":[2,2],"goal":[0,2],"obstacles":[[0,0],[0,3],[0,5],[1,0],[1,2],[1,3],[1,5],[2,4],[3,4],[3,5],[4,1],[5,1],[5,4]]},"candidate":"down left down up up up right"}
 {"id":"random-a5b4348d496be81a64a53809","grid":{"rows":6,"cols":6,"start":[4,5],"goal":[4,4],"obstacles":[[0,0],[0,5],[1,1],[1,2],[1,3],[2,1],[3,4],[4,3]]},"candidate":"down left up up"}
@@ -44,7 +44,7 @@
 {"id":"random-154b19b0f417dbddacb69c33","grid":{"rows":6,"cols":6,"start":[1,0],"goal":[0,1],"obstacles":[[0,3],[0,5],[1,3],[1,4],[2,1],[2,2],[3,1],[3,3],[3,4],[3,5],[4,3],[5,3]]},"candidate":"right right up right left"}
 {"id":"random-aee2232f715beda0c4bcacb3","grid":{"rows":6,"cols":6,"start":[5,0],"goal":[5,4],"obstacles":[[0,0],[0,1],[0,5],[1,0],[1,2],[2,3],[2,5],[4,2],[5,1]]},"candidate":"up right up left up right right down right right right down left left down right down"}
 {"id":"random-6d1f83164d5fa27f2b015426","grid":{"rows":6,"cols":6,"start":[4,4],"goal":[4,0],"obstacles":[[0,4],[0,5],[1,3],[1,5],[2,2],[3,1],[3,2]]},"candidate":"down left"}
-{"id":"random-719b8a4fc427aa530764783b","grid":{"rows":6,"cols":6,"start":[4,1],"goal":[4,3],"obstacles":[[0,1],[1,3],[2,3],[3,1],[3,2],[3,3],[3,4],[3,5],[4,4],[5,0],[5,1]]},"candidate":"right down RIGHT right up"}
+{"id":"random-719b8a4fc427aa530764783b","grid":{"rows":6,"cols":6,"start":[4,1],"goal":[4,3],"obstacles":[[0,1],[1,3],[2,3],[3,1],[3,2],[3,3],[3,4],[3,5],[4,4],[5,0],[5,1]]},"candidate":"right down stay right up"}
 {"id":"random-86474e47d5ecf0d78772ac5f","grid":{"rows":6,"cols":6,"start":[5,1],"goal":[3,3],"obstacles":[[0,0],[0,5],[4,2],[5,3]]},"candidate":"left up up up right right down right jump"}
 {"id":"random-df357447902fe1affdfeca40","grid":{"rows":6,"cols":6,"start":[0,0],"goal":[5,2],"obstacles":[[0,2],[1,0],[1,5],[2,1],[3,3],[4,1],[4,2]]},"candidate":"right down right right up right down down left left down left left down left down right right"}
 {"id":"random-7fc65d2ac757e3abcb687988","grid":{"rows":6,"cols":6,"start":[3,2],"goal":[2,0],"obstacles":[[1,5],[2,1],[2,2],[4,1],[5,1],[5,2]]},"candidate":"left left"}
@@ -78,7 +78,7 @@
 {"id":"random-0c50fb3cc6eb58492d5a5e5f","grid":{"rows":6,"cols":6,"start":[5,4],"goal":[5,3],"obstacles":[[0,0],[0,3],[1,3],[2,2],[2,5],[4,0],[5,0],[5,1],[5,2]]},"candidate":"up left"}
 {"id":"random-f5c7e6ac2c8b274521a9fb26","grid":{"rows":6,"cols":6,"start":[1,4],"goal":[0,4],"obstacles":[[2,2],[2,3],[3,4],[5,0],[5,1]]},"candidate":"left down up right"}
 {"id":"random-17d64c539db301875e8d3512","grid":{"rows":6,"cols":6,"start":[5,0],"goal":[2,2],"obstacles":[[0,0],[0,2],[1,4],[1,5],[3,1],[3,3],[4,1],[5,1],[5,4]]},"candidate":"up up"}
-{"id":"random-b1c94fc3af240be3e0aad39d","grid":{"rows":6,"cols":6,"start":[4,3],"goal":[3,4],"obstacles":[[0,4],[2,0],[3,5],[4,1],[4,4]]},"candidate":"DOWN left down left left up up right up right down right right"}
+{"id":"random-b1c94fc3af240be3e0aad39d","grid":{"rows":6,"cols":6,"start":[4,3],"goal":[3,4],"obstacles":[[0,4],[2,0],[3,5],[4,1],[4,4]]},"candidate":"wait left down left left up up right up right down right right"}
 {"id":"random-7a62e15a096cd78558417aab","grid":{"rows":6,"cols":6,"start":[5,2],"goal":[1,2],"obstacles":[[0,3],[1,3],[1,4],[1,5],[2,0],[2,5],[4,2],[5,5]]},"candidate":"left down left up right up right up left up up right down"}
 {"id":"random-1f621e53a60805be06249d27","grid":{"rows":6,"cols":6,"start":[4,1],"goal":[1,0],"obstacles":[[0,5],[1,1],[1,2],[1,3],[5,2],[5,5]]},"candidate":"up left up"}
 {"id":"random-382691d176746b9765b1d7fb","grid":{"rows":6,"cols":6,"start":[5,1],"goal":[5,4],"obstacles":[[2,1],[2,4],[3,5],[4,5]]},"candidate":"up right right wait down right"}
@@ -91,7 +91,7 @@
 {"id":"random-695f2fe12d9ba18a2d33a211","grid":{"rows":6,"cols":6,"start":[3,4],"goal":[2,3],"obstacles":[[0,1],[0,4],[0,5],[1,1],[1,2],[2,0],[2,2],[4,1],[5,1]]},"candidate":"right up left up left down left"}
 {"id":"random-bcc47081e948ba3a4ae7317c","grid":{"rows":6,"cols":6,"start":[1,3],"goal":[4,4],"obstacles":[[0,2],[0,5],[2,1],[2,2],[2,4],[4,0],[5,0],[5,2],[5,4],[5,5]]},"candidate":"right down right down down left down"}
 {"id":"random-a28617736312722ea310d028","grid":{"rows":6,"cols":6,"start":[2,1],"goal":[0,2],"obstacles":[[0,3],[0,4],[1,4],[2,3],[2,4],[3,2],[3,3],[5,0],[5,4]]},"candidate":"right down up up"}
-{"id":"random-abe83d6d921e0af2566b4480","grid":{"rows":6,"cols":6,"start":[3,1],"goal":[4,4],"obstacles":[[0,0],[0,3],[0,4],[1,1],[1,5],[4,3],[5,3],[5,5]]},"candidate":"right up right right down down RIGHT"}
+{"id":"random-abe83d6d921e0af2566b4480","grid":{"rows":6,"cols":6,"start":[3,1],"goal":[4,4],"obstacles":[[0,0],[0,3],[0,4],[1,1],[1,5],[4,3],[5,3],[5,5]]},"candidate":"right up right right down down stay"}
 {"id":"random-a22f6e365743114ab053b0ae","grid":{"rows":6,"cols":6,"start":[2,2],"goal":[1,0],"obstacles":[[0,1],[0,5],[2,3],[3,0],[3,1],[3,2],[3,4],[4,1],[5,1]]},"candidate":"left left left up"}
 {"id":"random-57ae82c99e4d0a63ca5a5bfb","grid":{"rows":6,"cols":6,"start":[4,2],"goal":[3,5],"obstacles":[[0,1],[1,0],[1,1],[2,5],[4,0],[4,4],[5,2],[5,3]]},"candidate":"right up right right right"}
 {"id":"random-c2b88e79cfba4d6324989d79","grid":{"rows":6,"cols":6,"start":[1,3],"goal":[0,1],"obstacles":[[2,5],[3,1],[3,4],[4,3],[5,3]]},"candidate":"left"}
@@ -104,7 +104,7 @@
 {"id":"random-96b7789d272da9f765eb85a8","grid":{"rows":6,"cols":6,"start":[4,2],"goal":[2,4],"obstacles":[[0,1],[0,5],[1,4],[2,1],[2,2],[5,0]]},"candidate":"left left left up right right right right up"}
 {"id":"random-520e9df7818eb3de1e0c8602","grid":{"rows":6,"cols":6,"start":[1,4],"goal":[0,4],"obstacles":[[0,5],[1,0],[1,1],[1,2],[2,3],[2,4],[3,2],[4,0],[5,1],[5,2]]},"candidate":"left up up right"}
 {"id":"random-9de892bd8a4c594b03024b27","grid":{"rows":6,"cols":6,"start":[4,1],"goal":[1,5],"obstacles":[[3,1],[3,3],[4,5],[5,5]]},"candidate":"right up up right right up up right east down"}
-{"id":"random-fe8d8df63fd447967311f3b9","grid":{"rows":6,"cols":6,"start":[3,5],"goal":[3,2],"obstacles":[[0,2],[1,0],[1,1],[1,3],[1,4],[2,0],[3,0],[3,1],[3,3],[4,1],[5,0],[5,2],[5,4],[5,5]]},"candidate":"left down left left up LEFT"}
+{"id":"random-fe8d8df63fd447967311f3b9","grid":{"rows":6,"cols":6,"start":[3,5],"goal":[3,2],"obstacles":[[0,2],[1,0],[1,1],[1,3],[1,4],[2,0],[3,0],[3,1],[3,3],[4,1],[5,0],[5,2],[5,4],[5,5]]},"candidate":"left down left left up teleport"}
 {"id":"random-e53911aa77f0131f2a170a95","grid":{"rows":6,"cols":6,"start":[1,4],"goal":[0,2],"obstacles":[[0,0],[0,5],[1,1],[1,3],[1,5],[2,2],[2,4],[2,5],[3,1],[3,4],[4,1]]},"candidate":"up left up left"}
 {"id":"random-505f24f3b08290f3eb27b0cc","grid":{"rows":6,"cols":6,"start":[1,2],"goal":[5,3],"obstacles":[[0,0],[0,4],[1,1],[1,3],[2,5],[3,1],[4,3]]},"candidate":"down down down left left down right right down right"}
 {"id":"random-42c786294490ee4cb48b504b","grid":{"rows":6,"cols":6,"start":[5,0],"goal":[4,0],"obstacles":[[0,4],[1,5],[2,0],[2,4],[3,0],[3,5],[4,2]]},"candidate":"right up"}
@@ -187,7 +187,7 @@
 {"id":"random-f51e8e7e74bbbd583b60baa3","grid":{"rows":6,"cols":6,"start":[1,0],"goal":[0,5],"obstacles":[[0,3],[1,1],[3,0],[3,2],[3,3],[3,4],[4,1],[5,0]]},"candidate":"down right right turn_left right right up right up"}
 {"id":"random-7861951926ff6167c254916e","grid":{"rows":6,"cols":6,"start":[4,0],"goal":[3,0],"obstacles":[[1,1],[2,0],[2,4],[3,5],[4,2],[4,5],[5,2]]},"candidate":"down right up"}
 {"id":"random-2dc899e96de448493ac1c179","grid":{"rows":6,"cols":6,"start":[2,4],"goal":[3,3],"obstacles":[[0,1],[3,4],[5,4],[5,5]]},"candidate":"right up up right left left down down down"}
-{"id":"random-7495301a0ca5d64015445ff5","grid":{"rows":6,"cols":6,"start":[5,3],"goal":[3,5],"obstacles":[[0,5],[1,2],[2,0],[3,0],[4,4]]},"candidate":"DOWN up up right right"}
+{"id":"random-7495301a0ca5d64015445ff5","grid":{"rows":6,"cols":6,"start":[5,3],"goal":[3,5],"obstacles":[[0,5],[1,2],[2,0],[3,0],[4,4]]},"candidate":"wait up up right right"}
 {"id":"random-defd7c4cdad5feee3bc28dcd","grid":{"rows":6,"cols":6,"start":[4,2],"goal":[5,4],"obstacles":[[0,0],[0,2],[0,3],[1,1],[1,4],[2,3],[3,5],[4,1],[4,3],[4,5]]},"candidate":"down"}
 {"id":"random-9e94f0ff71e0922e58591b23","grid":{"rows":6,"cols":6,"start":[1,3],"goal":[3,4],"obstacles":[[1,2],[1,4],[2,1],[4,0],[4,2],[5,0],[5,1]]},"candidate":"down right"}
 {"id":"random-6b788fda20d5b74df08f58a3","grid":{"rows":6,"cols":6,"start":[5,3],"goal":[4,3],"obstacles":[[1,2],[1,3],[2,5],[3,2],[4,5]]},"candidate":"left down up right"}
@@ -196,5 +196,5 @@
 {"id":"random-21cc69e2d2824d03e949f771","grid":{"rows":6,"cols":6,"start":[1,5],"goal":[2,2],"obstacles":[[3,0],[3,5],[4,1]]},"candidate":"down right left down left up left"}
 {"id":"random-0321a350f68c34d7b586bb4f","grid":{"rows":6,"cols":6,"start":[5,3],"goal":[3,1],"obstacles":[[2,1],[2,4],[3,0],[4,1],[4,3],[5,0],[5,4]]},"candidate":"left up south up left"}
 {"id":"random-c50417a93fad1802366be7c3","grid":{"rows":6,"cols":6,"start":[1,2],"goal":[4,2],"obstacles":[[0,2],[2,1],[2,5],[4,3],[4,5],[5,0],[5,1]]},"candidate":"left up left down turn_left down down right right down"}
-{"id":"random-e9940ecad89fb99ab2aa2312","grid":{"rows":6,"cols":6,"start":[0,2],"goal":[1,0],"obstacles":[[1,1],[1,2],[2,0],[2,1],[3,4],[5,1]]},"candidate":"DOWN left left down"}
+{"id":"random-e9940ecad89fb99ab2aa2312","grid":{"rows":6,"cols":6,"start":[0,2],"goal":[1,0],"obstacles":[[1,1],[1,2],[2,0],[2,1],[3,4],[5,1]]},"candidate":"wait left left down"}
 {"id":"random-aa448b8b978e6bf193f7aa14","grid":{"rows":6,"cols":6,"start":[3,5],"goal":[4,3],"obstacles":[[0,2],[1,2],[1,5],[2,1],[2,2],[2,3],[2,4],[4,0],[5,3]]},"candidate":"left down left jump"}

@@ -8,7 +8,7 @@
 | 权重 | [Flan-T5-base](models/expanded/flan_t5_base/) · [BART-base](models/expanded/bart_base/) |
 | 数据 | [4,000 个训练状态](data/state_ids.json) · [协议与哈希](data/protocol.json) · [单错测试金标](../../data/random_errors_20261123/single_error_200.jsonl) · [双错验证金标](../../data/random_errors_20261123/double_error_200.jsonl) |
 
-Hope 按原题号、顺序与金标重新评估。单错 200 条作测试集，双错 200 条作验证集。Flan 与 BART 在原 100 条开发集上选型。划分用途、题数和哈希均写入[数据协议](data/protocol.json)。
+单错测试集和双错验证集各 200 条，来自 hope_dataset 的 d88f85b 修订。单错修改了 9 道题，双错修改了 19 道题，共替换 29 处大写方向词。Flan 与 BART 仍用原 100 条开发题选型。[hope_dataset 数据修订](https://github.com/Xiaofeipao/NLP-Project/commit/d88f85b872560f9313ac4319cdd5fa86151c0780) · [数据协议与哈希](data/protocol.json) · [替换清单](../../data/random_errors_20261123/illegal_word_replacement_20261126.json)
 
 ## 下载与验证
 

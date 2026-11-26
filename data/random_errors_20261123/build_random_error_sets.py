@@ -8,7 +8,7 @@ from ppnl.core import Grid,ACTIONS,execute,OfficialOracle,shortest_path
 from ppnl.data import read_jsonl,write_json,write_jsonl
 
 KINDS=('obstacle_collision','out_of_bounds','invalid_action_token','goal_not_reached')
-WORDS=('jump','wait','north','south','east','west','forward','backward','turn_left','turn_right','stay','teleport','upward','downward','leftward','rightward','UP','DOWN','LEFT','RIGHT')
+WORDS=('jump','wait','north','south','east','west','forward','backward','turn_left','turn_right','stay','teleport','upward','downward','leftward','rightward')
 
 def random_route(rng):
     cells=[(r,c) for r in range(6) for c in range(6)]

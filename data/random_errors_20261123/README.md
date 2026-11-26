@@ -1,6 +1,6 @@
 # 随机单错与双错网格测试集
 
-本目录保存随机生成的 6×6 网格错误候选。Hope 的 Part 1 用单错 200 条作测试集、双错 200 条作验证集，原样保留题号、顺序和金标。[Hope 划分及哈希](../../artifacts/part1_baseline/data/protocol.json)
+本目录保存 6×6 网格错误候选。Hope 的 Part 1 使用 hope_dataset 修订版，单错 200 条用于测试，双错 200 条用于验证。[hope_dataset 数据修订](https://github.com/Xiaofeipao/NLP-Project/commit/d88f85b872560f9313ac4319cdd5fa86151c0780) · [Hope 协议](../../artifacts/part1_baseline/data/protocol.json)
 
 | 文件 | 内容 |
 | --- | --- |
@@ -11,7 +11,7 @@
 | `DATASET_CARD.txt` | 完整数据定义、随机性与使用边界 |
 | 三个 `.py` 文件 | 原始生成和独立审计脚本，保留运行时版本 |
 
-完整压缩包：[random-error-datasets-20261123.zip](../../deliverables/random-error-datasets-20261123.zip)。压缩包保存原始交付文件；本 README 为发布时增加的导航说明。
+原始版本压缩包：[random-error-datasets-20261123.zip](../../deliverables/random-error-datasets-20261123.zip)。压缩包保存原始交付文件；本 README 为发布时增加的导航说明。
 
 ## 双错配额
 
@@ -44,3 +44,5 @@
 400 条样本使用互不重复的布局；与构造时扫描的旧数据及最新配对状态库无精确布局重合。未声明旋转／镜像形状完全隔离。
 
 生成和审计脚本保留原工作区路径约定，依赖相应版本的 `ppnl` 源码、官方执行器和排除布局文件。它们不是在任意目录直接可运行的独立包；迁移机器时需调整这些路径。原始清单和源码不因发布而重写。
+
+2026-11-26：UP/DOWN/LEFT/RIGHT非法动作分别替换为jump/wait/teleport/stay。仅动作词替换；地图、ID、首错位置、金标、单错/双错事件数不变，400条重放通过。修订版的逐题评测记录已更新。[修订版结果](../../artifacts/part1_baseline/Part1_基线结果.md) · [逐处替换清单](illegal_word_replacement_20261126.json)

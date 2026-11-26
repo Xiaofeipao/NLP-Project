@@ -37,29 +37,15 @@
     "single_error": {
       "role": "test",
       "n": 200,
-      "correct_first_errors": 182,
+      "correct_first_errors": 188,
       "first_error_mismatches": {
-        "late": 2,
-        "wrong_type": 3,
         "early": 10,
-        "false_valid": 3
+        "false_valid": 2
       },
       "component": {
-        "C": 5,
-        "V": 12,
-        "CV": 1
+        "V": 12
       },
       "incorrect_transitions": [
-        {
-          "gold": "invalid_action_token",
-          "predicted": "goal_not_reached",
-          "count": 2
-        },
-        {
-          "gold": "invalid_action_token",
-          "predicted": "obstacle_collision",
-          "count": 3
-        },
         {
           "gold": "goal_not_reached",
           "predicted": "obstacle_collision",
@@ -69,31 +55,36 @@
           "gold": "goal_not_reached",
           "predicted": "valid",
           "count": 2
-        },
-        {
-          "gold": "invalid_action_token",
-          "predicted": "valid",
-          "count": 1
         }
       ],
       "lexical": {
-        "other": 41,
-        "other_exact": 41,
-        "upper": 9,
-        "upper_exact": 3
+        "other": 50,
+        "other_exact": 50
       },
       "no_coordinate_verdicts": {
-        "invalid_action_token": 44
+        "invalid_action_token": 50
       },
       "repair_failures_after_correct_verification": {
-        "returned_plan": 11,
+        "returned_plan": 12,
         "attempt_limit": 11,
-        "returned_prefix": 3
+        "returned_prefix": 4
       },
       "scored_path_errors": {
-        "goal_not_reached": 25
+        "goal_not_reached": 27
       },
       "returned_prefix_failures": [
+        {
+          "id": "random-4b9ed57303e3d200d3f37547",
+          "path": "down down",
+          "cell": "(4,4)",
+          "goal": "(4,5)",
+          "offline_cell": "(4,4)",
+          "goal_distance_manhattan": 1,
+          "predicted_V": "valid",
+          "offline_verdict": "invalid | step=3 | reason=goal_not_reached",
+          "feasible": true,
+          "new_move_attempts": 0
+        },
         {
           "id": "random-2315f545a8efaf762197e5a4",
           "path": "up up",
@@ -132,32 +123,6 @@
         }
       ],
       "cases": [
-        {
-          "id": "random-1f5247411ef42e521fb4ebef",
-          "gold": "invalid | step=1 | reason=invalid_action_token",
-          "prediction": "invalid | step=4 | reason=out_of_bounds",
-          "timing": "late",
-          "decisive_step": 1,
-          "action": "UP",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(1,4)",
-          "expected_V_on_predicted_cell": "goal_not_reached",
-          "predicted_V": "goal_not_reached",
-          "error_component": "C"
-        },
-        {
-          "id": "random-4b9ed57303e3d200d3f37547",
-          "gold": "invalid | step=3 | reason=invalid_action_token",
-          "prediction": "invalid | step=3 | reason=obstacle_collision",
-          "timing": "wrong_type",
-          "decisive_step": 3,
-          "action": "LEFT",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(4,3)",
-          "expected_V_on_predicted_cell": "obstacle_collision",
-          "predicted_V": "obstacle_collision",
-          "error_component": "C"
-        },
         {
           "id": "random-e02492e7639800d333f610ab",
           "gold": "invalid | step=5 | reason=goal_not_reached",
@@ -198,19 +163,6 @@
           "error_component": "V"
         },
         {
-          "id": "random-719b8a4fc427aa530764783b",
-          "gold": "invalid | step=3 | reason=invalid_action_token",
-          "prediction": "invalid | step=5 | reason=obstacle_collision",
-          "timing": "late",
-          "decisive_step": 3,
-          "action": "RIGHT",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(5,3)",
-          "expected_V_on_predicted_cell": "goal_not_reached",
-          "predicted_V": "goal_not_reached",
-          "error_component": "C"
-        },
-        {
           "id": "random-f6028963f7ad8cac3d99dcaf",
           "gold": "invalid | step=3 | reason=goal_not_reached",
           "prediction": "valid",
@@ -222,32 +174,6 @@
           "expected_V_on_predicted_cell": "goal_not_reached",
           "predicted_V": "valid",
           "error_component": "V"
-        },
-        {
-          "id": "random-abe83d6d921e0af2566b4480",
-          "gold": "invalid | step=7 | reason=invalid_action_token",
-          "prediction": "valid",
-          "timing": "false_valid",
-          "decisive_step": 7,
-          "action": "RIGHT",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(4,5)",
-          "expected_V_on_predicted_cell": "goal_not_reached",
-          "predicted_V": "valid",
-          "error_component": "CV"
-        },
-        {
-          "id": "random-fe8d8df63fd447967311f3b9",
-          "gold": "invalid | step=6 | reason=invalid_action_token",
-          "prediction": "invalid | step=6 | reason=obstacle_collision",
-          "timing": "wrong_type",
-          "decisive_step": 6,
-          "action": "LEFT",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(3,1)",
-          "expected_V_on_predicted_cell": "obstacle_collision",
-          "predicted_V": "obstacle_collision",
-          "error_component": "C"
         },
         {
           "id": "random-53a22fadb0c7df0cd4cbd3e7",
@@ -352,49 +278,23 @@
           "expected_V_on_predicted_cell": "goal_not_reached",
           "predicted_V": "obstacle_collision",
           "error_component": "V"
-        },
-        {
-          "id": "random-e9940ecad89fb99ab2aa2312",
-          "gold": "invalid | step=1 | reason=invalid_action_token",
-          "prediction": "invalid | step=1 | reason=obstacle_collision",
-          "timing": "wrong_type",
-          "decisive_step": 1,
-          "action": "DOWN",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(1,2)",
-          "expected_V_on_predicted_cell": "obstacle_collision",
-          "predicted_V": "obstacle_collision",
-          "error_component": "C"
         }
       ],
-      "predictions_sha256": "068042e77e08f30482f834a1bc69e167b80e1a4ca31ab6901c2c06a04a051c20",
-      "scores_sha256": "5217b67570571865c33abd9da616f0d7b98d707e9f954afe26df1d662399627b"
+      "predictions_sha256": "6c0b7ad7d2bc05c890a888482febbe76a172e67bff0560a52469552e4df22850",
+      "scores_sha256": "b71359886bde28e73433eccfe54168d117a33153561c07dfe457de74988935c2"
     },
     "double_error": {
       "role": "validation",
       "n": 200,
-      "correct_first_errors": 186,
+      "correct_first_errors": 194,
       "first_error_mismatches": {
-        "wrong_type": 2,
-        "late": 5,
         "early": 5,
-        "false_valid": 2
+        "late": 1
       },
       "component": {
-        "C": 8,
         "V": 6
       },
       "incorrect_transitions": [
-        {
-          "gold": "invalid_action_token",
-          "predicted": "out_of_bounds",
-          "count": 2
-        },
-        {
-          "gold": "invalid_action_token",
-          "predicted": "goal_not_reached",
-          "count": 5
-        },
         {
           "gold": "goal_not_reached",
           "predicted": "obstacle_collision",
@@ -404,30 +304,23 @@
           "gold": "obstacle_collision",
           "predicted": "goal_not_reached",
           "count": 1
-        },
-        {
-          "gold": "invalid_action_token",
-          "predicted": "valid",
-          "count": 1
         }
       ],
       "lexical": {
-        "other": 56,
-        "other_exact": 56,
-        "upper": 11,
-        "upper_exact": 2
+        "other": 67,
+        "other_exact": 66
       },
       "no_coordinate_verdicts": {
-        "invalid_action_token": 60
+        "invalid_action_token": 66
       },
       "repair_failures_after_correct_verification": {
-        "returned_plan": 20,
-        "attempt_limit": 29,
+        "returned_plan": 21,
+        "attempt_limit": 31,
         "directions_exhausted": 1,
         "returned_prefix": 4
       },
       "scored_path_errors": {
-        "goal_not_reached": 53,
+        "goal_not_reached": 56,
         "obstacle_collision": 1
       },
       "returned_prefix_failures": [
@@ -482,32 +375,6 @@
       ],
       "cases": [
         {
-          "id": "random-6d6e0007bfccdd82990122cd",
-          "gold": "invalid | step=4 | reason=invalid_action_token",
-          "prediction": "invalid | step=4 | reason=out_of_bounds",
-          "timing": "wrong_type",
-          "decisive_step": 4,
-          "action": "UP",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(-1,0)",
-          "expected_V_on_predicted_cell": "out_of_bounds",
-          "predicted_V": "out_of_bounds",
-          "error_component": "C"
-        },
-        {
-          "id": "random-74416e19e6a3a5d3a8f29dd8",
-          "gold": "invalid | step=1 | reason=invalid_action_token",
-          "prediction": "invalid | step=6 | reason=invalid_action_token",
-          "timing": "late",
-          "decisive_step": 1,
-          "action": "DOWN",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(1,2)",
-          "expected_V_on_predicted_cell": "goal_not_reached",
-          "predicted_V": "goal_not_reached",
-          "error_component": "C"
-        },
-        {
           "id": "random-04433fedd1f141ec014366ec",
           "gold": "invalid | step=3 | reason=invalid_action_token",
           "prediction": "invalid | step=2 | reason=obstacle_collision",
@@ -519,19 +386,6 @@
           "expected_V_on_predicted_cell": "goal_not_reached",
           "predicted_V": "obstacle_collision",
           "error_component": "V"
-        },
-        {
-          "id": "random-9ec8755720f9ba06e98eccd1",
-          "gold": "invalid | step=2 | reason=invalid_action_token",
-          "prediction": "invalid | step=9 | reason=out_of_bounds",
-          "timing": "late",
-          "decisive_step": 2,
-          "action": "UP",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(4,5)",
-          "expected_V_on_predicted_cell": "goal_not_reached",
-          "predicted_V": "goal_not_reached",
-          "error_component": "C"
         },
         {
           "id": "random-1c90c589d98a838ea6f87a52",
@@ -573,58 +427,6 @@
           "error_component": "V"
         },
         {
-          "id": "random-89d61d734ff4e4847b5df121",
-          "gold": "invalid | step=3 | reason=invalid_action_token",
-          "prediction": "invalid | step=3 | reason=out_of_bounds",
-          "timing": "wrong_type",
-          "decisive_step": 3,
-          "action": "DOWN",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(6,1)",
-          "expected_V_on_predicted_cell": "out_of_bounds",
-          "predicted_V": "out_of_bounds",
-          "error_component": "C"
-        },
-        {
-          "id": "random-a766d8256082d33e81fda521",
-          "gold": "invalid | step=5 | reason=invalid_action_token",
-          "prediction": "invalid | step=7 | reason=obstacle_collision",
-          "timing": "late",
-          "decisive_step": 5,
-          "action": "RIGHT",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(2,4)",
-          "expected_V_on_predicted_cell": "goal_not_reached",
-          "predicted_V": "goal_not_reached",
-          "error_component": "C"
-        },
-        {
-          "id": "random-861b0d1549627663a904e72a",
-          "gold": "invalid | step=2 | reason=invalid_action_token",
-          "prediction": "valid",
-          "timing": "false_valid",
-          "decisive_step": 2,
-          "action": "RIGHT",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(2,5)",
-          "expected_V_on_predicted_cell": "goal_not_reached",
-          "predicted_V": "goal_not_reached",
-          "error_component": "C"
-        },
-        {
-          "id": "random-09b735c329cd394a9405d56a",
-          "gold": "invalid | step=2 | reason=invalid_action_token",
-          "prediction": "invalid | step=5 | reason=invalid_action_token",
-          "timing": "late",
-          "decisive_step": 2,
-          "action": "RIGHT",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(2,4)",
-          "expected_V_on_predicted_cell": "goal_not_reached",
-          "predicted_V": "goal_not_reached",
-          "error_component": "C"
-        },
-        {
           "id": "random-14443dcd6fdca14aa5809766",
           "gold": "invalid | step=2 | reason=obstacle_collision",
           "prediction": "invalid | step=6 | reason=goal_not_reached",
@@ -649,23 +451,10 @@
           "expected_V_on_predicted_cell": "goal_not_reached",
           "predicted_V": "obstacle_collision",
           "error_component": "V"
-        },
-        {
-          "id": "random-3b2904e2ee226c5dc4b4935f",
-          "gold": "invalid | step=3 | reason=invalid_action_token",
-          "prediction": "valid",
-          "timing": "false_valid",
-          "decisive_step": 3,
-          "action": "DOWN",
-          "true_cell": "no_coordinate",
-          "predicted_cell": "(3,1)",
-          "expected_V_on_predicted_cell": "valid",
-          "predicted_V": "valid",
-          "error_component": "C"
         }
       ],
-      "predictions_sha256": "efaf458549f7a0928b150ee348809dfb081de03021957840455eb111d51d3f01",
-      "scores_sha256": "0266f271495a8df12710a31600a6fa42cbde996d1630fd5acb4afe959a30506b"
+      "predictions_sha256": "0a353d33d4fe0b0b600244c0764980d1279c58ff71bcdc16fb189077c7044235",
+      "scores_sha256": "c6ab5cc778e6faa26572375a972de1d99b3b943564f5536fc47e8cfb38e5d03d"
     }
   }
 }

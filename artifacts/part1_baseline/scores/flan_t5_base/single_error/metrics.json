@@ -2,44 +2,44 @@
   "verification": {
     "metric": "exact_line_by_gold_supported_type_v1",
     "n": 200,
-    "exact": 182,
-    "exact_accuracy": 0.91,
-    "structured_macro_f1": 0.9195071247316026,
+    "exact": 188,
+    "exact_accuracy": 0.94,
+    "structured_macro_f1": 0.9458030149519512,
     "supported_types": 4,
-    "false_valid": 3,
+    "false_valid": 2,
     "malformed": 0,
     "per_type": {
       "valid": {
         "gold": 0,
-        "predicted": 3,
+        "predicted": 2,
         "tp": 0,
-        "fp": 3,
+        "fp": 2,
         "fn": 0,
         "f1": null
       },
       "obstacle_collision": {
         "gold": 50,
-        "predicted": 59,
+        "predicted": 55,
         "tp": 45,
-        "fp": 14,
+        "fp": 10,
         "fn": 5,
-        "f1": 0.8256880733944955
+        "f1": 0.8571428571428571
       },
       "out_of_bounds": {
         "gold": 50,
-        "predicted": 50,
+        "predicted": 49,
         "tp": 49,
-        "fp": 1,
+        "fp": 0,
         "fn": 1,
-        "f1": 0.98
+        "f1": 0.98989898989899
       },
       "invalid_action_token": {
         "gold": 50,
-        "predicted": 44,
-        "tp": 44,
+        "predicted": 50,
+        "tp": 50,
         "fp": 0,
-        "fn": 6,
-        "f1": 0.9361702127659575
+        "fn": 0,
+        "f1": 1.0
       },
       "goal_not_reached": {
         "gold": 50,
@@ -54,27 +54,27 @@
   "candidate_repair": {
     "n": 200,
     "counts": {
-      "success": 163,
-      "feasible": 181,
+      "success": 165,
+      "feasible": 184,
       "optimal": 82,
       "delivered": 184
     },
-    "success": 0.815,
-    "feasible": 0.905,
+    "success": 0.825,
+    "feasible": 0.92,
     "optimal": 0.41,
     "delivered": 0.92
   },
   "invalid_count": 200,
-  "step_correct": 185,
-  "reason_correct": 187,
-  "joint": 182,
+  "step_correct": 188,
+  "reason_correct": 193,
+  "joint": 188,
   "valid_count": 0,
   "valid_correct": 0,
   "repair_stops": {
-    "returned_plan": 149,
+    "returned_plan": 150,
     "attempt_limit": 16,
     "returned_prefix": 32,
-    "unchanged": 3
+    "unchanged": 2
   },
   "by_reason": {
     "goal_not_reached": {
@@ -105,25 +105,22 @@
     "invalid_action_token": {
       "n": 50,
       "prediction_counts": {
-        "invalid_action_token": 44,
-        "out_of_bounds": 1,
-        "obstacle_collision": 4,
-        "valid": 1
+        "invalid_action_token": 50
       },
-      "exact": 44,
-      "step_correct": 47,
-      "reason_correct": 44,
-      "joint": 44,
+      "exact": 50,
+      "step_correct": 50,
+      "reason_correct": 50,
+      "joint": 50,
       "repair": {
         "n": 50,
         "counts": {
-          "success": 38,
-          "feasible": 44,
+          "success": 40,
+          "feasible": 47,
           "optimal": 24,
           "delivered": 47
         },
-        "success": 0.76,
-        "feasible": 0.88,
+        "success": 0.8,
+        "feasible": 0.94,
         "optimal": 0.48,
         "delivered": 0.94
       }

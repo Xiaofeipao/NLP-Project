@@ -105,6 +105,18 @@ class Part1PolicyTests(unittest.TestCase):
         self.assertEqual(scores["per_type"][wall]["fn"], 3)
         self.assertIsNone(scores["per_type"]["goal_not_reached"]["f1"])
 
+    def test_hope_dataset_replacement_is_used_in_blind_inputs(self):
+        corpus = protocol.ROOT / "data/coordinate_gcv_review"
+        source = protocol.read(corpus / "manifest.json")
+        replacement = protocol.read(protocol.REPLACEMENT)
+        for split, changed in (("single_error", 9), ("double_error", 19)):
+            original = protocol.rows_at(corpus / (split.split("_")[0] + "_inputs.jsonl"))
+            new, _ = protocol.corrected_error_inputs(
+                split, protocol.gold_rows(split), corpus, source, replacement
+            )
+            self.assertEqual(sum(prev != row for prev, row in zip(original, new, strict=True)), changed)
+            self.assertTrue(all(set(row) == {"id", "grid", "candidate"} for row in new))
+
     def test_original_error_sets_and_loser_cannot_read_test_inputs(self):
         single, double = (protocol.gold_rows(split) for split in protocol.ERROR_SETS)
         self.assertEqual(Counter(r["reason"] for r in single), dict.fromkeys(protocol.LABELS[1:], 50))

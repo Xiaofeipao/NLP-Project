@@ -38,6 +38,14 @@
     "invalid_action_token+goal_not_reached": 26
   },
   "generator_sha256": "480787f972937c3ebecd5601168bff23ab2eebc90729edebb4d1a7341509d3f9",
-  "data_sha256": "68340c517e9a4d3d20d74ba9bccd78b175bc06d2a2adad75330d5200237c563d",
-  "semantics": "Original project execute stops at first error, unchanged. audit_events uses rejected illegal moves as no-op and continues, then evaluates EOS once. Exactly two distinct event steps; physical errors at different base indices. Reference route reaches goal. No hidden second terminal label."
+  "data_sha256": "a50e542cc4c599848d40d78f93ea65425bce710394e8fd4053254820efd76029",
+  "semantics": "Original project execute stops at first error, unchanged. audit_events uses rejected illegal moves as no-op and continues, then evaluates EOS once. Exactly two distinct event steps; physical errors at different base indices. Reference route reaches goal. No hidden second terminal label.",
+  "previous_data_sha256": "68340c517e9a4d3d20d74ba9bccd78b175bc06d2a2adad75330d5200237c563d",
+  "previous_generator_sha256": "480787f972937c3ebecd5601168bff23ab2eebc90729edebb4d1a7341509d3f9",
+  "post_generation_edit": {
+    "date": "2026-11-26",
+    "details": "illegal_word_replacement_20261126.json",
+    "uppercase_directions_replaced": true,
+    "labels_steps_lengths_error_counts_unchanged": true
+  }
 }

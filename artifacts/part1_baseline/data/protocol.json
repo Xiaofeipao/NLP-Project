@@ -46,10 +46,15 @@
     "full": "1a582bb9ac5ed58ab503f9f8ad44b0fe0e0f6d7f6a2dac9ea1d21c76745e9ef2",
     "parents": "8251f891cc508e8a3490e3d4b0e53262a43ce27754bfdef7c34744a0782b3954"
   },
+  "corrected_error_source": {
+    "ref": "hope_dataset",
+    "commit": "d88f85b872560f9313ac4319cdd5fa86151c0780",
+    "replacement_manifest_sha256": "1de49a9449254f1531b376eca0e945037bea095654d07ece35c09fe8cf54a5c7"
+  },
   "source_splits": {
     "dev": "6b60713aa88053bacbe2a009c68baf69d51a1f3121390d0aea1c7f256a92bb3a",
-    "single_error": "18020e883bb5eb0e91d2039393f741816b73b378ff245cb36d8a1449e02a347d",
-    "double_error": "68340c517e9a4d3d20d74ba9bccd78b175bc06d2a2adad75330d5200237c563d"
+    "single_error": "c116721b9c80518012dafbc85fe7ff8666c25363be86ab0f833e283dff5752ff",
+    "double_error": "a50e542cc4c599848d40d78f93ea65425bce710394e8fd4053254820efd76029"
   },
   "prompts": {
     "G": "6938c35a2f20f71ddaa786089ffa805c32f09840bb37aaf652e762b0b3e31517",
@@ -58,8 +63,8 @@
   },
   "inputs": {
     "dev": "28e297d30f18182ab956c76c41f96c051d763bd41c08ce8fdc764fa23163442d",
-    "single_error": "c7e39ef9aae3e1ea958de7d68cc5a6898b4db8b8a668e3bccdde979da432f7c7",
-    "double_error": "c1cc9d09f15452725d52b7cb1d4df07a093e030a40a0ca59c7eee346867ace6d"
+    "single_error": "7f826406a8b7b938f8b1c712d61a6f34cdb5f06625ea0f4c9a44b05a1307412e",
+    "double_error": "2e5570557b5b00421cac5e9cabae4110d2449f383386388b18608effcb915049"
   },
   "held_out": {
     "dev": {
@@ -83,7 +88,9 @@
         "invalid_action_token": 50,
         "obstacle_collision": 50,
         "goal_not_reached": 50
-      }
+      },
+      "changed_candidates": 9,
+      "replaced_action_occurrences": 9
     },
     "double_error": {
       "role": "validation",
@@ -93,7 +100,9 @@
         "out_of_bounds": 65,
         "invalid_action_token": 67,
         "obstacle_collision": 68
-      }
+      },
+      "changed_candidates": 19,
+      "replaced_action_occurrences": 20
     }
   },
   "train_layouts": 652,

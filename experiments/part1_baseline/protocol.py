@@ -18,6 +18,8 @@ SOURCES = {
     "dev": ROOT / "data/derived/dev.jsonl",
     **{s: ROOT / "data/random_errors_20261123" / (s + "_200.jsonl") for s in ERROR_SETS},
 }
+DATASET_REVISION = "d88f85b872560f9313ac4319cdd5fa86151c0780"
+REPLACEMENT = SOURCES["single_error"].with_name("illegal_word_replacement_20261126.json")
 METRIC = "exact_line_by_gold_supported_type_v1"
 SEED = 42
 UPDATES = 125
@@ -74,6 +76,36 @@ def point(x):
 
 def gold_rows(split):
     return [r for r in rows_at(SOURCES[split]) if r.get("task", "verification") == "verification"]
+
+
+def corrected_error_inputs(part, examples, corpus, source, replacement):
+    path = SOURCES[part]
+    original = corpus / (part.split("_")[0] + "_inputs.jsonl")
+    assert digest(original) == source["files"][original.name]
+    manifest = replacement["files"][path.name]
+    assert source["sources"][path.relative_to(ROOT).as_posix()] == manifest["before_sha256"]
+    assert digest(path) == manifest["after_sha256"]
+    original_rows = rows_at(original)
+    by_id = defaultdict(list)
+    for edit in manifest["changes"]:
+        by_id[edit["id"]].append(edit)
+    assert len(by_id) == manifest["changed_rows"]
+    assert len(manifest["changes"]) == manifest["replaced_action_occurrences"]
+    blind = []
+    for base, gold in zip(original_rows, examples, strict=True):
+        assert (base["id"], base["grid"]) == (gold["id"], gold["grid"])
+        actions = base["candidate"].split()
+        for edit in by_id.pop(base["id"], []):
+            index = edit["step"] - 1
+            assert actions[index] == edit["old"]
+            assert edit["new"] not in MOVES and edit["new"] == replacement["mapping"][edit["old"].upper()]
+            actions[index] = edit["new"]
+        candidate = " ".join(actions)
+        assert candidate == gold["candidate"]
+        assert all(action in MOVES or action.lower() not in MOVES for action in actions)
+        blind.append(dict(base, candidate=candidate))
+    assert not by_id and len(blind) == manifest["rows"]
+    return blind, manifest
 
 
 def prepare(out):
@@ -134,6 +166,7 @@ def prepare(out):
             assert v["answers"] == ["valid" if result.valid else result.reason]
     train_layouts = {states[k]["layout_id"] for k in by_case}
     profiles, split_hashes = {}, {}
+    replacement = read(REPLACEMENT)
     used_layouts = set(train_layouts)
     for part, path in SOURCES.items():
         split_hashes[part] = digest(path)
@@ -145,12 +178,7 @@ def prepare(out):
         used_layouts.update(layouts)
         blind = [{k: r[k] for k in ("id", "grid", "candidate")} for r in examples]
         if part in ERROR_SETS:
-            assert digest(path) == source["sources"][path.relative_to(ROOT).as_posix()]
-            original = corpus / (part.split("_")[0] + "_inputs.jsonl")
-            assert digest(original) == source["files"][original.name]
-            original_rows = rows_at(original)
-            assert original_rows == blind
-            blind = original_rows
+            blind, corrections = corrected_error_inputs(part, examples, corpus, source, replacement)
         for r in examples:
             grid = Grid.from_dict(r["grid"])
             assert grid.layout_id == r["layout_id"] and (grid.rows, grid.cols) == (6, 6)
@@ -176,10 +204,15 @@ def prepare(out):
                 assert sorted(set(steps)) == steps
                 assert (steps[0], events[0]["reason"]) == (result.step, result.reason)
         kinds = Counter(r["reason"] or "valid" for r in examples)
-        profiles[part] = dict(role=SPLIT_ROLES[part], n=len(examples), layouts=len(layouts), classes=dict(kinds))
+        profiles[part] = dict(
+            role=SPLIT_ROLES[part], n=len(examples), layouts=len(layouts), classes=dict(kinds)
+        )
         put(out / (part + ".jsonl"), blind, True)
         if part in ERROR_SETS:
-            assert digest(out / (part + ".jsonl")) == source["files"][original.name]
+            profiles[part].update(
+                changed_candidates=corrections["changed_rows"],
+                replaced_action_occurrences=corrections["replaced_action_occurrences"],
+            )
     put(out / "state_ids.json", sorted(by_case))
     frozen = dict(
         seed=SEED,
@@ -204,6 +237,11 @@ def prepare(out):
         training_sources=dict(
             full=digest(corpus / "train.jsonl"),
             parents=digest(step_data / "train.jsonl"),
+        ),
+        corrected_error_source=dict(
+            ref="hope_dataset",
+            commit=DATASET_REVISION,
+            replacement_manifest_sha256=digest(REPLACEMENT),
         ),
         source_splits=split_hashes,
         prompts=source["prompts_sha256"],
