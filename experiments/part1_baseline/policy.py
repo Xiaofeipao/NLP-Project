@@ -1,6 +1,6 @@
 """Prompt-only G/C/V inference. The optional feedback callback is exclusive to the oracle arm."""
 
-from collections import defaultdict
+from collections import Counter, defaultdict
 import re
 
 from .protocol import LABELS, MOVES, point
@@ -38,7 +38,7 @@ def direct(case, prompts, limit=LIMIT):
     return dict(id=case["id"], plan=" ".join(moves), status=status, trace=trace)
 
 
-def episode(case, prompts, limit=LIMIT, feedback=None):
+def episode(case, prompts, limit=LIMIT, feedback=None, *, soft_revisit=False):
     state = fields(case["grid"])
     actions = case["candidate"].split()
     prefix, verification_trace, repair_trace = [], [], []
@@ -69,6 +69,7 @@ def episode(case, prompts, limit=LIMIT, feedback=None):
             repair_trace=repair_trace,
         )
 
+    visits = Counter([state["current"]])
     arrived = False
     for step, action in enumerate(actions, 1):
         event = yield from judge(action)
@@ -81,6 +82,8 @@ def episode(case, prompts, limit=LIMIT, feedback=None):
             if action in MOVES:
                 rejected[state["current"]].add(action)
             break
+        if soft_revisit:
+            visits[event["cell"]] += 1
         prefix.append(action)
         state["current"], arrived = event["cell"], verdict == "valid"
     else:
@@ -93,7 +96,14 @@ def episode(case, prompts, limit=LIMIT, feedback=None):
         return finish(verification, "returned_prefix")
     for _ in range(limit):
         ranked = yield "G", prompts["G"].format(**state)
-        action = next((a for a in ranked if a not in rejected[state["current"]]), None)
+        candidates = [a for a in ranked if a not in rejected[state["current"]]]
+        action = next(iter(candidates), None)
+        if soft_revisit and len(candidates) > 1:
+            costs = []
+            for rank, candidate in enumerate(candidates):
+                destination = yield "C", prompts["C"].format(current=state["current"], action=candidate)
+                costs.append(rank + 2 * visits[destination])
+            action = candidates[min(range(len(costs)), key=costs.__getitem__)]
         if action is None:
             return finish(verification, "directions_exhausted")
         event = yield from judge(action)
@@ -103,6 +113,8 @@ def episode(case, prompts, limit=LIMIT, feedback=None):
         if event["verdict"] not in LEGAL:
             rejected[state["current"]].add(action)
             continue
+        if soft_revisit:
+            visits[event["cell"]] += 1
         prefix.append(action)
         state["current"] = event["cell"]
         if event["verdict"] == "valid":

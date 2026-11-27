@@ -22,6 +22,7 @@ def main():
     cli.add_argument(
         "--device", choices=("cpu", "cuda"), default="cuda" if torch.cuda.is_available() else "cpu"
     )
+    cli.add_argument("--soft-revisit", action="store_true", help="Penalize previously visited cells during repair")
     cli.add_argument("--trace", action="store_true")
     args = cli.parse_args()
     if args.task in ("verify", "repair") and args.candidate is None:
@@ -55,7 +56,7 @@ def main():
         case["candidate"] = g["plan"]
     else:
         case["candidate"] = args.candidate
-    result = run([episode(case, ps, limit=0 if args.task == "verify" else LIMIT)], net.predict)[0]
+    result = run([episode(case, ps, limit=0 if args.task == "verify" else LIMIT, soft_revisit=args.soft_revisit)], net.predict)[0]
     if args.task == "verify":
         verdict = line(result["verification"])
         print(

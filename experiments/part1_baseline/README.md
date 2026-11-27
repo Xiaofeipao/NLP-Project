@@ -45,3 +45,12 @@ python -m unittest discover -s tests -p test_part1_baseline.py -v
 默认预测入口加载开发集选出的模型。`--task generate` 返回动作串，`--task verify` 返回验证整行，`--task repair` 返回修复路径，`--trace` 附逐步记录。[预测入口](predict.py)
 
 `--recheck` 从空目录重新进行开发集选型、双错验证和单错测试，核对两次的每份预测和评分。`audit --results` 另算课程的有效/无效二分类宏 F1、首错定位、候选修复和三个环境级流程的指标。[课程指标明细](../../artifacts/part1_baseline/project_metrics.json) · [错误分析](../../artifacts/part1_baseline/第一组_错误分析.md)
+
+## 修复时软惩罚重复访问
+
+在预测入口为修复或完整流程加上 `--soft-revisit`，例如
+`python -m experiments.part1_baseline.predict --task repair --grid examples/grid.json --candidate "left up" --soft-revisit --trace`。
+
+保留 Hope 已拒方向过滤。对剩余方向按 G 的排名（从 0 开始）加上 C 预测落点历史访问次数的两倍，选分数最小的动作，同分沿用 G 的排名。历史包括起点、已接受前缀和续走中接受的落点。每次最多向 V 提交一个动作，每题仍最多提交 36 次；排序可能增加 C 的预测。直接生成与原默认修复策略保留。
+
+在 hope_dataset 提交 d88f85b 的单错和双错候选上，固定 Hope 的 Flan-T5-base 权重后，原修复成功数分别为 165/200 和 141/200，软惩罚为 179/200 和 170/200。规则应用在推理阶段。
